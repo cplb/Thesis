@@ -1,0 +1,160 @@
+\documentclass[a4paper, 11pt, titlepage, twoside]{report}
+\usepackage[a4paper]{geometry}
+\usepackage{fancyhdr}
+\usepackage{charter}
+\usepackage{pstricks,pst-node,pst-text,pst-3d,pst-eucl}
+\usepackage{psfrag}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[figuresright]{rotating}
+\usepackage{amssymb,amstext,amsfonts} %% ... with default font
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+%\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{booktabs, longtable, dcolumn}
+%\usepackage{tikz}
+%\usetikzlibrary{shapes,arrows}
+\usepackage{lmodern}
+\renewcommand{\sfdefault}{lmss}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{microtype}
+\usepackage{nicefrac}
+\usepackage[T1]{fontenc}
+\usepackage[load-configurations = version-1]{siunitx}
+\DeclareSIUnit{\yr}{\ensuremath{\mathrm{yr}}}
+\DeclareSIUnit{\as}{\ensuremath{\mathrm{as}}}
+\DeclareSIUnit{\parsec}{\ensuremath{\mathrm{pc}}}
+\usepackage{braket}
+\usepackage{slashed}
+\usepackage{afterpage}
+\usepackage{appendix}
+\usepackage[latin9]{inputenc}
+\usepackage{fixmath}
+\usepackage{paralist}
+\usepackage[numbers, sort&compress]{natbib}
+\renewcommand{\bibfont}{\footnotesize}
+\renewcommand{\bibname}{{R\lowercase{eferences}}}
+\setlength{\bibhang}{0pt} 
+
+  \hyphenpenalty=2000
+  \tolerance=1000
+  
+\headheight 13.6pt
+\textheight = 45\baselineskip
+
+\def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
+
+\newcommand{\eqnref}[1]{equation~(\ref{eq:#1})}
+\newcommand{\Eqnref}[1]{Equation~(\ref{eq:#1})}
+\newcommand{\secref}[1]{section~\ref{sec:#1}}
+\newcommand{\Secref}[1]{Section~\ref{sec:#1}}
+\newcommand{\apref}[1]{appendix~\ref{sec:#1}}
+\newcommand{\Apref}[1]{Appendix~\ref{sec:#1}}
+\newcommand{\tabref}[1]{table~\ref{tab:#1}}
+\newcommand{\Tabref}[1]{Table~\ref{tab:#1}}
+\newcommand{\figref}[1]{figure~\ref{fig:#1}}
+\newcommand{\Figref}[1]{Figure~\ref{fig:#1}}
+
+\DeclareMathOperator{\sinc}{sinc}
+
+\newcommand{\sub}[1]{\ensuremath{_\mathrm{#1}}}
+\newcommand{\super}[1]{\ensuremath{^\mathrm{#1}}}
+
+\newcommand{\recip}[1]{\ensuremath{\frac{1}{#1}}}
+\newcommand{\nicerecip}[1]{\ensuremath{\nicefrac{1}{#1}}}
+
+\newcommand{\order}[1]{\ensuremath{\mathcal{O}({#1})}}
+
+\newcommand{\innerprod}[2]{\ensuremath{\left({#1}\middle|{#2}\right)}}
+
+\newcommand{\Ibar}{{\declareslashed{}{\text{-}}{0.04}{-0.2}{I}\slashed{I}}}
+\newcommand{\lambdabar}{{\declareslashed{}{\text{--}}{0.04}{-0.02}{\lambda}\slashed{\lambda}}}
+
+% Define differential operators
+\newcommand{\dd}{\ensuremath{\mathrm{d}}}
+\newcommand{\diff}[2]{\ensuremath{\frac{\dd {#1}}{\dd {#2}}}}
+\newcommand{\linediff}[2]{\ensuremath{\dd {#1}/\dd {#2}}}
+\newcommand{\nicediff}[2]{\ensuremath{\nicefrac{\dd {#1}}{\dd {#2}}}}
+\newcommand{\diffop}[1]{\ensuremath{\frac{\dd}{\dd {#1}}}}
+\newcommand{\difftwo}[2]{\ensuremath{\frac{\dd^2 {#1}}{\dd {#2}^2}}}
+\newcommand{\linedifftwo}[2]{\ensuremath{\dd^2 {#1}/\dd {#2}^2}}
+\newcommand{\nicedifftwo}[2]{\ensuremath{\nicefrac{\dd^2 {#1}}{\dd {#2}^2}}}
+\newcommand{\difftwoop}[1]{\ensuremath{\frac{\dd^2}{\dd {#1}^2}}}
+\newcommand{\diffn}[3]{\ensuremath{\frac{\dd^{#3} {#1}}{\dd {#2}^{#3}}}}
+\newcommand{\linediffn}[3]{\ensuremath{\dd^{#3} {#1}/\dd {#2}^{#3}}}
+\newcommand{\nicediffn}[3]{\ensuremath{\nicefrac{\dd^{#3} {#1}}{\dd {#2}^{#3}}}}
+\newcommand{\diffnop}[2]{\ensuremath{\frac{\dd^{#2}}{\dd {#1}^{#2}}}}
+\newcommand{\partialdiff}[2]{\ensuremath{\frac{\partial {#1}}{\partial {#2}}}}
+\newcommand{\linepartialdiff}[2]{\ensuremath{\partial {#1}/\partial {#2}}}
+\newcommand{\nicepartialdiff}[2]{\ensuremath{\nicefrac{\partial {#1}}{\partial {#2}}}}
+\newcommand{\partialdiffop}[1]{\ensuremath{\frac{\partial}{\partial {#1}}}}
+\newcommand{\grad}{\ensuremath{\boldsymbol{\nabla}}}
+\newcommand{\intd}[4]{\ensuremath{\int_{#1}^{#2}{#3}\,\dd{#4}}}
+
+\begin{document}
+
+\bibpunct{[}{]}{,\,}{s}{}{}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{
+\markboth{\chaptername
+\ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RE]{Christopher Berry}
+\fancyhead[LO]{Exploring Gravity}
+\fancyhead[RO]{\rightmark}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.1ex}
+\fancyfoot[LO]{\today}
+\fancyfoot[RE]{CPGS}
+\fancyfoot[RO, LE]{\thepage}
+\fancypagestyle{plain}{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.1ex}
+\fancyfoot[LO]{\today}
+\fancyfoot[RE]{CPGS}
+\fancyfoot[RO, LE]{\thepage}}
+\renewcommand\floatpagefraction{.6}
+\renewcommand\topfraction{.8}
+\renewcommand\bottomfraction{.8}
+\renewcommand\textfraction{.2}
+
+\title{{\huge{}Exploring Gravity\\\vspace{0.5mm}With Gravitational Waves \& Strong-Field Tests}}
+\author{{\Large{}Christopher Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}\\{\Large{}Supervisor: Jonathan Gair}\vspace{5mm}}
+\date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Certificate of Postgraduate Study}\vspace{5mm}\\\today}
+\maketitle
+
+%\begin{abstract}
+%We discuss various methods of testing gravity and measuring the properties of black holes, with a particular emphasis on gravitational waves. We start by investigating metric $f(R)$-gravity assuming a form for the function $f(R)$ that is analytic about $R = 0$ and admits Minkowski spacetime as a solution. We will consider $f(R) = R + \nicerecip{2}\,a_2R^2 + \ldots$ with $a_2 \neq 0$. In linearized theory $f(R)$-gravity has an additional scalar mode not seen in GR. The weak-field metric for $f(R)$-gravity is presented. This is not the same as found in general relativity, indicating that black hole solutions are distinct from the familiar Schwarzschild and Kerr solutions. Using this we apply results from laboratory fifth force tests to obtain the bound $|a_2| \lesssim \SI{2e-9}{\metre^2}$. We therefore conclude that the scalar mode is unlikely to be excited by astrophysical processes, assuming that $a_2$ has the same value throughout the universe.
+
+%In the second half we consider gravitational radiation emitted by a highly eccentric encounter between the massive black hole at the galactic centre and another compact object. This radiation would be detectable with LISA. Using a numerical kludge waveform we perform some simple preliminary analysis, and conclude that if the periapsis of the orbit is small enough the black hole's parameters may be accurately inferred: observing a single encounter with periapsis $r\sub{p} = 50 M_\bullet$, where $M_\bullet$ is the black hole's mass, could yield values of $M_\bullet$ accurate to $\sim \SI{2}{\percent}$, and of the spin parameter $a$ to $\sim \SI{20}{\percent}$. The distance to the galactic centre may not be inferred by this method. Further study is required to establish how likely it is for such parabolic encounters to occur, and thus how accurately we may expect to determine these parameters during the lifetime of the LISA mission.
+%\end{abstract}
+
+\input{./Introduction.tex}
+
+\input{./f_R.tex}
+
+\input{./Parabolic.tex}
+
+\input{./Future.tex}
+
+\paragraph{Acknowledgements}
+
+I am grateful to Jonathan Gair for suggesting this work presented here, for many helpful conversations and for his careful checking of minus signs. I would also like to thank Dave Green for his suggestions regarding apodization.
+
+\bibliographystyle{../physicsSHORT}
+\bibliography{../library}
+
+\input{./Fisher_newest.tex}
+
+\clearpage
+\mbox{}
+
+\end{document}
