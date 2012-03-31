@@ -29,6 +29,7 @@
 \usepackage[latin9]{inputenc}
 \usepackage{fixmath}
 \usepackage{paralist}
+\usepackage{hyperref}
 \usepackage[numbers, sort&compress]{natbib}
 \renewcommand{\bibfont}{\footnotesize}
 \renewcommand{\bibname}{{R\lowercase{eferences}}}
@@ -54,6 +55,8 @@
 \newcommand{\Figref}[1]{Figure~\ref{fig:#1}}
 
 \DeclareMathOperator{\sinc}{sinc}
+
+\newcommand{\units}[1]{\ensuremath{~\mathrm{#1}}}
 
 \newcommand{\sub}[1]{\ensuremath{_\mathrm{#1}}}
 \newcommand{\super}[1]{\ensuremath{^\mathrm{#1}}}
@@ -124,8 +127,8 @@
 \input{./f_R.tex}
 
 
-\bibliographystyle{../physicsSHORT}
-\bibliography{../library}
+%\bibliographystyle{../physics}
+%\bibliography{../library}
 
 \clearpage
 \mbox{}
