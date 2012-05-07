@@ -139,9 +139,10 @@ This can be rearranged to define $\widetilde{C^{-1}}(f,t_k)$.
 
 The term in the exponential in \eqnref{prod_prob} has the limit
 \begin{align}
-\recip{2}\lim_{T \rightarrow \infty; \upDelta t \rightarrow 0} \sum_{j,k}C^{-1}_{jk}n_j n_k = {} & \recip{2}\lim_{T \rightarrow \infty; \upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-T}^{T}\,\dd t_j \int_{-T}^{T}\,\dd t_k \, C^{-1}(t_j,t_k) n(t_j)n(t_k) \nonumber \\
+\mathcal{H} = {} & \recip{2}\lim_{T \rightarrow \infty; \upDelta t \rightarrow 0} \sum_{j,k}C^{-1}_{jk}n_j n_k \nonumber \\
+ = {} & \recip{2}\lim_{T \rightarrow \infty; \upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-T}^{T}\,\dd t_j \int_{-T}^{T}\,\dd t_k \, C^{-1}(t_j,t_k) n(t_j)n(t_k) \nonumber \\
  = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-\infty}^{\infty}\,\dd t_j \int_{-\infty}^{\infty}\,\dd t_k \left\{ \intd{-\infty}{\infty}{\widetilde{C^{-1}}(f,t_k)\exp(2\pi if t_j)}{f} \right. \nonumber \\*
- {} & \left. \intd{-\infty}{\infty}{\widetilde{n}(f')\exp(2\pi i f't_j)}{f'}n(t_k)\right\} \nonumber \\
+ {} & \times \left. \intd{-\infty}{\infty}{\widetilde{n}(f')\exp(2\pi i f't_j)}{f'}n(t_k)\right\} \nonumber \\
  = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \widetilde{C^{-1}}(f,t_k)\widetilde{n}(-f)n(t_k) \nonumber \\
  = {} & \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \frac{\exp(-2\pi i f t_k)}{S_n(f)}\widetilde{n}^\ast(f)n(t_k) \nonumber \\
  = {} & \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}}{f} \nonumber \\

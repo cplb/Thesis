@@ -20,7 +20,7 @@ assuming this change is small. We define the loss cone angle $\theta\sub{LC}$ to
 Frank and Rees first introduced the loss cone. They considered stars on nearly radial orbits. The orbital energy and angular momentum (per unit mass) of an object with eccentricity $e$ and periapse radius $r\sub{p}$ are
 \begin{align}
 \mathcal{E} = {} & -\frac{GM_\bullet(1 - e)}{2r\sub{p}} \\
-\matcal{J}^2 = {} & GM_\bullet(1 + e)r\sub{p},
+\mathcal{J}^2 = {} & GM_\bullet(1 + e)r\sub{p},
 \end{align}
 where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
 \begin{align}
@@ -30,6 +30,7 @@ where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
 using the small angle approximation. Frank and Rees took the limit $e \rightarrow 1$, then setting $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone, we can rearrange to find
 \begin{equation}
 \theta\sub{LC} \simeq \frac{2GM_\bullet r\sub{T}}{v^2r^2}.
+\label{eq:LC-FR}
 \end{equation}
 We need to find the speed at $r$. Frank and Rees use a typical value
 \begin{equation}
@@ -46,4 +47,26 @@ Here the core radius $r\sub{c}$ is chosen such that
 \begin{equation}
 r\sub{c} = \frac{GM_\bullet}{\sigma_0^2},
 \end{equation}
-where $\sigma_0$ is the 1D velocity dispersion far from the MBH.
+where $\sigma_0$ is the 1D velocity dispersion far from the MBH. Substituting for $v^2$ in \eqnref{LC-FR} gives
+\begin{align}
+\theta\sub{LC}^2 \simeq \begin{cases}
+\frac{2r\sub{T}}{3r} & r < r\sub{c} \\
+\frac{2r\sub{T}r\sub{c}}{3r^2} & r < r\sub{c}
+\end{cases}.
+\end{align}
+Frank and Rees make one final modification, introducing a gravitational focusing factor $f$ such that
+\begin{align}
+\theta\sub{LC} \simeq f\begin{cases}
+\left(\frac{2r\sub{T}}{3r}\right)^{1/2} & r < r\sub{c} \\
+\left(\frac{2r\sub{T}r\sub{c}}{3r^2}\right)^{1/2} & r < r\sub{c}
+\end{cases}.
+\end{align}
+The focusing factor could be imagined as being the correction from assuming that stars travel along straight lines, such that $\tan\theta\sub{LC} = r\sub{T}/r$, to accounting for a Keplerian trajectory about the MBH.
+
+It is unappealing to include an arbitrary, albeit order unitary, factor in the expression. Additionally, there are various approximations in the derivation which are restrictive. Considering the orbital energy for $v^2 = 3\sigma^2$ inside the core
+\begin{align}
+\frac{3\sigma^2}{2} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet}{2r\sub{T}} \\
+\frac{3GM_\bullet}{2r} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet(1-e)}{2r\sub{T}} \\
+\frac{r\sub{T}}{r} = {} & e - 1.
+\end{align}
+Since the radii must be positive, this enforces that $e \geq 1$: the orbits could be marginally bound at best. As we have taken the limit $e \rightarrow 1$, assuming that $r \gg r\sub{T}$ this is still self-consistent, but perhaps not of general applicability.
