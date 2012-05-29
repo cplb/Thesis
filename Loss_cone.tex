@@ -53,6 +53,7 @@ where $\sigma_0$ is the 1D velocity dispersion far from the MBH. Substituting fo
 \frac{2r\sub{T}}{3r} & r < r\sub{c} \\
 \frac{2r\sub{T}r\sub{c}}{3r^2} & r < r\sub{c}
 \end{cases}.
+\label{eq:FR-LC}
 \end{align}
 Frank and Rees make one final modification, introducing a gravitational focusing factor $f$ such that
 \begin{align}
@@ -69,4 +70,29 @@ It is unappealing to include an arbitrary, albeit order unitary, factor in the e
 \frac{3GM_\bullet}{2r} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet(1-e)}{2r\sub{T}} \\
 \frac{r\sub{T}}{r} = {} & e - 1.
 \end{align}
-Since the radii must be positive, this enforces that $e \geq 1$: the orbits could be marginally bound at best. As we have taken the limit $e \rightarrow 1$, assuming that $r \gg r\sub{T}$ this is still self-consistent, but perhaps not of general applicability.
+Since the radii must be positive, this enforces that $e \geq 1$: the orbits could be marginally bound at best. As we have taken the limit $e \rightarrow 1$, assuming that $r \gg r\sub{T}$ this is still self-consistent. However, it is desirable to relax these conditions.
+
+Let us consider an orbit with $r\sub{p} = r\sub{T}$, which gives the edge of the loss cone. The angular momentum (squared) is
+\begin{equation}
+\sin^2\theta\sub{LC}v^2r^2 = GM_\bullet(1+e)r\sub{T}.
+\end{equation}
+The energy is
+\begin{equation}
+\frac{v}{2} - \frac{GM_\bullet}{r} = -\frac{GM_\bullet}{2r\sub{T}}.
+\end{equation}
+Combining these to eliminate the velocity gives
+\begin{equation}
+\sin^2\theta\sub{LC} = \frac{(1+e)r\sub{T}^2}{2rr\sub{T} - (1-e)r^2}.
+\end{equation}
+This has been obtained without making any assumptions about the velocity dispersion or the position of the star. Since we have considered the Keplerian orbit, there should be no need to introduce a focusing factor.
+
+This is similar in form to the classic result. Consider an orbit with eccentricity $e = 1 - \epsilon$, where $\epsilon$ is small. Let us choose the star to be at a characteristic distance set by its semimajor axis $a = r\sub{p}/(1 - e)$, such that
+\begin{equation}
+r = \frac{r\sub{T}}{\epsilon}.
+\end{equation}
+This ensures that $r \gg r\sub{T}$. Therefore we have matched the assumptions of Frank and Rees. Substituting into our loss cone formula
+\begin{align}
+\sin^2\theta\sub{LC} = {} & \frac{(2 - \epsilon)r\sub{T}^2}{2rr\sub{T} + \epsilon r^2} \nonumber \\
+ \simeq {} & \frac{2r\sub{T}}{3r},
+\end{align}
+retaining terms to first order in $\epsilon$. Since this is small, we can use the small angle approximation to recover the result of \eqnref{FR-LC}.
