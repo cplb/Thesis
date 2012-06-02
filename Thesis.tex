@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt, titlepage, twoside]{report}
+\documentclass[a4paper, 10pt, titlepage, twoside]{report}
 \usepackage[a4paper]{geometry}
 \usepackage{fancyhdr}
 \usepackage{charter}
@@ -63,7 +63,7 @@
 
 \newcommand{\recip}[1]{\ensuremath{\frac{1}{#1}}}
 
-\newcommand{\order}[1]{\ensuremath{\mathcal{O}({#1})}}
+\newcommand{\order}[1]{\ensuremath{\mathcal{O}\left({#1}\right)}}
 
 \newcommand{\innerprod}[2]{\ensuremath{\left({#1}\middle|{#2}\right)}}
 
@@ -131,9 +131,11 @@
 
 \appendix
 
-\input{./inner_product.tex}
+%\input{./inner_product.tex}
 
-\input{./Loss_cone.tex}
+%\input{./Loss_cone.tex}
+
+\input{./Energy_errata.tex}
 
 \clearpage
 \mbox{}
