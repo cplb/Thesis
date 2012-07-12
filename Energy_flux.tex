@@ -1,0 +1,194 @@
+\chapter{Semirelativistic fluxes}
+
+The semirelativistic approximation for extreme-mass-ratio waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula\cite{Ruffini1981}. This is at the heart of the numerical kludge approximation. Gair, Kennefick and Larson derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the numerical kludge waveforms.
+
+The published expressions contain a number of (minor) errors, we rederive the correct forms here. We assume an object of mass $m$ orbiting about another of mass $M$ with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For section we shall use geometric units with $G = c = 1$.
+
+The geodesic equations in Schwarzschild are
+\begin{align}
+\diff{t}{\tau} = \left(1-\frac{2m}{r}\right)^{-1}E, \\
+\left(\diff{r}{\tau}\right^2 = {} & \left(E^2 - 1\right) + \frac{2M}{r}\left(1 + \frac{L_z}^2{r^2}\right) - \frac{L_z^2}{r^2}, \\
+\diff{\phi}{\tau} = {} & \frac{L_z}{r^2},
+\end{align}
+where $t$, $r$ and $\phi$ are the usual Schwarzschild coordinates, $\tau$ is the proper time, and we have introduced specific energy $E$ and azimuthal angular momentum $L_z$. Spherical symmetry has been exploited to set $\theta = \pi/2$ without loss of generality. For bound orbits, the radial equation has three roots, and can be written as
+\begin{equation}
+\left(\diff{r}{\tau}\right^2 = {} & -\left(E^2 - 1\right)\frac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
+\end{equation}
+The turning points are the apoapsis, the periapsis and a third root; the orbit becomes unstable when $r\sub{p} = r_3$. An eccentricity can be defined, in analogy to Keplerian orbits, such that
+\begin{equation}
+r\sub{a} = \frac{1 + e}{1 - e}r\sub{p}.
+\end{equation}
+The third root is then
+\begin{equation}
+r_3 = \frac{2(1 + e)M}{(1+e)r\sub{p} - 4M}r\sub{p}.
+\end{equation}
+The last stable orbit with a given eccentricity, has periapse radius
+\begin{equation}
+r_\sub{p,\,LSO} = \frac{2(3 + e)M}{1+e}.
+\end{equation}
+Orbits that approach closer than this will plunge into the black hole.
+
+The parameters $\[r\sub{p},e\}$ can be used to characterise orbits in place of $\{E,L_z\}$. The two are related by
+\begin{align}
+E^2 = {} & 1 - \frac{(1 - e) \left[(1 + e)r\sub{p} - 4M\right]M}{\left[(1 + e)r\sub{p} - \left(3 + e^2\right)M\right]r\sub{p}}; \\
+L_z^2 = {} & \frac{(1 + e)^2 M r\sub{p}^2}{(1 + e)r\sub{p} - \left(3 + e^2\right)M}.
+\end{align}
+
+Following the semirelativistic approximation, the fluxes of energy and angular momentum can be derived by inserting the Schwarzschild geodesic into the flat-space radiation formulae, identified the coordinate $t$ with the flat-space time (MTW chapter 36)
+\begin{align}
+\diff{E}{t} = {} & -\recip{5}\left\langle\diffn{\Ibar_{ij}}{t}{3}\diffn{\Ibar^{ij}}{t}{3}\right\rangle,\\
+\diff{L_z}{t} = {} & -\frec{2}{5}\left\langle\diffn{\Ibar_{xi}}{t}{2}\diffn{\Ibar^{iy}}{t}{3} - \Ibar_{yi}}{t}{2}\diffn{\Ibar^{iz}}{t}{3}\right\rangle,
+\end{align}
+where $\Ibar_{ij} = I_{ij} - (1/3)I\delta_{ij}$ is the reduced mass quadrupole tensor and $\langle\ldots\rangle$ indicates averaging over several wavelengths (or periods). For a point particle, the mass quadrupole is
+\begin{equation}
+{I}^{jk} = \mu x^j x^k,
+\end{equation}
+for trajectory $x^i(t)$. This can be determined from the geodesic equations, and written as a function of $r\sub{p}$, $e$ and $r$. To calculate the total change over one orbit we integrate $r$ from $r\sub{p}$ to $r\sub{a}$ and back again. For this purpose it is easier to consider derivatives with respect to $r$.
+\begin{align}
+\diff{E}{r} = {} & \\
+\diff{L_z}{r} = {} &.
+\end{align}
+The integrands are rational functions of $r$ and the square root of a cubic in $r$. The integrals can thus be written as a combination of elliptic integrals.
+
+The integrals are of a general form
+\begin{equation}
+\mathscr{I}_n = \intd{r\sub{p}}{r\sub{a}}{\frac{M^{n+1}}{r^n\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}}{r}.
+\end{equation}
+By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}$ we may derive a recurrence relationship using integration by parts. After some rearrangement
+\begin{equation}
+\mathscr{I}_n = \frac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \frac{2n - 3}{2n - 1} \frac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \frac{2(n - 1)}{2n-1}\frac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
+\end{equation}
+Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series. The zeroth integral can be evaluated using  G&R 3.147.6 as
+\begin{equation}
+$\mathscr{I}_0$ = \frac{2M}{r\sub{p}}\sqrt{\frac{r\sub{p}}{r\sub{a} - r_3}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
+\end{equation}
+where K(k) is the complete elliptic integral of the first kind. The next integral can be evaluated using G&R 3.149.6 as
+\begin{equation}
+$\mathscr{I}_1$ = \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - (r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
+\end{equation}
+where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using (Olver 19.6.2)
+\begin{equation}
+\Pi(k^2,k) = \frac{E(k)}{1 - k^2}
+\end{equation}
+to rewrite in terms of the complete elliptic integral of the second kind. Hence
+\begin{equation}
+$\mathscr{I}_1$ = \frac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}\left\{K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \frac{r\sub{a} - r_3}{r\sub{a}E\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
+\end{equation}
+
+Substituting in for the integrals, we find that...
+
+The energy lost in one orbit is
+\begin{align}
+\frac{M}{m} \Delta E = {} & -\frac{16 M^{11}}{1673196525 r\sub{p}^{6} (1 + e)^{{19}/{2}} \left\{\left(r\sub{p} - 2 M\right)\left[(1 + e)r\sub{p} - 2(1 - e)M\right]\right\}^{{5}/{2}}} \nonumber \\
+ {} & \times {} \left\{\sqrt{( 1+ e)\frac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\frac{r\sub{p}}{M}, e\right) \right. \nonumber \\
+   {} & + \left. \frac{1 + e}{\sqrt{(1 + e)\left(r\sub{p}/M\right)- 2 (3 - e)}} K\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{2} \left(\frac{r\sub{p}}{M}, e\right)\right\},
+\end{align}
+where $K(k)$ and $E(k)$ are the complete elliptic integrals of the first and second kinds,
+\begin{align}
+f_1(y, e) = {} & 4608 (1 - e) (1 + e)^2 \left(3 + e^2\right)^2 \left(2428691599+313957879 e^2 + 1279504693 e^4 \right. \nonumber \\
+ {} & + \left. 63843717 e^6\right)-192 (1 + e)^2 \left(908960573673 - 155717471796 e^2 \right.\nonumber \\
+ {} & - \left. 88736969547 e^4 - 293676299040 e^6 - 195313674237 e^8 - 26635698156 e^{10} \right. \nonumber \\
+ {} & - \left. 346799201 e^{12}\right) y + 384 (1+e)^3 \left(336063804453 - 53956775638 e^2 - 33318942522 e^4 \right. \nonumber \\
+ {} & - \left. 92857670352 e^6 - 41764459155 e^8 - 2765710514 e^{10}\right) y^2 \nonumber \\
+ {} & - \left. 16 (1 + e)^4 \left(3418907055555 - 580720618635 e^2 - 168432860626 e^4 \right.\right. \nonumber \\
+ {} & - \left. 606890963686 e^6 - 176495184865 e^8 - 3768291999 e^{10}\right) y^3 \nonumber \\
+ {} & + \left. 32 (1 + e)^5 \left(510454645597 - 92175635794 e^2 + 26432814256 e^4 - 28250211070 e^6 \right.\right. \nonumber \\
+ {} & - \left. 5713846269 e^8\right) y^4 - 4 (1 + e)^6 \left(1107402703901 - 174239346926 e^2 \right. \nonumber \\
+ {} & + \left. 100957560852 e^4 + 3707280110 e^6 - 899162673 e^8\right) y^5 \nonumber \\ 
+ {} & + \left. 8 (1 + e)^7 \left(143625217397 - 16032820010 e^2 + 4238287541 e^4 + 275190560 e^6\right) y^6 \right. \nonumber \\
+ {} & - \left. (1 + e)^8 \left(220627324753 - 14884378223 e^2 - 1210713997 e^4 + 14138955 e^6\right) y^7 \right. \nonumber \\
+ {} & + \left. 8 (1 + e)^9 \left(2922108518 - 46504603 e^2 - 2407656 e^4\right) y^8 \right. \nonumber \\
+ {} & - \left. 3 (1 + e)^{10} \left(241579935 + 6314675 e^2 - 149426 e^4\right) y^9 \right. \nonumber \\
+ {} & - \left. 4 (1 + e)^{11} \left(8608805 - 48992 e^2\right) y^{10} - 2 (1 + e)^{12} \left(1242083 - 16320 e^2\right) y^{11} \right. \nonumber \\
+ {} & - \left. 184320 (1 + e)^{13} y^{12} - 5120 (1 + e)^{14} y^{13} \right.
+\end{align}
+and
+\begin{align}
+f_2(y, e) = {} & 3072 (3 - e) (3 + e) \left(3 + e^2 \right) \left(7286074797 - 3299041125 e^2 + 792940362 e^4 \right. \nonumber \\
+ {} & - \left. 1366777698 e^6 - 369698151 e^8 - 5932745 e^{10} \right) - 384 (1 + e) \left(2989180413711 \vphantom{e^0} \right. \nonumber \\
+ {} & - \left. 583867932642 e^2 - 131661872359 e^4 - 419423580924 e^6 - 194293515951 e^8 \right. \nonumber \\
+ {} & - \left. 3390301442 e^{10} + 1353430119 e^{12} \right) {y} + 64 (1 + e)^2 \left(14825178681327 \vphantom{e^0} \right. \nonumber \\
+ {} & - \left. 2675442646782 e^2 - 728511901515 e^4 - 1837874368340 e^6 - 591999524567 e^8 \right. \nonumber \\
+ {} & - \left. 1856757710 e^{10} + 841581651 e^{12}\right) y^2 - 32 (1 + e)^3 \left(14292163934541 \vphantom{e^0} \right. \nonumber \\
+ {} & - \left. 2666166422089 e^2 - 522582885086 e^4 - 1347373382962 e^6 - 307066297439 e^8 \right. \nonumber \\
+ {} & - \left. 1675056789 e^{10}\right) y^3 + 16 (1 + e)^4 \left(9557748374919 - 1917809903861 e^2 \right. \nonumber \\
+ {} & - \left. 24258045506 e^4 - 511875047746 e^6 - 86779453317 e^8 - 462078345 e^{10}\right) y^4 \nonumber \\
+ {} & - \left. 8 (1 + e)^5 \left(5390797838491 - 990602472036 e^2 + 161182699002 e^4 \right.\right. \nonumber \\
+ {} & - \left. 89978894004 e^6 - 11363685245 e^8\right) y^5 + 4 (1 + e)^6 \left(2857676457065 \right. \nonumber \\
+ {} & - \left. 351292910556 e^2 + 79840371470 e^4 - 2670080940 e^6 - 463345647 e^8 \right) y^6 \nonumber \\
+ {} & - \left. 2 (1 + e)^7 \left(1249768416047 - 79903103833 e^2 + 12179840133 e^4 \right.\right. \nonumber \\
+ {} & + \left. 482157413 e^6\right) y^7 + (1 + e)^8 \left(363565648057 - 10040939153 e^2 - 318841465 e^4 \right. \nonumber \\
+ {} & + \left. 14611473 e^6 \right) y^8 - 2 (1 + e)^9 \left(13862653487 - 100645509 e^2 - 11015842 e^4\right) y^9 \nonumber \\
+ {} & + \left. (1 + e)^{10} \left(518128485 + 16345427 e^2 - 421398 e^4\right) y^{10} \right. \nonumber \\
+ {} & + \left. 16 (1 + e)^{11} \left(1220639 - 13448 e^2 \right) y^{11} + 2 (1 + e)^{12} \left(689123 - 18880 e^2 \right) y^{12} \right. \nonumber \\
+ {} & + \left. 153600 (1 + e)^{13} y^{13} + 5120 (1 + e)^{14} {y}^{14}. \right.
+\end{align}
+
+The angular momentum lost is
+\begin{align}
+\frac{\Delta L_z}{m} = {} & - \frac{16 M^{{15}/{2}}}{24249225 (1 + e)^{{13}/{2}} r\sub{p}^{{7}/{2}} (r\sub{p} - 2 M)^2 \left[(1 + e) r\sub{p} - 2 (1 - e) M\right]^{2}} \nonumber \\
+ {} & \times {} \left\{\sqrt{(1 + e) \frac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_1\left(\frac{r\sub{p}}{M}, e\right) \right. \nonumber \\
+ {} & + \left. \frac{(1 + e)}{\sqrt{(1 + e)\left(r\sub{p}/M\right) - 2(3 - e)}} K\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_2\left(\frac{r_{p}}{M}, e\right)\right\}
+\end{align}
+where
+\begin{align}
+g_1(y, e) = {} & 169728 (1 - e) (1 + e)^2 \left(279297 + 219897 e^2 + 106299 e^4 + 9611 e^6 \right) \nonumber \\
+ {} & - \left. 384 (1 + e)^2 \left(192524061 - 13847615 e^2 - 36165965 e^4 - 20710173 e^6 - 588532 e^8\right) y \right. \nonumber \\
+ {} & + \left. 192 (1 + e)^3 \left(235976417 + 13109547 e^2 - 3369705 e^4 - 3292707e^6\right) y^2 \right. \nonumber \\
+ {} & - \left. 16 (1 + e)^4 \left(813592799 + 112906199 e^2 + 53843933 e^4 + 602061 e^6\right) y^3 \right. \nonumber \\
+ {} & + \left. 16 (1 + e)^5 \left(87491089 + 7247482 e^2 + 4608349 e^4\right) y^4 + 8 (1 + e)^6 \left(9580616 \vphantom{e^0} \right.\right. \nonumber \\
+ {} & + \left. 6179243 e^2 - 92047 e^4\right) y^5 - 4 (1 + e)^7 \left(3760123 + 272087 e^2 \right) y^6 \nonumber \\
+ {} & - \left. (1 + e)^8 \left(1168355 - 35347 e^2\right) y^7 - 71792 (1 + e)^9 y^8 - 4120 (1 + e)^{10} y^9 \right.
+\end{align}
+and
+\begin{align}
+g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10551 e^6 - 420 e^8 \right) \nonumber \\
+ {} & - \left. 1536 (1 + e) \left(319648410 - 35712133 e^2 - 33099777 e^4 - 11272311 e^6 + 457187 e^8\right) y \right. \nonumber \\
+ {} & + \left. 128 (1 + e)^2 \left(2706209781 - 45415294 e^2 - 103634296 e^4 - 34056010 e^6 - 130293 e^8\right) y^2 \right. \nonumber \\
+ {} & - \left. 32 (1 + e)^3 \left(3895435659 + 212168215 e^2 + 4641265 e^4 - 15197651 e^6 \right) y^3 \right. \nonumber \\
+ {} & + \left. 16 (1 + e)^4 \left(1396737473 + 123722895 e^2 + 27602127 e^4 - 465119 e^6 \right) y^4 \right. \nonumber \\
+ {} & - \left. 16 (1 + e)^5 \left(78148621 + 3035912 e^2 + 3130827 e^4\right) y^5 \right. \nonumber \\
+ {} & - \left. 16 (1 + e)^6 \left(8005570 + 1485159 e^2 - 47943 e^4\right) y^6 + 2 (1 + e)^7 \left(4015181 + 601959 e^2\right) y^7 \right. \nonumber \\
+ {} & + \left. (1 + e)^8 \left(737603 - 39467 e^2\right) y^8 + 47072 (1 + e)^9 y^9 + 4120 (1 + e)^{10} y^{10}. \right.
+\end{align}
+
+Taking limit $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
+\begin{align}
+\frac{M}{m} \Delta E \simeq {} & -\frac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \frac{73}{24} e^2 + \frac{37}{96} e^{4}\right) \left(\frac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
+ {} & - \left. \frac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \frac{31}{8} e^2 + \frac{65}{32} e^4 + \frac{1}{6}e^6\right) \left(\frac{M}{r\sub{p}}\right)^{9/2} + \order{\frac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
+\frac{\Delta L_{z}}{m} \simeq {} & -\frac{64\pi}{5} \recip{(1 + e)^{2}} \left(1 + \frac{7}{8} e^{2}\right) \left(\frac{M}{r\sub{p}}\right)^{2} \nonumber \\
+ {} & - \left. \frac{192 \pi}{5} \recip{(1 + e)^3} \left(1 + \frac{35}{24} e^2 + \frac{1}{4} e^4\right) \left(\frac{M}{r\sub{p}}\right)^{3}  + \order{\frac{M^{4}}{r\sub{p}^{4}}}. \right.
+\end{align}
+The leading order terms correspond to the Keplerian results of \cite{Peters1964}.
+
+For a parabolic orbit with $e = 1$, the energy loss reduces to
+\begin{equation}
+\frac{M}{m} \Delta E = -\frac{2^{7/2}M^{{21}/{2}}}{{1673196525 \left(r\sub{p} - 2 M\right)^2 r\sub{p}^{{17}/{2}}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_1\left(\frac{r\sub{p}}{M}\right) + K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\frac{r\sub{p}}{M}\right)\right]
+\end{equation}
+where
+\begin{align}
+f_1(y) = {} & - 2 y \left(27850061568 - 83550184704 y + 117662445984 y^2 - 102686941680 y^3  \right. \nonumber \\ 
+ {} & + \left. 64808064704 y^4 - 33026468872 y^5 + 12784148218 y^6 - 2873196259 y^7 \right. \nonumber \\ 
+ {} & + \left. 185808888 y^8 + 17119626 y^9 + 2451526 y^{10} + 368640 y^{11} + 20480 y^{12} \right)
+\end{align}
+and
+\begin{align}
+f_2(y) = {} & -72901570560 + 274404834816 y - 424693524096 y^2 \nonumber \\ 
+ {} & + \left. 378109481088 y^3 - 249480499840 y^4 + 154011967968 y^5 \right. \nonumber \\ 
+ {} & - \left. 84437171728 y^6 + 31689370996 y^7 - 6231594434 y^8 + 321950817 y^9 \right. \nonumber \\ 
+ {} & + \left. 27462280 y^{10} + 4073612 y^{11} + 696320 y^{12} + 40960 y^{13}. \right.
+\end{align}
+The angular momentum lost is
+\begin{equation}
+\frac{\Delta L_{z}}{m} = \frac{64 M^7}{24249225 {r\sub{p}}^{{11}/{2}}\left(r\sub{p} - 2 M \right)^{{3}/{2}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_1\left(\frac{r\sub{p}}{M}\right) + K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_2\left(\frac{r\sub{p}}{M}\right)\right],
+\end{equation}
+where
+\begin{align}
+g_1(y) = {} & 181817664 y - 363635328 y^2 - 245236248 y^3 - 49673460 y^4  \nonumber \\
+ {} & - \left. 7833906 y^5 + 2016105 y^6 + 283252 y^7 + 35896 y^8 + 4120 y^9 \right.
+\end{align}
+and
+\begin{align}
+g_2(y) = {} & 71285760 - 324389184 y + 468548880 y^2 - 277856496 y^3 + 54521424 y^4 \nonumber \\
+ {} & + \left. 6181872 y^5 - 1630457 y^6 - 238086 y^7 - 31776 y^8 - 4120 y^9. \right.
+\end{align}
