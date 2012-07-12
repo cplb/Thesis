@@ -6,13 +6,13 @@ The published expressions contain a number of (minor) errors, we rederive the co
 
 The geodesic equations in Schwarzschild are
 \begin{align}
-\diff{t}{\tau} = \left(1-\frac{2m}{r}\right)^{-1}E, \\
-\left(\diff{r}{\tau}\right^2 = {} & \left(E^2 - 1\right) + \frac{2M}{r}\left(1 + \frac{L_z}^2{r^2}\right) - \frac{L_z^2}{r^2}, \\
+\diff{t}{\tau} = {} & \left(1-\frac{2m}{r}\right)^{-1}E, \\
+\left(\diff{r}{\tau}\right)^2 = {} & \left(E^2 - 1\right) + \frac{2M}{r}\left(1 + \frac{L_z^2}{r^2}\right) - \frac{L_z^2}{r^2}, \\
 \diff{\phi}{\tau} = {} & \frac{L_z}{r^2},
 \end{align}
 where $t$, $r$ and $\phi$ are the usual Schwarzschild coordinates, $\tau$ is the proper time, and we have introduced specific energy $E$ and azimuthal angular momentum $L_z$. Spherical symmetry has been exploited to set $\theta = \pi/2$ without loss of generality. For bound orbits, the radial equation has three roots, and can be written as
 \begin{equation}
-\left(\diff{r}{\tau}\right^2 = {} & -\left(E^2 - 1\right)\frac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
+\left(\diff{r}{\tau}\right)^2 = -\left(E^2 - 1\right)\frac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
 \end{equation}
 The turning points are the apoapsis, the periapsis and a third root; the orbit becomes unstable when $r\sub{p} = r_3$. An eccentricity can be defined, in analogy to Keplerian orbits, such that
 \begin{equation}
@@ -24,11 +24,11 @@ r_3 = \frac{2(1 + e)M}{(1+e)r\sub{p} - 4M}r\sub{p}.
 \end{equation}
 The last stable orbit with a given eccentricity, has periapse radius
 \begin{equation}
-r_\sub{p,\,LSO} = \frac{2(3 + e)M}{1+e}.
+r\sub{p,\,LSO} = \frac{2(3 + e)M}{1+e}.
 \end{equation}
 Orbits that approach closer than this will plunge into the black hole.
 
-The parameters $\[r\sub{p},e\}$ can be used to characterise orbits in place of $\{E,L_z\}$. The two are related by
+The parameters $\{r\sub{p},e\}$ can be used to characterise orbits in place of $\{E,L_z\}$. The two are related by
 \begin{align}
 E^2 = {} & 1 - \frac{(1 - e) \left[(1 + e)r\sub{p} - 4M\right]M}{\left[(1 + e)r\sub{p} - \left(3 + e^2\right)M\right]r\sub{p}}; \\
 L_z^2 = {} & \frac{(1 + e)^2 M r\sub{p}^2}{(1 + e)r\sub{p} - \left(3 + e^2\right)M}.
@@ -36,8 +36,8 @@ L_z^2 = {} & \frac{(1 + e)^2 M r\sub{p}^2}{(1 + e)r\sub{p} - \left(3 + e^2\right
 
 Following the semirelativistic approximation, the fluxes of energy and angular momentum can be derived by inserting the Schwarzschild geodesic into the flat-space radiation formulae, identified the coordinate $t$ with the flat-space time (MTW chapter 36)
 \begin{align}
-\diff{E}{t} = {} & -\recip{5}\left\langle\diffn{\Ibar_{ij}}{t}{3}\diffn{\Ibar^{ij}}{t}{3}\right\rangle,\\
-\diff{L_z}{t} = {} & -\frec{2}{5}\left\langle\diffn{\Ibar_{xi}}{t}{2}\diffn{\Ibar^{iy}}{t}{3} - \Ibar_{yi}}{t}{2}\diffn{\Ibar^{iz}}{t}{3}\right\rangle,
+\diff{E}{t} = {} & -\recip{5}\left\langle \diffn{\Ibar_{ij}}{t}{3}\diffn{\Ibar^{ij}}{t}{3}\right\rangle,\\
+\diff{L_z}{t} = {} & -\frac{2}{5}\left\langle\diffn{\Ibar_{xi}}{t}{2}\diffn{\Ibar^{iy}}{t}{3} - \diffn{\Ibar_{yi}}{t}{2}\diffn{\Ibar^{iz}}{t}{3}\right\rangle,
 \end{align}
 where $\Ibar_{ij} = I_{ij} - (1/3)I\delta_{ij}$ is the reduced mass quadrupole tensor and $\langle\ldots\rangle$ indicates averaging over several wavelengths (or periods). For a point particle, the mass quadrupole is
 \begin{equation}
@@ -52,19 +52,19 @@ The integrands are rational functions of $r$ and the square root of a cubic in $
 
 The integrals are of a general form
 \begin{equation}
-\mathscr{I}_n = \intd{r\sub{p}}{r\sub{a}}{\frac{M^{n+1}}{r^n\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}}{r}.
+\mathscr{I}_n = \intd{r\sub{p}}{r\sub{a}}{\frac{M^{n+1}}{r^n\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}}}{r}.
 \end{equation}
 By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}$ we may derive a recurrence relationship using integration by parts. After some rearrangement
 \begin{equation}
 \mathscr{I}_n = \frac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \frac{2n - 3}{2n - 1} \frac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \frac{2(n - 1)}{2n-1}\frac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
 \end{equation}
-Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series. The zeroth integral can be evaluated using  G&R 3.147.6 as
+Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series. The zeroth integral can be evaluated using  GnR 3.147.6 as
 \begin{equation}
-$\mathscr{I}_0$ = \frac{2M}{r\sub{p}}\sqrt{\frac{r\sub{p}}{r\sub{a} - r_3}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
+\mathscr{I}_0 = \frac{2M}{r\sub{p}}\sqrt{\frac{r\sub{p}}{r\sub{a} - r_3}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
 \end{equation}
-where K(k) is the complete elliptic integral of the first kind. The next integral can be evaluated using G&R 3.149.6 as
+where $K(k)$ is the complete elliptic integral of the first kind. The next integral can be evaluated using GnR 3.149.6 as
 \begin{equation}
-$\mathscr{I}_1$ = \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - (r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
+\mathscr{I}_1 = \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - (r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
 \end{equation}
 where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using (Olver 19.6.2)
 \begin{equation}
@@ -72,7 +72,7 @@ where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this in
 \end{equation}
 to rewrite in terms of the complete elliptic integral of the second kind. Hence
 \begin{equation}
-$\mathscr{I}_1$ = \frac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}\left\{K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \frac{r\sub{a} - r_3}{r\sub{a}E\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
+\mathscr{I}_1 = \frac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \frac{r\sub{a} - r_3}{r\sub{a}}E\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
 \end{equation}
 
 Substituting in for the integrals, we find that...
