@@ -1,6 +1,6 @@
 \chapter{Semirelativistic fluxes}
 
-The semirelativistic approximation for extreme-mass-ratio waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula\cite{Ruffini1981}. This is at the heart of the numerical kludge approximation. Gair, Kennefick and Larson derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the numerical kludge waveforms.
+The semirelativistic approximation for extreme-mass-ratio waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula~\citep{Ruffini1981}. This is at the heart of the numerical kludge approximation. \citet*{Gair2005} derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the numerical kludge waveforms.
 
 The published expressions contain a number of (minor) errors, we rederive the correct forms here. We assume an object of mass $m$ orbiting about another of mass $M$ with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For section we shall use geometric units with $G = c = 1$.
 
@@ -34,7 +34,7 @@ E^2 = {} & 1 - \frac{(1 - e) \left[(1 + e)r\sub{p} - 4M\right]M}{\left[(1 + e)r\
 L_z^2 = {} & \frac{(1 + e)^2 M r\sub{p}^2}{(1 + e)r\sub{p} - \left(3 + e^2\right)M}.
 \end{align}
 
-Following the semirelativistic approximation, the fluxes of energy and angular momentum can be derived by inserting the Schwarzschild geodesic into the flat-space radiation formulae, identified the coordinate $t$ with the flat-space time (MTW chapter 36)
+Following the semirelativistic approximation, the fluxes of energy and angular momentum can be derived by inserting the Schwarzschild geodesic into the flat-space radiation formulae, identified the coordinate $t$ with the flat-space time~\citep[chapter 36]{Misner1973}
 \begin{align}
 \diff{E}{t} = {} & -\recip{5}\left\langle\diffn{\Ibar_{ij}}{t}{3}\diffn{\Ibar^{ij}}{t}{3}\right\rangle,\\
 \diff{L_z}{t} = {} & -\frec{2}{5}\left\langle\diffn{\Ibar_{xi}}{t}{2}\diffn{\Ibar^{iy}}{t}{3} - \Ibar_{yi}}{t}{2}\diffn{\Ibar^{iz}}{t}{3}\right\rangle,
@@ -58,15 +58,15 @@ By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r
 \begin{equation}
 \mathscr{I}_n = \frac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \frac{2n - 3}{2n - 1} \frac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \frac{2(n - 1)}{2n-1}\frac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
 \end{equation}
-Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series. The zeroth integral can be evaluated using  G&R 3.147.6 as
+Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series. The zeroth integral can be evaluated using \citet[3.147.6]{Gardshteyn2000} as
 \begin{equation}
 $\mathscr{I}_0$ = \frac{2M}{r\sub{p}}\sqrt{\frac{r\sub{p}}{r\sub{a} - r_3}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
 \end{equation}
-where K(k) is the complete elliptic integral of the first kind. The next integral can be evaluated using G&R 3.149.6 as
+where $K(k)$ is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gardshteyn2000} as
 \begin{equation}
 $\mathscr{I}_1$ = \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - (r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
 \end{equation}
-where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using (Olver 19.6.2)
+where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using \citet[19.6.2]{Olver2010}
 \begin{equation}
 \Pi(k^2,k) = \frac{E(k)}{1 - k^2}
 \end{equation}
@@ -75,15 +75,13 @@ to rewrite in terms of the complete elliptic integral of the second kind. Hence
 $\mathscr{I}_1$ = \frac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}\left\{K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \frac{r\sub{a} - r_3}{r\sub{a}E\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
 \end{equation}
 
-Substituting in for the integrals, we find that...
-
-The energy lost in one orbit is
+Substituting in for the integrals, we find that the energy lost in one orbit is
 \begin{align}
 \frac{M}{m} \Delta E = {} & -\frac{16 M^{11}}{1673196525 r\sub{p}^{6} (1 + e)^{{19}/{2}} \left\{\left(r\sub{p} - 2 M\right)\left[(1 + e)r\sub{p} - 2(1 - e)M\right]\right\}^{{5}/{2}}} \nonumber \\
  {} & \times {} \left\{\sqrt{( 1+ e)\frac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\frac{r\sub{p}}{M}, e\right) \right. \nonumber \\
    {} & + \left. \frac{1 + e}{\sqrt{(1 + e)\left(r\sub{p}/M\right)- 2 (3 - e)}} K\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{2} \left(\frac{r\sub{p}}{M}, e\right)\right\},
 \end{align}
-where $K(k)$ and $E(k)$ are the complete elliptic integrals of the first and second kinds,
+where we have introduced functions
 \begin{align}
 f_1(y, e) = {} & 4608 (1 - e) (1 + e)^2 \left(3 + e^2\right)^2 \left(2428691599+313957879 e^2 + 1279504693 e^4 \right. \nonumber \\
  {} & + \left. 63843717 e^6\right)-192 (1 + e)^2 \left(908960573673 - 155717471796 e^2 \right.\nonumber \\

@@ -6,7 +6,7 @@ We wish to derive an inner product over the space of signals. We shall denote th
 
 \subsection{Basic properties}
 
-We will begin with some basic properties of Fourier transform. We shall define our transforamtions as
+We will begin with some basic properties of Fourier transform~\citep{Riley2002}. We shall define our transforamtions as
 \begin{subequations}
 \begin{align}
 x(t) = {} & \intd{-\infty}{\infty}{\widetilde{x}(f)\exp(2\pi ift)}{f} \\
@@ -25,9 +25,9 @@ We shall use Plancherel's theorem which proves the unitarity of the Fourier tran
  = {} & \intd{-\infty}{\infty}{\left|\widetilde{x}(f)\right|^2}{f}.
 \end{align}
 
-\subsection{Wiener-Knichin theorem}
+\subsection{Wiener–Khinchin theorem}
 
-We begin by deriving the Wiener-Khinchin theorem. For a real signal we must have $\widetilde{x}(f) = \widetilde{x}^\ast(f)$, and since $\widetilde{x}(f) = \widetilde{x}^\ast(-f)$
+We begin by deriving the Wiener–Khinchin theorem~\citep[chapter 28]{Kittel1958}. For a real signal we must have $\widetilde{x}(f) = \widetilde{x}^\ast(f)$, and since $\widetilde{x}(f) = \widetilde{x}^\ast(-f)$
 \begin{equation}
 \left|\widetilde{x}(f)\right|^2 = \left|\widetilde{x}(-f)\right|^2.
 \end{equation}
@@ -69,7 +69,7 @@ Inverting these
 G(f) = {} & 2 \intd{-\infty}{\infty}{C(\tau)\exp(-2\pi i f\tau)}{\tau} \\
  = {} & 4 \intd{0}{\infty}{C(\tau) \cos(2\pi f\tau)}{\tau}.
 \end{align}
-The power spectrum and correlation function are related to each other by the Fourier transform. This is the Wiener-Kinchin theorem.
+The power spectrum and correlation function are related to each other by the Fourier transform. This is the Wiener–Khinchin theorem.
 
 \section{Defining the inner product}
 
@@ -84,7 +84,7 @@ introducing the correlation function $C_n(\tau)$. If we have a measured signal $
 s = h + n.
 \end{equation}
 
-Let us consider a discrete signal $n_i \equiv n(t_i)$, with $t_i - t_j = (i - j)\upDelta t$ $\{i,j = -N, \ldots, N\}$ and $\upDelta T = 2T/(2N + 1)$. For a single point
+Let us consider a discrete signal $n_i \equiv n(t_i)$, with $t_i - t_j = (i - j)\upDelta t$ $\{i,j = -N, \ldots, N\}$ and $\upDelta T = 2T/(2N + 1)$. For a single point~\citep{Finn1992}
 \begin{equation}
 p(s_i|h_i) = \recip{\sqrt{2\pi C_n(0)}} \exp\left[-\recip{2} \frac{n_i^2}{C_n(0)}\right].
 \end{equation}
@@ -126,7 +126,7 @@ where $\tau = t_j - t_l$. Defining the transformation
 \begin{equation}
 \widetilde{C^{-1}}(f,t_k) = \intd{-\infty}{\infty}{C^{-1}(t,t_k)\exp(-2\pi if t)}{t},
 \end{equation}
-and using the Wiener-Khinchin theorem to define power spectrum
+and using the Wiener-Khinchin theorem to define power spectrum~\citep{Cutler1994}
 \begin{align}
 S_n(f) = {} & \lim_{T \rightarrow \infty} \recip{T} \overline{\left|\widetilde{n}(f)\right|^2} \\
  = {} & 2 \intd{-\infty}{\infty}{C_n(\tau)\exp(-2\pi i f\tau)}{\tau},
@@ -135,7 +135,7 @@ we have
 \begin{equation}
 \exp(-2\pi i f t_k) = \lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \frac{S_n(f)}{2} \widetilde{C^{-1}}(f,t_k).
 \end{equation}
-This can be rearranged to define $\widetilde{C^{-1}}(f,t_k)$.
+This can be rearranged to define $\widetilde{C^{-1}}(f,t_k)$~\citep{Finn1992}.
 
 The term in the exponential in \eqnref{prod_prob} has the limit
 \begin{align}
