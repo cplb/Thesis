@@ -88,8 +88,7 @@ here $L_\infty$ is the total specific angular momentum at infinity, where the me
 
 In integrating the geodesic equations, difficulties can arise because of the presence of turning points, when the sign of the $r$ or $\theta$ geodesic equation changes. The radial turning points are at the periapsis $r\sub{p}$ and at infinity. We may locate the periapsis by finding the roots of
 \begin{align}
-V_r = {} & 2M_\bullet r^3 - \left(L_z^2+Q\right)r^2 + 2M_\bullet\left[\left(L_z - a\right)^2 + Q\right]r - a^2 Q \nonumber \\
- = {} & 0.
+V_r = {} & 2M_\bullet r^3 - \left(L_z^2+Q\right)r^2 + 2M_\bullet\left[\left(L_z - a\right)^2 + Q\right]r - a^2 Q = {} 0.
 \end{align}
 This has three roots, which we shall denote $\{r_1, r_2, r\sub{p}\}$; the periapsis $r\sub{p}$ is the largest real root.\footnote{We do not find the apoapsis as a (fourth) root to this equation as we have removed it by taking $E = 1$ before solving. This turning point can be found by setting the unconstrained expression for $V_r$ equal to zero, and then solving for $E(r)$; taking the limit $r \rightarrow \infty$ gives $E \rightarrow 1$ \citep{Wilkins1972}.}
 
@@ -116,7 +115,7 @@ If we change variable to $\zeta = \cos^2\theta$, we have a maximum value $\zeta_
 See \figref{L_triangle} for a geometrical visualization.
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.2\textwidth]{Triangle.eps}
+\includegraphics[width=0.3\textwidth]{./images/Triangle.eps}
     \caption{The angular momenta $L_\infty$, $L_z$ and $\sqrt{Q}$ define a right-angled triangle. The acute angles are $\theta_0$, the extremal value of the polar angle, and $\iota$, the orbital inclination \citep*{Glampedakis2002}.}
    \label{fig:L_triangle}
 \end{center}
@@ -199,7 +198,7 @@ The classic \textit{LISA} design is a three arm, space-borne laser interferomete
 To describe the detector configuration, and to transform from the MBH coordinate system to those of the detector, we find it useful to define three coordinate systems: those of the BH at the GC $x_\bullet^i$; ecliptic coordinates centred at the solar system (SS) barycentre $x_\odot^i$, and coordinates that co-rotate with the detector $x\sub{d}^i$. The MBH's coordinate system and the SS coordinate system are depicted in \figref{BH_SS}.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.35\textwidth]{BH_SS_angles.eps}
+ \includegraphics[width=0.4\textwidth]{./images/BH_SS_angles.eps}
     \caption{The relationship between the MBH's coordinate system $x_\bullet^i$ and the SS coordinate system $x_\odot^i$. The MBH's spin axis is aligned with the $z_\bullet$-axis. The orientation of the MBH's $x$- and $y$-axes is arbitrary. We choose $x_\bullet$ to be orthogonal to the direction to the SS.}
    \label{fig:BH_SS}
 \end{center}
@@ -207,7 +206,7 @@ To describe the detector configuration, and to transform from the MBH coordinate
 The mission geometry for \textit{LISA}/\textit{eLISA} is shown in \figref{SS_LISA}.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.27\textwidth]{SS_LISA.eps}
+ \includegraphics[width=0.35\textwidth]{./images/SS_LISA.eps}
     \caption{The relationship between the detector coordinates $x\sub{d}^i$ and the ecliptic coordinates of the SS $x_\odot^i$ \citep{Bender1998, Jennrich2011}.}
    \label{fig:SS_LISA}
 \end{center}
@@ -215,7 +214,7 @@ The mission geometry for \textit{LISA}/\textit{eLISA} is shown in \figref{SS_LIS
 We define the detector coordinates such that the detector-arms lie in the $x\sub{d}$-$y\sub{d}$ plane as shown in \figref{LISA_arms}.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.25\textwidth]{LISA_arms.eps}
+ \includegraphics[width=0.32\textwidth]{./images/LISA_arms.eps}
     \caption{The alignment of the three detector arms, with lengths $L_1$, $L_2$ and $L_3$, within the $x\sub{d}$-$y\sub{d}$ plane \citep{Cutler1998}. The origin of the detector coordinates coincides with the centre of mass of the constellation of satellites.}
    \label{fig:LISA_arms}
 \end{center}
@@ -290,7 +289,7 @@ p(\boldsymbol{s}(t)|\boldsymbol{h}(t)) \propto \exp\left[-\recip{2}\innerprod{\b
 \textit{LISA}'s noise has two sources: instrumental noise and confusion noise, primarily from white dwarf binaries. The latter may be divided into contributions from galactic and extragalactic binaries. In this work we use the noise model of \citet{Barack2004}. The shape of the noise curve can be seen in \figref{Noise}. The instrumental noise dominates at both high and low frequencies. The confusion noise is important at intermediate frequencies, and is responsible for the cusp around $10^{-3}\units{Hz}$. \textit{eLISA} shares the same sources of noise, but is less affected by confusion. Its sensitivity regime is shifted to higher frequencies because of a shorter arm length.
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.45\textwidth]{Fig_Noise}
+\includegraphics[width=0.6\textwidth]{./images/Fig_Noise}
 \caption{The detector noise curves. The solid line indicates the analytic approximation of \citet{Barack2004} used in this work. For comparison, the dashed line is from the online \textit{LISA} sensitivity curve generator (\url{http://www.srl.caltech.edu/~shane/sensitivity/}; \citealt*{Larson2000, Larson2002}). For bursts from the Galactic Centre we are most interested in the low-frequency region where the two curves are the same. The dot-dashed line shows the \textit{eLISA} noise curve.}
 \label{fig:Noise}
 \end{center}
@@ -305,15 +304,15 @@ There is one remaining complication regarding signal analysis: since we are Four
 \subsection{Model parameters}
 
 The shape of the waveform depends on a number of parameters: those defining the MBH; those defining the companion object on its orbit, and those defining the \textit{LISA} detector. Let us define $\boldsymbol{\lambda} = \left\{\lambda^1, \lambda^2, \ldots, \lambda^Z\right\}$ as the set of $Z$ parameters which specify the GW. For our model, the input parameters are:
-\begin{enumerate}
-\item[(1)] The MBH's mass $M_\bullet$. This is currently well constrained by the observation of stellar orbits about Sgr A* \citep{Ghez2008, Gillessen2009}, with the best estimate being $M_\bullet = (4.31 \pm 0.36) \times 10^6 M_\odot$. This depends upon the galactic centre distance $R_0$ as $M_\bullet = (3.95 \pm 0.06|\sub{stat} \pm 0.18|_{R_0, \, \mathrm{stat}} \pm  0.31|_{R_0, \, \mathrm{sys}}) \times 10^6 M_\odot (R_0 / 8\units{kpc})^{2.19}$, where the errors are statistical, independent of $R_0$; statistical from the determination of $R_0$, and systematic from $R_0$ respectively.
-\item[(2)] The spin parameter $a_\ast$. Naively this could be anywhere in the range $|a_\ast| < 1$; however it is possible to place an upper bound by contemplating spin-up mechanisms. Considering the torque from radiation emitted by an accretion disc, and swallowed by the BH, it can be shown that $|a_\ast| \lesssim 0.998$ \citep{Thorne1974}. Magnetohydrodynamical simulations of accretion discs produce a smaller maximum value of $|a_\ast| \sim 0.95$ \citep{Gammie2004}. The actual spin value could be much lower than this upper bound depending upon the MBH's evolution (as discussed in \secref{Intro}).
-\item[(3,4)] The orientation angles for the black hole spin $\Theta\sub{K}$ and $\Phi\sub{K}$.
-\item[(5)] The ratio of the SS-GC distance $R_0$ and the CO mass $\mu$, which we denote as $\zeta = R_0/\mu$. This scales the amplitude of the waveform. Bursts, unlike inspirals, do not undergo orbital evolution, hence we cannot break the degeneracy in $R_0$ and $\mu$, and they cannot be inferred separately. The distance, like $M_\bullet$, is constrained by stellar orbits, the best estimate being \citep{Gillessen2009} $R_0 = 8.33 \pm 0.35\units{kpc}$. The mass of the orbiting particle depends upon the type of object: whether it is an MS star, WD, NS or BH. Since we shall not know the $\mu$ precisely, we shall not be able to infer anything more about the distance to the GC.
-\item[(6, 7)] The angular momentum of the CO. This can be described using either $\{L_z, Q\}$ or $\{L_\infty, \iota\}$. We employ the latter, as the total angular momentum and inclination are less tightly correlated. Assuming spherical symmetry, we expect $\cos \iota$ to be uniformly distributed.
-\item[(8--10)] A set of coordinates to specify the trajectory. These could be positions at an arbitrary time. We use the angular phases at periapse, $\phi\sub{p}$ and $\chi\sub{p}$ (which determines $\theta\sub{p}$), as well as the time of periapse $t\sub{p}$.
-\item[(11, 12)] The coordinates of the MBH from the SS barycentre $\overline{\Theta}$ and $\overline{\Phi}$. These may be taken as the coordinates of Sgr A*, as the radio source is expected to be within ten Schwarzschild radii of the MBH \citep{Reid2003,Doeleman2008}. At the epoch J2000.0 $\overline{\Theta} = {95.607669}^{\circ}$, $\overline{\Phi} = {266.851760}^{\circ}$ \citep{Reid1999, Yusef-Zadeh1999}. They change with time due to the rotation of the SS about the GC; the proper motion is about $6\units{mas\,yr^{-1}}$, mostly in the plane of the galaxy \citep{Reid1999, Backer1999, Reid2003}. The position is already determined to high accuracy: an EMRB can only give weak constraints on source position.\footnote{For comparison, an EMRI, which should be more informative, can only give sky localisation to $\sim 10^{-3}~\mathrm{steradians}$ \citep{Barack2004, Huerta2009}.} Therefore we take it as known and shall not try to infer it.
-\item[(13, 14)] The orbital position of the \textit{LISA} satellites given by $\overline{\phi}$ and $\varphi$. We assume that the initial positions are chosen such that $\overline{\phi} = 0$ when $\varphi = 0$ \citep{Cutler1998}; this choice does not qualitatively influence our results. The orbital position should be known, so this need not be inferred.\\
+\begin{enumerate}[leftmargin=*, widest=\:88--88.]
+\item[1.] The MBH's mass $M_\bullet$. This is currently well constrained by the observation of stellar orbits about Sgr A* \citep{Ghez2008, Gillessen2009}, with the best estimate being $M_\bullet = (4.31 \pm 0.36) \times 10^6 M_\odot$. This depends upon the galactic centre distance $R_0$ as $M_\bullet = (3.95 \pm 0.06|\sub{stat} \pm 0.18|_{R_0, \, \mathrm{stat}} \pm  0.31|_{R_0, \, \mathrm{sys}}) \times 10^6 M_\odot (R_0 / 8\units{kpc})^{2.19}$, where the errors are statistical, independent of $R_0$; statistical from the determination of $R_0$, and systematic from $R_0$ respectively.
+\item[2.] The spin parameter $a_\ast$. Naively this could be anywhere in the range $|a_\ast| < 1$; however it is possible to place an upper bound by contemplating spin-up mechanisms. Considering the torque from radiation emitted by an accretion disc, and swallowed by the BH, it can be shown that $|a_\ast| \lesssim 0.998$ \citep{Thorne1974}. Magnetohydrodynamical simulations of accretion discs produce a smaller maximum value of $|a_\ast| \sim 0.95$ \citep{Gammie2004}. The actual spin value could be much lower than this upper bound depending upon the MBH's evolution (as discussed in \secref{Intro}).
+\item[3, 4.] The orientation angles for the black hole spin $\Theta\sub{K}$ and $\Phi\sub{K}$.
+\item[5] The ratio of the SS-GC distance $R_0$ and the CO mass $\mu$, which we denote as $\zeta = R_0/\mu$. This scales the amplitude of the waveform. Bursts, unlike inspirals, do not undergo orbital evolution, hence we cannot break the degeneracy in $R_0$ and $\mu$, and they cannot be inferred separately. The distance, like $M_\bullet$, is constrained by stellar orbits, the best estimate being \citep{Gillessen2009} $R_0 = 8.33 \pm 0.35\units{kpc}$. The mass of the orbiting particle depends upon the type of object: whether it is an MS star, WD, NS or BH. Since we shall not know the $\mu$ precisely, we shall not be able to infer anything more about the distance to the GC.
+\item[6, 7.] The angular momentum of the CO. This can be described using either $\{L_z, Q\}$ or $\{L_\infty, \iota\}$. We employ the latter, as the total angular momentum and inclination are less tightly correlated. Assuming spherical symmetry, we expect $\cos \iota$ to be uniformly distributed.
+\item[8--10.] A set of coordinates to specify the trajectory. These could be positions at an arbitrary time. We use the angular phases at periapse, $\phi\sub{p}$ and $\chi\sub{p}$ (which determines $\theta\sub{p}$), as well as the time of periapse $t\sub{p}$.
+\item[11, 12] The coordinates of the MBH from the SS barycentre $\overline{\Theta}$ and $\overline{\Phi}$. These may be taken as the coordinates of Sgr A*, as the radio source is expected to be within ten Schwarzschild radii of the MBH \citep{Reid2003,Doeleman2008}. At the epoch J2000.0 $\overline{\Theta} = {95.607669}^{\circ}$, $\overline{\Phi} = {266.851760}^{\circ}$ \citep{Reid1999, Yusef-Zadeh1999}. They change with time due to the rotation of the SS about the GC; the proper motion is about $6\units{mas\,yr^{-1}}$, mostly in the plane of the galaxy \citep{Reid1999, Backer1999, Reid2003}. The position is already determined to high accuracy: an EMRB can only give weak constraints on source position.\footnote{For comparison, an EMRI, which should be more informative, can only give sky localisation to $\sim 10^{-3}~\mathrm{steradians}$ \citep{Barack2004, Huerta2009}.} Therefore we take it as known and shall not try to infer it.
+\item[13, 14.] The orbital position of the \textit{LISA} satellites given by $\overline{\phi}$ and $\varphi$. We assume that the initial positions are chosen such that $\overline{\phi} = 0$ when $\varphi = 0$ \citep{Cutler1998}; this choice does not qualitatively influence our results. The orbital position should be known, so this need not be inferred.\\
 \end{enumerate}
 We therefore have a $14$ dimensional parameter space, of which we are interested in inferring $d = 10$ parameters.
 
@@ -322,8 +321,8 @@ We therefore have a $14$ dimensional parameter space, of which we are interested
 \Figref{Examples} shows example waveforms to demonstrate some of the possible variations in the signal. All these assume the standard mass and position for the MBH as well as a $\mu = 10 M_\odot$ orbiting CO; other (randomly chosen) orbital parameters are specified in the captions. Radii are given in terms of the gravitational radius $r\sub{g} = GM_\bullet / c^2$.
 \begin{figure}
   \begin{center}
-   \subfigure[{Waveform for $a_\ast \simeq 0.12$, $r\sub{p} \simeq 15.6 r\sub{g}$ and $\iota \simeq 2.1$. The SNR for the spherical polar kludge waveform (plotted) is $\rho[\boldsymbol{h}\sub{sph}] \simeq 451$, for the oblate-spheroidal kludge it is $\rho[\boldsymbol{h}\sub{ob}] \simeq 451$ (agreement to $0.01\%$).}]{\label{fig:Orbit_233} \includegraphics[width=0.45\textwidth]{Fig_new_sph_h_233}} \quad
-   \subfigure[{Waveform for $a_\ast \simeq 0.74$, $r\sub{p} \simeq 3.2 r\sub{g}$ and $\iota \simeq 1.2$. The SNR for the spherical polar kludge waveform (plotted) is $\rho[\boldsymbol{h}\sub{sph}] \simeq 70600$, for the oblate-spheroidal kludge it is $\rho[\boldsymbol{h}\sub{ob}] \simeq 74900$.}]{\label{fig:Orbit_135} \includegraphics[width=0.45\textwidth]{Fig_new_sph_h_135}}  
+   \subfigure[{Waveform for $a_\ast \simeq 0.12$, $r\sub{p} \simeq 15.6 r\sub{g}$ and $\iota \simeq 2.1$. The SNR for the spherical polar kludge waveform (plotted) is $\rho[\boldsymbol{h}\sub{sph}] \simeq 451$, for the oblate-spheroidal kludge it is $\rho[\boldsymbol{h}\sub{ob}] \simeq 451$ (agreement to $0.01\%$).}]{\label{fig:Orbit_233} \includegraphics[width=0.47\textwidth]{./images/Fig_new_sph_h_233}} \quad
+   \subfigure[{Waveform for $a_\ast \simeq 0.74$, $r\sub{p} \simeq 3.2 r\sub{g}$ and $\iota \simeq 1.2$. The SNR for the spherical polar kludge waveform (plotted) is $\rho[\boldsymbol{h}\sub{sph}] \simeq 70600$, for the oblate-spheroidal kludge it is $\rho[\boldsymbol{h}\sub{ob}] \simeq 74900$.}]{\label{fig:Orbit_135} \includegraphics[width=0.47\textwidth]{./images/Fig_new_sph_h_135}}  
 \label{fig:Examples}
 \caption{Example burst waveforms from the galactic centre. The strain $\widetilde{h}\sub{I}(f)$ is indicated by the solid line, $\widetilde{h}\sub{II}(f)$ by the dot-dashed line, and the noise curve by the dashed line. The kludge has been formulated using spherical polar coordinates.}
   \end{center}
@@ -334,7 +333,7 @@ The plotted waveforms use the spherical polar coordinate system for the NK. Usin
 To examine the effect of the coordinate choice, we compare SNRs calculated using the alternative schemes for a selection of orbits. The MBH parameters were fixed as for the GC, the orbital parameters were chosen such that periapse distance was drawn from a logarithmic distribution (down to the innermost stable orbit), and other parameters were drawn from appropriate uniform distributions. The ratio of the two SNRs is shown in \figref{Oblate_sphere}.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.45\textwidth]{Fig_SNR_ratio}
+ \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_ratio}
  \label{fig:Oblate_sphere}
  \caption{Ratio of SNR for a waveform calculated using spherical polar coordinates to that for a waveform using oblate-spheroidal coordinates.}
    \end{center}
@@ -359,7 +358,7 @@ We take the mean of $\ln \rho$ for each set of randomised intrinsic parameters (
 There exists a correlation between the periapse radius and SNR, as shown in \figref{SNR}.
 \begin{figure}
   \begin{center}
-  \includegraphics[width=0.45\textwidth]{Fig_SNR}
+  \includegraphics[width=0.6\textwidth]{./images/Fig_SNR}
     \caption{Mass-normalised SNR as a function of periapse radius. The plotted points are the values obtained by averaging over each set of intrinsic parameters. The best fit line is $\log(\hat{\rho}) = -2.69\log(r\sub{p}/r\sub{g}) + 4.88$. This is fitted to orbits with $r\sub{p} >  13.0 r\sub{g}$ and has a reduced chi-squared value of $\chi^2/\nu = 1.73$.}
     \label{fig:SNR}
   \end{center}
@@ -420,13 +419,11 @@ P(n) = \frac{32}{5}\frac{G^4}{c^5}\frac{M_\bullet^2\mu^2(M_\bullet + \mu)(1-e)^5
 \label{eq:PM_P}
 \end{equation}
 where the function $g(n,e)$ is defined in terms of Bessel functions of the first kind
-\begin{eqnarray}
-g(n,e) & = & \frac{n^4}{32}\left\{\left[J_{n-2}(ne) - 2eJ_{n-1}(ne) \vphantom{\frac{2}{n}J_n(ne)} \right. \right. \nonumber \\*
- & & \left. + \frac{2}{n}J_n(ne) + 2eJ_{n+1}(ne) - J_{n+2}(ne)\right]^2 \nonumber \\*
- & & + \left(1 - e^2\right)\left[J_{n-2}(ne) - 2J_n(ne) + J_{n+2}(ne)\right]^2 \nonumber \\*
- & & \left. + \frac{4}{3n^2}\left[J_n(ne)\right]^2\right\}.
+\begin{align}
+g(n,e) = {} & \frac{n^4}{32}\left\{\left[J_{n-2}(ne) - 2eJ_{n-1}(ne) + \frac{2}{n}J_n(ne) + 2eJ_{n+1}(ne) - J_{n+2}(ne)\right]^2 \right. \nonumber \\*
+ & + \left. \left(1 - e^2\right)\left[J_{n-2}(ne) - 2J_n(ne) + J_{n+2}(ne)\right]^2 + \frac{4}{3n^2}\left[J_n(ne)\right]^2\right\}.
 % Line breaks follow Peters and Mathews paper
-\end{eqnarray}
+\end{align}
 The Keplerian orbital frequency is
 \begin{equation}
 \omega_1^2 = \frac{G(M_\bullet + \mu)(1 - e)^3}{r\sub{p}^3} = (1 - e)^3\omega\sub{c}^2,
@@ -442,18 +439,18 @@ as $e \rightarrow 1$ for a parabolic orbit, $\omega_1 \rightarrow 0$ as the orbi
 \left.\diff{E}{\omega}\right|_{\omega_n}\omega_1 = E(n).
 \end{equation}
 Changing to linear frequency $2\pi f = \omega$,
-\begin{eqnarray}
-\left.\diff{E}{f}\right|_{f_n} & = & \frac{128\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}(1-e)^2g(n,e) \\*
- & = & \frac{4\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\ell(n,e),
+\begin{align}
+\left.\diff{E}{f}\right|_{f_n}  = {} & \frac{128\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}(1-e)^2g(n,e) \\*
+  = {} & \frac{4\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\ell(n,e),
 \label{eq:PM_spectrum}
-\end{eqnarray}
+\end{align}
 where the function $\ell(n,e)$ is defined in the last line. For a parabolic orbit, we must take the limit of $\ell(n,e)$ as $e \rightarrow 1$.
 
 We simplify $\ell(n,e)$ using the recurrence formulae \citep[section 2.12]{Watson1995}
-\begin{eqnarray}
-J_{\nu-1}(z) + J_{\nu+1}(z) & = & \frac{2\nu}{z}J_\nu(z)\\*
-J_{\nu-1}(z) - J_{\nu+1}(z) & = & 2J'_\nu(z),\label{eq:J_derivative}
-\end{eqnarray}
+\begin{align}
+J_{\nu-1}(z) + J_{\nu+1}(z)  = {} & \frac{2\nu}{z}J_\nu(z)\\*
+J_{\nu-1}(z) - J_{\nu+1}(z)  = {} & 2J'_\nu(z),\label{eq:J_derivative}
+\end{align}
 and eliminate $n$ using
 \begin{equation}
 n = \frac{\omega_n}{\omega_1} = (1-e)^{-3/2}\tilde{f},
@@ -469,10 +466,10 @@ The Bessel function has an integral representation
 J_\nu(z) = \recip{\pi}\intd{0}{\pi}{\cos(\nu\vartheta - z\sin\vartheta)}{\vartheta};
 \end{equation}
 we want the limit of this for $\nu \rightarrow \infty$, $z \rightarrow \infty$, with $z \leq \nu$. Using the stationary phase approximation, the dominant contribution to the integral comes from the regime in which the argument of the cosine is approximately zero \citep[sections 8.2, 8.43]{Watson1995}, for small $\vartheta$:
-\begin{eqnarray}
-J_\nu(z) & \sim & \recip{\pi}\intd{0}{\pi}{\cos\left(\nu\vartheta - z\vartheta + \frac{z}{6}\vartheta^3\right)}{\vartheta}\\*
- & \sim & \recip{\pi}\intd{0}{\infty}{\cos\left(\nu\vartheta - z\vartheta + \frac{z}{6}\vartheta^3\right)}{\vartheta};
-\end{eqnarray}
+\begin{align}
+J_\nu(z)  \sim {} & \recip{\pi}\intd{0}{\pi}{\cos\left(\nu\vartheta - z\vartheta + \frac{z}{6}\vartheta^3\right)}{\vartheta}\\*
+  \sim {} & \recip{\pi}\intd{0}{\infty}{\cos\left(\nu\vartheta - z\vartheta + \frac{z}{6}\vartheta^3\right)}{\vartheta};
+\end{align}
 this last expression is an Airy integral and has a standard form \citep[section 6.4]{Watson1995}
 \begin{equation}
 \intd{0}{\infty}{\cos(t^3 + xt)}{t} = \frac{\sqrt{x}}{3}K_{1/3}\left(\frac{2x^{3/2}}{3^{3/2}}\right),
@@ -492,24 +489,21 @@ A(\tilde{f}) = \recip{\pi}\sqrt{\frac{2}{3}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}
 \end{equation}
 
 To find the derivative we combine \eqnref{J_derivative} and \eqnref{J_nu}, and expand to lowest order yielding
-\begin{eqnarray}
-J'_n(ne) & \sim & -\frac{1}{2\pi}\sqrt{\frac{2}{3}}(1-e)\left[2^{3/2}K'_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) \right. \nonumber \\*
- & & \left. + \recip{\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
-\end{eqnarray}
+\begin{align}
+J'_n(ne) \sim {} & -\frac{1}{2\pi}\sqrt{\frac{2}{3}}(1-e)\left[2^{3/2}K'_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + \recip{\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
+\end{align}
 We may re express the derivative using the recurrence formula \citep[section 3.71]{Watson1995}
 \begin{equation}
 K_{\nu-1}(z) + K_{\nu+1}(z) = -2K'_\nu(z)
 \end{equation}
 to give
-\begin{eqnarray}
-J'_n(ne) & \sim & \frac{1-e}{\sqrt{3}\pi}\left[K_{-2/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) \right. \nonumber \\*
- & & \left. - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
-\end{eqnarray}
+\begin{align}
+J'_n(ne)  \sim {} & \frac{1-e}{\sqrt{3}\pi}\left[K_{-2/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
+\end{align}
 And so finally we obtain the well-defined
-\begin{eqnarray}
-B(\tilde{f}) & = & \recip{\sqrt{3}\pi}\left[K_{-2/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) \right. \nonumber \\*
- & & \left. - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
-\end{eqnarray}
+\begin{align}
+B(\tilde{f})  = {} & \recip{\sqrt{3}\pi}\left[K_{-2/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
+\end{align}
 
 Having obtained expressions for $A(\tilde{f})$ and $B(\tilde{f})$ in terms of standard functions, we can now calculate the energy spectrum for a parabolic orbit. From \eqnref{PM_spectrum}
 \begin{equation}
@@ -517,14 +511,15 @@ Having obtained expressions for $A(\tilde{f})$ and $B(\tilde{f})$ in terms of st
 \label{eq:PM_dEdf}
 \end{equation}
 where we have used the limit
-\begin{eqnarray}
-\ell(\tilde{f}) & = & \left[8\tilde{f}^2B(\tilde{f}) - 2\tilde{f}A(\tilde{f})\right]^2 \nonumber \\*
- & & + \left(128\tilde{f}^4 + \frac{4\tilde{f}^2}{3}\right)\left[A(\tilde{f})\right]^2.
-\end{eqnarray}
+\begin{align}
+\ell(\tilde{f})  = {} & \left[8\tilde{f}^2B(\tilde{f}) - 2\tilde{f}A(\tilde{f})\right]^2 + \left(128\tilde{f}^4 + \frac{4\tilde{f}^2}{3}\right)\left[A(\tilde{f})\right]^2.
+\end{align}
 This agrees with the $e = 1$ result of \citet{Turner1977}, which was computed by direct integration along unbound orbits. \Figref{ell} shows how $\ell(n,e)$ changes with eccentricity including our result for a parabolic encounter. Although more power is radiated into higher harmonics, the peak of the spectrum does not move much: it is always between $f = f\sub{c}$ and $f = 2 f\sub{c}$, with $f = 2 f\sub{c}$ for $e = 0$ and $f \simeq 1.637 f\sub{c}$ for $e = 1$.
 \begin{figure}
-\includegraphics{Fig_ell.eps}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{./images/Fig_ell.eps}
 \caption{The relative energy (per orbit) spectrum $\ell(n,e)$ for $e = 0.2$ (heavy line), $e = 0.5$ (medium line), $e = 0.7$ (light line), and the limiting result for $e = 1$ (dashed line) versus frequency. Compare with figure 3 of \citet{Peters1963}.\label{fig:ell}}
+\end{center}
 \end{figure}
 
 \subsubsection{Total Energy}
@@ -561,12 +556,12 @@ The two total energies are consistent, $E\sub{int} = E\sub{sum}$.
 Two energy spectra are plotted in \figref{Energy} for orbits with periapses of $r\sub{p} = 15.0 r\sub{g}$, $30.0 r\sub{g}$ and $60.0 r\sub{g}$.
 \begin{figure*}
   \begin{center}
-   \subfigure[$r\sub{p} = 15.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.45\textwidth]{Fig_Loglog_E_15}} \quad
-   \subfigure[$r\sub{p} = 15.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.45\textwidth]{Fig_Loglin_E_15}} \\
-   \subfigure[$r\sub{p} = 30.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.45\textwidth]{Fig_Loglog_E_30}} \quad
-   \subfigure[$r\sub{p} = 30.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.45\textwidth]{Fig_Loglin_E_30}} \\
-   \subfigure[$r\sub{p} = 60.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.45\textwidth]{Fig_Loglog_E_60}} \quad
-   \subfigure[$r\sub{p} = 60.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.45\textwidth]{Fig_Loglin_E_60}}
+   \subfigure[$r\sub{p} = 15.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.42\textwidth]{./images/Fig_Loglog_E_15}} \quad
+   \subfigure[$r\sub{p} = 15.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.42\textwidth]{./images/Fig_Loglin_E_15}} \\
+   \subfigure[$r\sub{p} = 30.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.42\textwidth]{./images/Fig_Loglog_E_30}} \quad
+   \subfigure[$r\sub{p} = 30.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.42\textwidth]{./images/Fig_Loglin_E_30}} \\
+   \subfigure[$r\sub{p} = 60.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.42\textwidth]{./images/Fig_Loglog_E_60}} \quad
+   \subfigure[$r\sub{p} = 60.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.42\textwidth]{./images/Fig_Loglin_E_60}}
     \caption{Energy spectra for a parabolic orbit of a $\mu = 10 M_\odot$ object about a Schwarzschild BH with $M_\bullet = 4.31 \times 10^6 M_\odot$. The spectra calculated from the NK waveform is shown by the solid line and the Peters and Mathews flux is indicated by the dashed line. The NK waveform includes octupole contributions. The high frequency tail is the result of spectral leakage.}
     \label{fig:Energy}
   \end{center}
@@ -576,8 +571,8 @@ The two spectra appear to be in good agreement, showing the same general shape i
 Comparing the total energy fluxes, ratios of the various energies are plotted in \figref{Energy_ratio}.
 \begin{figure*}
   \begin{center}
-   \subfigure[Versus periapsis]{\includegraphics[width=0.45\textwidth]{Fig_Energy_ratio_peri}} \quad
-   \subfigure[Versus amount of rotation]{\includegraphics[width=0.45\textwidth]{Fig_Energy_ratio_orbit}}
+   \subfigure[Versus periapsis]{\includegraphics[width=0.47\textwidth]{./images/Fig_Energy_ratio_peri}} \quad
+   \subfigure[Versus amount of rotation]{\includegraphics[width=0.47\textwidth]{./images/Fig_Energy_ratio_orbit}}
     \caption{Ratios of energies as a function of periapsis $r\sub{p}$ and $2\pi$ divided by the total angle of rotation in one orbit $\Delta\phi$ ($2\pi/\Delta\phi = 1$ for a Keplerian orbit). The solid line shows the ratio of the numerical kludge and Martel energies $E\sub{NK}/E\sub{M}$; the dashed line shows the ratio of the NK energy calculated using only the mass quadrupole term and the Martel energy $E\sub{NK(Q)}/E\sub{M}$; the dot-dashed line shows the ratio of the quadrupole and quadrupole-octupole NK energies $E\sub{NK(Q)}/E\sub{NK}$, and the dotted line shows the ratio of the Peters and Mathews and quadrupole NK energies $E\sub{PM}/E\sub{NK(Q)}$. The spots show the mapping between the two abscissa scales. Compare with figure 4 of \citet{Gair2005}.}
     \label{fig:Energy_ratio}
   \end{center}
@@ -596,10 +591,10 @@ where $\Ibar_{ij} = I_{ij} - (1/3)I\delta_{ij}$ is the reduced mass quadrupole t
 All three agree to within computational error. No difference is visible on the scale plotted in \figref{Energy_ratio}. This demonstrates the validity of the code.
 
 We have used the amount of rotation $\Delta\phi$ as a convenient measure for the abscissa. For an equatorial orbit in Kerr spacetime,
-\begin{eqnarray}
-\Delta\phi & = & \recip{2}\intd{r\sub{p}}{\infty}{\diff{\phi}{r}}{r} \nonumber \\*
- & = & \sqrt{\frac{2}{M_\bullet}}L_z\intd{r\sub{p}}{\infty}{\frac{r^2 - 2M_\bullet(1 - a/L_z)r}{(r^2 - 2M_\bullet r + a^2)w}}{r},
-\end{eqnarray}
+\begin{align}
+\Delta\phi  = {} & 2\intd{r\sub{p}}{\infty}{\diff{\phi}{r}}{r} \nonumber \\*
+  = {} & \sqrt{\frac{2}{M_\bullet}}L_z\intd{r\sub{p}}{\infty}{\frac{r^2 - 2M_\bullet(1 - a/L_z)r}{(r^2 - 2M_\bullet r + a^2)w}}{r},
+\end{align}
 where
 \begin{equation}
 w^2 = r^3 - \frac{L_z^2}{2M_\bullet}r^2 + (L_z - a)^2r;
@@ -649,5 +644,3 @@ The signal-to-noise ratio of bursts is well correlated with the periapsis. Excep
 Signals should be detectable for a $1 M_\odot$ ($10 M_\odot$) object if the periapse is $r\sub{p} < 27 r\sub{g}$ ($r\sub{p} < 65 r\sub{g}$), corresponding to a physical scale of $1.7 \times 10^{11}\units{m}$ ($4.1 \times 10^{11}\units{m}$) or $5.6 \times 10^{-6}\units{pc}$ ($1.3 \times 10^{-5}\units{pc}$).
 
 Using the NK waveforms constructed here, it is possible to estimate the precision to which the properties of the Galaxy's MBH could be measured. This is outside the scope of this work. However, we can confirm for periapses smaller than $\sim 10 r\sub{g}$, EMRBs are informative, and provide good constraints on both the MBH's mass and spin. Closer orbits provide better constraints, with the best giving accuracies of better than one part in $10^4$ for both the mass and spin parameter.
-
-\end{document}

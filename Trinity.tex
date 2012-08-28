@@ -27,10 +27,10 @@
 \usepackage{afterpage}
 \usepackage{appendix}
 \usepackage[latin9]{inputenc}
-\usepackage{fixmath}
+%\usepackage{fixmath}
 \usepackage{paralist}
 \usepackage{hyperref}
-\usepackage[numbers, sort&compress]{natbib}
+\usepackage[authoryear, sort&compress]{natbib}
 \renewcommand{\bibfont}{\footnotesize}
 \renewcommand{\bibname}{{R\lowercase{eferences}}}
 \setlength{\bibhang}{0pt} 
@@ -93,14 +93,11 @@
 \bibpunct{(}{)}{;}{a}{}{,\,}
 
 \pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{
-\markboth{\chaptername
-\ \thechapter.\ #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
-\fancyhead[LE]{\leftmark}
+\fancyhead[LE]{Trinity College JRF}
 \fancyhead[RE]{Christopher Berry}
-\fancyhead[LO]{Exploring Gravity}
+\fancyhead[LO]{EMRBs}
 \fancyhead[RO]{\rightmark}
 \fancyfoot{}
 \renewcommand{\footrulewidth}{0.1ex}
@@ -120,13 +117,15 @@
 \renewcommand\bottomfraction{.8}
 \renewcommand\textfraction{.2}
 
-\title{{\huge{}Extreme-mass-ratio Bursts\\\vspace{0.5mm}Simulation of gravitational waves}}
+\title{{\huge{}Extreme-mass-ratio Bursts}\\\vspace{0.5mm}Simulation of gravitational waves}
 \author{{\Large{}Christopher Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}\\{\Large{}Supervisor: Jonathan Gair}\vspace{5mm}}
 \date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}JRF Application}\vspace{5mm}\\\today}
 \maketitle
 
 \begin{abstract}
 An extreme-mass-ratio burst (EMRB) is a gravitational wave signal emitted when a compact object passes through periapsis on a highly eccentric orbit about a much more massive object, in our case a stellar mass object about a $10^6 M_\odot$ black hole. EMRBs are a relatively unexplored means of probing the spacetime of massive black holes (MBHs). As a prerequisit of an investigation of the properties of EMRBs and how they could allow us to constrain the MBH's parameters, it is necessary to construct waveforms. We do so using a numerical kludge approximation, which is computationally efficient. We find that if an EMRB event occurs in the Galaxy, it should be detectable if the periapse distance is $r\sub{p} < 65 r\sub{g}$ for a $\mu = 10 M_\odot$ orbiting object, where $r\sub{g} = GM_\bullet/c^2$ is the gravitational radius. The signal-to-noise ratio scales approximately as $\log(\rho) \simeq -2.7\log(r\sub{p}/r\sub{g}) + \log(\mu/M_\odot) + 4.9$. To confirm the accuracy of the kludge waveforms we derive an analytic expression for the energy spectrum of gravitational waves from a parabolic Keplerian binary. Comparison with our kludge spectrum shows a good agreement.
+
+\newline
 
 This work includes sections from
 \begin{quote}
@@ -140,7 +139,7 @@ Berry, C.P.L.\ \& Gair, J.R.; Gravitational wave energy spectrum of a parabolic 
 
 \input{./Waveforms_trinity.tex}
 
-\bibliographystyle{../physicsURL}
+\bibliographystyle{../physicsAuthorYear}
 \bibliography{../library}
 
 \appendix
