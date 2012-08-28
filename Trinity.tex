@@ -28,18 +28,19 @@
 \usepackage{appendix}
 \usepackage[latin9]{inputenc}
 %\usepackage{fixmath}
-\usepackage{paralist}
+%\usepackage{paralist}
 \usepackage{hyperref}
 \usepackage[authoryear, sort&compress]{natbib}
 \renewcommand{\bibfont}{\footnotesize}
-\renewcommand{\bibname}{{R\lowercase{eferences}}}
+%\renewcommand{\bibname}{{R\lowercase{eferences}}}
+\renewcommand{\refname}{{R\lowercase{eferences}}}
 \setlength{\bibhang}{0pt} 
 
   \hyphenpenalty=2000
   \tolerance=1000
   
 \headheight 13.6pt
-\textheight = 45\baselineskip
+\textheight = 52\baselineskip
 
 \def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
 
@@ -117,17 +118,16 @@
 \renewcommand\bottomfraction{.8}
 \renewcommand\textfraction{.2}
 
-\title{{\huge{}Extreme-mass-ratio Bursts}\\\vspace{0.5mm}Simulation of gravitational waves}
+\title{\sc{\huge{}Extreme-mass-ratio Bursts}\\\vspace{0.5mm}Simulation of gravitational waves}
 \author{{\Large{}Christopher Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}\\{\Large{}Supervisor: Jonathan Gair}\vspace{5mm}}
 \date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}JRF Application}\vspace{5mm}\\\today}
 \maketitle
 
 \begin{abstract}
-An extreme-mass-ratio burst (EMRB) is a gravitational wave signal emitted when a compact object passes through periapsis on a highly eccentric orbit about a much more massive object, in our case a stellar mass object about a $10^6 M_\odot$ black hole. EMRBs are a relatively unexplored means of probing the spacetime of massive black holes (MBHs). As a prerequisit of an investigation of the properties of EMRBs and how they could allow us to constrain the MBH's parameters, it is necessary to construct waveforms. We do so using a numerical kludge approximation, which is computationally efficient. We find that if an EMRB event occurs in the Galaxy, it should be detectable if the periapse distance is $r\sub{p} < 65 r\sub{g}$ for a $\mu = 10 M_\odot$ orbiting object, where $r\sub{g} = GM_\bullet/c^2$ is the gravitational radius. The signal-to-noise ratio scales approximately as $\log(\rho) \simeq -2.7\log(r\sub{p}/r\sub{g}) + \log(\mu/M_\odot) + 4.9$. To confirm the accuracy of the kludge waveforms we derive an analytic expression for the energy spectrum of gravitational waves from a parabolic Keplerian binary. Comparison with our kludge spectrum shows a good agreement.
-
-\newline
-
-This work includes sections from
+An extreme-mass-ratio burst (EMRB) is a gravitational wave signal emitted when a compact object passes through periapsis on a highly eccentric orbit about a much more massive object, in our case a stellar mass object about a $10^6 M_\odot$ black hole. EMRBs are a relatively unexplored means of probing the spacetime of massive black holes (MBHs). As a prerequisite of an investigation of the properties of EMRBs and how they could allow us to constrain the MBH's parameters, it is necessary to construct waveforms. We do so using a numerical kludge approximation, which is computationally efficient. We find that if an EMRB event occurs in the Galaxy, it should be detectable if the periapse distance is $r\sub{p} < 65 r\sub{g}$ for a $\mu = 10 M_\odot$ orbiting object, where $r\sub{g} = GM_\bullet/c^2$ is the gravitational radius. The signal-to-noise ratio scales approximately as $\log(\rho) \simeq -2.7\log(r\sub{p}/r\sub{g}) + \log(\mu/M_\odot) + 4.9$. To confirm the accuracy of the kludge waveforms we derive an analytic expression for the energy spectrum of gravitational waves from a parabolic Keplerian binary. Comparison with our kludge spectrum shows a good agreement.
+\\
+\\
+\noindent This work includes sections from
 \begin{quote}
 Berry, C.P.L.\ \& Gair, J.R.; Observing the Galaxy's massive black hole with gravitational wave bursts; {\it Monthly Notices of the Royal Astronomical Society} (submitted),
 \end{quote}
@@ -139,12 +139,12 @@ Berry, C.P.L.\ \& Gair, J.R.; Gravitational wave energy spectrum of a parabolic 
 
 \input{./Waveforms_trinity.tex}
 
-\bibliographystyle{../physicsAuthorYear}
+\bibliographystyle{../physicsAuthorYearURL}
 \bibliography{../library}
 
-\appendix
+%\appendix
 
-\clearpage
-\mbox{}
+%\clearpage
+%\mbox{}
 
 \end{document}
