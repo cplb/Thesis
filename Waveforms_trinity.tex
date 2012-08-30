@@ -38,7 +38,7 @@ In this dissertation, we create NK waveforms for EMRBs. We begin in \secref{Geod
 
 We may proceed to use the waveforms for parameter estimation. This lies beyond the scope of this work, but demonstrates that EMRBs are useful for inferring the properties of the Galaxy's MBH. 
 
-There are currently no funded space-borne detector missions. The eLISA mission concept remains an active field of study. It is hoped to submit this to the European Space Agency as a potential cornerstone mission. We shall use the classic LISA design for this work. This is done from historical affection in lieu of a definite alternative. When funding for a space-borne detector is secured in the future, it is hoped that it shall have comparable sensitivity to LISA, and that studies using the LISA design shall be a sensible benchmark for comparison. We find that to obtain good results the periapse radius must be $r\sub{p} \lesssim 10 r\sub{g}$, where $r\sub{g} = GM_\bullet / c^2$ is a gravitational radius, at this point the SNR is already high: for parameter estimation the orbit is more important that the signal strength, and so the exact detector performance should be of secondary importance.
+There are currently no funded space-borne detector missions. The eLISA mission concept remains an active field of study. It is hoped to submit this to the European Space Agency as a potential cornerstone mission. We shall use the classic LISA design for this work. This is done from historical affection in lieu of a definite alternative. When funding for a space-borne detector is secured in the future, it is hoped that it shall have comparable sensitivity to LISA, and that studies using the LISA design shall be a sensible benchmark for comparison. We find that to obtain good results the periapse radius must be $r\sub{p} \lesssim 10 r\sub{g}$, where $r\sub{g} = GM_\bullet / c^2$ is a gravitational radius; at this point the SNR is already high: for parameter estimation the orbit is more important that the signal strength, and so the exact detector performance should be of secondary importance.
 
 Throughout this work we adopt a metric with signature $(+,-,-,-)$. Greek indices are used to represent spacetime indices $\mu = \{0,1,2,3\}$ and lowercase Latin indices from the middle of the alphabet are used for spatial indices $i = \{1,2,3\}$. Uppercase Latin indices from the beginning of the alphabet are used for the output of the two LISA detector-arms $A = \{\mathrm{I}, \mathrm{II}\}$, and lowercase Latin indices from the beginning of the alphabet are used for parameter space. Summation over repeated indices is assumed unless explicitly noted otherwise. Geometric units with $G = c = 1$ are used where noted, but in general factors of $G$ and $c$ are retained.
 
@@ -192,13 +192,13 @@ P_{ij} = \delta_{ij} - n_in_j.
 
 \section{Detection with LISA}\label{sec:Detector}
 
-The classic LISA design is a three arm, space-borne laser interferometer \citep{Bender1998, Danzmann2003}. The three arms form an equilateral triangle that rotates as the system's centre of mass follows a circular, heliocentric orbit, trailing $20^{\circ}$ behind the Earth. eLISA has a similar design, but trails $9^{\circ}$ behind the Earth and only has two arms, which are shorter in length \citep{Jennrich2011}.
+The classic LISA design is a three arm, space-borne laser interferometer \citep{Bender1998, Danzmann2003}. The three arms form an equilateral triangle that rotates as the system's centre of mass follows a circular, heliocentric orbit, trailing $20^{\circ}$ behind the Earth. eLISA has a similar design, but trails $9^{\circ}$ behind the Earth and has only two arms, which are shorter in length \citep{Jennrich2011}.
 
 To describe the detector configuration, and to transform from the MBH coordinate system to those of the detector, we find it useful to define three coordinate systems: those of the BH at the GC $x_\bullet^i$; ecliptic coordinates centred at the solar system (SS) barycentre $x_\odot^i$, and coordinates that co-rotate with the detector $x\sub{d}^i$. The MBH's coordinate system and the SS coordinate system are depicted in \figref{BH_SS}.
 \begin{figure}
 \begin{center}
  \includegraphics[width=0.5\textwidth]{./images/BH_SS_angles.eps}
-    \caption{The relationship between the MBH's coordinate system $x_\bullet^i$ and the SS coordinate system $x_\odot^i$. The MBH's spin axis is aligned with the $z_\bullet$-axis. The orientation of the MBH's $x$- and $y$-axes is arbitrary. We choose $x_\bullet$ to be orthogonal to the direction to the SS.\label{fig:BH_SS}}
+    \caption{The relationship between the MBH's coordinate system $x_\bullet^i$ and the SS coordinate system $x_\odot^i$. The MBH's spin axis is aligned with the $z_\bullet$-axis. The orientation of the MBH's $x$- and $y$-axes is arbitrary. We choose $x_\bullet$ to be orthogonal to the direction from the SS.\label{fig:BH_SS}}
 \end{center}
 \end{figure}
 The mission geometry for LISA/eLISA is shown in \figref{SS_LISA}.
@@ -322,7 +322,7 @@ We therefore have a $14$ dimensional parameter space, of which we are interested
   \end{center}
 \end{figure}
 
-The plotted waveforms use the spherical polar coordinate system for the NK. Using oblate-spheroidal coordinates makes a small difference: on the scale shown here the only discernible difference would be in \figref{Orbit_135}; the maximum difference in the waveform (outside the high-frequency tail) is $\sim 10\%$. In the other cases the difference is entirely negligible (except in the high-frequency tail, which is not of physical significance). This behaviour is typical, for the closest orbits, with the most extreme spin parameters, the maximum difference in the waveforms may be $\sim 30\%$. The difference is largely confined to the higher frequency components, which are most sensitive to the parts of the trajectory closer to the MBH: the change in flat-space radius for the same Boyer-Lindquist radial coordinate causes a slight shift in the shape of the spectrum. Enforcing the same flat-space periapse radius gives worse agreement across the spectrum.
+The plotted waveforms use the spherical polar coordinate system for the NK. Using oblate-spheroidal coordinates makes a small difference: on the scale shown here the only discernible difference would be in \figref{Orbit_135}; the maximum difference in the waveform (outside the high-frequency tail) is $\sim 10\%$. In the other cases the difference is entirely negligible (except in the high-frequency tail, which is not of physical significance). This behaviour is typical; for the closest orbits, with the most extreme spin parameters, the maximum difference in the waveforms may be $\sim 30\%$. The difference is largely confined to the higher frequency components, which are most sensitive to the parts of the trajectory closer to the MBH: the change in flat-space radius for the same Boyer-Lindquist radial coordinate causes a slight shift in the shape of the spectrum. Enforcing the same flat-space periapse radius gives worse agreement across the spectrum.
 
 To examine the effect of the coordinate choice, we compare SNRs calculated using the alternative schemes for a selection of orbits. The MBH parameters were fixed as for the GC, the orbital parameters were chosen such that periapse distance was drawn from a logarithmic distribution (down to the innermost stable orbit), and other parameters were drawn from appropriate uniform distributions. The ratio of the two SNRs is shown in \figref{Oblate_sphere}.
 \begin{figure}
@@ -480,7 +480,7 @@ and the first limiting function is well defined,
 A(\tilde{f}) = \recip{\pi}\sqrt{\frac{2}{3}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right).
 \end{equation}
 
-To find the derivative we combine \eqnref{J_derivative} and \eqnref{J_nu}, and expand to lowest order yielding
+To find the derivative we combine equations \eqref{eq:J_derivative} and \eqref{eq:J_nu}, and expand to lowest order yielding
 \begin{align}
 J'_n(ne) \sim {} & -\frac{1}{2\pi}\sqrt{\frac{2}{3}}(1-e)\left[2^{3/2}K'_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + \recip{\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
 \end{align}
@@ -520,7 +520,7 @@ To check the validity of this limit we can calculate the total energy radiated b
 \begin{equation}
 E\sub{sum} = \frac{64\pi}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}(1-e)^{7/2}\sum_n g(n,e),
 \end{equation}
-where we have used equations \eqnref{PM_P}, \eqnref{Kepler_freq} and \eqnref{E(n)}. \citet{Peters1963} provide the result
+where we have used equations \eqref{eq:PM_P}, \eqref{eq:Kepler_freq} and \eqref{eq:E(n)}. \citet{Peters1963} provide the result
 \begin{equation}
 \sum_n g(n,e) = \frac{1 + (73/24)e^2 + (37/96)e^4}{(1-e^2)^{7/2}}.
 \end{equation}
