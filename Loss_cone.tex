@@ -1,23 +1,23 @@
 \chapter{The loss cone}
 
-When considering the orbits of stars about a massive black hole (MBH), the loss cone describes a region of velocity space that is depopulated because of tidal disruption~\citep{Frank1976,Lightman1977}.
+When considering the orbits of stars about a massive black hole (MBH), the loss cone describes a region of velocity space that is depopulated because of tidal disruption \citep{Frank1976,Lightman1977}.
 
-A main sequence star may be disrupted by tidal forces before it is swallowed by a MBH, we will define the tidal disruption radius as $r\sub{T}$. We would expect any orbit that passes inside $r\sub{T}$ to be depopulated unless stars may successfully escape to another orbit before being disrupted. Stars' velocities change because of gravitational interaction with other stars. Deflections can be modelled as a series of two-body encounters, the cumulative effect of which is a random walk in velocity space~\citep[chapter 2]{Chandrasekhar1960}. Changes scale with the square-root of time, with the relaxation time-scale $\tau\sub{R}$ setting the scale.
+A main sequence star may be disrupted by tidal forces before it is swallowed by a MBH, we will define the tidal disruption radius as $r\sub{T}$. We expect any orbit that passes inside $r\sub{T}$ is depopulated unless stars can successfully escape to another orbit before being disrupted. Stars' velocities change because of gravitational interaction with other stars. Deflections can be modelled as a series of two-body encounters, the cumulative effect of which is a random walk in velocity space \citep[chapter 2]{Chandrasekhar1960}. Changes scale with the square-root of time, with the relaxation time-scale $\tau\sub{R}$ setting the scale.
 
-Consider a typical star at a distance $r$ from the MBH. We can decompose its motion into radial and tangential components as
+Consider a typical star at a distance $r$ from the MBH. We decompose its motion into radial and tangential components as
 \begin{subequations}
 \begin{align}
 v\sub{r} = {} & v\cos \theta \\
 v_\perp = {} & v\sin \theta.
 \end{align}
 \end{subequations}
-Over a dynamical time-scale $t\sub{dyn}$, we expect that stars would change velocity by a typical amount
+Over a dynamical time-scale $t\sub{dyn}$, we expect that stars change velocity by a typical amount
 \begin{equation}
 \theta\sub{D} \approx \left(\frac{t\sub{dyn}}{\tau\sub{R}}\right)^{1/2},
 \end{equation}
 assuming this change is small. We define the loss cone angle $\theta\sub{LC}$ to describe the range of trajectories that will proceed to pass within a distance $r\sub{T}$ of the MBH. By comparing the diffusion and loss cone angles we can deduce if we would expect orbits to be depleted: if $\theta\sub{D} > \theta\sub{LC}$ a star can safely diffuse out of the loss cone before it is destroyed, whereas if $\theta\sub{D} < \theta\sub{LC}$ a star will be disrupted before it can change its velocity sufficiently, leading to the depopulation of the orbit.
 
-Frank and Rees first introduced the loss cone. They considered stars on nearly radial orbits. The orbital energy and angular momentum (per unit mass) of an object with eccentricity $e$ and periapse radius $r\sub{p}$ are
+\citet{Frank1976} first introduced the loss cone. They considered stars on nearly radial orbits. The orbital energy and angular momentum (per unit mass) of an object with eccentricity $e$ and periapse radius $r\sub{p}$ are
 \begin{align}
 \mathcal{E} = {} & -\frac{GM_\bullet(1 - e)}{2r\sub{p}} \\
 \mathcal{J}^2 = {} & GM_\bullet(1 + e)r\sub{p},
@@ -27,23 +27,23 @@ where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
 \mathcal{J}^2 = {} & v_\perp^2r^2 \nonumber \\*
  \simeq {} & \theta^2v^2r^2,
 \end{align}
-using the small angle approximation. \citet{Frank1976} took the limit $e \rightarrow 1$, then setting $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone, we can rearrange to find
+using the small angle approximation. \citet{Frank1976} took the limit $e \rightarrow 1$, then setting $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone; we rearrange to find
 \begin{equation}
 \theta\sub{LC} \simeq \frac{2GM_\bullet r\sub{T}}{v^2r^2}.
 \label{eq:LC-FR}
 \end{equation}
-We need to find the speed at $r$. Frank and Rees use a typical value
+We need to find the speed at $r$. \citet{Frank1976} use a typical value
 \begin{equation}
 v^2 \simeq 3\sigma^2,
 \end{equation}
-where $\sigma$ is the 1D velocity dispersion. They assume that the velocity dispersion is Keplerian within the core region where dynamics are dominated by the MBH, and is a constant outside of this
+where $\sigma$ is the 1D velocity dispersion. They assume the velocity dispersion is Keplerian within the core region, where dynamics are dominated by the MBH, and is a constant outside of this
 \begin{equation}
 \sigma^2 \simeq \begin{cases}
 \frac{GM_\bullet}{r} & r < r\sub{c} \\
 \frac{GM_\bullet}{r\sub{c}} & r < r\sub{c}
 \end{cases}.
 \end{equation}
-Here the core radius $r\sub{c}$ is chosen such that
+The core radius $r\sub{c}$ is
 \begin{equation}
 r\sub{c} = \frac{GM_\bullet}{\sigma_0^2},
 \end{equation}
@@ -55,16 +55,16 @@ where $\sigma_0$ is the 1D velocity dispersion far from the MBH. Substituting fo
 \end{cases}.
 \label{eq:FR-LC}
 \end{align}
-Frank and Rees make one final modification, introducing a gravitational focusing factor $f$ such that
+\citet{Frank1976} make one final modification, introducing a gravitational focusing factor $f$ such that
 \begin{align}
 \theta\sub{LC} \simeq f\begin{cases}
 \left(\frac{2r\sub{T}}{3r}\right)^{1/2} & r < r\sub{c} \\
 \left(\frac{2r\sub{T}r\sub{c}}{3r^2}\right)^{1/2} & r < r\sub{c}
 \end{cases}.
 \end{align}
-The focusing factor could be imagined as being the correction from assuming that stars travel along straight lines, such that $\tan\theta\sub{LC} = r\sub{T}/r$, to accounting for a Keplerian trajectory about the MBH.
+The focusing factor could be imagined as the correction from assuming that stars travel along straight lines, such that $\tan\theta\sub{LC} = r\sub{T}/r$, to accounting for a Keplerian trajectory about the MBH.
 
-It is unappealing to include an arbitrary, albeit order unitary, factor in the expression. Additionally, there are various approximations in the derivation which are restrictive. Considering the orbital energy for $v^2 = 3\sigma^2$ inside the core
+It is unappealing to include an arbitrary, albeit order unitary, factor. Additionally, there are various restrictive approximations in the derivation. Considering the orbital energy for $v^2 = 3\sigma^2$ inside the core
 \begin{align}
 \frac{3\sigma^2}{2} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet}{2r\sub{T}} \\
 \frac{3GM_\bullet}{2r} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet(1-e)}{2r\sub{T}} \\
@@ -72,7 +72,7 @@ It is unappealing to include an arbitrary, albeit order unitary, factor in the e
 \end{align}
 Since the radii must be positive, this enforces that $e \geq 1$: the orbits could be marginally bound at best. As we have taken the limit $e \rightarrow 1$, assuming that $r \gg r\sub{T}$ this is still self-consistent. However, it is desirable to relax these conditions.
 
-Let us consider an orbit with $r\sub{p} = r\sub{T}$, which gives the edge of the loss cone. The angular momentum (squared) is
+Let us consider an orbit with $r\sub{p} = r\sub{T}$, which gives the edge of the loss cone. The angular momentum squared is
 \begin{equation}
 \sin^2\theta\sub{LC}v^2r^2 = GM_\bullet(1+e)r\sub{T}.
 \end{equation}
@@ -90,7 +90,7 @@ This is similar in form to the classic result. Consider an orbit with eccentrici
 \begin{equation}
 r = \frac{r\sub{T}}{\epsilon}.
 \end{equation}
-This ensures that $r \gg r\sub{T}$. Therefore we have matched the assumptions of Frank and Rees. Substituting into our loss cone formula
+This ensures that $r \gg r\sub{T}$. Therefore we have matched the assumptions of \citet{Frank1976}. Substituting into our loss cone formula
 \begin{align}
 \sin^2\theta\sub{LC} = {} & \frac{(2 - \epsilon)r\sub{T}^2}{2rr\sub{T} + \epsilon r^2} \nonumber \\
  \simeq {} & \frac{2r\sub{T}}{3r},
