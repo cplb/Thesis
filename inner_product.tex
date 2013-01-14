@@ -21,7 +21,7 @@ The Dirac delta-function arises as
 We shall use Plancherel's theorem which proves the unitarity of the Fourier transfromation
 \begin{align}
 \intd{-\infty}{\infty}{\left|x(t)\right|^2}{t} = {} & \int_{-\infty}^\infty\,\dd t \intd{-\infty}{\infty}{\widetilde{x}(f)\exp(2\pi ift)}{f} \intd{-\infty}{\infty}{\widetilde{x}^\ast(f')\exp(-2\pi if't)}{f'} \nonumber \\
- = {} & \int_{-\infty}^\infty\,\dd f \int_{-\infty}^\infty\,\dd f' \widetilde{x}(f) \widetilde{x}^\ast(f') \delta(f' - f) \nonumber \\
+% = {} & \int_{-\infty}^\infty\,\dd f \int_{-\infty}^\infty\,\dd f' \widetilde{x}(f) \widetilde{x}^\ast(f') \delta(f' - f) \nonumber \\
  = {} & \intd{-\infty}{\infty}{\left|\widetilde{x}(f)\right|^2}{f}.
 \end{align}
 
@@ -37,8 +37,7 @@ We use $\langle\ldots\rangle$ to denote time averaging, then
 \end{equation}
 Applying Plancherel's theorem for our real signal
 \begin{align}
-\left\langle x^2\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-\infty}{\infty}{\left|\widetilde{x}(f)\right|^2}{f} \nonumber \\
- = {} & \lim_{T \rightarrow \infty} \recip{T} \intd{0}{\infty}{\left|\widetilde{x}(f)\right|^2}{f}.
+\left\langle x^2\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-\infty}{\infty}{\left|\widetilde{x}(f)\right|^2}{f} = \lim_{T \rightarrow \infty} \recip{T} \intd{0}{\infty}{\left|\widetilde{x}(f)\right|^2}{f}.
 \end{align}
 
 The power spectrum $G(f)$ is
@@ -54,20 +53,18 @@ If $x(t)$ is a randomly varying signal we can use the ergodic principle to equat
 The correlation function for a random process is
 \begin{align}
 C(\tau) = {} & \left\langle x(t)x(t + \tau)\right\rangle \\
- = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{x(t)x(t + \tau)}{t} \nonumber \\
+% = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{x(t)x(t + \tau)}{t} \nonumber \\
  = {} & \lim_{T \rightarrow \infty} \recip{2T} \int_{-T}^{T}\,\dd t \intd{-\infty}{\infty}{\widetilde{x}(f)\exp(2\pi ift)}{f} \intd{-\infty}{\infty}{\widetilde{x}(f')\exp\left[2\pi if'(t + \tau)\right]}{f'} \nonumber \\
- = {} & \lim_{T \rightarrow \infty} \recip{2T} \int_{-\infty}^{\infty}\,\dd f \int_{-\infty}^{\infty}\,\dd f' \, \widetilde{x}(f)\widetilde{x}(f')\exp(2\pi if'\tau)\delta(f + f') \nonumber \\
+% = {} & \lim_{T \rightarrow \infty} \recip{2T} \int_{-\infty}^{\infty}\,\dd f \int_{-\infty}^{\infty}\,\dd f' \, \widetilde{x}(f)\widetilde{x}(f')\exp(2\pi if'\tau)\delta(f + f') \nonumber \\
  = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-\infty}{\infty}{\left|\widetilde{x}(f)\right|^2\exp(2\pi if\tau)}{f}.
 \end{align}
 We can rewrite this in terms of the power spectrum
 \begin{align}
-C(\tau) = {} & \recip{2} \intd{-\infty}{\infty}{G(f)\exp(2\pi if\tau)}{f} \\
- = {} & \intd{0}{\infty}{G(f)\cos(2\pi f\tau)}{f}.
+C(\tau) = {} & \recip{2} \intd{-\infty}{\infty}{G(f)\exp(2\pi if\tau)}{f} = \intd{0}{\infty}{G(f)\cos(2\pi f\tau)}{f}.
 \end{align}
 Inverting these
 \begin{align}
-G(f) = {} & 2 \intd{-\infty}{\infty}{C(\tau)\exp(-2\pi i f\tau)}{\tau} \\
- = {} & 4 \intd{0}{\infty}{C(\tau) \cos(2\pi f\tau)}{\tau}.
+G(f) = {} & 2 \intd{-\infty}{\infty}{C(\tau)\exp(-2\pi i f\tau)}{\tau} = 4 \intd{0}{\infty}{C(\tau) \cos(2\pi f\tau)}{\tau}.
 \end{align}
 The power spectrum and correlation function are related to each other by the Fourier transform. This is the Wiener--Khinchin theorem.
 
@@ -114,7 +111,7 @@ hence
 Using the inverse matrix definition
 \begin{align}
 \exp(-2\pi i f t_k) = {} & \sum_j \exp(-2\pi ift_j) \delta_{jk} \nonumber \\
- = {} & \sum_j \exp(-2\pi ift_j) \sum_l C_{n,\,jl}C^{-1}_{lk} \nonumber \\
+% = {} & \sum_j \exp(-2\pi ift_j) \sum_l C_{n,\,jl}C^{-1}_{lk} \nonumber \\
  = {} & \recip{(\upDelta t)^2} \sum_j \upDelta t \exp(-2\pi ift_j) \sum_l \upDelta t \, C_{n,\,jl}C^{-1}_{lk}.
 \end{align}
 Taking the limit
@@ -141,17 +138,16 @@ The term in the exponential in \eqnref{prod_prob} has the limit
 \begin{align}
 \mathcal{H} = {} & \recip{2}\lim_{T \rightarrow \infty; \upDelta t \rightarrow 0} \sum_{j,k}C^{-1}_{jk}n_j n_k \nonumber \\
  = {} & \recip{2}\lim_{T \rightarrow \infty; \upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-T}^{T}\,\dd t_j \int_{-T}^{T}\,\dd t_k \, C^{-1}(t_j,t_k) n(t_j)n(t_k) \nonumber \\
- = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-\infty}^{\infty}\,\dd t_j \int_{-\infty}^{\infty}\,\dd t_k \left\{ \intd{-\infty}{\infty}{\widetilde{C^{-1}}(f,t_k)\exp(2\pi if t_j)}{f} \right. \nonumber \\*
- {} & \times \left. \intd{-\infty}{\infty}{\widetilde{n}(f')\exp(2\pi i f't_j)}{f'}n(t_k)\right\} \nonumber \\
+% = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-\infty}^{\infty}\,\dd t_j \int_{-\infty}^{\infty}\,\dd t_k \left\{ \intd{-\infty}{\infty}{\widetilde{C^{-1}}(f,t_k)\exp(2\pi if t_j)}{f} \right. \nonumber \\*
+% {} & \times \left. \intd{-\infty}{\infty}{\widetilde{n}(f')\exp(2\pi i f't_j)}{f'}n(t_k)\right\} \nonumber \\
  = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \widetilde{C^{-1}}(f,t_k)\widetilde{n}(-f)n(t_k) \nonumber \\
- = {} & \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \frac{\exp(-2\pi i f t_k)}{S_n(f)}\widetilde{n}^\ast(f)n(t_k) \nonumber \\
+% = {} & \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \frac{\exp(-2\pi i f t_k)}{S_n(f)}\widetilde{n}^\ast(f)n(t_k) \nonumber \\
  = {} & \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}}{f} \nonumber \\
  = {} & \recip{2}\innerprod{n}{n},
  \end{align}
 defining the inner product
 \begin{align}
-\innerprod{g}{h} = {} & 2\intd{-\infty}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f)}{S_n(f)}}{f} \\
- = {} & 2 \intd{-\infty}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f) + \widetilde{g}(f)\widetilde{h}^\ast(f)}{S_n(f)}}{f}.
+\innerprod{g}{h} = {} & 2\intd{-\infty}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f)}{S_n(f)}}{f} = 2 \intd{-\infty}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f) + \widetilde{g}(f)\widetilde{h}^\ast(f)}{S_n(f)}}{f}.
 \end{align}
 This is a noise-weighted inner product over the space of real signals. The probability of the signal is
 \begin{equation}
@@ -163,8 +159,8 @@ p(s|h) \propto \exp\left[-\recip{2}\innerprod{n}{n}\right].
 We will consider an ensemble average over multiple noise realisations, which is the same as a time average assuming stationarity of the noise spectrum
 \begin{align}
 \left\langle\innerprod{n}{n}\innerprod{n}{q}\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\innerprod{n(t+\tau)}{p(t)}\innerprod{n(t+\tau)}{q(t)}}{\tau} \nonumber \\
- = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \int_{-T}^{T}\,\dd\tau \left\{ \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\exp(-2\pi if\tau)\widetilde{p}(f)}{S_n(f)}}{f} \right. \nonumber \\
-  {} & \times \left. \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')\exp(-2\pi if'\tau)\widetilde{q}(f')}{S_n(f')}}{f'}\right\} \nonumber \\
+% = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \int_{-T}^{T}\,\dd\tau \left\{ \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\exp(-2\pi if\tau)\widetilde{p}(f)}{S_n(f)}}{f} \right. \nonumber \\
+%  {} & \times \left. \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')\exp(-2\pi if'\tau)\widetilde{q}(f')}{S_n(f')}}{f'}\right\} \nonumber \\
  = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}\frac{\widetilde{p}(f)\widetilde{q}^\ast(f)}{S_n(f)}}{f}\intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')}{S_n(f')}}{f'} \nonumber \\
  = {} & \innerprod{p}{q},
 \end{align}

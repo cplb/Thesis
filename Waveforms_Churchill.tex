@@ -24,6 +24,7 @@ It has been suggested that the spin of the Galaxy's MBH could be inferred from c
 
 The spins of MBHs in active galactic nuclei have been inferred using X-ray observations of $\mathrm{Fe}$ $\mathrm{K}$ emission lines \citep{Miller2007, McClintock2011}. So far this has been done for a handful of other galaxies' MBHs, as shown in \tabref{X-ray}.
 \begin{table}
+\centering
 \begin{tabular}{lc l }
 \toprule
 \multicolumn{1}{c}{AGN} & \multicolumn{1}{c}{$a_\ast$} & \multicolumn{1}{c}{Study} \\ \midrule 
@@ -46,7 +47,7 @@ NGC 4051 & $< 0.94$ & \citet{Patrick2011a} \\
 NGC 7469 & $0.69^{+0.09}_{-0.09}$ & \citet{Patrick2011} \\
 %RBS 1125 & $\geq 0.60$ & \citet{Minniutti2010} \\ % Determined from soft exceess sommthness which requires a high degree of relativistic blurring, rather than the relativistic iron line shape.
 SWIFT J2127.4+5654 & $0.6 \pm 0.2$ & \citet{Miniutti2009} \\
- & $0.70^{+0.10}_{-0.14}$ & \ciet{Patrick2011} \\
+ & $0.70^{+0.10}_{-0.14}$ & \citet{Patrick2011} \\
  \bottomrule
 \end{tabular}
 \caption{Measurements of MBH spin from iron emission lines. The scatter in results indicates the complexities of modelling the accretion disc.\label{tab:X-ray}}
@@ -781,12 +782,12 @@ Space-based detectors are most sensitive from extreme-mass-ratio signals origina
  Milky Way (MW) & 4.31 & 0.00833& \citet{Gillessen2009} \\
  M32 (NGC 221) & 2.5 & 0.770 & \citet{Verolme2002,Karachentsev2004} \\
  Andromeda (M31, NGC 224) & 140 & 0.770 &  \citet{Bender2005,Karachentsev2004} \\
- Circinus & 1.1 & 2.82 & \citet{Graham2008,Greenhill2003,Karachentsev2007} \\
+ Circinus & 1.1 & 2.82 & \citet{Graham2008,Greenhill2003} \\ & & & \citet{Karachentsev2007} \\
  NGC 4945 & 1.4 & 3.82	& \citet{Greenhill1997,Karachentsev2007} \\
- Sculptor (NGC 253) & 10 & 3.5 & \citet{Graham2011,Rodriguez-Rico2006,Rekola2005} \\
+ Sculptor (NGC 253) & 10 & 3.5 & \citet{Graham2011,Rodriguez-Rico2006} \\ & & & \citet{Rekola2005} \\
  NGC 4395 & 0.36 & 4.0& \citet{Peterson2005,Thim2004} \\
- NGC 3368 & 7.3 & 10.1 & \citet{Graham2011,Nowak2010,Tonry2001} \\
- NGC 3489 & 5.8 & 11.7 & \citet{Graham2011,Nowak2010,Tonry2001} \\
+ NGC 3368 & 7.3 & 10.1 & \citet{Graham2011,Nowak2010} \\ & & & \citet{Tonry2001} \\
+ NGC 3489 & 5.8 & 11.7 & \citet{Graham2011,Nowak2010} \\ & & & \citet{Tonry2001} \\
 \hline
 \end{tabular}
 %\end{minipage}
@@ -817,33 +818,11 @@ Using this, we can factor out the most important dependencies to give a scaled S
 The scaled SNRs are plotted in \figref{scaled-SNR}. The plotted points are the average values of $\ln \rho_\ast$ calculated for each periapse distance.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.43\textwidth]{Fig_SNR_scaled_fit}
+ \includegraphics[width=0.43\textwidth]{./images/Fig_SNR_scaled_fit}
  \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency.\label{fig:scaled-SNR}}
    \end{center}
 \end{figure}
 The curve shows that EMRB SNR does scale as expected, and $\rho_\ast$ can be describe as a one-parameter curve. There remains some scatter about this (removing the averaging over intrinsic parameters increases this to about an order of magnitude); however, it is good enough for rough calculations.
-
-Checking our nearest neighbours, we find that bursts from Andromeda (M31) would not be detectable. This is because of the large mass of the MBH $M\sub{M31} = (1.4^{+0.9}_{-0.3}) \times 10^8 M_\odot$ \citep{Bender2005}. However, its companion M32 is more promising. It has a lighter MBH $M\sub{M32} = (2.5 \pm 0.5) \times 10^6 M_\odot$ \citep{Verolme2002}. The trend between the periapse radius and SNR is shown in \figref{SNR-M32}.
-\begin{figure}
-  \begin{center}
-  \includegraphics[width=0.45\textwidth]{Fig_SNR_M32}
-    \caption{Signal-to-noise ratio as a function of periapse radius for a $\mu = 1 M_\odot$ CO about the MBH of M32. The plotted points are the values obtained by averaging over each set of intrinsic parameters. The best fit line is $\log\left(\rho\right) = -2.65\log(r\sub{p}/r\sub{g}) + 3.05$. This is fitted to orbits with $r\sub{p} > 18.8 r\sub{g}$ and has a reduced chi-squared value of $\chi^2/\nu = 1.26$.\label{fig:SNR-M32}}
-  \end{center}
-\end{figure}
-The fit is again done for orbits with $f_\ast = \sqrt{GM\sub{M32}/r\sub{p}} < 1 \times 10^{-3}\units{Hz}$ to avoid the bucket of the noise curve. Bursts for a $1 M_\odot$ ($10 M_\odot$) can be detected with $\rho > 10$ if the periapse is smaller than $7 r\sub{g}$ ($13 r\sub{g}$).
-
-We see that the general behaviour is the same as for the GC, but there are differences because of the position. Bursts from the two MBHs can be compared using their characteristic frequencies $f_\ast$ and scaled SNR
-\begin{equation}
-\rho_\ast[\boldsymbol{h}] = \left(\frac{\mu}{M_\odot}\right)^{-1}\left(\frac{R}{\mathrm{kpc}}\right)\left(\frac{M}{10^6 M_\odot}\right)^{-2/3}\rho[\boldsymbol{h}],
-\end{equation}
-where $R$ and $M$ are the appropriate distances and masses for the two MBHs. These scalings can be determined from the quadrupole piece of \eqnref{octupole} assuming a characteristic length scale set by $r\sub{p}$. \Figref{SNR-scaling} shows the trend for both galaxies.
-\begin{figure}
-  \begin{center}
-  \includegraphics[width=0.45\textwidth]{Fig_SNR_scaled}
-    \caption{Scaled signal-to-noise ratio as a function of characteristic frequency.\label{fig:SNR-scaling}}
-  \end{center}
-\end{figure}
-The difference in sky position is largely washed out through the motion of the detector.
 
 We approximate the trend with a best-fit curve
 \begin{equation}
@@ -853,15 +832,15 @@ We approximate the trend with a best-fit curve
 To fit this, we treat the problem as if it were a likelihood maximisation, with each averaged point having a Gaussian likelihood with standard deviation defined from the scatter because of the variation in the intrinsic parameters. The optimised values for \textit{LISA} are
 \begin{equation}
 \begin{split}
-&\alpha_1 \simeq 8.93 \times 10^4; \ \  \alpha_2 \simeq 4.68 \times 10^2; \ \  \alpha_3 \simeq 1.84 \times 10^2;\\
-&\beta_1 \simeq 1.84; \ \  \beta_2 \simeq 3.23; \ \  \beta_3 \simeq 1.27; \ \  \beta_4 \simeq 4.13.
+\alpha_1 \simeq 8.93 \times 10^4; \ \  \alpha_2 \simeq 4.68 \times 10^2; \ \  \alpha_3 \simeq 1.84 \times 10^2;\\
+\beta_1 \simeq 1.84; \ \  \beta_2 \simeq 3.23; \ \  \beta_3 \simeq 1.27; \ \  \beta_4 \simeq 4.13.
 \end{split}
 \end{equation}
 
 Using our fitted trends it is possible to invert \eqnref{SNR-scaling} to find the furthest distance that bursts from an MBH of a given mass are detectable. In calculating the maximum SNR it is necessary to decide upon a minimum periapse radius. For the optimal case with a maximally rotating MBH, the innermost periapsis is $r\sub{p} = r\sub{g}$. For a non-rotating MBH, the innermost periapsis would be $r\sub{p} = 4r\sub{g}$. \Figref{detect} shows the detectability limit for $\mu = 1 M_\odot$ and $\mu = 10 M_\odot$ COs.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.43\textwidth]{Fig_M_R_detect_1}
+ \includegraphics[width=0.43\textwidth]{./images/Fig_M_R_detect_1}
  \caption{Limit of detection for EMRBs originating from MBHs of mass $M$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The orange line is the limit for non-rotating MBHs, the blue line is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The trends should not be extrapolated to lower MBH masses.\label{fig:detect}}
    \end{center}
 \end{figure}
@@ -869,24 +848,33 @@ The more massive COs are detectable to a greater distance, but are also the more
 
 It appears that there are potentially many galaxies which could produce observable bursts. From our sample, all could be potentially detected. Andromeda could only be detected if it had a high spin value. It is therefore less promising than the others. NGC 3489, NGC 3368 and NGC 253 lie on the boundary of detectability for non-spinning sources with a $10 M_\odot$ CO. They are therefore of marginal interest: we do not necessarily need any special requirement for the spin, but such close orbits would be infrequent. NGC 4395, NGC 4945 and Circinus are around the boundary of detectability for a $1 M_\odot$ CO. Hence we could potentially see bursts from white dwarfs as well as BHs. M32 is the best extragalactic source, lying safely within the detection limit for $1 M\odot$ COs.
 
+Examining M32 in detail, the trend between the periapse radius and SNR is shown in \figref{SNR-M32}.
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=0.45\textwidth]{./images/Fig_SNR_M32}
+    \caption{Signal-to-noise ratio as a function of periapse radius for a $\mu = 1 M_\odot$ CO about the MBH of M32. The plotted points are the values obtained by averaging over each set of intrinsic parameters. The best fit line is $\log\left(\rho\right) = -2.65\log(r\sub{p}/r\sub{g}) + 3.05$. This is fitted to orbits with $r\sub{p} > 18.8 r\sub{g}$ and has a reduced chi-squared value of $\chi^2/\nu = 1.26$.\label{fig:SNR-M32}}
+  \end{center}
+\end{figure}
+The fit is again done for orbits with $f_\ast = < 1 \times 10^{-3}\units{Hz}$ to avoid the bucket of the noise curve. Bursts for a $1 M_\odot$ ($10 M_\odot$) can be detected with $\rho > 10$ if the periapse is smaller than $7 r\sub{g}$ ($13 r\sub{g}$). We see that the general behaviour is the same as for the GC, but there are differences because of the position.
+
 We can repeat the analysis for \textit{eLISA}. The scaled SNRs are shown in \figref{scaled-SNR-eLISA}.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.43\textwidth]{Fig_SNR_scaled_fit_eLISA}
+ \includegraphics[width=0.43\textwidth]{./images/Fig_SNR_scaled_fit_eLISA}
  \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency for the \textit{eLISA} design.\label{fig:scaled-SNR-eLISA}}
    \end{center}
 \end{figure}
 Since Andromeda was only marginally of interest for the classic \textit{LISA} design, we did not it this time. The curve is fitted with
 \begin{equation}
 \begin{split}
-&\alpha_1 \simeq 7.39 \times 10; \ \  \alpha_2 \simeq 4.99 \times 10^3; \ \  \alpha_3 \simeq 5.27 \times 10;\\
-&\beta_1 \simeq 1.47; \ \  \beta_2 \simeq 0.85; \ \  \beta_3 \simeq 1.76; \ \  \beta_4 \simeq 1.25.
+\alpha_1 \simeq 7.39 \times 10; \ \  \alpha_2 \simeq 4.99 \times 10^3; \ \  \alpha_3 \simeq 5.27 \times 10;\\
+\beta_1 \simeq 1.47; \ \  \beta_2 \simeq 0.85; \ \  \beta_3 \simeq 1.76; \ \  \beta_4 \simeq 1.25.
 \end{split}
 \end{equation}
 Using this to find the detectability range results in the curves shown in \figref{detect-eLISA}.
 \begin{figure}
 \begin{center}
- \includegraphics[width=0.43\textwidth]{Fig_M_R_detect_2}
+ \includegraphics[width=0.43\textwidth]{./images/Fig_M_R_detect_2}
  \caption{Limit of detection using \textit{eLISA} for EMRBs originating from MBHs of mass $M$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The orange line is the limit for non-rotating MBHs, the blue line is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The trends should not be extrapolated to lower MBH masses.\label{fig:detect-eLISA}}
    \end{center}
 \end{figure}
@@ -908,5 +896,9 @@ except for the closest orbits ($r\sub{p} \lesssim 7 r\sub{g}$). Signals should b
 
 We used MCMC results as a robust measure of parameter estimation accuracy. Potentially, it is possible to determine very precisely the key parameters defining the Galaxy's MBH's mass and spin, if the periapsis is sufficiently small. From our investigation it appears that we can achieve good results from a single EMRB with periapsis of $r\sub{p} \simeq 10 r\sub{g}$ for a $10 M_\odot$ CO. This translates to a distance of $6 \times 10^{10}\units{m}$ or $2 \times 10^{-6}\units{pc}$. Orbits closer than this would be even better, and place stricter constraints. The best orbits yield uncertainties of almost one part in $10^5$ for the MBH mass and spin, far exceeding existing techniques. Conversely, orbits with $r\sub{p} \gtrsim 20 r\sub{g}$ are unlikely to provide any useful information.
 
-While we have only considered bursts from our own galaxy in detail, it should be possible to observe bursts from other nearby galaxies if their MBH is of the appropriate mass. The SNR of EMRBs obeys a number of scaling relations that allow us to check whether an MBH could produce detectable bursts. M32 is the best extragalactic candidate. However, even in this case, the small region of parameter space that can produce detectable bursts leads us to conclude that extragalactic bursts are likely to be rare.
+While we have only considered bursts from our own galaxy in detail, it should be possible to observe bursts from other nearby galaxies if their MBH is of the appropriate mass. The SNR of EMRBs obeys a number of scaling relations that allow us to check whether an MBH could produce detectable bursts. M32 is the best extragalactic candidate. However, even in this case, the of parameter space that can produce detectable bursts is small. The SNR shows a similar dependence upon periapsis as for the GC, and may be described by a power-law of
+\begin{equation}
+\log\left(\hat{\rho}\right) \simeq -2.7\log\left(\frac{r\sub{p}}{r\sub{g}}\right) + 3.1,
+\end{equation}
+for orbits with $r\sub{p} \gtrsim 10 r\sub{g}$. For a $1 M_\odot$ ($10 M_\odot$) object, bursts should be detectable for periapses $r\sub{p} \lesssim 7 r\sub{g}$ ($r\sub{p} \lesssim 14 r\sub{g}$), corresponding to $2.6 \times 10^{10}\units{m}$ ($4.9 \times 10^{10}\units{m}$) or $8.4 \times 10^{-7}\units{pc}$ ($1.6 \times 10^{-6}\units{pc}$). This leads us to conclude that extragalactic bursts are likely to be rare.
 

@@ -15,6 +15,7 @@
 \usepackage{listings}
 \usepackage{enumitem}
 \usepackage{booktabs, longtable, dcolumn}
+\usepackage{ccaption}
 %\usepackage{tikz}
 %\usetikzlibrary{shapes,arrows}
 \usepackage{lmodern}
@@ -34,15 +35,15 @@
 \renewcommand{\bibfont}{\footnotesize}
 \renewcommand{\bibname}{{R\lowercase{eferences}}}
 \setlength{\bibhang}{0pt} 
-\setlength{\bibsep}{0.3pt}
+\setlength{\bibsep}{0.5pt}
 
   \hyphenpenalty=2000
   \tolerance=1000
   
 \headheight 13.6pt
 \headsep 0.6\baselineskip
-\footsep 1.8\baselineskip
-\textheight = 52\baselineskip
+\footskip 1.8\baselineskip
+\textheight = 56\baselineskip
 
 \def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
 
@@ -123,14 +124,14 @@
 \renewcommand\bottomfraction{.8}
 \renewcommand\textfraction{.2}
 
-\title{{\huge{}Exploring Gravity\\\vspace{0.5mm}With Gravitational Waves \& Strong-Field Tests}}
-\author{{\Large{}Christopher Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}\\{\Large{}Supervisor: Jonathan Gair}\vspace{5mm}}
-\date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Thesis}\vspace{5mm}\\\today}
+\title{{\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves \& Strong-Field Tests}}}
+\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
+\date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Ph.D.\ Thesis}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
 \maketitle
 
 %\input{./f_R.tex}
 
-\bibliographystyle{../physicsAuthorYear}
+\bibliographystyle{../physicsAuthorYearURL}
 \bibliography{../library}
 
 \appendix
