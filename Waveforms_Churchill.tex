@@ -56,7 +56,7 @@ Estimates for the spin cover a range of values up to the maximal value for an ex
 
 While we can use the spin of other BHs as a prior, to inform us of what we should expect to measure for the spin of the Galaxy's MBH, it is desirable to have an independent observation, a direct measurement.
 
-An exciting means of inferring information about the MBH is through gravitational waves (GWs) emitted when compact objects (COs), such as stellar mass BHs, neutron stars (NSs), white dwarfs (WDs) or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as the Laser Interferometer Space Antenna (LISA) or the evolved Laser Interferometer Space Antenna (eLISA), is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Bender1998, Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion objects inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the object plunges into the MBH. These systems are typically formed following two-body encounters so the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are extreme mass-ratio bursts (EMRBs; \citealt{Rubbo2006}). Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the LISA/eLISA frequency range. The resulting signals are extreme mass-ratio inspirals (EMRIs; \citealt{Amaro-Seoane2007}).
+An exciting means of inferring information about the MBH is through gravitational waves (GWs) emitted when compact objects (COs), such as stellar mass BHs, neutron stars (NSs), white dwarfs (WDs) or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as the Laser Interferometer Space Antenna (LISA) or the evolved Laser Interferometer Space Antenna (eLISA), is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Bender1998, Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion objects inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the object plunges into the MBH. These systems are typically formed following two-body encounters so that the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are extreme mass-ratio bursts (EMRBs; \citealt{Rubbo2006}). Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the LISA/eLISA frequency range. The resulting signals are extreme mass-ratio inspirals (EMRIs; \citealt{Amaro-Seoane2007}).
 
 Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high signal-to-noise ratio (SNR) to be accumulated. Here, we investigate high eccentricity orbits. These are the initial bursting orbits from which an EMRI may evolve, and are the consequence of scattering from two body encounters.. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC. Exactly what can be inferred depends upon the orbit, which we investigate here. 
 
@@ -68,7 +68,7 @@ In the following we investigate the properties of EMRBs as a means of studying M
 
 We may proceed to use the waveforms for parameter estimation. Using Markov chain Monte Carlo methods, we have computed the accuracy to which an EMRB can constrain the properties of the MBH. We shall not present these results here, but they do show that EMRBs are useful for measuring the properties of the Galaxy's MBH.
 
-At the time of writing, there is no currently funded mission. However, LISA Pathfinder, a technology demonstration mission, is due for launch at the end of 2014 \citep{Anza2005, Antonucci2012}. Hopefully, a full mission shall follow in the subsequent decade. Since there does not exist a definite mission design, we use the classic LISA design for the majority of this work. It is hoped that any future missions shall have comparable sensitivity, and studies using the LISA design are sensible benchmark for comparison.
+At the time of writing, there is no currently funded mission. However, LISA Pathfinder, a technology demonstration mission, is due for launch at the end of 2014 \citep{Anza2005, Antonucci2012}. Hopefully, a full mission shall follow in the subsequent decade. Since there does not exist a definite mission design, we use the classic LISA design for the majority of this work. It is hoped that any future missions shall have comparable sensitivity, and studies using the LISA design are sensible benchmarks for comparison.
 
 Throughout this work we adopt a metric with signature $(+,-,-,-)$. Greek indices are used to represent spacetime indices $\mu = \{0,1,2,3\}$ and lowercase Latin indices from the middle of the alphabet are used for spatial indices $i = \{1,2,3\}$. Uppercase Latin indices from the beginning of the alphabet are used for the output of the two LISA detector-arms $A = \{\mathrm{I}, \mathrm{II}\}$, and lowercase Latin indices from the beginning of the alphabet are used for parameter space. Summation over repeated indices is assumed unless explicitly noted otherwise. Geometric units with $G = c = 1$ are used where noted, but in general factors of $G$ and $c$ are retained.
 
@@ -501,6 +501,7 @@ Having obtained expressions for $A(\tilde{f})$ and $B(\tilde{f})$ in terms of st
 where we have used the limit
 \begin{align}
 \ell(\tilde{f})  = {} & \left[8\tilde{f}^2B(\tilde{f}) - 2\tilde{f}A(\tilde{f})\right]^2 + \left(128\tilde{f}^4 + \frac{4\tilde{f}^2}{3}\right)\left[A(\tilde{f})\right]^2.
+\label{eq:ell}
 \end{align}
 This agrees with the $e = 1$ result of \citet{Turner1977}, which was computed by direct integration along unbound orbits. \Figref{ell} shows how $\ell(n,e)$ changes with eccentricity including our result for a parabolic encounter. Although more power is radiated into higher harmonics, the peak of the spectrum does not move much: it is always between $f = f\sub{c}$ and $f = 2 f\sub{c}$, with $f = 2 f\sub{c}$ for $e = 0$ and $f \simeq 1.637 f\sub{c}$ for $e = 1$.
 \begin{figure}[!htp]
@@ -778,7 +779,7 @@ We have no {\it a priori} knowledge about the CO or its orbit, so anything we le
 
 \section{Extra-galactic sources}\label{sec:Extragal}
 
-We have so far only been concerned with properties of bursts from our own galaxy. This is the best source for bursts because of its proximity. A natural continuation is to consider EMRBs from other MBHs. \citet{Rubbo2006} suggested that LISA should be able to detect EMRBs originating from the Virgo cluster, although the detectable rate might only be $10^{-4}\units{yr^{-1}}$ per galaxy \citep{Hopman2007}. We wish to invistage this possibility using our more accurate waveforms.
+We have so far only been concerned with properties of bursts from our own galaxy. This is the best source for bursts because of its proximity. A natural continuation is to consider EMRBs from other MBHs. \citet{Rubbo2006} suggested that LISA should be able to detect EMRBs originating from the Virgo cluster, although the detectable rate might only be $10^{-4}\units{yr^{-1}}$ per galaxy \citep{Hopman2007}. We wish to investigate this possibility using our more accurate waveforms.
 
 \subsection{Detection with LISA}
 
@@ -790,7 +791,7 @@ Space-based detectors are most sensitive from extreme-mass-ratio signals origina
   \toprule
    Galaxy & \multicolumn{1}{c}{$M_\bullet/10^6 M_\odot$} & \multicolumn{1}{c}{$R/\mathrm{Mpc}$} & References \\
  \midrule
- Milky Way (MW) & 4.31 & 0.00833& \citet{Gillessen2009} \\
+ Milky Way (GC) & 4.31 & 0.00833& \citet{Gillessen2009} \\
  M32 (NGC 221) & 2.5 & 0.770 & \citet{Verolme2002,Karachentsev2004} \\
  Andromeda (M31, NGC 224) & 140 & 0.770 &  \citet{Bender2005,Karachentsev2004} \\
  Circinus & 1.1 & 2.82 & \citet{Graham2008,Greenhill2003,Karachentsev2007} \\
@@ -812,11 +813,11 @@ f_\ast = \sqrt{\frac{GM_\bullet}{r\sub{p}^3}}.
 \end{equation}
 This allows comparison between different systems where the same periapse does not correspond to the same frequency, and thus the same point of the noise curve.
 
-We also expect the SNR to scale with other quantities. We define a characteristic strain amplitude for a burst $h_0$; we expect $\rho \propto h_0$, where the proportionality is set by a frequency-dependent function than includes the effect of the noise curve. Assuming that the strain is dominated by the quadrupole contribution, see \eqnref{octupole}, 
+We also expect the SNR to scale with other quantities. We define a characteristic strain amplitude for a burst $h_0$; we expect $\rho \propto h_0$, where the proportionality is set by a frequency-dependent function that includes the effect of the noise curve. Assuming that the strain is dominated by the quadrupole contribution, see \eqnref{octupole}, 
 \begin{equation}
 h_0 \sim \frac{G}{c^6}\frac{\mu}{R}\frac{\dd^2}{\dd t^2}\left(r^2\right),
 \end{equation}
-where $r$ is a proxy for the position of the orbitting object. The characteristic rate of change is set by $f_\ast$ and the characteristic length scale is set by $r\sub{p}$. Hence
+where $r$ is a proxy for the position of the orbiting object. The characteristic rate of change is set by $f_\ast$ and the characteristic length scale is set by $r\sub{p}$. Hence
 \begin{align}
 h_0 \sim {} & \frac{G}{c^6}\frac{\mu}{R}f_\ast^2 r\sub{p}^2 \\
  \sim {} & \frac{G^{5/2}}{c^6}\frac{\mu}{R}f_\ast^{-2/3}M_\bullet^{2/3}.
@@ -878,7 +879,7 @@ We can repeat the analysis for eLISA. The scaled SNRs are shown in \figref{scale
  \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency for the eLISA design.\label{fig:scaled-SNR-eLISA}}
    \end{center}
 \end{figure}
-Since Andromeda was only marginally of interest for the classic LISA design, we did not it this time. The curve is fitted with
+Since Andromeda was only marginally of interest for the classic LISA design, we did not include it this time. The curve is fitted with
 \begin{equation}
 \begin{split}
 &\alpha_1 \simeq 7.39 \times 10; \ \  \alpha_2 \simeq 4.99 \times 10^3; \ \  \alpha_3 \simeq 5.27 \times 10;\\
@@ -910,7 +911,7 @@ except for the closest orbits ($r\sub{p} \lesssim 7 r\sub{g}$). Signals should b
 
 We used MCMC results as a robust measure of parameter estimation accuracy. Potentially, it is possible to determine very precisely the key parameters defining the Galaxy's MBH's mass and spin, if the periapsis is sufficiently small. From our investigation it appears that we can achieve good results from a single EMRB with periapsis of $r\sub{p} \simeq 10 r\sub{g}$ for a $10 M_\odot$ CO. This translates to a distance of $6 \times 10^{10}\units{m}$ or $2 \times 10^{-6}\units{pc}$. Orbits closer than this would be even better, and place stricter constraints. The best orbits yield uncertainties of almost one part in $10^5$ for the MBH mass and spin, far exceeding existing techniques. Conversely, orbits with $r\sub{p} \gtrsim 20 r\sub{g}$ are unlikely to provide any useful information.
 
-While we have only considered bursts from our own galaxy in detail, it should be possible to observe bursts from other nearby galaxies if their MBH is of the appropriate mass. The SNR of EMRBs obeys a number of scaling relations that allow us to check whether an MBH could produce detectable bursts. M32 is the best extragalactic candidate. However, even in this case, the of parameter space that can produce detectable bursts is small. The SNR shows a similar dependence upon periapsis as for the GC, and may be described by a power-law of
+While we have only considered bursts from our own galaxy in detail, it should be possible to observe bursts from other nearby galaxies if their MBH is of the appropriate mass. The SNR of EMRBs obeys a number of scaling relations that allow us to check whether an MBH could produce detectable bursts. M32 is the best extragalactic candidate. However, even in this case, the region of parameter space that can produce detectable bursts is small. The SNR shows a similar dependence upon periapsis as for the GC, and may be described by a power-law of
 \begin{equation}
 \log\left(\hat{\rho}\right) \simeq -2.7\log\left(\frac{r\sub{p}}{r\sub{g}}\right) + 3.1,
 \end{equation}
