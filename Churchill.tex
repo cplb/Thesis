@@ -69,13 +69,16 @@
 \newcommand{\Figref}[1]{Figure~\ref{fig:#1}}
 
 \DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\Ei}{Ei}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\Beta}{B}
 
 \newcommand{\units}[1]{\ensuremath{~\mathrm{#1}}}
 
 \newcommand{\sub}[1]{\ensuremath{_\mathrm{#1}}}
 \newcommand{\super}[1]{\ensuremath{^\mathrm{#1}}}
 
-\newcommand{\recip}[1]{\ensuremath{\frac{1}{#1}}}
+\newcommand{\recip}[1]{\ensuremath{\dfrac{1}{#1}}}
 
 \newcommand{\order}[1]{\ensuremath{\mathcal{O}\left({#1}\right)}}
 
@@ -159,6 +162,9 @@ in addition to unpublished material. This constitutes the greater part of my wor
 
 \setcounter{page}{1}
 \input{./Waveforms_Churchill.tex}
+\input{./Event_rates_Churchill.tex}
+\input{./Extragalactic_Churchill.tex}
+\input{./Conclusion_Churchill.tex}
 
 \section*{Acknowledgments}
 
@@ -168,6 +174,8 @@ I must thank Jonathan Gair for his supervision, for suggesting this work and his
 
 \bibliographystyle{../physicsAuthorYearURL}
 \bibliography{../library}
+
+\newpage
 
 \appendix
 \input{./Timescale_Churchill.tex}
