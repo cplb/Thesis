@@ -1,6 +1,6 @@
 \section{Event rates}\label{sec:Events}
 
-For EMRBs to be a useful astronomical signal we require that the bursts contain sufficient information to improve our knowledge of their source systems and that their event rate is sufficiently high that we could expect to observe them over a mission life time. We have addressed the first: EMRBs can give good constraints on the key parameters describing the Galaxy's MBH. The second concern shall be the addressed here. Previously, the best estimate for the event rate was given by \citet{Hopman2007}; they predicted the event rate for LISA was $\sim 1\units{yr^{-1}}$. We follow a similar approach, but significantly, we improve the calculation of SNR by using NK waveforms.
+For EMRBs to be a useful astronomical signal we require that the bursts contain sufficient information to improve our knowledge of their source systems and that their event rate is sufficiently high that we could expect to observe them over a mission life time. We have addressed the first: EMRBs can give good constraints on the key parameters describing the Galaxy's MBH. The second concern shall be addressed here. Previously, the best estimate for the event rate was given by \citet{Hopman2007}; they predicted the event rate for LISA was $\sim 1\units{yr^{-1}}$. We follow a similar approach, but significantly, we improve the calculation of SNR by using NK waveforms.
 
 \subsection{The distribution function}
 
@@ -48,11 +48,11 @@ These cusp profiles should exist if the system has had sufficient time to become
 \subsection{Model parameters}\label{sec:GC-Param}
 
 We use the Fokker-Planck model of \citet{Hopman2006, Hopman2006a, Alexander2009}. This includes four stellar species: main sequence (MS) stars, white dwarfs (WDs), neutron stars (NSs), and black holes (BHs). Their properties are summarised in \tabref{HA}. The behaviour of the Fokker-Planck model has been verified by $N$-body simulations \citep{Baumgardt2004,Preto2010}.
-\begin{table}
+\begin{table}[!htp]
  \centering
   \begin{tabular}{l D{.}{.}{2.1} D{.}{.}{1.3} D{.}{.}{1.1} D{.}{.}{1.3}}
   \toprule
-   Star & \multicolumn{1}{c}{$M/M_\odot$} & \multicolumn{1}{c}{$C_M/C_\star$} & \multicolumn{1}{c}{$p_M$} & \multicolumn{1}{c}{$k_M/k_\star$\footnote{\citet*{Toonen2009}}} \\
+   Star & \multicolumn{1}{c}{$M/M_\odot$} & \multicolumn{1}{c}{$C_M/C_\star$} & \multicolumn{1}{c}{$p_M$} & \multicolumn{1}{c}{$k_M/k_\star$} \\
  \midrule
  MS & 1.0 & 1 & -0.1 & 1 \\
  WD & 0.6 & 0.1 & -0.1 & 0.09 \\
@@ -60,9 +60,9 @@ We use the Fokker-Planck model of \citet{Hopman2006, Hopman2006a, Alexander2009}
  BH & 10 & 0.001 & 0.5 & 0.008 \\
 \bottomrule
 \end{tabular}
-\caption{Stellar model parameters for the galactic centre using the results of \citet{Alexander2009} We use the main sequence star as our reference. The number fractions for unbound stars are estimates corresponding to a model of continuous star formation \citep{Alexander2005}; \citet{O'Leary2009} arrive at the same proportions.\label{tab:HA}}
+\caption{Stellar model parameters for the Galactic core using the results of \citet{Alexander2009} We use the main sequence star as our reference. The number fractions for unbound stars are estimates corresponding to a model of continuous star formation \citep{Alexander2005}; \citet{O'Leary2009} arrive at the same proportions. Values for $k_M/k_\star$ are taken from \citet{Toonen2009}.\label{tab:HA}}
 \end{table}
-The steeper power law for black holes means they segregate about the MBH\footnote{Extrapolating, they would dominate in place of MS stars for radii $r < 10^{-4}r\sub{c}$.}
+The steeper power law for black holes means they segregate about the MBH.\footnote{Extrapolating, they would dominate in place of MS stars for radii $r < 10^{-4}r\sub{c}$.}
 
 Binaries may form in the galactic centre, encouraged by its high stellar density \citep{O'Leary2009}. However the binary fraction is still expected to be small \citep{Hopman2009}. Binaries are also disrupted by the MBH for periapses smaller than
 \begin{equation}
@@ -72,14 +72,14 @@ where $M_1$ and $M_2$ are the masses of the binary's components, and $a\sub{B}$ 
 
 We assume $M_\bullet = (4.31 \pm 0.36) \times 10^6 M_\odot$ \citep{Gillessen2009} and $\sigma = (103 \pm 20)\units{km\,s^{-1}}$ \citep{Tremaine2002}. This gives a core radius of $r\sub{c} = (1.7 \pm 0.7)\units{pc}$. Using the results of \citet{Ghez2008} we would expect the total mass of stars core to be $m_\star(r\sub{c}) = 6.4 \times 10^6 M_\odot$, which is within $5\%$ of the value obtained similarly from \citet{Genzel2003}. This gives a reference stellar density of $n_\star = 2.8 \times 10^5\units{pc^{-3}}$.
 
-\subsection{Parametrising in terms of eccentricity \& periapsis}
+\subsection{Parametrizing in terms of eccentricity \& periapsis}
 
 We characterise orbits by their eccentricity $e$ and periapse radius $r\sub{p}$. The latter, unlike the semimajor axis, is always well defined regardless of eccentricity. For Keplerian orbits, the energy $\mathcal{E}$ and angular momentum $\mathcal{J}$ per unit mass are entirely characterised by these parameters
 \begin{align}
 \label{eq:Energy_ecc}
 \mathcal{E} = {} & -\frac{GM_\bullet(1 - e)}{2r\sub{p}}; \quad \mathcal{J}^2 = GM_\bullet(1 + e)r\sub{p}.
 \end{align}
-The DF is defined per element of phase space: it is necessary to change variables from position and velocity to eccentricity and periapsis. We decompose the velocity into three orthogonal components: radial $v_r$, azimuthal $v_\phi$ and polar $v_\theta$. We assume the galactic core is spherically symmetric \citep{Genzel2003, Schodel2007}, therefore we are only interested in the combination
+The DF is defined per element of phase space: it is necessary to change variables from position and velocity to eccentricity and periapsis. We decompose the velocity into three orthogonal components: radial $v_r$, azimuthal $v_\phi$ and polar $v_\theta$. We assume the core is spherically symmetric \citep{Genzel2003, Schodel2007}, therefore we are only interested in the combination
 \begin{equation}
 v_\perp^2 = v_\phi^2 + v_\theta^2 = v^2 - v_r^2.
 \end{equation}
@@ -135,7 +135,7 @@ where $N(e, r\sub{p}; r)$ is the total number of stars with orbits given by $\{e
 \begin{equation}
 \delta t = 2\frac{\delta r}{v_r},
 \end{equation}
-where the factor of $2$ is accounts for inwards and outwards motion. Hence
+where the factor of $2$ accounts for inwards and outwards motion. Hence
 \begin{align}
 N(e, r\sub{p}; r) = {} & \recip{2} v_r P(e, r\sub{p}) n(r, e, r\sub{p}) = \frac{2\pi^2(GM_\bullet)^2 e P(e, r\sub{p})}{r\sub{p}}f(\mathcal{E}).
 \end{align}
@@ -172,11 +172,11 @@ From \eqnref{Gamma} we see the event rate is highly sensitive to the smallest va
 The calculated inner cut-offs for the four stellar species are shown in \figref{Cuts}.
 \begin{figure}[!htp]
 \begin{center}
-   \subfigure[{Main sequence stars}]{\includegraphics[width=0.47\textwidth]{./images/Fig_Inner_cut_1.eps}} \quad 
-   \subfigure[{White dwarfs}]{\includegraphics[width=0.47\textwidth]{./images/Fig_Inner_cut_2.eps}} \\
-   \subfigure[{Neutron stars}]{\includegraphics[width=0.47\textwidth]{./images/Fig_Inner_cut_3.eps}} \quad
-   \subfigure[{Black holes}]{\includegraphics[width=0.47\textwidth]{./images/Fig_Inner_cut_4.eps}}
-\caption{Inner cut-off radii for the Galactic Centre as a function of eccentricity. The solid line is the Schwarzschild radius of the MBH; the dashed line is the tidal radius; the dot-dashed line is the collisional cut-off, and the dotted line is the transition to the GW-dominated inspiral regime.\label{fig:Cuts}}
+   \subfigure[{Main sequence stars}]{\includegraphics[width=0.45\textwidth]{./images/Fig_Inner_cut_1.eps}} \quad 
+   \subfigure[{White dwarfs}]{\includegraphics[width=0.45\textwidth]{./images/Fig_Inner_cut_2.eps}} \\
+   \subfigure[{Neutron stars}]{\includegraphics[width=0.45\textwidth]{./images/Fig_Inner_cut_3.eps}} \quad
+   \subfigure[{Black holes}]{\includegraphics[width=0.45\textwidth]{./images/Fig_Inner_cut_4.eps}}
+\caption{Inner cut-off radii as a function of eccentricity. The solid line is the Schwarzschild radius of the MBH; the dashed line is the tidal radius; the dot-dashed line is the collisional cut-off, and the dotted line is the transition to the GW-dominated inspiral regime.\label{fig:Cuts}}
   \end{center}
 \end{figure}
 
@@ -187,7 +187,7 @@ Tidal forces from the MBH can disrupt stars. This occurs at the tidal radius
 r\sub{T} \simeq \left(\frac{M_\bullet}{M}\right)^{1/3}R_M
 \label{eq:Tidal}
 \end{equation}
-where $R_M$ is the radius of the star \citep{Hills1975, Rees1988, Kobayashi2004}.\footnote{See \citet{Kesden2012} for a general relativistic treatment.} Any star on an orbit with $r\sub{p} < r\sub{T}$ is disrupted in the course of its orbit. Parametrising orbits by their periapsis allows us to easily determine which stars should be disrupted. We do not include the full effects of the loss cone \citep{Frank1976, Lightman1977, Cohn1978} as these were not incorporated into the Fokker-Planck calculations \citep{Hopman2009}.\footnote{The loss cone is a region in velocity space where orbits are depleted because stars are disrupted more rapidly than they can be replenished by two-body scattering.} The effect of the loss cone should be small, only modifying the DF by a logarithmic term \citep{Lightman1977, Bahcall1977, Cohn1978}. Its effects are diluted by resonant relaxation \citep{Hopman2007,Toonen2009,Merritt2011}. Furthermore, the loss cone could be refilled by the wandering of the MBH because of perturbations from the inhomogeneities in the stellar potential \citep{Sigurdsson1997,Chatterjee2002,Merritt2007}.
+where $R_M$ is the radius of the star \citep{Hills1975, Rees1988, Kobayashi2004}.\footnote{See \citet{Kesden2012} for a general relativistic treatment.} Any star on an orbit with $r\sub{p} < r\sub{T}$ is disrupted in the course of its orbit. Parametrizing orbits by their periapsis allows us to easily determine which stars should be disrupted. We do not include the full effects of the loss cone \citep{Frank1976, Lightman1977, Cohn1978} as these were not incorporated into the Fokker-Planck calculations \citep{Hopman2009}.\footnote{The loss cone is a region in velocity space where orbits are depleted because stars are disrupted more rapidly than they can be replenished by two-body scattering.} The effect of the loss cone should be small, only modifying the DF by a logarithmic term \citep{Lightman1977, Bahcall1977, Cohn1978}. Its effects are diluted by resonant relaxation \citep{Hopman2007,Toonen2009,Merritt2011}. Furthermore, the loss cone could be refilled by the wandering of the MBH because of perturbations from the inhomogeneities in the stellar potential \citep{Sigurdsson1997,Chatterjee2002,Merritt2007}.
 
 Tidal disruption is significant for MS stars since they are least dense: calculated in this way, only MS stars are tidally disrupted outside of the MBH's event horizon \citep{Sigurdsson1997}. The tidal radius defines the cut-off for periapsis of high eccentricity ($e \gtrsim 1$) orbits \citep{Lightman1977}.
 
@@ -202,7 +202,7 @@ The two-body interactions mostly lead to small deflections. Over time, these may
 \end{equation}
 where the Coulomb logarithm is $\ln\Lambda = \ln(M_\bullet/M_\star)$ \citep{Bahcall1976}, and $\kappa$ is a dimensionless number. In his pioneering work, \citet{Chandrasekhar1941, Chandrasekhar1960} defined the time-scale as the period over which the squared change in energy was equal to the kinetic energy squared, this gives $\kappa = 9/16\sqrt{\pi} \simeq 0.32$. Subsequently, \citet{Chandrasekhar1941a} described relaxation statistically, treating fluctuations in the gravitational field probabilistically; this gives $\kappa = 9/2(2\pi)^{3/2} \simeq 0.29$. \citet{Bahcall1977} define a reference time-scale from their Boltzmann equation with $\kappa = 3/4\sqrt{8\pi} \simeq 0.15$; this is equal to the reference time-scale defined as the reciprocal of the coefficient of dynamical friction by \citet{Chandrasekhar1943a, Chandrasekhar1943}. \citet{Spitzer1958} define a reference time-scale from the gravitational Boltzmann equation of \citet{Spitzer1951} where $\kappa = \sqrt{2}/\pi \simeq 0.45$. Following \citet{Spitzer1971}, \citet[section 7.4.5]{Binney2008} estimate the time-scale from the velocity diffusion coefficient of the Fokker-Planck equation yielding $\kappa \simeq 0.34$.
 
-All these approaches yield consistent values, suggesting, as a first approximation, any is valid. We follow the classic treatment of \citet[chapter 2]{Chandrasekhar1960} which is transparent in its assumptions, adapting from a Maxwellian distribution of velocities to one derived from the DFs \eqnref{Unbound_DF} and \eqnref{Bound_DF}. This makes the model self-consistent. Since there is uncertainty in the astrophysical parameters, we will not be concerned by small discrepancies in the numerical prefactor that result from the simplifying approximations of this approach. Whilst we are only making a minor change to the derivation of the relaxation time-scale, the calculations become much more involved, we confine this to \apref{time-scale}, along with a discussion of the shortcomings. An average time-scale for the entire system $\overline{\tau\sub{R}}$ is defined in \eqnref{system-relax}, and an average for an orbit $\left\langle\tau\sub{R}\right\rangle$ is defined in \eqnref{orbital-relax}.
+All these approaches yield consistent values, suggesting, as a first approximation, any is valid. We follow the classic treatment of \citet[chapter 2]{Chandrasekhar1960} which is transparent in its assumptions, adapting from a Maxwellian distribution of velocities to one derived from the DFs (\ref{eq:Unbound_DF}) and (\ref{eq:Bound_DF}). This makes the model self-consistent. Since there is uncertainty in the astrophysical parameters, we will not be concerned by small discrepancies in the numerical prefactor that result from the simplifying approximations of this approach. Whilst we are only making a minor change to the derivation of the relaxation time-scale, the calculations become much more involved; we confine this to \apref{time-scale}, along with a discussion of the shortcomings. An average time-scale for the entire system $\overline{\tau\sub{R}}$ is defined in \eqnref{system-relax}, and an average for an orbit $\left\langle\tau\sub{R}\right\rangle$ is defined in \eqnref{orbital-relax}.
 
 Two-body interactions lead to diffusion in both energy and angular momentum. When considering a single (bound) orbit, over a relaxation time-scale the energy changes by order of itself while the angular momentum changes by the angular momentum of a circular orbit with that energy $\mathcal{J}\sub{circ}(\mathcal{E})$ \citep{Lightman1977, Rauch1996, Hopman2005, Madigan2011}:\footnote{$\mathcal{J}\sub{circ}(\mathcal{E})$ is the maximum value for orbits of that energy.}
 \begin{equation}
@@ -238,7 +238,7 @@ The time-scale associated with changes in angular momentum is \citep{Peters1964}
 \end{align}
 This is always greater than the energy time-scale; hence, we only consider changes in energy from GW emission as important for evolution of the system \citep{Hopman2005}.
 
-Unbound stars only undergo a single periapse passage and only radiate one burst of radiation; we therefore neglect any evolution in their orbital parameters.\footnote{Changes are only important for very high eccentricity orbits.). These are very high energy, and exponentially suppressed because of the Boltzmann factor in \eqnref{Unbound_DF}.}
+Unbound stars only undergo a single periapse passage and only radiate one burst of radiation; we therefore neglect any evolution in their orbital parameters.\footnote{Changes are only important for very high eccentricity orbits. These are very high energy, and exponentially suppressed because of the Boltzmann factor in \eqnref{Unbound_DF}.}
 
 The $(1-e)^{-1/2}$ dependence of $\tau\sub{GW}$ for bound orbits connects the two regimes. The rate of change of energy goes to zero as a consequence of assuming the orbital parameters do not change over the course of an orbit. It is a valid approximation since the large mass-ratio ensures a slow evolution of the system.
 
@@ -246,13 +246,13 @@ When comparing with the relaxation time-scale we are comparing rates of change, 
 
 \subsubsection{Collisions}\label{sec:Collision}
 
-As a consequence of the high densities in the galactic core, stars may undergo a large number of close encounters with other stars \citep{Cohn1978}. These may lead to their destruction. MS stars, WDs, and NSs may be pulled apart by tidal forces if they stray too close to a a more massive object. As MS stars are diffuse, they would not tidally disrupt another star \citep{Murphy1991,Freitag2005}. Close encounters would result in some mass transfer; the cumulative effect of $20$--$30$ grazing collisions could destroy a MS star \citep{Freitag2006}. The number of collisions a star undergoes in a time interval $\delta t$ is
+As a consequence of the high densities in the Galactic core, stars may undergo a large number of close encounters with other stars \citep{Cohn1978}. These may lead to their destruction. MS stars, WDs, and NSs may be pulled apart by tidal forces if they stray too close to a more massive object. As MS stars are diffuse, they would not tidally disrupt another star \citep{Murphy1991,Freitag2005}. Close encounters would result in some mass transfer; the cumulative effect of $20$--$30$ grazing collisions could destroy a MS star \citep{Freitag2006}. The number of collisions a star undergoes in a time interval $\delta t$ is
 \begin{equation}
 \delta K = n(r) A v(r,e,r\sub{p})\delta t,
 \end{equation}
 where $A$ is the collisional cross-sectional area. For tidal disruption, where the encounter is with a collapsed object (WD, NS or BH), we set $A = \pi r_{\mathrm{T},\,{M'}}^2$, where $r_{\mathrm{T},\,{M'}}$ is the appropriate tidal radius: like \eqnref{Tidal} but with $M_\bullet$ replaced with the mass of the collapsed object $M'$. For collisions between MS stars, the cross-sectional area is simply the geometric $A = \pi R_\star^2$.\footnote{Here we assume the relative velocity of the colliding stars is much greater than the escape velocity of the star so we may neglect the effects of gravitational focusing.}
 
-For circular orbits we can find the radius at which collisions lead to disruptions by setting $\delta K = 1$ for tidal disruption or $\delta K = 20$ for grazing collisions, and $\delta t = \overline{\tau_\mathrm{R,\,M}}$. We the system average relaxation time-scale for species of mass $M$ as this is the time over which stars are replenished from the reservoir. For non-circular orbits we must consider variation with position. Using $\delta r = v_r \delta t$, and then converting to an integral, for bound orbits
+For circular orbits we can find the radius at which collisions lead to disruptions by setting $\delta K = 1$ for tidal disruption or $\delta K = 20$ for grazing collisions, and $\delta t = \overline{\tau_\mathrm{R,\,M}}$. We use the system average relaxation time-scale for species of mass $M$ as this is the time over which stars are replenished from the reservoir. For non-circular orbits we must consider variation with position. Using $\delta r = v_r \delta t$, and then converting to an integral, for bound orbits
 \begin{equation}
 K = 2 A \frac{\tau\sub{R}}{P(r\sub{p},e)}\intd{r\sub{p}}{(1+e)r\sub{p}/(1-e)}{n(r)\frac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
 \end{equation}
@@ -262,14 +262,14 @@ K = A \intd{r\sub{p}}{r\sub{c}}{n(r)\frac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r
 \end{equation}
 assuming the stars in the reservoir external to the core are unlikely to undergo close collisions.
 
-Collisions provide the cutoff for bound MS stars, and are significant for bound WDs.
+Collisions provide the cut-off for bound MS stars, and are significant for bound WDs.
 
 \subsection{Number of events}
 
 To estimate the number of events expected in a $2\units{yr}$ mission lifetime $\mathcal{N}_2$, we performed $16000$ mission realisations. For each, we randomly selected a set of parameters to describe the MBH, and then picked orbits with probabilities defined by their event rates. The lower bound on eccentricity was set to $0.9$, below which we do not trust the parabolic approximation for burst waveforms; since the DF decays exponentially with eccentricity for unbound orbits, the upper limit does not influence our results. The SNR of the resulting bursts were calculated (with the detector in a position corresponding to a random time), and a detection was recorded if $\rho > 10$. By averaging the number of events per mission, we can estimate the expected number of bursts we would expect to detect.
 
 The calculated numbers of events are given in \tabref{Rates}.
-\begin{table}
+\begin{table}[!htp]
  \centering
   \begin{tabular}{l D{,}{\times}{3.4}}
   \toprule
@@ -278,7 +278,7 @@ The calculated numbers of events are given in \tabref{Rates}.
  MS & 1.0,10^{-3} \\
  WD & 9.9,10^{-3} \\
  NS & 5.0,10^{-1} \\
- BH & 1.2,10^{-1} \\
+ BH & 1.2,10^{0} \\
 \midrule
 Total & 1.7,10^{0}\\
 \bottomrule
@@ -295,6 +295,6 @@ The number of events per mission is plotted in \figref{Event-no}.
 \label{fig:Event-no}
 \end{center}
 \end{figure}
-As a consistency check, we also calculated the expected number of bursts by numerically integrated the event rate. The lower limit on $r\sub{p}$ was set to be the largest of the tidal cut-off, the collisional cut-off or the MBH's Schwarzschild radius; the upper limit was the detection threshold as determined from \eqnref{SNR-power-law}. This gives an expectation of $\mathcal{N}_2 \simeq 1.7$ in good agreement with our other estimate. We have used this as the mean of a Poisson distribution, which is used to plot the points in \figref{Event-no}.
+As a consistency check, we also calculated the expected number of bursts by numerically integrating the event rate. The lower limit on $r\sub{p}$ was set to be the largest of the tidal cut-off, the collisional cut-off or the MBH's Schwarzschild radius; the upper limit was the detection threshold as determined from \eqnref{SNR-power-law}. This gives an expectation of $\mathcal{N}_2 \simeq 1.7$ in good agreement with our other estimate. We have used this as the mean of a Poisson distribution, which is used to plot the points in \figref{Event-no}.
 
 The event rate is low, but still within the range to make detecting an EMRB probable over the duration of a mission. EMRBs are a credible GW signal. Translating the number of detectable bursts into a number of informative bursts, and quantifying the amount of information we could expect to learn over a mission is current work-in-progress.

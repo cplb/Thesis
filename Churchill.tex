@@ -140,9 +140,13 @@
 \maketitle
 
 \begin{abstract}
-An extreme-mass-ratio burst (EMRB) is a gravitational wave signal emitted when a compact object passes through periapsis on a highly eccentric orbit about a much more massive object, in our case a stellar mass object about a $10^6 M_\odot$ black hole. EMRBs are an unexplored means of probing the spacetime of massive black holes (MBHs). As a prerequisite for an investigation of the properties of EMRBs and how they could allow us to constrain MBH parameters, it is necessary to construct waveforms. We do so using the computationally efficient numerical kludge approximation.  To confirm the accuracy of the kludge waveforms we derive an analytic expression for the energy spectrum of gravitational waves from a parabolic Keplerian binary. Comparison with our kludge spectrum shows good agreement.
+An extreme-mass-ratio burst (EMRB) is a gravitational wave signal emitted when a compact object passes through periapsis on a highly eccentric orbit about a much more massive object, in our case a stellar mass object about a $10^6 M_\odot$ black hole. EMRBs are an unexplored means of probing the spacetime of massive black holes (MBHs).
 
-We find that if an EMRB event occurs in the Galaxy, it should be detectable if the periapse distance is $r\sub{p} < 65 r\sub{g}$ for a $10 M_\odot$ orbiting object, where $r\sub{g}$ is the gravitational radius of the MBH. The signal-to-noise ratio scales approximately as $\log(\rho) \simeq -2.7\log(r\sub{p}/r\sub{g}) + \log(\mu/M_\odot) + 4.9$. For periapses $r\sub{p} \lesssim 10 r\sub{g}$, EMRBs can be informative, and provide good constraints on both the MBH's mass and spin. Closer orbits provide better constraints, with the best giving accuracies of better than one part in $10^4$ for both the mass and spin parameter.
+As a prerequisite for an investigation of the properties of EMRBs and how they could allow us to constrain MBH parameters, it is necessary to construct waveforms. We do so using the computationally efficient numerical kludge approximation. To confirm the accuracy of the kludge waveforms we derive an analytic expression for the energy spectrum of gravitational waves from a parabolic Keplerian binary. Comparison with our kludge spectrum shows good agreement.
+
+We find that if an EMRB event occurs in the Galaxy, it should be detectable if the periapse distance is $r\sub{p} < 65 r\sub{g}$ for a $10 M_\odot$ orbiting object, where $r\sub{g}$ is the gravitational radius of the MBH. The signal-to-noise ratio scales approximately as $\log(\rho) \simeq -2.7\log(r\sub{p}/r\sub{g}) + \log(\mu/M_\odot) + 4.9$.
+
+Using a Markov chain Monte Carlo algorithm to assess the accuracy we can estimate parameters, we find for periapses $r\sub{p} \lesssim 10 r\sub{g}$, EMRBs can be informative, and provide good constraints on both the MBH's mass and spin. Closer orbits provide better constraints, with the best giving accuracies of better than one part in $10^4$ for both the mass and spin parameter.
 
 To be a useful astronomical tool, EMRBs must be both informative and sufficiently common to be observable. We construct a simple model to predict the event rate for Galactic EMRBs. We estimate there could be on average $\sim 1.7$ bursts in a two year mission lifetime. Stellar mass black holes produce the most signals.
 
@@ -157,7 +161,7 @@ and
 \begin{quote}
 Berry, C.P.L.\ \& Gair, J.R.; Gravitational wave energy spectrum of a parabolic encounter; \href{http://dx.doi.org/10.1103/PhysRevD.82.107501}{\it Physical Review D}; {\bf 82}(10):107501(4); November 2010; \href{http://arxiv.org/abs/1010.3865}{\tt arXiv:1010.3865 [gr-qc]},
 \end{quote}
-in addition to unpublished material. This constitutes the greater part of my work on EMRBs. My thesis has two strands: how we can use gravity to probe astrophysical systems, and how astrophysical systems can be used to explore gravitation. The study of EMRBs is the former part.
+in addition to unpublished material. This constitutes the greater component of my work on EMRBs. My Ph.D.\ thesis has two strands: how we can use gravity to probe astrophysical systems, and how astrophysical systems can be used to explore gravitation. The study of EMRBs is the former part.
 \end{abstract}
 
 \setcounter{page}{1}
@@ -168,7 +172,7 @@ in addition to unpublished material. This constitutes the greater part of my wor
 
 \section*{Acknowledgments}
 
-I must thank Jonathan Gair for his supervision, for suggesting this work and his continued supervision. I am particular grateful for his collaboration on developing the MCMC code; the result of \eqnref{ell} is inspired by his earlier calculations. I am indebted to Michele Vallisneri for discussions on the (im)proper use of Fisher matrices. I thank Stephen Taylor for advice on adaptive MCMC methods; Dave Green for helpful suggestions regarding apodization; Sverre Aarseth for insightful discussions, and Tal Alexander and Clovis Hopman for useful correspondence. I am grateful to Donald Lynden-Bell for his suggestions, and would like to thank Pau Amaro-Seoane for useful comments. The MCMC simulations were performed using the Darwin Supercomputer of the University of Cambridge High Performance Computing Service (\url{http://www.hpc.cam.ac.uk/}), provided by Dell Inc.\ using Strategic Research Infrastructure Funding from the Higher Education Funding Council for England. Figures \ref{fig:MCMC-1}, \ref{fig:MCMC-2} and \ref{fig:MCMC-3} were produced using the colour scheme of \citet{Green2011}.
+I must thank Jonathan Gair for his supervision, for suggesting this work and his continued supervision. I am particularly grateful for his collaboration on developing the MCMC code, and for his assistance in calculating \eqnref{ell}. I am indebted to Michele Vallisneri for discussions on the (im)proper use of Fisher matrices. I thank Stephen Taylor for advice on adaptive MCMC methods; Dave Green for helpful suggestions regarding apodization; Sverre Aarseth for insightful discussions, and Tal Alexander and Clovis Hopman for useful correspondence. I am grateful to Donald Lynden-Bell for his suggestions, and would like to thank Pau Amaro-Seoane for useful comments. The MCMC simulations were performed using the Darwin Supercomputer of the University of Cambridge High Performance Computing Service (\url{http://www.hpc.cam.ac.uk/}), provided by Dell Inc.\ using Strategic Research Infrastructure Funding from the Higher Education Funding Council for England. Figures \ref{fig:MCMC-1}, \ref{fig:MCMC-2} and \ref{fig:MCMC-3} were produced using the colour scheme of \citet{Green2011}.
 
 \newpage
 

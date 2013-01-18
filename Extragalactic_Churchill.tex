@@ -53,12 +53,12 @@ The scaled SNRs are plotted in \figref{scaled-SNR}. The plotted points are the a
 \begin{figure}[!htp]
 \begin{center}
  \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_scaled_fit}
- \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency. The fitted curve is indicated by the line.\label{fig:scaled-SNR}}%The reduced chi-squared value of the fit is $\chi^2/\nu = 4.4653$.
+ \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.\label{fig:scaled-SNR}}%The reduced chi-squared value of the fit is $\chi^2/\nu = 4.4653$.
    \end{center}
 \end{figure}
 The curve shows that EMRB SNR does scale as expected, and $\rho_\ast$ can be described as a one-parameter curve. There remains some scatter about this (removing the averaging over intrinsic parameters increases this to about an order of magnitude); however, it is good enough for rough calculations.
 
-We approximate the trend with a best-fit curve
+We approximate the trend with a parametrized curve
 \begin{equation}
 \rho_\ast = \alpha_1 f_\ast^{\beta_1} \left[1 + \left(\alpha_2 f_\ast\right)^{\beta_2}\right]\left[1 + \left(\alpha_3 f_\ast\right)^{\beta_3}\right]^{-\beta_4}.
 \label{eq:scaled-SNR}
@@ -78,7 +78,7 @@ Using our fitted trends it is possible to invert \eqnref{SNR-scaling} to find th
  \caption{Limit of detection for EMRBs originating from MBHs of mass $M_\bullet$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The thicker line is the limit for non-rotating MBHs, the thinner is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The trends should not be extrapolated to lower MBH masses.\label{fig:detect}}
    \end{center}
 \end{figure}
-The more massive COs are detectable to a greater distance, but are also the more likely sources since mass segregation ensures they are more likely to be on orbits that pass close to the MBH. Limits using periapsis of $r\sub{g}$ and $4r\sub{g}$ are shown: intermediate spin values would have limits between these two. In any case, these are strict bounds; it is unlikely that we would observe a burst from the optimal orbit. Therefore bursts from MBHs outside the curve are impossible to detect and those inside may be possible, but need not be probable, to detect.
+The more massive COs are detectable to a greater distance, but are also the more likely sources since mass segregation ensures they are more likely to be on orbits that pass close to the MBH. Limits using periapsis of $r\sub{g}$ and $4r\sub{g}$ are shown: intermediate spin values would have limits between these two. In any case, these are strict bounds; it is unlikely that we would observe a burst from the optimal orbit. Therefore, bursts from MBHs outside the curve are impossible to detect and those inside may be possible, but need not be probable, to detect.
 
 It appears that there are potentially many galaxies which could produce observable bursts. From our sample, all could be potentially detected. Andromeda could only be detected if it had a high spin value. It is therefore less promising than the others. NGC 3489, NGC 3368 and NGC 253 lie on the boundary of detectability for non-spinning sources with a $10 M_\odot$ CO. They are therefore of marginal interest: we do not necessarily need any special requirement for the spin, but such close orbits would be infrequent. NGC 4395, NGC 4945 and Circinus are around the boundary of detectability for a $1 M_\odot$ CO. Hence we could potentially see bursts from white dwarfs as well as BHs. M32 is the best extragalactic source, lying safely within the detection limit for $1 M\odot$ COs.
 
@@ -86,7 +86,7 @@ Examining M32 in detail, the trend between the periapse radius and SNR is shown 
 \begin{figure}[!htp]
   \begin{center}
   \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_M32}
-    \caption{Signal-to-noise ratio as a function of periapse radius for a $\mu = 1 M_\odot$ CO about the MBH of M32. The plotted points are the values obtained by averaging over each set of intrinsic parameters. The best fit line is $\log\left(\rho\right) = -2.65\log(r\sub{p}/r\sub{g}) + 3.05$. This is fitted to orbits with $r\sub{p} > 18.8 r\sub{g}$ and has a reduced chi-squared value of $\chi^2/\nu = 1.26$.\label{fig:SNR-M32}}
+    \caption{Signal-to-noise ratio as a function of periapse radius for a $\mu = 1 M_\odot$ CO about the MBH of M32. The plotted points are the values obtained by averaging over each set of intrinsic parameters. The best fit line is $\log\left(\rho\right) = -2.65\log(r\sub{p}/r\sub{g}) + 3.05$. This is fitted to orbits with $r\sub{p} > 18.8 r\sub{g}$.\label{fig:SNR-M32}} % and has a reduced chi-squared value of $\chi^2/\nu = 1.26$
   \end{center}
 \end{figure}
 The fit is again for orbits with $f_\ast < 1 \times 10^{-3}\units{Hz}$ to avoid the bucket of the noise curve. Bursts for a $1 M_\odot$ ($10 M_\odot$) can be detected with $\rho > 10$ if the periapse is smaller than $7 r\sub{g}$ ($14 r\sub{g}$). We see that the general behaviour is the same as for the GC, but there are differences because of the position.
@@ -97,7 +97,7 @@ We can repeat the analysis for eLISA. The scaled SNRs are shown in \figref{scale
 \begin{figure}[!htp]
 \begin{center}
  \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_scaled_fit_eLISA}
- \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency for the eLISA design. The fitted curve is indicated by the line.\label{fig:scaled-SNR-eLISA}}%The reduced chi-squared value of the fit is $\chi^2/\nu = 3.1063$.
+ \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency for the eLISA design. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.\label{fig:scaled-SNR-eLISA}}%The reduced chi-squared value of the fit is $\chi^2/\nu = 3.1063$.
    \end{center}
 \end{figure}
 Since Andromeda was only marginally of interest for the classic LISA design, we did not include it this time. The curve is fitted with
@@ -114,6 +114,6 @@ Using this to find the detectability range results in the curves shown in \figre
  \caption{Limit of detection using eLISA for EMRBs originating from MBHs of mass $M_\bullet$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The thicker line is the limit for non-rotating MBHs, the thinner is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The trends should not be extrapolated to lower MBH masses.\label{fig:detect-eLISA}}
    \end{center}
 \end{figure}
-The maximum distances are reduced compared to the LISA case indicating that detectable bursts would be much rarer. There still remain a number of potential candidate galaxies. From our sample, Andromeda is on the very edge of possibility. NGC 3489, NGC 3368 and NGC 253 require a high spin, making them unlikely sources. Of the extragalactic sources, only M32 remains detectable with a $1 M_\odot$, and still it requires a non-zero spin.
+The maximum distances are reduced compared to the LISA case, indicating that detectable bursts would be much rarer. There still remain a number of potential candidate galaxies. From our sample, Andromeda is on the very edge of possibility. NGC 3489, NGC 3368 and NGC 253 require a high spin, making them unlikely sources. Of the extragalactic sources, only M32 remains detectable with a $1 M_\odot$, and still it requires a non-zero spin.
 
-Using either noise curve we see that EMRBs could potentially be seen from a range of galaxies. The Galaxy's MBH remains securely detectable in either case. M32 is the next best. MBHs with masses $\sim 10^6$--$10^7 M_\odot$ are observable to the greatest distance. We currently know of few MBHs with masses at the lower end of the spectrum, $10^5$--$10^6 M_\odot$, but these would be good potential candidates.
+Using either noise curve we see that EMRBs could potentially be seen from a range of galaxies. The Galaxy's MBH remains securely detectable in either case. M32 is the next best. MBHs with masses $\sim 10^6$--$10^7 M_\odot$ are observable to the greatest distance. We currently know of few MBHs with masses at the lower end of the spectrum ($10^5$--$10^6 M_\odot$) but these would be good potential candidates.
