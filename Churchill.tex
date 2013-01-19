@@ -6,6 +6,7 @@
 \usepackage{psfrag}
 \usepackage{import}
 \usepackage{graphicx}
+%\usepackage{epstopdf}
 \usepackage{subfigure}
 \usepackage[figuresright]{rotating}
 \usepackage{amssymb,amstext,amsfonts} %% ... with default font
@@ -135,8 +136,8 @@
 \renewcommand\textfraction{.2}
 
 \title{\sc{\huge{}Extreme-mass-ratio Bursts:}\\\vspace{0.5mm}Probes of massive black holes}
-\author{{\sc\LARGE{}Christopher Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}\\{\large{}Supervisor: Jonathan Gair}\vspace{5mm}}
-\date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Joint Application Scheme Junior Research Fellowship}\vspace{5mm}\\\today}
+\author{{\sc\LARGE{}Christopher Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
+\date{\includegraphics[width=0.25\textwidth]{../shield}\vspace{11mm}\\{\LARGE{}Joint Application Scheme Junior Research Fellowship}\vspace{5mm}\\\today}
 \maketitle
 
 \begin{abstract}
@@ -146,7 +147,7 @@ As a prerequisite for an investigation of the properties of EMRBs and how they c
 
 We find that if an EMRB event occurs in the Galaxy, it should be detectable if the periapse distance is $r\sub{p} < 65 r\sub{g}$ for a $10 M_\odot$ orbiting object, where $r\sub{g}$ is the gravitational radius of the MBH. The signal-to-noise ratio scales approximately as $\log(\rho) \simeq -2.7\log(r\sub{p}/r\sub{g}) + \log(\mu/M_\odot) + 4.9$.
 
-Using a Markov chain Monte Carlo algorithm to assess the accuracy we can estimate parameters, we find for periapses $r\sub{p} \lesssim 10 r\sub{g}$, EMRBs can be informative, and provide good constraints on both the MBH's mass and spin. Closer orbits provide better constraints, with the best giving accuracies of better than one part in $10^4$ for both the mass and spin parameter.
+We use a Markov chain Monte Carlo algorithm to assess the accuracy to which we can estimate parameters. We find for periapses $r\sub{p} \lesssim 10 r\sub{g}$, EMRBs can be informative, and provide good constraints on both the MBH's mass and spin. Closer orbits provide better constraints, with the best giving accuracies of better than one part in $10^4$ for both the mass and spin parameter.
 
 To be a useful astronomical tool, EMRBs must be both informative and sufficiently common to be observable. We construct a simple model to predict the event rate for Galactic EMRBs. We estimate there could be on average $\sim 1.7$ bursts in a two year mission lifetime. Stellar mass black holes produce the most signals.
 
@@ -172,7 +173,7 @@ in addition to unpublished material. This constitutes the greater component of m
 
 \section*{Acknowledgments}
 
-I must thank Jonathan Gair for his supervision, for suggesting this work and his continued supervision. I am particularly grateful for his collaboration on developing the MCMC code, and for his assistance in calculating \eqnref{ell}. I am indebted to Michele Vallisneri for discussions on the (im)proper use of Fisher matrices. I thank Stephen Taylor for advice on adaptive MCMC methods; Dave Green for helpful suggestions regarding apodization; Sverre Aarseth for insightful discussions, and Tal Alexander and Clovis Hopman for useful correspondence. I am grateful to Donald Lynden-Bell for his suggestions, and would like to thank Pau Amaro-Seoane for useful comments. The MCMC simulations were performed using the Darwin Supercomputer of the University of Cambridge High Performance Computing Service (\url{http://www.hpc.cam.ac.uk/}), provided by Dell Inc.\ using Strategic Research Infrastructure Funding from the Higher Education Funding Council for England. Figures \ref{fig:MCMC-1}, \ref{fig:MCMC-2} and \ref{fig:MCMC-3} were produced using the colour scheme of \citet{Green2011}.
+I must thank Jonathan Gair for his supervision, for suggesting this work and his continued guidance. I am particularly grateful for his collaboration on developing the MCMC code, and for his assistance in calculating \eqnref{ell}. I am indebted to Michele Vallisneri for discussions on the (im)proper use of Fisher matrices. I thank Stephen Taylor for advice on adaptive MCMC methods; Dave Green for helpful suggestions regarding apodization; Sverre Aarseth for insightful discussions, and Tal Alexander and Clovis Hopman for useful correspondence. I am grateful to Donald Lynden-Bell for his suggestions, and would like to thank Pau Amaro-Seoane for useful comments. The MCMC simulations were performed using the Darwin Supercomputer of the University of Cambridge High Performance Computing Service (\url{http://www.hpc.cam.ac.uk/}), provided by Dell Inc.\ using Strategic Research Infrastructure Funding from the Higher Education Funding Council for England. Figures \ref{fig:MCMC-1}, \ref{fig:MCMC-2} and \ref{fig:MCMC-3} were produced using the colour scheme of \citet{Green2011}.
 
 \newpage
 

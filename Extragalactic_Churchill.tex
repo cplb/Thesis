@@ -82,25 +82,15 @@ The more massive COs are detectable to a greater distance, but are also the more
 
 It appears that there are potentially many galaxies which could produce observable bursts. From our sample, all could be potentially detected. Andromeda could only be detected if it had a high spin value. It is therefore less promising than the others. NGC 3489, NGC 3368 and NGC 253 lie on the boundary of detectability for non-spinning sources with a $10 M_\odot$ CO. They are therefore of marginal interest: we do not necessarily need any special requirement for the spin, but such close orbits would be infrequent. NGC 4395, NGC 4945 and Circinus are around the boundary of detectability for a $1 M_\odot$ CO. Hence we could potentially see bursts from white dwarfs as well as BHs. M32 is the best extragalactic source, lying safely within the detection limit for $1 M\odot$ COs.
 
-Examining M32 in detail, the trend between the periapse radius and SNR is shown in \figref{SNR-M32}.
-\begin{figure}[!htp]
-  \begin{center}
-  \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_M32}
-    \caption{Signal-to-noise ratio as a function of periapse radius for a $\mu = 1 M_\odot$ CO about the MBH of M32. The plotted points are the values obtained by averaging over each set of intrinsic parameters. The best fit line is $\log\left(\rho\right) = -2.65\log(r\sub{p}/r\sub{g}) + 3.05$. This is fitted to orbits with $r\sub{p} > 18.8 r\sub{g}$.\label{fig:SNR-M32}} % and has a reduced chi-squared value of $\chi^2/\nu = 1.26$
-  \end{center}
-\end{figure}
+Examining M32 in detail, the trend between the periapse radius and SNR is similar to that for the Galaxy's MBH, and can be well described by a power law
+\begin{equation}
+\log\left(\hat{\rho}\right) \simeq -2.7\log\left(\frac{r\sub{p}}{r\sub{g}}\right) + 3.1.
+\end{equation}
 The fit is again for orbits with $f_\ast < 1 \times 10^{-3}\units{Hz}$ to avoid the bucket of the noise curve. Bursts for a $1 M_\odot$ ($10 M_\odot$) can be detected with $\rho > 10$ if the periapse is smaller than $7 r\sub{g}$ ($14 r\sub{g}$). We see that the general behaviour is the same as for the GC, but there are differences because of the position.
 
 \subsection{Detection with eLISA}
 
-We can repeat the analysis for eLISA. The scaled SNRs are shown in \figref{scaled-SNR-eLISA}.
-\begin{figure}[!htp]
-\begin{center}
- \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_scaled_fit_eLISA}
- \caption{Scaled signal-to-noise ratio for EMRBs as a function of characteristic frequency for the eLISA design. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.\label{fig:scaled-SNR-eLISA}}%The reduced chi-squared value of the fit is $\chi^2/\nu = 3.1063$.
-   \end{center}
-\end{figure}
-Since Andromeda was only marginally of interest for the classic LISA design, we did not include it this time. The curve is fitted with
+We can repeat the analysis for eLISA. Since Andromeda was only marginally of interest for the classic LISA design, we did not include it this time. The scaled SNRs are again well described by the curve of \eqnref{scaled-SNR}. This time it is fitted with
 \begin{equation}
 \begin{split}
 &\alpha_1 \simeq 7.39 \times 10; \ \  \alpha_2 \simeq 4.99 \times 10^3; \ \  \alpha_3 \simeq 5.27 \times 10;\\
@@ -115,5 +105,4 @@ Using this to find the detectability range results in the curves shown in \figre
    \end{center}
 \end{figure}
 The maximum distances are reduced compared to the LISA case, indicating that detectable bursts would be much rarer. There still remain a number of potential candidate galaxies. From our sample, Andromeda is on the very edge of possibility. NGC 3489, NGC 3368 and NGC 253 require a high spin, making them unlikely sources. Of the extragalactic sources, only M32 remains detectable with a $1 M_\odot$, and still it requires a non-zero spin.
-
 Using either noise curve we see that EMRBs could potentially be seen from a range of galaxies. The Galaxy's MBH remains securely detectable in either case. M32 is the next best. MBHs with masses $\sim 10^6$--$10^7 M_\odot$ are observable to the greatest distance. We currently know of few MBHs with masses at the lower end of the spectrum ($10^5$--$10^6 M_\odot$) but these would be good potential candidates.
