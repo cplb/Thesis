@@ -15,7 +15,8 @@
 \usepackage{listings}
 \usepackage{enumitem}
 \usepackage{booktabs, longtable, dcolumn}
-\usepackage{ccaption}
+\usepackage[labelfont=bf]{caption}
+\usepackage[caption2]{ccaption}
 %\usepackage{tikz}
 %\usetikzlibrary{shapes,arrows}
 \usepackage{lmodern}
@@ -28,7 +29,7 @@
 \usepackage{afterpage}
 \usepackage{appendix}
 \usepackage[latin9]{inputenc}
-\usepackage{fixmath}
+%\usepackage{fixmath}
 %\usepackage{paralist}
 \usepackage{hyperref}
 \usepackage[authoryear]{natbib}
@@ -42,8 +43,16 @@
   
 \headheight 13.6pt
 \headsep 0.6\baselineskip
-\footskip 1.8\baselineskip
-\textheight = 56\baselineskip
+\footskip 2\baselineskip
+\textheight = 55\baselineskip
+
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.9}
+\renewcommand\textfraction{.1}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4} 
 
 \def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
 
@@ -73,6 +82,8 @@
 
 \newcommand{\Ibar}{{\declareslashed{}{\text{-}}{0.04}{-0.2}{I}\slashed{I}}}
 \newcommand{\lambdabar}{{\declareslashed{}{\text{--}}{0.04}{-0.02}{\lambda}\slashed{\lambda}}}
+
+\newcommand{\upDelta}{\Delta}
 
 % Define differential operators
 \newcommand{\dd}{\ensuremath{\mathrm{d}}}
@@ -124,12 +135,12 @@
 \renewcommand\bottomfraction{.8}
 \renewcommand\textfraction{.2}
 
-\title{{\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves \& Strong-Field Tests}}}
+\title{{\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}}
 \author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
 \date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Ph.D.\ Thesis}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
 \maketitle
 
-%\input{./f_R.tex}
+\input{./f_R.tex}
 
 \bibliographystyle{../physicsAuthorYearURL}
 \bibliography{../library}

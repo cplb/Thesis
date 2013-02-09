@@ -2,7 +2,7 @@
 
 When considering the orbits of stars about a massive black hole (MBH), the loss cone describes a region of velocity space that is depopulated because of tidal disruption \citep{Frank1976,Lightman1977}.
 
-A main sequence star may be disrupted by tidal forces before it is swallowed by a MBH, we will define the tidal disruption radius as $r\sub{T}$. We expect any orbit that passes inside $r\sub{T}$ is depopulated unless stars can successfully escape to another orbit before being disrupted. Stars' velocities change because of gravitational interaction with other stars. Deflections can be modelled as a series of two-body encounters, the cumulative effect of which is a random walk in velocity space \citep[chapter 2]{Chandrasekhar1960}. Changes scale with the square-root of time, with the relaxation time-scale $\tau\sub{R}$ setting the scale.
+A main sequence star may be disrupted by tidal forces before it is swallowed by a MBH; we define the tidal disruption radius as $r\sub{T}$. We expect any orbit that passes inside $r\sub{T}$ is depopulated unless stars can successfully escape to another orbit before being disrupted. Stars' velocities change because of gravitational interaction with other stars. Deflections can be modelled as a series of two-body encounters, the cumulative effect of which is a random walk in velocity space \citep[chapter 2]{Chandrasekhar1960}. Changes scale with the square-root of time, with the relaxation time-scale $\tau\sub{R}$ setting the scale.
 
 Consider a typical star at a distance $r$ from the MBH. We decompose its motion into radial and tangential components as
 %\begin{subequations}
@@ -18,7 +18,7 @@ Over a dynamical time-scale $t\sub{dyn}$, we expect that stars change velocity b
 \begin{equation}
 \theta\sub{D} \approx \left(\frac{t\sub{dyn}}{\tau\sub{R}}\right)^{1/2},
 \end{equation}
-assuming this change is small. We define the loss cone angle $\theta\sub{LC}$ to describe the range of trajectories that will proceed to pass within a distance $r\sub{T}$ of the MBH. By comparing the diffusion and loss cone angles we can deduce if we would expect orbits to be depleted: if $\theta\sub{D} > \theta\sub{LC}$ a star can safely diffuse out of the loss cone before it is destroyed, whereas if $\theta\sub{D} < \theta\sub{LC}$ a star will be disrupted before it can change its velocity sufficiently, leading to the depopulation of the orbit.
+assuming this change is small. We introduce the loss cone angle $\theta\sub{LC}$ to describe the range of trajectories that shall proceed to pass within a distance $r\sub{T}$ of the MBH. By comparing the diffusion and loss cone angles we can deduce if we would expect orbits to be depleted: if $\theta\sub{D} > \theta\sub{LC}$ a star can safely diffuse out of the loss cone before it is destroyed, whereas if $\theta\sub{D} < \theta\sub{LC}$ a star is disrupted before it can change its velocity sufficiently, leading to the depopulation of the orbit.
 
 \citet{Frank1976} first introduced the loss cone. They considered stars on nearly radial orbits. The orbital energy and angular momentum (per unit mass) of an object with eccentricity $e$ and periapse radius $r\sub{p}$ are
 \begin{align}
@@ -30,20 +30,20 @@ where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
 \mathcal{J}^2 = {} & v_\perp^2r^2 \nonumber \\*
  \simeq {} & \theta^2v^2r^2,
 \end{align}
-using the small angle approximation. \citet{Frank1976} took the limit $e \rightarrow 1$, then setting $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone; we rearrange to find
+using the small angle approximation. \citet{Frank1976} took the limit $e \rightarrow 1$ and then set $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone; we rearrange to find
 \begin{equation}
 \theta\sub{LC} \simeq \frac{2GM_\bullet r\sub{T}}{v^2r^2}.
 \label{eq:LC-FR}
 \end{equation}
-We need to find the speed at $r$. \citet{Frank1976} use a typical value
+We need to find the speed at $r$. \citet{Frank1976} used a typical value
 \begin{equation}
 v^2 \simeq 3\sigma^2,
 \end{equation}
-where $\sigma$ is the 1D velocity dispersion. They assume the velocity dispersion is Keplerian within the core region, where dynamics are dominated by the MBH, and is a constant outside of this
+where $\sigma$ is the 1D velocity dispersion. They assumed the velocity dispersion is Keplerian within the core region, where dynamics are dominated by the MBH, and is a constant outside of this
 \begin{equation}
 \sigma^2 \simeq \begin{cases}
-\displaystyle \frac{GM_\bullet}{r} & r < r\sub{c} \\
-\displaystyle \frac{GM_\bullet}{r\sub{c}} & r < r\sub{c}
+\displaystyle \frac{GM_\bullet}{r} & r < r\sub{c} \vspace{0.4\normalbaselineskip} \\
+\displaystyle \left. \frac{GM_\bullet}{r\sub{c}} \right. & r < r\sub{c}
 \end{cases}.
 \end{equation}
 The core radius $r\sub{c}$ is
@@ -53,12 +53,12 @@ r\sub{c} = \frac{GM_\bullet}{\sigma_0^2},
 where $\sigma_0$ is the 1D velocity dispersion far from the MBH. Substituting for $v^2$ in \eqnref{LC-FR} gives
 \begin{align}
 \theta\sub{LC}^2 \simeq \begin{cases}
-\displaystyle \frac{2r\sub{T}}{3r} & r < r\sub{c} \\
+\displaystyle \frac{2r\sub{T}}{3r} & r < r\sub{c} \vspace{0.4\normalbaselineskip} \\
 \displaystyle \frac{2r\sub{T}r\sub{c}}{3r^2} & r < r\sub{c}
 \end{cases}.
 \label{eq:FR-LC}
 \end{align}
-\citet{Frank1976} make one final modification, introducing a gravitational focusing factor $f$ such that
+\citet{Frank1976} made one final modification, introducing a gravitational focusing factor $f$ such that
 \begin{align}
 \theta\sub{LC} \simeq f\begin{cases}\displaystyle
 \displaystyle \left(\frac{2r\sub{T}}{3r}\right)^{1/2} & r < r\sub{c} \\
@@ -93,7 +93,7 @@ This is similar in form to the classic result. Consider an orbit with eccentrici
 \begin{equation}
 r = \frac{r\sub{T}}{\epsilon}.
 \end{equation}
-This ensures that $r \gg r\sub{T}$. Therefore we have matched the assumptions of \citet{Frank1976}. Substituting into our loss cone formula
+This ensures that $r \gg r\sub{T}$. Therefore, we have matched the assumptions of \citet{Frank1976}. Substituting into our loss cone formula
 \begin{align}
 \sin^2\theta\sub{LC} = {} & \frac{(2 - \epsilon)r\sub{T}^2}{2rr\sub{T} + \epsilon r^2} \nonumber \\
  \simeq {} & \frac{2r\sub{T}}{3r},
