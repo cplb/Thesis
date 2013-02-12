@@ -1,14 +1,22 @@
-\chapter{Beyond general relativity: linearised $f(R)$-gravity}
+\chapter{Gravitational radiation in $f(R)$-gravity\label{ch:f-R1}}
 
-\section{Introduction}
+\section{Beyond general relativity: $f(R)$ modified gravity}
 
-Natural units with $c = 1$ shall be used throughout, but factors of $G$ shall be retained.
+GR is a well tested theory of gravity \citep{Will2006}. However, there are many unanswered questions that remain regarding gravity which motivate the exploration of alternate theories: What are the true natures of dark matter and dark energy? How should we formulate a quantizable theory of gravity? What drove inflation in the early Universe?  Is GR the only theory that is consistent with current observations? Moreover, the majority of the tests that have been carried out to date have been in the weak-field, low-energy regime \citep{Will2006, Will1993,Psaltis2008a}. It is not unreasonable to suspect there may be higher order corrections that are only discovered in the strong-field regime, where curvature is high or spacetime dynamic.
+
+In this and the following chapter, we shall study a modified theory of gravitation to assess the feasibility of potential corrections to GR. We investigate metric $f(R)$-gravity, in which the Einstein-Hilbert action is modified by replacing the Ricci scalar $R$ with an arbitrary function $f(R)$. This is one of the simplest extensions to standard GR \citep{Sotiriou2010, DeFelice2010}. It has attracted significant interest because the flexibility in defining the function $f(R)$ allows a wide range of cosmological phenomena to be described \citep{Nojiri2007, Capozziello2007a}. For example, \citet{Starobinsky1980} suggested that a quadratic addition to the field equations could drive exponential expansion of the early Universe \citep{Vilenkin1985}: inflation in modern terminology. In this model $f(R) = R - R^2/(6\Upsilon^2)$; the size of the quadratic correction can be tightly constrained by considering the spectrum of curvature perturbations generated during inflation \citep{Starobinskii1983, Starobinskii1985}. Using the results of the Wilkinson Microwave Anisotropy Probe (WMAP; \citealt{Bennett2012, Hinshaw2012}), the inverse length-scale can be constrained to $\Upsilon \simeq 3 \times 10^{-6} (50/N) \ell\sub{P}^{-1}$, where $N$ is the number of e-folds during inflation and $\ell\sub{P}$ is the Planck length \citep{Starobinsky2007, DeFelice2010}.
+
+We consider simple $f(R)$ corrections within the framework of linearized gravity and discover how GWs are modified. We begin by reviewing the properties of the $f(R)$ field equations. From these, we derive the linearized equations (\secref{Lin}) and use these to determine the properties of GWs (\secref{Rad}). These are largely known in the literature, but are worked out here {\it ab initio}. We proceed to derive an effective energy-momentum tensor for gravitational radiation in \secref{EM_tensor}, following the short-wavelength approximation of \citet{Isaacson1968, Isaacson1968a}.
+
+Following on from the theory developed in this chapter, in \chapref{f-R2} we consider observational tests of $f(R)$-gravity. We explore what constraints LISA, Solar System tests and laboratory experiments can place on the form of $f(R)$. We do not consider cosmological implications where terms beyond linear order could play a significant role. The overall conclusion is that LISA could place constraints on $f(R)$-gravity which may be more powerful than those in the Solar System, but are not as powerful as constraints from laboratory experiments. A brief summary of findings from both chapters is found in \secref{f_Discuss}.
+
+Natural units with $c = 1$ are used throughout both chapters, but factors of $G$ are retained.
 
 \section{Description of $f(R)$-gravity}
 
 \subsection{The action and field equations\label{sec:Action}}
 
-General relativity can be derived from the Einstein-Hilbert action~(\citealt[chapter 21]{Misner1973}; \citealt[section 93]{Landau1975}; \citealt[section 26]{Dirac1996})
+General relativity can be derived from the Einstein-Hilbert action (\citealt[chapter 21]{Misner1973}; \citealt[section 93]{Landau1975}; \citealt[section 26]{Dirac1996})
 \begin{equation}
 S\sub{EH}[g] = \recip{16\pi G}\intd{}{}{R\sqrt{-g}}{^4x}.
 \end{equation}
@@ -20,9 +28,9 @@ Including the function $f(R)$ gives extra freedom in defining the behaviour of g
 \begin{equation}
 f(R) = a_0 + a_1 R + \frac{a_2}{2!}R^2 + \frac{a_3}{3!}R^3 + \ldots
 \end{equation}
-Since the dimensions of $f(R)$ must be the same as of $R$, $[a_n] = [R]^{(1-n)}$. To link to GR we shall set $a_1 = 1$; any rescaling can be absorbed into the definition of $G$.
+Since the dimensions of $f(R)$ must be the same as of $R$, $[a_n] = [R]^{(1-n)}$. To link to GR we set $a_1 = 1$; any rescaling can be absorbed into the definition of $G$.
 
-Various models of cosmological interest may be expressed in such a form, for example, the model of Starobinsky \citep{Starobinsky2007}
+Various models of cosmological interest may be expressed in such a form, for example, the model of \citet{Starobinsky2007}
 \begin{equation}
 f(R) = R + \lambda R_0 \left[\left(1 + \frac{R^2}{R_0^2}\right)^{-n} - 1\right],
 \end{equation}
@@ -36,13 +44,13 @@ The field equations are obtained by a variational principle; there are several w
 
 Finally, there is a third version of $f(R)$-gravity: metric-affine $f(R)$-gravity \citep{Sotiriou2007, Sotiriou2007b}. This goes beyond the Palatini formalism by supposing that the matter action is dependent on the variational independent connection. Parallel transport and the covariant derivative are divorced from the metric. This theory has its attractions: it allows for a natural introduction of torsion. However, it is not a metric theory of gravity and so cannot satisfy all the postulates of the Einstein equivalence principle \citep{Will2006}: a free particle does not necessarily follow a geodesic and so the effects of gravity might not be locally removed \citep{Exirifard2008}. The implications of this have not been fully explored, but for this reason we will not consider the theory further.
 
-We shall restrict our attention to metric $f(R)$-gravity. This is preferred as the Palatini formalism has undesirable properties: static spherically symmetric objects described by a polytropic equation of state are subject to a curvature singularity \citep{Barausse2008b, Barausse2008a, DeFelice2010}. Varying the action with respect to the metric $g^{\mu\nu}$ produces
+We restrict our attention to metric $f(R)$-gravity. This is preferred as the Palatini formalism has undesirable properties: static spherically symmetric objects described by a polytropic equation of state are subject to a curvature singularity \citep{Barausse2008b, Barausse2008a, DeFelice2010}. Varying the action with respect to the metric $g^{\mu\nu}$ produces
 \begin{align}
 \delta S_{f(R)} = {} & \recip{16\pi G}\int\left\{f'(R)\sqrt{-g}\left[R_{\mu\nu} - \nabla_\mu\nabla_\nu\ + g_{\mu\nu}\Box\right] \hphantom{\frac{0}{0}} \vphantom{\frac{0}{0}} - f(R)\recip{2}\sqrt{-g}g_{\mu\nu}\right\}\delta g^{\mu\nu}\,\dd^4x,
 \end{align}
 where $\Box = g^{\mu\nu}\nabla_\mu\nabla_\nu$ is the d'Alembertian and a prime denotes differentiation with respect to $R$.
 
-Proceeding from here requires certain assumptions regarding surface terms. In the case of the Einstein-Hilbert action these gather into a total derivative; it is possible to subtract this from the action to obtain a well-defined variational quantity \citep{York1972, Gibbons1977}. This is not the case for general $f(R)$ \citep{Madsen1989}. However, since the action includes higher-order derivatives of the metric we are at liberty to fix more degrees of freedom at the boundary, in so doing eliminating the importance of the surface terms \citep{Dyer2009a, Sotiriou2010}. Setting the variation $\delta R = 0$ on the boundary allows us to subtract a term similar to in GR \citep{Guarnizo2010}. Thus we have a well-defined variational quantity, from which we can obtain the field equations.
+Proceeding from here requires certain assumptions regarding surface terms. In the case of the Einstein-Hilbert action these gather into a total derivative; it is possible to subtract this from the action to obtain a well-defined variational quantity \citep{York1972, Gibbons1977}. This is not the case for general $f(R)$-gravity \citep{Madsen1989}. However, since the action includes higher-order derivatives of the metric, we are at liberty to fix more degrees of freedom at the boundary, in so doing eliminating the importance of the surface terms \citep{Dyer2009a, Sotiriou2010}. Setting the variation $\delta R = 0$ on the boundary allows us to subtract a term similar to that in GR \citep{Guarnizo2010}. We then have a well-defined variational quantity, from which we can obtain the field equations.
 
 The vacuum field equations are
 \begin{equation}
@@ -54,7 +62,7 @@ Taking the trace gives
 f'R + 3\Box f' - 2f = 0.
 \label{eq:Trace_eq}
 \end{equation}
-If we consider a uniform flat spacetime $R = 0$, this equation gives \citep{Capozziello2007}
+If we consider a uniform flat spacetime $R = 0$, this requires \citep{Capozziello2007}
 \begin{equation}
 a_0 = 0.
 \label{eq:a_0}
@@ -98,7 +106,7 @@ Consider a perturbation of the metric from flat Minkowski space such that
 \begin{equation}
 g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu};
 \end{equation}
-where, more formally, we mean that $h_{\mu\nu} = \varepsilon H_{\mu\nu}$ for a small parameter $\varepsilon$.\footnote{It is because we wish to perturb about flat spacetime that we have required $f(R)$ to be analytic about $R = 0$.} We shall consider terms only to $\order{\varepsilon}$. Thus, the inverse metric is
+where, more formally, $h_{\mu\nu} = \varepsilon H_{\mu\nu}$ for a small parameter $\varepsilon$.\footnote{It is because we wish to perturb about flat spacetime that we have required $f(R)$ to be analytic about $R = 0$.} We only consider terms to $\order{\varepsilon}$. The inverse metric is then
 \begin{equation}
 g^{\mu\nu} = \eta^{\mu\nu} - h^{\mu\nu},
 \end{equation}
@@ -117,7 +125,7 @@ The linearised connection is
 {{\Gamma^{(1)}}^\rho}_{\mu\nu} = \frac{1}{2}\eta^{\rho\lambda}(\partial_\mu h_{\lambda\nu} + \partial_\nu h_{\lambda\mu} - \partial_\lambda h_{\mu\nu}).
 \label{eq:Lin_Gamma}
 \end{equation}
-To $\order{\varepsilon}$ the covariant derivative of any perturbed quantity shall be the same as the partial derivative. The Riemann tensor is
+To $\order{\varepsilon}$ the covariant derivative of any perturbed quantity is the same as the partial derivative. The Riemann tensor is
 \begin{equation}
 {{R^{(1)}}^\lambda}_{\mu\nu\rho} = \frac{1}{2}(\partial_\mu\partial_\nu h^\lambda_\rho + \partial^\lambda\partial_\rho h_{\mu\nu} - \partial_\mu\partial_\rho h^\lambda_\nu - \partial^\lambda\partial_\nu h_{\mu\rho}),
 \label{eq:Lin_Riemann}
@@ -165,15 +173,15 @@ For a physically meaningful solution $\Upsilon^2 > 0$: we constrain $f(R)$ such 
 \end{equation}
 associated with this scalar mode.
 
-The next step is to substitute in $h_{\mu\nu}$ to try to find wave solutions. We want a quantity $\overline{h}_{\mu\nu}$ that shall satisfy a wave equation, related to $h_{\mu\nu}$ by
+The next step is to substitute in $h_{\mu\nu}$ to find wave solutions. We want a quantity $\overline{h}_{\mu\nu}$ that satisfies a wave equation, related to $h_{\mu\nu}$ by
 \begin{equation}
 \overline{h}_{\mu\nu} = h_{\mu\nu} + A_{\mu\nu}.
 \end{equation}
-In GR we use the trace-reversed form where $A_{\mu\nu} = -(h/2)\eta_{\mu\nu}$. This shall not suffice here, but let us look for a similar solution
+In GR we use the trace-reversed form where $A_{\mu\nu} = -(h/2)\eta_{\mu\nu}$. This does not suffice here, but let us look for a similar solution
 \begin{equation}
 \overline{h}_{\mu\nu} = h_{\mu\nu} - \frac{h}{2}\eta_{\mu\nu} + B_{\mu\nu}.
 \end{equation}
-The only rank-two tensors in our theory are: $h_{\mu\nu}$, $\eta_{\mu\nu}$, ${R^{(1)}}_{\mu\nu}$, and $\partial_\mu\partial_\nu$; $h_{\mu\nu}$ has been used already, and we wish to eliminate ${R^{(1)}}_{\mu\nu}$, so we shall try the simpler option based around $\eta_{\mu\nu}$. We want $B_{\mu\nu}$ to be $\order{\varepsilon}$; since we have already used $h$, we shall try the other scalar quantity $R^{(1)}$. Therefore, we construct an ansatz
+The only rank-two tensors in our theory are: $h_{\mu\nu}$, $\eta_{\mu\nu}$, ${R^{(1)}}_{\mu\nu}$, and $\partial_\mu\partial_\nu$; $h_{\mu\nu}$ has been used already, and we wish to eliminate ${R^{(1)}}_{\mu\nu}$, so we can try the simpler option based around $\eta_{\mu\nu}$. We want $B_{\mu\nu}$ to be $\order{\varepsilon}$; since we have already used $h$, we shall try the other scalar quantity $R^{(1)}$. Therefore, we construct an ansatz
 \begin{equation}
 \overline{h}_{\mu\nu} = h_{\mu\nu} + \left(b a_2 R^{(1)} - \frac{h}{2}\right)\eta_{\mu\nu},
 \label{eq:Ansatz}
@@ -187,7 +195,7 @@ so we can eliminate $h$ in our definition of $\overline{h}_{\mu\nu}$ to give
 \begin{equation}
 h_{\mu\nu} = \overline{h}_{\mu\nu} + \left(b a_2 R^{(1)} -\frac{\overline{h}}{2}\right)\eta_{\mu\nu}.
 \end{equation}
-Just as in GR, we have the freedom to perform a gauge transformation~(\citealt[box 18.2]{Misner1973}; \citealt[section 17.1]{Hobson2006}): the field equations are gauge-invariant since we started with a function of the gauge-invariant Ricci scalar. We shall assume a Lorenz, or de Donder, gauge choice
+Just as in GR, we have the freedom to perform a gauge transformation (\citealt[box 18.2]{Misner1973}; \citealt[section 17.1]{Hobson2006}): the field equations are gauge-invariant since we started with a function of the gauge-invariant Ricci scalar. We shall assume a Lorenz, or de Donder, gauge choice
 \begin{equation}
 \nabla^\mu \overline{h}_{\mu\nu} = 0;
 \end{equation}
@@ -206,7 +214,7 @@ Using this with \eqnref{Box_R} in \eqnref{Field} gives
 {\mathcal{G}^{(1)}}_{\mu\nu} = {} & \frac{2 - b}{6}\mathcal{G}^{(1)}\eta_{\mu\nu} -\frac{1}{2}\Box\left(\overline{h}_{\mu\nu} - \frac{\overline{h}}{2}\eta_{\mu\nu}\right) - (b + 1)\left[\partial_\mu\partial_\nu(a_2 R^{(1)}) + \recip{6}R^{(1)}\eta_{\mu\nu}\right].
 \label{eq:b_Field}
 \end{align}
-Picking $b = -1$ the final term vanishes, thus we set~(\citealt[section 10.3]{Will1993}; \citealt{Corda2008, Capozziello2008}) % Will section 10.3
+Picking $b = -1$ the final term vanishes, thus we set (\citealt[section 10.3]{Will1993}; \citealt{Corda2008, Capozziello2008}) % Will section 10.3
 \begin{subequations}
 \begin{align}
 \label{eq:hbar_metric}
@@ -269,12 +277,12 @@ in this case
 \label{eq:Transverse}
 \end{equation}
 
-Let us consider the implications of \eqnref{Box_h} using equations \eqnref{Box_R} and \eqnref{h_trace},
+Let us consider the implications of \eqnref{Box_h} using \eqref{eq:Box_R} and \eqref{eq:h_trace},
 \begin{align}
 \Box\left(4a_2R^{(1)} + h\right) = {} & 0 \nonumber \\*
 \Box h = {} & -\frac{4}{3}R^{(1)}.
 \end{align}
-For nonzero $R^{(1)}$ (as required for the Ricci mode) there is no way to make a gauge choice such that the trace $h$ shall vanish \citep{Corda2008, Capozziello2008}. This is distinct from in GR. It is possible, however, to make a gauge choice such that the trace $\overline{h}$ shall vanish. Consider a gauge transformation generated by $\xi_\mu$ which satisfies $\Box \xi_\mu = 0$, and so has a Fourier decomposition
+For nonzero $R^{(1)}$ (as required for the Ricci mode) there is no way to make a gauge choice such that the trace $h$ vanishes \citep{Corda2008, Capozziello2008}. This is distinct from in GR. It is possible, however, to make a gauge choice such that the trace $\overline{h}$ vanishes. Consider a gauge transformation generated by $\xi_\mu$ which satisfies $\Box \xi_\mu = 0$, and so has a Fourier decomposition
 \begin{equation}
 \xi_\mu = \widehat{\xi}_\mu \exp\left(ik_\rho x^\rho\right).
 \end{equation}
@@ -282,7 +290,7 @@ A transformation
 \begin{equation}
 \overline{h}_{\mu\nu} \rightarrow \overline{h}_{\mu\nu} + \partial_\mu\xi_\nu + \partial_\nu\xi_\mu - \eta_{\mu\nu}\partial^\rho\xi_\rho,
 \end{equation}
-would ensure both conditions \eqnref{Lorenz} and \eqnref{Box_hmunu} are satisfied \cite[section 35.2]{Misner1973}. Under such a transformation
+would ensure both conditions \eqref{eq:Lorenz} and \eqref{eq:Box_hmunu} are satisfied \cite[section 35.2]{Misner1973}. Under such a transformation
 \begin{equation}
 \widehat{h}_{\mu\nu} \rightarrow \widehat{h}_{\mu\nu} + i\left(k_\mu\widehat{\xi}_\nu + k_\nu\widehat{\xi}_\mu - \eta_{\mu\nu}k^\rho\widehat{\xi}_\rho\right).
 \end{equation}
@@ -290,7 +298,7 @@ We may impose four further constraints (one for each $\widehat{\xi}_\mu$) upon $
 \begin{equation}
 \widehat{h}_{0\nu} = 0, \qquad \widehat{h} = 0.
 \end{equation}
-This might appear to be five constraints, but we have already imposed \eqnref{Transverse}, and so setting $\widehat{h}_{00} = 0$ automatically implies $\widehat{h}_{03} = 0$. In this gauge we have
+This might appear to be five constraints, but we have already imposed \eqnref{Transverse}, and so setting $\widehat{h}_{00} = 0$ automatically implies $\widehat{h}_{03} = 0$. In this gauge
 \begin{equation}
 h_{\mu\nu} = {} \overline{h}_{\mu\nu} - a_2 R^{(1)}\eta_{\mu\nu}; \quad h = {} -4a_2R^{(1)}.
 \label{eq:gauge}
@@ -307,20 +315,20 @@ Thus $\overline{h}_{\mu\nu}$ behaves just as its GR counterpart; we can define
 \end{equation}
 where $h_+$ and $h_\times$ are constants representing the amplitudes of the two transverse polarizations of gravitational radiation.
 
-It is important that our solutions reduce to those of GR in the event that $f(R) = R$. In our linearised approach this corresponds to $a_2 \rightarrow 0$, $\Upsilon^2 \rightarrow \infty$. We see from \eqnref{Ricci_q} that in this limit it would take an infinite frequency to excite a propagating Ricci mode, and evanescent waves would decay away infinitely fast. Therefore there would be no detectable Ricci modes and we would only observe the two polarizations found in GR. Additionally, $\overline{h}_{\mu\nu}$ would simplify to its usual trace-reversed form.
+It is important that our solutions reduce to those of GR if $f(R) = R$. In our linearised approach this corresponds to $a_2 \rightarrow 0$, $\Upsilon^2 \rightarrow \infty$. We see from \eqnref{Ricci_q} that in this limit it would take an infinite frequency to excite a propagating Ricci mode, and evanescent waves would decay away infinitely fast. Therefore, there would be no detectable Ricci modes and we would only observe the two polarizations found in GR. Additionally, $\overline{h}_{\mu\nu}$ would simplify to its usual trace-reversed form.
 
 \section{Energy-momentum tensor\label{sec:EM_tensor}}
 
-We expect gravitational radiation to carry energy-momentum. Unfortunately, it is difficult to define a proper energy-momentum tensor for a gravitational field: as a consequence of the equivalence principle it is possible to transform to a freely falling frame, eliminating the gravitational field and any associated energy density at a given point, although we can still define curvature in the neighbourhood of this point~(\citealt[section 20.4]{Misner1973}; \citealt[section 17.11]{Hobson2006}). We shall do nothing revolutionary, but will follow the approach of \citet{Isaacson1968, Isaacson1968a}. The full field equations \eqref{eq:Field_eq} have no energy-momentum tensor for the gravitational field on the right-hand side. However, by expanding beyond the linear terms we can find a suitable effective energy-momentum tensor for GWs. Expanding $\mathcal{G}_{\mu\nu}$ in orders of $h_{\mu\nu}$
+We expect gravitational radiation to carry energy-momentum. Unfortunately, it is difficult to define a proper energy-momentum tensor for a gravitational field: as a consequence of the equivalence principle it is possible to transform to a freely falling frame, eliminating the gravitational field and any associated energy density at a given point, although we can still define curvature in the neighbourhood of this point (\citealt[section 20.4]{Misner1973}; \citealt[section 17.11]{Hobson2006}). We do nothing revolutionary, but follow the approach of \citet{Isaacson1968, Isaacson1968a}. The full field equations \eqref{eq:Field_eq} have no energy-momentum tensor for the gravitational field on the right-hand side; however, by expanding beyond the linear terms we can find a suitable effective energy-momentum tensor for GWs. Expanding $\mathcal{G}_{\mu\nu}$ in orders of $h_{\mu\nu}$
 \begin{equation}
 \mathcal{G}_{\mu\nu} = {\mathcal{G}^{(\text{B})}}_{\mu\nu} + {\mathcal{G}^{(1)}}_{\mu\nu} + {\mathcal{G}^{(2)}}_{\mu\nu} + \ldots
 \label{eq:G_exp}
 \end{equation}
-We use $(\text{B})$ for the background term instead of $(0)$ to avoid potential confusion regarding its order in $\varepsilon$. So far we have assumed that our background is flat; however, we can imagine that should the gravitational radiation carry energy-momentum then this would act as a source of curvature for the background \citep[section 4.4b]{Wald1984}. This is a second-order effect that may be encoded, to accuracy of $\order{\varepsilon^2}$, as
+We use $(\text{B})$ for the background term instead of $(0)$ to avoid confusion regarding its order in $\varepsilon$. So far we have assumed that our background is flat; however, we can imagine that should the gravitational radiation carry energy-momentum then this would act as a source of curvature for the background \citep[section 4.4b]{Wald1984}. This is a second-order effect that may be encoded, to accuracy of $\order{\varepsilon^2}$, as
 \begin{equation}
 {\mathcal{G}^{(\text{B})}}_{\mu\nu} = -{\mathcal{G}^{(2)}}_{\mu\nu}.
 \end{equation}
-By shifting ${\mathcal{G}^{(2)}}_{\mu\nu}$ to the right-hand side we create an effective energy-momentum tensor. As in GR we shall average over several wavelengths, assuming that the background curvature is on a larger scale~(\citealt[section 35.13]{Misner1973}; \citealt{Stein2011}),
+By shifting ${\mathcal{G}^{(2)}}_{\mu\nu}$ to the right-hand side we create an effective energy-momentum tensor. As in GR we average over several wavelengths, assuming that the background curvature is on a larger scale (\citealt[section 35.13]{Misner1973}; \citealt{Stein2011}),
 \begin{equation}
 {\mathcal{G}^{(\text{B})}}_{\mu\nu} = -\left\langle{\mathcal{G}^{(2)}}_{\mu\nu}\right\rangle.
 \end{equation}
@@ -339,7 +347,7 @@ where $\gamma_{\mu\nu}$ is the background metric. This changes our definition fo
 \end{equation}
 where $j_{\mu\nu}$ is $\order{\varepsilon^2}$ to ensure that ${{R^{(\text{B})}}^\lambda}_{\mu\nu\rho}$ is also $\order{\varepsilon^2}$. Therefore its introduction makes no difference to the linearised theory.
 
-We consider terms only to $\order{\varepsilon^2}$. We identify ${{\Gamma^{(1)}}^\rho}_{\mu\nu}$ from \eqnref{Lin_Gamma}.\footnote{There is one small subtlety: whether we use the background metric $\gamma^{\mu\nu}$ or $\eta^{\mu\nu}$ to raise indices of $\partial_\mu$ and $h_{\mu\nu}$. Fortunately, to the accuracy considered here, it does not make a difference; however, we shall consider the indices to be changed with $\gamma^{\mu\nu}$.} We do not distinguish between $\partial_\mu$ and ${\nabla^{(\text{B})}}_\mu$, the covariant derivative for the background metric: to the order of accuracy required covariant derivatives would commute and ${\nabla^{(\text{B})}}_\mu$ behaves just like $\partial_\mu$. Thus
+We consider terms only to $\order{\varepsilon^2}$. We identify ${{\Gamma^{(1)}}^\rho}_{\mu\nu}$ from \eqnref{Lin_Gamma}.\footnote{There is one small subtlety: whether we use the background metric $\gamma^{\mu\nu}$ or $\eta^{\mu\nu}$ to raise indices of $\partial_\mu$ and $h_{\mu\nu}$. Fortunately, to the accuracy considered here, it does not make a difference, but we shall consider the indices to be changed with $\gamma^{\mu\nu}$.} We do not distinguish between $\partial_\mu$ and ${\nabla^{(\text{B})}}_\mu$, the covariant derivative for the background metric: to the order of accuracy required covariant derivatives commute and ${\nabla^{(\text{B})}}_\mu$ behaves just like $\partial_\mu$. Thus
 \begin{align}
 {{\Gamma^{(1)}}^\rho}_{\mu\nu} = {} & \frac{1}{2}\gamma^{\rho\lambda}\left[\partial_\mu \left(\overline{h}_{\lambda\nu} - a_2 R^{(1)}\gamma_{\lambda\nu}\right) + \partial_\nu \left(\overline{h}_{\lambda\mu} - a_2 R^{(1)}\gamma_{\lambda\mu}\right) \right. \nonumber \\*
  & - \left. \partial_\lambda \left(\overline{h}_{\mu\nu} - a_2 R^{(1)}\gamma_{\mu\nu}\right)\right] ,
@@ -351,7 +359,7 @@ and
  & - \left. \partial_\lambda \left(\overline{h}_{\mu\nu} \vphantom{R^{(1)}} - a_2 R^{(1)}\gamma_{\mu\nu}\right)\right].
 \end{align}
 
-For the Ricci tensor we can use our linearised expression, \eqnref{new_Ricci}, for the first-order term,
+For the Ricci tensor we can use our linearised expression, \eqnref{new_Ricci}, for the first-order term
 \begin{equation}
 {R^{(1)}}_{\mu\nu} = a_2\partial_\mu\partial_\nu R^{(1)} + \recip{6} R^{(1)}\gamma_{\mu\nu}.
 \end{equation}
@@ -392,7 +400,7 @@ f'^{(1)} = {} & a_2 R^{(1)} \\
 f'^{(2)} = {} & a_2 R^{(2)} + \frac{a_3}{2}{R^{(1)}}^2.
 \end{align}
 \end{subequations}
-We list a zeroth-order term for clarity. $R^{(\text{B})}$ is $\order{\varepsilon^2}$.
+We list a zeroth-order term for clarity; $R^{(\text{B})}$ is $\order{\varepsilon^2}$.
 
 Combining all of these
 \begin{align}
@@ -405,15 +413,15 @@ Combining all of these
   & - {} a_2^2\left(\partial_\mu R^{(1)}\partial_\nu R^{(1)} + \recip{2} \gamma_{\mu\nu}\partial^\rho R^{(1)}\partial_\rho R^{(1)}\right).
  \label{eq:G2}
 \end{align}
-It is simplest to split this up for the purposes of averaging. Since we average over all directions at each point, gradients average to zero~(\citealt[section 17.11]{Hobson2006}; \citealt{Stein2011})
+It is simplest to split this up for the purposes of averaging. Since we average over all directions at each point, gradients average to zero (\citealt[section 17.11]{Hobson2006}; \citealt{Stein2011})
 \begin{equation}
 \left\langle\partial_\mu V\right\rangle = 0.
 \end{equation}
-As a corollary of this we have
+As a corollary of this
 \begin{equation}
 \left\langle U\partial_\mu V\right\rangle = -\left\langle V \partial_\mu U\right\rangle.
 \end{equation}
-Repeated application of this, together with our gauge condition, \eqnref{Lorenz}, and wave equations, \eqnref{Box_R} and \eqnref{Box_hmunu}, allows us to eliminate many terms. Those that do not average to zero are the last three terms in \eqnref{G2}, plus
+Repeated application of this, together with our gauge condition \eqref{eq:Lorenz}, and wave equations \eqref{eq:Box_R} and \eqref{eq:Box_hmunu} allows us to eliminate many terms. Those that do not average to zero are the last three terms in \eqnref{G2} and
 \begin{subequations}
 \begin{align}
 \left\langle {R^{(2)}}_{\mu\nu} \right\rangle = {} & \left\langle -\recip{4} \partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\rho\sigma} + \frac{a_2^2}{2}\partial_\mu R^{(1)}\partial_\nu R^{(1)} + \frac{a_2}{6}\gamma_{\mu\nu} {R^{(1)}}^2 \right\rangle; \\
@@ -438,15 +446,19 @@ t_{\mu\nu} = \recip{32\pi G}\left\langle \partial_\mu h_{\sigma\rho}\partial_\nu
 \end{equation}
 These results do not depend upon $a_3$ or higher-order coefficients \citep{Stein2011}.
 
-This results has been subsequently confirmed by \citet{Naf2011}. They used the Landau-Lifshitz complex \citep[section 94]{Landau1975} appropriately generalised for $f(R)$-gravity \citep{Nutku1969}, to derive the result.\footnote{The Landau-Lifshitz complex is defined such the (ordinary) derivative of it plus the energy-momentum vanishes. The sum defines an energy-momentum pseudo-tensor that is conserved in the familiar way: the rate of change of energy-momentum contained in a spacial volume is given by the flux through the surface of the volume. The complex is also symmetric in its indices to ensure conservation of angular momentum.} This is equivalent to the approached used by \citet[section 10.3]{Will1993} to derive the energy flux for scalar-tensor theories. The consistency between approaches is reassuring. % Will section 10.3
+This result has been subsequently confirmed by \citet{Naf2011}. They used the Landau-Lifshitz complex \citep[section 94]{Landau1975} appropriately generalised for $f(R)$-gravity \citep{Nutku1969}, to derive the result.\footnote{The Landau-Lifshitz complex is defined such that the (ordinary) derivative of it plus the energy-momentum vanishes. The sum defines an energy-momentum pseudo-tensor that is conserved in the familiar way: the rate of change of energy-momentum contained in a spacial volume is given by the flux through the surface of the volume. The complex is also symmetric in its indices to ensure conservation of angular momentum.} This is equivalent to the approach used by \citet[section 10.3]{Will1993} to derive the energy flux for scalar-tensor theories. The consistency between approaches is reassuring. % Will section 10.3
 
-The effective energy-momentum tensor could be used to constrain the parameter $a_2$ through observations of the energy and momentum carried away by GWs. Of particular interest would be a system with a frequency that evolved from $\omega < \Upsilon$ to $\omega > \Upsilon$, as then we would witness the switching on of the propagating Ricci mode. If we could accurately identify the cut-off frequency we could accurately measure $a_2$. However, see \secref{Fifth} for further discussion of why this is unlikely to happen.
+The effective energy-momentum tensor could be used to constrain the parameter $a_2$ through observations of the energy and momentum carried away by GWs. Of particular interest would be a system with a frequency that evolved from $\omega < \Upsilon$ to $\omega > \Upsilon$, as then we would witness the switching on of the propagating Ricci mode. If we could accurately identify the cut-off frequency we could accurately measure $a_2$. However, we shall see in \secref{Fifth} that this is unlikely to happen.
 
-\section{$f(R)$ with a source\label{sec:Source}}
+\chapter{Observational constraints for $f(R)$-gravity\label{ch:f-R2}}
 
-Having considered radiation in a vacuum, we now add a source term. We want a first-order perturbation, so the linearised field equations are
+In the previous chapter we introduced an extended theory of gravity, metric $f(R)$-gravity, and derived its behaviour in the linearised framework. We now continue, to find what constraints we could place on this theory to quantify deviations from GR. In \secref{Source} we look at the effects of introducing a source term and derive the weak-field metrics for a point source, a slowly rotating point source, and a uniform density sphere, recovering some results known for quadratic theories of gravity. These are used in \secref{Epicycle} to compute the frequencies of radial and vertical epicyclic oscillations about circular-equatorial orbits in the weak-field, slow-rotation metric, and hence to construct an estimate of the detectability of the $f(R)$ deviations in LISA EMRI observations. For comparison, in \secref{Tests}, we describe the constraints on $f(R)$-gravity that can be obtained from Solar System and laboratory tests. We conclude in \secref{f_Discuss} with a summary of our findings.
+
+\section{$f(R)$-gravity with a source\label{sec:Source}}
+
+Having considered radiation in a vacuum, we now include a source term. We want a first-order perturbation, so the linearised field equations are
 \begin{equation}
- {\mathcal{G}^{(1)}}_{\mu\nu} = 8\pi G T_{\mu\nu}.
+{\mathcal{G}^{(1)}}_{\mu\nu} = 8\pi G T_{\mu\nu}.
 \end{equation}
 We again assume a Minkowski background, considering terms to $\order{\varepsilon}$ only. To solve the wave equations \eqref{eq:Box_R} and \eqref{eq:Box_hmunu} with this source term we use a Green's function
 \begin{equation}
@@ -542,7 +554,7 @@ where we have assumed that $r > L$ at all stages.\footnote{Inside the source $R^
 
 Solving the full field equations to find the exact metric in $f(R)$ is difficult because of the higher-order derivatives that enter the equations. However, we expect a solution to have the appropriate limiting form as given above.
 
-It has been suggested that since $R = 0$ is a valid solution to the vacuum equations, the BH solutions of GR are also the BH solutions in $f(R)$ \citep{Psaltis2008, Barausse2008}. We have seen that having a non-zero stress-energy tensor at the origin, because of \eqnref{Box_R}, forces $R$ to be nonzero in the surrounding vacuum, although it shall decay to zero at infinity \citep{Olmo2007c}. Therefore, it is not obvious that the end-state of gravitational collapse must be a GR solution, that it could not settle to a different solution.\footnote{We cannot simply extrapolate from our $\delta$-function solution, as it is necessary to consider the junction conditions required for a physical solution \citep{Deruelle2008}.}
+It has been suggested that since $R = 0$ is a valid solution to the vacuum equations, the BH solutions of GR are also the BH solutions in $f(R)$ \citep{Psaltis2008, Barausse2008}. We have seen that having a non-zero stress-energy tensor at the origin, because of \eqnref{Box_R}, forces $R$ to be nonzero in the surrounding vacuum, although it decays to zero at infinity \citep{Olmo2007c}. Therefore, it is not obvious that the end-state of gravitational collapse must be a GR solution and that it could not settle to a different solution.\footnote{We cannot simply extrapolate from our $\delta$-function solution, as it is necessary to consider the junction conditions required for a physical solution \citep{Deruelle2008}.}
 
 However, a uniqueness theorem exists for the closely related Brans-Dicke theory \citep{Hawking1972a, Bekenstein1978, Thorne1971, Scheel1995}, and recently this has been extended to $f(R)$-gravity, assuming only the stationarity of the solution \citep{Sotiriou2011}. Therefore astrophysical BHs in $f(R)$-gravity are also described by the Kerr solution. We can only detect differences in the properties of extended sources.
 
@@ -568,7 +580,7 @@ This can be used as an implicit definition of $r$ in terms of $\widetilde{r}$. T
 A(\widetilde{r}) = 1 - \frac{r\sub{S}}{\widetilde{r}}\left[1 + \frac{\exp(-\Upsilon r )}{3}\right].
 \label{eq:A_metric}
 \end{equation}
-We see that the functional form of $g_{00}$ is almost unchanged upon substituting $\widetilde{r}$ for $r$; however $r$ is left in the exponential.
+We see that the functional form of $g_{00}$ is almost unchanged upon substituting $\widetilde{r}$ for $r$, but $r$ is left in the exponential.
 
 To find $B(\widetilde{r})$ we consider, using \eqnref{r_tilde},
 \begin{equation}
@@ -582,7 +594,7 @@ The term in braces is $\left[B(\widetilde{r})\right]^{-1}$. We assume that in th
 \begin{equation}
 \varepsilon \sim \frac{r\sub{S}}{r}
 \end{equation}
-is small. Then the metric perturbations from Minkowski are small. Expanding to first order \citep{Olmo2007c}
+is small; then the metric perturbations from Minkowski are small. Expanding to first order \citep{Olmo2007c}
 \begin{equation}
 B(\widetilde{r})  = 1 + \frac{r\sub{S}}{\widetilde{r}}\left[1 - \frac{\exp(-\Upsilon r )}{3}\right] - \frac{\Upsilon r\sub{S} \exp(-\Upsilon r)}{3}.
 \label{eq:B_metric}
@@ -593,7 +605,7 @@ In the following sections we use these weak-field metrics (in both coordinates) 
 
 \section{Epicyclic frequencies\label{sec:Epicycle}}
 
-One means of probing the nature of a spacetime is through observations of orbital motions \citep{Gair2008a}. We shall consider the epicyclic motion produced by perturbing a circular orbit. There are two epicyclic frequencies associated with any circular-equatorial orbit, characterising perturbations in the radial and vertical directions respectively \citep[section 3.2.3]{Binney2008}. We start by deriving a general result for any metric of the form of \eqnref{Sph_sym}, and then specialise to our $f(R)$ solution. We shall work in the slow-rotation limit, keeping only linear terms in $J$.
+One means of probing the nature of a spacetime is through observations of orbital motions \citep{Gair2008a}. We consider the epicyclic motion produced by perturbing a circular orbit. There are two epicyclic frequencies associated with any circular-equatorial orbit, characterising perturbations in the radial and vertical directions respectively \citep[section 3.2.3]{Binney2008}. We start by deriving a general result for any metric of the form of \eqnref{Sph_sym}, and then specialise to our $f(R)$ solution. We work in the slow-rotation limit, keeping only linear terms in $J$.
 
 An orbit in a spacetime described by \eqnref{Sph_sym} has as constants of motion: the orbiting particle's rest mass, the energy (per unit mass) of the orbit $E$ and the $z$-component of the angular momentum (per unit mass) $L_z$. Using an over-dot to denote differentiation with respect to an affine parameter, which we identify as proper time $\tau$,
 \begin{align}
@@ -602,7 +614,7 @@ E = {} & A\dot{t} + \frac{2GJ}{\widetilde{r}} \sin^2\theta\dot{\phi}; \\
 L_z = {} & \widetilde{r}^{\,2}\sin^2\theta\, \dot{\phi} - \frac{2GJ}{\widetilde{r}} \sin^2\theta\dot{t} .
 \label{eq:L_orbit}
 \end{align}
-We shall consider perturbations of circular-equatorial orbits; orbits such that $\dot{\widetilde{r}} = \ddot{\widetilde{r}} = \dot{\theta}= 0$ and $\theta = \pi/2$. The time-like geodesic equation can be written in the covariant form
+For circular equatorial orbits $\dot{\widetilde{r}} = \ddot{\widetilde{r}} = \dot{\theta}= 0$ and $\theta = \pi/2$. The time-like geodesic equation can be written in the covariant form
 \begin{align}
 \frac{\dd u_\mu}{\dd \tau} = {} & \frac{1}{2} \left(\partial_\mu g_{\rho\sigma} \right) u^\rho u^\sigma,\\
  & \nonumber
@@ -616,7 +628,7 @@ in which a prime denotes $\dd/\dd\widetilde{r}$ and the $+/-$ sign denotes progr
 \begin{equation}
 \dot{t} = \left(A + \frac{4GJ\omega_0}{\widetilde{r}} - \widetilde{r}^{\,2}\omega_0^2 \right)^{-1/2}.
 \end{equation}
-We now have both $\dot{t}$ and $\dot{\phi} = \omega_0\dot{t}$ as functions of $\widetilde{r}$; substitution into \eqnref{E_orbit} and \eqnref{L_orbit} allows us to find the energy and angular momentum in terms of $\widetilde{r}$.
+We now have both $\dot{t}$ and $\dot{\phi} = \omega_0\dot{t}$ as functions of $\widetilde{r}$; substitution into equations \eqref{eq:E_orbit} and \eqref{eq:L_orbit} allows us to find the energy and angular momentum in terms of $\widetilde{r}$.
 
 From the Hamiltonian $\mathcal{H} = g_{\mu\nu}u^\mu u^\nu$ we can obtain the general equation of motion for massive particles, using the substitutions
 \begin{align}
@@ -629,7 +641,7 @@ where we have linearised in $J$, as appropriate for the slow-rotation limit. Wit
  = {} & V(\widetilde{r},\theta,E,L_z).
 \label{eq:rdot}
 \end{align}
-To compute the epicyclic frequency we imagine the orbit is perturbed by a small amount, while $E$ and $L_z$ are unchanged.\footnote{It is not possible for the orbit to be perturbed without changing the energy or angular momentum. However, these corrections are quadratic in the amplitude of the perturbation, and so we can ignore them at linear order.} For radial perturbations $\widetilde{r} = \overline{r}(1 + \delta)$, where $\overline{r}$ is the radius of the unperturbed orbit, the orbit undergoes small oscillations with frequency
+To compute the epicyclic frequency we imagine the orbit is perturbed by a small amount, while $E$ and $L_z$ are unchanged.\footnote{It is not possible for the orbit to be perturbed without changing the energy or angular momentum. However, these corrections are quadratic in the amplitude of the perturbation, and so can be ignored them at linear order.} For radial perturbations $\widetilde{r} = \overline{r}(1 + \delta)$, where $\overline{r}$ is the radius of the unperturbed orbit, the orbit undergoes small oscillations with frequency
 \begin{equation}
 \dot{t}^2\Omega\sub{rad}^2 = -\recip{2} \left. \partialdiff{^2 V}{\widetilde{r}^{\,2}}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
 \end{equation}
@@ -637,7 +649,7 @@ Small vertical perturbations $\theta = \pi/2 + \delta$ oscillate with frequency
 \begin{equation}
 \dot{t}^2\Omega\sub{vert}^2 = -\recip{2} \frac{B(\overline{r})}{\overline{r}^2} \left. \partialdiff{^2 V}{\theta^2}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
 \end{equation}
-We will denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \overline{B}$, $A'(\overline{r}) \equiv \overline{A}'$, etc.; differentiating the potential from \eqnref{rdot} we find
+We denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \overline{B}$, $A'(\overline{r}) \equiv \overline{A}'$, etc.; differentiating the potential from \eqnref{rdot} we find
 \begin{align}
 \dot{t}^2\Omega\sub{rad}^2 = {} & -\frac{E^2}{\overline{A}\overline{B}} \left( \frac{\overline{A}'^2}{\overline{A}^2} - \frac{\overline{A}''}{2\overline{A}} + \frac{\overline{A}'\overline{B}'}{\overline{A}\,\overline{B}} + \frac{\overline{B}'^2}{\overline{B}^2} - \frac{\overline{B}''}{2\overline{B}} \right) - \frac{\overline{B}''}{2\overline{B}^2} +  \frac{\overline{B}'^2}{\overline{B}^3} \nonumber \\*
  & - {} \frac{L_z^2}{\overline{B}\overline{r}^2} \left(\frac{\overline{B}''}{2\overline{B}} - \frac{\overline{B}'^2}{\overline{B}^2} - \frac{2\overline{B}'}{\overline{B}\overline{r}}-\frac{3}{\overline{r}^2} \right) \nonumber \\
@@ -645,21 +657,21 @@ We will denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \o
  = {} &  \frac{L_z^2}{\overline{r}^3\overline{B}}\left(\frac{\overline{A}''}{\overline{A}'} - \frac{2\overline{A}'}{\overline{A}} + \frac{3}{\overline{r}}\right) +\frac{6GJEL_z}{\overline{A}\,\overline{B} \overline{r}^4} \left(\frac{\overline{A}''}{\overline{A}'} + \frac{4}{\overline{r}}\right); \\
 \dot{t}\Omega\sub{vert} = {} & \frac{L_z}{\overline{r}^2}.
 \end{align}
-To simplify \eqnref{long_epi} we have used conditions imposed by setting $V$ and $\partial V/\partial \widetilde{r}$ equal to zero for circular, equatorial orbits. These results hold for any metric of the general form \eqnref{Sph_sym}, subject to the slow-rotation condition, which we have used to linearise in $J$ at various stages.
+To simplify \eqnref{long_epi} we used conditions imposed by setting $V$ and $\partial V/\partial \widetilde{r}$ equal to zero for circular equatorial orbits. These results hold for any metric of the general form \eqnref{Sph_sym}, subject to the slow-rotation condition, which we have used to linearise in $J$ at various stages.
 
 \subsection{Gravitational-wave constraints}
 
-We now consider if the deviation arising from the $f(R)$ correction could be observable. This should be possible if the orbit is sufficiently different from its counterpart in Kerr. To quantify the difference, we must identify equivalent orbits in the two spacetimes. For circular-equatorial orbits there is a natural way to do this: by identifying orbits with the same frequency $\omega_0$, as this is a gauge-invariant observable quantity \citep{Detweiler2008}. The quantity
+We now consider if the deviation arising from the $f(R)$ correction could be observable. This should be possible if the orbit is sufficiently different from its counterpart in Kerr. To quantify the difference, we must identify equivalent orbits in the two spacetimes. For circular equatorial orbits there is a natural way to do this: by identifying orbits with the same frequency $\omega_0$, as this is a gauge invariant observable quantity \citep{Detweiler2008}. The quantity
 \begin{equation}
 \Delta(\omega_0,\Upsilon) = \Omega(\omega_0,\Upsilon) - \Omega(\omega_0,\Upsilon \rightarrow \infty)
 \end{equation}
 characterises the rate of increase in the phase difference between the $f(R)$ trajectory and the Kerr trajectory with the same frequency and spin parameter.\footnote{By comparing with the $\Upsilon \rightarrow\infty$ limit of the trajectory rather than the exact Kerr result ensures that we are taking the same slow rotation limit in both cases, and we need not be concerned with $\order{J^2}$ corrections.}
 
-Consider the GWs emitted by an object undergoing epicyclic motion. We assume that we are in the extreme-mass-ratio regime, such that we can ignore the gravity of the orbiting body. The correction is detectable if it leads to a significant phase shift in a gravitational waveform over the length of an observation; we adopt the criterion that it is detectable if $T\sub{obs}\Delta > 2\pi$, for observation period $T\sub{obs}$. This is a significant over-simplification. We have assumed that the orbital frequency has been matched to a Kerr value, but small changes in the other parameters such as the central object's mass or spin, the orbital eccentricity or the inclination, could mimic (or disguise) the effect. However, we are also keeping the orbital frequency fixed whereas we shall observe inspirals. This can break the parameter degeneracies. Since we are interested in extreme-mass-ratio systems, for which the inspiral proceeds slowly, it is likely that we are being over-optimistic, so these results can be considered upper bounds on what could be measurable.
+Consider the GWs emitted by an object undergoing epicyclic motion. We assume that we are in the extreme-mass-ratio regime, such that we can ignore the gravity of the orbiting body. The correction is detectable if it leads to a significant phase shift in a gravitational waveform over the length of an observation; we adopt the criterion that it is detectable if $T\sub{obs}\Delta > 2\pi$ for observation period $T\sub{obs}$. This is a significant over-simplification. We have assumed that the orbital frequency has been matched to a Kerr value, but small changes in the other parameters such as the central object's mass or spin, the orbital eccentricity or the inclination, could mimic (or disguise) the effect. However, we are also keeping the orbital frequency fixed whereas we shall observe inspirals. This can break the parameter degeneracies. Since we are interested in extreme-mass-ratio systems, for which the inspiral proceeds slowly, it is likely that we are being over-optimistic, so these results can be considered upper bounds on what could be measurable.
 
-EMRIs will be a potential source of observation for LISA. However, these will be for systems about massive black holes. As BH spacetimes are no different in $f(R)$-gravity, we must assume that the central object is an extended body: it must be an exotic object such as a boson star. There is no evidence for the existence of these non-standard objects. Therefore, this analysis is only included as a sketch of what could be potentially achievable if this were the case.
+EMRIs are a potential source of observation for LISA. However, these will be for systems about massive BHs. As BH spacetimes are no different in $f(R)$-gravity, we must assume that the central object is an extended body: it must be an exotic object such as a boson star. There is no evidence for the existence of these non-standard objects. Therefore, this analysis is only included as a sketch of what could be potentially achievable if this were the case.
 
-The time-scale of the systems we are considering is set by the central object mass, and the quantities $M\omega_0$ and $M\Delta$ are mass-independent. A duration of a typical EMRI observation with LISA shall be of the order of a year, and so the criterion for detectability becomes
+The time-scale of the systems we are considering is set by the central object mass, and the quantities $M\omega_0$ and $M\Delta$ are mass-independent. A duration of a typical EMRI observation with LISA would be of the order of a year, and so the criterion for detectability becomes
 \begin{equation}
 GM\Delta = 9.8\times10^{-7} \left(\frac{M}{10^6 M_{\odot}}\right) \left(\frac{\mathrm{yr}}{T\sub{obs}}\right). \label{eq:detcrit}
 \end{equation}
@@ -672,7 +684,7 @@ In \figref{epifig} we show the region of $\Upsilon$-$\omega_0$ parameter space i
 \end{figure*}
 Each curve represents a particular choice for $GM\Delta$: the region below the curve is detectable in an observation characterised by that choice. \Eqnref{detcrit} indicates that the curve $GM\Delta = 10^{-6}$ is what would be achieved in a one-year observation for a $10^6 M_\odot$ mass central object. The curves $GM\Delta = 10^{-5}/10^{-7}$ are the corresponding results for a $10^7/10^5M_\odot$ mass object, while the curve $GM\Delta = 3 \times 10^{-7}$ represents what would be achieved in a three-year observation. We show results for two choices of spin: $a_\ast = J/GM^2 = 0$ and $a_\ast = 0.5$. There is not much difference between the two. The vertical epicyclic frequency is only measurable for $a_\ast \neq 0$ as it coincides with the orbital frequency for $a_\ast = 0$ as a consequence of the spherical symmetry. Results are shown only for prograde orbits. For $a_\ast \neq 0$, we can compute results for retrograde orbits; these differ from the prograde results by an amount which is almost indistinguishable on the scale of the plots.
 
-From \figref{epifig} we conclude that we could be able to distinguish spacetimes with $GM\Upsilon \lesssim 1 $. For a $10^6 M_\odot$ central object this corresponds to $\Upsilon \lesssim 10^{-9}\units{m^{-1}}$. Larger values are accessible at higher frequencies, but the inspiral would pass through that region quickly, and these orbits correspond to relatively small radii at which the weak-field approximations begin to break down, so we must be cautious extrapolating these results. Using this detectability criterion, the radial epicyclic frequency is always a more powerful probe than the vertical epicyclic frequency. This expected; the latter is generally smaller in magnitude and so accumulates fewer cycles over a typical observation.
+From \figref{epifig} we conclude that we could be able to distinguish spacetimes with $GM\Upsilon \lesssim 1 $. For a $10^6 M_\odot$ central object this corresponds to $\Upsilon \lesssim 10^{-9}\units{m^{-1}}$. Larger values are accessible at higher frequencies, but the inspiral would pass through that region quickly, and these orbits correspond to relatively small radii at which the weak-field approximations begin to break down, so we must be cautious extrapolating these results. Using this detectability criterion, the radial epicyclic frequency is always a more powerful probe than the vertical epicyclic frequency. This is expected; the latter is generally smaller in magnitude and so accumulates fewer cycles over a typical observation.
 
 \section{Solar System and laboratory tests\label{sec:Tests}}
 
@@ -741,7 +753,7 @@ The post-Newtonian deviation only depends upon the combination $\Psi + \Phi$. Fr
 \Psi(r) + \Phi(r) = {} & -\frac{2GM}{r} \nonumber \\*
  = {} & -2U(r).
 \end{align}
-This is identical to in GR. The result holds not just for a point mass, we see, using \eqnref{h_metric},
+This is identical to the form in GR. The result holds not just for a point mass, using \eqnref{h_metric},
 \begin{align}
 2\left(\Psi + \Phi\right) = {} & h_{00} + h_{ii} \qquad \text{(no summation)}\nonumber \\*
  = {} & \overline{h}_{00} + \overline{h}_{ii},
@@ -750,19 +762,19 @@ and since $\overline{h}_{\mu\nu}$ obeys \eqnref{Box_hmunu} exactly as in GR, the
 \begin{equation}
 \gamma = -\frac{g_{00} + g_{ii}}{2U} - 1 \qquad \text{(no summation)}.
 \end{equation}
-Using this, our $f(R)$ solutions have $\gamma = 1$. This agrees with the result found by \citet{Clifton2008}.\footnote{\citet{Clifton2008} also gives PPN parameters $\beta = 1$, $\zeta_1 = 0$, $\zeta_3 = 0$ and $\zeta_4 = 0$, all identical to in GR.} Consequently, $f(R)$-gravity is indistinguishable from GR in this respect and is entirely consistent with the current observational value of $\gamma = 1 + (2.1 \pm 2.3) \times 10^{-5}$ \citep{Will2006, Bertotti2003}.
+Using this, our $f(R)$ solutions have $\gamma = 1$. This agrees with the result found by \citet{Clifton2008}.\footnote{\citet{Clifton2008} also gives PPN parameters $\beta = 1$, $\zeta_1 = 0$, $\zeta_3 = 0$ and $\zeta_4 = 0$, all identical to the values in GR.} Consequently, $f(R)$-gravity is indistinguishable from GR in this respect and is entirely consistent with the current observational value of $\gamma = 1 + (2.1 \pm 2.3) \times 10^{-5}$ \citep{Will2006, Bertotti2003}.
 
 This result has important implications. To first order, the gravitational lensing of light in $f(R)$-gravity is identical to that in GR. Therefore, we still need dark matter to explain lensing observations of galaxies and galaxy clusters \citep{Lubini2011}. $f(R)$-gravity is not an alternative to dark matter.
 
-There are non-linear signatures of $f(R)$-gravity that may observable with lensing measurements; however, these are too small to be currently observable \citep{Vanderveld2011}. We must use other experiments to put constraints upon $f(R)$.
+There are non-linear signatures of $f(R)$-gravity that may be observable with lensing measurements; however, these are too small to be currently observable \citep{Vanderveld2011}. We must use other experiments to put constraints upon $f(R)$.
 
 \subsection{Planetary precession}
 
-The epicyclic frequencies derived in \secref{Epicycle} can be used for the classic test of planetary precession in the Solar System.\footnote{Since the Sun is an extended body, we do not have to worry about black hole solutions being identical in GR and $f(R)$-gravity here.} Radial motion perturbs the orbit into an ellipse. The amplitude of our perturbation $\delta$ gives the eccentricity $e$ of the ellipse \citep{Kerner2001a}. Unless $\omega_0 = \Omega\sub{rad}$ the epicyclic motion shall be asynchronous with the orbital motion: there shall be precession of the periapsis. In one revolution the ellipse shall precess about the focus by
+The epicyclic frequencies derived in \secref{Epicycle} can be used for the classic test of planetary precession in the Solar System.\footnote{Since the Sun is an extended body, we do not have to worry about BH solutions being identical in GR and $f(R)$-gravity here.} Radial motion perturbs the orbit into an ellipse. The amplitude of our perturbation $\delta$ gives the eccentricity $e$ of the ellipse \citep{Kerner2001a}. Unless $\omega_0 = \Omega\sub{rad}$ the epicyclic motion is asynchronous with the orbital motion: there is periapse precession. In one revolution the ellipse precesses about the focus by
 \begin{equation}
 \varpi = 2\pi\left(\frac{\omega_0}{\Omega\sub{rad}} - 1\right)
 \end{equation}
-where $\omega_0$ is the frequency of the circular orbit, given in \eqnref{omz}. The precession is cumulative, so a small deviation may be measurable over sufficient time. Taking the nonrotating limit, the epicyclic frequency is
+where $\omega_0$ is the frequency of the circular orbit given in \eqnref{omz}. The precession is cumulative, so a small deviation may be measurable over sufficient time. Taking the non-rotating limit, the epicyclic frequency is
 \begin{equation}
 \Omega\sub{rad}^2 = \omega_0^2 \left[1 - \frac{3r\sub{S}}{\overline{r}} - \zeta(\Upsilon,r\sub{S},\overline{r})\right],
 \end{equation}
@@ -777,7 +789,7 @@ This characterises the deviation from the Schwarzschild case: the change in the 
 \end{align}
 using the subscript $\text{S}$ to denote the Schwarzschild value. To obtain the last line we have expanded to lowest order, assuming that $\zeta$ is small.\footnote{There is one term in $\zeta$ that is not explicitly $\order{\varepsilon}$. Numerical evaluation shows that this is $< 0.6$ for the applicable range of parameters.} Since $\zeta \geq 0$, the precession rate is enhanced relative to GR.
 
-\Tabref{Precess} shows the orbital properties of the planets. We shall use the deviation in perihelion precession rate from the GR prediction to constrain the value of $\zeta$, and hence $\Upsilon$ and $a_2$.
+\Tabref{Precess} shows the orbital properties of the planets. We use the deviation in perihelion precession rate from the GR prediction to constrain the value of $\zeta$, and hence $\Upsilon$ and $a_2$.
 %\squeezetable
 \begin{table}[bht]%\footnotesize
 \centering
@@ -799,7 +811,7 @@ Pluto & 59.063762 & 248.0208 & $\phantom{-}28.4\phantom{00} \pm 45.1\phantom{000
 \end{tabular}
 \caption{Orbital properties of the eight major planets and Pluto. We take the semimajor orbital axis to be the flat-space distance $r$, not the coordinate $\widetilde{r}$. The eccentricity is not used in calculations, but is given to assess the accuracy of neglecting terms $\order{e^2}$. Semimajor axis, orbital period and eccentricity are taken from \citet{Cox2000}, the precession rate is from \citet{Pitjeva2009a}\label{tab:Precess}}
 \end{table}
-All the precession rates are consistent with GR predictions ($\Delta \varpi = 0$) to within their uncertainties. Assuming that these uncertainties constrain the possible deviation from GR we can use them as bounds for the $f(R)$ corrections. \Tabref{Constraint} shows the constraints for $\Upsilon$ and $a_2$ obtained by equating the uncertainty in the precession rate $\sigma_{\Delta \varpi}$ with the $f(R)$ correction, and similarly using twice the uncertainty $2\sigma_{\Delta \varpi}$.
+All the precession rates are consistent with GR predictions ($\Delta \varpi = 0$) within their uncertainties. Assuming that these uncertainties constrain the possible deviation from GR we can use them as bounds for $f(R)$ corrections. \Tabref{Constraint} shows the constraints for $\Upsilon$ and $a_2$ obtained by equating the uncertainty in the precession rate $\sigma_{\Delta \varpi}$ with the $f(R)$ correction, and similarly using twice the uncertainty $2\sigma_{\Delta \varpi}$.
 \begin{table}[bht]%\footnotesize
 \centering
 \begin{tabular}{l D{.}{.}{2.2} D{.}{.}{5.1} D{.}{.}{2.2} D{.}{.}{5.1}}
@@ -820,11 +832,11 @@ Pluto & 0.26 & 49000 & 0.25 & 55000 \\
 \end{tabular}
 \caption{Bounds calculated using uncertainties in planetary perihelion precession rates. $\Upsilon$ must be greater than or equal to the tabulated value, $|a_2|$ must be less than or equal to the tabulated value.\label{tab:Constraint}}
 \end{table}
-The tightest constraint is obtained from the orbit of Mercury. Adopting a value of $\Upsilon \geq 5.3 \times 10^{-10}\units{m^{-1}}$, the cut-off frequency for the Ricci mode is $\geq 0.16\units{s^{-1}}$. Therefore it could lie in the upper range of the LISA frequency band \citep{Bender1998,Danzmann2003} or in the LIGO/Virgo frequency range \citep{Abramovici1992, Abbott2009, Accadia2010}. The constraints are not as tight as those which could be placed using gravitational-wave observations. However, as we shall see in \secref{Fifth}, it is possible to place stronger constraints on $\Upsilon$ using laboratory experiments.
+The tightest constraint is obtained from the orbit of Mercury. Adopting a value of $\Upsilon \geq 5.3 \times 10^{-10}\units{m^{-1}}$, the cut-off frequency for the Ricci mode is $\geq 0.16\units{s^{-1}}$. Therefore it could lie in the upper range of the LISA frequency band \citep{Bender1998,Danzmann2003} or in the ground-based detector frequency range \citep{Abramovici1992, Abbott2009, Accadia2010}. The constraints are not as tight as those from GW observations; however, as we shall see in \secref{Fifth}, it is possible to place stronger constraints on $\Upsilon$ using laboratory experiments.
 
 \subsection{Fifth-force tests\label{sec:Fifth}}
 
-From the metric \eqref{eq:f(R)_Schw} we see that a point mass has a Yukawa gravitational potential \citep{Stelle1978, Capozziello2009a, Naf2010}
+From the metric \eqref{eq:f(R)_Schw}, a point mass has a Yukawa gravitational potential \citep{Stelle1978, Capozziello2009a, Naf2010}
 \begin{equation}
 V(r) = \frac{GM}{r}\left[1 + \frac{\exp(- \Upsilon r)}{3}\right].
 \end{equation}
@@ -832,28 +844,28 @@ Potentials of this form are well studied in fifth-force tests \citep{Will2006, A
 \begin{equation}
 V(r) = \frac{GM}{r}\left[1 + \alpha\exp\left(-\frac{r}{\lambdabar}\right)\right].
 \end{equation}
-We are able to put strict constraints upon our length-scale $\lambdabar_R$, and hence $a_2$, since our coupling constant $\alpha_R = 1/3$ is relatively large. This can be larger for extended sources: comparison with \eqnref{Uniform} shows that for a uniform sphere $\alpha_R = \Xi(\Upsilon L) \geq 1/3$.
+We are able to put strict constraints upon our length-scale $\lambdabar_R$, and hence $a_2$, because our coupling constant $\alpha_R = 1/3$ is relatively large. This can be larger for extended sources: comparison with \eqnref{Uniform} shows that for a uniform sphere $\alpha_R = \Xi(\Upsilon L) \geq 1/3$.
 
-The best constraints at short distances come from the E\"{o}t-Wash experiments, which use torsion balances \citep{Kapner2007a, Hoyle2004}. These constrain $\lambdabar_R \lesssim 8\times 10^{-5}\units{m}$. Hence we determine $|a_2| \lesssim 2 \times 10^{-9}\units{m^2}$. Similar results have been obtained by \citet{Cembranos2009}, and by \citet{Naf2010}. This would mean that the cut-off frequency for a propagating scalar mode would be $\gtrsim 4 \times 10^{12}\units{s^{-1}}$. This is much higher than expected for astrophysical objects.
+The best constraints at short distances come from the E\"{o}t-Wash experiments, which use torsion balances \citep{Kapner2007a, Hoyle2004}. These constrain $\lambdabar_R \lesssim 8\times 10^{-5}\units{m}$. Hence we determine $|a_2| \lesssim 2 \times 10^{-9}\units{m^2}$. Similar results have been obtained by \citet{Cembranos2009}, and by \citet{Naf2010}. This would mean that the cut-off frequency for a propagating scalar mode would be $\gtrsim 4 \times 10^{12}\units{s^{-1}}$ which is much higher than expected for astrophysical objects.
 
 Fifth-force tests also permit $\lambdabar_R$ to be large. This degeneracy can be broken using other tests; from \secref{Epicycle} we know that the large range for $\lambdabar_R$ is excluded by planetary precession rates. This is supported by a result of \citet{Naf2010} obtained using the results of Gravity Probe B \citep{Everitt2009}.
 
-While the laboratory bound on $\lambdabar_R$ may be strict compared to astronomical length-scales, it is still much greater than the expected characteristic gravitational scale, the Planck length $l\sub{P}$. We might expect for a natural quantum theory that $a_2 \sim \order{l\sub{P}^2}$; however, $l\sub{P}^2 = 2.612 \times 10^{-70}\units{m^2}$, thus the bound is still about $60$ orders of magnitude greater than the natural value. The only other length-scale that we could introduce would be defined by the cosmological constant $\Lambda$. Using the concordance values $\Lambda = 1.202 \times 10^{-52}\units{m^{-2}}$ \citep{Bennett2012, Hinshaw2012}; we see that $\Lambda^{-1} \gg |a_2|$. It is intriguing that if we combine these two length-scales we find ${l\sub{P}}/{\Lambda^{1/2}} = 1.474 \times 10^{-9}\units{m^2}$, which is of the order of the current bound. This is likely to be a coincidence, since there is nothing fundamental about the current level of precision. It would be interesting to see if the measurements could be improved to rule out a Yukawa interaction around this length-scale.
+While the laboratory bound on $\lambdabar_R$ may be strict compared to astronomical length-scales, it is still much greater than the expected characteristic gravitational scale, the Planck length $\ell\sub{P}$. We might expect for a natural quantum theory that $a_2 \sim \order{\ell\sub{P}^2}$, but $\ell\sub{P}^2 = 2.612 \times 10^{-70}\units{m^2}$, thus the bound is still about $60$ orders of magnitude greater than the natural value. The only other length-scale that we could introduce is defined by the cosmological constant $\Lambda$. Using the concordance values $\Lambda = 1.202 \times 10^{-52}\units{m^{-2}}$ \citep{Bennett2012, Hinshaw2012}, we see that $\Lambda^{-1} \gg |a_2|$. It is intriguing combining these two length-scales we find ${\ell\sub{P}}/{\Lambda^{1/2}} = 1.474 \times 10^{-9}\units{m^2}$, which is of the order of the current bound. This is coincidence, since there is nothing fundamental about the current level of precision, but it would be interesting to see if the measurements could be improved to rule out a Yukawa interaction around this length-scale.
 
-\section{Summary and conclusions\label{sec:f_Discuss}}
+\section{Summary of $f(R)$-gravity\label{sec:f_Discuss}}
 
-We have examined the possibility of testing $f(R)$-type modifications to gravity using future GW observations and other measurements. We have seen that gravitational radiation is modified in $f(R)$-gravity as the Ricci scalar is no longer constrained to be zero and, in linearised theory, there is an additional mode of oscillation, that of the Ricci scalar. This is only excited above a cut-off frequency, but once a propagated mode is excited, it shall carry additional energy-momentum away from the source. The two transverse GW modes are modified from their GR counterparts to include a contribution from the Ricci scalar, see \eqnref{hbar_metric}, which shall allow us to probe the curvature of the strong-field regions from which GWs originate. However, further study is needed in order to understand how GWs behave in a region with background curvature, in particular, when $R$ is nonzero.
+Over the course of two chapters, we have examined the possibility of testing $f(R)$-type modifications to gravity using future GW observations and other measurements. We have seen that gravitational radiation is modified in $f(R)$-gravity as the Ricci scalar is no longer constrained to be zero; in linearised theory there is an additional mode of oscillation, that of the Ricci scalar. This is can only propagate above a cut-off frequency, but once excited, does carry additional energy-momentum away from the source. The two transverse GW modes are modified from their GR counterparts to include a contribution from the Ricci scalar, which would allow us to probe the curvature of the strong-field source regions. However, further study is needed in order to understand how GWs behave in a region with background curvature, in particular, when $R$ is nonzero.
 
-From linearised theory we have deduced the weak-field metrics for some simple mass distributions and found they are not the same as in GR. Birkhoff's theorem no longer applies in $f(R)$-gravity, and extended bodies have a different gravitational field than in GR. However, the black hole metrics of GR remain solutions in $f(R)$-gravity. This restricts the potential GW observations that could be made to test $f(R)$ theories.
+From linearised theory we have deduced the weak-field metrics for some simple mass distributions and found they are not the same as in GR. Birkhoff's theorem no longer applies in $f(R)$-gravity, and extended bodies have a different gravitational field than in GR. However, the BH metrics of GR remain solutions in $f(R)$-gravity. This restricts the potential GW observations that could be made to test $f(R)$ theories.
 
-LISA observations of extreme-mass-ratio inspirals shall be sensitive to small differences in the precession frequencies of orbits: even tiny differences accumulate into a measurable dephasing over the $\sim 10^5$ cycles LISA would observe. However, as black holes are identical in both GR and $f(R)$-gravity there would be no difference in the orbital frequencies. There would be a difference if the compact object was an exotic extended object; in this case deviations would only be detectable when $|a_2| \gtrsim 10^{17}\units{m^2}$, assuming an extreme-mass-ratio binary with a massive object of mass $\sim 10^6 M_\odot$. This is calculated using the weak-field, slow-rotation metric. There could still be differences in the evolution of the inspiral because of a difference in the self-force.
+LISA observations of EMRIs are sensitive to small differences in the precession frequencies of orbits: even tiny differences accumulate into a measurable dephasing over the $\sim 10^5$ cycles LISA would observe. However, as BHs are identical in both GR and $f(R)$-gravity there would be no difference in the orbital frequencies. There would be a difference if the compact object was an exotic extended object; in this case deviations would only be detectable when $|a_2| \gtrsim 10^{17}\units{m^2}$, assuming an extreme-mass-ratio binary with a massive object of mass $\sim 10^6 M_\odot$. This is calculated using the weak-field, slow-rotation metric. There could still be differences in the evolution of the inspiral because of a difference in the self-force.
 
-We discussed constraints that could be placed from Solar System observations of planetary precessions and from laboratory experiments. While the LISA constraints could beat those from Solar System observations (which presently give $|a_2| \lesssim 1.2 \times 10^{18}\units{m^2}$), considerably stronger constraints have already been placed from fifth-force tests. Using existing results from the E\"ot-Wash experiment, we can constrain $|a_2| \lesssim 2 \times 10^{-9}\units{m^2}$. For this range of $a_2$, we would not expect the propagating Ricci mode to be excited by astrophysical systems as the cut-off frequency is too high. But, even in the absence of excitation of the Ricci mode, gravitational radiation in $f(R)$-gravity is still modified through the dependence of the transverse polarizations on the Ricci scalar. 
+We calculated constraints that can be placed using Solar System observations of planetary precessions and laboratory experiments. While the LISA constraints could beat those from Solar System observations (which presently give $|a_2| \lesssim 1.2 \times 10^{18}\units{m^2}$), considerably stronger constraints have already been placed from fifth-force tests. Using existing results from the E\"ot-Wash experiment, we constrain $|a_2| \lesssim 2 \times 10^{-9}\units{m^2}$. For this range of $a_2$, we do expect the propagating Ricci mode to be excited by astrophysical systems as the cut-off frequency is too high. However, even in the absence of excitation of the Ricci mode, gravitational radiation in $f(R)$-gravity is still modified through the dependence of the transverse polarizations on the Ricci scalar. 
 
-Although the constraints from astrophysical observations shall be much weaker than this laboratory bound, they are still of interest since they probe gravity at a different scale and in a different environment. It is possible that $f(R)$-gravity is not universal, that it is different in different regions of space or at different energy scales. We could regard the $f(R)$ model as an approximate effective theory, and argue that the range of validity of a particular parameterization is limited to a specific scale. For example, we could imagine that the effective theory in the vicinity of a massive BH, where the curvature is large, is different from the appropriate effective theory in the Solar System, where curvature is small; or $f(R)$ could evolve with cosmological epoch so that it varies with redshift. The limit on $a_2$ from gravitational-wave observations shall depend upon the BH mass, orbital radius and observation time, but it is clear that if the laboratory bound is indeed universal there should be no detectable deviation: observation of a deviation would thus prove not only that GR failed, but that the effective $a_2$ varied with environment.
+Although the constraints from astrophysical observations are much weaker than this laboratory bound, they are still of interest since they probe gravity at a different scale and in a different environment. It is possible that $f(R)$-gravity is not universal, but changes in different regions of space or at different energy scales. The $f(R)$ model could be regarded as an approximate effective theory, and the range of validity of a particular parameterization is limited to a specific scale. For example, the effective theory in the vicinity of a massive BH, where the curvature is large, could be distinct from the appropriate effective theory in the Solar System, where curvature is small; or $f(R)$ could evolve with cosmological epoch such that it varies with redshift. If the laboratory bound is indeed universal there should be no deviation in GW observations: detection of a deviation would prove both that GR is incomplete and that the effective $a_2$ varies with environment.
 
-One method of obtaining a variation is via the chameleon mechanism, where $f(R)$-gravity is modified in the presence of matter \citep{Khoury2004, Khoury2004a, Brax2004}. In metric $f(R)$-gravity this is a non-linear effect arising from a large departure of the Ricci scalar from its background value \citep{DeFelice2010}. The mass of the effective scalar degree of freedom then depends upon the density of its environment \citep{Faulkner2007, Li2007}. In a region of high matter density, such as the Earth, the deviations from standard gravity would be exponentially suppressed due to a large effective $\Upsilon$; while on cosmological scales, where the density is low, the scalar would have a small $\Upsilon$, perhaps of the order $H_0/c$ \citep{Khoury2004, Khoury2004a}. The chameleon mechanism allows $f(R)$-gravity to pass laboratory, or Solar System, tests while remaining of interest for cosmology. In the context of gravitational radiation, this would mean that the Ricci scalar mode could freely propagate on cosmological scales \citep{Corda2009}. Unfortunately, because the chameleon mechanism suppresses the effects of $f(R)$ in the presence of matter, this mode would have to be excited by something other than the acceleration of matter. Additionally, since electromagnetic radiation has a traceless energy-momentum tensor it cannot excite the Ricci mode.\footnote{The standard transverse polarizations of gravitational radiation have an energy-momentum tensor that averages to be traceless, although this may not be the case locally \citep{Butcher2010}; the contribution to the gravitational averaged energy-momentum tensor from a propagating Ricci mode does have a nonzero trace, see \eqnref{Pseudotensor}. In any case it is doubtful that gravitational energy-momentum could act as a source for detectable radiation.} To be able to detect the Ricci mode we must observe it well away from any matter, which would cause it to become evanescent: a space-borne detector such as LISA could be our only hope.
+One method of obtaining variation in the behaviour of gravity is via the chameleon mechanism. Then $f(R)$-gravity is modified in the presence of matter \citep{Khoury2004, Khoury2004a, Brax2004}. In metric $f(R)$-gravity this is a non-linear effect arising from a large departure of the Ricci scalar from its background value \citep{DeFelice2010}. The mass of the effective scalar degree of freedom then depends upon the density of its environment \citep{Faulkner2007, Li2007}. In a region of high matter density, such as the Earth, the deviations from standard gravity would be exponentially suppressed due to a large effective $\Upsilon$; while on cosmological scales, where the density is low, the scalar would have a small $\Upsilon$, perhaps of the order $H_0/c$ \citep{Khoury2004, Khoury2004a}. The chameleon mechanism allows $f(R)$-gravity to pass laboratory, or Solar System, tests while remaining of interest for cosmology.\footnote{The need to reconcile laboratory experiments with a non-trivial $f(R)$ could be regarded as motivation for introducing the chameleon mechanism.} In the context of gravitational radiation, this would mean that the Ricci scalar mode could freely propagate on cosmological scales \citep{Corda2009}. Unfortunately, because the chameleon mechanism suppresses the effects of $f(R)$ in the presence of matter, this mode would have to be excited by something other than the acceleration of matter. Additionally, since electromagnetic radiation has a traceless energy-momentum tensor it cannot excite the Ricci mode.\footnote{The standard transverse polarizations of gravitational radiation have an energy-momentum tensor that averages to be traceless, although this may not be the case locally \citep{Butcher2010}; the contribution to the gravitational averaged energy-momentum tensor from a propagating Ricci mode does have a nonzero trace, see \eqnref{Pseudotensor}. In any case it is doubtful that gravitational energy-momentum could act as a source for detectable radiation.} To be able to detect the Ricci mode we must observe it well away from any matter, which would cause it to become evanescent: a space-borne detector such as LISA could be our only hope.
 
-As the chameleon mechanism is inherently non-linear, it is difficult to discuss in terms of our linearised framework. Treating $f(R)$ as an effective theory, we could incorporate the effects of matter by taking the coefficients $\{a_n\}$ to be functions of the matter stress-energy tensor (or its trace). In this case, the results presented here would hold in the event that the coefficient $a_2$ is slowly varying, such that it may be treated as approximately constant in the region of interest. The linearised wave equations, \eqnref{Box_R} and \eqnref{Box_hmunu}, retain the same form in the case of a variable $a_2$, the only alteration would be that $a_2 R^{(1)}$ replaces $R^{(1)}$ as subject of the Klein-Gordon equation. In particular, the conclusion that $\gamma =1$ is unaffected by the possibility of a variable $a_2$.
+As the chameleon mechanism is inherently non-linear, it is difficult to discuss in terms of our linearised framework. Treating $f(R)$ as an effective theory, we could incorporate the effects of matter by taking the coefficients $\{a_n\}$ to be functions of the matter stress-energy tensor (or its trace). In this case, the results presented here would hold in the event that the coefficient $a_2$ is slowly varying, such that it may be treated as approximately constant in the region of interest. The linearised wave equations, \eqref{eq:Box_R} and \eqref{eq:Box_hmunu}, retain the same form in the case of a variable $a_2$, the only alteration would be that $a_2 R^{(1)}$ replaces $R^{(1)}$ as subject of the Klein-Gordon equation. In particular, the conclusion that $\gamma = 1$ is unaffected by the possibility of a variable $a_2$.
 
 An interesting extension to the work presented here would be to consider the case when the constant term in the function $f(R)$, $a_0$, is nonzero. We would then be able to study perturbations with respect to (anti-)de Sitter space. This is relevant because the current $\Lambda$CDM paradigm indicates that we live in a universe with a positive cosmological constant \citep{Jarosik2011, Komatsu2011}. Such a study would naturally complement an investigation into the effects of background curvature on propagation \citep{Yang2011}.
