@@ -2,6 +2,8 @@
 
 \section{What goes up\ldots}
 
+\subsection{Newton}
+
 Gravity is one of the fundamental forces of nature; familiar as the force that keeps the Earth in orbit about the Sun and makes falling off a log so easy. \citet[book 3]{Newton1999} was the first to realise that gravitation could explain both apples falling from trees and the motion of astronomical bodies. In the \textit{Principia}, first published in 1687, he outlined a gravitational force that scaled as the inverse of square of the distance between centres of mass and was proportional to the product mass of the bodies. In modern notation the force is
 \begin{equation}
 F = \frac{G m_1 m_2}{r^2},
@@ -12,29 +14,33 @@ In the early nineteenth century, the motion of Uranus was found to deviate from 
 
 Newtonian gravity survived the trial of Uranus' orbit, but it could not explain the perihelion precession of Mercury. Le Verrier first noticed the anomaly. A new inner planet was suggested, but this time it could not be found. What was needed was a modified theory of gravitation: the Newtonian theory is insufficient in the stronger gravity close to the Sun \citep[document 24]{Einstein1997}.
 
+\subsection{Einstein}
+
 The new extended theory was General Relativity (GR), developed by Einstein in the 1910s \citep{Einstein1997}. This describes gravity as the effect of the curvature of spacetime, which is now a dynamical entity. Particles naturally travel along geodesics of spacetime, which may appeared curved; the curvature of spacetime itself is sourced from the energy-momentum in contains: matter tells spacetime how to curve, and spacetime tells matter how to move \citep[section 1.1]{Misner1973}. This is encapsulated within the Einstein field equations \citep[documents 22 and 25]{Einstein1997}
 \begin{equation}
 R_{\mu\nu} - \recip{2}R g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu},
 \end{equation}
-where $g_{\mu\nu}$ is the metric, $R_{\mu\nu}$ and $R$ and the Ricci tensor and scalar, $c$ is the speed of light, and $T_{\mu\nu}$ is the energy-momentum tensor. GR reduces to its Newtonian counter-part in the weak-field limit, or conversely, it extends Newtonian gravity to stronger gravitational fields.
+where $g_{\mu\nu}$ is the metric, $R_{\mu\nu}$ and $R$ are the Ricci tensor and scalar (\citealt[section 8.7]{Misner1973}; \citealt[section 3.2]{Wald1984}), $c$ is the speed of light, and $T_{\mu\nu}$ is the energy-momentum tensor. GR reduces to its Newtonian counter-part in the weak-field limit, or conversely, it extends Newtonian gravity to stronger gravitational fields.
 
 Since its inception, GR has successfully passed every observational test \cite{Will1993, Will2006}. However, astronomers have not been idle, and the twentieth century has yielded further surprises.
 
-Measurements of the rotation curves of galaxies do not match the expected profile calculated from their visible matter. Similarly, the velocity dispersion of galaxies in clusters is higher than would be expected. Gravitational lensing of galaxy clusters confirms that they gravitate more than expected from their apparent mass. This has been interpreted as motivation for introducing dark matter, a new component of the Universe that gravitates but does not interact with electromagnetic radiation. Dark matter has become central to our understanding of cosmology, it is needed to explain structure formation: without it we could not form galaxies from the small over-densities inferred from the homogeneity of the cosmic microwave background. Although we know the properties required of dark matter and we can estimation the required quantity, we do not have a definite candidate for a dark matter particle. Its true nature remains a mystery.
+Observations of the velocity dispersion of galaxies in clusters are higher than be calculated from the quantity of luminous matter \citep[e.g.]{Zwicky1937}. Similarly, measurements of the rotation curves of galaxies do not match the expected profile \citep{Babcock1939}. Gravitational lensing of galaxy clusters confirms that their gravity is dominated by an unseen component \citep{?,Clowe2006}. This has been interpreted as motivation for introducing dark matter, a new component of the Universe that gravitates but does not interact with electromagnetic radiation. Dark matter has become central to our understanding of cosmology \citep{?}; it is needed to explain structure formation: without it we could not form galaxies from the small over-densities inferred from the homogeneity of the cosmic microwave background \citep{?}. Although we know the properties required of dark matter and we can estimation the required quantity, we do not have a definite candidate for a dark matter particle \citep{Bertone2005}. Its true nature remains a mystery.
 
-Observations of type IA supernovae have revealed that the Universe is not only expanding, but is accelerating. This acceleration has been attributed to the influence of dark energy. The nature of dark energy is even more mysterious than that of dark matter. The simplest explanation is to introduce a cosmological constant $\Lambda$, this modifies the Einstein field equations to become
+Observations of type IA supernovae have revealed that the Universe is not only expanding, but is accelerating \citep{Riess1998,Perlmutter1999}. This acceleration has been attributed to the influence of dark energy \citep{Perlmutter1999a,Peebles2003}. The nature of dark energy is even more mysterious than that of dark matter. The simplest explanation is to introduce a cosmological constant $\Lambda$, this modifies the Einstein field equations to become \citep[document 43]{Einstein1997}
 \begin{equation}
-R_{\mu\nu} - \recip{2}R g_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}.
+R_{\mu\nu} - \recip{2}R g_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}. % Check sign
 \end{equation}
 This model has been highly successful in explaining evolution of the Universe, but we still do not know if a cosmological constant is the true explanation and if so, why it has its particular value.
 
 Despite its long history, we still do not know everything about gravity. There are still to discoveries to be made. Gravity is the weakest of the fundamental forces and so is difficult to study in the laboratory. Yet it dominates on astronomical scales; understanding gravity is crucial to understanding the cosmos. We have learnt much about the workings of the Universe through improving our understanding of gravity, and the motivation for developing new theories of gravitation has often come from astronomical observations. Gravitation and astrophysics are intimately linked.
 
+\subsection{This work}
+
 This thesis is divided into two strands. The first is concerned with what we could learn about astrophysical systems from gravitational probes; the second is concerned with what we can learn about gravity from astronomical observations.  We shall consider strong-field tests and in particular gravitational waves. The former part concentrates on what we could hope to learn about massive black holes and their surrounding stellar environment from extreme-mass-ratio bursts. The latter looks at modifications to gravity in the metric $f(R)$ theory.
 
 \section{Strong-field tests \& gravitational waves}
 
-The deviations from Newtonian theory were first noted in the gravitational field close to the Sun, the strongest accessible in the Solar System. GR has now been tested in stronger fields \citep{Will2006}, but there are still more extreme systems to be explored. It is here that we would expect any deviations to manifest. We know that at least our understanding of GR in the strongest fields is incomplete, as black holes feature singularities at their centres, where the theory breaks down \citep[section 34.6]{Misner1973}. Even if we do not find any deviations from GR, it is still worthwhile to check its validity, if only as a matter of scientific principle.
+The deviations from Newtonian theory were first noted in the gravitational field close to the Sun, the strongest accessible in the Solar System. GR has now been tested in stronger fields \citep{Will2006}, but there are still more extreme systems to be explored. It is here that we would expect any deviations to manifest. We know that at least our understanding of GR in the strongest fields is incomplete, as black holes feature singularities at their centres, where the theory breaks down (\citealt[section 34.6]{Misner1973}; \citealt[chapter 9]{Wald1984}). Even if we do not find any deviations from GR, it is still worthwhile to check its validity, if only as a matter of scientific principle.
 
 \subsection{Field strength \& existing tests}
 
@@ -50,6 +56,9 @@ where $M$ is the gravitating mass and $r$ a characteristic distance. These are l
 
 Using these two parameters, we can map out the possible tests of GR\ldots
 
+...
+...
+
 To probe the strongest fields, we need a way of probing the spacetime of compact objects like neutron stars and black holes\ldots 
 
 \subsection{Gravitational radiation}
@@ -58,15 +67,86 @@ One particularly promising method of exploring strong-field regions would be to 
 
 \subsubsection{Detection}
 
-As yet no GWs have been directly detected, although their existence has been inferred from the loss of energy and angular momentum from binary pulsars\cite{Stairs2003}. There are a number of experiments designed to observe GWs. The Laser Interferometer Gravitational-wave Observatory (LIGO; \citealt{Abramovici1992}) and the European Gravitational Observatory's Virgo detector \citep{Acernese2008a}, which work in collaboration, are currently being upgraded to their advanced configurations and are expected to make the first detection shortly after recommencing operation around 2015 \citep{Harry2010,Accadia2011}.\footnote{An optimistic hope is to celebrate the centenary of Einstein's 1916 prediction of gravitation waves \citep[document 32]{Einstein1997} with the first direct detection.} These are ground-based interferometers that detect passing GWs by measuring the induced difference in the length of their two arms \citep{Pitkin2011}. They are sensitive to frequencies in the range $\sim10$--$10^4\units{Hz}$, with peak sensitivity at about $100\units{Hz}$. The LIGO and Virgo detectors are supported by GEO 600, a smaller interferometric experiment that incorporate prototype technologies \citep{Willke2002,Willke2006}. A further ground-based interferometer is under construction in Japan. The Kamioka Gravitational Wave Detector (KAGRA), formerly the the Large-scale Cryogenic Gravitational Wave Telescope (LCGT; \citealt{Kuroda1999,Kuroda2010}) will operate underground in the Kamioka mine. It lags several years behind the other detectors, but will employ more sophisticated noise-reduction techniques such as cryogenic cooling.
+As yet no GWs have been directly detected, although their existence has been inferred from the loss of energy and angular momentum from binary pulsars \citep{Stairs2003}. There are a number of experiments designed to observe GWs. The Laser Interferometer Gravitational-wave Observatory (LIGO; \citealt{Abramovici1992}) and the European Gravitational Observatory's Virgo detector \citep{Acernese2008a}, which work in collaboration, are currently being upgraded to their advanced configurations and are expected to make the first detection shortly after recommencing operation around 2015 \citep{Harry2010,Accadia2011}.\footnote{An optimistic hope is to celebrate the centenary of Einstein's 1916 prediction of gravitation waves \citep[document 32]{Einstein1997} with the first direct detection.} These are ground-based interferometers that detect passing GWs by measuring the induced difference in the length of their two arms \citep{Pitkin2011}. They are sensitive to frequencies in the range $\sim10$--$10^4\units{Hz}$, with peak sensitivity at about $100\units{Hz}$. The LIGO and Virgo detectors are supported by GEO 600, a smaller interferometric experiment that incorporate prototype technologies \citep{Willke2002,Willke2006}. A further ground-based interferometer is under construction in Japan. The Kamioka Gravitational Wave Detector (KAGRA), formerly the the Large-scale Cryogenic Gravitational Wave Telescope (LCGT; \citealt{Kuroda1999,Kuroda2010}) will operate underground in the Kamioka mine. It lags several years behind the other detectors, but will employ more sophisticated noise-reduction techniques such as cryogenic cooling.
 
 There is another contender for the first detection: pulsar timing arrays (PTAs) \citep{McWilliams2012,Sesana2012a}. These infer the presence of a GW from periodic delays in the arrival times of the highly regular millisecond pulses. They are sensitive to frequencies of $\sim10^{-9}$--$10^{-7}\units{Hz}$. An international collaboration of European, North American and Australian radio telescopes is already in possession of the necessary instruments to detect GWs \citep{Hobbs2010}.\footnote{The International Pulsar Timing Array (IPTA) consortium consists of the European Pulsar Timing Array, the (North American) NANOGrav and the (Australian) Parkes Pulsar Timing Array consortia.} The completion of the Square Kilometre Array (SKA; \citealt{Dewdney2009}) shall augment the search, greatly increasing sensitivity \citep{Kramer2004}.
 
-Between the high frequency range of the ground-based detectors and the very low frequency range of pulsar timing, lies a band that could be accessible to space-based detectors.
+Between the high frequency range of the ground-based detectors and the very low frequency range of pulsar timing, lies a band that could be accessible to space-based detectors...
 
-While GWs are an exciting source of information, it will be beneficial to compare with results from other techniques, to maximise the data available for inferences, and to check models. For example, very long baseline interferometry (VLBI) may be used to image the vicinity of a BH's horizon, or X-ray observations could be used to investigate BH accretion discs\cite{Psaltis2008}.
+At the time of writing, there is no currently funded mission. However, LISA Pathfinder, a technology demonstration mission, is due for launch at the end of 2014 \citep{Anza2005, Antonucci2012}. Hopefully, a full mission shall follow in the subsequent decade.
 
-\section{Black holes \& compact objects}
+\subsection{Gravitational wave sources}
+
+While GWs are an exciting source of information, it will be beneficial to compare with results from other techniques, to maximise the data available for inferences, and to check models. For example, very long baseline interferometry (VLBI) may be used to image the vicinity of a BH's horizon, or X-ray observations could be used to investigate BH accretion discs \cite{Psaltis2008}.
+
+\section{Astrophysical compact objects}
+
+\subsection{White dwarfs and neutron stars}
+
+\subsection{Black holes}
+
+According to the no-hair theorem, any black hole (BH) should be described completely by just its mass $M_\bullet$ and spin $a$, since we expect the charge of an astrophysical BH to be negligible \citep{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975, Chandrasekhar1998}. The spin parameter $a$ is related to the BH's angular momentum $J$ by
+\begin{equation}
+J = M_\bullet ac;
+\end{equation}
+it is often convenient to use the dimensionless spin
+\begin{equation}
+a_\ast = \frac{cJ}{GM_\bullet^2}.
+\end{equation}
+\subsubsection{Massive black holes}
+
+Many, if not all, galactic nuclei have harboured a massive black hole (MBH) during their evolution \citep{Lynden-Bell1971, Soltan1982, Rees1984}. Observations have shown that there exist well-defined correlations between the MBHs' masses and the properties of their host galaxies, such as bulge luminosity, mass, velocity dispersion and light concentration \citep{Kormendy1995, Magorrian1998, Ferrarese2000, Gebhardt2000, Graham2001, Tremaine2002, Marconi2003, Haring2004, Graham2007, Graham2011}. These suggest coeval evolution of the MBH and galaxy \citep{Peng2007, Jahnke2011}, possibly with feedback mechanisms coupling the two \citep{Haiman2004, Volonteri2009}. The MBH and the surrounding spheroidal component share a common history, such that the growth of one can inform us about the growth of the other.
+
+The best opportunity to study MBHs comes from the compact object in our own galactic centre (GC), which is coincident with Sagittarius A* (Sgr A*). Through careful monitoring of stars orbiting the GC, this has been identified as an MBH of mass $M_\bullet \simeq 4 \times 10^6 M_\odot$ at a distance of only $R_0 \simeq 8\units{kpc}$ \citep{Gillessen2009, Meyer2012}.
+
+As we have a good estimate of the mass, to gain a complete description of the MBH we have only to measure its spin; this shall give us insight into its history and role in the evolution of the Galaxy.
+
+The spin of an MBH is determined by several competing processes. An MBH accumulates mass and angular momentum through accretion \citep{Volonteri2010}. Accretion from a gaseous disc shall spin up the MBH, potentially leading to high spin values \citep{Volonteri2005}, while a series of randomly orientated accretion events leads to a low spin value: we expect an average value $|a_\ast| \sim 0.1$--$0.3$ \citep{King2006, King2008}. The MBH also grows through mergers \citep{Yu2002, Malbon2007}. Minor mergers with smaller BHs can decrease the spin \citep{Hughes2003, Gammie2004}, while a series of major mergers, between similar mass MBHs, would lead to a likely spin of $|a_\ast| \sim 0.7$ \citep{Berti2008, Berti2007, Gonzalez2007}. Measuring the spin of MBHs shall help us understand the relative importance of these processes, and perhaps shall give a glimpse into their host galaxies' pasts.
+
+Elliptical and spiral galaxies are believed to host MBHs of differing spins because of their different evolutions: we expect MBHs in elliptical galaxies to have on average higher spins than MBHs in spiral galaxies, where random, small accretion episodes have played a more important role \citep{Volonteri2007, Sikora2007}.
+
+It has been suggested that the spin of the Galaxy's MBH could be inferred from careful observation of the orbits of stars within a few milliparsecs of the GC \citep{Merritt2010}, although this is complicated because of perturbations due to other stars, or from observations of quasi-periodic oscillations in the luminosity of flares believed to originate from material orbiting close to the innermost stable orbits \citep{Genzel2003a, Belanger2006, Trippe2007, Hamaus2009, Kato2010}, though there are difficulties in interpreting these results \citep{Psaltis2008a}.
+
+%This latter method, combined with a disc-seismology model, has produced a value of the dimensionless spin of $a_\ast = 0.44 \pm 0.08$. To obtain this result \citet{Kato2010} have combined their observations of Sgr A* with observations of galactic X-ray sources containing solar mass BHs, to find a best-fit unique spin parameter for all BHs. However, it is not clear that all BHs should share the same value of the spin parameter; especially considering that the BHs considered here differ in mass by six orders of magnitude, with none in the intermediate range. Even if BH spin is determined by a universal process, we still expect some distribution of spin parameters \citep{King2008, Berti2008}. Thus we cannot precisely determine the spin of the galactic centre's MBH from an average including other BHs.
+
+The spins of MBHs in active galactic nuclei have been inferred using X-ray observations of $\mathrm{Fe}$ $\mathrm{K}$ emission lines \citep{Miller2007, McClintock2011}. So far this has been done for a handful of other galaxies' MBHs, as shown in \tabref{X-ray}.
+\begin{table}[htp]
+\centering
+\begin{tabular}{l c l }
+\toprule
+\multicolumn{1}{c}{AGN} & \multicolumn{1}{c}{$a_\ast$} & \multicolumn{1}{c}{Study} \\ \midrule 
+1H0707--495 & $\geq 0.976$ & \citet{Zoghbi2010} \\
+Ark 120 & $0.74^{+0.19}_{-0.50}$ & \citet{Nardini2011} \\ % 99% confidence
+Fairall 9 & $0.60 \pm 0.07$ & \citet{Schmoll2009} \\
+ & $0.44^{+0.04}_{-0.11}$ & \citet{Patrick2011} \\
+ & $0.39^{+0.48}_{-0.30}$ & \citet{Emmanoulopoulos2011} \\
+ & $0.67^{+0.10}_{-0.11}$ & \citet{Patrick2011a} \\
+ & $0.52^{+0.19}_{-0.15}$ & \citet{Lohfink2012} \\
+MCG--6-30-15 & $0.989^{+0.009}_{-0.002}$ & \citet{Brenneman2006} \\
+ & $0.86^{+0.01}_{-0.02}$ & \citet{delaCallePerez2010} \\
+ & $0.49^{+0.20}_{-0.12}$ & \citet{Patrick2011a} \\
+Mrk 79 & $0.7 \pm 0.1$ & \citet{Gallo2011} \\
+Mrk 335 & $0.70^{+0.12}_{-0.01}$ & \citet{Patrick2011} \\
+Mrk 509 & $0.78^{+0.03}_{-0.04}$ & \citet{delaCallePerez2010} \\
+NGC 1365 & $\geq 0.84$ & \citet{Risaliti2013} \\
+NGC 3783 & $\geq 0.88$ & \citet{Brenneman2011} \\
+ & $< 0.32$ & \citet{Patrick2011a} \\
+NGC 4051 & $< 0.94$ & \citet{Patrick2011a} \\
+NGC 7469 & $0.69^{+0.09}_{-0.09}$ & \citet{Patrick2011} \\
+%RBS 1125 & $\geq 0.60$ & \citet{Minniutti2010} \\ % Determined from soft exceess sommthness which requires a high degree of relativistic blurring, rather than the relativistic iron line shape.
+SWIFT J2127.4+5654 & $0.6 \pm 0.2$ & \citet{Miniutti2009} \\
+ & $0.70^{+0.10}_{-0.14}$ & \citet{Patrick2011} \\
+ \bottomrule
+\end{tabular}
+\caption{Measurements of MBH spin from iron emission lines. The scatter in results indicates the complexities of modelling the accretion disc.\label{tab:X-ray}}
+\end{table}
+Estimates for the spin cover a range of values up to the maximal value for an extremal Kerr black hole. Typical values are in the intermediate range of $a_\ast \sim 0.7$ with an uncertainty of about $10\%$ on each measurement.
+
+%While we can use the spin of other BHs as a prior, to inform us of what we should expect to measure for the spin of the Galaxy's MBH, it is desirable to have an independent observation, a direct measurement.
+
+%An exciting means of inferring information about the MBH is through GWs emitted when compact objects (COs), such as stellar mass BHs, neutron stars (NSs), white dwarfs (WDs) or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as the Laser Interferometer Space Antenna (LISA) or the evolved Laser Interferometer Space Antenna (eLISA), is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Bender1998, Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion objects inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the object plunges into the MBH. These systems are typically formed following two-body encounters so that the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are extreme mass-ratio bursts (EMRBs; \citealt{Rubbo2006}). Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the LISA/eLISA frequency range. The resulting signals are extreme mass-ratio inspirals (EMRIs; \citealt{Amaro-Seoane2007}).
+
+%Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high signal-to-noise ratio (SNR) to be accumulated. Here, we investigate high eccentricity orbits. These are the initial bursting orbits from which an EMRI may evolve, and are the consequence of scattering from two-body encounters. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC. Exactly what can be inferred depends upon the orbit, which we investigate here. We go on to verify that an event rate of $\sim 0.8\units{yr^{-1}}$ is reasonable.
 
 \section{Modified gravity}
 
@@ -86,10 +166,10 @@ While GWs are an exciting source of information, it will be beneficial to compar
 
 \section{Conventions}
 
-Throughout this work we will use the time-like sign convention of \citep{Landau1975}:
+Throughout this work we will use the time-like sign convention of \citet{Landau1975}:
 \begin{enumerate}
 \item The metric has signature $(+,-,-,-)$.
 \item The Riemann tensor is defined as ${R^\mu}_{\nu\sigma\rho} = \partial_\sigma {\Gamma^\mu}_{\nu\rho} - \partial_\rho {\Gamma^\mu}_{\nu\sigma} + {\Gamma^\mu}_{\lambda\sigma}{\Gamma^\lambda}_{\rho\nu} - {\Gamma^\mu}_{\lambda\rho}{\Gamma^\lambda}_{\sigma\nu}$.
 \item The Ricci tensor is defined as the contraction $R_{\mu\nu} = {R^\lambda}_{\mu\lambda\nu}$.
 \end{enumerate}
-Greek indices are used to represent spacetime indices $\mu = \{0,1,2,3\}$ (or $\mu = \{t,\widetilde{r},\theta,\phi\}$) and lowercase Latin indices are used for spatial indices $i = \{1,2,3\}$. In general, factors of the speed of light $c$ and gravitational constant $G$ are retained, except for some sections where explicitly noted.
+Greek indices are used to represent spacetime indices $\mu = \{0,1,2,3\}$ (or $\mu = \{t,\widetilde{r},\theta,\phi\}$) and lowercase Latin indices are used for spatial indices $i = \{1,2,3\}$. Uppercase Latin indices from the beginning of the alphabet are used for the output of the two \textit{LISA} detector-arms $A = \{\mathrm{I}, \mathrm{II}\}$, and lowercase Latin indices from the beginning of the alphabet are used for parameter space. Summation over repeated indices is assumed unless explicitly noted otherwise. In general, factors of the speed of light $c$ and gravitational constant $G$ are retained, except for some sections where explicitly noted.

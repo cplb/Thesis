@@ -35,7 +35,8 @@
 \usepackage{hyperref}
 \usepackage[authoryear]{natbib}
 \renewcommand{\bibfont}{\footnotesize}
-\renewcommand{\bibname}{{R\lowercase{eferences}}}
+\addto{\captionsbritish}{\renewcommand{\bibname}{{R\lowercase{eferences}}}}
+%\renewcommand{\refname}{{R\lowercase{eferences}}}
 \setlength{\bibhang}{0pt} 
 \setlength{\bibsep}{0.5pt}
 
@@ -55,6 +56,8 @@
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{4} 
 
+\setcounter{secnumdepth}{5}
+
 \def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
 
 \newcommand{\eqnref}[1]{equation~(\ref{eq:#1})}
@@ -63,8 +66,8 @@
 \newcommand{\Secref}[1]{Section~\ref{sec:#1}}
 \newcommand{\chapref}[1]{chapter~\ref{ch:#1}}
 \newcommand{\Chapref}[1]{Chapter~\ref{ch:#1}}
-\newcommand{\apref}[1]{appendix~\ref{sec:#1}}
-\newcommand{\Apref}[1]{Appendix~\ref{sec:#1}}
+\newcommand{\apref}[1]{appendix~\ref{ap:#1}}
+\newcommand{\Apref}[1]{Appendix~\ref{ap:#1}}
 \newcommand{\tabref}[1]{table~\ref{tab:#1}}
 \newcommand{\Tabref}[1]{Table~\ref{tab:#1}}
 \newcommand{\figref}[1]{figure~\ref{fig:#1}}
@@ -149,6 +152,10 @@
 
 \part{Astronomical systems}
 
+\input{./Waveforms.tex}
+
+\input{./Galactic_param.tex}
+
 \part{Understanding gravitation}
 
 \input{./f_R.tex}
@@ -162,9 +169,11 @@
 
 \input{./inner_product.tex}
 
-\input{./Loss_cone.tex}
+\input{./windows.tex}
 
 \input{./Energy_flux.tex}
+
+\input{./Loss_cone.tex}
 
 \clearpage
 \mbox{}

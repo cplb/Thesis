@@ -1,10 +1,10 @@
-\chapter{The signal inner product}
+\chapter{The signal inner product}\label{ap:inner-prod}
 
 We wish to derive an inner product over the space of signals; we shall denote the product of signals $g$ and $h$ as $\innerprod{g}{h}$.
 
-\section{The Fourier transform}
+\section{Preliminaries}
 
-\subsection{Basic properties}
+\subsection{The Fourier transform}
 
 We begin with some basic properties of Fourier transform \citep[section 13.1]{Riley2002}. We define transformations
 \begin{subequations}
@@ -154,15 +154,15 @@ This is a noise-weighted inner product over the space of real signals. The proba
 p(s|h) \propto \exp\left[-\recip{2}\innerprod{n}{n}\right].
 \end{equation}
 
-\subsection{Properties of the inner product}
+%\subsection{Properties of the inner product}
 
-Consider an ensemble average over multiple noise realisations, which is the same as a time average assuming stationarity of the noise spectrum:
-\begin{align}
-\left\langle\innerprod{n}{n}\innerprod{n}{q}\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\innerprod{n(t+\tau)}{p(t)}\innerprod{n(t+\tau)}{q(t)}}{\tau} \nonumber \\
-% = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \int_{-T}^{T}\,\dd\tau \left\{ \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\exp(-2\pi if\tau)\widetilde{p}(f)}{S_n(f)}}{f} \right. \nonumber \\
-%  {} & \times \left. \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')\exp(-2\pi if'\tau)\widetilde{q}(f')}{S_n(f')}}{f'}\right\} \nonumber \\
- = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}\frac{\widetilde{p}(f)\widetilde{q}^\ast(f)}{S_n(f)}}{f}\intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')}{S_n(f')}}{f'} \nonumber \\
- = {} & \innerprod{p}{q},
-\end{align}
-using the definition of the noise spectrum to obtain the final line.
+%Consider an ensemble average over multiple noise realisations, which is the same as a time average assuming stationarity of the noise spectrum:
+%\begin{align}
+%\left\langle\innerprod{n}{p}\innerprod{n}{q}\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\innerprod{n(t+\tau)}{p(t)}\innerprod{n(t+\tau)}{q(t)}}{\tau} \nonumber \\
+%% = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \int_{-T}^{T}\,\dd\tau \left\{ \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\exp(-2\pi if\tau)\widetilde{p}(f)}{S_n(f)}}{f} \right. \nonumber \\
+%%  {} & \times \left. \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')\exp(-2\pi if'\tau)\widetilde{q}(f')}{S_n(f')}}{f'}\right\} \nonumber \\
+% = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}\frac{\widetilde{p}(f)\widetilde{q}^\ast(f)}{S_n(f)}}{f} \nonumber \\
+% = {} & \innerprod{p}{q},
+%\end{align}
+%using the definition of the noise spectrum to obtain the final line.
 

@@ -2,11 +2,11 @@
 
 \section{Beyond general relativity: $f(R)$ modified gravity}
 
-GR is a well tested theory of gravity \citep{Will2006}. However, there are many unanswered questions that remain regarding gravity which motivate the exploration of alternate theories: What are the true natures of dark matter and dark energy? How should we formulate a quantizable theory of gravity? What drove inflation in the early Universe? Is GR the only theory that is consistent with current observations? Moreover, the majority of the tests that have been carried out to date have been in the weak-field, low-energy regime \citep{Will2006, Will1993,Psaltis2008a}. It is not unreasonable to suspect there may be higher order corrections that are only discovered in the strong-field regime, where curvature is high or spacetime dynamic.
+GR is a well tested theory of gravity \citep{Will2006}; however, the majority of the tests that have been carried out to date have been in the weak-field, low-energy regime \citep{Will1993,Psaltis2008a}. It is not unreasonable to suspect there may be higher order corrections that are only discovered in the strong-field regime, where curvature is high or spacetime dynamic.
 
 In this and the following chapter, we shall study a modified theory of gravitation to assess the feasibility of potential corrections to GR. We investigate metric $f(R)$-gravity, in which the Einstein-Hilbert action is modified by replacing the Ricci scalar $R$ with an arbitrary function $f(R)$. This is one of the simplest extensions to standard GR \citep{Sotiriou2010, DeFelice2010}. It has attracted significant interest because the flexibility in defining the function $f(R)$ allows a wide range of cosmological phenomena to be described \citep{Nojiri2007, Capozziello2007a}. For example, \citet{Starobinsky1980} suggested that a quadratic addition to the field equations could drive exponential expansion of the early Universe \citep{Vilenkin1985}: inflation in modern terminology. In this model $f(R) = R - R^2/(6\Upsilon^2)$; the size of the quadratic correction can be tightly constrained by considering the spectrum of curvature perturbations generated during inflation \citep{Starobinskii1983, Starobinskii1985}. Using the results of the Wilkinson Microwave Anisotropy Probe (WMAP; \citealt{Bennett2012, Hinshaw2012}), the inverse length-scale can be constrained to $\Upsilon \simeq 3 \times 10^{-6} (50/N) \ell\sub{P}^{-1}$, where $N$ is the number of e-folds during inflation and $\ell\sub{P}$ is the Planck length \citep{Starobinsky2007, DeFelice2010}.
 
-We consider simple $f(R)$ corrections within the framework of linearized gravity and discover how GWs are modified. We begin by reviewing the properties of the $f(R)$ field equations. From these, we derive the linearized equations (\secref{Lin}) and use these to determine the properties of GWs (\secref{Rad}). These are largely known in the literature, but are worked out here {\it ab initio}. We proceed to derive an effective energy-momentum tensor for gravitational radiation in \secref{EM_tensor}, following the short-wavelength approximation of \citet{Isaacson1968, Isaacson1968a}.
+We consider simple $f(R)$ corrections within the framework of linearized gravity and discover how GWs are modified. We begin by reviewing the properties of the $f(R)$ field equations. We then derive the linearized equations (\secref{Lin}) and use these to determine the properties of GWs (\secref{Rad}). These are largely known in the literature, but are worked out here {\it ab initio}. We proceed to derive an effective energy-momentum tensor for gravitational radiation in \secref{EM_tensor}, following the short-wavelength approximation of \citet{Isaacson1968, Isaacson1968a}.
 
 Following on from the theory developed in this chapter, in \chapref{f-R2} we consider observational tests of $f(R)$-gravity. We explore what constraints LISA, Solar System tests and laboratory experiments can place on the form of $f(R)$. We do not consider cosmological implications where terms beyond linear order could play a significant role. The overall conclusion is that LISA could place constraints on $f(R)$-gravity which may be more powerful than those in the Solar System, but are not as powerful as constraints from laboratory experiments. A brief summary of findings from both chapters is found in \secref{f_Discuss}.
 
@@ -38,7 +38,19 @@ can be expanded as
 \begin{equation}
 f(R) = R - \frac{\lambda n}{R_0} R^2 + \frac{\lambda n (n + 1)}{2 R_0^3} R^4 + \ldots
 \end{equation}
-Consequently such a series expansion can constrain model parameters, although we cannot specify the full functional form from only a few terms.
+and the model of \citet{Hu2007}
+\begin{equation}
+f(R) = R - m^2\frac{c_1\left(R/m^2\right)^n}{c_2\left(R/m^2\right)^n + 1},
+\end{equation}
+assuming that $c_2(R/m^2)^n \ll 1$, can be expanded as
+\begin{equation}
+f(R) = (1 - c_1)R + \frac{c_1 c_2}{m^2}R^2 - \frac{c_1 c_2^2}{m^4}R^3 + \frac{c_1 c_2^3}{m^6}R^4 + \ldots 
+\end{equation}
+for $n = 1$ and as
+\begin{equation}
+f(R) = R - \frac{c_1}{m^2}R^2 + \frac{c_1 c_2^2}{m^4}R^4 + \ldots
+\end{equation}
+for $n = 2$. Consequently such a series expansion can constrain model parameters, although we cannot specify the full functional form from only a few terms.
 
 The field equations are obtained by a variational principle; there are several ways of achieving this. To derive the Einstein field equations from the Einstein-Hilbert action one may use the standard metric variation or the Palatini variation \citep[section 21.2]{Misner1973}. Both approaches can be used for $f(R)$, but they yield different results \citep{Sotiriou2010, DeFelice2010}. Following the metric formalism, one varies the action with respect to the metric $g^{\mu\nu}$. Following the Palatini formalism one varies the action with respect to both the metric $g^{\mu\nu}$ and the connection ${\Gamma^\rho}_{\mu\nu}$, which are treated as independent quantities: the connection is not the Levi-Civita metric connection.\footnote{Imposing the condition that the metric and Palatini formalisms produce the same field equations, assuming an action that only depends on the metric and Riemann tensor, results in Lovelock gravity \citep{Exirifard2008}. Lovelock gravities require the field equations to be divergence free and no more than second order; in four dimensions the only possible Lovelock gravity is GR with a potentially non-zero cosmological constant \citep{Lovelock1970, Lovelock1971, Lovelock1972}.}
 
@@ -294,7 +306,7 @@ would ensure both conditions \eqref{eq:Lorenz} and \eqref{eq:Box_hmunu} are sati
 \begin{equation}
 \widehat{h}_{\mu\nu} \rightarrow \widehat{h}_{\mu\nu} + i\left(k_\mu\widehat{\xi}_\nu + k_\nu\widehat{\xi}_\mu - \eta_{\mu\nu}k^\rho\widehat{\xi}_\rho\right).
 \end{equation}
-We may impose four further constraints (one for each $\widehat{\xi}_\mu$) upon $\widehat{h}_{\mu\nu}$. We take these to be
+We may impose four further constraints (one for each $\widehat{\xi}_\mu$) upon $\widehat{h}_{\mu\nu}$. We take these to be \citep[section 4.4]{Wald1984}
 \begin{equation}
 \widehat{h}_{0\nu} = 0, \qquad \widehat{h} = 0.
 \end{equation}
