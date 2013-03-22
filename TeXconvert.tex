@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{pstricks,pst-node,pst-text,pst-3d,pst-eucl}
+\usepackage{psfrag}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[figuresright]{rotating}
+\usepackage{amssymb,amstext,amsfonts} %% ... with default font
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+\begin{document}
+\pagestyle{empty} % Remove any page numbering.
+
+\begin{figure}
+\import{}{laprint.tex}
+\end{figure}
+
+\end{document}
+
+% latex TeXconvert.tex 
+% dvips -o TeXconvert.ps TeXconvert.dvi
+% ps2epsi TeXconvert.ps TeXconvert.eps
