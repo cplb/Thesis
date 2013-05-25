@@ -31,6 +31,7 @@
 \usepackage{appendix}
 \usepackage[latin9]{inputenc}
 %\usepackage{fixmath}
+\usepackage{ upgreek }
 %\usepackage{paralist}
 \usepackage{hyperref}
 \usepackage[authoryear]{natbib}
@@ -162,9 +163,6 @@
 
 \part{Conclusion}
 
-\bibliographystyle{../physicsAuthorYearURL}
-\bibliography{../library}
-
 \appendix
 
 \input{./inner_product.tex}
@@ -175,7 +173,10 @@
 
 \input{./Loss_cone.tex}
 
-\clearpage
-\mbox{}
+\bibliographystyle{../physicsAuthorYearURL}
+\bibliography{../library}
+
+%\clearpage
+%\mbox{}
 
 \end{document}

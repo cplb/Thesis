@@ -8,12 +8,11 @@ When performing a Fourier transform using a computer we must necessarily only tr
 \end{equation}
 where $\tilde{h}(f) = \mathscr{F}\left\{h(t)\right\}$ is the unwindowed Fourier transform of the infinite signal. This windowing of the data is a problem innate in the method, and results in spectral leakage.
 
-\Figref{fig:Windowing_Rectangular} shows the computed Fourier transform for an example EMRB. The waveform has two distinct regions: a low-frequency curve, and a high-frequency tail. The low-frequency signal is the spectrum we are interested in; the high-frequency components are a combination of spectral leakage and numerical noise. The $\order{1/{f}}$ behaviour of the $\sinc$ gives the shape of the tail.\footnote{This has possibly been misidentified in figure 8 of \citet{Burko2007} as the characteristic strain for parabolic encounters.}
-
-\begin{figure}[!htp]
+\Figref{fig:Windowing-Rectangular} shows the computed Fourier transform for an example EMRB. The waveform has two distinct regions: a low-frequency curve, and a high-frequency tail. The low-frequency signal is the spectrum we are interested in; the high-frequency components are a combination of spectral leakage and numerical noise. The $\order{1/{f}}$ behaviour of the $\sinc$ gives the shape of the tail.\footnote{This has possibly been misidentified in figure 8 of \citet{Burko2007} as the characteristic strain for parabolic encounters.}
+\begin{figure}%[!htp]
   \begin{center}
-   \subfigure[Spectrum using no window. The calculated SNR is $\rho \simeq 12.5$.]{\label{fig:Windowing_Rectangular} \includegraphics[width=0.475\textwidth]{./images/Fig_h_I_9_rectangular}} \quad
-   \subfigure[Spectrum using a Nuttall window. The calculated SNR is $\rho \simeq 8.5$.]{\label{fig:Windowing_Nuttall} \includegraphics[width=0.475\textwidth]{./images/Fig_h_I_9_Nuttall}}
+   \subfigure[Spectrum using no window. The calculated SNR is $\rho \simeq 12.5$.] {\label{fig:Windowing-Rectangular} \includegraphics[width=0.475\textwidth]{./images/Fig_h_I_9_rectangular}} \quad
+   \subfigure[Spectrum using a Nuttall window. The calculated SNR is $\rho \simeq 8.5$.] {\label{fig:Windowing-Nuttall} \includegraphics[width=0.475\textwidth]{./images/Fig_h_I_9_Nuttall}}
     \caption{Example spectra calculated using (a) a rectangular window and (b) Nuttall's four-term window with continuous first derivative \citep{Nuttall1981}. The spin of the MBH is $a_\ast = 0.5$, the mass of the orbiting CO is $\mu = 10 M_\odot$, the periapsis is $r\sub{p} = 50 r\sub{g}$ and the inclination is $\iota = 0.1$. The high-frequency tail is the result of spectral leakage. The level of the \textit{LISA} noise curve is indicated by the dashed line. The spectra are from detector I, but the detector II spectra look similar.\label{fig:Windowing}}
   \end{center}
 \end{figure}
