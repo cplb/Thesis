@@ -123,8 +123,9 @@ where $\tau = t_j - t_l$. Defining the transformation
 \begin{equation}
 \widetilde{C^{-1}}(f,t_k) = \intd{-\infty}{\infty}{C^{-1}(t,t_k)\exp(-2\pi if t)}{t},
 \end{equation}
-and using the Wiener-Khinchin theorem to define power spectrum \citep{Cutler1994}
+and using the Wiener-Khinchin theorem to the define power spectral density \citep{Cutler1994}
 \begin{align}
+\label{eq:PSD-WK}
 S_n(f) = {} & \lim_{T \rightarrow \infty} \recip{T} \overline{\left|\widetilde{n}(f)\right|^2} \\
  = {} & 2 \intd{-\infty}{\infty}{C_n(\tau)\exp(-2\pi i f\tau)}{\tau},
 \end{align}
@@ -153,6 +154,19 @@ This is a noise-weighted inner product over the space of real signals. The proba
 \begin{equation}
 p(s|h) \propto \exp\left[-\recip{2}\innerprod{n}{n}\right].
 \end{equation}
+
+\subsection{Noise power spectral density}
+
+We have defined the power spectral density $S_n(f)$ using the Wiener-Khinchin theorem. It is more usual to define it in terms of the average of the noise spectrum. We shall again appeal to the ergodic principle to equate noise time and ensemble averages. Averaging two frequency components
+\begin{align}
+\left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = {} & lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\widetilde{n}(f)\exp(2\pi i f \tau)\widetilde{n}^\ast(f')\exp(2\pi i f' \tau)}{\tau} \nonumber \\
+ = {} & lim_{T \rightarrow \infty} \recip{2T} \widetilde{n}(f)\widetilde{n}^\ast(f')\delta(f-f').
+\end{align}
+Taking the ensemble average of both sides, and exploiting the properties of the delta-function, we can use \eqnref{PSD-WD} to identify
+\begin{equation}
+\left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = \recip{2} S_n(f)\delta(f-f').
+\end{equation}
+This can serve as a definition for the noise power spectral density.
 
 %\subsection{Properties of the inner product}
 
