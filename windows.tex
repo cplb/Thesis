@@ -1,4 +1,4 @@
-\chapter{Windowing \& Fourier analysis}
+\chapter{Windowing \& Fourier analysis}\label{ap:window}
 
 \section{Spectral Leakage}
 
@@ -8,7 +8,7 @@ When performing a Fourier transform using a computer we must necessarily only tr
 \end{equation}
 where $\tilde{h}(f) = \mathscr{F}\left\{h(t)\right\}$ is the unwindowed Fourier transform of the infinite signal. This windowing of the data is a problem innate in the method, and results in spectral leakage.
 
-\Figref{fig:Windowing-Rectangular} shows the computed Fourier transform for an example EMRB. The waveform has two distinct regions: a low-frequency curve, and a high-frequency tail. The low-frequency signal is the spectrum we are interested in; the high-frequency components are a combination of spectral leakage and numerical noise. The $\order{1/{f}}$ behaviour of the $\sinc$ gives the shape of the tail.\footnote{This has possibly been misidentified in figure 8 of \citet{Burko2007} as the characteristic strain for parabolic encounters.}
+\Figref{Windowing-Rectangular} shows the computed Fourier transform for an example EMRB. The waveform has two distinct regions: a low-frequency curve, and a high-frequency tail. The low-frequency signal is the spectrum we are interested in; the high-frequency components are a combination of spectral leakage and numerical noise. The $\order{1/{f}}$ behaviour of the $\sinc$ gives the shape of the tail.\footnote{This has possibly been misidentified in figure 8 of \citet{Burko2007} as the characteristic strain for parabolic encounters.}
 \begin{figure}%[!htp]
   \begin{center}
    \subfigure[Spectrum using no window. The calculated SNR is $\rho \simeq 12.5$.] {\label{fig:Windowing-Rectangular} \includegraphics[width=0.475\textwidth]{./images/Fig_h_I_9_rectangular}} \quad
