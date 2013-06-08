@@ -1,4 +1,4 @@
-\chapter{Gravitation \& astrophysics}
+\chapter{Gravitation and astrophysics}
 
 \section{What goes up\ldots}
 
@@ -97,7 +97,7 @@ Just like EM waves, GWs come in a range of frequencies. The frequency is set by 
     \label{fig:spectrum} 
   \end{center}
 \end{figure}
-Detectors are sensitive to specific frequency bands, the range of which is set by their scale. The spectrum may be divided into: the extremely low frequency (ELF; not shown in the figure) regime, $\sim10^{-18}$--$10^{-15}\units{Hz}$, which may indirectly detected through observations of the polarization of the cosmic microwave background (CMB; \citealt[e.g.,]{Hu1997,Kamionkowski1997}); the very low frequency (VLF) regime, $\sim10^{-9}$--$10^{-6}\units{Hz}$, which is accessible to pulsar timing arrays (PTAs); the low frequency (LF) regime, $\sim10^{-6}$--$1\units{Hz}$, which is accessible to space-borne detectors, and the high frequency (HF) regime, $\sim1$--$10^4\units{Hz}$, which is accessible to ground-based detectors. Individual detectors are discussed in \secref{GW-det} and some example sources are introduced in \secref{GW-sources}.
+Detectors are sensitive to specific frequency bands, the range of which is set by their scale. The spectrum may be divided into: the extremely low frequency (ELF; not shown in the figure) regime, $\sim10^{-18}$--$10^{-15}\units{Hz}$, which may indirectly detected through observations of the polarization of the cosmic microwave background (CMB; \citealt[e.g.,][]{Hu1997,Kamionkowski1997}); the very low frequency (VLF) regime, $\sim10^{-9}$--$10^{-6}\units{Hz}$, which is accessible to pulsar timing arrays (PTAs); the low frequency (LF) regime, $\sim10^{-6}$--$1\units{Hz}$, which could be measured by space-borne detectors, and the high frequency (HF) regime, $\sim1$--$10^4\units{Hz}$, which is the target range for ground-based detectors. Individual detectors are discussed in \secref{GW-det} and some example sources are introduced in \secref{GW-sources}.
 
 While GWs are an exciting source of information, it will be beneficial to compare with results from other techniques, to maximise the data available for inferences, and to check models. For example, very long baseline interferometry (VLBI) may be used to image the vicinity of a BH's horizon, or X-ray observations could be used to investigate BH accretion discs \cite{Psaltis2008}.
 
@@ -146,7 +146,7 @@ To probe regions of strong gravity we need massive compact objects. These are pr
 
 \subsection{White dwarfs and neutron stars}
 
-The least massive stars ($\sim 0.6$--$8M_\odot$) end their lives as white dwarfs. These are made of electron-degenerate matter that form from the cores of former stars once their outer envelopes are lost. They have hot atmospheres that show traces of the stars' chemical evolution. WDs' faint luminousity comes from thermal emission. Eventually they cool, dimming and becoming black dwarfs; because of the long cooling times, no black dwarfs have yet formed.
+The least massive stars ($\sim0.6$--$8M_\odot$) end their lives as white dwarfs. These are made of electron-degenerate matter that form from the cores of former stars once their outer envelopes are lost. They have hot atmospheres that show traces of the stars' chemical evolution. WDs' faint luminousity comes from thermal emission. Eventually they cool, dimming and becoming black dwarfs; because of the long cooling times, no black dwarfs have yet formed.
 
 WDs have maximum mass set by electron degeneracy pressure. This is known as the Chandrasekhar limit as is around $1.4 M_\odot$.\footnote{It is possible for WDs to collapse at lower masses during electron capture supernovae.} Above this the WD will collapse under its weight until neutron degeneracy pressure takes over to balance the gravitational forces. We then have a neutron star.
 
@@ -156,11 +156,13 @@ The maximum mass of a NS depends upon its equation of state. Hence there is no d
 
 \subsection{Black holes}
 
-Black holes are fascinating objects: beautifully simple but with many complexities in their interactions. The first black hole was suggest by ... Newtonian. General Relativistic, Schwarzschild...
+Black holes are fascinating objects: beautifully simple but with many complexities in their interactions. The first BH was suggest by \citet{Michell1784}. This is not the same as the object that we understand today, but a Newtonian analogue: a star so massive that its escape velocity exceed the speed of light. The first general relativistic BH was the much celebrated Schwarzschild solution \citep{Schwarzschild1916}. Discovered shortly after Einstein's publication of his general theory, this was the first exact solution other than flat spacetime. It is the metric for the space surrounding a spherically symmetric distribution of matter. It also describes a non-rotating, uncharged BH. A BH is a region of spacetime where gravity is so intense that the exists an event horizon, beyond which nothing can escape \citep[section 33.1]{Misner1973}. The nature of BHs not fully comprehended until many years after Schwarzschild published his metric; astrophysicists had to first realise the existence of WDs and NSs before they could accept the concept of completely collapsed objects \citep{Israel1987}.
 
-...
+Following on from Schwarzschild's discovery, came the solution of Reissner and Nordstr{\"o}m for an electrically charged BH \citep{Reissner1916,Nordstrom1918}. There was then a long hiatus before Kerr's discovery of the metric for a rotating BH \citep{Kerr1963}. The set of BH solutions was completed by the discovey of the Kerr--Newman metric for charged, rotating BH \citep{Newman1965}. According to the no-hair theorem, any BH should be described completely by just its mass $M_\bullet$, spin $a$ and electric charge \citep{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975}. We expect the charge of an astrophysical BH to be negligible, hence we only need two parameters to describe the BHs of nature \citep[sections 36 and 51]{Chandrasekhar1992}.
 
-According to the no-hair theorem, any BH should be described completely by just its mass $M_\bullet$ and spin $a$, since we expect the charge of an astrophysical BH to be negligible \citep{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975, Chandrasekhar1992}. The spin parameter $a$ is related to the BH's angular momentum $J$ by
+Astrophysical BHs are grouped by their mass. We shall discuss three partitions: stellar mass BHs, intermediate mass BHs (IMBHs) and massive BHs (MBHs). MBHs are of major interest in the is work and we pay them special attention.
+
+The spin parameter $a$ is related to the BH's angular momentum $J$ by
 \begin{equation}
 J = M_\bullet ac;
 \end{equation}
@@ -168,15 +170,13 @@ it is often convenient to use the dimensionless spin
 \begin{equation}
 a_\ast = \frac{cJ}{GM_\bullet^2}.
 \end{equation}
-
+The spin has a range of possible values $0 \leq |a_\ast| \leq 1$ \cite[section 66]{Chandrasekhar1992}. A spin $a_\ast = 0$ corresponds to non-rotating BH. In general a BH shall have some angular momentum, and we shall be mostly concerned with the Kerr solution.
 
 %%The radiation generated during the final merger and ring-down of two BHs will offer tests of GR in the highest energy and most dynamical sector, but it is thought that the most sensitive tests will come from LISA observations of extreme-mass-ratio inspirals (EMRIs)~\citep{Amaro-Seoane2007}. An EMRI involves the inspiral of a stellar-mass compact object, a white dwarf, neutron star or BH, into a massive BH in the centre of a galaxy. The mass of the compact object is typically $1$--$10M_{\odot}$, while the mass of the massive BH (for sources in the LISA band) will be $\sim10^5$--$10^7 M_\odot$, so the mass-ratio is of the order of $\sim10^{-7}$--$10^{-4}$. This extreme mass-ratio means that the inspiral proceeds slowly, and on short time-scales the compact object acts like a test particle moving in the background spacetime of the central BH. LISA will detect $\sim10^5$ cycles of gravitational radiation generated while the compact object is in the strong field of the spacetime, and this encodes a detailed map of the spacetime structure outside the central BH. This idea was first elucidated by Ryan~\citep{Ryan1995c, Ryan1997a}, who showed that, for an arbitrary stationary and axisymmetric spacetime in GR, the multipole moments of the spacetime enter at different orders in an expansion of the frequency of small vertical or radial oscillations of circular, equatorial orbits. As these frequencies are in principle observable in the GWs generated during an inspiral, it should be possible to measure the multipole moments from an EMRI observation and hence test whether the central object is a Kerr BH: according to the no-hair theorem, a Kerr BH is described completely by its mass $M$ and spin angular momentum $J$~\cite{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975}, and its mass multipole $M_l$ ($M_0 \equiv M$) and mass-current multipole moments $S_l$ ($S_1 \equiv J$) are determined from these according to~\cite{Hansen1974}
 %\begin{equation}
 %M_l + iS_l = M \left(i\frac{J}{M}\right)^l .
 %\end{equation}
 %The multipole expansion is not a convenient way to characterise arbitrary spacetimes, since the Kerr metric itself requires an infinite number of multipoles to fully characterise. Subsequent authors have instead adopted the approach of considering bumpy BH spacetimes~\citep{Collins2004, Glampedakis2006a, Barack2007, Gair2008a}, which deviate from the Kerr metric by a small amount and depend on some parameter, $\epsilon$, such that $\epsilon = 0$ is precisely the Kerr solution. Relatively small perturbations to the Kerr solution can be detected in EMRI observations due to small differences in the precession frequencies that accumulate over the $100\,000$ waveform cycles that will be detected. There are also certain qualitative features that could be smoking-guns for a departure from the Kerr metric, such as ergodicity in the orbits~\citep{Gair2008a}, persistent resonances~\citep{Lukes-Gerakopoulos2010} or a shift in the frequency of plunge~\citep{Kesden2005, Gair2008a}.
-
-Astrophysical BHs are grouped by their mass. We shall discuss three partitions: stellar mass BHs, intermediate mass BHs (IMBHs) and massive BHs (MBHs). 
 
 \subsubsection{Stellar mass black holes}
 
@@ -188,7 +188,7 @@ Intermediate mass black holes bridge the gap between the other two classes. They
 
 \subsubsection{Massive black holes}
 
-Massive black holess have masses $\sim10^5$--$10^{10} M_\odot$ and are found in the centre of galaxies \citep{Lynden-Bell1969,Ferrarese2005}. These shall be of major interest in the is work. Many, if not all, galactic nuclei have harboured an MBH during their evolution \citep{Lynden-Bell1971, Soltan1982, Rees1984}. Observations have shown that there exist well-defined correlations between the MBHs' masses and the properties of their host galaxies, such as: bulge mass \citep{Kormendy1995,Haring2004,Graham2012a}; luminosity \citep{Magorrian1998,Marconi2003,Graham2013}; velocity dispersion \citep{Ferrarese2000,Gebhardt2000,Tremaine2002,Graham2011}; light concentration \citep{Graham2001}, and, for spiral galaxies, pitch angle \citep{Seigar2008,Berrier2013}. These suggest coeval evolution of the MBH and galaxy \citep{Peng2007, Jahnke2011}, possibly with feedback mechanisms coupling the two \citep{Haiman2004, Volonteri2009}. The MBH and the surrounding spheroidal component share a common history, such that the growth of one can inform us about the growth of the other.
+Massive black holes have masses $\sim10^5$--$10^{10} M_\odot$ and are found in the centre of galaxies \citep{Lynden-Bell1969,Ferrarese2005}. Many, if not all, galactic nuclei have harboured an MBH during their evolution \citep{Lynden-Bell1971, Soltan1982, Rees1984}. Observations have shown that there exist well-defined correlations between the MBHs' masses and the properties of their host galaxies, such as: bulge mass \citep{Kormendy1995,Haring2004,Graham2012a}; luminosity \citep{Magorrian1998,Marconi2003,Graham2013}; velocity dispersion \citep{Ferrarese2000,Gebhardt2000,Tremaine2002,Graham2011}; light concentration \citep{Graham2001}, and, for spiral galaxies, pitch angle \citep{Seigar2008,Berrier2013}. These suggest coeval evolution of the MBH and galaxy \citep{Peng2007, Jahnke2011}, possibly with feedback mechanisms coupling the two \citep{Haiman2004, Volonteri2009}. The MBH and the surrounding spheroidal component share a common history, such that the growth of one can inform us about the growth of the other.
 %m Kormandy1995; Magorrian1998; Haring2004; (breaking) Graham2012a; (breaking) Scott2013
 %L Magorrian1998; Marconi2003; Graham2007; Gultekin2009; Graham2013; 
 %sigma Ferrarese2000; Gebhardt2000; Tremaine2002; Gultekin2009; Graham2011
@@ -197,7 +197,7 @@ Massive black holess have masses $\sim10^5$--$10^{10} M_\odot$ and are found in 
 
 The best opportunity to study MBHs comes from the compact object in our own galactic centre (GC), which is coincident with Sagittarius A* (Sgr A*). Through careful monitoring of stars orbiting the GC, this has been identified as an MBH of mass $M_\bullet \simeq 4 \times 10^6 M_\odot$ at a distance of only $R_0 \simeq 8\units{kpc}$ \citep{Gillessen2009, Meyer2012}.
 
-As we have a good estimate of the mass, to gain a complete description of the MBH we have only to measure its spin; this shall give us insight into its history and role in the evolution of the Galaxy.
+The mass of other MBHs has been determined using a selection of techniques. Aside from being inferred from the correlations enumerated above, it may be measured directly using ... After measuring the masses of MBHs we are left with the question of their spins.
 
 The spin of an MBH is determined by several competing processes. An MBH accumulates mass and angular momentum through accretion \citep{Volonteri2010}. Accretion from a gaseous disc shall spin up the MBH, potentially leading to high spin values \citep{Volonteri2005}, while a series of randomly orientated accretion events leads to a low spin value: we expect an average value $|a_\ast| \sim 0.1$--$0.3$ \citep{King2006, King2008}. The MBH also grows through mergers \citep{Yu2002, Malbon2007}. Minor mergers with smaller BHs can decrease the spin \citep{Hughes2003, Gammie2004}, while a series of major mergers, between similar mass MBHs, would lead to a likely spin of $|a_\ast| \sim 0.7$ \citep{Berti2008, Berti2007, Gonzalez2007}. Measuring the spin of MBHs shall help us understand the relative importance of these processes, and perhaps shall give a glimpse into their host galaxies' pasts.
 
@@ -222,7 +222,7 @@ A further possibility is to use very long baseline interferometry (VLBI) to to r
     \label{fig:Shadow}
   \end{center}
 \end{figure}
-The shadow remains near circular for spin values $a \lesssim 0.9 M_\bullet$ regardless of inclination (axisymmetry requires that the shadow is circular when looking along the rotation axis) even though the Kerr spacetime is highly non-spherically symmetric \citep{Johannsen2010b}. Determining the spin to high precision would be difficult. Weak constraints already exist from VLBI observations \citep{Broderick2009a,Broderick2011}; these determine that the spin is likely not high: $|a_\ast| = 0$--$0.64$ to $1$-$\sigma$, and $|a_\ast| = 0$--$0.86$ to $2$-$\sigma$.
+The shadow remains near circular for spin values $a \lesssim 0.9 M_\bullet$ regardless of inclination (axisymmetry requires that the shadow is circular when looking along the rotation axis) even though the Kerr spacetime is highly non-spherically symmetric \citep{Johannsen2010b}. Determining the spin to high precision would be difficult. Weak constraints already exist from VLBI observations \citep{Broderick2009a,Broderick2011}; these determine that the spin is likely not high: $|a_\ast| = 0$--$0.64$ at $68\%$ confidence and $|a_\ast| = 0$--$0.86$ at $95\%$ confidence.
 
 The spins of MBHs in active galactic nuclei have been inferred using X-ray observations of $\mathrm{Fe}$ $\mathrm{K}$ emission lines \citep{Miller2007, McClintock2011}. So far this has been done for a handful of other galaxies' MBHs, as shown in \tabref{X-ray}.
 \begin{table}[htp]

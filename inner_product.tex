@@ -159,8 +159,8 @@ p(s|h) \propto \exp\left[-\recip{2}\innerprod{n}{n}\right].
 
 We have defined the power spectral density $S_n(f)$ using the Wiener-Khinchin theorem. It is more usual to define it in terms of the average of the noise spectrum. We shall again appeal to the ergodic principle to equate noise time and ensemble averages. Averaging two frequency components
 \begin{align}
-\left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = {} & lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\widetilde{n}(f)\exp(2\pi i f \tau)\widetilde{n}^\ast(f')\exp(2\pi i f' \tau)}{\tau} \nonumber \\
- = {} & lim_{T \rightarrow \infty} \recip{2T} \widetilde{n}(f)\widetilde{n}^\ast(f')\delta(f-f').
+\left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\widetilde{n}(f)\exp(2\pi i f \tau)\widetilde{n}^\ast(f')\exp(2\pi i f' \tau)}{\tau} \nonumber \\
+ = {} & \lim_{T \rightarrow \infty} \recip{2T} \widetilde{n}(f)\widetilde{n}^\ast(f')\delta(f-f').
 \end{align}
 Taking the ensemble average of both sides, and exploiting the properties of the delta-function, we can use \eqnref{PSD-WD} to identify
 \begin{equation}
