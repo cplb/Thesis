@@ -194,14 +194,14 @@ we assume the noise $n_A(t)$ is stationary and Gaussian, and that noise in the t
 
 The properties of the noise allow us to define a natural inner product and associated distance on the space of signals \citep{Cutler1994}
 \begin{equation}
-\innerprod{\boldsymbol{g}}{\boldsymbol{k}} = 2\intd{0}{\infty}{\frac{\tilde{g}_A^\ast(f)\tilde{k}_A(f) + \tilde{g}_A(f)\tilde{k}_A^\ast(f)}{S\sub{n}(f)}}{f},
+\innerprod{\boldsymbol{g}}{\boldsymbol{k}} = 2\intd{0}{\infty}{\frac{\tilde{g}_A^\ast(f)\tilde{k}_A(f) + \tilde{g}_A(f)\tilde{k}_A^\ast(f)}{S_{n}(f)}}{f},
 \label{eq:inner}
 \end{equation}
 introducing Fourier transforms
 \begin{equation}
 \tilde{g}(f) = \mathscr{F}\{g(t)\} = \intd{-\infty}{\infty}{g(t)\exp(2\pi i ft)}{t},
 \end{equation}
-and $S\sub{n}(f)$ is the noise spectral density. The inner product is derived in \apref{inner-prod}. The signal-to-noise ratio is approximately
+and $S_{n}(f)$ is the noise spectral density. The inner product is derived in \apref{inner-prod}. The signal-to-noise ratio is approximately
 \begin{equation}
 \rho[\boldsymbol{h}] = \innerprod{\boldsymbol{h}}{\boldsymbol{h}}^{1/2}.
 \label{eq:SNR}
