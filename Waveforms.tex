@@ -6,11 +6,11 @@ An exciting means of inferring information about MBHs is through GWs emitted whe
 
 Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high signal-to-noise ratio (SNR) to be accumulated. Here, we investigate high eccentricity orbits. These are the initial bursting orbits from which an EMRI may evolve, and are the consequence of scattering from two-body encounters. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. The event rate is dominated by bursts from the Galactic Centre (GC). Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC.
 
-To model bursts we make the simplifying assumption that all these orbits are marginally bound, or parabolic, since highly eccentric orbits appear almost indistinguishable from an appropriate parabolic orbit. Here ``parabolic'' and ``eccentricity'' refer to the energy of the geodesic and not to the geometric shape of the orbit.\footnote{Marginally bound Keplerian orbits (in flat spacetime) are parabolic in both senses.} Following such a trajectory an object may make just one pass of the MBH or, if the periapsis distance is small enough, it may complete a number of rotations. Such an orbit is referred to as zoom-whirl \citep{Glampedakis2002a}.
+To model bursts we make the simplifying assumption that all these orbits are marginally bound, or parabolic, since highly eccentric orbits appear almost indistinguishable from an appropriate parabolic orbit. Here ``parabolic'' and ``eccentricity'' refer to the energy of the geodesic and not to the geometric shape of the orbit.\footnote{Marginally bound Keplerian orbits (in flat spacetime) are parabolic in both senses.} Following such a trajectory an object may make just one pass of the MBH or, if the periapsis distance is small enough, it may complete a number of rotations. Such an orbit is referred to as zoom--whirl \citep{Glampedakis2002a}.
 
 We begin our investigation of the properties of EMRBs as a means of studying MBHs by constructing approximate waveforms. To do so we integrate the geodesic equations for a parabolic orbit in Kerr spacetime (\secref{Geodesic}); we assume that the orbiting body is a test particle, such that it does not influence the underlying spacetime, and that the orbital parameters evolve negligibly during the orbit such that they may be held constant. We use this trajectory to construct an approximate numerical kludge (NK) waveform \citep{Babak2007} as explained in \secref{Kludge}. In \secref{Signal} we establish what the LISA detectors would measure and how the signal would be analysed. Since there does not exist a definite mission design, we use the classic LISA design for the majority of this work. It is hoped that any future missions shall have comparable sensitivity, and studies using the LISA design are sensible benchmarks for comparison. In a few places we look at the detectability of bursts using eLISA. We confirm the accuracy of the kludge waveforms in \secref{Energy} by comparing the energy flux to fluxes calculated using other approaches. The typical error introduced by the NK approximation may be a few percent, but this worsens as the periapsis approaches the last non-plunging orbit.
 
-Having established the accuracy of our NK waveforms, we study what information can be extracted from them. Exactly what can be inferred depends upon the orbit. We begin in \chapref{param} by looking at EMRBs from the GC as the Galaxy's MBH is the most promising to study. Finding promising results, we extend our study to extragalactic sources in...
+Having established the accuracy of our NK waveforms, we study what information can be extracted from them. Exactly what can be inferred depends upon the orbit. We begin in \chapref{param} by looking at EMRBs from the GC as the Galaxy's MBH is the most promising to study. Finding promising results, we extend our study to extragalactic sources in \chapref{extragal}. ...
 
 %The possibility of detecting bursts from extra-galactic sources is studied in \secref{Extragal}, where we find M32 to be promising. We construct a simple model to estimate event rates in \secref{Events}. We go on to verify that an event rate of $\sim 0.8\units{yr^{-1}}$ is reasonable. Finally, we conclude in \secref{End} with a summary of our results. EMRBs may be informative, but the event rate shall limit their usefulness.
 
@@ -18,7 +18,7 @@ Having established the accuracy of our NK waveforms, we study what information c
 
 \subsection{The metric and geodesic equations}
 
-Astrophysical BHs are described by the Kerr metric \citep{Kerr1963}. In standard Boyer-Lindquist coordinates the line element is (\citealt{Boyer1967}; \citealt[section 13.7]{Hobson2006})
+Astrophysical BHs are described by the Kerr metric \citep{Kerr1963}. In standard Boyer--Lindquist coordinates the line element is (\citealt{Boyer1967}; \citealt[section 13.7]{Hobson2006})
 \begin{equation}
 \dd s^2 = \frac{\varrho^2 \Delta}{\Sigma^2}c^2\dd t^2 - \frac{\Sigma \sin^2 \theta}{\varrho^2}\left(\dd \phi - \omega \dd t\right)^2 - \frac{\varrho^2}{\Delta}\dd r^2 - \varrho^2\dd \theta^2,
 \end{equation}
@@ -113,9 +113,9 @@ We can now calculate the geodesic trajectory. The orbiting body is assumed to fo
 
 Numerical kludge approximations aim to encapsulate the main characteristics of a waveform by using the exact particle trajectory (ignoring inaccuracies from radiative effects and from the particle's self-force), whilst saving on computational time by using approximate waveform generation techniques.
 
-We build an equivalent flat-space trajectory by identifying the Boyer-Lindquist coordinates with a set of flat-space coordinates. We consider two choices:
+We build an equivalent flat-space trajectory by identifying the Boyer--Lindquist coordinates with a set of flat-space coordinates. We consider two choices:
 \begin{enumerate}
-\item Identify the Boyer-Lindquist coordinates with flat-space spherical polars $\{r\sub{BL},$ $\theta\sub{BL},$ $\phi\sub{BL}\} \rightarrow \{r\sub{sph}, \theta\sub{sph}, \phi\sub{sph}\}$, then define flat-space Cartesian coordinates \citep{Gair2005, Babak2007}
+\item Identify the Boyer--Lindquist coordinates with flat-space spherical polars $\{r\sub{BL},$ $\theta\sub{BL},$ $\phi\sub{BL}\} \rightarrow \{r\sub{sph}, \theta\sub{sph}, \phi\sub{sph}\}$, then define flat-space Cartesian coordinates \citep{Gair2005, Babak2007}
 \begin{equation}
 \boldsymbol{x} = \begin{pmatrix}
 r\sub{sph} \sin\theta\sub{sph}\cos\phi\sub{sph} \\
@@ -123,7 +123,7 @@ r\sub{sph} \sin\theta\sub{sph}\sin\phi\sub{sph} \\
 r\sub{sph} \cos\theta\sub{sph}
 \end{pmatrix}.
 \end{equation}
-\item Identify the Boyer-Lindquist coordinates with flat-space oblate-spheroidal coordinates $\{r\sub{BL}, \theta\sub{BL}, \phi\sub{BL}\} \rightarrow \{r\sub{ob}, \theta\sub{ob}, \phi\sub{ob}\}$ so that the flat-space Cartesian coordinates are
+\item Identify the Boyer--Lindquist coordinates with flat-space oblate-spheroidal coordinates $\{r\sub{BL}, \theta\sub{BL}, \phi\sub{BL}\} \rightarrow \{r\sub{ob}, \theta\sub{ob}, \phi\sub{ob}\}$ so that the flat-space Cartesian coordinates are
 \begin{equation}
 \boldsymbol{x} = \begin{pmatrix}
 \sqrt{{r\sub{ob}}^2 + a^2} \sin\theta\sub{ob}\cos\phi\sub{ob} \\
@@ -131,7 +131,7 @@ r\sub{sph} \cos\theta\sub{sph}
 r\sub{ob} \cos\theta\sub{ob}
 \end{pmatrix}.
 \end{equation}
-These are appealing because in the limit that $G \rightarrow 0$, where the gravitating mass goes to zero, the Kerr metric in Boyer-Lindquist coordinates reduces to the Minkowski metric in oblate-spheroidal coordinates.
+These are appealing because in the limit that $G \rightarrow 0$, where the gravitating mass goes to zero, the Kerr metric in Boyer--Lindquist coordinates reduces to the Minkowski metric in oblate-spheroidal coordinates.
 \end{enumerate}
 The two coincide for $a \rightarrow 0$ or $r \rightarrow \infty$.
 
@@ -139,7 +139,7 @@ There is no well motivated argument that either coordinate system must yield an 
 
 \subsection{Quadrupole-octupole formula}
 
-Now we have a flat-space particle trajectory $x\sub{P}^\mu(\tau)$, we may apply a flat-space wave generation formula. We use the quadrupole-octupole formula to calculate the gravitational strain \citep{Bekenstein1973, Press1977, Yunes2008}
+Now we have a flat-space particle trajectory $x\sub{P}^\mu(\tau)$, we may apply a flat-space wave generation formula. We use the quadrupole--octupole formula to calculate the gravitational strain \citep{Bekenstein1973, Press1977, Yunes2008}
 \begin{equation}
 h^{jk}(t, \boldsymbol{x}) = -\frac{2G}{c^6r}\left(\ddot{I}^{jk} - 2n_i\ddot{S}^{ijk} + n_i\dddot{M}^{ijk}\right)_{t'\, =\, t - r/c},
 \label{eq:octupole}
@@ -180,7 +180,7 @@ The mission geometry for LISA and eLISA is shown in \figref{SS_LISA}.
 \end{figure}
 We define the detector coordinates such that the detector-arms lie in the $x\sub{d}$-$y\sub{d}$ plane as in \citet{Cutler1998}. We have computed the waveforms in the MBH's coordinates, but it is simplest to describe the measured signal using the detector's coordinates.
 
-The strains measured in the three arms can be combined such that LISA behaves as a pair of $90^{\circ}$ interferometers at $45^{\circ}$ to each other, with signals scaled by ${\sqrt{3}}/{2}$ \citep{Cutler1998}. We denote the two detectors as I and II and use vector notation $\boldsymbol{h}(t) = \left(h\sub{I}(t), h\sub{II}(t)\right) = \left\{h_A(t)\right\}$ to represent signals from both detectors. A eLISA only has two arms it functions as a single detector, in this case $\left\{h_A(t)\right\} = h\sub{I}(t)$.
+The strains measured in the three arms can be combined such that LISA behaves as a pair of $90^{\circ}$ interferometers at $45^{\circ}$ to each other, with signals scaled by ${\sqrt{3}}/{2}$ \citep{Cutler1998}. We denote the two detectors as I and II and use vector notation $\boldsymbol{h}(t) = \left(h\sub{I}(t), h\sub{II}(t)\right) = \left\{h_A(t)\right\}$ to represent signals from both detectors. As eLISA only has two arms it functions as a single detector, in this case $\left\{h_A(t)\right\} = h\sub{I}(t)$.
 
 \subsection{Frequency domain formalism}
 
@@ -222,7 +222,7 @@ LISA's noise has two sources: instrumental noise and confusion noise, primarily 
 \begin{figure}[!htp]
 \begin{center}
 \includegraphics[width=0.6\textwidth]{./images/Fig_Noise}
-\caption{The detector noise curves. The solid line indicates the analytic approximation of \citet{Barack2004} used in this work. For comparison, the dashed line is from the online LISA sensitivity curve generator (\url{http://www.srl.caltech.edu/~shane/sensitivity/}; \citealt*{Larson2000, Larson2002}). For bursts from the Galactic Centre we are most interested in the low-frequency region where the two curves are the same. The dot-dashed line shows the eLISA noise curve.\label{fig:Noise}}
+\caption{The detector noise curves. The solid line indicates the analytic approximation of \citet{Barack2004} used in this work. For comparison, the dashed line is from the online LISA sensitivity curve generator (\url{http://www.srl.caltech.edu/~shane/sensitivity/}; \citealt*{Larson2000, Larson2002}). For bursts from the Galactic Centre we are most interested in the low-frequency region where the two curves are the same. The dot--dashed line shows the eLISA noise curve.\label{fig:Noise}}
 \end{center}
 \end{figure}
 
@@ -236,7 +236,7 @@ To check the NK waveforms, we compare the energy spectra calculated from these w
 
 In addition to using the energy spectrum, we also use the total energy flux. This contains less information than the spectrum; however, \citet{Martel2004} has calculated results for parabolic orbits in Schwarzschild spacetime using time-domain black hole perturbation theory. These should be more accurate than results calculated using the Peters and Mathews formalism.
 
-We do not intend to use the kludge waveforms to calculate an accurate energy flux: this would be inconsistent as we assume the orbits do not evolve with time. We only calculate the energy flux as a sanity check, to confirm that the kludge approximation is consistent with other approaches.
+As we are considering Schwarzschild spacetime, the two NK coordinate choices coincide and there is no need to differentiate between them. In general, we do not intend to use the kludge waveforms to calculate an accurate energy flux: this would be inconsistent as we assume the orbits do not evolve with time. We only calculate the energy flux as a sanity check, to confirm that the kludge approximation is consistent with other approaches.
 
 \subsection{Kludge spectrum}
 
@@ -434,7 +434,7 @@ Comparing the total energy fluxes, ratios of the various energies are plotted in
   \begin{center}
    \subfigure[Versus periapsis]{\includegraphics[width=0.475\textwidth]{./images/Fig_Energy_ratio_peri}} \quad
    \subfigure[Versus amount of rotation]{\includegraphics[width=0.475\textwidth]{./images/Fig_Energy_ratio_orbit}}
-    \caption{Ratios of energies as a function of periapsis $r\sub{p}$ and $2\pi$ divided by the total angle of rotation in one orbit $\Delta\phi$ ($2\pi/\Delta\phi = 1$ for a Keplerian orbit). The solid line shows the ratio of the numerical kludge and Martel energies $E\sub{NK}/E\sub{M}$; the dashed line shows the ratio of the NK energy calculated using only the mass quadrupole term and the Martel energy $E\sub{NK(Q)}/E\sub{M}$; the dot-dashed line shows the ratio of the quadrupole and quadrupole-octupole NK energies $E\sub{NK(Q)}/E\sub{NK}$, and the dotted line shows the ratio of the Peters and Mathews and quadrupole NK energies $E\sub{PM}/E\sub{NK(Q)}$. The spots show the mapping between the two abscissa scales. Compare with figure 4 of \citet{Gair2005}.\label{fig:Energy_ratio}}
+    \caption{Ratios of energies as a function of periapsis $r\sub{p}$ and $2\pi$ divided by the total angle of rotation in one orbit $\Delta\phi$ ($2\pi/\Delta\phi = 1$ for a Keplerian orbit). The solid line shows the ratio of the numerical kludge and Martel energies $E\sub{NK}/E\sub{M}$; the dashed line shows the ratio of the NK energy calculated using only the mass quadrupole term and the Martel energy $E\sub{NK(Q)}/E\sub{M}$; the dot--dashed line shows the ratio of the quadrupole and quadrupole--octupole NK energies $E\sub{NK(Q)}/E\sub{NK}$, and the dotted line shows the ratio of the Peters and Mathews and quadrupole NK energies $E\sub{PM}/E\sub{NK(Q)}$. The spots show the mapping between the two abscissa scales. Compare with figure 4 of \citet{Gair2005}.\label{fig:Energy_ratio}}
   \end{center}
 \end{figure}
 We introduce an additional energy here, the quadrupole NK energy $E\sub{NK(Q)}$. This allows easier comparison with the Peters and Mathews energy which includes only quadrupole radiation. It can be calculated in three ways:
@@ -484,17 +484,15 @@ where $\Pi(n|m) = \int_{0}^{\pi/2}{\dd\vartheta/(1-n\sin^2\vartheta)\sqrt{1-m\si
 \end{equation}
 where $K(m) = \int_{0}^{\pi/2}{\dd\vartheta/\sqrt{1-m\sin^2\vartheta}}$ is the complete elliptic integral of the first kind.
 
-The ratios all tend towards one in the weak field, as required, but differences become more pronounced in the strong field. The NK energy is larger than the Peters and Mathews result $E\sub{PM}$. This behaviour has been seen before for high eccentricity orbits about a non-spinning BH \citep{Gair2005}. It may be explained by considering the total path length for the different orbits: the Peters and Mathews spectrum assumes a Keplerian orbit, the orbit in Kerr geometry rotates more than this. The greater path length leads to increased emission of GWs and a larger energy flux. Our bead must travel further along its wire. A good proxy for the path length is the angle of rotation $\Delta\phi$; this is $2\pi$ for a Keplerian orbit, in Kerr the angle should be $2\pi$ in the limit of an infinite periapsis, whereas for a periapsis small enough that the orbit shows zoom-whirl behaviour, the total angle may be many times $2\pi$. There is a reasonable correlation between the amount of rotation $2\pi/\Delta\phi$ and the ratio of energies.
+The ratios all tend towards one in the weak field, as required, but differences become more pronounced in the strong field. The NK energy is larger than the Peters and Mathews result $E\sub{PM}$. This behaviour has been seen before for high eccentricity orbits about a non-spinning BH \citep{Gair2005}. It may be explained by considering the total path length for the different orbits: the Peters and Mathews spectrum assumes a Keplerian orbit, the orbit in Kerr geometry rotates more than this. The greater path length leads to increased emission of GWs and a larger energy flux. Our bead must travel further along its wire. A good proxy for the path length is the angle of rotation $\Delta\phi$; this is $2\pi$ for a Keplerian orbit, in Kerr the angle should be $2\pi$ in the limit of an infinite periapsis, whereas for a periapsis small enough that the orbit shows zoom--whirl behaviour, the total angle may be many times $2\pi$. There is a reasonable correlation between the amount of rotation $2\pi/\Delta\phi$ and the ratio of energies.
 
 Error in the NK energy compared with the time-domain black hole perturbation theory results of Martel comes from two sources: the neglecting of higher order multipole contributions and the ignoring of background curvature. The contribution of the former can be estimated by looking at the difference in the NK energy by including the current quadrupole and mass octupole terms. From \figref{Energy_ratio} we see that these terms give a negligible contribution in the weak field, but the difference is $\sim20\%$ in the strong field. This explains why the Martel energy $E\sub{M}$ is greater in the strong field, as it includes contributions from all multipoles. Neglecting the background curvature increases the NK energy relative to $E\sub{M}$. This partially cancels out the error introduced by not including higher order terms: this accidentally leads to $E\sub{NK(Q)}$ being more accurate than $E\sub{NK}$ for $r\sub{p} \gtrsim 10 r\sub{g}$ \citep{Tanaka1993}.
 
-From the level of agreement we may be confident that the NK waveforms are a reasonable approximation. The difference in energy flux is only greater than $10\%$ for very strong fields $r\sub{p} \simeq 4 r\sub{g}$; since this is dependent on the square of the waveform, typical accuracy in the waveform may be $\sim 5\%$ \citep{Gair2005,Tanaka1993}. This is more significant than the variation in waveforms we generally found using the two alternative coordinate systems for the NK (in this case the two coincide because $a_\ast = 0$).
+From the level of agreement we may be confident that the NK waveforms are a reasonable approximation. The difference in energy flux is only greater than $10\%$ for very strong fields $r\sub{p} \simeq 4 r\sub{g}$; since this is dependent on the square of the waveform, typical accuracy in the waveform may be $\sim 5\%$ \citep{Gair2005,Tanaka1993}. %This is more significant than the variation in waveforms we generally found using the two alternative coordinate systems for the NK (in this case the two coincide because $a_\ast = 0$).
 
 \section{Summary}
 
-We have outlined an approximate method of generating gravitational waveforms for extreme-mass-ratio bursts. This assumes that the orbits are parabolic and employs a numerical kludge approximation. The two coordinate schemes for a NK presented here yield almost indistinguishable results. We conclude that either is a valid choice for this purpose. There may be differences when the spin is large and the periapse is small: $\sim 10\%$ for $r\sub{p} \simeq 4 r\sub{g}$, $\sim 20\%$ for $r\sub{p} \simeq 2 r\sub{g}$.
-
-The waveforms created appear to be consistent with results obtained using Peters and Mathews waveforms for large periapses, indicating that they have the correct weak-field form. The NK approach should be superior to that of Peters and Mathews in the strong-field regime as it uses the exact geodesics of the Kerr spacetime. Comparisons with energy fluxes from black hole perturbation theory indicate that typical waveform accuracy may be of order $5\%$, but this is worse for orbits with small periapses and may be $\sim 20\%$. These errors are greater than the differences resulting from the use of the alternative coordinate systems.
+We have outlined an approximate method of generating gravitational waveforms for extreme-mass-ratio bursts. This assumes that the orbits are parabolic and employs a numerical kludge approximation. The waveforms created appear to be consistent with results obtained using Peters and Mathews waveforms for large periapses, indicating that they have the correct weak-field form. The NK approach should be superior to that of Peters and Mathews in the strong-field regime as it uses the exact geodesics of the Kerr spacetime. Comparisons with energy fluxes from BH perturbation theory indicate that typical waveform accuracy may be of order $5\%$, but this is worse for orbits with small periapses and may be $\sim 20\%$.
 
 In the following chapters we use these waveforms to access what information can be extracted from EMRBs about their source systems, in particular the mass and spin of the MBH. We shall focus on the Galaxy's MBH as this is the most promising candidate for sourcing EMRBs.
 
