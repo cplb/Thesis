@@ -53,11 +53,11 @@ The integrals are of a general form
 \end{equation}
 By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}$ we may derive a recurrence relationship using integration by parts. After some rearrangement
 \begin{equation}
-\mathscr{I}_n = \frac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \frac{2n - 3}{2n - 1} \frac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \frac{2(n - 1)}{2n-1}\frac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
+\mathscr{I}_n = \frac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \frac{2n - 3}{2n - 1} \frac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \frac{2(n - 2)}{2n-1}\frac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
 \end{equation}
 Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series.\footnote{The integral $\mathscr{I}_{-1}$ could be calculated using \citet[3.148.6]{Gradshteyn2000}.} The zeroth integral can be evaluated using \citet[3.147.6]{Gradshteyn2000} as
 \begin{equation}
-\mathscr{I}_0 = \frac{2M}{r\sub{p}}\sqrt{\frac{r\sub{p}}{r\sub{a} - r_3}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
+\mathscr{I}_0 = \frac{2M}{\sqrt{r\sub{p}(r\sub{a} - r_3)}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
 \end{equation}
 where $K(k)$ is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
 \begin{equation}
@@ -70,6 +70,10 @@ where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this in
 to rewrite in terms of the complete elliptic integral of the second kind. Hence
 \begin{equation}
 \mathscr{I}_1 = \frac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \frac{r\sub{a} - r_3}{r\sub{a}}E\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
+\end{equation}
+The elliptic integrals in both $\mathscr{I}_0$ and $\mathscr{I}_1$ share the same argument, which can be rewritten as
+\begin{equation}
+\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}} = \sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}.
 \end{equation}
 
 Substituting in for the integrals, we find that the energy lost in one orbit is
