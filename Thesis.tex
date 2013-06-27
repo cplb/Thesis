@@ -1,54 +1,89 @@
-\documentclass[a4paper, 10pt, titlepage, twoside]{report}
+\documentclass[a4paper, 10pt, titlepage, twoside]{book}
+% Set up page layout
 \usepackage[a4paper]{geometry}
 \usepackage{fancyhdr}
-\usepackage{charter}
+% Set up hyphenation, etc.
 \usepackage[british]{babel}
+% Set up images
 \usepackage{pstricks,pst-node,pst-text,pst-3d,pst-eucl}
 \usepackage{psfrag}
 \usepackage{import}
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage[figuresright]{rotating}
+% Set up fonts
+\usepackage{charter}
 \usepackage{amssymb,amstext,amsfonts} %% ... with default font
 \usepackage{amsmath}
 \usepackage{mathrsfs}
 %\usepackage{txfonts}
+% Colouring
+\usepackage{xcolor}
+% Set up lists and tables
 \usepackage{listings}
 \usepackage{enumitem}
 \usepackage{booktabs, longtable, dcolumn}
-
 \usepackage{array}
 \usepackage{ragged2e}
 \newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
-
 \usepackage[labelfont=bf,labelsep=space]{caption}
 \usepackage[caption2]{ccaption}
 %\usepackage{tikz}
 %\usetikzlibrary{shapes,arrows}
+% More fonts
+\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \renewcommand{\sfdefault}{lmss}
 \renewcommand{\ttdefault}{lmtt}
 \usepackage{microtype}
-\usepackage[T1]{fontenc}
-\usepackage{braket}
-\usepackage{slashed}
-\usepackage{afterpage}
-\usepackage{appendix}
 \usepackage[latin9]{inputenc}
 %\usepackage{fixmath}
 \usepackage{ upgreek }
+% Special symbols
+\usepackage{braket}
+\usepackage{slashed}
+% Set up page indexing, bib fomatting, etc.
+\usepackage{afterpage}
+\usepackage{appendix}
 %\usepackage{paralist}
 \usepackage{hyperref}
+\usepackage{bookmark}
 \usepackage[authoryear]{natbib}
 \renewcommand{\bibfont}{\footnotesize}
 \addto{\captionsbritish}{\renewcommand{\bibname}{{R\lowercase{eferences}}}}
 %\renewcommand{\refname}{{R\lowercase{eferences}}}
 \setlength{\bibhang}{0pt} 
 \setlength{\bibsep}{0.5pt}
+\addto{\captionsbritish}{\renewcommand{\contentsname}{{C\lowercase{ontents}}}}
 
-  \hyphenpenalty=2000
-  \tolerance=1000
+% Chapter style
+%\definecolor{skyblue}{cmyk}{0.8,0,0,0}
+%\usepackage[Lenny]{fncychap}
+%\ChRuleWidth{0.1ex}
+%\ChNameVar{\fontsize{14}{16}\usefont{OT1}{lmr}{b}{n}\selectfont}
+%\ChNumVar{\fontsize{60}{62}\usefont{OT1}{lmr}{bc}{n}\selectfont}
+%\ChTitleVar{\LARGE\usefont{OT1}{lmr}{b}{n}\selectfont}
+
+  %\hyphenpenalty=2000
+  %\tolerance=1000
   
+% Fix part blank pages  
+\makeatletter
+\renewcommand\@endpart{\vfil
+              \if@twoside
+                \null
+                \newpage
+              \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+\makeatother 
+
+% Part style
+%\usepackage{secsty}
+%\partnumberfont{\Huge} 
+
+% Set page layout  
 \headheight 13.6pt
 \headsep 0.6\baselineskip
 \footskip 2\baselineskip
@@ -62,10 +97,12 @@
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{4} 
 
+% Set numbering depth
 \setcounter{secnumdepth}{5}
 
 \def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
 
+% Custom commands
 \newcommand{\eqnref}[1]{equation~(\ref{eq:#1})}
 \newcommand{\Eqnref}[1]{Equation~(\ref{eq:#1})}
 \newcommand{\secref}[1]{section~\ref{sec:#1}}
@@ -147,10 +184,16 @@
 \renewcommand\bottomfraction{.8}
 \renewcommand\textfraction{.2}
 
+\frontmatter
+
 \title{{\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}}
 \author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
 \date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Ph.D.\ Thesis}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
 \maketitle
+
+\tableofcontents
+
+\mainmatter
 
 \part{Introduction}
 
@@ -170,7 +213,10 @@
 
 \part{Conclusion}
 
+%\phantomsection
+%\bookmarksetup{startatroot}
 \appendix
+\part{Appendicies}
 
 \input{./inner_product.tex}
 
@@ -180,7 +226,12 @@
 
 \input{./Loss_cone.tex}
 
+\backmatter
+
+\phantomsection
+\bookmarksetup{startatroot}
 \bibliographystyle{../physicsAuthorYearURL}
+\addcontentsline{toc}{chapter}{References}
 \bibliography{../library}
 
 %\clearpage
