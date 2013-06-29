@@ -19,6 +19,10 @@
 %\usepackage{txfonts}
 % Colouring
 \usepackage{xcolor}
+\definecolor{vermilion}{rgb}{0.80,0.40,}
+\definecolor{blueishgreen}{rgb}{0,0.60,0.50}
+\definecolor{skyblue}{rgb}{0.35,0.70,0.90}
+
 % Set up lists and tables
 \usepackage{listings}
 \usepackage{enumitem}
@@ -46,7 +50,8 @@
 \usepackage{afterpage}
 \usepackage{appendix}
 %\usepackage{paralist}
-\usepackage{hyperref}
+%\usepackage[linktocpage,bookmarksnumbered,breaklinks,pdfhighlight=/P,citebordercolor=blueishgreen,urlbordercolor=skyblue,linkbordercolor=vermilion]{hyperref}
+\usepackage[linktocpage,bookmarksnumbered]{hyperref}
 \usepackage{bookmark}
 \usepackage[authoryear]{natbib}
 \renewcommand{\bibfont}{\footnotesize}
@@ -57,7 +62,6 @@
 \addto{\captionsbritish}{\renewcommand{\contentsname}{{C\lowercase{ontents}}}}
 
 % Chapter style
-%\definecolor{skyblue}{cmyk}{0.8,0,0,0}
 %\usepackage[Lenny]{fncychap}
 %\ChRuleWidth{0.1ex}
 %\ChNameVar{\fontsize{14}{16}\usefont{OT1}{lmr}{b}{n}\selectfont}
@@ -82,6 +86,8 @@
 % Part style
 %\usepackage{secsty}
 %\partnumberfont{\Huge} 
+
+\usepackage{fourier-ons}
 
 % Set page layout  
 \headheight 13.6pt
@@ -186,9 +192,10 @@
 
 \frontmatter
 
-\title{{\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}}
-\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
-\date{\includegraphics[width=0.25\textwidth]{../shield.eps}\vspace{11mm}\\{\LARGE{}Ph.D.\ Thesis}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
+\title{\hrulefill\hspace{0.2cm} \aldineleft \aldineright \hspcae{0.2cm}\hrulefill \newline {\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}\newline \hrulefill\hspace{0.2cm} \aldineleft \aldineright \hspcae{0.2cm}\hrulefill}
+%\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
+\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College and Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
+\date{\includegraphics[width=0.28\textwidth]{../uc-shield.eps}\vspace{11mm}\\{\sc\LARGE{}Ph.D.\ Thesis}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
 \maketitle
 
 \tableofcontents
