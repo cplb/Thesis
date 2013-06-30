@@ -666,7 +666,7 @@ Small vertical perturbations $\theta = \pi/2 + \delta$ oscillate with frequency
 \begin{equation}
 \dot{t}^2\Omega\sub{vert}^2 = -\recip{2} \frac{B(\overline{r})}{\overline{r}^2} \left. \partialdiff{^2 V}{\theta^2}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
 \end{equation}
-We denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \overline{B}$, $A'(\overline{r}) \equiv \overline{A}'$, etc.; differentiating the potential from \eqnref{rdot} we find
+We denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \overline{B}$, $A'(\overline{r}) \equiv \overline{A}'$, etc.; differentiating the potential from \eqnref{rdot} we find \citep{Berry2011}
 \begin{align}
 \dot{t}^2\Omega\sub{rad}^2 = {} & -\frac{E^2}{\overline{A}\overline{B}} \left( \frac{\overline{A}'^2}{\overline{A}^2} - \frac{\overline{A}''}{2\overline{A}} + \frac{\overline{A}'\overline{B}'}{\overline{A}\,\overline{B}} + \frac{\overline{B}'^2}{\overline{B}^2} - \frac{\overline{B}''}{2\overline{B}} \right) - \frac{\overline{B}''}{2\overline{B}^2} +  \frac{\overline{B}'^2}{\overline{B}^3} \nonumber \\*
  & - {} \frac{L_z^2}{\overline{B}\overline{r}^2} \left(\frac{\overline{B}''}{2\overline{B}} - \frac{\overline{B}'^2}{\overline{B}^2} - \frac{2\overline{B}'}{\overline{B}\overline{r}}-\frac{3}{\overline{r}^2} \right) \nonumber \\
@@ -676,19 +676,19 @@ We denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \overli
 \end{align}
 To simplify \eqnref{long_epi} we used conditions imposed by setting $V$ and $\partial V/\partial \widetilde{r}$ equal to zero for circular equatorial orbits. These results hold for any metric of the general form \eqnref{Sph_sym}, subject to the slow-rotation condition, which we have used to linearise in $J$ at various stages.
 
-\subsection{Gravitational wave constraints}
+\subsection{Gravitational wave constraints}\label{sec:GW-f-R}
 
 We now consider if the deviation arising from the $f(R)$ correction could be observable. This should be possible if the orbit is sufficiently different from its counterpart in Kerr. To quantify the difference, we must identify equivalent orbits in the two spacetimes. For circular equatorial orbits there is a natural way to do this: by identifying orbits with the same frequency $\omega_0$, as this is a gauge invariant observable quantity \citep{Detweiler2008}. The quantity
 \begin{equation}
 \Delta(\omega_0,\Upsilon) = \Omega(\omega_0,\Upsilon) - \Omega(\omega_0,\Upsilon \rightarrow \infty)
 \end{equation}
-characterises the rate of increase in the phase difference between the $f(R)$ trajectory and the Kerr trajectory with the same frequency and spin parameter.\footnote{By comparing with the $\Upsilon \rightarrow\infty$ limit of the trajectory rather than the exact Kerr result ensures that we are taking the same slow rotation limit in both cases, and we need not be concerned with $\order{J^2}$ corrections.}
+characterises the rate of increase in the phase difference between the $f(R)$ trajectory and the Kerr trajectory with the same frequency and spin parameter \citep{Berry2011}.\footnote{By comparing with the $\Upsilon \rightarrow\infty$ limit of the trajectory rather than the exact Kerr result ensures that we are taking the same slow rotation limit in both cases, and we need not be concerned with $\order{J^2}$ corrections.}
 
 Consider the GWs emitted by an object undergoing epicyclic motion. We assume that we are in the extreme-mass-ratio regime, such that we can ignore the gravity of the orbiting body. The correction is detectable if it leads to a significant phase shift in a gravitational waveform over the length of an observation; we adopt the criterion that it is detectable if $T\sub{obs}\Delta > 2\pi$ for observation period $T\sub{obs}$. This is a significant over-simplification. We have assumed that the orbital frequency has been matched to a Kerr value, but small changes in the other parameters such as the central object's mass or spin, the orbital eccentricity or the inclination, could mimic (or disguise) the effect. However, we are also keeping the orbital frequency fixed whereas we shall observe inspirals. This can break the parameter degeneracies. Since we are interested in extreme-mass-ratio systems, for which the inspiral proceeds slowly, it is likely that we are being over-optimistic, so these results can be considered upper bounds on what could be measurable.
 
 EMRIs are a potential source of observation for LISA. However, these will be for systems about massive BHs. As BH spacetimes are no different in $f(R)$-gravity, we must assume that the central object is an extended body: it must be an exotic object such as a boson star. There is no evidence for the existence of these non-standard objects. Therefore, this analysis is only included as a sketch of what could be potentially achievable if this were the case.
 
-The time-scale of the systems we are considering is set by the central object mass, and the quantities $M\omega_0$ and $M\Delta$ are mass-independent. A duration of a typical EMRI observation with LISA would be of the order of a year, and so the criterion for detectability becomes
+The time-scale of the systems we are considering is set by the central object mass, and the quantities $M\omega_0$ and $M\Delta$ are mass-independent. A duration of a typical EMRI observation with LISA would be of the order of a year, and so the criterion for detectability becomes \citep{Berry2011}
 \begin{equation}
 GM\Delta = 9.8\times10^{-7} \left(\frac{M}{10^6 M_{\odot}}\right) \left(\frac{\mathrm{yr}}{T\sub{obs}}\right). \label{eq:detcrit}
 \end{equation}
@@ -797,7 +797,8 @@ where $\omega_0$ is the frequency of the circular orbit given in \eqnref{omz}. T
 \end{equation}
 defining the function
 \begin{align}
-\zeta = {} & r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\frac{\exp(-\Upsilon r)}{3} + \frac{\Upsilon^2\overline{r}^2\exp(-\Upsilon r)}{3 + (1 + \Upsilon \overline{r})\exp(-\Upsilon r)} \left[1 - \frac{r\sub{S}}{\overline{r}} + r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\frac{\exp(-\Upsilon r)}{3}\right].
+\zeta = {} & r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\frac{\exp(-\Upsilon r)}{3} \nonumber\\* %11pt
+ {} & + \left. \frac{\Upsilon^2\overline{r}^2\exp(-\Upsilon r)}{3 + (1 + \Upsilon \overline{r})\exp(-\Upsilon r)} \left[1 - \frac{r\sub{S}}{\overline{r}} + r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\frac{\exp(-\Upsilon r)}{3}\right].\right.
 \end{align}
 This characterises the deviation from the Schwarzschild case: the change in the precession per orbit relative to Schwarzschild is
 \begin{align}
@@ -808,7 +809,7 @@ using the subscript $\text{S}$ to denote the Schwarzschild value. To obtain the 
 
 \Tabref{Precess} shows the orbital properties of the planets. We use the deviation in perihelion precession rate from the GR prediction to constrain the value of $\zeta$, and hence $\Upsilon$ and $a_2$.
 %\squeezetable
-\begin{table}[bht]%\footnotesize
+\begin{table}\footnotesize
 \centering
 \begin{tabular}{l D{.}{.}{2.8} D{.}{.}{3.8} c D{.}{.}{1.8}}
 \toprule
@@ -829,7 +830,7 @@ Pluto & 59.063762 & 248.0208 & $\phantom{-}28.4\phantom{00} \pm 45.1\phantom{000
 \caption{Orbital properties of the eight major planets and Pluto. We take the semimajor orbital axis to be the flat-space distance $r$, not the coordinate $\widetilde{r}$. The eccentricity is not used in calculations, but is given to assess the accuracy of neglecting terms $\order{e^2}$. Semimajor axis, orbital period and eccentricity are taken from \citet{Cox2000}, the precession rate is from \citet{Pitjeva2009a}\label{tab:Precess}}
 \end{table}
 All the precession rates are consistent with GR predictions ($\Delta \varpi = 0$) within their uncertainties. Assuming that these uncertainties constrain the possible deviation from GR we can use them as bounds for $f(R)$ corrections. \Tabref{Constraint} shows the constraints for $\Upsilon$ and $a_2$ obtained by equating the uncertainty in the precession rate $\sigma_{\Delta \varpi}$ with the $f(R)$ correction, and similarly using twice the uncertainty $2\sigma_{\Delta \varpi}$.
-\begin{table}[bht]%\footnotesize
+\begin{table}\footnotesize
 \centering
 \begin{tabular}{l D{.}{.}{2.2} D{.}{.}{5.1} D{.}{.}{2.2} D{.}{.}{5.1}}
 \toprule

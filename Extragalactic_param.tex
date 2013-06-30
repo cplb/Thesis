@@ -30,7 +30,7 @@ Using this, we can factor out the most important dependences to give a scaled SN
 \end{equation}
 
 Space-based detectors are most sensitive to extreme-mass-ratio signals originating from systems containing MBHs with masses $\sim10^6 M_\odot$. Higher mass objects produce signals at too low frequencies. We considered several nearby MBHs that were likely candidates for detectable burst signals. Details are given in \tabref{MBHs}.
-\begin{table}
+\begin{table}\footnotesize
 %\begin{minipage}{\columnwidth}
  \centering
   \begin{tabular}{P{0.22\textwidth} c  D{.}{.}{2.5} P{0.4\textwidth}}
@@ -69,10 +69,10 @@ We approximate the trend with a parametrized curve
 \end{equation}
 To fit this, we treat the problem as if it were a likelihood maximisation, with each averaged point having a Gaussian likelihood with standard deviation defined from the scatter because of the variation in the ancillary parameters. The optimised values for LISA are
 \begin{equation}
-\begin{split}
+\begin{array}{c}
 \alpha_1 \simeq 8.93 \times 10^4; \quad \alpha_2 \simeq 4.68 \times 10^2; \quad \alpha_3 \simeq 1.84 \times 10^2;\\
 \beta_1 \simeq 1.84; \quad\beta_2 \simeq 3.23; \quad \beta_3 \simeq 1.27; \quad \beta_4 \simeq 4.13.
-\end{split}
+\end{array}
 \end{equation}
 
 Using our fitted trends, it is possible to invert \eqnref{SNR-scaling} to find the furthest distance that a system contain an MBH of a given mass can produce detectable bursts. In calculating the maximum SNR it is necessary to decide upon a maximum $f_\ast$. This corresponds to the minimum periapse radius which is in turn determined by the MBH spin. For the optimal case with a maximally rotating MBH, the innermost periapsis is $r\sub{p} = r\sub{g}$; for a non-rotating MBH, the innermost periapsis would be $r\sub{p} = 4r\sub{g}$. We shall use both as limits for the maximum SNR.
@@ -99,10 +99,10 @@ Since Andromeda was only marginally of interest for the classic LISA design, we 
 
 The curve is fitted with
 \begin{equation}
-\begin{split}
+\begin{array}{c}
 \alpha_1 \simeq 73.9; \quad \alpha_2 \simeq 4.99 \times 10^3; \quad \alpha_3 \simeq 52.7;\\
 \beta_1 \simeq 1.47; \quad\beta_2 \simeq 0.85; \quad \beta_3 \simeq 1.76; \quad \beta_4 \simeq 1.25.
-\end{split}
+\end{array}
 \end{equation}
 The fit parameters are markedly different from those for LISA. However, since we are fitting a phenomenological model and the parameters have no physical significance, we are not concerned with this. The parameters yield a good fit to the data, which is all that we are concerned about here.
 
@@ -147,7 +147,7 @@ As for bursts from the Galactic Centre, posteriors can show strong and complicat
 \begin{figure}
 \begin{center}
 \vspace{0.5\baselineskip}
-   \includegraphics[width=0.82\textwidth]{./images/Fig_M32_MCMC_193_triangle_40}
+   \includegraphics[width=0.8\textwidth]{./images/Fig_M32_MCMC_193_triangle_40}
 \caption{Marginalised one- and two-dimensional posteriors (on the diagonal and above, respectively). The scales are identical in both types of plots. The dotted line indicates the true value. These distributions are exceptionally cromulent and well converged. Angular momentum is in units of $L_\bullet = GM c^{-1}$ and the scaled distance is in units of $\zeta_0 = 1 M_\odot^{-1}\units{kpc}$. The EMRB is from M32 and has $r\sub{p} \simeq 5.53 r\sub{g}$.\label{fig:MCMC-a}}
 \end{center}
 \end{figure}
@@ -156,7 +156,7 @@ As for bursts from the Galactic Centre, posteriors can show strong and complicat
 \begin{figure}
 \begin{center}
 \vspace{0.5\baselineskip}
-   \includegraphics[width=0.82\textwidth]{./images/Fig_N4395_MCMC_120_triangle_40}
+   \includegraphics[width=0.8\textwidth]{./images/Fig_N4395_MCMC_120_triangle_40}
 \caption{Marginalised one- and two-dimensional posteriors. The conventions are the same as in \figref{MCMC-a}. These distributions begin to show the complicated shapes of degenerate distributions. The EMRB is from NGC 4395 and has $r\sub{p} \simeq 5.92 r\sub{g}$.\label{fig:MCMC-b}}
 \end{center}
 \end{figure}
@@ -165,7 +165,7 @@ As for bursts from the Galactic Centre, posteriors can show strong and complicat
 \begin{figure}
 \begin{center}
 	\vspace{0.5\baselineskip}
-   \includegraphics[width=0.82\textwidth]{./images/Fig_M32_MCMC_159_triangle_40}
+   \includegraphics[width=0.8\textwidth]{./images/Fig_M32_MCMC_159_triangle_40}
 \caption{Marginalised one- and two-dimensional posteriors. The conventions are the same as in \figref{MCMC-a}. These are the worst-case scenario distributions that are uninformative. The EMRB is from M32 and has $r\sub{p} \simeq 11.79 r\sub{g}$.}
 \label{fig:MCMC-c}
 \end{center}

@@ -117,7 +117,8 @@ Using the inverse matrix definition
 Taking the limit
 \begin{align}
 \exp(-2\pi i f t_k) = {} & \lim_{T \rightarrow \infty; \; \upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \intd{-T}{T}{\exp(-2\pi ift_j)}{t_j} \intd{-T}{T}{C_n(t_j-t_l)C^{-1}(t_l,t_k)}{t_l} \nonumber \\
- = {} & \lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \intd{-\infty}{\infty}{C_n(\tau)\exp(-2\pi if\tau)}{\tau} \intd{-\infty}{\infty}{C^{-1}(t_l,t_k)\exp(-2\pi if t_l)}{t_l},
+ = {} & \lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \nonumber\\ % 11pt
+ {} & \times \left. \intd{-\infty}{\infty}{C_n(\tau)\exp(-2\pi if\tau)}{\tau} \intd{-\infty}{\infty}{C^{-1}(t_l,t_k)\exp(-2\pi if t_l)}{t_l},\right.
 \end{align}
 where $\tau = t_j - t_l$. Defining the transformation
 \begin{equation}

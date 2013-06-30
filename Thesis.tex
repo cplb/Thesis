@@ -1,4 +1,4 @@
-\documentclass[a4paper, 10pt, titlepage, twoside]{book}
+\documentclass[a4paper, 11pt, titlepage, twoside]{book}
 % Set up page layout
 \usepackage[a4paper]{geometry}
 \usepackage{fancyhdr}
@@ -26,11 +26,13 @@
 % Set up lists and tables
 \usepackage{listings}
 \usepackage{enumitem}
+\setlist{itemsep=0pt,}
 \usepackage{booktabs, longtable, dcolumn}
 \usepackage{array}
 \usepackage{ragged2e}
 \newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
 \usepackage[labelfont=bf,labelsep=space]{caption}
+\renewcommand{\captionfont}{\small}
 \usepackage[caption2]{ccaption}
 %\usepackage{tikz}
 %\usetikzlibrary{shapes,arrows}
@@ -41,6 +43,7 @@
 \renewcommand{\ttdefault}{lmtt}
 \usepackage{microtype}
 \usepackage[latin9]{inputenc}
+\usepackage[11pt]{moresize}
 %\usepackage{fixmath}
 \usepackage{ upgreek }
 % Special symbols
@@ -87,13 +90,21 @@
 %\usepackage{secsty}
 %\partnumberfont{\Huge} 
 
-\usepackage{fourier-ons}
+\usepackage{fourier-orns}
 
 % Set page layout  
 \headheight 13.6pt
+% For 10pt text
+%\headsep 0.6\baselineskip
+%\footskip 2\baselineskip
+%\textheight = 55\baselineskip
+% For 11pt text
+\topmargin -0.5cm
 \headsep 0.6\baselineskip
 \footskip 2\baselineskip
-\textheight = 55\baselineskip
+\textheight = 50\baselineskip
+
+\renewcommand\baselinestretch{1.3}  % For thesis spec
 
 \renewcommand\floatpagefraction{.9}
 \renewcommand\topfraction{.9}
@@ -192,11 +203,18 @@
 
 \frontmatter
 
-\title{\hrulefill\hspace{0.2cm} \aldineleft \aldineright \hspcae{0.2cm}\hrulefill \newline {\sc{}{\Huge{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}\newline \hrulefill\hspace{0.2cm} \aldineleft \aldineright \hspcae{0.2cm}\hrulefill}
+% linespace = 1
+%\title{\hrulefill\hspace{0.2cm}\aldineright \aldineleft\hspace{0.2cm}\hrulefill \\\vspace{5mm}{\sc{}{\HUGE{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}\\\vspace{4mm}\hrulefill\hspace{0.2cm}\aldineright \aldineleft\hspace{0.2cm}\hrulefill}
 %\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
-\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College and Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
-\date{\includegraphics[width=0.28\textwidth]{../uc-shield.eps}\vspace{11mm}\\{\sc\LARGE{}Ph.D.\ Thesis}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
+%\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College and Institute of Astronomy\vspace{3mm}\\{\Large\sc{}University of Cambridge}\vspace{5mm}}
+%\date{\includegraphics[width=0.27\textwidth]{../UC-shield/uc-shield.eps}\vspace{11mm}\\{This dissertation is submitted for the degree of}\vspace{2mm}\\{\sc\LARGE{}Doctor of Philosophy}\vspace{3mm}\\{\large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
+% linespace = 1.3
+\title{\hrulefill\hspace{0.2cm}\aldineright \aldineleft\hspace{0.2cm}\hrulefill \\\vspace{5mm}{\sc{}{\HUGE{}Exploring Gravity}\\\vspace{-2mm}{\LARGE{}with Gravitational Waves\\\vspace{-3mm}\& Strong-Field Tests}}\\\vspace{3mm}\hrulefill\hspace{0.2cm}\aldineright \aldineleft\hspace{0.2cm}\hrulefill}
+\author{{\LARGE{}Christopher P.\ L.\ Berry}\vspace{2mm}\\Churchill College and Institute of Astronomy\\\vspace{1mm}{\Large\sc{}University of Cambridge}\vspace{1mm}}
+\date{\includegraphics[width=0.26\textwidth]{../UC-shield/uc-shield-black.eps}\vspace{14mm}\\{This dissertation is submitted for the degree of}\vspace{1mm}\\{\sc\LARGE{}Doctor of Philosophy}\vspace{3mm}\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{11mm}\\{\Large\today}}
 \maketitle
+
+\input{./Declaration.tex}
 
 \tableofcontents
 
