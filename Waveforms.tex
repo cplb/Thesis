@@ -1,6 +1,6 @@
 \chapter{Extreme-mass-ratio burst waveforms\label{ch:waveforms}}
 
-\section{Massive black holes \& extreme-mass-ratio events}
+\section{Massive black holes and extreme-mass-ratio events}
 
 An exciting means of inferring information about MBHs is through GWs emitted when COs, such as stellar mass BHs, NSs, WDs or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as (e)LISA is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion objects inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the object plunges into the MBH. These systems are typically formed following two-body encounters so that the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are extreme mass-ratio bursts (EMRBs; \citealt{Rubbo2006}). Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the frequency range of a LISA-like space-borne detector. The resulting signals are extreme mass-ratio inspirals (EMRIs; \citealt{Amaro-Seoane2007}).
 
@@ -105,11 +105,11 @@ Over one $2\pi$ period of $\chi$, $\theta$ oscillates from its minimum value to 
 \varrho^2\diff{\chi}{\tau} = \sqrt{Q + L_z^2}.
 \end{equation}
 
-\section{Waveform Construction}\label{sec:Kludge}
+\section{Waveform construction}\label{sec:Kludge}
 
 We can now calculate the geodesic trajectory. The orbiting body is assumed to follow this track exactly; we ignore evolution due to the radiation of energy and angular momentum, which should be negligible for EMRBs. From this trajectory we calculate the waveform using a semirelativistic approximation \citep{Ruffini1981}: we assume the particle moves along the Kerr geodesic, but radiates as if it were in flat spacetime. This quick-and-dirty technique is known as a numerical kludge (NK), and has been shown to approximate well results computed by more accurate methods \citep{Babak2007}. It is often compared to a bead travelling along a wire. The shape of the wire is set by the Kerr geodesic, but the bead moves along in flat space.
 
-\subsection{Kludge approximation}
+\subsection{The kludge approximation}
 
 Numerical kludge approximations aim to encapsulate the main characteristics of a waveform by using the exact particle trajectory (ignoring inaccuracies from radiative effects and from the particle's self-force), whilst saving on computational time by using approximate waveform generation techniques.
 
@@ -137,7 +137,7 @@ The two coincide for $a \rightarrow 0$ or $r \rightarrow \infty$.
 
 There is no well motivated argument that either coordinate system must yield an accurate GW; their use is justified {\it post facto} by comparison with results obtained from more accurate, and computationally intensive, methods \citep{Gair2005, Babak2007}. The ambiguity in assigning flat-space coordinates reflects the inconsistency of the semirelativistic approximation: the geodesic trajectory was calculated for the Kerr geometry; by moving to flat spacetime we lose the reason for its existence. This should not be regarded as a major problem; it is an artifact of the basic assumption that the shape of the trajectory is important for determining the character of the radiation, but the curvature of the spacetime in the vicinity of the source is not. By binding the particle to the exact geodesic, we ensure that the waveform has spectral components at the correct frequencies, but by assuming flat spacetime for generation of GWs they shall not have the correct amplitudes.
 
-\subsection{Quadrupole-octupole formula}
+\subsection{The quadrupole--octupole formula}
 
 Now we have a flat-space particle trajectory $x\sub{P}^\mu(\tau)$, we may apply a flat-space wave generation formula. We use the quadrupole--octupole formula to calculate the gravitational strain \citep{Bekenstein1973, Press1977, Yunes2008}
 \begin{equation}
@@ -216,7 +216,7 @@ p(\boldsymbol{s}(t)|\boldsymbol{h}(t)) \propto \exp\left[-\recip{2}\innerprod{\b
 \label{eq:sig_prob}
 \end{equation}
 
-\subsection{Noise curve}\label{sec:Noise}
+\subsection{The noise curve}\label{sec:Noise}
 
 LISA's noise has two sources: instrumental noise and confusion noise, primarily from WD binaries. The latter may be divided into contributions from galactic and extragalactic binaries. In this work we use the noise model of \citet{Barack2004}. The shape of the noise curve can be seen in \figref{Noise}. The instrumental noise dominates at both high and low frequencies. The confusion noise is important at intermediate frequencies, and is responsible for the cusp around $10^{-3}\units{Hz}$. eLISA shares the same sources of noise, but is less affected by confusion \citep{Jennrich2011}. Its sensitivity regime is shifted to higher frequencies because of the shorter arm length.
 \begin{figure}[!htp]

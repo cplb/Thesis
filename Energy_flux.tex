@@ -61,9 +61,9 @@ Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ an
 \end{equation}
 where $K(k)$ is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
 \begin{align}
-\mathscr{I}_1 = {} & \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] \nonumber \\*
- {} & - \left.(r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},\right.
-\end{equation}
+\mathscr{I}_1 = {} & \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right. \nonumber \\*
+ {} & - \left.(r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
+\end{align}
 where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using \citet[19.6.2]{Olver2010}
 \begin{equation}
 \Pi(k^2,k) = \frac{E(k)}{1 - k^2}
@@ -83,46 +83,95 @@ Substituting in for the integrals, we find that the energy lost in one orbit is
  {} & \times {} \left\{\sqrt{( 1+ e)\frac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\frac{r\sub{p}}{M}, e\right) \right. \nonumber \\
    {} & + \left. \frac{1 + e}{\sqrt{(1 + e)\left(r\sub{p}/M\right)- 2 (3 - e)}} K\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{2} \left(\frac{r\sub{p}}{M}, e\right)\right\},
 \end{align}
-where we have introduced functions
+where we have introduced functions\footnote{The following functional forms are long and so are split over multiple pages.}
 \begin{align}
-f_1(y, e) = {} & 4608 (1 - e) (1 + e)^2 \left(3 + e^2\right)^2 \left(2428691599+313957879 e^2 + 1279504693 e^4 \right. \nonumber \\
- {} & + \left. 63843717 e^6\right)-192 (1 + e)^2 \left(908960573673 - 155717471796 e^2 \right.\nonumber \\
- {} & - \left. 88736969547 e^4 - 293676299040 e^6 - 195313674237 e^8 - 26635698156 e^{10} \right. \nonumber \\
- {} & - \left. 346799201 e^{12}\right) y + 384 (1+e)^3 \left(336063804453 - 53956775638 e^2 \right. \nonumber \\
- {} & - \left. 33318942522 e^4 - 92857670352 e^6 - 41764459155 e^8 - 2765710514 e^{10}\right) y^2 \nonumber \\
+f_1(y, e) = {} & 4608 (1 - e) (1 + e)^2 \left(3 + e^2\right)^2 \left(2428691599+313957879 e^2 \right. \nonumber \\*
+ {} & + \left. 1279504693 e^4 + 63843717 e^6\right) \nonumber \\ 
+ {} & - \left. 192 (1 + e)^2 \left(908960573673 - 155717471796 e^2 \right.\right. \nonumber \\
+ {} & - \left. 88736969547 e^4 - 293676299040 e^6 - 195313674237 e^8 \right. \nonumber \\
+ {} & - \left. 26635698156 e^{10} - 346799201 e^{12}\right) y \nonumber \\
+ {} & + \left. 384 (1+e)^3 \left(336063804453 - 53956775638 e^2 - 33318942522 e^4 \right.\right. \nonumber \\
+ {} & - \left. 92857670352 e^6 - 41764459155 e^8 - 2765710514 e^{10}\right) y^2 \nonumber \\
  {} & - \left. 16 (1 + e)^4 \left(3418907055555 - 580720618635 e^2 - 168432860626 e^4 \right.\right. \nonumber \\
  {} & - \left. 606890963686 e^6 - 176495184865 e^8 - 3768291999 e^{10}\right) y^3 \nonumber \\
- {} & + \left. 32 (1 + e)^5 \left(510454645597 - 92175635794 e^2 + 26432814256 e^4 \right.\right. \nonumber \\
- {} & - \left. 28250211070 e^6 - 5713846269 e^8\right) y^4 - 4 (1 + e)^6 \left(1107402703901 \right. \nonumber \\
- {} & - \left. 174239346926 e^2 + 100957560852 e^4 + 3707280110 e^6 - 899162673 e^8\right) y^5 \nonumber \\ 
- {} & + \left. 8 (1 + e)^7 \left(143625217397 - 16032820010 e^2 + 4238287541 e^4 \right. \nonumber \\
- {} & + \left. 275190560 e^6\right) y^6 - (1 + e)^8 \left(220627324753 - 14884378223 e^2 - 1210713997 e^4 \right. \nonumber \\
- {} & + \left. 14138955 e^6\right) y^7 + 8 (1 + e)^9 \left(2922108518 - 46504603 e^2 - 2407656 e^4\right) y^8 \right. \nonumber \\
+ {} & + \left. 32 (1 + e)^5 \left(510454645597 - 92175635794 e^2 \right.\right. \nonumber \\
+ {} & + \left. 26432814256 e^4 - 28250211070 e^6 - 5713846269 e^8\right) y^4 \nonumber \\
+ {} & - \left. 4 (1 + e)^6 \left(1107402703901 - 174239346926 e^2 \right.\right. \nonumber \\
+ {} & + \left. 100957560852 e^4 + 3707280110 e^6 - 899162673 e^8\right) y^5 \nonumber \\ 
+ {} & + \left. 8 (1 + e)^7 \left(143625217397 - 16032820010 e^2 \right.\right. \nonumber \\
+ {} & + \left. 4238287541 e^4 + 275190560 e^6\right) y^6 \nonumber \\
+ {} & - \left. (1 + e)^8 \left(220627324753 - 14884378223 e^2 \right.\right. \nonumber \\
+ {} & - \left. 1210713997 e^4 + 14138955 e^6\right) y^7 \nonumber \\
+ {} & + \left. 8 (1 + e)^9 \left(2922108518 - 46504603 e^2 - 2407656 e^4\right) y^8 \right. \nonumber \\
  {} & - \left. 3 (1 + e)^{10} \left(241579935 + 6314675 e^2 - 149426 e^4\right) y^9 \right. \nonumber \\
- {} & - \left. 4 (1 + e)^{11} \left(8608805 - 48992 e^2\right) y^{10} - 2 (1 + e)^{12} \left(1242083 - 16320 e^2\right) y^{11} \right. \nonumber \\
+ {} & - \left. 4 (1 + e)^{11} \left(8608805 - 48992 e^2\right) y^{10} \right. \nonumber \\
+ {} & - \left. 2 (1 + e)^{12} \left(1242083 - 16320 e^2\right) y^{11} \right. \nonumber \\*
  {} & - \left. 184320 (1 + e)^{13} y^{12} - 5120 (1 + e)^{14} y^{13} \right.
 \end{align}
+%\begin{align}
+%f_1(y, e) = {} & 4608 (1 - e) (1 + e)^2 \left(3 + e^2\right)^2 \left(2428691599+313957879 e^2 + 1279504693 e^4 \right. \nonumber \\
+% {} & + \left. 63843717 e^6\right)-192 (1 + e)^2 \left(908960573673 - 155717471796 e^2 \right.\nonumber \\
+% {} & - \left. 88736969547 e^4 - 293676299040 e^6 - 195313674237 e^8 - 26635698156 e^{10} \right. \nonumber \\
+% {} & - \left. 346799201 e^{12}\right) y + 384 (1+e)^3 \left(336063804453 - 53956775638 e^2 \right. \nonumber \\
+% {} & - \left. 33318942522 e^4 - 92857670352 e^6 - 41764459155 e^8 - 2765710514 e^{10}\right) y^2 \nonumber \\
+% {} & - \left. 16 (1 + e)^4 \left(3418907055555 - 580720618635 e^2 - 168432860626 e^4 \right.\right. \nonumber \\
+% {} & - \left. 606890963686 e^6 - 176495184865 e^8 - 3768291999 e^{10}\right) y^3 \nonumber \\
+% {} & + \left. 32 (1 + e)^5 \left(510454645597 - 92175635794 e^2 + 26432814256 e^4 \right.\right. \nonumber \\
+% {} & - \left. 28250211070 e^6 - 5713846269 e^8\right) y^4 - 4 (1 + e)^6 \left(1107402703901 \right. \nonumber \\
+% {} & - \left. 174239346926 e^2 + 100957560852 e^4 + 3707280110 e^6 - 899162673 e^8\right) y^5 \nonumber \\ 
+% {} & + \left. 8 (1 + e)^7 \left(143625217397 - 16032820010 e^2 + 4238287541 e^4 \right.\right. \nonumber \\
+% {} & + \left. 275190560 e^6\right) y^6 - (1 + e)^8 \left(220627324753 - 14884378223 e^2 \right. \nonumber \\
+% {} & - \left. 1210713997 e^4 + 14138955 e^6\right) y^7 + 8 (1 + e)^9 \left(2922108518 - 46504603 e^2 \right. \nonumber \\
+% {} & - \left. 2407656 e^4\right) y^8 - 3 (1 + e)^{10} \left(241579935 + 6314675 e^2 - 149426 e^4\right) y^9 \nonumber \\
+% {} & - \left. 4 (1 + e)^{11} \left(8608805 - 48992 e^2\right) y^{10} - 2 (1 + e)^{12} \left(1242083 - 16320 e^2\right) y^{11} \right. \nonumber \\
+% {} & - \left. 184320 (1 + e)^{13} y^{12} - 5120 (1 + e)^{14} y^{13} \right.
+%\end{align}
 and
 \begin{align}
-f_2(y, e) = {} & 3072 (3 - e) (3 + e) \left(3 + e^2 \right) \left(7286074797 - 3299041125 e^2 + 792940362 e^4 \right. \nonumber \\
- {} & - \left. 1366777698 e^6 - 369698151 e^8 - 5932745 e^{10} \right) - 384 (1 + e) \left(2989180413711 \vphantom{e^0} \right. \nonumber \\
- {} & - \left. 583867932642 e^2 - 131661872359 e^4 - 419423580924 e^6 - 194293515951 e^8 \right. \nonumber \\
- {} & - \left. 3390301442 e^{10} + 1353430119 e^{12} \right) {y} + 64 (1 + e)^2 \left(14825178681327 \vphantom{e^0} \right. \nonumber \\
- {} & - \left. 2675442646782 e^2 - 728511901515 e^4 - 1837874368340 e^6 - 591999524567 e^8 \right. \nonumber \\
- {} & - \left. 1856757710 e^{10} + 841581651 e^{12}\right) y^2 - 32 (1 + e)^3 \left(14292163934541 \vphantom{e^0} \right. \nonumber \\
- {} & - \left. 2666166422089 e^2 - 522582885086 e^4 - 1347373382962 e^6 - 307066297439 e^8 \right. \nonumber \\
- {} & - \left. 1675056789 e^{10}\right) y^3 + 16 (1 + e)^4 \left(9557748374919 - 1917809903861 e^2 \right. \nonumber \\
- {} & - \left. 24258045506 e^4 - 511875047746 e^6 - 86779453317 e^8 - 462078345 e^{10}\right) y^4 \nonumber \\
+f_2(y, e) = {} & 3072 (3 - e) (3 + e) \left(3 + e^2 \right) \left(7286074797 - 3299041125 e^2 \right. \nonumber \\*
+ {} & + \left. 792940362 e^4 - 1366777698 e^6 - 369698151 e^8 - 5932745 e^{10} \right) \nonumber \\
+ {} & - \left. 384 (1 + e) \left(2989180413711 - 583867932642 e^2 - 131661872359 e^4 \right.\right. \nonumber \\
+ {} & - \left. 419423580924 e^6 - 194293515951 e^8 - 3390301442 e^{10} + 1353430119 e^{12} \right) {y} \nonumber \\
+ {} & + \left. 64 (1 + e)^2 \left(14825178681327 - 2675442646782 e^2 - 728511901515 e^4 \right.\right. \nonumber \\
+ {} & - \left. 1837874368340 e^6 - 591999524567 e^8 1856757710 e^{10} + 841581651 e^{12}\right) y^2 \nonumber \\
+ {} & - \left. 32 (1 + e)^3 \left(14292163934541 -2666166422089 e^2 - 522582885086 e^4 \right.\right. \nonumber \\
+ {} & - \left. 1347373382962 e^6 - 307066297439 e^8 - 1675056789 e^{10}\right) y^3 \nonumber \\
+ {} & + \left. 16 (1 + e)^4 \left(9557748374919 - 1917809903861 e^2 - 24258045506 e^4 \right.\right. \nonumber \\
+ {} & - \left. 511875047746 e^6 - 86779453317 e^8 - 462078345 e^{10}\right) y^4 \nonumber \\
  {} & - \left. 8 (1 + e)^5 \left(5390797838491 - 990602472036 e^2 + 161182699002 e^4 \right.\right. \nonumber \\
- {} & - \left. 89978894004 e^6 - 11363685245 e^8\right) y^5 + 4 (1 + e)^6 \left(2857676457065 \right. \nonumber \\
- {} & - \left. 351292910556 e^2 + 79840371470 e^4 - 2670080940 e^6 - 463345647 e^8 \right) y^6 \nonumber \\
- {} & - \left. 2 (1 + e)^7 \left(1249768416047 - 79903103833 e^2 + 12179840133 e^4 \right.\right. \nonumber \\
- {} & + \left. 482157413 e^6\right) y^7 + (1 + e)^8 \left(363565648057 - 10040939153 e^2 - 318841465 e^4 \right. \nonumber \\
- {} & + \left. 14611473 e^6 \right) y^8 - 2 (1 + e)^9 \left(13862653487 - 100645509 e^2 - 11015842 e^4\right) y^9 \nonumber \\
+ {} & - \left. 89978894004 e^6 - 11363685245 e^8\right) y^5 \nonumber \\
+ {} & + \left. 4 (1 + e)^6 \left(2857676457065 - 351292910556 e^2 + 79840371470 e^4 \right.\right. \nonumber \\
+ {} & - \left. 2670080940 e^6 - 463345647 e^8 \right) y^6 \nonumber \\
+ {} & - \left. 2 (1 + e)^7 \left(1249768416047 - 79903103833 e^2 \right.\right. \nonumber \\
+ {} & + \left. 12179840133 e^4 + 482157413 e^6\right) y^7 \nonumber \\
+ {} & + \left. (1 + e)^8 \left(363565648057 - 10040939153 e^2 \right.\right. \nonumber \\
+ {} & - \left. 318841465 e^4 + 14611473 e^6 \right) y^8 \nonumber \\
+ {} & - \left. 2 (1 + e)^9 \left(13862653487 - 100645509 e^2 - 11015842 e^4\right) y^9 \right. \nonumber \\
  {} & + \left. (1 + e)^{10} \left(518128485 + 16345427 e^2 - 421398 e^4\right) y^{10} \right. \nonumber \\
- {} & + \left. 16 (1 + e)^{11} \left(1220639 - 13448 e^2 \right) y^{11} + 2 (1 + e)^{12} \left(689123 - 18880 e^2 \right) y^{12} \right. \nonumber \\
+ {} & + \left. 16 (1 + e)^{11} \left(1220639 - 13448 e^2 \right) y^{11} \right. \nonumber \\
+ {} & + \left. 2 (1 + e)^{12} \left(689123 - 18880 e^2 \right) y^{12} \right. \nonumber \\*
  {} & + \left. 153600 (1 + e)^{13} y^{13} + 5120 (1 + e)^{14} {y}^{14}. \right.
 \end{align}
+%\begin{align}
+%f_2(y, e) = {} & 3072 (3 - e) (3 + e) \left(3 + e^2 \right) \left(7286074797 - 3299041125 e^2 + 792940362 e^4 \right. \nonumber \\
+% {} & - \left. 1366777698 e^6 - 369698151 e^8 - 5932745 e^{10} \right) - 384 (1 + e) \left(2989180413711 \vphantom{e^0} \right. \nonumber \\
+% {} & - \left. 583867932642 e^2 - 131661872359 e^4 - 419423580924 e^6 - 194293515951 e^8 \right. \nonumber \\
+% {} & - \left. 3390301442 e^{10} + 1353430119 e^{12} \right) {y} + 64 (1 + e)^2 \left(14825178681327 \vphantom{e^0} \right. \nonumber \\
+% {} & - \left. 2675442646782 e^2 - 728511901515 e^4 - 1837874368340 e^6 - 591999524567 e^8 \right. \nonumber \\
+% {} & - \left. 1856757710 e^{10} + 841581651 e^{12}\right) y^2 - 32 (1 + e)^3 \left(14292163934541 \vphantom{e^0} \right. \nonumber \\
+% {} & - \left. 2666166422089 e^2 - 522582885086 e^4 - 1347373382962 e^6 - 307066297439 e^8 \right. \nonumber \\
+% {} & - \left. 1675056789 e^{10}\right) y^3 + 16 (1 + e)^4 \left(9557748374919 - 1917809903861 e^2 \right. \nonumber \\
+% {} & - \left. 24258045506 e^4 - 511875047746 e^6 - 86779453317 e^8 - 462078345 e^{10}\right) y^4 \nonumber \\
+% {} & - \left. 8 (1 + e)^5 \left(5390797838491 - 990602472036 e^2 + 161182699002 e^4 \right.\right. \nonumber \\
+% {} & - \left. 89978894004 e^6 - 11363685245 e^8\right) y^5 + 4 (1 + e)^6 \left(2857676457065 \right. \nonumber \\
+% {} & - \left. 351292910556 e^2 + 79840371470 e^4 - 2670080940 e^6 - 463345647 e^8 \right) y^6 \nonumber \\
+% {} & - \left. 2 (1 + e)^7 \left(1249768416047 - 79903103833 e^2 + 12179840133 e^4 \right.\right. \nonumber \\
+% {} & + \left. 482157413 e^6\right) y^7 + (1 + e)^8 \left(363565648057 - 10040939153 e^2 - 318841465 e^4 \right. \nonumber \\
+% {} & + \left. 14611473 e^6 \right) y^8 - 2 (1 + e)^9 \left(13862653487 - 100645509 e^2 - 11015842 e^4\right) y^9 \nonumber \\
+% {} & + \left. (1 + e)^{10} \left(518128485 + 16345427 e^2 - 421398 e^4\right) y^{10} \right. \nonumber \\
+% {} & + \left. 16 (1 + e)^{11} \left(1220639 - 13448 e^2 \right) y^{11} + 2 (1 + e)^{12} \left(689123 - 18880 e^2 \right) y^{12} \right. \nonumber \\
+% {} & + \left. 153600 (1 + e)^{13} y^{13} + 5120 (1 + e)^{14} {y}^{14}. \right.
+%\end{align}
 
 The angular momentum lost is
 \begin{align}
@@ -132,39 +181,48 @@ The angular momentum lost is
 \end{align}
 where
 \begin{align}
-g_1(y, e) = {} & 169728 (1 - e) (1 + e)^2 \left(279297 + 219897 e^2 + 106299 e^4 + 9611 e^6 \right) \nonumber \\
- {} & - \left. 384 (1 + e)^2 \left(192524061 - 13847615 e^2 - 36165965 e^4 - 20710173 e^6 - 588532 e^8\right) y \right. \nonumber \\
+g_1(y, e) = {} & 169728 (1 - e) (1 + e)^2 \left(279297 + 219897 e^2 + 106299 e^4 + 9611 e^6 \right) \nonumber \\*
+ {} & - \left. 384 (1 + e)^2 \left(192524061 - 13847615 e^2 - 36165965 e^4 \right.\right. \nonumber \\
+ {} &- \left.\left. 20710173 e^6 - 588532 e^8\right) y \right. \nonumber \\
  {} & + \left. 192 (1 + e)^3 \left(235976417 + 13109547 e^2 - 3369705 e^4 - 3292707e^6\right) y^2 \right. \nonumber \\
  {} & - \left. 16 (1 + e)^4 \left(813592799 + 112906199 e^2 + 53843933 e^4 + 602061 e^6\right) y^3 \right. \nonumber \\
- {} & + \left. 16 (1 + e)^5 \left(87491089 + 7247482 e^2 + 4608349 e^4\right) y^4 + 8 (1 + e)^6 \left(9580616 \vphantom{e^0} \right.\right. \nonumber \\
- {} & + \left. 6179243 e^2 - 92047 e^4\right) y^5 - 4 (1 + e)^7 \left(3760123 + 272087 e^2 \right) y^6 \nonumber \\
- {} & - \left. (1 + e)^8 \left(1168355 - 35347 e^2\right) y^7 - 71792 (1 + e)^9 y^8 - 4120 (1 + e)^{10} y^9 \right.
+ {} & + \left. 16 (1 + e)^5 \left(87491089 + 7247482 e^2 + 4608349 e^4\right) y^4 \right. \nonumber \\
+ {} & + \left. 8 (1 + e)^6 \left(9580616 + 6179243 e^2 - 92047 e^4\right) y^5 \right. \nonumber \\
+ {} & - \left. 4 (1 + e)^7 \left(3760123 + 272087 e^2 \right) y^6 \right. \nonumber \\
+ {} & - \left. (1 + e)^8 \left(1168355 - 35347 e^2\right) y^7 \right. \nonumber \\*
+ {} & - \left. 71792 (1 + e)^9 y^8 - 4120 (1 + e)^{10} y^9 \right.
 \end{align}
 and
 \begin{align}
-g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10551 e^6 - 420 e^8 \right) \nonumber \\
- {} & - \left. 1536 (1 + e) \left(319648410 - 35712133 e^2 - 33099777 e^4 - 11272311 e^6 + 457187 e^8\right) y \right. \nonumber \\
- {} & + \left. 128 (1 + e)^2 \left(2706209781 - 45415294 e^2 - 103634296 e^4 - 34056010 e^6 - 130293 e^8\right) y^2 \right. \nonumber \\
+g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10551 e^6 - 420 e^8 \right) \nonumber \\*
+ {} & - \left. 1536 (1 + e) \left(319648410 - 35712133 e^2 - 33099777 e^4  \right.\right. \nonumber \\
+ {} & - \left.\left. 11272311 e^6 +457187 e^8\right) y \right. \nonumber \\
+ {} & + \left. 128 (1 + e)^2 \left(2706209781 - 45415294 e^2 - 103634296 e^4 \right.\right. \nonumber \\
+ {} & - \left.\left. 34056010 e^6 - 130293 e^8\right) y^2 \right. \nonumber \\
  {} & - \left. 32 (1 + e)^3 \left(3895435659 + 212168215 e^2 + 4641265 e^4 - 15197651 e^6 \right) y^3 \right. \nonumber \\
  {} & + \left. 16 (1 + e)^4 \left(1396737473 + 123722895 e^2 + 27602127 e^4 - 465119 e^6 \right) y^4 \right. \nonumber \\
  {} & - \left. 16 (1 + e)^5 \left(78148621 + 3035912 e^2 + 3130827 e^4\right) y^5 \right. \nonumber \\
- {} & - \left. 16 (1 + e)^6 \left(8005570 + 1485159 e^2 - 47943 e^4\right) y^6 + 2 (1 + e)^7 \left(4015181 + 601959 e^2\right) y^7 \right. \nonumber \\
- {} & + \left. (1 + e)^8 \left(737603 - 39467 e^2\right) y^8 + 47072 (1 + e)^9 y^9 + 4120 (1 + e)^{10} y^{10}. \right.
+ {} & - \left. 16 (1 + e)^6 \left(8005570 + 1485159 e^2 - 47943 e^4\right) y^6 \right. \nonumber \\
+ {} & + \left. 2 (1 + e)^7 \left(4015181 + 601959 e^2\right) y^7 \right. \nonumber \\
+ {} & + \left. (1 + e)^8 \left(737603 - 39467 e^2\right) y^8 \right. \nonumber \\*
+ {} & + \left. 47072 (1 + e)^9 y^9 + 4120 (1 + e)^{10} y^{10}. \right.
 \end{align}
 
 Taking limit $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
 \begin{align}
 \frac{M}{m} \upDelta E \simeq {} & -\frac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \frac{73}{24} e^2 + \frac{37}{96} e^{4}\right) \left(\frac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
- {} & - \left. \frac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \frac{31}{8} e^2 + \frac{65}{32} e^4 + \frac{1}{6}e^6\right) \left(\frac{M}{r\sub{p}}\right)^{9/2} + \order{\frac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
+ {} & - \left. \frac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \frac{31}{8} e^2 + \frac{65}{32} e^4 + \frac{1}{6}e^6\right) \left(\frac{M}{r\sub{p}}\right)^{9/2} \right. \nonumber \\*
+ {} & + \left. \order{\frac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
 \frac{\upDelta L_{z}}{m} \simeq {} & -\frac{64\pi}{5} \recip{(1 + e)^{2}} \left(1 + \frac{7}{8} e^{2}\right) \left(\frac{M}{r\sub{p}}\right)^{2} \nonumber \\
  {} & - \left. \frac{192 \pi}{5} \recip{(1 + e)^3} \left(1 + \frac{35}{24} e^2 + \frac{1}{4} e^4\right) \left(\frac{M}{r\sub{p}}\right)^{3}  + \order{\frac{M^{4}}{r\sub{p}^{4}}}. \right.
 \end{align}
 The leading order terms correspond to the Keplerian results of \cite{Peters1964}.
 
 For a parabolic orbit with $e = 1$, the energy loss reduces to
-\begin{equation}
-\frac{M}{m} \upDelta E = -\frac{2^{7/2}M^{{21}/{2}}}{{1673196525 \left(r\sub{p} - 2 M\right)^2 r\sub{p}^{{17}/{2}}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_1\left(\frac{r\sub{p}}{M}\right) + K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\frac{r\sub{p}}{M}\right)\right]
-\end{equation}
+\begin{align}
+\frac{M}{m} \upDelta E = {} & -\frac{2^{7/2}M^{{21}/{2}}}{{1673196525 \left(r\sub{p} - 2 M\right)^2 r\sub{p}^{{17}/{2}}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_1\left(\frac{r\sub{p}}{M}\right) \right. \nonumber \\* 
+ {} & + \left. K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\frac{r\sub{p}}{M}\right)\right]
+\end{align}
 where
 \begin{align}
 f_1(y) = {} & - 2 y \left(27850061568 - 83550184704 y + 117662445984 y^2 - 102686941680 y^3  \right. \nonumber \\ 
@@ -179,9 +237,10 @@ f_2(y) = {} & -72901570560 + 274404834816 y - 424693524096 y^2 \nonumber \\
  {} & + \left. 27462280 y^{10} + 4073612 y^{11} + 696320 y^{12} + 40960 y^{13}. \right.
 \end{align}
 The angular momentum lost is
-\begin{equation}
-\frac{\upDelta L_{z}}{m} = \frac{64 M^7}{24249225 {r\sub{p}}^{{11}/{2}}\left(r\sub{p} - 2 M \right)^{{3}/{2}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_1\left(\frac{r\sub{p}}{M}\right) + K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_2\left(\frac{r\sub{p}}{M}\right)\right],
-\end{equation}
+\begin{align}
+\frac{\upDelta L_{z}}{m} = {} & \frac{64 M^7}{24249225 {r\sub{p}}^{{11}/{2}}\left(r\sub{p} - 2 M \right)^{{3}/{2}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_1\left(\frac{r\sub{p}}{M}\right) \right. \nonumber \\*
+ {} & + \left.  K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_2\left(\frac{r\sub{p}}{M}\right)\right],
+\end{align}
 where
 \begin{align}
 g_1(y) = {} & 181817664 y - 363635328 y^2 - 245236248 y^3 - 49673460 y^4  \nonumber \\
