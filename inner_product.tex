@@ -1,6 +1,6 @@
 \chapter{The signal inner product}\label{ap:inner-prod}
 
-We wish to derive an inner product over the space of signals; we shall denote the product of signals $g$ and $h$ as $\innerprod{g}{h}$.
+We wish to derive an inner product over the space of signals; we shall denote the product of signals $g$ and $h$ as $\innerprod{g}{h}$. The use of the inner product is well established in GW astronomy \citep{Jaranowski2012}.
 
 \section{Preliminaries}
 
@@ -81,7 +81,7 @@ introducing correlation function $C_n(\tau)$. If we have a measured signal $s(t)
 s = h + n.
 \end{equation}
 
-Let us consider a discrete signal $n_i \equiv n(t_i)$, with $t_i - t_j = (i - j)\upDelta t$ $\{i,j = -N, \ldots, N\}$ and $\upDelta T = 2T/(2N + 1)$. For a single point \citep{Finn1992}:
+Let us consider a discrete signal $n_i \equiv n(t_i)$, with $t_i - t_j = (i - j)\upDelta t$ $\{i,j = -N, \ldots, N\}$ and $\upDelta T = 2T/(2N + 1)$. For a single point \citep{Finn1992},
 \begin{equation}
 p(s_i|h_i) = \recip{\sqrt{2\pi C_n(0)}} \exp\left[-\recip{2} \frac{n_i^2}{C_n(0)}\right].
 \end{equation}
@@ -124,7 +124,7 @@ where $\tau = t_j - t_l$. Defining the transformation
 \begin{equation}
 \widetilde{C^{-1}}(f,t_k) = \intd{-\infty}{\infty}{C^{-1}(t,t_k)\exp(-2\pi if t)}{t},
 \end{equation}
-and using the Wiener-Khinchin theorem to the define power spectral density \citep{Cutler1994}
+and using the Wiener--Khinchin theorem to the define power spectral density \citep{Cutler1994}
 \begin{align}
 \label{eq:PSD-WK}
 S_n(f) = {} & \lim_{T \rightarrow \infty} \recip{T} \overline{\left|\widetilde{n}(f)\right|^2} \\
@@ -147,11 +147,11 @@ The term in the exponential in \eqnref{prod_prob} has the limit
  = {} & \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}}{f} \nonumber \\
  = {} & \recip{2}\innerprod{n}{n},
  \end{align}
-defining the inner product
+defining the inner product \citep{Finn1992}
 \begin{align}
 \innerprod{g}{h} = {} & 2\intd{-\infty}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f)}{S_n(f)}}{f} = 2 \intd{0}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f) + \widetilde{g}(f)\widetilde{h}^\ast(f)}{S_n(f)}}{f}.
 \end{align}
-This is a noise-weighted inner product over the space of real signals. The probability of the signal is
+This is a noise-weighted inner product over the space of real signals. The probability of the signal is \citep{Cutler1994}
 \begin{equation}
 p(s|h) \propto \exp\left[-\recip{2}\innerprod{n}{n}\right].
 \end{equation}
@@ -163,7 +163,7 @@ We have defined the power spectral density $S_n(f)$ using the Wiener--Khinchin t
 \left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\widetilde{n}(f)\exp(2\pi i f \tau)\widetilde{n}^\ast(f')\exp(2\pi i f' \tau)}{\tau} \nonumber \\
  = {} & \lim_{T \rightarrow \infty} \recip{2T} \widetilde{n}(f)\widetilde{n}^\ast(f')\delta(f-f').
 \end{align}
-Taking the ensemble average of both sides, and exploiting the properties of the delta-function, we can use \eqnref{PSD-WK} to identify
+Taking the ensemble average of both sides, and exploiting the properties of the delta-function, we can use \eqnref{PSD-WK} to identify \citep{Cutler1994}
 \begin{equation}
 \left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = \recip{2} S_n(f)\delta(f-f').
 \end{equation}
