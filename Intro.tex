@@ -36,7 +36,7 @@ Despite its long history, we still do not know everything about gravity. There a
 
 \subsection{This work}
 
-This thesis is divided into two strands. The first is concerned with what we could learn about astrophysical systems from gravitational probes; the second is concerned with what we can learn about gravity from astronomical observations.  We shall consider strong-field tests and, in particular, gravitational waves (GWs). The former part concentrates on what we could hope to learn about massive black holes (MBHs) and their surrounding stellar environment from extreme-mass-ratio bursts (EMRBs). The latter looks at modifications to gravity in the metric $f(R)$ theory.
+This thesis is divided into two strands. The first (\partref{astro}) is concerned with what we could learn about astrophysical systems from gravitational probes; the second (\partref{grav}) is concerned with what we can learn about gravity from astronomical observations.  We shall consider strong-field tests and, in particular, gravitational waves (GWs). The former part concentrates on what we could hope to learn about massive black holes (MBHs) and their surrounding stellar environment from extreme-mass-ratio bursts (EMRBs). The latter looks at modifications to gravity in the metric $f(R)$ theory.
 
 \section{Strong-field tests and gravitational waves}
 
@@ -56,11 +56,10 @@ where $M$ is the gravitating mass and $r$ a characteristic distance. These are l
 
 Using these two parameters, we can map out the possible tests of GR. \Figref{Psaltis} shows a selection of current astrophysical tests.
 \begin{figure}
-  \begin{center}
+  \centering
   \includegraphics[width=0.6\textwidth]{./images/Fig_Psaltis_plot}
     \caption{Astrophysical tests of GR parametrised by the compactness and curvature scales they probe, adapted from \citet{Psaltis2008a}. The dashed line indicates the Schwarzschild radius $r\sub{S} = 2 GM /c^2$ for BHs of mass $5$--$10^7M_\odot$ and the cross indicates the surface of a NS.}   
     \label{fig:Psaltis} 
-  \end{center}
 \end{figure}
 Included are:
 \begin{itemize}
@@ -80,22 +79,20 @@ One particularly promising method of exploring strong-field regions would be to 
 
 Some intuition about GWs can be obtained from the more familiar EM waves (\citealt[sections 46--48 and 66--67]{Landau1975}; \citealt[sections 7.1 and 9.1--9.3]{Jackson1999}). These are oscillations of the electric and magnetic fields produced by accelerating charges whilst GWs are oscillations of the spacetime metric produced by accelerating masses. EM waves may be sourced by a time-varying charge dipole; as a consequence of conservation of momentum there is no time-varying mass dipole, so GWs are sourced by the mass quadrupole (\citealt[section 18.5]{Hobson2006}; \citealt[section 15.4]{Rindler2006}). Both waves propagate at the speed of light and have two (transverse) polarizations: for GWs these represent two orthogonal patterns of stretching and squeezing as shown in \figref{plus-cross} (\citealt[section 34]{Dirac1996}; \citealt[section 18.4]{Hobson2006})
 \begin{figure}
-  \begin{center}
+  \centering
   \includegraphics[width=0.7\textwidth]{./images/Polarization}
     \caption{The effect the two GW polarizations (plus $+$ and cross $\times$) on a ring of free particles as a function of time. The propagation direction is perpendicular to the ring. The wave period is $T$.}   
     \label{fig:plus-cross} 
-  \end{center}
 \end{figure}
 
 Visible light has been used by astronomers for millennia. In the twentieth century, the useful spectrum was extended through infrared to radio, and from ultraviolet to X-rays and gamma rays \citep[chapter 7]{Longair2006}. In the twenty-first century, we hope to move from EM to gravitational radiation. GWs encode valuable information about their sources, information that is accessible by other means.
 
 Just like EM waves, GWs come in a range of frequencies. The frequency is set by the scale of the source system: typically more massive objects have longer associated time-scales and so produce lower frequency radiation. \Figref{spectrum} show the GW spectrum with illustrative detectors and sources.
 \begin{figure}
-  \begin{center}
-  \includegraphics[width=0.65\textwidth]{./images/GW_spectrum}
+  \centering
+  \includegraphics[width=0.675\textwidth]{./images/GW_spectrum}
     \caption{Cartoon spectrum of GWs. Sources (see \secref{GW-sources}) are indicated by their characteristic amplitude as measured on Earth, detectors (see \secref{GW-det}) are characterised by their sensitivity curves. Adapted from \url{http://www.ast.cam.ac.uk/~rhc26/sources/}.}   
     \label{fig:spectrum} 
-  \end{center}
 \end{figure}
 Detectors are sensitive to specific frequency bands, the range of which is set by their size. The spectrum may be divided into: the extremely low frequency (ELF; not shown in the figure) regime, $\sim10^{-18}$--$10^{-15}\units{Hz}$, which may indirectly detected through observations of the polarization of the CMB \citep[e.g.,][]{Hu1997,Kamionkowski1997}; the very low frequency (VLF) regime, $\sim10^{-9}$--$10^{-6}\units{Hz}$, which is accessible to pulsar timing arrays (PTAs); the low frequency (LF) regime, $\sim10^{-6}$--$1\units{Hz}$, which could be measured by space-borne detectors, and the high frequency (HF) regime, $\sim1$--$10^4\units{Hz}$, which is the target range for ground-based detectors. Individual detectors are discussed in \secref{GW-det} and some example sources are introduced in \secref{GW-sources}.
 
@@ -127,7 +124,7 @@ There have even been suggestions for successors to LISA \citep{Crowder2005}. The
 
 GWs can be emitted by a variety of systems. To produce detectable signals the source must consist of extremely massive objects moving at a significant fraction of the speed of light. The quintessential source is a binary. These inpiral as a result of GW emission and eventually merge. There is a wide range of binary systems, examples include:
 \begin{itemize}
-\item Compact binaries (CBs) made up of two closely-orbiting stellar-mass COs, most commonly white dwarfs (WDs). These are the end result of the stellar evolution of a binary star system \citep{Postnov2006}. Wider CBs in the Galaxy are a source for space-borne detectors. Theses are so common in that some may form an unresolvable foreground \citep{Nelemans2009}; others would be guaranteed sources allowing us to verify the functionality of the detector \citep{Stroeer2006}. At the end of their inpiral, the system merges in a CB coalescence (CBC). This produces a target signal for ground-based detectors \citep{Abadie2010a} as well as a potential EM counterpart \citep[e.g.,]{Webbink1984,Iben1984,Metzger2010,Rezzolla2011,Nakar2011}. Observations of CBs will help us to understand stellar evolution, in particular common envelope evolution \citep{Ivanova2013}.
+\item Compact binaries (CBs) made up of two closely-orbiting stellar-mass COs, most commonly white dwarfs (WDs). These are the end result of the stellar evolution of a binary star system \citep{Postnov2006}. Wider CBs in the Galaxy are a source for space-borne detectors. Theses are so common in that some may form an unresolvable foreground \citep{Nelemans2009}; others would be guaranteed sources allowing us to verify the functionality of the detector \citep{Stroeer2006}. At the end of their inpiral, the system merges in a CB coalescence (CBC). This produces a target signal for ground-based detectors \citep{Abadie2010a} as well as a potential EM counterpart \citep[e.g.,][]{Webbink1984,Iben1984,Metzger2010,Rezzolla2011,Nakar2011}. Observations of CBs will help us to understand stellar evolution, in particular common envelope evolution \citep{Ivanova2013}.
 
 \item MBH binaries consisting of two BHs with masses $\gtrsim 10^5 M_\odot$ \citep{Sesana2013b}; BHs at the upper end of the mass spectrum ($\gtrsim10^8$--$10^9 M_\odot$) are sometimes referred to as supermassive black holes (SMBHs). MBHs are found in the centre of galaxies \citep{Lynden-Bell1969,Ferrarese2005}. When galaxies merge, their MBHs also spiral together \citep{Volonteri2003,Schnittman2013}. The inspiral, merger and subsequent ring-down of the new MBH are all promising sources of GWs \citep{Flanagan1998}. Mergers are potentially the loudest GW signals. The combination of many inspirals should result in a stochastic background observable with PTAs \citep{Sesana2008}.
 
@@ -154,7 +151,7 @@ The maximum mass of a NS depends upon its equation of state \citep[section 9.3]{
 
 BHs are fascinating objects: beautifully simple but with many complexities in their interactions. The first BH was suggest by \citet{Michell1784}. This is not the same as the object that we understand today, but a Newtonian analogue: a star so massive that its escape velocity exceed the speed of light. The first general relativistic BH was the much celebrated Schwarzschild solution \citep{Schwarzschild1916}. Discovered shortly after Einstein's publication of his general theory, this was the first exact solution other than flat spacetime. It is the metric for the space surrounding a spherically symmetric distribution of matter. It also describes a non-rotating, uncharged BH. A BH is a region of spacetime where gravity is so intense that the exists an event horizon, beyond which nothing can escape \citep[section 33.1]{Misner1973}. The nature of BHs not fully comprehended until many years after Schwarzschild published his metric; astrophysicists had to first realise the existence of WDs and NSs before they could accept the concept of completely collapsed objects \citep{Israel1987}.
 
-Following on from Schwarzschild's discovery, came the solution of Reissner and Nordstr{\"o}m for an electrically charged BH \citep{Reissner1916,Nordstrom1918}. There was then a long hiatus before Kerr's discovery of the metric for a rotating BH \citep{Kerr1963}. The set of BH solutions was completed by the discovey of the Kerr--Newman metric for charged, rotating BH \citep{Newman1965}. According to the no-hair theorem, any BH should be described completely by just its mass $M_\bullet$, spin and electric charge \citep{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975}. We expect the charge of an astrophysical BH to be negligible, hence we only need two parameters to describe the BHs of nature \citep[sections 36 and 51]{Chandrasekhar1992}.
+Following on from Schwarzschild's discovery, came the solution of Reissner and Nordstr{\"o}m for an electrically charged BH \citep{Reissner1916,Nordstrom1918}. There was then a long hiatus before Kerr's discovery of the metric for a rotating BH \citep{Kerr1963}. The set of BH solutions was completed by the discovery of the Kerr--Newman metric for charged, rotating BH \citep{Newman1965}. According to the no-hair theorem, any BH should be described completely by just its mass $M_\bullet$, spin and electric charge \citep{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975}. We expect the charge of an astrophysical BH to be negligible, hence we only need two parameters to describe the BHs of nature \citep[sections 36 and 51]{Chandrasekhar1992}.
 
 Astrophysical BHs are grouped by their mass. We shall discuss three partitions: stellar-mass BHs, intermediate-mass BHs (IMBHs) and MBHs. MBHs are of major interest in the is work and we pay them special attention.
 
@@ -167,12 +164,6 @@ it is often convenient to use the dimensionless spin
 a_\ast = \frac{cJ}{GM_\bullet^2}.
 \end{equation}
 The spin has a range of possible values $0 \leq |a_\ast| \leq 1$ \cite[section 66]{Chandrasekhar1992}. A spin $a_\ast = 0$ corresponds to non-rotating BH. In general a BH shall have some angular momentum, and we shall be mostly concerned with the Kerr solution.
-
-%%The radiation generated during the final merger and ring-down of two BHs will offer tests of GR in the highest energy and most dynamical sector, but it is thought that the most sensitive tests will come from LISA observations of extreme-mass-ratio inspirals (EMRIs)~\citep{Amaro-Seoane2007}. An EMRI involves the inspiral of a stellar-mass compact object, a white dwarf, neutron star or BH, into a massive BH in the centre of a galaxy. The mass of the compact object is typically $1$--$10M_{\odot}$, while the mass of the massive BH (for sources in the LISA band) will be $\sim10^5$--$10^7 M_\odot$, so the mass-ratio is of the order of $\sim10^{-7}$--$10^{-4}$. This extreme mass-ratio means that the inspiral proceeds slowly, and on short time-scales the compact object acts like a test particle moving in the background spacetime of the central BH. LISA will detect $\sim10^5$ cycles of gravitational radiation generated while the compact object is in the strong field of the spacetime, and this encodes a detailed map of the spacetime structure outside the central BH. This idea was first elucidated by Ryan~\citep{Ryan1995c, Ryan1997a}, who showed that, for an arbitrary stationary and axisymmetric spacetime in GR, the multipole moments of the spacetime enter at different orders in an expansion of the frequency of small vertical or radial oscillations of circular, equatorial orbits. As these frequencies are in principle observable in the GWs generated during an inspiral, it should be possible to measure the multipole moments from an EMRI observation and hence test whether the central object is a Kerr BH: according to the no-hair theorem, a Kerr BH is described completely by its mass $M$ and spin angular momentum $J$~\cite{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975}, and its mass multipole $M_l$ ($M_0 \equiv M$) and mass-current multipole moments $S_l$ ($S_1 \equiv J$) are determined from these according to~\cite{Hansen1974}
-%\begin{equation}
-%M_l + iS_l = M \left(i\frac{J}{M}\right)^l .
-%\end{equation}
-%The multipole expansion is not a convenient way to characterise arbitrary spacetimes, since the Kerr metric itself requires an infinite number of multipoles to fully characterise. Subsequent authors have instead adopted the approach of considering bumpy BH spacetimes~\citep{Collins2004, Glampedakis2006a, Barack2007, Gair2008a}, which deviate from the Kerr metric by a small amount and depend on some parameter, $\epsilon$, such that $\epsilon = 0$ is precisely the Kerr solution. Relatively small perturbations to the Kerr solution can be detected in EMRI observations due to small differences in the precession frequencies that accumulate over the $100\,000$ waveform cycles that will be detected. There are also certain qualitative features that could be smoking-guns for a departure from the Kerr metric, such as ergodicity in the orbits~\citep{Gair2008a}, persistent resonances~\citep{Lukes-Gerakopoulos2010} or a shift in the frequency of plunge~\citep{Kesden2005, Gair2008a}.
 
 \subsubsection{Stellar-mass black holes}
 
@@ -204,10 +195,11 @@ It has been suggested that the spin of the Galaxy's MBH could be inferred from c
 
 %This latter method, combined with a disc-seismology model, has produced a value of the dimensionless spin of $a_\ast = 0.44 \pm 0.08$. To obtain this result \citet{Kato2010} have combined their observations of Sgr A* with observations of galactic X-ray sources containing solar mass BHs, to find a best-fit unique spin parameter for all BHs. However, it is not clear that all BHs should share the same value of the spin parameter; especially considering that the BHs considered here differ in mass by six orders of magnitude, with none in the intermediate range. Even if BH spin is determined by a universal process, we still expect some distribution of spin parameters \citep{King2008, Berti2008}. Thus we cannot precisely determine the spin of the Galactic Centre's MBH from an average including other BHs.
 
-A further possibility is to use VLBI to to resolve features of the size of the order of the event horizon \citep{Doeleman2008,Fish2010}. The Galactic MBH, as a consequence of its mass and proximity, is the prime candidate, subtending about $50\units{\upmu as}$ on the sky \citep{Broderick2009,Johannsen2012a}. With this capability, it would be possible to directly image accretion flows down to the horizon and also observe the MBH's shadow. This is the dark region surrounding the BH from which no light can reach the observer; it is bounded by the innermost photon orbit \citep[section 63]{Chandrasekhar1992}. The position of the horizon and the exact shape of the shadow are determined by the metric. By measuring them it may be possible to measure the spin and inclination of the BH \citep{Hioki2009a}, assuming it is Kerr, check whether it is an over-extreme Kerr BH \citep{Bambi2009}, or even probe deviations from Kerr \citep{Johannsen2010a, Johannsen2010b}.%\footnote{Observing deviations from Kerr would disprove the no-hair theorem (possibly admitting naked singularities); suggest a compact object described by an alternative metric such as a Manko-Novikov solution \citep{Manko1992, Gair2008a}; provide evidence for a non-GR theory of gravity, or some combination of these options.}
+A further possibility is to use VLBI to to resolve features of the size of the order of the event horizon \citep{Doeleman2008,Fish2010}. The Galactic MBH, as a consequence of its mass and proximity, is the prime candidate, subtending about $50\units{\upmu as}$ on the sky \citep{Broderick2009,Johannsen2012a}. With this capability, it would be possible to directly image accretion flows down to the horizon and also observe the MBH's shadow. This is the dark region surrounding the BH from which no light can reach the observer; it is bounded by the innermost photon orbit \citep[section 63]{Chandrasekhar1992}. The position of the horizon and the exact shape of the shadow are determined by the metric. By measuring them it may be possible to measure the spin and inclination of the BH \citep{Hioki2009a}, assuming it is Kerr, check whether it is an over-extreme Kerr BH \citep{Bambi2009}, or even probe deviations from Kerr \citep{Johannsen2010a, Johannsen2010b}.%\footnote{Observing deviations from Kerr would disprove the no-hair theorem (possibly admitting naked singularities); suggest a compact object described by an alternative metric such as a Manko-Novikov solution \citep{Manko1992, Gair2008}; provide evidence for a non-GR theory of gravity, or some combination of these options.}
 The shape of the shadow of a Kerr BH is shown in \figref{Shadow}.
 \begin{figure}%[htb]
-  \begin{center}
+\vspace{0.5\baselineskip}
+  \centering
    \subfigure[$a = -0.2 M_\bullet$, $\theta\sub{obs} = \pi/2$]{\resizebox{0.3\textwidth}{!}{\import{./Images/}{Shadow_2-psfrag.tex}}} \quad
    \subfigure[$a = -0.2 M_\bullet$, $\theta\sub{obs} = \pi/6$]{\resizebox{0.3\textwidth}{!}{\import{./Images/}{Shadow_2_6-psfrag.tex}}} \quad
    \subfigure[$a = 0.4 M_\bullet$, $\theta\sub{obs} = \pi/2$]{\resizebox{0.3\textwidth}{!}{\import{./Images/}{Shadow_4-psfrag.tex}}} \\
@@ -216,63 +208,62 @@ The shape of the shadow of a Kerr BH is shown in \figref{Shadow}.
    \subfigure[$a = 0.9 M_\bullet$, $\theta\sub{obs} = \pi/6$]{\resizebox{0.3\textwidth}{!}{\import{./Images/}{Shadow_9_6-psfrag.tex}}} \\
    \subfigure[$a = 0.998 M_\bullet$, $\theta\sub{obs} = \pi/2$]{\resizebox{0.3\textwidth}{!}{\import{./Images/}{Shadow_998-psfrag.tex}}} \quad  
    \subfigure[$a = 0.998 M_\bullet$, $\theta\sub{obs} = \pi/6$]{\resizebox{0.3\textwidth}{!}{\import{./Images/}{Shadow_998_6-psfrag.tex}}}
-    \caption{Apparent shape of the shadow of a Kerr BH viewed at infinity. $\alpha$ and $\beta$ are the position coordinates projected onto the celestial sphere, and $\theta\sub{obs}$ is the polar coordinate of the observer \citep[section 63]{Chandrasekhar1992}. When $\theta\sub{obs} = 0, \pi$ we look along the spin axis and see a circular shadow because of axisymmetry.} 
+    \caption{Apparent shape of a Kerr BH shadow viewed from infinity, $\alpha$ and $\beta$ are the position coordinates projected onto the sky, and $\theta\sub{obs}$ is the polar coordinate of the observer \citep[section 63]{Chandrasekhar1992}. The shadow is circular when viewed along the spin axis ($\theta\sub{obs} = 0, \pi$).} 
     \label{fig:Shadow}
-  \end{center}
 \end{figure}
 The shadow remains near circular for spin values $a \lesssim 0.9 M_\bullet$ regardless of inclination even though the Kerr spacetime is highly non-spherically symmetric \citep{Johannsen2010b}. Weak constraints already exist from VLBI observations \citep{Broderick2009a,Broderick2011}; these determine that the spin is likely not high: $|a_\ast| = 0$--$0.64$ at $68\%$ confidence and $|a_\ast| = 0$--$0.86$ at $95\%$ confidence. Determining the spin to high precision is difficult. 
 
 The spins of MBHs in active galactic nuclei have been inferred using X-ray observations of $\mathrm{Fe}$ $\mathrm{K}$ emission lines \citep{Miller2007, McClintock2011}. So far this has been done for a handful of other galaxies' MBHs, as shown in \tabref{X-ray}.
 \begin{table}\footnotesize
 \centering
-\begin{tabular}{l c l }
+\begin{tabular}{l D{,}{.}{3.11} l }
 \toprule
 \multicolumn{1}{c}{AGN} & \multicolumn{1}{c}{$a_\ast$} & \multicolumn{1}{c}{Study} \\ \midrule 
-1H 0323+342 & $>0.37$ & \citet{Walton2013} \\ % 90%
-1H 0419$-$577 & $>0.89$ & \citet{Walton2013} \\ % 90%
-1H 0707$-$495 & $\geq 0.976$ & \citet{Zoghbi2010} \\ % 90%
-3C 120 & $0.994^{+0.002}_{-0.003}$ & \citet{Lohfink2013} \\
-3C 382	& $<0.81$ & \citet{Walton2013} \\ % 90%
+1H 0323+342 & >0,37 & \citet{Walton2013} \\ % 90%
+1H 0419$-$577 & >0,89 & \citet{Walton2013} \\ % 90%
+1H 0707$-$495 & \geq 0,976 & \citet{Zoghbi2010} \\ % 90%
+3C 120 & 0,994^{+0.002}_{-0.003} & \citet{Lohfink2013} \\
+3C 382	& <0,81 & \citet{Walton2013} \\ % 90%
 %Ark 120 & $<0.94$ & \citet{Patrick2011} \\ % 90%
-Ark 120 & $0.74^{+0.19}_{-0.50}$$^\dagger$ & \citet{Nardini2011} \\ % 99% confidence
- & $0.64^{+0.19}_{-0.11}$ & \citet{Walton2013} \\ % 90%
-Ark 564 & $0.96^{+0.01}_{-0.07}$ & \citet{Walton2013} \\ % 90%
-Fairall 9 & $0.60 \pm 0.07$$^\ast$ & \citet{Schmoll2009} \\ % 68%
- & $0.44^{+0.04}_{-0.11}$ & \citet{Patrick2011} \\ % 90%
- & $0.39^{+0.48}_{-0.30}$ & \citet{Emmanoulopoulos2011} \\ % 90%
- & $0.67^{+0.10}_{-0.11}$ & \citet{Patrick2011a} \\ % 90%
- & $0.52^{+0.19}_{-0.15}$ & \citet{Lohfink2012} \\ % 90%
- & $0.82^{+0.09}_{-0.19}$ & \citet{Walton2013} \\ % 90% 
-IRAS 00521$-$7054 & $0.97^{+0.03}_{-0.13}$ & \citet{Tan2012} \\ % 90%
-IRAS 13224$-$3809 & $0.988 \pm 0.001$$^\ast$ & \citet{Fabian2013} \\ % 68%
+Ark 120 & 0,74^{+0.19}_{-0.50}{^\dagger} & \citet{Nardini2011} \\ % 99% confidence
+ & 0,64^{+0.19}_{-0.11} & \citet{Walton2013} \\ % 90%
+Ark 564 & 0,96^{+0.01}_{-0.07} & \citet{Walton2013} \\ % 90%
+Fairall 9 & 0,60 \pm 0.07{^\ast} & \citet{Schmoll2009} \\ % 68%
+ & 0,44^{+0.04}_{-0.11} & \citet{Patrick2011} \\ % 90%
+ & 0,39^{+0.48}_{-0.30} & \citet{Emmanoulopoulos2011} \\ % 90%
+ & 0,67^{+0.10}_{-0.11} & \citet{Patrick2011a} \\ % 90%
+ & 0,52^{+0.19}_{-0.15} & \citet{Lohfink2012} \\ % 90%
+ & 0,82^{+0.09}_{-0.19} & \citet{Walton2013} \\ % 90% 
+IRAS 00521$-$7054 & 0,97^{+0.03}_{-0.13} & \citet{Tan2012} \\ % 90%
+IRAS 13224$-$3809 & 0,988 \pm 0.001{^\ast} & \citet{Fabian2013} \\ % 68%
 %MGC--02-14-009 & $<0.88$ & \citet{Patrick2011} \\ % 90%
-MCG--6-30-15 & $0.989^{+0.009}_{-0.002}$ & \citet{Brenneman2006} \\ % 90%
- & $0.86^{+0.01}_{-0.02}$ & \citet{delaCallePerez2010} \\ % 90%
- & $0.49^{+0.20}_{-0.12}$ & \citet{Patrick2011a} \\ % 90%
-Mrk 79 & $0.7 \pm 0.1$ & \citet{Gallo2011} \\ % 90%
-Mrk 110 & $0.96^{+0.03}_{-0.07}$ & \citet{Walton2013} \\ % 90%
-Mrk 335 & $0.70^{+0.12}_{-0.01}$ & \citet{Patrick2011} \\ % 90%
- & $0.83^{+0.09}_{-0.13}$ & \citet{Walton2013} \\ % 90%
-Mrk 359 & $0.66^{+0.30}_{-0.54}$ & \citet{Walton2013} \\ % 90%
-Mrk 509 & $0.78^{+0.03}_{-0.04}$ & \citet{delaCallePerez2010} \\ % 90%
- & $0.36^{+0.20}_{-0.37}$ & \citet{Walton2013} \\ % 90%
-Mrk 841 & $>0.52$ & \citet{Walton2013} \\ % 90%
-Mrk 1018 & $0.58^{+0.36}_{-0.54}$ & \citet{Walton2013} \\ % 90%
-NGC 1365 & $\geq 0.84$ & \citet{Risaliti2013} \\ % 90%
-NGC 3783 & $\geq 0.88$$^\dagger$ & \citet{Brenneman2011} \\ % 99%
- & $< 0.32$ & \citet{Patrick2011a} \\ % 90%
-NGC 4051 & $< 0.94$ & \citet{Patrick2011a} \\ % 90%
-NGC 7469 & $0.69^{+0.09}_{-0.09}$ & \citet{Patrick2011} \\ % 90%
- & $0.64^{+0.13}_{-0.20}$ & \citet{Walton2013} \\ % 90%
+MCG--6-30-15 & 0,989^{+0.009}_{-0.002} & \citet{Brenneman2006} \\ % 90%
+ & 0,86^{+0.01}_{-0.02} & \citet{delaCallePerez2010} \\ % 90%
+ & 0,49^{+0.20}_{-0.12} & \citet{Patrick2011a} \\ % 90%
+Mrk 79 & 0,7 \pm 0.1 & \citet{Gallo2011} \\ % 90%
+Mrk 110 & 0,96^{+0.03}_{-0.07} & \citet{Walton2013} \\ % 90%
+Mrk 335 & 0,70^{+0.12}_{-0.01} & \citet{Patrick2011} \\ % 90%
+ & 0,83^{+0.09}_{-0.13} & \citet{Walton2013} \\ % 90%
+Mrk 359 & 0,66^{+0.30}_{-0.54} & \citet{Walton2013} \\ % 90%
+Mrk 509 & 0,78^{+0.03}_{-0.04} & \citet{delaCallePerez2010} \\ % 90%
+ & 0,36^{+0.20}_{-0.37} & \citet{Walton2013} \\ % 90%
+Mrk 841 & >0,52 & \citet{Walton2013} \\ % 90%
+Mrk 1018 & 0,58^{+0.36}_{-0.54} & \citet{Walton2013} \\ % 90%
+NGC 1365 & \geq 0,84 & \citet{Risaliti2013} \\ % 90%
+NGC 3783 & \geq 0,88{^\dagger} & \citet{Brenneman2011} \\ % 99%
+ & < 0,32 & \citet{Patrick2011a} \\ % 90%
+NGC 4051 & < 0,94 & \citet{Patrick2011a} \\ % 90%
+NGC 7469 & 0,69^{+0.09}_{-0.09} & \citet{Patrick2011} \\ % 90%
+ & 0,64^{+0.13}_{-0.20} & \citet{Walton2013} \\ % 90%
 %RBS 1125 & $\geq 0.60$ & \citet{Minniutti2010} \\ % Determined from soft excess smoothness which requires a high degree of relativistic blurring, rather than the relativistic iron line shape.
-PDS 456 & $>0.96$ & \citet{Walton2013} \\ % 90%
-PKS 0558--504 & $>0.95$ & \citet{Walton2013} \\ % 90%
-RBS 1124 & $>0.97$ & \citet{Walton2013} \\ % 90%
-SWIFT J0501.9$-$3239 & $>0.99$ & \citet{Walton2013} \\ % 90%
-SWIFT J2127.4+5654 & $0.6 \pm 0.2$ & \citet{Miniutti2009} \\ % 90%
- & $0.70^{+0.10}_{-0.14}$ & \citet{Patrick2011} \\ % 90%
-Ton S180 & $0.92^{+0.03}_{-0.11}$ & \citet{Walton2013} \\ % 90%
-UGC 6728 & $>0.71$ & \citet{Walton2013} \\ % 90%
+PDS 456 & >0,96 & \citet{Walton2013} \\ % 90%
+PKS 0558--504 & >0,95 & \citet{Walton2013} \\ % 90%
+RBS 1124 & >0,97 & \citet{Walton2013} \\ % 90%
+SWIFT J0501.9$-$3239 & >0,99 & \citet{Walton2013} \\ % 90%
+SWIFT J2127.4+5654 & 0,6 \pm 0.2 & \citet{Miniutti2009} \\ % 90%
+ & 0,70^{+0.10}_{-0.14} & \citet{Patrick2011} \\ % 90%
+Ton S180 & 0,92^{+0.03}_{-0.11} & \citet{Walton2013} \\ % 90%
+UGC 6728 & >0,71 & \citet{Walton2013} \\ % 90%
  \bottomrule
 \end{tabular}
 \caption{Measurements of MBH spin from iron emission lines. Confidence levels are $90\%$ except where indicated otherwise: an asterisk ($^\ast$) is used for $68\%$ and an obelisk ($^\dagger$) is used for $99\%$. The scatter in results indicates the complexities of modelling the accretion disc.\label{tab:X-ray}}
@@ -295,11 +286,11 @@ There are a plethora of modified gravity theories \citep{Clifton2012}. Perhaps t
 \begin{equation}
 \mu\left(\frac{a}{a_0}\right)\boldsymbol{a} = \boldsymbol{g}
 \end{equation}
-where $\boldsymbol{g}$ is the Newtonian gravitational acceleration, $\boldsymbol{a}$ is the acceleration, $a_0 \approx 10^{-10}\units{m\,s^{-2}}$ is the new acceleration scale and $\mu$ is an interpolation function with properties $\mu(x) \rightarrow 1$ for $x \gg 1$ and $\mu(x) \rightarrow x$ for $x \ll 1$. There are a variety of relativistic theories that can reproduce this behaviour, including Einstein--\ae{}ther and tensor--vector--scalar (TeVeS) theory \citep{Bekenstein2006}. The theory works well for describing galactic-scale systems but struggles to reproduce the cosmological predictions of the cold dark matter paradigm. It may be possible to constrain MOND theories in the low-acceleration regime by using LISA Pathfinder to measure acceleration at the Earth--Sun saddle point \citep{Magueijo2011,Galianni2011}. Most alternative theories, however, reduce to the Newtonian limit.
+where $\boldsymbol{g}$ is the Newtonian gravitational field strength, $\boldsymbol{a}$ is the acceleration, $a_0 \approx 10^{-10}\units{m\,s^{-2}}$ is the new acceleration scale and $\mu$ is an interpolation function with properties $\mu(x) \rightarrow 1$ for $x \gg 1$ and $\mu(x) \rightarrow x$ for $x \ll 1$. There are a variety of relativistic theories that can reproduce this behaviour, including Einstein--\ae{}ther theory and tensor--vector--scalar (TeVeS) theory \citep{Bekenstein2006}. The theory works well for describing galactic-scale systems but struggles to reproduce the cosmological predictions of the cold dark matter paradigm. It may be possible to constrain MOND theories in the low-acceleration regime by using LISA Pathfinder to measure acceleration at the Earth--Sun saddle point \citep{Magueijo2011,Galianni2011}. Most alternative theories, however, reduce to the Newtonian limit.
 
 Alternative theories of gravity can be created by adding new fields or modifying the form of the gravitational action \citep{Gair2012a}.\footnote{Here ``or'' is inclusive. In some cases a modification of the gravitational action can be recast as introducing a new field \citep[e.g.,][]{Wands1994,Jacobson2010}.} We shall introduce a few to illustrate the range.
 
-Including a scalar field in addition to the metric tensor produces scalar--tensor gravity \citep{Wagoner1970,Nordtvedt1970}. The best known example is Brans--Dicke gravity; this has a scalar field replace the gravitational constant \citep{Brans1961,Dicke1962}. Deviations from GR can be quantified in terms of the the Brans--Dicke coupling parameter $\omega\sub{BD}$, as $\omega\sub{BD} \rightarrow \infty$ observable differences become smaller while in a natural theory we might expect $\omega\sub{BD} \sim \order{1}$. Measurements of light deflection from the Cassini--Huygens mission \citep{Bertotti2003} constrain Brans--Dicke to be close to GR as $\omega\sub{BD} > 4 \times 10^4$ \citep{Will2006}.
+Including a scalar field in addition to the metric tensor produces scalar--tensor gravity \citep{Wagoner1970,Nordtvedt1970,Fujii2003}. The best known example is Brans--Dicke gravity; this has a scalar field replace the gravitational constant \citep{Brans1961,Dicke1962}. Deviations from GR can be quantified in terms of the the Brans--Dicke coupling parameter $\omega\sub{BD}$, as $\omega\sub{BD} \rightarrow \infty$ observable differences become smaller while in a natural theory we might expect $\omega\sub{BD} \sim \order{1}$. Measurements of light deflection from the Cassini--Huygens mission \citep{Bertotti2003} constrain Brans--Dicke to be close to GR as $\omega\sub{BD} > 4 \times 10^4$ \citep{Will2006}.
 
 Vector--tensor gravity introduces a vector field \citep{Will1972,Nordtvedt1972}. This is typically time-like and in Einstein--\ae{}ther theory is constrained to have unit norm \citep{Jacobson2001,Jacobson2008}. These theories have a preferred reference frame specified by the vector field. Preferred frame effects can be constrained by careful observational measurements \citep[chapter 8]{Will1993}.
 
@@ -321,16 +312,26 @@ The parametrized post-Newtonian (PPN) formalism provides a simple means of chara
 
 The idea probe of strong-field gravity are GWs. Gravitational radiation can be modified in alternative theories of gravity. One obviously modification is the addition of other polarizations. There may be up to six polarizations in a general metric theory (\citealt{Eardley1973}; \citealt[section 10.2]{Will1993}): as well as the two standard tensor modes, $h_+$ and $h_\times$, there can be two scalar modes (longitudinal and transverse) and two vector modes (assuming a wave propagating in the $z$-direction, there is one mode that oscillates in the $x$--$z$ plane and another in the $y$--$z$ plane). These other polarizations are observable with GW detectors \citep{Tinto2010,Alves2011,Blaut2012}; their discovery would be decisive evidence against GR.
 
-PPE
+Restricting ourselves to the standard two polarizations, modifications to the gravitational waveform can be described in terms of the parametrized post-Einsteinian (PPE) framework \citep{Yunes2009a}. This follows in the footsteps of the PPN framework by providing a set of parameters that can be adjusted to fit different theories. Constraining these can place limits on deviations from GR or select viable alternative theories \citep{Cornish2011}. The PPE formalism was developed to describe the quasi-circular inspiral, merger and ring-down of binary non-spinning BH-like objects. Although designed for measuring anomalies in GWs, it is possible to impose some bounds on the plausible range of post-Einsteinian parameters using observations of binary pulsars \citep{Yunes2010}.
 
-In GR, black holes obey the no-hair theorem: astrophysical black holes can be described by just two parameters, their mass and spin. Higher multipole moments can be expressed in terms of these quantities. One potential correction to consider is that one of these higher order multipoles deviates from these relation (Gair  Yunes 2011). The resulting spacetime is known as a bumpy black hole. The change in the spacetime can leave an imprint on EMRIs. It is also possible that it may be possible to observe differences in the X-rays emitted from accretion discs about black holes.
+Measuring the propagation speed of GWs is another test of relativistic gravity \citep[section 10.1]{Will1993}. Any deviation from $c$ would be evidence for an alternative theory. This can happen in theories with massive gravitons \citep{Babak2003,Goldhaber2010}. In this event, GWs also become dispersive. If there additional polarization modes, these can travel at different speeds. The GW speed can be measured by comparing arrival times for EM counterparts \citep[e.g.,]{Cooray2004,Kocsis2008} or by monitoring the phase evolution of an inspiral \citep{Will1998,Berti2011}.
 
-%The radiation generated during the final merger and ring-down of two BHs will offer tests of GR in the highest energy and most dynamical sector, but it is thought that the most sensitive tests will come from LISA observations of extreme-mass-ratio inspirals (EMRIs)~\citep{Amaro-Seoane2007}. An EMRI involves the inspiral of a stellar-mass compact object, a white dwarf, neutron star or BH, into a massive BH in the centre of a galaxy. The mass of the compact object is typically $1$--$10M_{\odot}$, while the mass of the massive BH (for sources in the LISA band) will be $\sim10^5$--$10^7 M_\odot$, so the mass-ratio is of the order of $\sim10^{-7}$--$10^{-4}$. This extreme mass-ratio means that the inspiral proceeds slowly, and on short time-scales the compact object acts like a test particle moving in the background spacetime of the central BH. LISA will detect $\sim10^5$ cycles of gravitational radiation generated while the compact object is in the strong field of the spacetime, and this encodes a detailed map of the spacetime structure outside the central BH. This idea was first elucidated by Ryan~\citep{Ryan1995c, Ryan1997a}, who showed that, for an arbitrary stationary and axisymmetric spacetime in GR, the multipole moments of the spacetime enter at different orders in an expansion of the frequency of small vertical or radial oscillations of circular, equatorial orbits. As these frequencies are in principle observable in the GWs generated during an inspiral, it should be possible to measure the multipole moments from an EMRI observation and hence test whether the central object is a Kerr BH: according to the no-hair theorem, a Kerr BH is described completely by its mass $M$ and spin angular momentum $J$~\cite{Israel1967, Israel1968, Carter1971, Hawking1972, Robinson1975}, and its mass multipole $M_l$ ($M_0 \equiv M$) and mass-current multipole moments $S_l$ ($S_1 \equiv J$) are determined from these according to~\cite{Hansen1974}
-%\begin{equation}
-%M_l + iS_l = M \left(i\frac{J}{M}\right)^l .
-%\end{equation}
-%The multipole expansion is not a convenient way to characterise arbitrary spacetimes, since the Kerr metric itself requires an infinite number of multipoles to fully characterise. Subsequent authors have instead adopted the approach of considering bumpy BH spacetimes~\citep{Collins2004, Glampedakis2006a, Barack2007, Gair2008a}, which deviate from the Kerr metric by a small amount and depend on some parameter, $\epsilon$, such that $\epsilon = 0$ is precisely the Kerr solution. Relatively small perturbations to the Kerr solution can be detected in EMRI observations due to small differences in the precession frequencies that accumulate over the $100\,000$ waveform cycles that will be detected. There are also certain qualitative features that could be smoking-guns for a departure from the Kerr metric, such as ergodicity in the orbits~\citep{Gair2008a}, persistent resonances~\citep{Lukes-Gerakopoulos2010} or a shift in the frequency of plunge~\citep{Kesden2005, Gair2008a}.
+As well as scrutinizing the gravitational radiation, we can use it to study its source. The BHs of GR are Kerr solutions and so specified entirely by their mass and spin. The mass multipole $M_\ell$ ($M_0 \equiv M_\bullet$) and mass-current multipole moments $S_\ell$ ($S_1 \equiv J/c$) are determined from these according to \cite{Hansen1974}
+\begin{equation}
+M_\ell + iS_\ell = M_\bullet \left(ia\right)^\ell.
+\end{equation}
+Checking this consistency relation for higher multipoles is a method of testing whether a CO is a Kerr BH as expected \citep{Gair2012}. For example, in Chern--Simmons gravity, the BH solution differs at the fourth multipole \citep{Sopuerta2009a}.  The structure of the spacetime about an object is determined by these multipole moments \citep{Geroch1970}. EMRI observations can be used to build a detailed map of the spacetime of a massive CO. Information regarding the multipole moments is encoded within the frequency spectrum of the GWs \citep{Ryan1995,Ryan1997}.
+
+Introducing higher-order multipole moments results in the creation of a bumpy BH. These have been studied to discover the observable consequences of deviations from Kerr. A variety of different bumpy metrics have been considered, these include stationary and axisymmetric deformations of Schwarzschild, which are solutions of the Einstein equations \citep{Collins2004} and, similarly, deformations of Kerr \citep{Vigeland2010a}; a quasi-Kerr metric with an arbitrary mass quadrupole \citep{Glampedakis2006a,Barack2007}; the metric of \citet{Manko1992}, which is a solution of Einstein's equations with arbitrary higher-order mass multipole moments \citep{Gair2008}; perturbed Kerr metrics that are not required to satisfy the Einstein equations but do preserve an approximate Carter-like constant \citep{Vigeland2011,Gair2011}, and an axisymmetric Kerr-like metric, where the perturbations are different powers of $M_\bullet/r$, which is neither required to be a solution of the Einstein equations nor have full integrability of its geodesic motion \citep{Johannsen2011}. All these metrics deviate from the standard Kerr solutions by a small amount and reduce down to precisely the Kerr solutions as the perturbation goes to zero; if the perturbation is large enough it can be detected with EMRIs.
 
 %%The majority of the work to date has focused on spacetimes that are solutions in GR, but which deviate from the Kerr solution. However, if GR was not the correct theory of gravity, this could also lead to detectable signatures in the observed gravitational waves. Certain alternative theories of gravity, including $f(R)$, do admit the Kerr metric as a solution, since it has vanishing Ricci tensor, $R_{\mu\nu} = 0$~\cite{Psaltis2008, Yunes2011}. However, the Kerr metric need not be the expected end state of gravitational collapse~\cite{Barausse2008}. If a Kerr BH existed in an alternative theory, the geodesics would be the same, but the energy flux carried by the GWs could still be different, and so differences would show up in the rate of inspiral; although in many cases these differences do not appear at leading order. In most cases, however, either the Kerr metric is not admitted as a solution, or it is not the correct metric to describe collapsed objects~\cite{Yunes2011}. Waveform differences then show up as a result of the differences in the instantaneously-geodesic orbits of the compact object involved in the EMRI. Since the leading-order energy-momentum tensor of the GWs often takes the same form as in GR~\cite{Stein2011}, this is the primary effect and means the problem of testing alternative theories through EMRI observations is equivalent to the spacetime mapping programme within GR described previously.
 
+%There are also certain qualitative features that could be smoking-guns for a departure from the Kerr metric, such as ergodicity in the orbits~\citep{Gair2008}, persistent resonances~\citep{Lukes-Gerakopoulos2010} or a shift in the frequency of plunge~\citep{Kesden2005, Gair2008}.
+
 %%As a consequence of the difficulties of solving for GW emission in alternative theories, work on testing alternative theories of gravity using LISA EMRIs has so far been restricted to a few cases. In Brans-Dicke gravity, in which the gravitational field is coupled to a scalar field, differences show up due to a modification to the inspiral rate that arises from dipole radiation of the scalar field~\cite{Berti2005}. Neutron star EMRIs are required since the dipole radiation depends on a sensitivity difference between the two objects, and the sensitivity is the same for all BHs. Lower mass central BHs provide the most powerful constraints, but a LISA observation of a neutron star EMRI into a $10^4 M_{\odot}$ BH could place constraints on the Brans-Dicke coupling parameter that are competitive with Solar System constraints~\cite{Berti2005}. In dynamical Chern-Simons modified gravity, the action is modified by a parity-violating correction, inspired by string theory~\cite{Alexander2008, Alexander2009a}. In this case, the BH solution differs from the Kerr solution at the fourth multipole, $l = 4$, but the energy-momentum tensor of gravitational radiation takes the same form as in GR~\cite{Sopuerta2009a}. LISA observations of EMRIs should place constraints on the Chern-Simons coupling parameter that are an order of magnitude better than will be possible from binary pulsar observations, although a full analysis accounting for parameter degeneracies has not yet been carried out~\cite{Sopuerta2009a}. 
+
+\section{Overview}
+
+Developments in our theoretical understanding of gravity are driven by astronomical observations. Astrophysical systems are dominated by gravitational interactions, our understanding of them can be enhanced by using gravitational probes. To date, gravity has only be studied in the weak-field regime. Exploring the strong-field regime, such as close to COs such as BHs, could deliver new insights. We could learn about the evolution of MBHs, and by implication their surrounding galaxies, or uncover modifications to GR. One promising means of delving into the strong-field, is through GW astronomy, ripples in spacetime itself. GW astronomy is in its infancy, what it shall teach us is yet to be revealed, but there is scope for exciting discovery.
+
+We shall study what we learn from strong-field tests and GWs. In \partref{astro} we investigate using GWs, specifically EMRBs, to learn about MBHs. IN \partref{grav} we investigate the observable signatures of metric $f(R)$-gravity.

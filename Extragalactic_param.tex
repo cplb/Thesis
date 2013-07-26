@@ -55,10 +55,10 @@ For each, we calculated SNRs at $\sim 10^4$ different periapse distances, unifor
 
 The scaled SNRs are plotted in \figref{scaled-SNR}. The plotted points are the average values of $\ln \rho_\ast$ calculated for each periapse distance.
 \begin{figure}
-\begin{center}
+\centering
  \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_scaled_fit}
- \caption{Scaled SNR for EMRBs as a function of characteristic frequency. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.\label{fig:scaled-SNR}}
-   \end{center}
+ \caption{Scaled SNR for EMRBs as a function of characteristic frequency. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.}
+ \label{fig:scaled-SNR}
 \end{figure}
 The curve shows that EMRB SNR does scale as expected, and $\rho_\ast$ can be described as a one-parameter curve. There remains some scatter about this: the larger scatter at low frequencies is a consequence of numerical noise from dealing with very low SNRs from Andromeda; removing the averaging over ancillary parameters increases the scatter to be typically about an order of magnitude in total. However, the fit is good enough for rough calculations.
 
@@ -79,10 +79,10 @@ Using our fitted trends, it is possible to invert \eqnref{SNR-scaling} to find t
 
 \Figref{detect} shows the detectability limit for $\mu = 1 M_\odot$ and $\mu = 10 M_\odot$ COs. In addition to the sample of MBHs from \tabref{MBHs} we plot additional nearby MBHs \citep[see][and references therein]{Graham2008,Graham2011,Graham2013}.
 \begin{figure}
-\begin{center}
+\centering
  \includegraphics[width=0.6\textwidth]{./images/Fig_M_R_detect_1}
- \caption{Limit of detection using LISA for EMRBs originating from MBHs of mass $M$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The thicker line is the limit for non-rotating MBHs, the thinner is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The crosses indicate the selected sample of MBHs used to calibrate the curve and the dots indicate other nearby MBHs with known masses. The trends should not be extrapolated to lower MBH masses.\label{fig:detect}}
-   \end{center}
+ \caption{Limit of detection using LISA for EMRBs originating from MBHs of mass $M$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The thicker line is the limit for non-rotating MBHs, the thinner is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The crosses indicate the selected sample of MBHs used to calibrate the curve and the dots indicate other nearby MBHs with known masses. The trends should not be extrapolated to lower MBH masses.}
+ \label{fig:detect}
 \end{figure}
 The more massive COs are detectable to a greater distance, but are also the more likely sources since mass segregation ensures that they are more likely to be on orbits that pass close to the MBH \citep{Bahcall1977, Alexander2009, Preto2010}. Limits using periapsis of $r\sub{g}$ and $4r\sub{g}$ are shown: intermediate spin values would have limits between these two. In any case, these are strict bounds; it is unlikely that we would observe a burst from the optimal orbit. Therefore bursts from MBHs outside the curve are impossible to detect and those inside may be possible, but need not be probable, to detect.
 
@@ -90,10 +90,10 @@ It appears that there are many extragalactic MBHs which could produce observable
 
 We can repeat the analysis for eLISA. The scaled SNRs are shown in \figref{scaled-SNR-eLISA}.
 \begin{figure}
-\begin{center}
+\centering
  \includegraphics[width=0.6\textwidth]{./images/Fig_SNR_scaled_fit_eLISA}
- \caption{Scaled SNR for EMRBs as a function of characteristic frequency for the eLISA design. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.\label{fig:scaled-SNR-eLISA}}
-   \end{center}
+ \caption{Scaled SNR for EMRBs as a function of characteristic frequency for the eLISA design. The fitted curve from \eqnref{scaled-SNR} is indicated by the line.}
+\label{fig:scaled-SNR-eLISA}
 \end{figure}
 Since Andromeda was only marginally of interest for the classic LISA design, we did not include it this time. This reduces the scatter at low characteristic frequencies.
 
@@ -108,10 +108,10 @@ The fit parameters are markedly different from those for LISA. However, since we
 
 Using this fit to find the detectability range results in the curves shown in \figref{detect-eLISA}.
 \begin{figure}
-\begin{center}
+\centering
  \includegraphics[width=0.6\textwidth]{./images/Fig_M_R_detect_2}
- \caption{Limit of detection using eLISA for EMRBs originating from MBHs of mass $M$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The thicker line is the limit for non-rotating MBHs, the thinner is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The crosses indicate the selected sample of MBHs used to calibrate the curve and the dots indicate other nearby MBHs with known masses. The trends should not be extrapolated to lower MBH masses.\label{fig:detect-eLISA}}
-   \end{center}
+ \caption{Limit of detection using eLISA for EMRBs originating from MBHs of mass $M$ and distance $R$ with CO of mass $\mu = 1 M_\odot$ (dashed line) or $\mu = 10 M_\odot$ (solid line). The detection threshold is assumed to be $\rho = 10$. The thicker line is the limit for non-rotating MBHs, the thinner is for maximally rotating MBHs. Sources below the relevant line are potentially detectable. The crosses indicate the selected sample of MBHs used to calibrate the curve and the dots indicate other nearby MBHs with known masses. The trends should not be extrapolated to lower MBH masses.}
+\label{fig:detect-eLISA}
 \end{figure}
 The maximum distances are reduced compared to the LISA case indicating that detectable bursts would be much rarer. There still remain a number of potential candidate galaxies. From our sample, Andromeda is on the very edge of possibility. NGC 3489, M96 and Sculptor require a high spin, making them unlikely sources. NGC 4395, NGC 4945 and Circinus can be detected without the high spin assuming a $10 M_\odot$ CO. Of the extragalactic sources, only M32 remains detectable with a $1 M_\odot$ CO, and still it requires a non-zero spin.
 
@@ -145,30 +145,29 @@ To discover if any parameters can be accurately inferred, we must characterise t
 As for bursts from the Galactic Centre, posteriors can show strong and complicated parameter degeneracies. The lower SNR compared to Galactic bursts yields wider distributions. As the periapsis increases, the posteriors deteriorate, becoming uninformative. The posteriors recovered from our MCMC show a wide variety of forms. There is a spectrum from well-formed Gaussians through elongated ellipsoids to complete covering of the parameter range. Some example results are shown in \figref{MCMC-a}, \ref{fig:MCMC-b} and \ref{fig:MCMC-c}. These are similar to the plots in \secref{Gal-Results} except that we now plot $\ln(M_\bullet/M_\odot)$ and $\ln(\zeta/\zeta_0)$.
 
 \begin{figure}
-\begin{center}
+\centering
 \vspace{0.5\baselineskip}
    \includegraphics[width=0.8\textwidth]{./images/Fig_M32_MCMC_193_triangle_40}
-\caption{Marginalised one- and two-dimensional posteriors (on the diagonal and above, respectively). The scales are identical in both types of plots. The dotted line indicates the true value. These distributions are exceptionally cromulent and well converged. Angular momentum is in units of $L_\bullet = GM c^{-1}$ and the scaled distance is in units of $\zeta_0 = 1 M_\odot^{-1}\units{kpc}$. The EMRB is from M32 and has $r\sub{p} \simeq 5.53 r\sub{g}$.\label{fig:MCMC-a}}
-\end{center}
+\caption{Marginalised one- and two-dimensional posteriors (on the diagonal and above, respectively). The scales are identical in both types of plots. The dotted line indicates the true value. These distributions are exceptionally cromulent and well converged. Angular momentum is in units of $L_\bullet = GM c^{-1}$ and the scaled distance is in units of $\zeta_0 = 1 M_\odot^{-1}\units{kpc}$. The EMRB is from M32 and has $r\sub{p} \simeq 5.53 r\sub{g}$.}
+\label{fig:MCMC-a}
 \end{figure}
 \Figref{MCMC-a} shows the posterior for an EMRB from M32 with $r\sub{p} \simeq 5.53 r\sub{g}$. The distribution is well-defined and near Gaussian, although even in this best case the presence of degeneracies is clear. This example illustrates that it is possible to obtain good results, similar to those from the Galactic Centre, from extragalactic sources. Unfortunately, such tight distributions are not common in our sample.
 
 \begin{figure}
-\begin{center}
+\centering
 \vspace{0.5\baselineskip}
    \includegraphics[width=0.8\textwidth]{./images/Fig_N4395_MCMC_120_triangle_40}
-\caption{Marginalised one- and two-dimensional posteriors. The conventions are the same as in \figref{MCMC-a}. These distributions begin to show the complicated shapes of degenerate distributions. The EMRB is from NGC 4395 and has $r\sub{p} \simeq 5.92 r\sub{g}$.\label{fig:MCMC-b}}
-\end{center}
+\caption{Marginalised one- and two-dimensional posteriors. The conventions are the same as in \figref{MCMC-a}. These distributions begin to show the complicated shapes of degenerate distributions. The EMRB is from NGC 4395 and has $r\sub{p} \simeq 5.92 r\sub{g}$.}
+\label{fig:MCMC-b}
 \end{figure}
 \Figref{MCMC-b} shows the posterior for an EMRB from N4395 with $r\sub{p} \simeq 5.92 r\sub{g}$; it illustrates a more usual posterior. Typical posteriors are not Gaussian; the forms vary significantly, such that it is not possible to produce a standard shape. Non-Gaussianity manifests by the distributions broadening, developing curves and becoming banana-like. The degeneracies may evolve such that there are multiple modes.
 
 \begin{figure}
-\begin{center}
+\centering
 	\vspace{0.5\baselineskip}
    \includegraphics[width=0.8\textwidth]{./images/Fig_M32_MCMC_159_triangle_40}
 \caption{Marginalised one- and two-dimensional posteriors. The conventions are the same as in \figref{MCMC-a}. These are the worst-case scenario distributions that are uninformative. The EMRB is from M32 and has $r\sub{p} \simeq 11.79 r\sub{g}$.}
 \label{fig:MCMC-c}
-\end{center}
 \end{figure}
 \Figref{MCMC-c} shows the culmination of the deterioration of the posterior; it is for an EMRB from M32 with $r\sub{p} \simeq 11.79 r\sub{g}$. In this case, the distributions have extended to encompass the entire range for some parameters and so the EMRB is (near) useless. The posteriors show intricate degeneracies in some angular parameters. These are naturally periodic and demonstrate that near identical bursts can be produced through various rotations of the MBH and orbit. Such bursts are not informative and so are not of interest, but we include this example so that there is no illusion of all EMRBs having perfect posteriors.
 
@@ -178,25 +177,25 @@ The general trend is for bursts from orbits with smaller periapses to be narrowe
 
 Characteristic distribution widths for the (logarithm of the) MBH mass and the spin are shown in \figref{sigmas-M32}, \ref{fig:sigmas-N4945} and \ref{fig:sigmas-N4395} for M32, NGC 4945 and NGC 4395 respectively. Plotted are the standard deviation $\sigma\sub{SD}$ and the half-width of the $p = 0.68$ range calculated from the $k$-d tree $\sigma_{0.68}$. These widths are defined in \secref{k-d} and are equal for a normal distribution. The filled circles are used for runs that appear to have converged. The open circles are for those yet to converge, but which appear to be approaching an equilibrium state; widths should be accurate to within $\sim 10\%$.
 \begin{figure}
-\begin{center}
+\centering
 \subfigure[Natural logarithm of MBH mass.]{\includegraphics[width=0.475\textwidth]{./images/Fig_M32_MCMC_sigmas_rp_1}} \quad
 \subfigure[Dimensionless spin.]{\includegraphics[width=0.475\textwidth]{./images/Fig_M32_MCMC_sigmas_rp_2}} \\
-\caption{Distribution widths as functions of periapsis $r\sub{p}$ for M32. The light blue points are used for the standard deviation, the black for the $68$-percentile half-width. The filled circles are converged runs and the open circles for those yet to converge. The dotted line is the current uncertainty for $M_\bullet$. The dashed line is the standard deviation for a uniform $a_\ast$ distribution and the dot--dashed line is the equivalent $68$-percentile half-width.\label{fig:sigmas-M32}}
-\end{center}
+\caption{Distribution widths as functions of periapsis $r\sub{p}$ for M32. The light blue points are used for the standard deviation, the black for the $68$-percentile half-width. The filled circles are converged runs and the open circles for those yet to converge. The dotted line is the current uncertainty for $M_\bullet$. The dashed line is the standard deviation for a uniform $a_\ast$ distribution and the dot--dashed line is the equivalent $68$-percentile half-width.}
+\label{fig:sigmas-M32}
 \end{figure}
 \begin{figure}
-\begin{center}
+\centering
 \subfigure[Natural logarithm of MBH mass.]{\includegraphics[width=0.475\textwidth]{./images/Fig_N4945_MCMC_sigmas_rp_1}} \quad
 \subfigure[Dimensionless spin.]{\includegraphics[width=0.475\textwidth]{./images/Fig_N4945_MCMC_sigmas_rp_2}} \\
-\caption{Distribution widths as functions of periapsis $r\sub{p}$ for NGC 4945. Conventions are identical to those in \figref{sigmas-M32}.\label{fig:sigmas-N4945}}
-\end{center}
+\caption{Distribution widths as functions of periapsis $r\sub{p}$ for NGC 4945. Conventions are identical to those in \figref{sigmas-M32}.}
+\label{fig:sigmas-N4945}
 \end{figure}
 \begin{figure}
-\begin{center}
+\centering
 \subfigure[Natural logarithm of MBH mass.]{\includegraphics[width=0.475\textwidth]{./images/Fig_N4395_MCMC_sigmas_rp_1}} \quad
 \subfigure[Dimensionless spin.]{\includegraphics[width=0.475\textwidth]{./images/Fig_N4395_MCMC_sigmas_rp_2}} \\
-\caption{Distribution widths as functions of periapsis $r\sub{p}$ for NGC 4395. Conventions are identical to those in \figref{sigmas-M32}.\label{fig:sigmas-N4395}}
-\end{center}
+\caption{Distribution widths as functions of periapsis $r\sub{p}$ for NGC 4395. Conventions are identical to those in \figref{sigmas-M32}.}
+\label{fig:sigmas-N4395}
 \end{figure}
 
 The widths, corresponding to potential parameter accuracies, improve rapidly with decreasing periapsis. The two widths, $\sigma\sub{SD}$ and $\sigma_{0.68}$, are typically of similar sizes, despite manifest non-Gaussianity. This is true for all parameters: the greatest differences are when the distributions are strongly multimodal. The fractional difference between the two widths may be up to $\sim 40\%$ for $\ln(M/M_\odot)$ and $a_\ast$; the widths for $\phi\sub{p}$ show the greatest difference, where $\sigma\sub{SD}$ may be a factor of a few larger than $\sigma_{0.68}$. Both $\sigma\sub{SD}$ and $\sigma_{0.68}$ tend to the appropriate limits for uninformative distributions.
