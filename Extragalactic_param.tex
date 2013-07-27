@@ -8,7 +8,7 @@ We use the NK waveforms from \chapref{waveforms} and the data analysis technique
 
 Whether or not a burst is detectable is determined by its SNR. This is calculated using \eqnref{SNR}. We assume a detection threshold of $\rho = 10$ as in \secref{Gal-SNR}. The SNR of an EMRB depends upon many parameters; for a given MBH, the most important is the periapse radius $r\sub{p}$. There is a good correlation between $\rho$ and $r\sub{p}$. Other parameters specifying the inclination of the orbit, the orientation of the system with respect to the detector, or the MBH spin only produce scatter about this trend. The form of the $\rho$--$r\sub{p}$ relation depends upon the noise curve.
 
-We parametrize the detectability in terms of a characteristic frequency $f_\ast$. The speed at periapse scales like $v \sim \sqrt{GM/r\sub{p}}$; the characteristic time taken for the position to change is then $T \sim r\sub{p}/v$, and so we define the characteristic frequency as
+We parameterize the detectability in terms of a characteristic frequency $f_\ast$. The speed at periapse scales like $v \sim \sqrt{GM/r\sub{p}}$; the characteristic time taken for the position to change is then $T \sim r\sub{p}/v$, and so we define the characteristic frequency as
 \begin{equation}
 f_\ast = \sqrt{\frac{GM_\bullet}{r\sub{p}^3}}.
 \end{equation}
@@ -62,7 +62,7 @@ The scaled SNRs are plotted in \figref{scaled-SNR}. The plotted points are the a
 \end{figure}
 The curve shows that EMRB SNR does scale as expected, and $\rho_\ast$ can be described as a one-parameter curve. There remains some scatter about this: the larger scatter at low frequencies is a consequence of numerical noise from dealing with very low SNRs from Andromeda; removing the averaging over ancillary parameters increases the scatter to be typically about an order of magnitude in total. However, the fit is good enough for rough calculations.
 
-We approximate the trend with a parametrized curve
+We approximate the trend with a parameterized curve
 \begin{equation}
 \rho_\ast = \alpha_1 \left(\frac{f_\ast}{\mathrm{Hz}}\right)^{\beta_1} \left[1 + \left(\alpha_2 \frac{f_\ast}{\mathrm{Hz}}\right)^{\beta_2}\right]\left[1 + \left(\alpha_3 \frac{f_\ast}{\mathrm{Hz}}\right)^{\beta_3}\right]^{-\beta_4}.
 \label{eq:scaled-SNR}
@@ -129,7 +129,7 @@ In determining parameters from burst waveforms, we have the same inference probl
 \item[2.] The spin parameter $a_\ast$.
 \item[3, 4.] The orientation angles for the MBH spin $\Theta\sub{K}$ and $\Phi\sub{K}$.
 \item[5.] The source distance $R$ divided by the CO mass $\mu$, which we denote as $\zeta = R/\mu$. This scales the amplitude of the waveform.
-\item[6, 7.] The angular momentum of the CO parametrized in terms of total angular momentum $L_\infty$ and inclination $\iota$.
+\item[6, 7.] The angular momentum of the CO parameterized in terms of total angular momentum $L_\infty$ and inclination $\iota$.
 \item[8--10.] The angular phases at periapse, $\phi\sub{p}$  and $\chi\sub{p}$ (which determines $\theta\sub{p}$), and the time of periapse $t\sub{p}$.
 \item[11, 12.] The coordinates of the source. Sky position is already determined to high accuracy for each galaxy. Since an EMRB can only give weak constraints on source position we take it as known and do not infer it.
 \item[13, 14.] The orbital position of the detector. This should be known and need not be inferred. We assume the same initial position as \citet{Cutler1998}; this does not qualitatively influence results.
