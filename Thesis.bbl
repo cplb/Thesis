@@ -1,4 +1,4 @@
-\begin{thebibliography}{468}
+\begin{thebibliography}{473}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -61,6 +61,14 @@ Adams, D.; \textit{{The Hitchikers' Guide to the Galaxy}}; London: Pan Books;
 \bibitem[{Adams(1896)}]{Adams1896}
 Adams, J.C.; \textit{{The Scientific Papers of John Couch Adams}}; volume~I;
   Cambridge: Cambridge University Press; 1896.
+
+\bibitem[{Ade \textit{et al\textup{.}}(2013{\natexlab{a}})}]{Ade2013a}
+Ade, P.A.R. \textit{et al\textup{.}}; 2013{\natexlab{a}};
+  \href{http://arxiv.org/abs/1303.5062}{\tt arXiv:1303.5062}.
+
+\bibitem[{Ade \textit{et al\textup{.}}(2013{\natexlab{b}})}]{Ade2013b}
+Ade, P.A.R. \textit{et al\textup{.}}; 67; 2013{\natexlab{b}};
+  \href{http://arxiv.org/abs/1303.5076}{\tt arXiv:1303.5076}.
 
 \bibitem[{Adelberger \textit{et al\textup{.}}(2009)Adelberger, Gundlach,
   Heckel, Hoedl \& Schlamminger}]{Adelberger2009}
@@ -144,8 +152,8 @@ Arnowitt, R., Deser, S. \& Misner, C.W.; in L.~Witten (ed.),
   \textit{Gravitation: an introduction to current research}; chapter~7,
   227--264; New York: Wiley; 1962.
 
-\bibitem[{Babak \& P.(2003)}]{Babak2003}
-Babak, S.V. \& P., G.L.;
+\bibitem[{Babak \& Grishchik(2003)}]{Babak2003}
+Babak, S.V. \& Grishchik, L.P.;
   \textit{\href{http://dx.doi.org/10.1142/S0218271803004250}{International
   Journal of Modern Physics D}}; \textbf{12}(10):1905--1959; 2003;
   \href{http://arxiv.org/abs/gr-qc/0209006}{\tt arXiv:gr-qc/0209006}.
@@ -502,6 +510,14 @@ Cembranos, J.A.R.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.102.141301}{Physical
   Review Letters}}; \textbf{102}(14):141301(4); 2009;
   \href{http://arxiv.org/abs/0809.1653}{\tt arXiv:0809.1653}.
+
+\bibitem[{Chandrasekhar(1941{\natexlab{a}})}]{Chandrasekhar1941}
+Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144265}{The
+  Astrophysical Journal}}; \textbf{93}(2):285--304; 1941{\natexlab{a}}.
+
+\bibitem[{Chandrasekhar(1941{\natexlab{b}})}]{Chandrasekhar1941b}
+Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144267}{The
+  Astrophysical Journal}}; \textbf{93}(2):323--326; 1941{\natexlab{b}}.
 
 \bibitem[{Chandrasekhar(1960)}]{Chandrasekhar1960}
 Chandrasekhar, S.; \textit{{Principles of Stellar Dynamics}}; New York: Dover
@@ -2518,6 +2534,10 @@ Watson, G.N.; \textit{{A Treatise on the Theory of Bessel Functions}};
 \bibitem[{Webbink(1984)}]{Webbink1984}
 Webbink, R.F.; \textit{\href{http://dx.doi.org/10.1086/161701}{The
   Astrophysical Journal}}; \textbf{277}(1):355--360; 1984.
+
+\bibitem[{Weinberg(1986)}]{Weinberg1986}
+Weinberg, M.D.; \textit{\href{http://dx.doi.org/10.1086/163785}{The
+  Astrophysical Journal}}; \textbf{300}(1):93--111; 1986.
 
 \bibitem[{Weinberg(2012)}]{Weinberg2012}
 Weinberg, M.D.; \textit{\href{http://dx.doi.org/10.1214/12-BA725}{Bayesian

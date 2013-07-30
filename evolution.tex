@@ -1,0 +1,71 @@
+\chapter{Evolution from gravitational wave emission}\label{ap:evolve}
+
+Binary systems evolve under the influence of GW emission as energy and angular momentum are radiated away. They inspiral and eventually merge. For extreme-mass-ratio systems, the evolution time-scale is typically long. We demonstrate this here by calculating the time taken to complete an inspiral in the case of a bound orbit (\secref{Bound}) and the change in orbital parameters over an orbit in the case it is unbound (\secref{Unbound}). A characteristic GW instantaneous evolution time-scale for bound orbits is also defined in \secref{GW-in}. These calculations assume Keplerian orbits, as found in weak-fields; corrections become more significant in stronger fields and eventually, at plunge, evolution proceeds rapidly. 
+
+\section{Bound orbits}\label{sec:Bound}
+
+For bound orbits we can define a GW inspiral time from the orbit-averaged change in the orbital parameters. Using the analysis of \citet{Peters1964} for Keplerian binaries, the averaged rates of change of the periapsis and eccentricity are
+\begin{align}
+\left\langle\diff{r\sub{p}}{t}\right\rangle = {} & -\frac{64}{5}\frac{G^3M_\bullet M(M_\bullet + M)}{c^5r\sub{p}^3}\frac{(1 - e)^{3/2}}{(1 + e)^{7/2}}\left(1 - \frac{7}{12}e + \frac{7}{8}e^2 + \frac{47}{192}e^3\right) \\
+\left\langle\diff{e}{t}\right\rangle = {} & -\frac{304}{15}\frac{G^3M_\bullet M(M_\bullet + M)}{c^5r\sub{p}^4}\frac{e(1 - e)^{3/2}}{(1 + e)^{5/2}}\left(1 + \frac{121}{304}e^2\right),
+\end{align}
+For a circular orbit the inspiral time from initial periapsis $r\sub{p0}$ is
+\begin{equation}
+\tau\sub{c}(r\sub{p0}) = \frac{5}{256}\frac{c^5r\sub{p0}^4}{G^3M_\bullet M(M_\bullet + M)}.
+\end{equation}
+For an orbit of non-zero eccentricity ($0 < e < 1$), we can solve for the periapsis as a function of eccentricity
+\begin{equation}
+r\sub{p}(e) = \mathcal{R}(1 + e)^{-1}\left(1 + \frac{121}{304}e^2\right)^{870/2299}e^{12/19},
+\end{equation}
+where $\mathcal{R}$ is fixed by the initial conditions: for an orbit with initial eccentricity $e_0$
+\begin{equation}
+\mathcal{R}(e_0) = (1 + e_0)\left(1 + \frac{121}{304}e_0^2\right)^{-870/2299}e_0^{-12/19}r\sub{p0}.
+\end{equation}
+The inspiral is complete when the eccentricity has decayed to zero; the inspiral time is \citep{Peters1964}
+\begin{equation}
+\tau\sub{insp}(r\sub{p0},e_0) = \intd{0}{e_0}{\frac{15}{304}\frac{c^5\mathcal{R}^4}{G^3M_\bullet M(M_\bullet + M)}\frac{e^{29/19}}{(1-e^2)^{3/2}}\left(1 + \frac{121}{304}e^2\right)^{1181/2299}}{e}.
+\end{equation}
+This is best evaluated numerically, but it may be written in closed form as
+\begin{align}
+\tau\sub{insp}(r\sub{p0},e_0) = {} & \tau\sub{c}(r\sub{p0})(1 + e_0)^4\left(1 + \frac{121}{304}e_0^2\right)^{-3480/2299} \nonumber \\* 
+ {} & \times \left. F_1\left(\frac{24}{19};\frac{3}{2},-\frac{1181}{2299};\frac{43}{19};e_0^2,-\frac{121}{304}e_0^2\right),\right.
+\label{eq:Bound_inspiral}
+\end{align}
+using the Appell hypergeometric function of the first kind $F_1(\alpha;\beta,\beta';\gamma;x,y)$ \citep[16.15.1]{Olver2010}.\footnote{For small eccentricities $\tau(r\sub{p0},e_0) \simeq \tau\sub{c}(r\sub{p0})[1 + 4e_0 + (273/43)e_0^2 + \order{e_0^3}]$.}
+
+\section{Unbound orbits}\label{sec:Unbound}
+
+Unbound objects only pass through periapsis once. We therefore expect the orbital change from gravitational radiation to be small. Following the approach of \citet{Turner1977}, we can calculate the evolution in the eccentricity and periapse of an unbound Keplerian binary. The change in fractional eccentricity over an orbit, approximating the orbital parameters as constant, is
+\begin{align}
+\frac{\Delta e}{e} = {} & -\frac{608}{15}\Sigma\left[\recip{(1+e)^{5/2}}\left(1 + \frac{121}{304}e^2\right)\cos^{-1}\left(-\recip{e}\right) \right. \nonumber \\*  {} & + \left. \frac{(e - 1)^{1/2}}{e^2(1+e)^2}\left(\frac{67}{456} + \frac{1069}{912}e^2 + \frac{3}{38}e^4\right)\right],
+\end{align}
+introducing the dimensionless parameter
+\begin{equation}
+\Sigma = \frac{G^{5/2}M_\bullet M(M_\bullet+ M)}{c^5r\sub{p}^{5/2}}.
+\end{equation}
+Similarly, the fractional change in periapsis is
+\begin{align}
+\frac{\Delta r\sub{p}}{r\sub{p}} = {} & -\frac{128}{5}\Sigma\left[\recip{(1+e)^{7/2}}\left(1 - \frac{7}{12}e + \frac{7}{8}e^2 + \frac{47}{192}e^3\right)\cos^{-1}\left(-\recip{e}\right) \right. \nonumber \\*
+ {} & - \left. \frac{(e - 1)^{1/2}}{e(1 + e)^3}\left(\frac{67}{288} - \frac{13}{8}e + \frac{133}{576}e^2 - \frac{1}{4}e^3 - \frac{1}{8}e^4\right)\right].
+\end{align}
+Both of these changes obtain their greatest magnitudes for large eccentricities, then
+\begin{equation}
+\frac{\Delta e}{e} \simeq \frac{\Delta r\sub{p}}{r\sub{p}} \simeq -\frac{16}{5}\Sigma e^{1/2}.
+\end{equation}
+For extreme mass-ratio binaries, as is the case here, the mass-ratio is a small quantity
+\begin{equation}
+\eta = \frac{M}{M_\bullet} \ll 1.
+\end{equation}
+The smallest possible periapsis is of order of the Schwarzschild radius of the MBH, such that 
+\begin{equation}
+r\sub{p} = \alpha\frac{GM_\bullet}{c^2}; \quad \alpha > 1.
+\end{equation}
+These give
+\begin{equation}
+\Sigma = \frac{\eta}{\alpha^{5/2}} < \eta \ll 1.
+\end{equation}
+Hence the changes in the orbital parameters become significant for
+\begin{equation}
+e \sim \frac{25}{256}\frac{\alpha^5}{\eta^2} > \frac{25}{256}\recip{\eta^2}.
+\end{equation}
+Such orbits should be exceedingly rare, and so it is safe to neglect inspiral for unbound orbits.

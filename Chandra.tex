@@ -1,14 +1,14 @@
-\chapter{Energy change in two-body encounters}\label{ch:Chandra}
+\chapter{Energy change in two-body encounters}\label{ap:Chandra}
 
-Two-body encounters are common in dense stellar systems, such as a galactic core. During these encounters, energy and and angular momentum can be exchanged. It is this that leads to the relaxation of a stellar system. \citet[chapter 2]{Chandrasekhar1960} derived the change in energy squared expected in a two-body encounter. We reproduce this here for use in \chapref{Relax}, where we discuss the relaxation time-scale for the Galactic centre.
+Two-body encounters are common in dense stellar systems, such as a galactic core. During these encounters, energy and and angular momentum can be exchanged. It is this that leads to the relaxation of a stellar system. \citet[chapter 2]{Chandrasekhar1960} derived the squared change in energy expected in a two-body encounter. We reproduce this here for use in \chapref{Relax}, where we discuss the relaxation time-scale for the Galactic centre.
 
 We consider the interaction of a field star, denoted by 1, with a test star, 2; the centre-of-gravity and relative velocities are
 \begin{subequations}
+\label{eq:Vs}
 \begin{align}
 \boldsymbol{V}\sub{g} = {} & \recip{m_1 + m_2}\left(m_1 \boldsymbol{v}_1 + m_2 \boldsymbol{v}_2\right);\\
 \boldsymbol{V} = {} & \boldsymbol{v}_1 - \boldsymbol{v}_2.
 \end{align}
-\label{eq:Vs}
 \end{subequations}
 Hence
 \begin{subequations}
@@ -19,11 +19,11 @@ v_2^2 = {} & V\sub{g}^2 + 2\frac{m_1}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\frac
 \end{subequations}
 where $\Phi$ is the angle between $\boldsymbol{V}\sub{g}$ and $\boldsymbol{V}$, and
 \begin{subequations}
+\label{eq:V2s}
 \begin{align}
 V\sub{g}^2 = {} & \recip{(m_1 + m_2)^2}\left(m_1v_1^2 + m_2v_2^2 + 2 m_1 m_2 v_1 v_2 \cos\theta\right);\\
 V^2 = {} & v_1^2 + v_2 - 2 v_1 v_2 \cos\theta,
 \end{align}
-\label{eq:V2s}
 \end{subequations}
 where $\theta$ is the angle between $\boldsymbol{v}_1$ and $\boldsymbol{v}_2$. The change in energy of during the interaction is
 \begin{align}
@@ -49,12 +49,13 @@ We now need to calculate the encounter rate. This requires us to know number of 
 \end{equation}
 using spherical polar coordinates for velocity space. Using $D$ as the impact parameter for the encounter and $\Theta$ for the angle between the fundamental plane (containing $\boldsymbol{v}_1$ ans $\boldsymbol{v}_2$) and the the orbital plane, the number of events in time interval $\delta t$ is
 \begin{equation}
-\dd \Gamma =  n(v_1, \theta, \varphi)\,\dd v_1 \,\dd \theta \,\dd \varphi \frac{\dd \Theta}{2\pi} 2\pi D \,\dd D V \,\delta t.
+\dd \Gamma =  n(v_1, \theta, \varphi)\,\dd v_1 \,\dd \theta \,\dd \varphi \frac{\dd \Theta}{2\pi} 2\pi D \,\dd D \,V \delta t.
 \end{equation}
 The squared change in energy for these encounters is
 \begin{align}
-\Delta E^2(v_1,\theta,\varphi,D,\Theta) = {} & \left(\Delta E\right)^2\,\dd \Gamma\\
- = {} & 4 n(v_1,\theta,\varphi)V\sub{g}^2V^3\left(\frac{m_1m_2}{m_1+m_2}\right)^2\cos^2i\cos^2(\phi-\psi)\cos^2\psi D\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\dd D\,\delta t.
+\Delta E^2(v_1,\theta,\varphi,\Theta,D) = {} & \left(\Delta E\right)^2\,\dd \Gamma\\
+ = {} & 4 n(v_1,\theta,\varphi)V\sub{g}^2V^3\left(\frac{m_1m_2}{m_1+m_2}\right)^2\cos^2i\cos^2(\phi-\psi)\cos^2\psi D \nonumber \\*
+ {} & \times \left. \dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\dd D\,\delta t. \right.
 \end{align}
 We must integrate out all these dependencies.
 
@@ -63,15 +64,16 @@ Since we have assumed the stellar density does not depend upon position, we can 
 \recip{\cos^2\psi} = 1 + \frac{D^2V^4}{G(m_1 + m_2)}.
 \end{equation}
 Thus
-\begin{equation}
-\Delta E^2(v_1,\theta,\varphi,\psi,\Theta) =  4 n(v_1,\theta,\varphi)\frac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\frac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi} \,\dd \psi\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\delta t.
-\end{equation}
+\begin{align}
+\Delta E^2(v_1,\theta,\varphi,\Theta,\psi) =  {} & 4 n(v_1,\theta,\varphi)\frac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\frac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi} \nonumber \\*
+ {} & \times \left. \dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\dd \psi\,\delta t. \right.
+\end{align}
 The integral over $\psi$ is
 \begin{align}
 I(\psi_0) = {} & \intd{0}{\psi_0}{\frac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi}}{\psi}\\
  = {} & \frac{\sin 2\phi}{2}\left(\psi_0 - \frac{\sin 2\psi_0}{2}\right) - \frac{\cos 2\phi}{2}\left(\frac{\cos 2\psi_0}{2}\right) - \sin^2\phi\ln(\cos\psi_0).
 \end{align}
-Naively we would think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms
+Naively we might think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms
 \begin{equation}
 \Delta E^2(v_1,\theta,\varphi,\Theta) \simeq  4 n(v_1,\theta,\varphi)\frac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\sin^2\phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\delta t.
 \end{equation}
@@ -95,9 +97,10 @@ To proceed further we must specify the form of $n(v_1,\theta,\varphi)$, if we as
 n(v_1,\theta,\varphi) = n(v_1)\recip{4\pi}\sin\theta.
 \end{equation}
 The integral over $\varphi$ is then trivial,
-\begin{equation}
-\Delta E^2(v_1,\theta) \simeq \pi n(v_1)\frac{G^2m_1^2 m_2^2v_1^2v_2^2\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}}\ln\left[1 + \frac{D_0\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^2}{G^2\left(m_1 + m_2\right)^2}\right]\,\dd v_1\,\dd\theta\,\delta t.
-\end{equation}
+\begin{align}
+\Delta E^2(v_1,\theta) \simeq {} & \pi n(v_1)\frac{G^2m_1^2 m_2^2v_1^2v_2^2\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}} \nonumber \\*
+ {} & \times \left. \ln\left[1 + \frac{D_0\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^2}{G^2\left(m_1 + m_2\right)^2}\right]\,\dd v_1\,\dd\theta\,\delta t.\right.
+\end{align}
 
 To integrate over $\theta$ it is easier to recast in terms of $V$; the integral is
 \begin{align}
@@ -115,7 +118,8 @@ q = \frac{D_0}{G\left(m_1+m_2\right)}.
 Using \eqnref{V2s} to rearrange, and then integrating by parts gives
 \begin{align}
 J = {} & \recip{4 v_1 v_2} \intd{V_-}{V_+}{\frac{\left(V_+^2 - V^2\right)\left(V^2 - V_-^2\right)}{V^2}\ln\left(1 + q^2V^4\right)}{V} \\
- = {} & \recip{4 v_1 v_2} \left\{\left[\frac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V} \ln\left(1 + q^2V^4\right)\right]^{V_+}_{V_-} - \intd{V_-}{V_+}{\frac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V}\frac{4q^2V^3}{1+ q^2V^4}}{V}\right\};
+ = {} & \recip{4 v_1 v_2} \left\{\left[\frac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V} \ln\left(1 + q^2V^4\right)\right]^{V_+}_{V_-} \right. \nonumber \\* 
+ {} & - \left. \vphantom{\left[\frac{\left(V_+^2\right)V^2}{3V}\right]^{V_+}_{V_-}} \intd{V_-}{V_+}{\frac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V}\frac{4q^2V^3}{1+ q^2V^4}}{V}\right\};
 \end{align}
 the former piece still contains the logarithmic term which we know must be large. It is therefore the dominant piece of the integral and we neglect the latter \citep{Chandrasekhar1941},
 \begin{equation}

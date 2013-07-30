@@ -31,7 +31,7 @@
 \usepackage{array}
 \usepackage{ragged2e}
 \newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
-\usepackage[labelfont=bf,labelsep=space]{caption}
+\usepackage[labelfont=bf,labelsep=space,hypcap]{caption}
 \renewcommand{\captionfont}{\small}
 \usepackage[caption2]{ccaption}
 %\usepackage{tikz}
@@ -283,6 +283,8 @@ Churchill College and Institute of Astronomy\\
 
 \input{./Extragalactic_param.tex}
 
+\input{./events.tex}
+
 \part{Understanding gravitation}\label{pt:grav}
 
 \input{./f_R.tex}
@@ -293,6 +295,8 @@ Churchill College and Institute of Astronomy\\
 %\bookmarksetup{startatroot}
 \appendix
 \part{Appendices}
+
+\input{./evolution.tex}
 
 \input{./inner_product.tex}
 
