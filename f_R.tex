@@ -26,29 +26,29 @@ S_{f(R)}[g] = \recip{16\pi G}\intd{}{}{f(R)\sqrt{-g}}{^4x}.
 \end{equation}
 Including the function $f(R)$ gives extra freedom in defining the behaviour of gravity. While this action may not encode the true theory of gravity it could contain sufficient information to act as an effective field theory, correctly describing phenomenological behaviour \citep{Park2010}; it may be that as an effective field theory, a particular $f(R)$ shall have a limited region of applicability and shall not be universal. We assume that $f(R)$ is analytic about $R = 0$ so that it can be expressed as a power series \citep{Buchdahl1970, Clifton2008, Psaltis2008} %\citep{Buchdahl1970, Capozziello2007, Faulkner2007, Clifton2008, Psaltis2008}
 \begin{equation}
-f(R) = a_0 + a_1 R + \frac{a_2}{2!}R^2 + \frac{a_3}{3!}R^3 + \ldots
+f(R) = a_0 + a_1 R + \dfrac{a_2}{2!}R^2 + \dfrac{a_3}{3!}R^3 + \ldots
 \end{equation}
 Since the dimensions of $f(R)$ must be the same as of $R$, $[a_n] = [R]^{(1-n)}$. To link to GR we set $a_1 = 1$; any rescaling can be absorbed into the definition of $G$.
 
 Various models of cosmological interest may be expressed in such a form, for example, the model of \citet{Starobinsky2007}
 \begin{equation}
-f(R) = R + \lambda R_0 \left[\left(1 + \frac{R^2}{R_0^2}\right)^{-n} - 1\right],
+f(R) = R + \lambda R_0 \left[\left(1 + \dfrac{R^2}{R_0^2}\right)^{-n} - 1\right],
 \end{equation}
 can be expanded as
 \begin{equation}
-f(R) = R - \frac{\lambda n}{R_0} R^2 + \frac{\lambda n (n + 1)}{2 R_0^3} R^4 + \ldots
+f(R) = R - \dfrac{\lambda n}{R_0} R^2 + \dfrac{\lambda n (n + 1)}{2 R_0^3} R^4 + \ldots
 \end{equation}
 and the model of \citet{Hu2007}
 \begin{equation}
-f(R) = R - m^2\frac{c_1\left(R/m^2\right)^n}{c_2\left(R/m^2\right)^n + 1},
+f(R) = R - m^2\dfrac{c_1\left(R/m^2\right)^n}{c_2\left(R/m^2\right)^n + 1},
 \end{equation}
 assuming that $c_2(R/m^2)^n \ll 1$, can be expanded as
 \begin{equation}
-f(R) = (1 - c_1)R + \frac{c_1 c_2}{m^2}R^2 - \frac{c_1 c_2^2}{m^4}R^3 + \frac{c_1 c_2^3}{m^6}R^4 + \ldots 
+f(R) = (1 - c_1)R + \dfrac{c_1 c_2}{m^2}R^2 - \dfrac{c_1 c_2^2}{m^4}R^3 + \dfrac{c_1 c_2^3}{m^6}R^4 + \ldots 
 \end{equation}
 for $n = 1$ and as
 \begin{equation}
-f(R) = R - \frac{c_1}{m^2}R^2 + \frac{c_1 c_2^2}{m^4}R^4 + \ldots
+f(R) = R - \dfrac{c_1}{m^2}R^2 + \dfrac{c_1 c_2^2}{m^4}R^4 + \ldots
 \end{equation}
 for $n = 2$. Consequently such a series expansion can constrain model parameters, although we cannot specify the full functional form from only a few terms.
 
@@ -58,7 +58,7 @@ Finally, there is a third version of $f(R)$-gravity: metric-affine $f(R)$-gravit
 
 We restrict our attention to metric $f(R)$-gravity. This is preferred as the Palatini formalism has undesirable properties: static spherically symmetric objects described by a polytropic equation of state are subject to a curvature singularity \citep{Barausse2008b, Barausse2008a, DeFelice2010}. Varying the action with respect to the metric $g^{\mu\nu}$ produces
 \begin{align}
-\delta S_{f(R)} = {} & \recip{16\pi G}\int\left\{f'(R)\sqrt{-g}\left[R_{\mu\nu} - \nabla_\mu\nabla_\nu\ + g_{\mu\nu}\Box\right] \hphantom{\frac{0}{0}} \vphantom{\frac{0}{0}} - f(R)\recip{2}\sqrt{-g}g_{\mu\nu}\right\}\delta g^{\mu\nu}\,\dd^4x,
+\delta S_{f(R)} = {} & \recip{16\pi G}\int\left\{f'(R)\sqrt{-g}\left[R_{\mu\nu} - \nabla_\mu\nabla_\nu\ + g_{\mu\nu}\Box\right] \hphantom{\dfrac{0}{0}} \vphantom{\dfrac{0}{0}} - f(R)\recip{2}\sqrt{-g}g_{\mu\nu}\right\}\delta g^{\mu\nu}\,\dd^4x,
 \end{align}
 where $\Box = g^{\mu\nu}\nabla_\mu\nabla_\nu$ is the d'Alembertian and a prime denotes differentiation with respect to $R$.
 
@@ -66,7 +66,7 @@ Proceeding from here requires certain assumptions regarding surface terms. In th
 
 The vacuum field equations are
 \begin{equation}
-f'R_{\mu\nu} - \nabla_\mu\nabla_\nu f' + g_{\mu\nu}\Box f' - \frac{f}{2}g_{\mu\nu} = 0.
+f'R_{\mu\nu} - \nabla_\mu\nabla_\nu f' + g_{\mu\nu}\Box f' - \dfrac{f}{2}g_{\mu\nu} = 0.
 \label{eq:Field_eq}
 \end{equation}
 Taking the trace gives
@@ -81,7 +81,7 @@ a_0 = 0.
 \end{equation}
 In analogy to the Einstein tensor, we define
 \begin{equation}
-\mathcal{G}_{\mu\nu} = f'R_{\mu\nu} - \nabla_\mu\nabla_\nu f' + g_{\mu\nu}\Box f' - \frac{f}{2}g_{\mu\nu},
+\mathcal{G}_{\mu\nu} = f'R_{\mu\nu} - \nabla_\mu\nabla_\nu f' + g_{\mu\nu}\Box f' - \dfrac{f}{2}g_{\mu\nu},
 \label{eq:G_tensor}
 \end{equation}
 so that in a vacuum
@@ -134,17 +134,17 @@ All quantities denoted by ``$h$'' are strictly $\order{\varepsilon}$.
 
 The linearised connection is
 \begin{equation}
-{{\Gamma^{(1)}}^\rho}_{\mu\nu} = \frac{1}{2}\eta^{\rho\lambda}(\partial_\mu h_{\lambda\nu} + \partial_\nu h_{\lambda\mu} - \partial_\lambda h_{\mu\nu}).
+{{\Gamma^{(1)}}^\rho}_{\mu\nu} = \dfrac{1}{2}\eta^{\rho\lambda}(\partial_\mu h_{\lambda\nu} + \partial_\nu h_{\lambda\mu} - \partial_\lambda h_{\mu\nu}).
 \label{eq:Lin_Gamma}
 \end{equation}
 To $\order{\varepsilon}$ the covariant derivative of any perturbed quantity is the same as the partial derivative. The Riemann tensor is
 \begin{equation}
-{{R^{(1)}}^\lambda}_{\mu\nu\rho} = \frac{1}{2}(\partial_\mu\partial_\nu h^\lambda_\rho + \partial^\lambda\partial_\rho h_{\mu\nu} - \partial_\mu\partial_\rho h^\lambda_\nu - \partial^\lambda\partial_\nu h_{\mu\rho}),
+{{R^{(1)}}^\lambda}_{\mu\nu\rho} = \dfrac{1}{2}(\partial_\mu\partial_\nu h^\lambda_\rho + \partial^\lambda\partial_\rho h_{\mu\nu} - \partial_\mu\partial_\rho h^\lambda_\nu - \partial^\lambda\partial_\nu h_{\mu\rho}),
 \label{eq:Lin_Riemann}
 \end{equation}
 where we have raised the index on the differential operator with the background Minkowski metric. Contracting gives the Ricci tensor
 \begin{equation}
-{R^{(1)}}_{\mu\nu} = \frac{1}{2}(\partial_\mu\partial_\rho h^\rho_\nu + \partial_\nu\partial_\rho h^\rho_\mu - \partial_\mu\partial_\nu h - \Box h_{\mu\nu}),
+{R^{(1)}}_{\mu\nu} = \dfrac{1}{2}(\partial_\mu\partial_\rho h^\rho_\nu + \partial_\nu\partial_\rho h^\rho_\mu - \partial_\mu\partial_\nu h - \Box h_{\mu\nu}),
 \label{eq:Ricci}
 \end{equation}
 where the d'Alembertian operator is $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$. Contracting this with $\eta^{\mu\nu}$ gives the first-order Ricci scalar
@@ -162,7 +162,7 @@ f'(R) = {} & 1 + a_2 R^{(1)}.
 \end{subequations}
 As we are perturbing from a Minkowski background where the Ricci scalar vanishes, we use \eqnref{a_0} to set $a_0 = 0$. Inserting these into \eqnref{G_tensor} and retaining terms to $\order{\varepsilon}$ yields
 \begin{equation}
-{\mathcal{G}^{(1)}}_{\mu\nu} = {R^{(1)}}_{\mu\nu} - \partial_\mu\partial_\nu(a_2 R^{(1)}) + \eta_{\mu\nu}\Box(a_2 R^{(1)}) - \frac{R^{(1)}}{2}\eta_{\mu\nu}.
+{\mathcal{G}^{(1)}}_{\mu\nu} = {R^{(1)}}_{\mu\nu} - \partial_\mu\partial_\nu(a_2 R^{(1)}) + \eta_{\mu\nu}\Box(a_2 R^{(1)}) - \dfrac{R^{(1)}}{2}\eta_{\mu\nu}.
 \label{eq:Field}
 \end{equation}
 Now consider the linearised trace equation, from \eqnref{Trace_eq}
@@ -191,11 +191,11 @@ The next step is to substitute in $h_{\mu\nu}$ to find wave solutions. We want a
 \end{equation}
 In GR we use the trace-reversed form where $A_{\mu\nu} = -(h/2)\eta_{\mu\nu}$. This does not suffice here, but let us look for a similar solution
 \begin{equation}
-\overline{h}_{\mu\nu} = h_{\mu\nu} - \frac{h}{2}\eta_{\mu\nu} + B_{\mu\nu}.
+\overline{h}_{\mu\nu} = h_{\mu\nu} - \dfrac{h}{2}\eta_{\mu\nu} + B_{\mu\nu}.
 \end{equation}
 The only rank-two tensors in our theory are: $h_{\mu\nu}$, $\eta_{\mu\nu}$, ${R^{(1)}}_{\mu\nu}$, and $\partial_\mu\partial_\nu$; $h_{\mu\nu}$ has been used already, and we wish to eliminate ${R^{(1)}}_{\mu\nu}$, so we can try the simpler option based around $\eta_{\mu\nu}$. We want $B_{\mu\nu}$ to be $\order{\varepsilon}$; since we have already used $h$, we shall try the other scalar quantity $R^{(1)}$. Therefore, we construct an ansatz
 \begin{equation}
-\overline{h}_{\mu\nu} = h_{\mu\nu} + \left(b a_2 R^{(1)} - \frac{h}{2}\right)\eta_{\mu\nu},
+\overline{h}_{\mu\nu} = h_{\mu\nu} + \left(b a_2 R^{(1)} - \dfrac{h}{2}\right)\eta_{\mu\nu},
 \label{eq:Ansatz}
 \end{equation}
 where $a_2$ has been included to ensure dimensional consistency and $b$ is a dimensionless number. Contracting with the background metric yields
@@ -205,7 +205,7 @@ where $a_2$ has been included to ensure dimensional consistency and $b$ is a dim
 \end{equation}
 so we can eliminate $h$ in our definition of $\overline{h}_{\mu\nu}$ to give
 \begin{equation}
-h_{\mu\nu} = \overline{h}_{\mu\nu} + \left(b a_2 R^{(1)} -\frac{\overline{h}}{2}\right)\eta_{\mu\nu}.
+h_{\mu\nu} = \overline{h}_{\mu\nu} + \left(b a_2 R^{(1)} -\dfrac{\overline{h}}{2}\right)\eta_{\mu\nu}.
 \end{equation}
 Just as in GR, we have the freedom to perform a gauge transformation (\citealt[box 18.2]{Misner1973}; \citealt[section 17.1]{Hobson2006}): the field equations are gauge-invariant since we started with a function of the gauge-invariant Ricci scalar. We shall assume a Lorenz, or de Donder, gauge choice
 \begin{equation}
@@ -218,27 +218,27 @@ or for a flat spacetime
 \end{equation}
 Subject to this, from \eqnref{Ricci}, the Ricci tensor is
 \begin{align}
-{R^{(1)}}_{\mu\nu} = {} & -\left[b \partial_\mu\partial_\nu(a_2  R^{(1)}) + \recip{2}\Box\left(\overline{h}_{\mu\nu} -\frac{\overline{h}}{2}\eta_{\mu\nu}\right) + \frac{b}{6}(R^{(1)} + \mathcal{G}^{(1)})\eta_{\mu\nu}\right].
+{R^{(1)}}_{\mu\nu} = {} & -\left[b \partial_\mu\partial_\nu(a_2  R^{(1)}) + \recip{2}\Box\left(\overline{h}_{\mu\nu} -\dfrac{\overline{h}}{2}\eta_{\mu\nu}\right) + \dfrac{b}{6}(R^{(1)} + \mathcal{G}^{(1)})\eta_{\mu\nu}\right].
 \label{eq:new_Ricci}
 \end{align}
 Using this with \eqnref{Box_R} in \eqnref{Field} gives
 \begin{align}
-{\mathcal{G}^{(1)}}_{\mu\nu} = {} & \frac{2 - b}{6}\mathcal{G}^{(1)}\eta_{\mu\nu} -\frac{1}{2}\Box\left(\overline{h}_{\mu\nu} - \frac{\overline{h}}{2}\eta_{\mu\nu}\right) - (b + 1)\left[\partial_\mu\partial_\nu(a_2 R^{(1)}) + \recip{6}R^{(1)}\eta_{\mu\nu}\right].
+{\mathcal{G}^{(1)}}_{\mu\nu} = {} & \dfrac{2 - b}{6}\mathcal{G}^{(1)}\eta_{\mu\nu} -\dfrac{1}{2}\Box\left(\overline{h}_{\mu\nu} - \dfrac{\overline{h}}{2}\eta_{\mu\nu}\right) - (b + 1)\left[\partial_\mu\partial_\nu(a_2 R^{(1)}) + \recip{6}R^{(1)}\eta_{\mu\nu}\right].
 \label{eq:b_Field}
 \end{align}
 Picking $b = -1$ the final term vanishes, thus we set (\citealt[section 10.3]{Will1993}; \citealt{Corda2008, Capozziello2008}) % Will section 10.3
 \begin{subequations}
 \begin{align}
 \label{eq:hbar_metric}
-\overline{h}_{\mu\nu} = {} & h_{\mu\nu} - \left(a_2 R^{(1)} + \frac{h}{2}\right)\eta_{\mu\nu}\\
-h_{\mu\nu} = {} & \overline{h}_{\mu\nu} - \left(a_2 R^{(1)} + \frac{\overline{h}}{2}\right)\eta_{\mu\nu}.
+\overline{h}_{\mu\nu} = {} & h_{\mu\nu} - \left(a_2 R^{(1)} + \dfrac{h}{2}\right)\eta_{\mu\nu}\\
+h_{\mu\nu} = {} & \overline{h}_{\mu\nu} - \left(a_2 R^{(1)} + \dfrac{\overline{h}}{2}\right)\eta_{\mu\nu}.
 \label{eq:h_metric}
 \end{align}
 \end{subequations}
 From \eqnref{Scalar} the Ricci scalar is 
 \begin{align}
-R^{(1)} = {} & \Box \left(a_2 R^{(1)} -\frac{\overline{h}}{2}\right) + \Box (4 a_2 R^{(1)} + \overline{h}) \nonumber \\*
- = {} & 3 \Box(a_2 R^{(1)}) + \frac{1}{2}\Box \overline{h}.
+R^{(1)} = {} & \Box \left(a_2 R^{(1)} -\dfrac{\overline{h}}{2}\right) + \Box (4 a_2 R^{(1)} + \overline{h}) \nonumber \\*
+ = {} & 3 \Box(a_2 R^{(1)}) + \dfrac{1}{2}\Box \overline{h}.
 \label{eq:Ricci_Box_h}
 \end{align}
 For consistency with \eqnref{Box_R}, we require
@@ -275,7 +275,7 @@ q^\mu = \left(\Omega, 0, 0, \sqrt{\Omega^2 - \Upsilon^2}\right),
 \end{equation}
 for frequency $\Omega$. These waves do not travel at $c$, but have a group velocity
 \begin{equation}
-v(\Omega) = \frac{\sqrt{\Omega^2 - \Upsilon^2}}{\Omega},
+v(\Omega) = \dfrac{\sqrt{\Omega^2 - \Upsilon^2}}{\Omega},
 \end{equation}
 provided that $\Upsilon^2 > 0$, $v < 1 = c$. For $\Omega < \Upsilon$, we find an evanescently decaying wave. The travelling wave is dispersive; for waves made up of a range of frequency components there shall be a time delay between the arrival of the high-frequency and low-frequency constituents. This may make it difficult to reconstruct a waveform, should the scalar mode be observed with a GW detector.
 
@@ -292,7 +292,7 @@ in this case
 Let us consider the implications of \eqnref{Box_h} using \eqref{eq:Box_R} and \eqref{eq:h_trace},
 \begin{align}
 \Box\left(4a_2R^{(1)} + h\right) = {} & 0 \nonumber \\*
-\Box h = {} & -\frac{4}{3}R^{(1)}.
+\Box h = {} & -\dfrac{4}{3}R^{(1)}.
 \end{align}
 For non-zero $R^{(1)}$ (as required for the Ricci mode) there is no way to make a gauge choice such that the trace $h$ vanishes \citep{Corda2008, Capozziello2008}. This is distinct from in GR. It is possible, however, to make a gauge choice such that the trace $\overline{h}$ vanishes. Consider a gauge transformation generated by $\xi_\mu$ which satisfies $\Box \xi_\mu = 0$, and so has a Fourier decomposition
 \begin{equation}
@@ -361,13 +361,13 @@ where $j_{\mu\nu}$ is $\order{\varepsilon^2}$ to ensure that ${{R^{(\text{B})}}^
 
 We consider terms only to $\order{\varepsilon^2}$. We identify ${{\Gamma^{(1)}}^\rho}_{\mu\nu}$ from \eqnref{Lin_Gamma}.\footnote{There is one small subtlety: whether we use the background metric $\gamma^{\mu\nu}$ or $\eta^{\mu\nu}$ to raise indices of $\partial_\mu$ and $h_{\mu\nu}$. Fortunately, to the accuracy considered here, it does not make a difference, but we shall consider the indices to be changed with $\gamma^{\mu\nu}$.} We do not distinguish between $\partial_\mu$ and ${\nabla^{(\text{B})}}_\mu$, the covariant derivative for the background metric: to the order of accuracy required covariant derivatives commute and ${\nabla^{(\text{B})}}_\mu$ behaves just like $\partial_\mu$. Thus
 \begin{align}
-{{\Gamma^{(1)}}^\rho}_{\mu\nu} = {} & \frac{1}{2}\gamma^{\rho\lambda}\left[\partial_\mu \left(\overline{h}_{\lambda\nu} - a_2 R^{(1)}\gamma_{\lambda\nu}\right) + \partial_\nu \left(\overline{h}_{\lambda\mu} - a_2 R^{(1)}\gamma_{\lambda\mu}\right) \right. \nonumber \\*
+{{\Gamma^{(1)}}^\rho}_{\mu\nu} = {} & \dfrac{1}{2}\gamma^{\rho\lambda}\left[\partial_\mu \left(\overline{h}_{\lambda\nu} - a_2 R^{(1)}\gamma_{\lambda\nu}\right) + \partial_\nu \left(\overline{h}_{\lambda\mu} - a_2 R^{(1)}\gamma_{\lambda\mu}\right) \right. \nonumber \\*
  & - \left. \partial_\lambda \left(\overline{h}_{\mu\nu} - a_2 R^{(1)}\gamma_{\mu\nu}\right)\right] ,
 \end{align}
 and
 \begin{align}
-{{\Gamma^{(2)}}^\rho}_{\mu\nu} = {} & -\frac{1}{2}h^{\rho\lambda}(\partial_\mu h_{\lambda\nu} + \partial_\nu h_{\lambda\mu} - \partial_\lambda h_{\mu\nu}) \nonumber \\*
- = {} & -\frac{1}{2}\left(\overline{h}^{\rho\lambda} - a_2 R^{(1)}\gamma^{\rho\lambda}\right)\left[\partial_\mu \left(\overline{h}_{\lambda\nu} - a_2 R^{(1)}\gamma_{\lambda\nu}\right) + \partial_\nu \left(\overline{h}_{\lambda\mu} - a_2 R^{(1)}\gamma_{\lambda\mu}\right) \right. \nonumber \\*
+{{\Gamma^{(2)}}^\rho}_{\mu\nu} = {} & -\dfrac{1}{2}h^{\rho\lambda}(\partial_\mu h_{\lambda\nu} + \partial_\nu h_{\lambda\mu} - \partial_\lambda h_{\mu\nu}) \nonumber \\*
+ = {} & -\dfrac{1}{2}\left(\overline{h}^{\rho\lambda} - a_2 R^{(1)}\gamma^{\rho\lambda}\right)\left[\partial_\mu \left(\overline{h}_{\lambda\nu} - a_2 R^{(1)}\gamma_{\lambda\nu}\right) + \partial_\nu \left(\overline{h}_{\lambda\mu} - a_2 R^{(1)}\gamma_{\lambda\mu}\right) \right. \nonumber \\*
  & - \left. \partial_\lambda \left(\overline{h}_{\mu\nu} \vphantom{R^{(1)}} - a_2 R^{(1)}\gamma_{\mu\nu}\right)\right].
 \end{align}
 
@@ -378,7 +378,7 @@ For the Ricci tensor we can use our linearised expression, \eqnref{new_Ricci}, f
 The next term is
 \begin{align}
 {R^{(2)}}_{\mu\nu} = {} & \partial_\rho {{\Gamma^{(2)}}^\rho}_{\mu\nu} - \partial_\nu {{\Gamma^{(2)}}^\rho}_{\mu\rho} + {{\Gamma^{(1)}}^\rho}_{\mu\nu}{{\Gamma^{(1)}}^\sigma}_{\rho\sigma} - {{\Gamma^{(1)}}^\rho}_{\mu\sigma}{{\Gamma^{(1)}}^\sigma}_{\rho\nu} \nonumber \\
- = {} & \frac{1}{2}\left\{\recip{2}\partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\sigma\rho} + \overline{h}^{\sigma\rho}\left[\partial_\mu\partial_\nu\overline{h}_{\sigma\rho} \vphantom{R^{(1)}} + \partial_\sigma\partial_\rho\left(\overline{h}_{\mu\nu} - a_2 R^{(1)}\gamma_{\mu\nu}\right) \right.\right. \nonumber \\*
+ = {} & \dfrac{1}{2}\left\{\recip{2}\partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\sigma\rho} + \overline{h}^{\sigma\rho}\left[\partial_\mu\partial_\nu\overline{h}_{\sigma\rho} \vphantom{R^{(1)}} + \partial_\sigma\partial_\rho\left(\overline{h}_{\mu\nu} - a_2 R^{(1)}\gamma_{\mu\nu}\right) \right.\right. \nonumber \\*
   & - \left.\left. \partial_\nu\partial_\rho\left(\overline{h}_{\sigma\mu} \vphantom{R^{(1)}} - a_2 R^{(1)} \gamma_{\sigma\mu}\right) - \partial_\mu\partial_\rho\left(\overline{h}_{\sigma\nu} - a_2 R^{(1)} \gamma_{\sigma\nu}\right)\right] \right. \nonumber \\*
   & + \left. \partial^\rho\overline{h}^\sigma_\nu\left(\partial_\rho\overline{h}_{\sigma\mu} - \partial_\sigma\overline{h}_{\rho\mu}\right) - a_2 \partial^\sigma R^{(1)}\partial_\sigma\overline{h}_{\mu\nu} \right. \nonumber \\*
   & + \left. a_2^2 \left(2R^{(1)}\partial_\mu\partial_\nu R^{(1)} + 3\partial_\mu R^{(1)}\partial_\nu R^{(1)} + R^{(1)} \Box^{(\text{B})} R^{(1)} \gamma_{\mu\nu}\right)\right\}.
@@ -391,8 +391,8 @@ To find the Ricci scalar we contract the Ricci tensor with the full metric. To $
 R^{(\text{B})} = {} & \gamma^{\mu\nu} {R^{(\text{B})}}_{\mu\nu} \\
 R^{(1)} = {} & \gamma^{\mu\nu} {R^{(1)}}_{\mu\nu} \\
 R^{(2)} = {} & \gamma^{\mu\nu} {R^{(2)}}_{\mu\nu} - h^{\mu\nu} {R^{(1)}}_{\mu\nu} \nonumber \\*
- = {} & \frac{3}{4}\partial_\mu\overline{h}_{\sigma\rho}\partial^\mu\overline{h}^{\sigma\rho} - \recip{2} \partial^\rho\overline{h}^{\sigma\mu}\partial_\sigma\overline{h}_{\rho\mu} - 2a_2 \overline{h}^{\mu\nu}\partial_\mu\partial_\nu R^{(1)} \nonumber \\*
-  & + {} 2 a_2 {R^{(1)}}^2 + \frac{3a_2^2}{2}\partial_\mu R^{(1)} \partial^\mu R^{(1)}.
+ = {} & \dfrac{3}{4}\partial_\mu\overline{h}_{\sigma\rho}\partial^\mu\overline{h}^{\sigma\rho} - \recip{2} \partial^\rho\overline{h}^{\sigma\mu}\partial_\sigma\overline{h}_{\rho\mu} - 2a_2 \overline{h}^{\mu\nu}\partial_\mu\partial_\nu R^{(1)} \nonumber \\*
+  & + {} 2 a_2 {R^{(1)}}^2 + \dfrac{3a_2^2}{2}\partial_\mu R^{(1)} \partial^\mu R^{(1)}.
 \end{align}
 \end{subequations}
 Using these
@@ -400,7 +400,7 @@ Using these
 \begin{align}
 f^{(\text{B})} = {} & R^{(\text{B})} \\
 f^{(1)} = {} & R^{(1)} \\
-f^{(2)} = {} & R^{(2)} + \frac{a_2}{2}{R^{(1)}}^2,
+f^{(2)} = {} & R^{(2)} + \dfrac{a_2}{2}{R^{(1)}}^2,
 \end{align}
 \end{subequations}
 and
@@ -409,7 +409,7 @@ and
 f'^{(\text{B})} = {} & a_2 R^{(\text{B})} \\
 f'^{(0)} = {} & 1 \\
 f'^{(1)} = {} & a_2 R^{(1)} \\
-f'^{(2)} = {} & a_2 R^{(2)} + \frac{a_3}{2}{R^{(1)}}^2.
+f'^{(2)} = {} & a_2 R^{(2)} + \dfrac{a_3}{2}{R^{(1)}}^2.
 \end{align}
 \end{subequations}
 We list a zeroth-order term for clarity; $R^{(\text{B})}$ is $\order{\varepsilon^2}$.
@@ -420,8 +420,8 @@ Combining all of these
   & - {} \gamma_{\mu\nu}\gamma^{\rho\sigma}{{\Gamma^{(1)}}^\lambda}_{\sigma\rho}\partial_\lambda f'^{(1)} - \gamma_{\mu\nu}h^{\rho\sigma}\partial_\rho\partial_\sigma f'^{(1)} + h_{\mu\nu}\gamma^{\rho\sigma}\partial_\rho\partial_\sigma f'^{(1)} \nonumber \\*
   & - {} \recip{2}f^{(2)}\gamma_{\mu\nu} - \recip{2}f^{(1)}h_{\mu\nu} \nonumber \\*
  = {} & {R^{(2)}}_{\mu\nu} + a_2\left(\gamma_{\mu\nu}\Box^{(\text{B})} - \partial_\mu\partial_\nu\right)R^{(2)} - \recip{2}R^{(2)}\gamma_{\mu\nu} \nonumber \\*
-  & + {} \frac{a_3}{2}\left(\gamma_{\mu\nu}\Box^{(\text{B})} - \partial_\mu\partial_\nu\right){R^{(1)}}^2 - \recip{6}\overline{h}_{\mu\nu}R^{(1)} - a_2\gamma_{\mu\nu}\overline{h}^{\sigma\rho}\partial_\sigma\partial_\rho R^{(1)} \nonumber \\*
-  & + {} \frac{a_2}{2} \partial^\rho R^{(1)} \left(\partial_\mu\overline{h}_{\rho\nu} + \partial_\nu\overline{h}_{\rho\mu} - \partial_\rho\overline{h}_{\mu\nu}\right) + a_2\left(R^{(1)}{R^{(1)}}_{\mu\nu} + \recip{4}{R^{(1)}}^2\gamma_{\mu\nu}\right) \nonumber \\* 
+  & + {} \dfrac{a_3}{2}\left(\gamma_{\mu\nu}\Box^{(\text{B})} - \partial_\mu\partial_\nu\right){R^{(1)}}^2 - \recip{6}\overline{h}_{\mu\nu}R^{(1)} - a_2\gamma_{\mu\nu}\overline{h}^{\sigma\rho}\partial_\sigma\partial_\rho R^{(1)} \nonumber \\*
+  & + {} \dfrac{a_2}{2} \partial^\rho R^{(1)} \left(\partial_\mu\overline{h}_{\rho\nu} + \partial_\nu\overline{h}_{\rho\mu} - \partial_\rho\overline{h}_{\mu\nu}\right) + a_2\left(R^{(1)}{R^{(1)}}_{\mu\nu} + \recip{4}{R^{(1)}}^2\gamma_{\mu\nu}\right) \nonumber \\* 
   & - {} a_2^2\left(\partial_\mu R^{(1)}\partial_\nu R^{(1)} + \recip{2} \gamma_{\mu\nu}\partial^\rho R^{(1)}\partial_\rho R^{(1)}\right).
  \label{eq:G2}
 \end{align}
@@ -436,14 +436,14 @@ As a corollary of this
 Repeated application of this, together with our gauge condition \eqref{eq:Lorenz}, and wave equations \eqref{eq:Box_R} and \eqref{eq:Box_hmunu} allows us to eliminate many terms. Those that do not average to zero are the last three terms in \eqnref{G2} and
 \begin{subequations}
 \begin{align}
-\left\langle {R^{(2)}}_{\mu\nu} \right\rangle = {} & \left\langle -\recip{4} \partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\rho\sigma} + \frac{a_2^2}{2}\partial_\mu R^{(1)}\partial_\nu R^{(1)} + \frac{a_2}{6}\gamma_{\mu\nu} {R^{(1)}}^2 \right\rangle; \\
-\left\langle R^{(2)} \right\rangle = {} & \left\langle \frac{3a_2}{2}{R^{(1)}}^2 \right\rangle; \\
+\left\langle {R^{(2)}}_{\mu\nu} \right\rangle = {} & \left\langle -\recip{4} \partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\rho\sigma} + \dfrac{a_2^2}{2}\partial_\mu R^{(1)}\partial_\nu R^{(1)} + \dfrac{a_2}{6}\gamma_{\mu\nu} {R^{(1)}}^2 \right\rangle; \\
+\left\langle R^{(2)} \right\rangle = {} & \left\langle \dfrac{3a_2}{2}{R^{(1)}}^2 \right\rangle; \\
 \left\langle R^{(1)}{R^{(1)}}_{\mu\nu} \right\rangle = {} & \left\langle a_2 R^{(1)} \partial_\mu\partial_\nu R^{(1)} + \recip{6}\gamma_{\mu\nu}{R^{(1)}}^2\right\rangle.
 \end{align}
 \end{subequations}
 Combining terms gives
 \begin{equation}
-\left\langle {\mathcal{G}^{(2)}}_{\mu\nu}\right\rangle = \left\langle -\recip{4} \partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\rho\sigma} - \frac{3a_2^2}{2}\partial_\mu R^{(1)}\partial_\nu R^{(1)} \right\rangle.
+\left\langle {\mathcal{G}^{(2)}}_{\mu\nu}\right\rangle = \left\langle -\recip{4} \partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\rho\sigma} - \dfrac{3a_2^2}{2}\partial_\mu R^{(1)}\partial_\nu R^{(1)} \right\rangle.
 \end{equation}
 Thus we obtain the result
 \begin{equation}
@@ -483,25 +483,25 @@ We again assume a Minkowski background, considering terms to $\order{\varepsilon
 \end{equation}
 where $\Box$ acts on $x$. The Green's function is familiar as the Klein-Gordon propagator (up to a factor of $-i$) \citep[section 2.4]{Peskin1995a}
 \begin{equation}
-\mathscr{G}_\Upsilon(x, x') = \int \frac{\dd^4 p}{(2\pi)^4} \frac{\exp\left[-ip\cdot(x-x')\right]}{\Upsilon^2 - p^2}.
+\mathscr{G}_\Upsilon(x, x') = \int \dfrac{\dd^4 p}{(2\pi)^4} \dfrac{\exp\left[-ip\cdot(x-x')\right]}{\Upsilon^2 - p^2}.
 \end{equation}
 This can be evaluated by a suitable contour integral to give
 \begin{equation}
 \mathscr{G}_\Upsilon(x, x') =
 \begin{cases}
-{\displaystyle \int{\frac{\dd \omega}{2\pi} \exp\left[-i\omega(t-t')\right]\recip{4\pi r}\exp\left[i\left(\omega^2 - \Upsilon^2\right)^{1/2}r\right]}} & \omega^2 > \Upsilon^2\vspace{0.8mm}\\
-{\displaystyle \int{\frac{\dd \omega}{2\pi} \exp\left[-i\omega(t-t')\right]\recip{4\pi r}\exp\left[-\left(\Upsilon^2 - \omega^2\right)^{1/2}r\right]}} & \omega^2 < \Upsilon^2\vspace{0.8mm}
+{\displaystyle \int{\dfrac{\dd \omega}{2\pi} \exp\left[-i\omega(t-t')\right]\recip{4\pi r}\exp\left[i\left(\omega^2 - \Upsilon^2\right)^{1/2}r\right]}} & \omega^2 > \Upsilon^2\vspace{0.8mm}\\
+{\displaystyle \int{\dfrac{\dd \omega}{2\pi} \exp\left[-i\omega(t-t')\right]\recip{4\pi r}\exp\left[-\left(\Upsilon^2 - \omega^2\right)^{1/2}r\right]}} & \omega^2 < \Upsilon^2\vspace{0.8mm}
 \end{cases}\, ,
 \label{eq:Green}
 \end{equation}
 where we have introduced $t = x^0$, $t' = x'^0$ and $r = |\boldsymbol{x} - \boldsymbol{x'}|$. For $\Upsilon = 0$,
 \begin{equation}
-\mathscr{G}_0(x, x') = \frac{\delta(t - t' - r)}{4 \pi r},
+\mathscr{G}_0(x, x') = \dfrac{\delta(t - t' - r)}{4 \pi r},
 \end{equation}
 the familiar retarded-time Green's function. We can use this to solve \eqnref{Box_hmunu}
 \begin{align}
 \overline{h}_{\mu\nu}(x) = {} & -16 \pi G \int \dd^4 x'\, \mathscr{G}_0(x, x') T_{\mu\nu}(x') \nonumber \\*
- = {} & -4 G \int \dd^3 x' \frac{T_{\mu\nu}(t - r, \boldsymbol{x'})}{r}.
+ = {} & -4 G \int \dd^3 x' \dfrac{T_{\mu\nu}(t - r, \boldsymbol{x'})}{r}.
 \end{align}
 This is exactly as in GR, so we can use standard results.
 
@@ -523,43 +523,43 @@ with a mass distribution of a stationary point source
 \end{equation}
 This source does not produce any radiation. As in GR
 \begin{equation}
-\overline{h}_{00} = -\frac{4GM}{r}; \qquad \overline{h}_{0i} = \overline{h}_{ij} = 0.
+\overline{h}_{00} = -\dfrac{4GM}{r}; \qquad \overline{h}_{0i} = \overline{h}_{ij} = 0.
 \end{equation}
 Solving for the Ricci scalar \citep{Havas1977}
 \begin{equation}
-R^{(1)} = -2 G \Upsilon^2 M \frac{\exp(- \Upsilon r)}{r}.
+R^{(1)} = -2 G \Upsilon^2 M \dfrac{\exp(- \Upsilon r)}{r}.
 \end{equation}
 Combining these in \eqnref{h_metric} yields a metric perturbation with non-zero elements 
 \begin{equation}
-h_{00} = {} -\frac{2GM}{r}\left[1 + \frac{\exp(- \Upsilon r)}{3}\right]; \quad
-h_{ij} = {} -\frac{2GM}{r}\left[1 - \frac{\exp(- \Upsilon r)}{3}\right]\delta_{ij}.
+h_{00} = {} -\dfrac{2GM}{r}\left[1 + \dfrac{\exp(- \Upsilon r)}{3}\right]; \quad
+h_{ij} = {} -\dfrac{2GM}{r}\left[1 - \dfrac{\exp(- \Upsilon r)}{3}\right]\delta_{ij}.
 \end{equation}
 Thus, to first order, the metric for a point mass in $f(R)$-gravity is
 \begin{align}
-\dd s^2 = {} & \left\{1-\frac{2GM}{r}\left[1 + \frac{\exp(- \Upsilon r)}{3}\right]\right\}\dd t^2 - \left\{1+\frac{2GM}{r}\left[1 - \frac{\exp(- \Upsilon r)}{3}\right]\right\}\dd \Sigma^2,
+\dd s^2 = {} & \left\{1-\dfrac{2GM}{r}\left[1 + \dfrac{\exp(- \Upsilon r)}{3}\right]\right\}\dd t^2 - \left\{1+\dfrac{2GM}{r}\left[1 - \dfrac{\exp(- \Upsilon r)}{3}\right]\right\}\dd \Sigma^2,
 \label{eq:f(R)_Schw}
 \end{align}
 using $\dd \Sigma^2 = \dd x^2 + \dd y^2 + \dd z^2$ \citep{Capozziello2007, Capozziello2009a, Naf2010}. This is not the linearised limit of the Schwarzschild metric, although this is recovered as $a_2 \rightarrow 0$, $\Upsilon \rightarrow \infty$ \citep{Chiba2007a}. This metric has already been derived for the case of quadratic gravity, which includes terms like $R^2$ and $R_{\mu\nu}R^{\mu\nu}$ in the Lagrangian \citep{Pechlaner1966, Stelle1978, Schmidt1986, Teyssandier1990}. In linearised theory our $f(R)$ reduces to quadratic theory, as to first order $f(R) = R + a_2 R^2/2$.
 
 Extending this result to a slowly rotating source with angular momentum $J$, we then have the additional term \citep[section 13.20]{Hobson2006}
 \begin{equation}
-\overline{h}^{0i} = -\frac{2G}{c^2r^3} \epsilon^{ijk}J_j x_k,
+\overline{h}^{0i} = -\dfrac{2G}{c^2r^3} \epsilon^{ijk}J_j x_k,
 \end{equation}
 where $\epsilon^{ijk}$ is the Levi-Civita alternating tensor. The metric is
 \begin{align}
-\dd s^2 = {} & \left\{1-\frac{2GM}{r}\left[1 + \frac{\exp(- \Upsilon r)}{3}\right]\right\}\dd t^2 + \frac{4GJ}{r^3}\left(x\dd y - y\dd x\right)\dd t \nonumber \\*
- & - {} \left\{1 +\frac{2GM}{r}\left[1 - \frac{\exp(- \Upsilon r)}{3}\right]\right\}\dd \Sigma^2,\label{eq:f(R)_Kerr}
+\dd s^2 = {} & \left\{1-\dfrac{2GM}{r}\left[1 + \dfrac{\exp(- \Upsilon r)}{3}\right]\right\}\dd t^2 + \dfrac{4GJ}{r^3}\left(x\dd y - y\dd x\right)\dd t \nonumber \\*
+ & - {} \left\{1 +\dfrac{2GM}{r}\left[1 - \dfrac{\exp(- \Upsilon r)}{3}\right]\right\}\dd \Sigma^2,\label{eq:f(R)_Kerr}
 \end{align}
 where $z$ is the rotation axis. This is not the first-order limit of the Kerr metric (aside from as $a_2 \rightarrow 0$, $\Upsilon \rightarrow \infty$).
 
 In $f(R)$-gravity Birkhoff's theorem no longer applies \citep{Pechlaner1966, Stelle1978, Clifton2006, Capozziello2009b, Stabile2010}: the metric about a spherically symmetric mass does not correspond to the equivalent of the Schwarzschild solution. The distribution of matter influences how the Ricci scalar decays, and consequently Gauss' theorem is not applicable. Repeating our analysis for a (nonrotating) sphere of uniform density and radius $L$,
 \begin{equation}
-\overline{h}_{00} = -\frac{4GM}{r}; \qquad \overline{h}_{0i} = \overline{h}_{ij} = 0,
+\overline{h}_{00} = -\dfrac{4GM}{r}; \qquad \overline{h}_{0i} = \overline{h}_{ij} = 0,
 \end{equation}
 as in GR, and for the point mass, but
 \begin{align}
-R^{(1)} = {} & -6 G M \frac{\exp(- \Upsilon r)}{r}\left[\frac{\Upsilon L\cosh(\Upsilon L) - \sinh(\Upsilon L)}{\Upsilon L^3}\right] \nonumber \\*
- = {} &  -6 G M \frac{\exp(- \Upsilon r)}{r}\Upsilon^2\Xi(\Upsilon L),
+R^{(1)} = {} & -6 G M \dfrac{\exp(- \Upsilon r)}{r}\left[\dfrac{\Upsilon L\cosh(\Upsilon L) - \sinh(\Upsilon L)}{\Upsilon L^3}\right] \nonumber \\*
+ = {} &  -6 G M \dfrac{\exp(- \Upsilon r)}{r}\Upsilon^2\Xi(\Upsilon L),
 \end{align}
 defining $\Xi(\Upsilon L)$ in the last line.\footnote{$\Xi(0) = 1/3$ is the minimum of $\Xi(\Upsilon L)$.} The metric perturbation thus has non-zero first-order elements \citep{Stelle1978, Capozziello2009b, Stabile2010}
 \begin{equation}
@@ -579,7 +579,7 @@ However, a uniqueness theorem exists for the closely related Brans--Dicke theory
 
 It is useful to transform the weak-field metric, \eqnref{f(R)_Kerr}, to the more familiar form
 \begin{equation}
-\dd s^2 = A(\widetilde{r}) \dd t^2 + \frac{4GJ}{\widetilde{r}} \sin^2\theta \dd \phi \,\dd t - B(\widetilde{r})\dd \widetilde{r}^{\,2} - \widetilde{r}^{\,2} \dd \Omega^2.
+\dd s^2 = A(\widetilde{r}) \dd t^2 + \dfrac{4GJ}{\widetilde{r}} \sin^2\theta \dd \phi \,\dd t - B(\widetilde{r})\dd \widetilde{r}^{\,2} - \widetilde{r}^{\,2} \dd \Omega^2.
 \label{eq:Sph_sym}
 \end{equation}
 The coordinate $\widetilde{r}$ is a circumferential measure, as in the Schwarzschild metric, as opposed to $r$, used in preceding sections, which is a radial distance (an isotropic coordinate)~(\citealt[section 40.1]{Misner1973}; \citealt{Olmo2007c}). To simplify the algebra we introduce the Schwarzschild radius
@@ -588,32 +588,32 @@ r\sub{S} = 2GM.
 \end{equation}
 In the linearised regime, we require that the new radial coordinate satisfies
 \begin{align}
-\widetilde{r}^{\,2} = {} & \left\{1 + \frac{r\sub{S}}{r}\left[1 - \frac{\exp(-\Upsilon r)}{3}\right]\right\}r^2 \\
-\widetilde{r} = {} & r + \frac{r\sub{S}}{2}\left[1 - \frac{\exp(-\Upsilon r)}{3}\right].
+\widetilde{r}^{\,2} = {} & \left\{1 + \dfrac{r\sub{S}}{r}\left[1 - \dfrac{\exp(-\Upsilon r)}{3}\right]\right\}r^2 \\
+\widetilde{r} = {} & r + \dfrac{r\sub{S}}{2}\left[1 - \dfrac{\exp(-\Upsilon r)}{3}\right].
 \label{eq:r_tilde}
 \end{align}
 This can be used as an implicit definition of $r$ in terms of $\widetilde{r}$. To first order in ${r\sub{S}}/{r}$ \citep{Olmo2007c}
 \begin{equation}
-A(\widetilde{r}) = 1 - \frac{r\sub{S}}{\widetilde{r}}\left[1 + \frac{\exp(-\Upsilon r )}{3}\right].
+A(\widetilde{r}) = 1 - \dfrac{r\sub{S}}{\widetilde{r}}\left[1 + \dfrac{\exp(-\Upsilon r )}{3}\right].
 \label{eq:A_metric}
 \end{equation}
 We see that the functional form of $g_{00}$ is almost unchanged upon substituting $\widetilde{r}$ for $r$, but $r$ is left in the exponential.
 
 To find $B(\widetilde{r})$ we consider, using \eqnref{r_tilde},
 \begin{equation}
-\frac{\dd \widetilde{r}}{\widetilde{r}} =  \dd \ln \widetilde{r} = \left\{\frac{1 + {\Upsilon r\sub{S}r\exp(-\Upsilon r)}/{6\widetilde{r}}}{1 + ({r\sub{S}}/{2\widetilde{r}})\left[1 - {\exp(-\Upsilon r)}/{3}\right]}\right\}\frac{\dd r}{r}.
+\dfrac{\dd \widetilde{r}}{\widetilde{r}} =  \dd \ln \widetilde{r} = \left\{\dfrac{1 + {\Upsilon r\sub{S}r\exp(-\Upsilon r)}/{6\widetilde{r}}}{1 + ({r\sub{S}}/{2\widetilde{r}})\left[1 - {\exp(-\Upsilon r)}/{3}\right]}\right\}\dfrac{\dd r}{r}.
 \end{equation}
 Thus
 \begin{equation}
-\dd \widetilde{r}^{\,2} = \frac{\widetilde{r}^{\,2}}{r^2}\left\{\frac{1 + {\Upsilon r\sub{S}r\exp(-\Upsilon r)}/{6\widetilde{r}}}{1 + ({r\sub{S}}/{2\widetilde{r}})\left[1 - {\exp(-\Upsilon r)}/{3}\right]}\right\}^2 \dd r^2.
+\dd \widetilde{r}^{\,2} = \dfrac{\widetilde{r}^{\,2}}{r^2}\left\{\dfrac{1 + {\Upsilon r\sub{S}r\exp(-\Upsilon r)}/{6\widetilde{r}}}{1 + ({r\sub{S}}/{2\widetilde{r}})\left[1 - {\exp(-\Upsilon r)}/{3}\right]}\right\}^2 \dd r^2.
 \end{equation}
 The term in braces is $\left[B(\widetilde{r})\right]^{-1}$. We assume that in the weak-field
 \begin{equation}
-\varepsilon \sim \frac{r\sub{S}}{r}
+\varepsilon \sim \dfrac{r\sub{S}}{r}
 \end{equation}
 is small; then the metric perturbations from Minkowski are small. Expanding to first order \citep{Olmo2007c}
 \begin{equation}
-B(\widetilde{r})  = 1 + \frac{r\sub{S}}{\widetilde{r}}\left[1 - \frac{\exp(-\Upsilon r )}{3}\right] - \frac{\Upsilon r\sub{S} \exp(-\Upsilon r)}{3}.
+B(\widetilde{r})  = 1 + \dfrac{r\sub{S}}{\widetilde{r}}\left[1 - \dfrac{\exp(-\Upsilon r )}{3}\right] - \dfrac{\Upsilon r\sub{S} \exp(-\Upsilon r)}{3}.
 \label{eq:B_metric}
 \end{equation}
 In the limit $\Upsilon \rightarrow \infty$, where we recover GR, $A(\widetilde{r})$ and $B(\widetilde{r})$ tend to their Kerr (Schwarzschild) forms.
@@ -627,34 +627,34 @@ One means of probing the nature of a spacetime is through observations of orbita
 An orbit in a spacetime described by \eqnref{Sph_sym} has as constants of motion: the orbiting particle's rest mass, the energy (per unit mass) of the orbit $E$ and the $z$-component of the angular momentum (per unit mass) $L_z$. Using an over-dot to denote differentiation with respect to an affine parameter, which we identify as proper time $\tau$,
 \begin{align}
 \label{eq:E_orbit}
-E = {} & A\dot{t} + \frac{2GJ}{\widetilde{r}} \sin^2\theta\dot{\phi}; \\
-L_z = {} & \widetilde{r}^{\,2}\sin^2\theta\, \dot{\phi} - \frac{2GJ}{\widetilde{r}} \sin^2\theta\dot{t} .
+E = {} & A\dot{t} + \dfrac{2GJ}{\widetilde{r}} \sin^2\theta\dot{\phi}; \\
+L_z = {} & \widetilde{r}^{\,2}\sin^2\theta\, \dot{\phi} - \dfrac{2GJ}{\widetilde{r}} \sin^2\theta\dot{t} .
 \label{eq:L_orbit}
 \end{align}
 For circular equatorial orbits $\dot{\widetilde{r}} = \ddot{\widetilde{r}} = \dot{\theta}= 0$ and $\theta = \pi/2$. The time-like geodesic equation can be written in the covariant form
 \begin{align}
-\frac{\dd u_\mu}{\dd \tau} = {} & \frac{1}{2} \left(\partial_\mu g_{\rho\sigma} \right) u^\rho u^\sigma,\\
+\dfrac{\dd u_\mu}{\dd \tau} = {} & \dfrac{1}{2} \left(\partial_\mu g_{\rho\sigma} \right) u^\rho u^\sigma,\\
  & \nonumber
 \end{align}
 where $u^\mu$ is the 4-velocity. For a circular equatorial orbit, setting $\mu = \widetilde{r}$ gives the frequency of the orbit $\omega_0 = \dd\phi/\dd t$ as
 \begin{equation}
-\omega_0 = -\frac{GJ}{\widetilde{r}^{\,3}} \pm \frac{1}{2} \sqrt{\frac{2A'}{\widetilde{r}} + \left(\frac{2GJ}{\widetilde{r}^{\,3}}\right)^2},
+\omega_0 = -\dfrac{GJ}{\widetilde{r}^{\,3}} \pm \dfrac{1}{2} \sqrt{\dfrac{2A'}{\widetilde{r}} + \left(\dfrac{2GJ}{\widetilde{r}^{\,3}}\right)^2},
 \label{eq:omz}
 \end{equation}
 in which a prime denotes $\dd/\dd\widetilde{r}$ and the $+/-$ sign denotes prograde/retrograde orbits. The definition of proper time gives
 \begin{equation}
-\dot{t} = \left(A + \frac{4GJ\omega_0}{\widetilde{r}} - \widetilde{r}^{\,2}\omega_0^2 \right)^{-1/2}.
+\dot{t} = \left(A + \dfrac{4GJ\omega_0}{\widetilde{r}} - \widetilde{r}^{\,2}\omega_0^2 \right)^{-1/2}.
 \end{equation}
 We now have both $\dot{t}$ and $\dot{\phi} = \omega_0\dot{t}$ as functions of $\widetilde{r}$; substitution into equations \eqref{eq:E_orbit} and \eqref{eq:L_orbit} allows us to find the energy and angular momentum in terms of $\widetilde{r}$.
 
 From the Hamiltonian $\mathcal{H} = g_{\mu\nu}u^\mu u^\nu$ we can obtain the general equation of motion for massive particles, using the substitutions
 \begin{align}
-\dot{t} = {} & \frac{E}{A} -\frac{2GJ}{A\widetilde{r}^{\,3}}L_z, \\
-\dot{\phi} = {} &  \frac{2GJE}{A\widetilde{r}^{\,3}} + \frac{L_z}{\widetilde{r}^{\,2} \sin^2\theta},
+\dot{t} = {} & \dfrac{E}{A} -\dfrac{2GJ}{A\widetilde{r}^{\,3}}L_z, \\
+\dot{\phi} = {} &  \dfrac{2GJE}{A\widetilde{r}^{\,3}} + \dfrac{L_z}{\widetilde{r}^{\,2} \sin^2\theta},
 \end{align}
 where we have linearised in $J$, as appropriate for the slow-rotation limit. With these replacements, the general time-like geodesic equation takes the form
 \begin{align}
-\dot{\widetilde{r}}^{\,2} + \frac{\widetilde{r}^{\,2}}{B} \dot{\theta}^2 = {} & \frac{E^2}{AB} -\frac{4GJEL_z}{AB \widetilde{r}^{\,3}}- \recip{B}\left(1 + \frac{L_z^2}{\widetilde{r}^{\,2}\sin^2\theta}\right) \nonumber \\*
+\dot{\widetilde{r}}^{\,2} + \dfrac{\widetilde{r}^{\,2}}{B} \dot{\theta}^2 = {} & \dfrac{E^2}{AB} -\dfrac{4GJEL_z}{AB \widetilde{r}^{\,3}}- \recip{B}\left(1 + \dfrac{L_z^2}{\widetilde{r}^{\,2}\sin^2\theta}\right) \nonumber \\*
  = {} & V(\widetilde{r},\theta,E,L_z).
 \label{eq:rdot}
 \end{align}
@@ -664,15 +664,15 @@ To compute the epicyclic frequency we imagine the orbit is perturbed by a small 
 \end{equation}
 Small vertical perturbations $\theta = \pi/2 + \delta$ oscillate with frequency
 \begin{equation}
-\dot{t}^2\Omega\sub{vert}^2 = -\recip{2} \frac{B(\overline{r})}{\overline{r}^2} \left. \partialdiff{^2 V}{\theta^2}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
+\dot{t}^2\Omega\sub{vert}^2 = -\recip{2} \dfrac{B(\overline{r})}{\overline{r}^2} \left. \partialdiff{^2 V}{\theta^2}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
 \end{equation}
 We denote $A(\overline{r}) \equiv \overline{A}$, $B(\overline{r}) \equiv \overline{B}$, $A'(\overline{r}) \equiv \overline{A}'$, etc.; differentiating the potential from \eqnref{rdot} we find \citep{Berry2011}
 \begin{align}
-\dot{t}^2\Omega\sub{rad}^2 = {} & -\frac{E^2}{\overline{A}\overline{B}} \left( \frac{\overline{A}'^2}{\overline{A}^2} - \frac{\overline{A}''}{2\overline{A}} + \frac{\overline{A}'\overline{B}'}{\overline{A}\,\overline{B}} + \frac{\overline{B}'^2}{\overline{B}^2} - \frac{\overline{B}''}{2\overline{B}} \right) - \frac{\overline{B}''}{2\overline{B}^2} +  \frac{\overline{B}'^2}{\overline{B}^3} \nonumber \\*
- & - {} \frac{L_z^2}{\overline{B}\overline{r}^2} \left(\frac{\overline{B}''}{2\overline{B}} - \frac{\overline{B}'^2}{\overline{B}^2} - \frac{2\overline{B}'}{\overline{B}\overline{r}}-\frac{3}{\overline{r}^2} \right) \nonumber \\
-  & + \frac{4GJEL_z}{\overline{A}\,\overline{B}\overline{r}^{\,3}} \left[ \frac{\overline{A}'^2}{\overline{A}^2} - \frac{\overline{A}''}{2\overline{A}} + \frac{\overline{A}'\overline{B}'}{\overline{A}\,\overline{B}} + \frac{\overline{B}'^2}{\overline{B}^2} - \frac{\overline{B}''}{2\overline{B}} + \frac{3}{\overline{r}}\left(\frac{\overline{A}'}{\overline{A}}+\frac{\overline{B}'}{\overline{B}}\right) + \frac{6}{\overline{r}^2}\right] \label{eq:long_epi} \\
- = {} &  \frac{L_z^2}{\overline{r}^3\overline{B}}\left(\frac{\overline{A}''}{\overline{A}'} - \frac{2\overline{A}'}{\overline{A}} + \frac{3}{\overline{r}}\right) +\frac{6GJEL_z}{\overline{A}\,\overline{B} \overline{r}^4} \left(\frac{\overline{A}''}{\overline{A}'} + \frac{4}{\overline{r}}\right); \\
-\dot{t}\Omega\sub{vert} = {} & \frac{L_z}{\overline{r}^2}.
+\dot{t}^2\Omega\sub{rad}^2 = {} & -\dfrac{E^2}{\overline{A}\overline{B}} \left( \dfrac{\overline{A}'^2}{\overline{A}^2} - \dfrac{\overline{A}''}{2\overline{A}} + \dfrac{\overline{A}'\overline{B}'}{\overline{A}\,\overline{B}} + \dfrac{\overline{B}'^2}{\overline{B}^2} - \dfrac{\overline{B}''}{2\overline{B}} \right) - \dfrac{\overline{B}''}{2\overline{B}^2} +  \dfrac{\overline{B}'^2}{\overline{B}^3} \nonumber \\*
+ & - {} \dfrac{L_z^2}{\overline{B}\overline{r}^2} \left(\dfrac{\overline{B}''}{2\overline{B}} - \dfrac{\overline{B}'^2}{\overline{B}^2} - \dfrac{2\overline{B}'}{\overline{B}\overline{r}}-\dfrac{3}{\overline{r}^2} \right) \nonumber \\
+  & + \dfrac{4GJEL_z}{\overline{A}\,\overline{B}\overline{r}^{\,3}} \left[ \dfrac{\overline{A}'^2}{\overline{A}^2} - \dfrac{\overline{A}''}{2\overline{A}} + \dfrac{\overline{A}'\overline{B}'}{\overline{A}\,\overline{B}} + \dfrac{\overline{B}'^2}{\overline{B}^2} - \dfrac{\overline{B}''}{2\overline{B}} + \dfrac{3}{\overline{r}}\left(\dfrac{\overline{A}'}{\overline{A}}+\dfrac{\overline{B}'}{\overline{B}}\right) + \dfrac{6}{\overline{r}^2}\right] \label{eq:long_epi} \\
+ = {} &  \dfrac{L_z^2}{\overline{r}^3\overline{B}}\left(\dfrac{\overline{A}''}{\overline{A}'} - \dfrac{2\overline{A}'}{\overline{A}} + \dfrac{3}{\overline{r}}\right) +\dfrac{6GJEL_z}{\overline{A}\,\overline{B} \overline{r}^4} \left(\dfrac{\overline{A}''}{\overline{A}'} + \dfrac{4}{\overline{r}}\right); \\
+\dot{t}\Omega\sub{vert} = {} & \dfrac{L_z}{\overline{r}^2}.
 \end{align}
 To simplify \eqnref{long_epi} we used conditions imposed by setting $V$ and $\partial V/\partial \widetilde{r}$ equal to zero for circular equatorial orbits. These results hold for any metric of the general form \eqnref{Sph_sym}, subject to the slow-rotation condition, which we have used to linearise in $J$ at various stages.
 
@@ -690,7 +690,7 @@ EMRIs are a potential source of observation for LISA. However, these will be for
 
 The time-scale of the systems we are considering is set by the central object mass, and the quantities $M\omega_0$ and $M\Delta$ are mass-independent. A duration of a typical EMRI observation with LISA would be of the order of a year, and so the criterion for detectability becomes \citep{Berry2011}
 \begin{equation}
-GM\Delta = 9.8\times10^{-7} \left(\frac{M}{10^6 M_{\odot}}\right) \left(\frac{\mathrm{yr}}{T\sub{obs}}\right). \label{eq:detcrit}
+GM\Delta = 9.8\times10^{-7} \left(\dfrac{M}{10^6 M_{\odot}}\right) \left(\dfrac{\mathrm{yr}}{T\sub{obs}}\right). \label{eq:detcrit}
 \end{equation}
 In \figref{epifig} we show the region of $\Upsilon$-$\omega_0$ parameter space in which corrections could be distinguished from Kerr, as defined by this criterion.
 \begin{figure*}%[htbp]
@@ -714,11 +714,11 @@ g\super{PPN}_{00} = 1 - 2U; \qquad g\super{PPN}_{ij} = -(1 + 2\gamma U)\delta_{i
 \end{equation}
 where for a point mass
 \begin{equation}
-U(r) = \frac{GM}{r}.
+U(r) = \dfrac{GM}{r}.
 \end{equation}
 The metric must be in isotropic coordinates~(\citealt[section 40.1]{Misner1973}; \citealt[section 4.1(c)]{Will1993}). The $f(R)$ metric \eqnref{f(R)_Schw} is of a similar form, but there is not a direct correspondence because of the exponential.\footnote{Our $f(R)$ theory is equivalent to a Brans--Dicke theory with a potential and parameter $\omega\sub{BD} = 0$ \citep{Teyssandier1983, Wands1994}. We cannot use the familiar result $\gamma = (1 + \omega\sub{BD})/(2 + \omega\sub{BD})$ \citep{Will2006} as this was derived for Brans--Dicke theory without a potential \citep[section 5.3]{Will1993}.} It has been suggested that this may be incorporated by changing the definition of the potential $U$ \citep{Olmo2007c, Faulkner2007, Bisabr2010, DeFelice2010}, then
 \begin{equation}
-\gamma = \frac{3 - \exp(-\Upsilon r)}{3 + \exp(-\Upsilon r)}.
+\gamma = \dfrac{3 - \exp(-\Upsilon r)}{3 + \exp(-\Upsilon r)}.
 \end{equation}
 As $\Upsilon \rightarrow \infty$, the GR value of $\gamma = 1$ is recovered. However, the experimental bounds for $\gamma$ are derived assuming that it is a constant \citep[section 6.1]{Will1993}. Since this is not the case, we shall rederive the post-Newtonian, or $\order{\varepsilon}$, corrections to photon trajectories for a more general metric. We define
 \begin{equation}
@@ -726,8 +726,8 @@ As $\Upsilon \rightarrow \infty$, the GR value of $\gamma = 1$ is recovered. How
 \end{equation}
 To post-Newtonian order, this has non-zero connection coefficients
 \begin{equation}
-{\Gamma^0}_{0i} = \frac{\Psi'(r) x^i}{r}; \quad {\Gamma^i}_{00} = \frac{\Psi'(r) x^i}{r}; \quad
-{\Gamma^i}_{jk} = \frac{\Phi'(r)\left(\delta_{jk}x^i - \delta_{ij}x^k - \delta_{ik}x^j\right)}{r}.
+{\Gamma^0}_{0i} = \dfrac{\Psi'(r) x^i}{r}; \quad {\Gamma^i}_{00} = \dfrac{\Psi'(r) x^i}{r}; \quad
+{\Gamma^i}_{jk} = \dfrac{\Phi'(r)\left(\delta_{jk}x^i - \delta_{ij}x^k - \delta_{ik}x^j\right)}{r}.
 \end{equation}
 The photon trajectory is described by the geodesic equation
 \begin{equation}
@@ -749,7 +749,7 @@ g_{\mu\nu}\diff{x^\mu}{t}\diff{x^\nu}{t} = 0.
 To post-Newtonian accuracy these become
 \begin{align}
 \label{eq:Trajectory_1}
-\difftwo{x^i}{t} = {} & -\left(\frac{\Psi'}{r} + \frac{\Phi'}{r}\left|\diff{\boldsymbol{x}}{t}\right|^2\right)x^i + 2\frac{\Psi' + \Phi'}{r}\boldsymbol{x}\cdot\diff{\boldsymbol{x}}{t}\diff{x^i}{t}, \\
+\difftwo{x^i}{t} = {} & -\left(\dfrac{\Psi'}{r} + \dfrac{\Phi'}{r}\left|\diff{\boldsymbol{x}}{t}\right|^2\right)x^i + 2\dfrac{\Psi' + \Phi'}{r}\boldsymbol{x}\cdot\diff{\boldsymbol{x}}{t}\diff{x^i}{t}, \\
 0 = {} & 1 + 2\Phi - \left(1 - 2\Phi\right)\left|\diff{\boldsymbol{x}}{t}\right|^2.
 \label{eq:Trajectory_2}
 \end{align}
@@ -768,7 +768,7 @@ where $x^i\sub{PN}$ is the deviation from the straight line. Substituting this i
 \end{align}
 The post-Newtonian deviation only depends upon the combination $\Psi + \Phi$. From \eqnref{f(R)_Schw}
 \begin{align}
-\Psi(r) + \Phi(r) = {} & -\frac{2GM}{r} \nonumber \\*
+\Psi(r) + \Phi(r) = {} & -\dfrac{2GM}{r} \nonumber \\*
  = {} & -2U(r).
 \end{align}
 This is identical to the form in GR. The result holds not just for a point mass, using \eqnref{h_metric},
@@ -778,9 +778,9 @@ This is identical to the form in GR. The result holds not just for a point mass,
 \end{align}
 and since $\overline{h}_{\mu\nu}$ obeys \eqnref{Box_hmunu} exactly as in GR, there is no difference \citep{Zhao2011}. We conclude that an appropriate definition for the post-Newtonian parameter for light-bending is
 \begin{equation}
-\gamma = -\frac{g_{00} + g_{ii}}{2U} - 1 \qquad \text{(no summation)}.
+\gamma = -\dfrac{g_{00} + g_{ii}}{2U} - 1 \qquad \text{(no summation)}.
 \end{equation}
-Using this, our $f(R)$ solutions have $\gamma = 1$. This agrees with the result found by \citet{Clifton2008}.\footnote{\citet{Clifton2008} also gives PPN parameters $\beta = 1$, $\zeta_1 = 0$, $\zeta_3 = 0$ and $\zeta_4 = 0$, all identical to the values in GR.} Consequently, $f(R)$-gravity is indistinguishable from GR in this respect and is entirely consistent with the current observational value from the Cassini--Huygens mission of of $\gamma = 1 + (2.1 \pm 2.3) \times 10^{-5}$ \citep{Will2006, Bertotti2003}.
+Using this, our $f(R)$ solutions have $\gamma = 1$. This agrees with the result found by \citet{Clifton2008}.\footnote{\citet{Clifton2008} also gives PPN parameters $\beta = 1$, $\zeta_1 = 0$, $\zeta_3 = 0$ and $\zeta_4 = 0$, all identical to the values in GR.} Consequently, $f(R)$-gravity is indistinguishable from GR in this respect and is entirely consistent with the current observational value from the Cassini--Huygens mission of $\gamma = 1 + (2.1 \pm 2.3) \times 10^{-5}$ \citep{Will2006, Bertotti2003}.
 
 This result has important implications. To first order, the gravitational lensing of light in $f(R)$-gravity is identical to that in GR. Therefore, we still need dark matter to explain lensing observations of galaxies and galaxy clusters \citep{Lubini2011}. $f(R)$-gravity is not an alternative to dark matter.
 
@@ -790,16 +790,16 @@ There are non-linear signatures of $f(R)$-gravity that may be observable with le
 
 The epicyclic frequencies derived in \secref{Epicycle} can be used for the classic test of planetary precession in the Solar System.\footnote{Since the Sun is an extended body, we do not have to worry about BH solutions being identical in GR and $f(R)$-gravity here.} Radial motion perturbs the orbit into an ellipse. The amplitude of our perturbation $\delta$ gives the eccentricity $e$ of the ellipse \citep{Kerner2001a}. Unless $\omega_0 = \Omega\sub{rad}$ the epicyclic motion is asynchronous with the orbital motion: there is periapse precession. In one revolution the ellipse precesses about the focus by
 \begin{equation}
-\varpi = 2\pi\left(\frac{\omega_0}{\Omega\sub{rad}} - 1\right)
+\varpi = 2\pi\left(\dfrac{\omega_0}{\Omega\sub{rad}} - 1\right)
 \end{equation}
 where $\omega_0$ is the frequency of the circular orbit given in \eqnref{omz}. The precession is cumulative, so a small deviation may be measurable over sufficient time. Taking the non-rotating limit, the epicyclic frequency is
 \begin{equation}
-\Omega\sub{rad}^2 = \omega_0^2 \left[1 - \frac{3r\sub{S}}{\overline{r}} - \zeta(\Upsilon,r\sub{S},\overline{r})\right],
+\Omega\sub{rad}^2 = \omega_0^2 \left[1 - \dfrac{3r\sub{S}}{\overline{r}} - \zeta(\Upsilon,r\sub{S},\overline{r})\right],
 \end{equation}
 defining the function
 \begin{align}
-\zeta = {} & r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\frac{\exp(-\Upsilon r)}{3} \nonumber\\* %11pt
- {} & + \left. \frac{\Upsilon^2\overline{r}^2\exp(-\Upsilon r)}{3 + (1 + \Upsilon \overline{r})\exp(-\Upsilon r)} \left[1 - \frac{r\sub{S}}{\overline{r}} + r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\frac{\exp(-\Upsilon r)}{3}\right].\right.
+\zeta = {} & r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\dfrac{\exp(-\Upsilon r)}{3} \nonumber\\* %11pt
+ {} & + \left. \dfrac{\Upsilon^2\overline{r}^2\exp(-\Upsilon r)}{3 + (1 + \Upsilon \overline{r})\exp(-\Upsilon r)} \left[1 - \dfrac{r\sub{S}}{\overline{r}} + r\sub{S}\left(\recip{\overline{r}} + \Upsilon\right)\dfrac{\exp(-\Upsilon r)}{3}\right].\right.
 \end{align}
 This characterises the deviation from the Schwarzschild case: the change in the precession per orbit relative to Schwarzschild is
 \begin{align}
@@ -891,11 +891,11 @@ The tightest constraint is obtained from the orbit of Mercury. Adopting a value 
 
 From the metric \eqref{eq:f(R)_Schw}, a point mass has a Yukawa gravitational potential \citep{Stelle1978, Capozziello2009a, Naf2010}
 \begin{equation}
-V(r) = \frac{GM}{r}\left[1 + \frac{\exp(- \Upsilon r)}{3}\right].
+V(r) = \dfrac{GM}{r}\left[1 + \dfrac{\exp(- \Upsilon r)}{3}\right].
 \end{equation}
 Potentials of this form are well studied in fifth-force tests \citep{Will2006, Adelberger2009, Adelberger2003} which consider a potential defined by a coupling constant $\alpha$ and a length-scale $\lambdabar$ such that
 \begin{equation}
-V(r) = \frac{GM}{r}\left[1 + \alpha\exp\left(-\frac{r}{\lambdabar}\right)\right].
+V(r) = \dfrac{GM}{r}\left[1 + \alpha\exp\left(-\dfrac{r}{\lambdabar}\right)\right].
 \end{equation}
 We are able to put strict constraints upon our length-scale $\lambdabar_R$, and hence $a_2$, because our coupling constant $\alpha_R = 1/3$ is relatively large. This can be larger for extended sources: comparison with \eqnref{Uniform} shows that for a uniform sphere $\alpha_R = \Xi(\Upsilon L) \geq 1/3$.
 

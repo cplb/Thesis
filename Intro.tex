@@ -6,7 +6,7 @@
 
 Gravity is one of the fundamental forces of nature; familiar as the force that keeps the Earth in orbit about the Sun and makes falling off a log so easy. \citet[book 3]{Newton1999} was the first to realise that gravitation could explain both apples dropping from trees and the motion of celestial bodies. In the \textit{Principia}, first published in 1687, he outlined a gravitational force that scaled as the inverse of the square of the distance between the centres of mass and was proportional to the product of the masses of the bodies. In modern notation, the force is
 \begin{equation}
-F = \frac{G m_1 m_2}{r^2},
+F = \dfrac{G m_1 m_2}{r^2},
 \end{equation}
 for distance $r$, masses $m_1$ and $m_2$, and gravitational constant $G$. This theory has been hugely successful. Not only is it still taught in schools today, but it is also used for astronomical research. Newton's law of universal gravitation has proved accurate in describing orbital motions. However, there are observations that do not fit its predictions.
 
@@ -18,7 +18,7 @@ Newtonian gravity survived the trial of Uranus' orbit, but it could not explain 
 
 The new extended theory was General Relativity (GR), developed by Einstein in the 1910s \citep{Einstein1997}. This describes gravity as the effect of the curvature of spacetime, which is now a dynamical entity. Particles naturally travel along geodesics of spacetime, which may appear curved; the curvature of spacetime itself is sourced from the energy-momentum it contains: matter tells spacetime how to curve, and spacetime tells matter how to move \citep[section 1.1]{Misner1973}. This is encapsulated within the Einstein field equations \citep[documents 22, 25]{Einstein1997}
 \begin{equation}
-R_{\mu\nu} - \recip{2}R g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu},
+R_{\mu\nu} - \recip{2}R g_{\mu\nu} = \dfrac{8\pi G}{c^4}T_{\mu\nu},
 \end{equation}
 where $g_{\mu\nu}$ is the metric, $R_{\mu\nu}$ and $R$ are the Ricci tensor and scalar (\citealt[section 8.7]{Misner1973}; \citealt[section 3.2]{Wald1984}), $c$ is the speed of light, and $T_{\mu\nu}$ is the energy-momentum tensor. GR reduces to its Newtonian counter-part in the weak-field limit, or conversely, it extends Newtonian gravity to stronger gravitational fields.
 
@@ -28,7 +28,7 @@ Observations of the velocity dispersions of galaxies in clusters are higher than
 
 Observations of type IA supernovae have revealed that the Universe is not only expanding, but is accelerating \citep{Riess1998,Perlmutter1999}. This acceleration has been attributed to the influence of dark energy \citep{Perlmutter1999a,Peebles2003}. The nature of dark energy is even more mysterious than that of dark matter. The simplest explanation is to introduce a cosmological constant $\Lambda$; this modifies the Einstein field equations to become \citep[document 43]{Einstein1997}
 \begin{equation}
-R_{\mu\nu} - \recip{2}R g_{\mu\nu} - \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}.
+R_{\mu\nu} - \recip{2}R g_{\mu\nu} - \Lambda g_{\mu\nu} = \dfrac{8\pi G}{c^4}T_{\mu\nu}.
 \end{equation}
 This model has been highly successful in explaining the evolution of the Universe, but we still do not know if a cosmological constant is the true explanation and if so, why it has its particular value \citep{Carroll2001}.
 
@@ -46,11 +46,11 @@ The deviations from Newtonian theory were first noted in the gravitational field
 
 In order to parameterize the strength of gravity, \citet{Psaltis2008a} introduces two characteristic quantities: the dimensionless potential or compactness \citep{Yunes2013}
 \begin{equation}
-\varepsilon = \frac{GM}{rc^2} = \frac{r\sub{g}}{r},
+\varepsilon = \dfrac{GM}{rc^2} = \dfrac{r\sub{g}}{r},
 \end{equation}
 and the dimensionful curvature
 \begin{equation}
-\xi = \frac{GM}{r^3c^2} = \frac{r\sub{g}}{r^3},
+\xi = \dfrac{GM}{r^3c^2} = \dfrac{r\sub{g}}{r^3},
 \end{equation}
 where $M$ is the gravitating mass, $r$ a characteristic distance and $r\sub{g}$ is the gravitational radius. These are larger for stronger fields. The potential ranges from $\varepsilon \simeq 0$ in weak fields to $\varepsilon \sim \order{1}$ near the surface of a neutron star (NS) or a BH event horizon. It is useful in defining post-Newtonian expansions. The curvature $\xi$ approximates the form of the Ricci scalar, which is fundamental to GR. It is necessary to pick a particular reference scale to define when the curvature becomes large; however, it is a useful gauge of the strength of a gravitational field in a geometric theory because it is the lowest order measure that cannot be eliminated by a coordinate transformation \citep[chapter 7]{Hobson2006}.
 
@@ -161,7 +161,7 @@ J = M_\bullet ac;
 \end{equation}
 it is often convenient to use the dimensionless spin
 \begin{equation}
-a_\ast = \frac{cJ}{GM_\bullet^2}.
+a_\ast = \dfrac{cJ}{GM_\bullet^2}.
 \end{equation}
 The spin has a range of possible values $0 \leq |a_\ast| \leq 1$ \cite[section 66]{Chandrasekhar1992}. A spin $a_\ast = 0$ corresponds to non-rotating BH. In general BHs have some angular momentum, and we are mostly concerned with the Kerr solution.
 
@@ -285,7 +285,7 @@ Studying modified gravity can be done in two ways: either studying specific alte
 
 There are a plethora of modified gravity theories \citep{Clifton2012}. Perhaps the most infamous is the hypothesis of modified Newtonian dynamics (MOND; \citealt{Famaey2012}). Suggested by \citet{Milgrom1983,Milgrom1983a,Milgrom1983b} to match observations of galaxies, Newtonian dynamics is modified at low accelerations such that
 \begin{equation}
-\mu\left(\frac{a}{a_0}\right)\boldsymbol{a} = \boldsymbol{g}
+\mu\left(\dfrac{a}{a_0}\right)\boldsymbol{a} = \boldsymbol{g}
 \end{equation}
 where $\boldsymbol{g}$ is the Newtonian gravitational field strength, $\boldsymbol{a}$ is the acceleration, $a_0 \approx 10^{-10}\units{m\,s^{-2}}$ is the new acceleration scale and $\mu$ is an interpolation function with properties $\mu(x) \rightarrow 1$ for $x \gg 1$ and $\mu(x) \rightarrow x$ for $x \ll 1$. There are a variety of relativistic theories that can reproduce this behaviour, including Einstein--\ae{}ther theory and tensor--vector--scalar (TeVeS) theory \citep{Bekenstein2006}. The hypothesis works well for describing galactic-scale systems but struggles to reproduce the cosmological predictions of the cold dark matter paradigm. It may be possible to constrain MOND theories in the low-acceleration regime by using LISA Pathfinder to measure acceleration at the Earth--Sun saddle point \citep{Magueijo2011,Galianni2011}. Most alternative theories, however, reduce to the Newtonian limit.
 

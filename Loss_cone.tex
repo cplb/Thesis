@@ -16,13 +16,13 @@ v\sub{r} = v\cos \theta; \quad v_\perp = v\sin \theta.
 \end{equation}
 Over a dynamical time-scale $t\sub{dyn}$, we expect that stars change velocity by a typical amount
 \begin{equation}
-\theta\sub{D} \approx \left(\frac{t\sub{dyn}}{\tau\sub{R}}\right)^{1/2},
+\theta\sub{D} \approx \left(\dfrac{t\sub{dyn}}{\tau\sub{R}}\right)^{1/2},
 \end{equation}
 assuming this change is small. We introduce the loss cone angle $\theta\sub{LC}$ to describe the range of trajectories that shall proceed to pass within a distance $r\sub{T}$ of the MBH. By comparing the diffusion and loss cone angles we can deduce if we would expect orbits to be depleted: if $\theta\sub{D} > \theta\sub{LC}$ a star can safely diffuse out of the loss cone before it is destroyed, whereas if $\theta\sub{D} < \theta\sub{LC}$ a star is disrupted before it can change its velocity sufficiently, leading to the depopulation of the orbit.
 
 \citet{Frank1976} first introduced the loss cone. They considered stars on nearly radial orbits. The orbital energy and angular momentum (per unit mass) of an object with eccentricity $e$ and periapse radius $r\sub{p}$ are
 \begin{align}
-\mathcal{E} = {} & -\frac{GM_\bullet(1 - e)}{2r\sub{p}}; \\
+\mathcal{E} = {} & -\dfrac{GM_\bullet(1 - e)}{2r\sub{p}}; \\
 \mathcal{J}^2 = {} & GM_\bullet(1 + e)r\sub{p},
 \end{align}
 where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
@@ -32,7 +32,7 @@ where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
 \end{align}
 using the small angle approximation. \citet{Frank1976} took the limit $e \rightarrow 1$ and then set $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone; we rearrange to find
 \begin{equation}
-\theta\sub{LC} \simeq \frac{2GM_\bullet r\sub{T}}{v^2r^2}.
+\theta\sub{LC} \simeq \dfrac{2GM_\bullet r\sub{T}}{v^2r^2}.
 \label{eq:LC-FR}
 \end{equation}
 We need to find the speed at $r$. \citet{Frank1976} used a typical value
@@ -42,36 +42,36 @@ v^2 \simeq 3\sigma^2,
 where $\sigma$ is the 1D velocity dispersion. They assumed the velocity dispersion is Keplerian within the core region, where dynamics are dominated by the MBH, and is a constant outside of this
 \begin{equation}
 \sigma^2 \simeq \begin{cases}
-\displaystyle \frac{GM_\bullet}{r} & r < r\sub{c} \vspace{0.4\normalbaselineskip} \\
-\displaystyle \left. \frac{GM_\bullet}{r\sub{c}} \right. & r < r\sub{c}
+\displaystyle \dfrac{GM_\bullet}{r} & r < r\sub{c} \vspace{0.4\normalbaselineskip} \\
+\displaystyle \left. \dfrac{GM_\bullet}{r\sub{c}} \right. & r < r\sub{c}
 \end{cases}.
 \end{equation}
 The core radius $r\sub{c}$ is
 \begin{equation}
-r\sub{c} = \frac{GM_\bullet}{\sigma_0^2},
+r\sub{c} = \dfrac{GM_\bullet}{\sigma_0^2},
 \end{equation}
 where $\sigma_0$ is the 1D velocity dispersion far from the MBH. Substituting for $v^2$ in \eqnref{LC-FR} gives
 \begin{align}
 \theta\sub{LC}^2 \simeq \begin{cases}
-\displaystyle \frac{2r\sub{T}}{3r} & r < r\sub{c} \vspace{0.4\normalbaselineskip} \\
-\displaystyle \frac{2r\sub{T}r\sub{c}}{3r^2} & r < r\sub{c}
+\displaystyle \dfrac{2r\sub{T}}{3r} & r < r\sub{c} \vspace{0.4\normalbaselineskip} \\
+\displaystyle \dfrac{2r\sub{T}r\sub{c}}{3r^2} & r < r\sub{c}
 \end{cases}.
 \label{eq:FR-LC}
 \end{align}
 \citet{Frank1976} made one final modification, introducing a gravitational focusing factor $f$ such that
 \begin{align}
 \theta\sub{LC} \simeq f\begin{cases}\displaystyle
-\displaystyle \left(\frac{2r\sub{T}}{3r}\right)^{1/2} & r < r\sub{c} \\
-\displaystyle \left(\frac{2r\sub{T}r\sub{c}}{3r^2}\right)^{1/2} & r < r\sub{c}
+\displaystyle \left(\dfrac{2r\sub{T}}{3r}\right)^{1/2} & r < r\sub{c} \\
+\displaystyle \left(\dfrac{2r\sub{T}r\sub{c}}{3r^2}\right)^{1/2} & r < r\sub{c}
 \end{cases}.
 \end{align}
 The focusing factor could be imagined as the correction from assuming that stars travel along straight lines, such that $\tan\theta\sub{LC} = r\sub{T}/r$, to accounting for a Keplerian trajectory about the MBH.
 
 It is unappealing to include an arbitrary, albeit order unitary, factor. Additionally, there are various restrictive approximations in the derivation. Considering the orbital energy for $v^2 = 3\sigma^2$ inside the core
 \begin{align}
-%\frac{3\sigma^2}{2} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet(1-e)}{2r\sub{T}} \\
-\frac{3GM_\bullet}{2r} - \frac{GM_\bullet}{r} = {} & -\frac{GM_\bullet(1-e)}{2r\sub{T}} \\
-\implies \frac{r\sub{T}}{r} = {} & e - 1.
+%\dfrac{3\sigma^2}{2} - \dfrac{GM_\bullet}{r} = {} & -\dfrac{GM_\bullet(1-e)}{2r\sub{T}} \\
+\dfrac{3GM_\bullet}{2r} - \dfrac{GM_\bullet}{r} = {} & -\dfrac{GM_\bullet(1-e)}{2r\sub{T}} \\
+\implies \dfrac{r\sub{T}}{r} = {} & e - 1.
 \end{align}
 Since the radii must be positive, this enforces that $e \geq 1$: the orbits could be marginally bound at best. As we have taken the limit $e \rightarrow 1$, assuming that $r \gg r\sub{T}$ this is still self-consistent. However, it is desirable to relax these conditions.
 
@@ -81,21 +81,21 @@ Let us consider an orbit with $r\sub{p} = r\sub{T}$, which gives the edge of the
 \end{equation}
 The energy is
 \begin{equation}
-\frac{v^2}{2} - \frac{GM_\bullet}{r} = -\frac{GM_\bullet(1-e)}{2r\sub{T}}.
+\dfrac{v^2}{2} - \dfrac{GM_\bullet}{r} = -\dfrac{GM_\bullet(1-e)}{2r\sub{T}}.
 \end{equation}
 Combining these to eliminate the velocity gives
 \begin{equation}
-\sin^2\theta\sub{LC} = \frac{(1+e)r\sub{T}^2}{2rr\sub{T} - (1-e)r^2}.
+\sin^2\theta\sub{LC} = \dfrac{(1+e)r\sub{T}^2}{2rr\sub{T} - (1-e)r^2}.
 \end{equation}
 This has been obtained without making any assumptions about the velocity dispersion or the position of the star. Since we have considered the Keplerian orbit, there should be no need to introduce a focusing factor.
 
 This is similar in form to the classic result. Consider an orbit with eccentricity $e = 1 - \epsilon$, where $\epsilon$ is small. Let us choose the star to be at a characteristic distance set by its semimajor axis $a = r\sub{p}/(1 - e)$, such that
 \begin{equation}
-r = \frac{r\sub{T}}{\epsilon}.
+r = \dfrac{r\sub{T}}{\epsilon}.
 \end{equation}
 This ensures that $r \gg r\sub{T}$. Therefore, we have matched the assumptions of \citet{Frank1976}. Substituting into our loss cone formula
 \begin{align}
-\sin^2\theta\sub{LC} = {} & \frac{(2 - \epsilon)r\sub{T}^2}{2rr\sub{T} + \epsilon r^2} \nonumber \\
- \simeq {} & \frac{2r\sub{T}}{3r},
+\sin^2\theta\sub{LC} = {} & \dfrac{(2 - \epsilon)r\sub{T}^2}{2rr\sub{T} + \epsilon r^2} \nonumber \\
+ \simeq {} & \dfrac{2r\sub{T}}{3r},
 \end{align}
 retaining terms to first order in $\epsilon$. Since this is small, we can use the small angle approximation to recover the result of \eqnref{FR-LC}.

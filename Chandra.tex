@@ -13,8 +13,8 @@ We consider the interaction of a field star, denoted by 1, with a test star, 2; 
 Hence
 \begin{subequations}
 \begin{align}
-v_1^2 = {} & V\sub{g}^2 - 2\frac{m_2}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\frac{m_2}{m_1 + m_2}\right)^2V^2;\\
-v_2^2 = {} & V\sub{g}^2 + 2\frac{m_1}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\frac{m_1}{m_1 + m_2}\right)^2V^2,
+v_1^2 = {} & V\sub{g}^2 - 2\dfrac{m_2}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\dfrac{m_2}{m_1 + m_2}\right)^2V^2;\\
+v_2^2 = {} & V\sub{g}^2 + 2\dfrac{m_1}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\dfrac{m_1}{m_1 + m_2}\right)^2V^2,
 \end{align}
 \end{subequations}
 where $\Phi$ is the angle between $\boldsymbol{V}\sub{g}$ and $\boldsymbol{V}$, and
@@ -28,11 +28,11 @@ V^2 = {} & v_1^2 + v_2 - 2 v_1 v_2 \cos\theta,
 where $\theta$ is the angle between $\boldsymbol{v}_1$ and $\boldsymbol{v}_2$. The change in energy of during the interaction is
 \begin{align}
 \Delta E = {} & \recip{2} m_2 \left({v'_2}^2 - v_2^2\right)\\
- = {} & \frac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\Phi' - \cos\Phi\right),
+ = {} & \dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\Phi' - \cos\Phi\right),
 \end{align}
 using primed variables for values after the interaction, and unprimed ones for before. If we project the angle out onto the orbital plane
 \begin{equation}
-\Delta E = \frac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\phi' - \cos\phi\right)\cos i,
+\Delta E = \dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\phi' - \cos\phi\right)\cos i,
 \end{equation}
 where $\phi$ is the angle in the plane, and $i$ is the inclination of $\boldsymbol{V}\sub{g}$ out of the plane. We define the deflection angle $\psi$ such that
 \begin{equation}
@@ -40,7 +40,7 @@ where $\phi$ is the angle in the plane, and $i$ is the inclination of $\boldsymb
 \end{equation}
 hence
 \begin{equation}
-\Delta E = -2\frac{m_1 m_2}{m_1 + m_2}V\sub{g}V\cos(\phi - \psi)\cos\psi\cos i.
+\Delta E = -2\dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\cos(\phi - \psi)\cos\psi\cos i.
 \end{equation}
 
 We now need to calculate the encounter rate. This requires us to know number of field stars per unit volume and per volume space element. We make the simplifying assumption the density of stars is uniform. This is not the case for the Galactic centre; however, we approximate it as so in order to make the problem tractable. Using an averaged value, the number of stars is
@@ -49,33 +49,33 @@ We now need to calculate the encounter rate. This requires us to know number of 
 \end{equation}
 using spherical polar coordinates for velocity space. Using $D$ as the impact parameter for the encounter and $\Theta$ for the angle between the fundamental plane (containing $\boldsymbol{v}_1$ ans $\boldsymbol{v}_2$) and the the orbital plane, the number of events in time interval $\delta t$ is
 \begin{equation}
-\dd \Gamma =  n(v_1, \theta, \varphi)\,\dd v_1 \,\dd \theta \,\dd \varphi \frac{\dd \Theta}{2\pi} 2\pi D \,\dd D \,V \delta t.
+\dd \Gamma =  n(v_1, \theta, \varphi)\,\dd v_1 \,\dd \theta \,\dd \varphi \dfrac{\dd \Theta}{2\pi} 2\pi D \,\dd D \,V \delta t.
 \end{equation}
 The squared change in energy for these encounters is
 \begin{align}
 \Delta E^2(v_1,\theta,\varphi,\Theta,D) = {} & \left(\Delta E\right)^2\,\dd \Gamma\\
- = {} & 4 n(v_1,\theta,\varphi)V\sub{g}^2V^3\left(\frac{m_1m_2}{m_1+m_2}\right)^2\cos^2i\cos^2(\phi-\psi)\cos^2\psi D \nonumber \\*
+ = {} & 4 n(v_1,\theta,\varphi)V\sub{g}^2V^3\left(\dfrac{m_1m_2}{m_1+m_2}\right)^2\cos^2i\cos^2(\phi-\psi)\cos^2\psi D \nonumber \\*
  {} & \times \left. \dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\dd D\,\delta t. \right.
 \end{align}
 We must integrate out all these dependencies.
 
 Since we have assumed the stellar density does not depend upon position, we can simply integrate over the impact parameter; this is related to the deflection angle by
 \begin{equation}
-\recip{\cos^2\psi} = 1 + \frac{D^2V^4}{G(m_1 + m_2)}.
+\recip{\cos^2\psi} = 1 + \dfrac{D^2V^4}{G(m_1 + m_2)}.
 \end{equation}
 Thus
 \begin{align}
-\Delta E^2(v_1,\theta,\varphi,\Theta,\psi) =  {} & 4 n(v_1,\theta,\varphi)\frac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\frac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi} \nonumber \\*
+\Delta E^2(v_1,\theta,\varphi,\Theta,\psi) =  {} & 4 n(v_1,\theta,\varphi)\dfrac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\dfrac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi} \nonumber \\*
  {} & \times \left. \dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\dd \psi\,\delta t. \right.
 \end{align}
 The integral over $\psi$ is
 \begin{align}
-I(\psi_0) = {} & \intd{0}{\psi_0}{\frac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi}}{\psi}\\
- = {} & \frac{\sin 2\phi}{2}\left(\psi_0 - \frac{\sin 2\psi_0}{2}\right) - \frac{\cos 2\phi}{2}\left(\frac{\cos 2\psi_0}{2}\right) - \sin^2\phi\ln(\cos\psi_0).
+I(\psi_0) = {} & \intd{0}{\psi_0}{\dfrac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi}}{\psi}\\
+ = {} & \dfrac{\sin 2\phi}{2}\left(\psi_0 - \dfrac{\sin 2\psi_0}{2}\right) - \dfrac{\cos 2\phi}{2}\left(\dfrac{\cos 2\psi_0}{2}\right) - \sin^2\phi\ln(\cos\psi_0).
 \end{align}
 Naively we might think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms
 \begin{equation}
-\Delta E^2(v_1,\theta,\varphi,\Theta) \simeq  4 n(v_1,\theta,\varphi)\frac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\sin^2\phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\delta t.
+\Delta E^2(v_1,\theta,\varphi,\Theta) \simeq  4 n(v_1,\theta,\varphi)\dfrac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\sin^2\phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\delta t.
 \end{equation}
 
 Next, we integrate over the orbital plane inclination using
@@ -84,13 +84,13 @@ Next, we integrate over the orbital plane inclination using
 \end{equation}
 so that
 \begin{equation}
-\Delta E^2(v_1,\theta,\varphi) \simeq  4\pi n(v_1,\theta,\varphi)\frac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\sin^2\Phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\delta t.
+\Delta E^2(v_1,\theta,\varphi) \simeq  4\pi n(v_1,\theta,\varphi)\dfrac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\sin^2\Phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\delta t.
 \end{equation}
 We are now left with just the velocity variables.
 
 An expression for $\sin^2\Phi$ can be obtained from \eqnref{Vs} and \eqnref{V2s}, after some rearrangement
 \begin{equation}
-\frac{V_g^2}{V}\sin^2\Phi = \frac{v_1^2v_2^2\sin^2\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}}.
+\dfrac{V_g^2}{V}\sin^2\Phi = \dfrac{v_1^2v_2^2\sin^2\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}}.
 \end{equation}
 To proceed further we must specify the form of $n(v_1,\theta,\varphi)$, if we assume isotropy
 \begin{equation}
@@ -98,14 +98,14 @@ n(v_1,\theta,\varphi) = n(v_1)\recip{4\pi}\sin\theta.
 \end{equation}
 The integral over $\varphi$ is then trivial,
 \begin{align}
-\Delta E^2(v_1,\theta) \simeq {} & \pi n(v_1)\frac{G^2m_1^2 m_2^2v_1^2v_2^2\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}} \nonumber \\*
- {} & \times \left. \ln\left[1 + \frac{D_0\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^2}{G^2\left(m_1 + m_2\right)^2}\right]\,\dd v_1\,\dd\theta\,\delta t.\right.
+\Delta E^2(v_1,\theta) \simeq {} & \pi n(v_1)\dfrac{G^2m_1^2 m_2^2v_1^2v_2^2\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}} \nonumber \\*
+ {} & \times \left. \ln\left[1 + \dfrac{D_0\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^2}{G^2\left(m_1 + m_2\right)^2}\right]\,\dd v_1\,\dd\theta\,\delta t.\right.
 \end{align}
 
 To integrate over $\theta$ it is easier to recast in terms of $V$; the integral is
 \begin{align}
-J = {} & v_1^2 v_2^2 \intd{0}{\pi}{\frac{\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}}\ln\left[1 + \frac{D_0\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^2}{G^2\left(m_1 + m_2\right)^2}\right]}{\theta} \\
- = {} & v_1 v_2 \intd{V_-}{V_+}{\frac{\sin^2\theta}{V^2}\ln\left(1 + q^2V^4\right)}{V},
+J = {} & v_1^2 v_2^2 \intd{0}{\pi}{\dfrac{\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}}\ln\left[1 + \dfrac{D_0\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^2}{G^2\left(m_1 + m_2\right)^2}\right]}{\theta} \\
+ = {} & v_1 v_2 \intd{V_-}{V_+}{\dfrac{\sin^2\theta}{V^2}\ln\left(1 + q^2V^4\right)}{V},
 \end{align}
 where the limits are
 \begin{equation}
@@ -113,13 +113,13 @@ V_+ = v_1 + v_2; \quad V_- = |v_1 - v_2|,
 \end{equation}
 and we have introduced
 \begin{equation}
-q = \frac{D_0}{G\left(m_1+m_2\right)}.
+q = \dfrac{D_0}{G\left(m_1+m_2\right)}.
 \end{equation}
 Using \eqnref{V2s} to rearrange, and then integrating by parts gives
 \begin{align}
-J = {} & \recip{4 v_1 v_2} \intd{V_-}{V_+}{\frac{\left(V_+^2 - V^2\right)\left(V^2 - V_-^2\right)}{V^2}\ln\left(1 + q^2V^4\right)}{V} \\
- = {} & \recip{4 v_1 v_2} \left\{\left[\frac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V} \ln\left(1 + q^2V^4\right)\right]^{V_+}_{V_-} \right. \nonumber \\* 
- {} & - \left. \vphantom{\left[\frac{\left(V_+^2\right)V^2}{3V}\right]^{V_+}_{V_-}} \intd{V_-}{V_+}{\frac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V}\frac{4q^2V^3}{1+ q^2V^4}}{V}\right\};
+J = {} & \recip{4 v_1 v_2} \intd{V_-}{V_+}{\dfrac{\left(V_+^2 - V^2\right)\left(V^2 - V_-^2\right)}{V^2}\ln\left(1 + q^2V^4\right)}{V} \\
+ = {} & \recip{4 v_1 v_2} \left\{\left[\dfrac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V} \ln\left(1 + q^2V^4\right)\right]^{V_+}_{V_-} \right. \nonumber \\* 
+ {} & - \left. \vphantom{\left[\dfrac{\left(V_+^2\right)V^2}{3V}\right]^{V_+}_{V_-}} \intd{V_-}{V_+}{\dfrac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V}\dfrac{4q^2V^3}{1+ q^2V^4}}{V}\right\};
 \end{align}
 the former piece still contains the logarithmic term which we know must be large. It is therefore the dominant piece of the integral and we neglect the latter \citep{Chandrasekhar1941},
 \begin{equation}
@@ -128,22 +128,22 @@ J \simeq \recip{6 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(1 + q^2V
 This may be further simplified, reusing the limit of large $q$ \citep{Chandrasekhar1941,Chandrasekhar1941b},
 \begin{align}
 J \simeq {} & \recip{3 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(qV_+^2\right) - \left(3V_+^2 + V_-^2\right)V_-\ln\left(qV_-^2\right)\right] \\
- \simeq {} & \frac{4}{3v_1v_2}\begin{cases}
+ \simeq {} & \dfrac{4}{3v_1v_2}\begin{cases}
 \left(v_1^3 + v_2^3\right)\ln\left[q\left(v_1 + v_2\right)^2\right] - \left(v_2^3 - v_1^3\right)\ln\left[q\left(v_1 - v_2\right)^2\right] & v_1 \leq v_2 \\
 \left(v_1^3 + v_2^3\right)\ln\left[q\left(v_1 + v_2\right)^2\right] - \left(v_1^3 - v_2^3\right)\ln\left[q\left(v_1 - v_2\right)^2\right] & v_1 \geq v_2
 \end{cases} \\
- \simeq {} & \frac{8}{3}\begin{cases}
+ \simeq {} & \dfrac{8}{3}\begin{cases}
 \dfrac{v_2^2}{v_1}\ln\left(\dfrac{v_1 + v_2}{v_2 - v_1}\right) + \dfrac{v_1^2}{v_2}\left[\ln\left(qv_2^2\right) + \ln\left(1 - \dfrac{v_1^2}{v_2^2}\right)\right] & v_1 < v_2 \\
 v_2\left[\ln\left(qv_2^2\right) + \ln 4\right] & v_1 = v_2\\
 \dfrac{v_1^2}{v_2}\ln\left(\dfrac{v_1 + v_2}{v_1 - v_2}\right) + \dfrac{v_2^2}{v_1}\left[\ln\left(qv_2^2\right) + \ln\left(\dfrac{v_1^2}{v_2^2} - 1\right)\right] & v_1 > v_2
 \end{cases} \\
-\approx {} & \frac{8}{3}\begin{cases}
+\approx {} & \dfrac{8}{3}\begin{cases}
 \dfrac{v_1^2}{v_2}\ln\left(qv_2^2\right) & v_1 \leq v_2 \\
 \dfrac{v_2^2}{v_1}\ln\left(qv_2^2\right) & v_1 \geq v_2
 \end{cases}.
 \end{align}
 This form maintains the correct limit for $v_2 \rightarrow 0$. We are left with
 \begin{equation}
-\Delta E^2(v_1) \simeq \frac{8\pi}{3} n(v_1)G^2m_1^2 m_2^2\ln\left(qv_2^2\right)\left\{\begin{array}{lr}\dfrac{v_1^2}{v_2}\vspace{1.0mm} & v_1 \leq v_2\\ \dfrac{v_2^2}{v_1} & v_1 \geq v_2 \end{array}\right\}\,\dd v_1\delta t.
+\Delta E^2(v_1) \simeq \dfrac{8\pi}{3} n(v_1)G^2m_1^2 m_2^2\ln\left(qv_2^2\right)\left\{\begin{array}{lr}\dfrac{v_1^2}{v_2}\vspace{1.0mm} & v_1 \leq v_2\\ \dfrac{v_2^2}{v_1} & v_1 \geq v_2 \end{array}\right\}\,\dd v_1\delta t.
 \end{equation}
 This is the change in energy squared for the test star as a function of its intial velocity.

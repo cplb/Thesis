@@ -25,7 +25,7 @@ The simplest window function is the rectangular (or Dirichlet) window $w\sub{R}(
 
 For use with the parabolic spectra, the primary concern is to suppress the sidelobes. Many windows with good sidelobe behaviour exist; we consider three: the Blackman--Harris minimum four-term window \citep{Harris1978, Nuttall1981}
 \begin{equation}
-w\sub{BH}(t) = \sum_{n=0}^{3} a\super{BH}_n\cos\left(\frac{2n\pi t}{\tau}\right),
+w\sub{BH}(t) = \sum_{n=0}^{3} a\super{BH}_n\cos\left(\dfrac{2n\pi t}{\tau}\right),
 \end{equation}
 where
 \begin{equation}
@@ -36,7 +36,7 @@ a\super{BH}_2 = 0.14128, \quad a\super{BH}_3 = 0.01168;
 \end{equation}
 the Nuttall four-term window with continuous first derivative \citep{Nuttall1981}
 \begin{equation}
-w\sub{N}(t) = \sum_{n=0}^{3} a\super{N}_n\cos\left(\frac{2n\pi t}{\tau}\right),
+w\sub{N}(t) = \sum_{n=0}^{3} a\super{N}_n\cos\left(\dfrac{2n\pi t}{\tau}\right),
 \end{equation}
 where
 \begin{equation}
@@ -47,7 +47,7 @@ a\super{N}_2 = 0.144232, \quad a\super{N}_3 = 0.012604,
 \end{equation}
 and the Kaiser--Bessel window \citep{Harris1978, Kaiser1980}
 \begin{equation}
-w\sub{KB}(t;\beta) = \frac{I_0\left[\beta\sqrt{1 - (2 t/\tau)^2}\right]}{I_0(\beta)},
+w\sub{KB}(t;\beta) = \dfrac{I_0\left[\beta\sqrt{1 - (2 t/\tau)^2}\right]}{I_0(\beta)},
 \end{equation}
 where $I_\nu(z)$ is the modified Bessel function of the first kind, and $\beta$ is an adjustable parameter. Increasing $\beta$ reduces the peak sidelobe, but also widens the central lobe.
 
@@ -56,9 +56,9 @@ The Kaiser--Bessel window has the smallest peak sidelobe, but the worst decay ($
 Another window has been recently suggested for use with gravitational waveforms: the Planck--taper window \citep{Damour2000,McKechan2010}
 \begin{equation}
 w\sub{P}(t; \epsilon) = \begin{cases}
- {\displaystyle \recip{\exp(Z_+)+1}} & {\displaystyle \hphantom{\left(\recip{2} - \epsilon\right)}-\frac{\tau}{2} \leq t < -\tau\left(\recip{2} - \epsilon\right)} \\
+ {\displaystyle \recip{\exp(Z_+)+1}} & {\displaystyle \hphantom{\left(\recip{2} - \epsilon\right)}-\dfrac{\tau}{2} \leq t < -\tau\left(\recip{2} - \epsilon\right)} \\
  1 & {\displaystyle -\tau\left(\recip{2} - \epsilon\right) < t < \tau\left(\recip{2} - \epsilon\right)} \\
- {\displaystyle \recip{\exp(Z_-)+1}} & {\displaystyle \hphantom{-}\tau\left(\recip{2} - \epsilon\right) < t \leq \frac{\tau}{2}}
+ {\displaystyle \recip{\exp(Z_-)+1}} & {\displaystyle \hphantom{-}\tau\left(\recip{2} - \epsilon\right) < t \leq \dfrac{\tau}{2}}
 \end{cases},
 \end{equation}
 with

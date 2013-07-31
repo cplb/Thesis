@@ -172,13 +172,16 @@
 \newcommand{\Figref}[1]{Figure~\ref{fig:#1}}
 
 \DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\Ei}{Ei}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\Beta}{B}
 
 \newcommand{\units}[1]{\ensuremath{~\mathrm{#1}}}
 
 \newcommand{\sub}[1]{\ensuremath{_\mathrm{#1}}}
 \newcommand{\super}[1]{\ensuremath{^\mathrm{#1}}}
 
-\newcommand{\recip}[1]{\ensuremath{\frac{1}{#1}}}
+\newcommand{\recip}[1]{\ensuremath{\dfrac{1}{#1}}}
 
 \newcommand{\order}[1]{\ensuremath{\mathcal{O}\left({#1}\right)}}
 
@@ -191,18 +194,18 @@
 
 % Define differential operators
 \newcommand{\dd}{\ensuremath{\mathrm{d}}}
-\newcommand{\diff}[2]{\ensuremath{\frac{\dd {#1}}{\dd {#2}}}}
+\newcommand{\diff}[2]{\ensuremath{\dfrac{\dd {#1}}{\dd {#2}}}}
 \newcommand{\linediff}[2]{\ensuremath{\dd {#1}/\dd {#2}}}
-\newcommand{\diffop}[1]{\ensuremath{\frac{\dd}{\dd {#1}}}}
-\newcommand{\difftwo}[2]{\ensuremath{\frac{\dd^2 {#1}}{\dd {#2}^2}}}
+\newcommand{\diffop}[1]{\ensuremath{\dfrac{\dd}{\dd {#1}}}}
+\newcommand{\difftwo}[2]{\ensuremath{\dfrac{\dd^2 {#1}}{\dd {#2}^2}}}
 \newcommand{\linedifftwo}[2]{\ensuremath{\dd^2 {#1}/\dd {#2}^2}}
-\newcommand{\difftwoop}[1]{\ensuremath{\frac{\dd^2}{\dd {#1}^2}}}
-\newcommand{\diffn}[3]{\ensuremath{\frac{\dd^{#3} {#1}}{\dd {#2}^{#3}}}}
+\newcommand{\difftwoop}[1]{\ensuremath{\dfrac{\dd^2}{\dd {#1}^2}}}
+\newcommand{\diffn}[3]{\ensuremath{\dfrac{\dd^{#3} {#1}}{\dd {#2}^{#3}}}}
 \newcommand{\linediffn}[3]{\ensuremath{\dd^{#3} {#1}/\dd {#2}^{#3}}}
-\newcommand{\diffnop}[2]{\ensuremath{\frac{\dd^{#2}}{\dd {#1}^{#2}}}}
-\newcommand{\partialdiff}[2]{\ensuremath{\frac{\partial {#1}}{\partial {#2}}}}
+\newcommand{\diffnop}[2]{\ensuremath{\dfrac{\dd^{#2}}{\dd {#1}^{#2}}}}
+\newcommand{\partialdiff}[2]{\ensuremath{\dfrac{\partial {#1}}{\partial {#2}}}}
 \newcommand{\linepartialdiff}[2]{\ensuremath{\partial {#1}/\partial {#2}}}
-\newcommand{\partialdiffop}[1]{\ensuremath{\frac{\partial}{\partial {#1}}}}
+\newcommand{\partialdiffop}[1]{\ensuremath{\dfrac{\partial}{\partial {#1}}}}
 \newcommand{\grad}{\ensuremath{\boldsymbol{\nabla}}}
 \newcommand{\intd}[4]{\ensuremath{\int_{#1}^{#2}{#3}\,\dd{#4}}}
 
@@ -284,6 +287,8 @@ Churchill College and Institute of Astronomy\\
 \input{./Extragalactic_param.tex}
 
 \input{./events.tex}
+
+\input{./relax.tex}
 
 \part{Understanding gravitation}\label{pt:grav}
 

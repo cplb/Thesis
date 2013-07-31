@@ -83,7 +83,7 @@ s = h + n.
 
 Let us consider a discrete signal $n_i \equiv n(t_i)$, with $t_i - t_j = (i - j)\upDelta t$ $\{i,j = -N, \ldots, N\}$ and $\upDelta T = 2T/(2N + 1)$. For a single point \citep{Finn1992},
 \begin{equation}
-p(s_i|h_i) = \recip{\sqrt{2\pi C_n(0)}} \exp\left[-\recip{2} \frac{n_i^2}{C_n(0)}\right].
+p(s_i|h_i) = \recip{\sqrt{2\pi C_n(0)}} \exp\left[-\recip{2} \dfrac{n_i^2}{C_n(0)}\right].
 \end{equation}
 Expanding this to the entire signal
 \begin{equation}
@@ -132,7 +132,7 @@ S_n(f) = {} & \lim_{T \rightarrow \infty} \recip{T} \overline{\left|\widetilde{n
 \end{align}
 we have
 \begin{equation}
-\exp(-2\pi i f t_k) = \lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \frac{S_n(f)}{2} \widetilde{C^{-1}}(f,t_k).
+\exp(-2\pi i f t_k) = \lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \dfrac{S_n(f)}{2} \widetilde{C^{-1}}(f,t_k).
 \end{equation}
 This can be rearranged to define $\widetilde{C^{-1}}(f,t_k)$ \citep{Finn1992}.
 
@@ -143,13 +143,13 @@ The term in the exponential in \eqnref{prod_prob} has the limit
 % = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-\infty}^{\infty}\,\dd t_j \int_{-\infty}^{\infty}\,\dd t_k \left\{ \intd{-\infty}{\infty}{\widetilde{C^{-1}}(f,t_k)\exp(2\pi if t_j)}{f} \right. \nonumber \\*
 % {} & \times \left. \intd{-\infty}{\infty}{\widetilde{n}(f')\exp(2\pi i f't_j)}{f'}n(t_k)\right\} \nonumber \\
  = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \widetilde{C^{-1}}(f,t_k)\widetilde{n}(-f)n(t_k) \nonumber \\
-% = {} & \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \frac{\exp(-2\pi i f t_k)}{S_n(f)}\widetilde{n}^\ast(f)n(t_k) \nonumber \\
- = {} & \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}}{f} \nonumber \\
+% = {} & \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \dfrac{\exp(-2\pi i f t_k)}{S_n(f)}\widetilde{n}^\ast(f)n(t_k) \nonumber \\
+ = {} & \intd{-\infty}{\infty}{\dfrac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}}{f} \nonumber \\
  = {} & \recip{2}\innerprod{n}{n},
  \end{align}
 defining the inner product \citep{Finn1992}
 \begin{align}
-\innerprod{g}{h} = {} & 2\intd{-\infty}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f)}{S_n(f)}}{f} = 2 \intd{0}{\infty}{\frac{\widetilde{g}^\ast(f)\widetilde{h}(f) + \widetilde{g}(f)\widetilde{h}^\ast(f)}{S_n(f)}}{f}.
+\innerprod{g}{h} = {} & 2\intd{-\infty}{\infty}{\dfrac{\widetilde{g}^\ast(f)\widetilde{h}(f)}{S_n(f)}}{f} = 2 \intd{0}{\infty}{\dfrac{\widetilde{g}^\ast(f)\widetilde{h}(f) + \widetilde{g}(f)\widetilde{h}^\ast(f)}{S_n(f)}}{f}.
 \end{align}
 This is a noise-weighted inner product over the space of real signals. The probability of the signal is \citep{Cutler1994}
 \begin{equation}
@@ -174,9 +174,9 @@ This can serve as a definition for the noise power spectral density.
 %Consider an ensemble average over multiple noise realisations, which is the same as a time average assuming stationarity of the noise spectrum:
 %\begin{align}
 %\left\langle\innerprod{n}{p}\innerprod{n}{q}\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\innerprod{n(t+\tau)}{p(t)}\innerprod{n(t+\tau)}{q(t)}}{\tau} \nonumber \\
-%% = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \int_{-T}^{T}\,\dd\tau \left\{ \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\exp(-2\pi if\tau)\widetilde{p}(f)}{S_n(f)}}{f} \right. \nonumber \\
-%%  {} & \times \left. \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f')\exp(-2\pi if'\tau)\widetilde{q}(f')}{S_n(f')}}{f'}\right\} \nonumber \\
-% = {} & \lim_{T \rightarrow \infty} \frac{2}{T} \intd{-\infty}{\infty}{\frac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}\frac{\widetilde{p}(f)\widetilde{q}^\ast(f)}{S_n(f)}}{f} \nonumber \\
+%% = {} & \lim_{T \rightarrow \infty} \dfrac{2}{T} \int_{-T}^{T}\,\dd\tau \left\{ \intd{-\infty}{\infty}{\dfrac{\widetilde{n}^\ast(f)\exp(-2\pi if\tau)\widetilde{p}(f)}{S_n(f)}}{f} \right. \nonumber \\
+%%  {} & \times \left. \intd{-\infty}{\infty}{\dfrac{\widetilde{n}^\ast(f')\exp(-2\pi if'\tau)\widetilde{q}(f')}{S_n(f')}}{f'}\right\} \nonumber \\
+% = {} & \lim_{T \rightarrow \infty} \dfrac{2}{T} \intd{-\infty}{\infty}{\dfrac{\widetilde{n}^\ast(f)\widetilde{n}(f)}{S_n(f)}\dfrac{\widetilde{p}(f)\widetilde{q}^\ast(f)}{S_n(f)}}{f} \nonumber \\
 % = {} & \innerprod{p}{q},
 %\end{align}
 %using the definition of the noise spectrum to obtain the final line.

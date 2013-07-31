@@ -7,39 +7,39 @@ The published expressions contain a number of (minor) errors; we rederive the co
 The geodesic equations in Schwarzschild are
 \begin{subequations}
 \begin{align}
-\diff{t}{\tau} = {} & \left(1-\frac{2M}{r}\right)^{-1}E, \\
-\left(\diff{r}{\tau}\right)^2 = {} & \left(E^2 - 1\right) + \frac{2M}{r}\left(1 + \frac{L_z^2}{r^2}\right) - \frac{L_z^2}{r^2}, \\
-\diff{\phi}{\tau} = {} & \frac{L_z}{r^2},
+\diff{t}{\tau} = {} & \left(1-\dfrac{2M}{r}\right)^{-1}E, \\
+\left(\diff{r}{\tau}\right)^2 = {} & \left(E^2 - 1\right) + \dfrac{2M}{r}\left(1 + \dfrac{L_z^2}{r^2}\right) - \dfrac{L_z^2}{r^2}, \\
+\diff{\phi}{\tau} = {} & \dfrac{L_z}{r^2},
 \end{align}
 \end{subequations}
 where $t$, $r$ and $\phi$ are the usual Schwarzschild coordinates, $\tau$ is the proper time, and we have introduced specific energy $E$ and azimuthal angular momentum $L_z$. Spherical symmetry has been exploited to set $\theta = \pi/2$ without loss of generality. For bound orbits, the radial equation has three roots, and can be written as
 \begin{equation}
-\left(\diff{r}{\tau}\right)^2 = -\left(E^2 - 1\right)\frac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
+\left(\diff{r}{\tau}\right)^2 = -\left(E^2 - 1\right)\dfrac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
 \end{equation}
 The turning points are the apoapsis, the periapsis and a third root; the orbit becomes unstable when $r\sub{p} = r_3$. An eccentricity can be defined, in analogy to Keplerian orbits, such that
 \begin{equation}
-r\sub{a} = \frac{1 + e}{1 - e}r\sub{p}.
+r\sub{a} = \dfrac{1 + e}{1 - e}r\sub{p}.
 \end{equation}
 The third root is then
 \begin{equation}
-r_3 = \frac{2(1 + e)M}{(1+e)r\sub{p} - 4M}r\sub{p}.
+r_3 = \dfrac{2(1 + e)M}{(1+e)r\sub{p} - 4M}r\sub{p}.
 \end{equation}
 The last stable orbit with a given eccentricity, has periapse radius
 \begin{equation}
-r\sub{p,\,LSO} = \frac{2(3 + e)M}{1+e}.
+r\sub{p,\,LSO} = \dfrac{2(3 + e)M}{1+e}.
 \end{equation}
 Orbits that approach closer than this will plunge into the black hole.
 
 The parameters $\{r\sub{p},e\}$ can be used to characterise orbits in place of $\{E,L_z\}$. The two are related by
 \begin{align}
-E^2 = {} & 1 - \frac{(1 - e) \left[(1 + e)r\sub{p} - 4M\right]M}{\left[(1 + e)r\sub{p} - \left(3 + e^2\right)M\right]r\sub{p}}; \\
-L_z^2 = {} & \frac{(1 + e)^2 M r\sub{p}^2}{(1 + e)r\sub{p} - \left(3 + e^2\right)M}.
+E^2 = {} & 1 - \dfrac{(1 - e) \left[(1 + e)r\sub{p} - 4M\right]M}{\left[(1 + e)r\sub{p} - \left(3 + e^2\right)M\right]r\sub{p}}; \\
+L_z^2 = {} & \dfrac{(1 + e)^2 M r\sub{p}^2}{(1 + e)r\sub{p} - \left(3 + e^2\right)M}.
 \end{align}
 
 Following the semirelativistic approximation, the fluxes of energy and angular momentum are derived by inserting the Schwarzschild geodesic into the flat-space radiation formulae, identifying the coordinate $t$ with the flat-space time \citep[chapter 36]{Misner1973}
 \begin{align}
 \mu\diff{E}{t} = {} & -\recip{5}\left\langle \diffn{\Ibar_{ij}}{t}{3}\diffn{\Ibar^{ij}}{t}{3}\right\rangle,\\
-\mu\diff{L_z}{t} = {} & -\frac{2}{5}\left\langle\diffn{\Ibar_{xi}}{t}{2}\diffn{\Ibar^{iy}}{t}{3} - \diffn{\Ibar_{yi}}{t}{2}\diffn{\Ibar^{iz}}{t}{3}\right\rangle,
+\mu\diff{L_z}{t} = {} & -\dfrac{2}{5}\left\langle\diffn{\Ibar_{xi}}{t}{2}\diffn{\Ibar^{iy}}{t}{3} - \diffn{\Ibar_{yi}}{t}{2}\diffn{\Ibar^{iz}}{t}{3}\right\rangle,
 \end{align}
 where $\Ibar_{ij} = I_{ij} - (1/3)I\delta_{ij}$ is the reduced mass quadrupole tensor and $\langle\ldots\rangle$ indicates averaging over several wavelengths (or periods). For a point particle, the mass quadrupole is
 \begin{equation}
@@ -49,39 +49,39 @@ for trajectory $x^i(t)$. This is determined from the geodesic equations, and wri
 
 The integrals are of a general form
 \begin{equation}
-\mathscr{I}_n = \intd{r\sub{p}}{r\sub{a}}{\frac{M^{n+1}}{r^n\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}}}{r}.
+\mathscr{I}_n = \intd{r\sub{p}}{r\sub{a}}{\dfrac{M^{n+1}}{r^n\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}}}{r}.
 \end{equation}
 By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}$ we may derive a recurrence relationship using integration by parts. After some rearrangement
 \begin{equation}
-\mathscr{I}_n = \frac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \frac{2n - 3}{2n - 1} \frac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \frac{2(n - 2)}{2n-1}\frac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
+\mathscr{I}_n = \dfrac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \dfrac{2n - 3}{2n - 1} \dfrac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \dfrac{2(n - 2)}{2n-1}\dfrac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
 \end{equation}
 Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series.\footnote{The integral $\mathscr{I}_{-1}$ could be calculated using \citet[3.148.6]{Gradshteyn2000}.} The zeroth integral can be evaluated using \citet[3.147.6]{Gradshteyn2000} as
 \begin{equation}
-\mathscr{I}_0 = \frac{2M}{\sqrt{r\sub{p}(r\sub{a} - r_3)}}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
+\mathscr{I}_0 = \dfrac{2M}{\sqrt{r\sub{p}(r\sub{a} - r_3)}}K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
 \end{equation}
 where $K(k)$ is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
 \begin{align}
-\mathscr{I}_1 = {} & \frac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right. \nonumber \\*
- {} & - \left.(r\sub{p} - r_3)\Pi\left[\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
+\mathscr{I}_1 = {} & \dfrac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right. \nonumber \\*
+ {} & - \left.(r\sub{p} - r_3)\Pi\left[\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
 \end{align}
 where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using \citet[19.6.2]{Olver2010}
 \begin{equation}
-\Pi(k^2,k) = \frac{E(k)}{1 - k^2}
+\Pi(k^2,k) = \dfrac{E(k)}{1 - k^2}
 \end{equation}
 to rewrite in terms of the complete elliptic integral of the second kind. Hence
 \begin{equation}
-\mathscr{I}_1 = \frac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{K\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \frac{r\sub{a} - r_3}{r\sub{a}}E\left[\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
+\mathscr{I}_1 = \dfrac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \dfrac{r\sub{a} - r_3}{r\sub{a}}E\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
 \end{equation}
 The elliptic integrals in both $\mathscr{I}_0$ and $\mathscr{I}_1$ share the same argument, which can be rewritten as
 \begin{equation}
-\sqrt{\frac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}} = \sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}.
+\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}} = \sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}.
 \end{equation}
 
 Substituting in for the integrals, we find that the energy lost in one orbit is
 \begin{align}
-\frac{M}{m} \upDelta E = {} & -\frac{16 M^{11}}{1673196525 r\sub{p}^{6} (1 + e)^{{19}/{2}} \left\{\left(r\sub{p} - 2 M\right)\left[(1 + e)r\sub{p} - 2(1 - e)M\right]\right\}^{{5}/{2}}} \nonumber \\
- {} & \times {} \left\{\sqrt{( 1+ e)\frac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\frac{r\sub{p}}{M}, e\right) \right. \nonumber \\
-   {} & + \left. \frac{1 + e}{\sqrt{(1 + e)\left(r\sub{p}/M\right)- 2 (3 - e)}} K\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{2} \left(\frac{r\sub{p}}{M}, e\right)\right\},
+\dfrac{M}{m} \upDelta E = {} & -\dfrac{16 M^{11}}{1673196525 r\sub{p}^{6} (1 + e)^{{19}/{2}} \left\{\left(r\sub{p} - 2 M\right)\left[(1 + e)r\sub{p} - 2(1 - e)M\right]\right\}^{{5}/{2}}} \nonumber \\
+ {} & \times {} \left\{\sqrt{( 1+ e)\dfrac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\dfrac{r\sub{p}}{M}, e\right) \right. \nonumber \\
+   {} & + \left. \dfrac{1 + e}{\sqrt{(1 + e)\left(r\sub{p}/M\right)- 2 (3 - e)}} K\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{2} \left(\dfrac{r\sub{p}}{M}, e\right)\right\},
 \end{align}
 where we have introduced functions\footnote{The following functional forms are long and so are split over multiple pages.}
 \begin{align}
@@ -175,9 +175,9 @@ f_2(y, e) = {} & 3072 (3 - e) (3 + e) \left(3 + e^2 \right) \left(7286074797 - 3
 
 The angular momentum lost is
 \begin{align}
-\frac{\upDelta L_z}{m} = {} & - \frac{16 M^{{15}/{2}}}{24249225 (1 + e)^{{13}/{2}} r\sub{p}^{{7}/{2}} (r\sub{p} - 2 M)^2 \left[(1 + e) r\sub{p} - 2 (1 - e) M\right]^{2}} \nonumber \\
- {} & \times {} \left\{\sqrt{(1 + e) \frac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_1\left(\frac{r\sub{p}}{M}, e\right) \right. \nonumber \\
- {} & + \left. \frac{(1 + e)}{\sqrt{(1 + e)\left(r\sub{p}/M\right) - 2(3 - e)}} K\left[\sqrt{\frac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_2\left(\frac{r_{p}}{M}, e\right)\right\}
+\dfrac{\upDelta L_z}{m} = {} & - \dfrac{16 M^{{15}/{2}}}{24249225 (1 + e)^{{13}/{2}} r\sub{p}^{{7}/{2}} (r\sub{p} - 2 M)^2 \left[(1 + e) r\sub{p} - 2 (1 - e) M\right]^{2}} \nonumber \\
+ {} & \times {} \left\{\sqrt{(1 + e) \dfrac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_1\left(\dfrac{r\sub{p}}{M}, e\right) \right. \nonumber \\
+ {} & + \left. \dfrac{(1 + e)}{\sqrt{(1 + e)\left(r\sub{p}/M\right) - 2(3 - e)}} K\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_2\left(\dfrac{r_{p}}{M}, e\right)\right\}
 \end{align}
 where
 \begin{align}
@@ -210,18 +210,18 @@ g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10
 
 Taking limit $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
 \begin{align}
-\frac{M}{m} \upDelta E \simeq {} & -\frac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \frac{73}{24} e^2 + \frac{37}{96} e^{4}\right) \left(\frac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
- {} & - \left. \frac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \frac{31}{8} e^2 + \frac{65}{32} e^4 + \frac{1}{6}e^6\right) \left(\frac{M}{r\sub{p}}\right)^{9/2} \right. \nonumber \\*
- {} & + \left. \order{\frac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
-\frac{\upDelta L_{z}}{m} \simeq {} & -\frac{64\pi}{5} \recip{(1 + e)^{2}} \left(1 + \frac{7}{8} e^{2}\right) \left(\frac{M}{r\sub{p}}\right)^{2} \nonumber \\
- {} & - \left. \frac{192 \pi}{5} \recip{(1 + e)^3} \left(1 + \frac{35}{24} e^2 + \frac{1}{4} e^4\right) \left(\frac{M}{r\sub{p}}\right)^{3}  + \order{\frac{M^{4}}{r\sub{p}^{4}}}. \right.
+\dfrac{M}{m} \upDelta E \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \dfrac{73}{24} e^2 + \dfrac{37}{96} e^{4}\right) \left(\dfrac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
+ {} & - \left. \dfrac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \dfrac{31}{8} e^2 + \dfrac{65}{32} e^4 + \dfrac{1}{6}e^6\right) \left(\dfrac{M}{r\sub{p}}\right)^{9/2} \right. \nonumber \\*
+ {} & + \left. \order{\dfrac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
+\dfrac{\upDelta L_{z}}{m} \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{2}} \left(1 + \dfrac{7}{8} e^{2}\right) \left(\dfrac{M}{r\sub{p}}\right)^{2} \nonumber \\
+ {} & - \left. \dfrac{192 \pi}{5} \recip{(1 + e)^3} \left(1 + \dfrac{35}{24} e^2 + \dfrac{1}{4} e^4\right) \left(\dfrac{M}{r\sub{p}}\right)^{3}  + \order{\dfrac{M^{4}}{r\sub{p}^{4}}}. \right.
 \end{align}
 The leading order terms correspond to the Keplerian results of \cite{Peters1964}.
 
 For a parabolic orbit with $e = 1$, the energy loss reduces to
 \begin{align}
-\frac{M}{m} \upDelta E = {} & -\frac{2^{7/2}M^{{21}/{2}}}{{1673196525 \left(r\sub{p} - 2 M\right)^2 r\sub{p}^{{17}/{2}}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_1\left(\frac{r\sub{p}}{M}\right) \right. \nonumber \\*
- {} & + \left. K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\frac{r\sub{p}}{M}\right)\right]
+\dfrac{M}{m} \upDelta E = {} & -\dfrac{2^{7/2}M^{{21}/{2}}}{{1673196525 \left(r\sub{p} - 2 M\right)^2 r\sub{p}^{{17}/{2}}}} \left[E\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) f_1\left(\dfrac{r\sub{p}}{M}\right) \right. \nonumber \\*
+ {} & + \left. K\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\dfrac{r\sub{p}}{M}\right)\right]
 \end{align}
 where
 \begin{align}
@@ -238,8 +238,8 @@ f_2(y) = {} & -72901570560 + 274404834816 y - 424693524096 y^2 \nonumber \\
 \end{align}
 The angular momentum lost is
 \begin{align}
-\frac{\upDelta L_{z}}{m} = {} & \frac{64 M^7}{24249225 {r\sub{p}}^{{11}/{2}}\left(r\sub{p} - 2 M \right)^{{3}/{2}}} \left[E\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_1\left(\frac{r\sub{p}}{M}\right) \right. \nonumber \\*
- {} & + \left.  K\left(\sqrt{\frac{2 M}{r\sub{p} - 2 M}}\right) g_2\left(\frac{r\sub{p}}{M}\right)\right],
+\dfrac{\upDelta L_{z}}{m} = {} & \dfrac{64 M^7}{24249225 {r\sub{p}}^{{11}/{2}}\left(r\sub{p} - 2 M \right)^{{3}/{2}}} \left[E\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) g_1\left(\dfrac{r\sub{p}}{M}\right) \right. \nonumber \\*
+ {} & + \left.  K\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) g_2\left(\dfrac{r\sub{p}}{M}\right)\right],
 \end{align}
 where
 \begin{align}

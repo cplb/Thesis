@@ -1,4 +1,4 @@
-\begin{thebibliography}{473}
+\begin{thebibliography}{507}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -120,6 +120,11 @@ Amaro-Seoane, P. \textit{et al\textup{.}};
   Quantum Gravity}}; \textbf{24}(17):R113--R169; 2007;
   \href{http://arxiv.org/abs/astro-ph/0703495}{\tt arXiv:astro-ph/0703495}.
 
+\bibitem[{Amaro-Seoane \textit{et al\textup{.}}(2011)Amaro-Seoane, Schutz \&
+  Thornburg}]{Amaro-Seoane2011}
+Amaro-Seoane, P., Schutz, B. \& Thornburg, J.; 116; 2011;
+  \href{http://arxiv.org/abs/1102.3647}{\tt arXiv:1102.3647}.
+
 \bibitem[{Ando \textit{et al\textup{.}}(2010)}]{Ando2010}
 Ando, M. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/27/8/084010}{Classical and
@@ -181,6 +186,11 @@ Backer, D.C. \& Sramek, R.A.;
   \textbf{524}(2):805--815; 1999;
   \href{http://arxiv.org/abs/astro-ph/9906048}{\tt arXiv:astro-ph/9906048}.
 
+\bibitem[{Bahcall \& Wolf(1976)}]{Bahcall1976}
+Bahcall, J.N. \& Wolf, R.A.;
+  \textit{\href{http://dx.doi.org/10.1086/154711}{The Astrophysical Journal}};
+  \textbf{209}(1):214--232; 1976.
+
 \bibitem[{Bahcall \& Wolf(1977)}]{Bahcall1977}
 Bahcall, J.N. \& Wolf, R.A.;
   \textit{\href{http://dx.doi.org/10.1086/155534}{The Astrophysical Journal}};
@@ -191,6 +201,13 @@ Bambi, C. \& Freese, K.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.79.043002}{Physical Review
   D}}; \textbf{79}(4):043002(7); 2009;
   \href{http://arxiv.org/abs/0812.1328}{\tt arXiv:0812.1328}.
+
+\bibitem[{Bar-Or \textit{et al\textup{.}}(2013)Bar-Or, Kupi \&
+  Alexander}]{Bar-Or2012}
+Bar-Or, B., Kupi, G. \& Alexander, T.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/764/1/52}{The Astrophysical
+  Journal}}; \textbf{764}(1):52(20); 2013;
+  \href{http://arxiv.org/abs/1209.4594}{\tt arXiv:1209.4594}.
 
 \bibitem[{Barack(2009)}]{Barack2009}
 Barack, L.;
@@ -230,6 +247,12 @@ Barausse, E., Sotiriou, T.P. \& Miller, J.C.;
   Quantum Gravity}}; \textbf{25}(6):062001(7); 2008{\natexlab{b}};
   \href{http://arxiv.org/abs/gr-qc/0703132}{\tt arXiv:gr-qc/0703132}.
 
+\bibitem[{Bartos \textit{et al\textup{.}}(2013)Bartos, Haiman, Kocsis \&
+  M{\'a}rka}]{Bartos2013}
+Bartos, I., Haiman, Z., Kocsis, B. \& M{\'a}rka, S.;
+  \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.110.221102}{Physical
+  Review Letters}}; \textbf{110}(22):221102(5); 2013.
+
 \bibitem[{B{\'e}dard(2007)}]{Bedard2007}
 B{\'e}dard, M.; \textit{\href{http://dx.doi.org/10.1214/105051607000000096}{The
   Annals of Applied Probability}}; \textbf{17}(4):1222--1244; 2007;
@@ -262,6 +285,11 @@ Bekenstein, J.D.;
   \textit{\href{http://dx.doi.org/10.1080/00107510701244055}{Contemporary
   Physics}}; \textbf{47}(6):387--403; 2006;
   \href{http://arxiv.org/abs/astro-ph/0701848}{\tt arXiv:astro-ph/0701848}.
+
+\bibitem[{Bekenstein \& Maoz(1992)}]{Bekenstein1992}
+Bekenstein, J.D. \& Maoz, E.;
+  \textit{\href{http://dx.doi.org/10.1086/171260}{The Astrophysical Journal}};
+  \textbf{390}(1):79--87; 1992.
 
 \bibitem[{Bekenstein \& Meisels(1978)}]{Bekenstein1978}
 Bekenstein, J.D. \& Meisels, A.;
@@ -511,13 +539,25 @@ Cembranos, J.A.R.;
   Review Letters}}; \textbf{102}(14):141301(4); 2009;
   \href{http://arxiv.org/abs/0809.1653}{\tt arXiv:0809.1653}.
 
-\bibitem[{Chandrasekhar(1941{\natexlab{a}})}]{Chandrasekhar1941}
-Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144265}{The
-  Astrophysical Journal}}; \textbf{93}(2):285--304; 1941{\natexlab{a}}.
+\bibitem[{Chandrasekhar(1941{\natexlab{a}})}]{Chandrasekhar1941a}
+Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144357}{The
+  Astrophysical Journal}}; \textbf{94}(3):511--523; 1941{\natexlab{a}}.
 
-\bibitem[{Chandrasekhar(1941{\natexlab{b}})}]{Chandrasekhar1941b}
+\bibitem[{Chandrasekhar(1941{\natexlab{b}})}]{Chandrasekhar1941}
+Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144265}{The
+  Astrophysical Journal}}; \textbf{93}(2):285--304; 1941{\natexlab{b}}.
+
+\bibitem[{Chandrasekhar(1941{\natexlab{c}})}]{Chandrasekhar1941b}
 Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144267}{The
-  Astrophysical Journal}}; \textbf{93}(2):323--326; 1941{\natexlab{b}}.
+  Astrophysical Journal}}; \textbf{93}(2):323--326; 1941{\natexlab{c}}.
+
+\bibitem[{Chandrasekhar(1943{\natexlab{a}})}]{Chandrasekhar1943a}
+Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144517}{The
+  Astrophysical Journal}}; \textbf{97}:255--262; 1943{\natexlab{a}}.
+
+\bibitem[{Chandrasekhar(1943{\natexlab{b}})}]{Chandrasekhar1943}
+Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144544}{The
+  Astrophysical Journal}}; \textbf{98}(1):54--60; 1943{\natexlab{b}}.
 
 \bibitem[{Chandrasekhar(1960)}]{Chandrasekhar1960}
 Chandrasekhar, S.; \textit{{Principles of Stellar Dynamics}}; New York: Dover
@@ -716,6 +756,13 @@ Eardley, D.M., Lee, D.L. \& Lightman, A.P.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.8.3308}{Physical Review D}};
   \textbf{8}(10):3308--3321; 1973.
 
+\bibitem[{Eilon \textit{et al\textup{.}}(2009)Eilon, Kupi \&
+  Alexander}]{Eilon2009}
+Eilon, E., Kupi, G. \& Alexander, T.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/698/1/641}{The
+  Astrophysical Journal}}; \textbf{698}(1):641--647; 2009;
+  \href{http://arxiv.org/abs/0807.1430}{\tt arXiv:0807.1430}.
+
 \bibitem[{Einstein(1997)}]{Einstein1997}
 Einstein, A.; \textit{{The Collected Papers of Albert Einstein}}; volume~6;
   Princeton, New Jersey: Princeton University Press; 1997.
@@ -818,6 +865,13 @@ Freire, P.C.C. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1086/526338}{The Astrophysical Journal}};
   \textbf{675}(1):670--682; 2008; \href{http://arxiv.org/abs/0711.0925}{\tt
   arXiv:0711.0925}.
+
+\bibitem[{Freitag \textit{et al\textup{.}}(2006)Freitag, Amaro-Seoane \&
+  Kalogera}]{Freitag2006}
+Freitag, M., Amaro-Seoane, P. \& Kalogera, V.;
+  \textit{\href{http://dx.doi.org/10.1086/506193}{The Astrophysical Journal}};
+  \textbf{649}(1):91--117; 2006;
+  \href{http://arxiv.org/abs/astro-ph/0603280}{\tt arXiv:astro-ph/0603280}.
 
 \bibitem[{Fujii \& Maeda(2003)}]{Fujii2003}
 Fujii, Y. \& Maeda, K.I.; \textit{{The Scalar--Tensor Theory of Gravitation}};
@@ -1017,12 +1071,24 @@ Grishchuk, L.P.;
 ekhi}}; \textbf{48}(12):1235--1247; 2005;
   \href{http://arxiv.org/abs/gr-qc/0504018}{\tt arXiv:gr-qc/0504018}.
 
+\bibitem[{Gualandris \& Merritt(2012)}]{Gualandris2012}
+Gualandris, A. \& Merritt, D.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/744/1/74}{The Astrophysical
+  Journal}}; \textbf{744}(1):74(21); 2012;
+  \href{http://arxiv.org/abs/1107.4095}{\tt arXiv:1107.4095}.
+
 \bibitem[{Guarnizo \textit{et al\textup{.}}(2010)Guarnizo, Casta\~{n}eda \&
   Tejeiro}]{Guarnizo2010}
 Guarnizo, A., Casta\~{n}eda, L. \& Tejeiro, J.M.;
   \textit{\href{http://dx.doi.org/10.1007/s10714-010-1012-6}{General Relativity
   and Gravitation}}; \textbf{42}(11):2713--2728; 2010;
   \href{http://arxiv.org/abs/1002.0617}{\tt arXiv:1002.0617}.
+
+\bibitem[{G{\"u}rkan \& Hopman(2007)}]{Gurkan2007}
+G{\"u}rkan, M.A. \& Hopman, C.;
+  \textit{\href{http://dx.doi.org/10.1111/j.1365-2966.2007.11982.x}{Monthly
+  Notices of the Royal Astronomical Society}}; \textbf{379}(3):1083--1088;
+  2007; \href{http://arxiv.org/abs/0704.2709}{\tt arXiv:0704.2709}.
 
 \bibitem[{Guth(1981)}]{Guth1981}
 Guth, A.H.; \textit{\href{http://dx.doi.org/10.1103/PhysRevD.23.347}{Physical
@@ -1140,6 +1206,12 @@ Hobbs, G. \textit{et al\textup{.}};
 Hobson, M.P., Efstathiou, G. \& Lasenby, A.; \textit{{General Relativity: An
   Introduction for Physicists}}; Cambridge: Cambridge University Press; 2006.
 
+\bibitem[{Hopman \& Alexander(2005)}]{Hopman2005}
+Hopman, C. \& Alexander, T.;
+  \textit{\href{http://dx.doi.org/10.1086/431475}{The Astrophysical Journal}};
+  \textbf{629}(1):362--372; 2005;
+  \href{http://arxiv.org/abs/astro-ph/0503672}{\tt arXiv:astro-ph/0503672}.
+
 \bibitem[{Hopman \textit{et al\textup{.}}(2007)Hopman, Freitag \&
   Larson}]{Hopman2007}
 Hopman, C., Freitag, M. \& Larson, S.L.;
@@ -1194,10 +1266,9 @@ Hulse, R.A. \& Taylor, J.H.;
   \textit{\href{http://dx.doi.org/10.1086/181708}{The Astrophysical Journal}};
   \textbf{195}(2):L51--L53; 1975.
 
-\bibitem[{{Iben, Jr.} \& Tutukov(1984)}]{Iben1984}
-{Iben, Jr.}, I. \& Tutukov, A.V.;
-  \textit{\href{http://dx.doi.org/10.1086/190932}{The Astrophysical Journal
-  Supplement Series}}; \textbf{54}(2):335--372; 1984.
+\bibitem[{Iben \& Tutukov(1984)}]{Iben1984}
+Iben, I. \& Tutukov, A.V.; \textit{\href{http://dx.doi.org/10.1086/190932}{The
+  Astrophysical Journal Supplement Series}}; \textbf{54}(2):335--372; 1984.
 
 \bibitem[{Isaacson(1968{\natexlab{a}})}]{Isaacson1968}
 Isaacson, R.;
@@ -1309,6 +1380,13 @@ Johannsen, T. \textit{et al\textup{.}};
   Journal}}; \textbf{758}(1):30(7); 2012;
   \href{http://arxiv.org/abs/1201.0758}{\tt arXiv:1201.0758}.
 
+\bibitem[{Just \textit{et al\textup{.}}(2011)Just, Khan, Berczik, Ernst \&
+  Spurzem}]{Just2011}
+Just, A., Khan, F.M., Berczik, P., Ernst, A. \& Spurzem, R.;
+  \textit{\href{http://dx.doi.org/10.1111/j.1365-2966.2010.17711.x}{Monthly
+  Notices of the Royal Astronomical Society}}; \textbf{411}(1):653--674; 2011;
+  \href{http://arxiv.org/abs/1009.2455}{\tt arXiv:1009.2455}.
+
 \bibitem[{Kaiser \& Schafer(1980)}]{Kaiser1980}
 Kaiser, J. \& Schafer, R.;
   \textit{\href{http://dx.doi.org/10.1109/TASSP.1980.1163349}{IEEE Transactions
@@ -1356,8 +1434,8 @@ Kawamura, S. \textit{et al\textup{.}};
   Quantum Gravity}}; \textbf{23}(8):S125--S131; 2006.
 
 \bibitem[{Kerner \textit{et al\textup{.}}(2001)Kerner, {{van Holten}} \&
-  {Colistete, Jr.}}]{Kerner2001a}
-Kerner, R., {{van Holten}}, J.W. \& {Colistete, Jr.}, R.;
+  Colistete}]{Kerner2001a}
+Kerner, R., {{van Holten}}, J.W. \& Colistete, R.;
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/18/22/302}{Classical and
   Quantum Gravity}}; \textbf{18}(22):4725--4742; 2001;
   \href{http://arxiv.org/abs/gr-qc/0102099}{\tt arXiv:gr-qc/0102099}.
@@ -1365,6 +1443,13 @@ Kerner, R., {{van Holten}}, J.W. \& {Colistete, Jr.}, R.;
 \bibitem[{Kerr(1963)}]{Kerr1963}
 Kerr, R.; \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.11.237}{Physical
   Review Letters}}; \textbf{11}(5):237--238; 1963.
+
+\bibitem[{Keshet \textit{et al\textup{.}}(2009)Keshet, Hopman \&
+  Alexander}]{Keshet2009}
+Keshet, U., Hopman, C. \& Alexander, T.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/698/1/L64}{The
+  Astrophysical Journal}}; \textbf{698}(1):L64--L67; 2009;
+  \href{http://arxiv.org/abs/0901.4343}{\tt arXiv:0901.4343}.
 
 \bibitem[{Khoury(2013)}]{Khoury2013}
 Khoury, J.; 19; 2013; \href{http://arxiv.org/abs/1306.4326}{\tt
@@ -1461,6 +1546,10 @@ Lackey, B.D., Kyutoku, K., Shibata, M., Brady, P.R. \& Friedman, J.L.;
   D}}; \textbf{85}(4):044061(21); 2012;
   \href{http://arxiv.org/abs/1109.3402}{\tt arXiv:1109.3402}.
 
+\bibitem[{Landau \& Lifshitz(1958)}]{Landau1958}
+Landau, L.D. \& Lifshitz, E.M.; \textit{{Statistical Physics}}; Course of
+  Theoretical Physics; London: Pergamon Press; 1958.
+
 \bibitem[{Landau \& Lifshitz(1975)}]{Landau1975}
 Landau, L.D. \& Lifshitz, E.M.; \textit{{The Classical Theory of Fields}};
   Course of Theoretical Physics; Oxford: Butterworth-Heinemann; fourth edition;
@@ -1505,6 +1594,13 @@ Li, B. \& Barrow, J.D.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.75.084010}{Physical Review
   D}}; \textbf{75}(8):084010(13); 2007; \href{http://arxiv.org/abs/0701111}{\tt
   arXiv:0701111}.
+
+\bibitem[{Li \textit{et al\textup{.}}(2012)Li, Liu, Berczik, Chen \&
+  Spurzem}]{Li2012}
+Li, S., Liu, F.K., Berczik, P., Chen, X. \& Spurzem, R.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/748/1/65}{The Astrophysical
+  Journal}}; \textbf{748}(1):65(14); 2012;
+  \href{http://arxiv.org/abs/1201.3407}{\tt arXiv:1201.3407}.
 
 \bibitem[{Liddle \& Lyth(1993)}]{Liddle1993}
 Liddle, A.R. \& Lyth, D.H.;
@@ -1556,6 +1652,10 @@ Lubini, M., Tortora, C., N{\"a}f, J., Jetzer, P. \& Capozziello, S.;
 Lynden-Bell, D.; \textit{\href{http://dx.doi.org/10.1038/223690a0}{Nature}};
   \textbf{223}(5207):690--694; 1969.
 
+\bibitem[{Lynden-Bell \& Kalnajs(1972)}]{Lynden-Bell1972}
+Lynden-Bell, D. \& Kalnajs, A.J.; \textit{Monthly Notices of the Royal
+  Astronomical Society}; \textbf{157}(1):1--30; 1972.
+
 \bibitem[{Lynden-Bell \& Rees(1971)}]{Lynden-Bell1971}
 Lynden-Bell, D. \& Rees, M.J.; \textit{Monthly Notices of the Royal
   Astronomical Society}; \textbf{152}(4):461--475; 1971.
@@ -1575,6 +1675,13 @@ Macchetto, F. \textit{et al\textup{.}};
 \bibitem[{MacKay(2003)}]{MacKay2003}
 MacKay, D.J.C.; \textit{{Information Theory, Inference and Learning
   Algorithms}}; Cambridge: Cambridge University Press; 2003.
+
+\bibitem[{Madigan \textit{et al\textup{.}}(2011)Madigan, Hopman \&
+  Levin}]{Madigan2011}
+Madigan, A.M., Hopman, C. \& Levin, Y.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/738/1/99}{The Astrophysical
+  Journal}}; \textbf{738}(1):99(22); 2011;
+  \href{http://arxiv.org/abs/1010.1535}{\tt arXiv:1010.1535}.
 
 \bibitem[{Madsen \& Barrow(1989)}]{Madsen1989}
 Madsen, M.S. \& Barrow, J.D.;
@@ -1605,6 +1712,10 @@ Malbon, R.K., Baugh, C.M., Frenk, C.S. \& Lacey, C.G.;
 Manko, V.S. \& Novikov, I.D.;
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/9/11/013}{Classical and
   Quantum Gravity}}; \textbf{9}(11):2477--2487; 1992.
+
+\bibitem[{Maoz(1993)}]{Maoz1993}
+Maoz, E.; \textit{Monthly Notices of the Royal Astronomical Society};
+  \textbf{263}(1):75--85; 1993.
 
 \bibitem[{Marconi \& Hunt(2003)}]{Marconi2003}
 Marconi, A. \& Hunt, L.K.; \textit{\href{http://dx.doi.org/10.1086/375804}{The
@@ -1644,6 +1755,13 @@ Merritt, D., Alexander, T., Mikkola, S. \& Will, C.M.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.81.062002}{Physical Review
   D}}; \textbf{81}(6):062002(17); 2010;
   \href{http://arxiv.org/abs/0911.4718}{\tt arXiv:0911.4718}.
+
+\bibitem[{Merritt \textit{et al\textup{.}}(2011)Merritt, Alexander, Mikkola \&
+  Will}]{Merritt2011}
+Merritt, D., Alexander, T., Mikkola, S. \& Will, C.M.;
+  \textit{\href{http://dx.doi.org/10.1103/PhysRevD.84.044024}{Physical Review
+  D}}; \textbf{84}(4):044024(21); 2011;
+  \href{http://arxiv.org/abs/1102.3180}{\tt arXiv:1102.3180}.
 
 \bibitem[{Metropolis \textit{et al\textup{.}}(1953)Metropolis, Rosenbluth,
   Rosenbluth, Teller \& Teller}]{Metropolis1953}
@@ -1716,6 +1834,9 @@ Moffat, J.W.;
   \textit{\href{http://dx.doi.org/10.1088/1475-7516/2006/03/004}{Journal of
   Cosmology and Astroparticle Physics}}; \textbf{2006}(03):004(19); 2006.
 
+\bibitem[{Mulder(1983)}]{Mulder1983}
+Mulder, W.A.; \textit{Astronomy and Astrophysics}; \textbf{117}(1):9--16; 1983.
+
 \bibitem[{N{\"a}f \& Jetzer(2010)}]{Naf2010}
 N{\"a}f, J. \& Jetzer, P.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.81.104003}{Physical Review
@@ -1747,6 +1868,11 @@ Nelemans, G.;
   Quantum Gravity}}; \textbf{26}(9):094030(10); 2009;
   \href{http://arxiv.org/abs/0901.1778}{\tt arXiv:0901.1778}.
 
+\bibitem[{Nelson \& Tremaine(1999)}]{Nelson1999}
+Nelson, R.W. \& Tremaine, S.;
+  \textit{\href{http://dx.doi.org/10.1046/j.1365-8711.1999.02101.x}{Monthly
+  Notices of the Royal Astronomical Society}}; \textbf{306}(1):1--21; 1999.
+
 \bibitem[{Newman \textit{et al\textup{.}}(1965)}]{Newman1965}
 Newman, E.T. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1063/1.1704351}{Journal of Mathematical
@@ -1776,14 +1902,14 @@ Nomoto, K.; \textit{\href{http://dx.doi.org/10.1086/165716}{The Astrophysical
 Nordstr{\"o}m, G.; \textit{Koninklijke Nederlandsche Akademie van Wetenschappen
   Proceedings}; \textbf{20}(7):1076--1091; 1918.
 
+\bibitem[{Nordtvedt(1970)}]{Nordtvedt1970}
+Nordtvedt, K.; \textit{\href{http://dx.doi.org/10.1086/150607}{The
+  Astrophysical Journal}}; \textbf{161}(3):1059--1067; 1970.
+
 \bibitem[{Nordtvedt \& Will(1972)}]{Nordtvedt1972}
 Nordtvedt, K. \& Will, C.M.;
   \textit{\href{http://dx.doi.org/10.1086/151755}{The Astrophysical Journal}};
   \textbf{177}(3):775--792; 1972.
-
-\bibitem[{{Nordtvedt, Jr.}(1970)}]{Nordtvedt1970}
-{Nordtvedt, Jr.}, K.; \textit{\href{http://dx.doi.org/10.1086/150607}{The
-  Astrophysical Journal}}; \textbf{161}(3):1059--1067; 1970.
 
 \bibitem[{Nowak \textit{et al\textup{.}}(2010)}]{Nowak2010}
 Nowak, N. \textit{et al\textup{.}};
@@ -1970,6 +2096,19 @@ Psaltis, D., Perrodin, D., Dienes, K.R. \& Mocioiu, I.;
 Punturo, M. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/27/8/084007}{Classical and
   Quantum Gravity}}; \textbf{27}(8):084007(23); 2010.
+
+\bibitem[{Rauch \& Ingalls(1998)}]{Rauch1998}
+Rauch, K.P. \& Ingalls, B.;
+  \textit{\href{http://dx.doi.org/10.1046/j.1365-8711.1998.01889.x}{Monthly
+  Notices of the Royal Astronomical Society}}; \textbf{299}(4):1231--1241;
+  1998; \href{http://arxiv.org/abs/astro-ph/9710288}{\tt
+  arXiv:astro-ph/9710288}.
+
+\bibitem[{Rauch \& Tremaine(1996)}]{Rauch1996}
+Rauch, K.P. \& Tremaine, S.;
+  \textit{\href{http://dx.doi.org/10.1016/S1384-1076(96)00012-7}{New
+  Astronomy}}; \textbf{1}(2):149--170; 1996;
+  \href{http://arxiv.org/abs/astro-ph/9603018}{\tt arXiv:astro-ph/9603018}.
 
 \bibitem[{Read \textit{et al\textup{.}}(2009)}]{Read2009}
 Read, J.S. \textit{et al\textup{.}};
@@ -2197,6 +2336,11 @@ Shapiro, S.L. \& Teukolsky, S.A.; \textit{{Black holes, white dwarfs and
   Mandel}]{Sidery2013}
 Sidery, T., Gair, J.R. \& Mandel, I.; \enquote{in preparation}; 2013.
 
+\bibitem[{Sigurdsson \& Rees(1997)}]{Sigurdsson1997}
+Sigurdsson, S. \& Rees, M.J.; \textit{Monthly Notices of the Royal Astronomical
+  Society}; \textbf{284}(2):318--326; 1997;
+  \href{http://arxiv.org/abs/astro-ph/9608093}{\tt arXiv:astro-ph/9608093}.
+
 \bibitem[{Sikora \textit{et al\textup{.}}(2007)Sikora, Stawarz \&
   Lasota}]{Sikora2007}
 Sikora, M., Stawarz, {\L}. \& Lasota, J.;
@@ -2269,6 +2413,29 @@ Sotiriou, T.P., Visser, M. \& Weinfurtner, S.;
   \textit{\href{http://dx.doi.org/10.1088/1126-6708/2009/10/033}{Journal of
   High Energy Physics}}; \textbf{2009}(10):033(32); 2009;
   \href{http://arxiv.org/abs/0905.2798}{\tt arXiv:0905.2798}.
+
+\bibitem[{Spitzer \& Harm(1958)}]{Spitzer1958}
+Spitzer, L. \& Harm, R.; \textit{\href{http://dx.doi.org/10.1086/146486}{The
+  Astrophysical Journal}}; \textbf{127}(3):544--550; 1958.
+
+\bibitem[{Spitzer \& Hart(1971)}]{Spitzer1971}
+Spitzer, L. \& Hart, M.H.; \textit{\href{http://dx.doi.org/10.1086/150855}{The
+  Astrophysical Journal}}; \textbf{164}(3):399--409; 1971.
+
+\bibitem[{Spitzer \& Schwarzschild(1951)}]{Spitzer1951}
+Spitzer, L. \& Schwarzschild, M.;
+  \textit{\href{http://dx.doi.org/10.1086/145478}{The Astrophysical Journal}};
+  \textbf{114}(3):385--397; 1951.
+
+\bibitem[{Spitzer \& Shapiro(1972)}]{Spitzer1972}
+Spitzer, L. \& Shapiro, S.L.;
+  \textit{\href{http://dx.doi.org/10.1086/151442}{The Astrophysical Journal}};
+  \textbf{173}(3):529; 1972.
+
+\bibitem[{Spitzer(1987)}]{Spitzer1987}
+Spitzer, Jr., L.; \textit{{Dynamical Evolution of Globular Clusters}};
+  Princeton Series in Astrophysics; Princeton, New Jersey: Princeton University
+  Press; 1987.
 
 \bibitem[{Springel \textit{et al\textup{.}}(2006)Springel, Frenk \&
   White}]{Springel2006a}
@@ -2400,11 +2567,21 @@ Tonry, J.L. \textit{et al\textup{.}};
   \textbf{546}(2):681--693; 2001;
   \href{http://arxiv.org/abs/astro-ph/0011223}{\tt arXiv:astro-ph/0011223}.
 
+\bibitem[{Tremaine \& Weinberg(1984)}]{Tremaine1984}
+Tremaine, S. \& Weinberg, M.D.; \textit{Monthly Notices of the Royal
+  Astronomical Society}; \textbf{209}:729--757; 1984.
+
 \bibitem[{Tremaine \textit{et al\textup{.}}(2002)}]{Tremaine2002}
 Tremaine, S. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1086/341002}{The Astrophysical Journal}};
   \textbf{574}(2):740--753; 2002;
   \href{http://arxiv.org/abs/astro-ph/0203468}{\tt arXiv:astro-ph/0203468}.
+
+\bibitem[{Tremaine \textit{et al\textup{.}}(1994)}]{Tremaine1994}
+Tremaine, S. \textit{et al\textup{.}};
+  \textit{\href{http://dx.doi.org/10.1086/116883}{The Astronomical Journal}};
+  \textbf{107}(2):634--644; 1994;
+  \href{http://arxiv.org/abs/astro-ph/9309044}{\tt arXiv:astro-ph/9309044}.
 
 \bibitem[{Trippe \textit{et al\textup{.}}(2007)}]{Trippe2007}
 Trippe, S. \textit{et al\textup{.}};
@@ -2573,8 +2750,8 @@ Will, C.M.; \textit{\href{http://dx.doi.org/10.12942/lrr-2006-3}{Living Reviews
   in Relativity}}; \textbf{9}(3); 2006;
   \href{http://arxiv.org/abs/gr-qc/0510072}{\tt arXiv:gr-qc/0510072}.
 
-\bibitem[{Will \& {Nordtvedt, Jr.}(1972)}]{Will1972}
-Will, C.M. \& {Nordtvedt, Jr.}, K.;
+\bibitem[{Will \& Nordtvedt(1972)}]{Will1972}
+Will, C.M. \& Nordtvedt, K.;
   \textit{\href{http://dx.doi.org/10.1086/151754}{The Astrophysical Journal}};
   \textbf{177}(3):757--774; 1972.
 
@@ -2601,6 +2778,12 @@ Woosley, S.E., Heger, A. \& Weaver, T.A.;
   \textit{\href{http://dx.doi.org/10.1103/RevModPhys.74.1015}{Reviews of Modern
   Physics}}; \textbf{74}(4):1015--1071; 2002.
 
+\bibitem[{Wyse(2008)}]{Wyse2008}
+Wyse, R.F.G.; in T.~Kodama, T.~Yamada \& K.~Aoki (eds.), \textit{Panoramic
+  Views of Galaxy Formation and Evolution}; \textit{ASP Conference Series},
+  volume 399; 445--448; San Francisco, California: Astronomical Society of the
+  Pacific; 2008.
+
 \bibitem[{Yagi \& Seto(2011)}]{Yagi2011a}
 Yagi, K. \& Seto, N.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.83.044011}{Physical Review
@@ -2613,8 +2796,8 @@ Yang, L., Lee, C.C. \& Geng, C.Q.;
   Cosmology and Astroparticle Physics}}; \textbf{2011}(08):029(15); 2011;
   \href{http://arxiv.org/abs/1106.5582}{\tt arXiv:1106.5582}.
 
-\bibitem[{{York, Jr.}(1972)}]{York1972}
-{York, Jr.}, J.W.;
+\bibitem[{York(1972)}]{York1972}
+York, J.W.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.28.1082}{Physical Review
   Letters}}; \textbf{28}(16):1082--1085; 1972.
 

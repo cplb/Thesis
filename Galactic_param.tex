@@ -59,7 +59,7 @@ The detectability of a burst depends upon its SNR. To characterise the variation
 
 The bursts were calculated for a $1 M_\odot$ CO. From \eqnref{octupole}, the amplitude of the waveform is proportional to the CO mass $\mu$, and so $\rho$ is also proportional to $\mu$; a $10 M_\odot$ object would be ten times louder on the same orbit. To make results mass independent, we work in terms of a mass-normalised SNR
 \begin{equation}
-\hat{\rho}[\boldsymbol{h}] = \left(\frac{\mu}{M_\odot}\right)^{-1}\rho[\boldsymbol{h}].
+\hat{\rho}[\boldsymbol{h}] = \left(\dfrac{\mu}{M_\odot}\right)^{-1}\rho[\boldsymbol{h}].
 \end{equation}
 
 There exists a correlation between the periapse radius and SNR, as shown in \figref{SNR}.
@@ -71,7 +71,7 @@ There exists a correlation between the periapse radius and SNR, as shown in \fig
 \end{figure}
 Closer orbits produce louder bursts. To reflect this trend, we have fitted a simple fiducial power law,
 \begin{equation}
-\log\rho \simeq -2.7\log\left(\frac{r\sub{p}}{r\sub{g}}\right) + \log\left(\frac{\mu}{M_\odot}\right) + 4.9,
+\log\rho \simeq -2.7\log\left(\dfrac{r\sub{p}}{r\sub{g}}\right) + \log\left(\dfrac{\mu}{M_\odot}\right) + 4.9,
 \label{eq:SNR-power-law}
 \end{equation}
 which is indicated by the straight line.\footnote{Using oblate-spheroidal coordinates instead of spherical polars gives a fit consistent to within $0.1\%$ as we have excluded the closest orbits.} This was done by maximising the likelihood, assuming $\ln \rho$ has a Gaussian distribution with standard deviation derived from the scatter because of variation in the ancillary parameters. The power law is a good fit only for larger periapses. The shape is predominately determined by the noise curve. The change in the trend reflects the transition from approximately power law behaviour to the bucket of the noise curve. Hence, we fit a power law to orbits with a characteristic frequency of $f_\ast = \sqrt{GM_\bullet/r\sub{p}} < 1 \times 10^{-3}\units{Hz}$, to avoid spilling into the bucket.\footnote{The form of $f_\ast$ can be derived on dimensional grounds, but it is explained in more detail in \secref{extragal-SNR}.} Changing the cut-off within a plausible region alters the fit coefficients by around $0.1$.\footnote{The power law exponent $-2.7$ is inconsistent with $-13/4$ as predicted by the approximate model of \citet{Hopman2007}. This is the result of their approximate waveform model.}
@@ -89,7 +89,7 @@ Following a similar approach, we may repeat this analysis for eLISA. The SNR as 
 \end{figure}
 There is again a strong correlation that may be approximated as a power law. The bucket of the noise curve is less apparent as it is shifted to slightly higher frequencies. We have fitted
 \begin{equation}
-\log\rho \simeq -2.9\log\left(\frac{r\sub{p}}{r\sub{g}}\right) + \log\left(\frac{\mu}{M_\odot}\right) + 3.9,
+\log\rho \simeq -2.9\log\left(\dfrac{r\sub{p}}{r\sub{g}}\right) + \log\left(\dfrac{\mu}{M_\odot}\right) + 3.9,
 \label{eq:SNR-power-law-eLISA}
 \end{equation}
 which is indicated by the straight line. This was done in exactly the same as for LISA. Again, there is no clear correlation with any other orbital parameters.
@@ -100,7 +100,7 @@ The SNR is lower for eLISA. As a consequence, bursts are detectable across a sma
 
 Having detected a signal, we are interested in what we can learn about the source. We have an inference problem that can be solved by an application of Bayes' Theorem \citep[chapter 4]{Jaynes2003}: the probability distribution for our parameters given that we have detected the signal $\boldsymbol{s}(t)$ is given by the posterior
 \begin{equation}
-p(\boldsymbol{\lambda}|\boldsymbol{s}(t)) = \frac{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})p(\boldsymbol{\lambda})}{p(\boldsymbol{s}(t))}.
+p(\boldsymbol{\lambda}|\boldsymbol{s}(t)) = \dfrac{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})p(\boldsymbol{\lambda})}{p(\boldsymbol{s}(t))}.
 \end{equation}
 Here $p(\boldsymbol{s}(t)|\boldsymbol{\lambda})$ is the likelihood of the parameters, $p(\boldsymbol{\lambda})$ is the prior probability distribution for the parameters, and the evidence $p(\boldsymbol{s}(t)) = \intd{}{}{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}$ is, for our purposes, a normalising constant. The likelihood depends upon the realization of noise. If parameters $\boldsymbol{\lambda}_0$ define a waveform $\boldsymbol{h}_0(t) = \boldsymbol{h}(t; \boldsymbol{\lambda}_0)$, the probability that we observe signal $\boldsymbol{s}(t)$ GW is given by \eqnref{sig_prob}, so the likelihood is
 \begin{equation}
@@ -120,7 +120,7 @@ p(\boldsymbol{s}(t)|\boldsymbol{\lambda}_0) \propto \exp\left[-\recip{2}\innerpr
 \end{equation}
 where the mean is defined as
 \begin{equation}
-\langle\lambda^a\rangle_\ell = \frac{\intd{}{}{\lambda^a p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}}{\intd{}{}{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}}.
+\langle\lambda^a\rangle_\ell = \dfrac{\intd{}{}{\lambda^a p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}}{\intd{}{}{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}}.
 \end{equation}
 In the high SNR limit, this is the ML value $\langle\lambda^a\rangle_\ell = \lambda^a\sub{ML}$. The quantity
 \begin{equation}
@@ -171,7 +171,7 @@ As we cannot be confident in FIM results, we abandon this approach in favour of 
 
 MCMC methods are widely used for inference problems; they are a family of algorithms for integrating over complicated distributions and are efficient for high-dimensional problems \citep[chapter 29]{MacKay2003}. Parameter space is explored by constructing a chain of $N$ samples. The distribution of points visited by the chain maps out the underlying distribution; this becomes asymptotically exact as $N \rightarrow \infty$. Samples are added sequentially, if the current state is $\boldsymbol{\lambda}_n$ a new point $\boldsymbol{\lambda}^\ast$ is drawn and accepted with probability
 \begin{equation}
-\mathcal{A} = \min\left\{\frac{\pi(\boldsymbol{\lambda}^\ast)\mathcal{L}(\boldsymbol{\lambda}^\ast)\mathcal{Q}(\boldsymbol{\lambda}_n;\,\boldsymbol{\lambda}^\ast)}{\pi(\boldsymbol{\lambda}_n)\mathcal{L}(\boldsymbol{\lambda}_n)\mathcal{Q}(\boldsymbol{\lambda}_n;\,\boldsymbol{\lambda}^\ast)}, 1\right\},
+\mathcal{A} = \min\left\{\dfrac{\pi(\boldsymbol{\lambda}^\ast)\mathcal{L}(\boldsymbol{\lambda}^\ast)\mathcal{Q}(\boldsymbol{\lambda}_n;\,\boldsymbol{\lambda}^\ast)}{\pi(\boldsymbol{\lambda}_n)\mathcal{L}(\boldsymbol{\lambda}_n)\mathcal{Q}(\boldsymbol{\lambda}_n;\,\boldsymbol{\lambda}^\ast)}, 1\right\},
 \end{equation}
 setting $\boldsymbol{\lambda}_{n + 1} = \boldsymbol{\lambda}^\ast$, where $\mathcal{L}(\boldsymbol{\lambda})$ is the likelihood, in our case from \eqnref{likelihood}; $\pi(\boldsymbol{\lambda})$ is the prior, and $\mathcal{Q}$ is a proposal distribution. If the move is not accepted  $\boldsymbol{\lambda}_{n + 1} = \boldsymbol{\lambda}_n$. This is the Metropolis-Hastings algorithm \citep{Metropolis1953,Hastings1970}.
 

@@ -10,22 +10,22 @@ Whether or not a burst is detectable is determined by its SNR. This is calculate
 
 We parameterize the detectability in terms of a characteristic frequency $f_\ast$. The speed at periapse scales like $v \sim \sqrt{GM/r\sub{p}}$; the characteristic time taken for the position to change is then $T \sim r\sub{p}/v$, and so we define the characteristic frequency as
 \begin{equation}
-f_\ast = \sqrt{\frac{GM_\bullet}{r\sub{p}^3}}.
+f_\ast = \sqrt{\dfrac{GM_\bullet}{r\sub{p}^3}}.
 \end{equation}
 This allows comparison between different systems where the same periapse does not correspond to the same frequency and thus the same point of the noise curve.
 
 We also expect the SNR to scale with other quantities. We define a characteristic strain amplitude for a burst $h_0$; we expect $\rho \propto h_0$, where the proportionality will be set by a frequency-dependent function that includes the effect of the noise curve. Assuming that the strain is dominated by the quadrupole contribution (\citealt[section 36.10]{Misner1973}; \citealt[section 17.9]{Hobson2006}) we expect
 \begin{equation}
-h_0 \sim \frac{G}{c^6}\frac{\mu}{R}\frac{\dd^2}{\dd t^2}\left(r^2\right),
+h_0 \sim \dfrac{G}{c^6}\dfrac{\mu}{R}\dfrac{\dd^2}{\dd t^2}\left(r^2\right),
 \end{equation}
 where $\mu$ is the CO mass, $R$ is the distance to the MBH, $t$ is time and $r$ is a proxy for the position of the orbiting object. The characteristic rate of change is set by $f_\ast$ and the characteristic length-scale is set by $r\sub{p}$. Hence
 \begin{align}
-h_0 \sim {} & \frac{G}{c^6}\frac{\mu}{R}f_\ast^2 r\sub{p}^2 \\
- \sim {} & \frac{G^{5/2}}{c^6}\frac{\mu}{R}f_\ast^{-2/3}M_\bullet^{2/3}.
+h_0 \sim {} & \dfrac{G}{c^6}\dfrac{\mu}{R}f_\ast^2 r\sub{p}^2 \\
+ \sim {} & \dfrac{G^{5/2}}{c^6}\dfrac{\mu}{R}f_\ast^{-2/3}M_\bullet^{2/3}.
 \end{align}
 Using this, we can factor out the most important dependences to give a scaled SNR defined by
 \begin{equation}
-\rho_\ast = \left(\frac{\mu}{M_\odot}\right)^{-1}\left(\frac{R}{\mathrm{Mpc}}\right)\left(\frac{M_\bullet}{10^6 M_\odot}\right)^{-2/3}\rho.
+\rho_\ast = \left(\dfrac{\mu}{M_\odot}\right)^{-1}\left(\dfrac{R}{\mathrm{Mpc}}\right)\left(\dfrac{M_\bullet}{10^6 M_\odot}\right)^{-2/3}\rho.
 \label{eq:SNR-scaling}
 \end{equation}
 
@@ -64,7 +64,7 @@ The curve shows that EMRB SNR does scale as expected, and $\rho_\ast$ can be des
 
 We approximate the trend with a parameterized curve
 \begin{equation}
-\rho_\ast = \alpha_1 \left(\frac{f_\ast}{\mathrm{Hz}}\right)^{\beta_1} \left[1 + \left(\alpha_2 \frac{f_\ast}{\mathrm{Hz}}\right)^{\beta_2}\right]\left[1 + \left(\alpha_3 \frac{f_\ast}{\mathrm{Hz}}\right)^{\beta_3}\right]^{-\beta_4}.
+\rho_\ast = \alpha_1 \left(\dfrac{f_\ast}{\mathrm{Hz}}\right)^{\beta_1} \left[1 + \left(\alpha_2 \dfrac{f_\ast}{\mathrm{Hz}}\right)^{\beta_2}\right]\left[1 + \left(\alpha_3 \dfrac{f_\ast}{\mathrm{Hz}}\right)^{\beta_3}\right]^{-\beta_4}.
 \label{eq:scaled-SNR}
 \end{equation}
 To fit this, we treat the problem as if it were a likelihood maximisation, with each averaged point having a Gaussian likelihood with standard deviation defined from the scatter because of the variation in the ancillary parameters. The optimised values for LISA are
@@ -212,7 +212,7 @@ We have studied extreme-mass-ratio bursts from extragalactic sources. The SNR of
 
 The MBH in our own Galaxy is by far the best source for bursts; however, it is also possible to detect bursts from extragalactic sources. In particular, M32 is a promising candidate. This is good news for any space-borne GW detectors, as EMRBs can be added to their list of potential sources.
 
-Utilising the classic LISA design, EMRBs from a $10 M_\odot$ orbiting CO could be detected out to a distance of $\sim 100\units{Mpc}$. With the descoped eLISA design, this decreases to $\sim 10\units{Mpc}$. This may drastically reduce the chance of observing an EMRB. For both detectors, sensitivity is maximal for MBHs of $M \sim 10^6$--$10^7 M_\odot$, being at slightly higher masses for LISA than for eLISA. We can detect bursts from systems with high MBH spins out to greater distance; hence, the EMRB event rate would be enhanced if MBH spins naturally tend to higher values, perhaps as a consequence of accretion.
+Utilising the classic LISA design, EMRBs from a $10 M_\odot$ orbiting CO could be detected out to a distance of $\sim 100\units{Mpc}$. With the descoped eLISA design, this decreases to $\sim 10\units{Mpc}$. This may drastically reduce the chance of observing an EMRB. For both detectors, sensitivity is maximal for MBHs of $M \sim 10^6$--$10^7 M_\odot$, being at slightly higher masses for LISA than for eLISA. We can detect bursts from systems with high MBH spins out to a greater distance; hence, the EMRB event rate would be enhanced if MBH spins naturally tend to higher values, perhaps as a consequence of accretion.
 
 However, we must still be cautious: EMRBs may be rare and the event rate may prevent us from observing any over a realistic mission lifetime. Bursts from any given extragalactic source should be less common than from the Galactic Centre, although this may be slightly ameliorated by the larger number of galaxies hosting potential source systems. In \chapref{events} we shall construct a model to estimate the event rate for Galactic bursts. It is more difficult to perform a similar estimation for other galaxies as we do not have as detailed astrophysical measurement. However, we may use the Galactic event rate as a guide to predict the number of bursts per Milky Way equivalent galaxy.
 

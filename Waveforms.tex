@@ -18,15 +18,15 @@ Having established the accuracy of our NK waveforms, we study what information c
 
 Astrophysical BHs are described by the Kerr metric \citep{Kerr1963}. In standard Boyer--Lindquist coordinates the line element is (\citealt{Boyer1967}; \citealt[section 13.7]{Hobson2006})
 \begin{equation}
-\dd s^2 = \frac{\varrho^2 \Delta}{\Sigma^2}c^2\dd t^2 - \frac{\Sigma \sin^2 \theta}{\varrho^2}\left(\dd \phi - \omega \dd t\right)^2 - \frac{\varrho^2}{\Delta}\dd r^2 - \varrho^2\dd \theta^2,
+\dd s^2 = \dfrac{\varrho^2 \Delta}{\Sigma^2}c^2\dd t^2 - \dfrac{\Sigma \sin^2 \theta}{\varrho^2}\left(\dd \phi - \omega \dd t\right)^2 - \dfrac{\varrho^2}{\Delta}\dd r^2 - \varrho^2\dd \theta^2,
 \end{equation}
 where we have introduced functions
 \begin{subequations}
 \begin{align}
 \varrho^2 = {} & r^2 + a^2\cos^2\theta,\\
-\Delta = {} & r^2 - \frac{2GM_\bullet r}{c^2} + a^2,\\
+\Delta = {} & r^2 - \dfrac{2GM_\bullet r}{c^2} + a^2,\\
 \Sigma = {} & \left(r^2 +a^2\right)^2 - a^2\Delta\sin^2\theta,\\
-\omega = {} & \frac{2GM_\bullet ar}{c\Sigma}.
+\omega = {} & \dfrac{2GM_\bullet ar}{c\Sigma}.
 \end{align}
 \end{subequations}
 For the remainder of this section we use natural units with $G = c = 1$.
@@ -34,10 +34,10 @@ For the remainder of this section we use natural units with $G = c = 1$.
 Geodesics are parameterized by three conserved quantities (aside from the particle's mass $\mu$): energy (per unit mass) $E$, specific angular momentum about the symmetry axis (the $z$-axis) $L_z$, and Carter constant $Q$ (\citealt{Carter1968}; \citealt[section 62]{Chandrasekhar1992}). The geodesic equations are
 \begin{subequations}
 \begin{align}
-\varrho^2 \diff{t}{\tau} = {} & a\left(L_z - aE\sin^2 \theta\right) + \frac{r^2 + a^2}{\Delta}T,\\
+\varrho^2 \diff{t}{\tau} = {} & a\left(L_z - aE\sin^2 \theta\right) + \dfrac{r^2 + a^2}{\Delta}T,\\
 \varrho^2 \diff{r}{\tau} = {} & \pm \sqrt{V_r},\\
 \varrho^2 \diff{\theta}{\tau} = {} & \pm \sqrt{V_\theta},\\
-\varrho^2 \diff{\phi}{\tau} = {} & \frac{L_z}{\sin^2 \theta} - aE + \frac{a}{\Delta}T,
+\varrho^2 \diff{\phi}{\tau} = {} & \dfrac{L_z}{\sin^2 \theta} - aE + \dfrac{a}{\Delta}T,
 \end{align}
 \end{subequations}
 where we have introduced potentials
@@ -45,14 +45,14 @@ where we have introduced potentials
 \begin{align}
 T = {} & E\left(r^2 +a^2\right) - aL_z,\\
 V_r = {} & T^2 - \Delta\left[r^2 + \left(L_z - aE\right)^2 + Q\right],\\
-V_\theta = {} & Q - \cos^2 \theta\left[a^2\left(1 - E^2\right) + \frac{L_z^2}{\sin^2\theta}\right],
+V_\theta = {} & Q - \cos^2 \theta\left[a^2\left(1 - E^2\right) + \dfrac{L_z^2}{\sin^2\theta}\right],
 \end{align}
 \end{subequations}
 and $\tau$ is proper time. The signs of the $r$ and $\theta$ equations may be chosen independently.
 
 For a parabolic orbit $E = 1$; the particle is at rest at infinity. This simplifies the geodesic equations. It also allows us to give a simple interpretation for the Carter constant: this is defined as
 \begin{equation}
-Q = L_\theta^2 + \cos^2\theta\left[a^2\left(1 - E^2\right) + \frac{L_z^2}{\sin^2\theta}\right],
+Q = L_\theta^2 + \cos^2\theta\left[a^2\left(1 - E^2\right) + \dfrac{L_z^2}{\sin^2\theta}\right],
 \end{equation}
 where $L_\theta$ is the (non-conserved) specific angular momentum in the $\theta$-direction ($V_\theta = L_\theta^2$). For $E = 1$ we have
 \begin{equation}
@@ -70,11 +70,11 @@ This has three roots, which we shall denote $\{r_1, r_2, r\sub{p}\}$; the periap
 
 We avoid the difficulties associated with the turning point by introducing angular variables that always increase with proper time \citep{Drasco2004}: inspired by Keplerian orbits, we parameterize our trajectory by
 \begin{equation}
-r = \frac{p}{1+e\cos\psi},
+r = \dfrac{p}{1+e\cos\psi},
 \end{equation}
 where $e = 1$ is the eccentricity $p = 2r\sub{p}$ is the semilatus rectum and $\psi$ is the relativistic anomaly \citep{Darwin1961}. As $\psi$ covers its range from $-\pi$ to $\pi$, $r$ traces out a complete orbit. The geodesic equation for $\psi$ is
 \begin{align}
-\varrho^2 \diff{\psi}{\tau} = {} & \left\{M_\bullet\left[2r\sub{p} - \left(r_1 + r_2\right)\left(1 + \cos\psi\right) \vphantom{\frac{r_1 r_2}{2r\sub{p}}} +  \frac{r_1 r_2}{2r\sub{p}}\left(1 + \cos\psi\right)^2\right]\right\}^{1/2}.
+\varrho^2 \diff{\psi}{\tau} = {} & \left\{M_\bullet\left[2r\sub{p} - \left(r_1 + r_2\right)\left(1 + \cos\psi\right) \vphantom{\dfrac{r_1 r_2}{2r\sub{p}}} +  \dfrac{r_1 r_2}{2r\sub{p}}\left(1 + \cos\psi\right)^2\right]\right\}^{1/2}.
 \end{align}
 Parameterizing an orbit by its periapsis and eccentricity has the additional benefit of allowing easier comparison with its flat-space equivalent \citep{Gair2005}.
 
@@ -84,7 +84,7 @@ V_\theta = Q - \cot^2\theta\, L_z^2 = 0.
 \end{equation}
 Changing variable to $\xi = \cos^2\theta$, we have a maximum value $\xi_0 = \cos^2\theta_0$ given by
 \begin{equation}
-\xi_0 = \frac{Q}{Q+L_z^2} = \frac{Q}{L_\infty^2}.
+\xi_0 = \dfrac{Q}{Q+L_z^2} = \dfrac{Q}{L_\infty^2}.
 \label{eq:theta_0}
 \end{equation}
 See \figref{L_triangle} for a geometrical visualization.
@@ -139,7 +139,7 @@ There is no well motivated argument that either coordinate system must yield an 
 
 Now we have a flat-space particle trajectory $x\sub{P}^\mu(\tau)$, we may apply a flat-space wave generation formula. We use the quadrupole--octupole formula to calculate the gravitational strain \citep{Bekenstein1973, Press1977, Yunes2008}
 \begin{equation}
-h^{jk}(t, \boldsymbol{x}) = -\frac{2G}{c^6r}\left(\ddot{I}^{jk} - 2n_i\ddot{S}^{ijk} + n_i\dddot{M}^{ijk}\right)_{t'\, =\, t - r/c},
+h^{jk}(t, \boldsymbol{x}) = -\dfrac{2G}{c^6r}\left(\ddot{I}^{jk} - 2n_i\ddot{S}^{ijk} + n_i\dddot{M}^{ijk}\right)_{t'\, =\, t - r/c},
 \label{eq:octupole}
 \end{equation}
 where an over-dot represents differentiation with respect to time $t$, $t'$ is the retarded time, $r = \left|\boldsymbol{x} - \boldsymbol{x}\sub{P}\right|$ is the radial distance, $\boldsymbol{n}$ is the radial unit vector, and the mass quadrupole ${I}^{jk}$, current quadrupole ${S}^{ijk}$ and mass octupole ${M}^{ijk}$ are defined by
@@ -190,7 +190,7 @@ we assume the noise $n_A(t)$ is stationary and Gaussian, and that noise in the t
 
 The properties of the noise allow us to define a natural inner product and associated distance on the space of signals \citep{Cutler1994}
 \begin{equation}
-\innerprod{\boldsymbol{g}}{\boldsymbol{k}} = 2\intd{0}{\infty}{\frac{\tilde{g}_A^\ast(f)\tilde{k}_A(f) + \tilde{g}_A(f)\tilde{k}_A^\ast(f)}{S_{n}(f)}}{f},
+\innerprod{\boldsymbol{g}}{\boldsymbol{k}} = 2\intd{0}{\infty}{\dfrac{\tilde{g}_A^\ast(f)\tilde{k}_A(f) + \tilde{g}_A(f)\tilde{k}_A^\ast(f)}{S_{n}(f)}}{f},
 \label{eq:inner}
 \end{equation}
 introducing Fourier transforms
@@ -238,33 +238,33 @@ As we are considering Schwarzschild spacetime, the two NK coordinate choices coi
 
 A GW in the TT gauge has an effective energy-momentum tensor \citep[section 35.15]{Misner1973}
 \begin{equation}
-T_{\mu\nu} = \frac{c^4}{32\pi G}\left\langle\partial_\mu h_{ij} \partial_\nu h^{ij}\right\rangle,
+T_{\mu\nu} = \dfrac{c^4}{32\pi G}\left\langle\partial_\mu h_{ij} \partial_\nu h^{ij}\right\rangle,
 \end{equation}
 where $\langle\ldots\rangle$ indicates averaging over several wavelengths or periods. The energy flux through a sphere of radius $R$ is
 \begin{equation}
-\diff{E}{t} = \frac{c^3}{32\pi G} R^2 \int{\dd\Omega}\left\langle\diff{h_{ij}}{t}\diff{h^{ij}}{t}\right\rangle,
+\diff{E}{t} = \dfrac{c^3}{32\pi G} R^2 \int{\dd\Omega}\left\langle\diff{h_{ij}}{t}\diff{h^{ij}}{t}\right\rangle,
 \end{equation}
 with $\int{\dd\Omega}$ representing integration over all solid angles. From \eqnref{octupole} the waves have a $1/{r}$ dependence; if we define
 \begin{equation}
-h_{ij} = \frac{H_{ij}}{r},
+h_{ij} = \dfrac{H_{ij}}{r},
 \end{equation}
 we see the flux is independent of $R$, as required for energy conservation, and
 \begin{equation}
-\diff{E}{t} = \frac{c^3}{32\pi G} \int{\dd\Omega}\left\langle\diff{H_{ij}}{t}\diff{H^{ij}}{t}\right\rangle.
+\diff{E}{t} = \dfrac{c^3}{32\pi G} \int{\dd\Omega}\left\langle\diff{H_{ij}}{t}\diff{H^{ij}}{t}\right\rangle.
 \end{equation}
 Integrating to find the total energy emitted
 \begin{equation}
-E = \frac{c^3}{32\pi G} \int{\dd\Omega}\int_{-\infty}^{\infty}{\dd t} \, \diff{H_{ij}}{t}\diff{H^{ij}}{t}.
+E = \dfrac{c^3}{32\pi G} \int{\dd\Omega}\int_{-\infty}^{\infty}{\dd t} \, \diff{H_{ij}}{t}\diff{H^{ij}}{t}.
 \label{eq:integrate_E}
 \end{equation}
 Since we are considering all time, the localization of the energy is no longer of importance and it is unnecessary to average over several periods. Switching to Fourier representation $\widetilde{H}_{ij}(f) = \mathscr{F}\left\{H_{ij}(t)\right\}$,
 \begin{equation}
-E = \frac{\pi c^3}{4 G} \int{\dd\Omega}\int_{0}^{\infty}{\dd f} \, f^2 \widetilde{H}^{ij}(f)\widetilde{H}_{ij}^*(f),
+E = \dfrac{\pi c^3}{4 G} \int{\dd\Omega}\int_{0}^{\infty}{\dd f} \, f^2 \widetilde{H}^{ij}(f)\widetilde{H}_{ij}^*(f),
 \label{eq:total_E}
 \end{equation}
 using $\widetilde{H}_{ij}^*(f) = \widetilde{H}_{ij}(-f)$ as the signal is real. From this we identify the energy spectrum as
 \begin{align}
-\diff{E}{f} = \frac{\pi c^3}{4 G} \intd{}{}{}{\Omega} \, f^2 \widetilde{H}^{ij}(f)\widetilde{H}_{ij}^*(f).
+\diff{E}{f} = \dfrac{\pi c^3}{4 G} \intd{}{}{}{\Omega} \, f^2 \widetilde{H}^{ij}(f)\widetilde{H}_{ij}^*(f).
 \label{eq:NK_dEdf}
 \end{align}
 
@@ -272,23 +272,23 @@ using $\widetilde{H}_{ij}^*(f) = \widetilde{H}_{ij}(-f)$ as the signal is real. 
 
 For an orbit of eccentricity $e$ with periapse radius $r\sub{p}$, \citet{Peters1963} give the power radiated into the $n$-th harmonic of the orbital angular frequency as
 \begin{equation}
-P(n) = \frac{32}{5}\frac{G^4}{c^5}\frac{M_\bullet^2\mu^2(M_\bullet + \mu)(1-e)^5}{r\sub{p}^5}g(n,e),
+P(n) = \dfrac{32}{5}\dfrac{G^4}{c^5}\dfrac{M_\bullet^2\mu^2(M_\bullet + \mu)(1-e)^5}{r\sub{p}^5}g(n,e),
 \label{eq:PM_P}
 \end{equation}
 where the function $g(n,e)$ is defined in terms of Bessel functions of the first kind
 \begin{align}
-g(n,e) = {} & \frac{n^4}{32}\left\{\left[J_{n-2}(ne) - 2eJ_{n-1}(ne) + \frac{2}{n}J_n(ne) + 2eJ_{n+1}(ne) - J_{n+2}(ne)\right]^2 \right. \nonumber \\*
- & + \left. \left(1 - e^2\right)\left[J_{n-2}(ne) - 2J_n(ne) + J_{n+2}(ne)\right]^2 + \frac{4}{3n^2}\left[J_n(ne)\right]^2\right\}.
+g(n,e) = {} & \dfrac{n^4}{32}\left\{\left[J_{n-2}(ne) - 2eJ_{n-1}(ne) + \dfrac{2}{n}J_n(ne) + 2eJ_{n+1}(ne) - J_{n+2}(ne)\right]^2 \right. \nonumber \\*
+ & + \left. \left(1 - e^2\right)\left[J_{n-2}(ne) - 2J_n(ne) + J_{n+2}(ne)\right]^2 + \dfrac{4}{3n^2}\left[J_n(ne)\right]^2\right\}.
 % Line breaks follow Peters and Mathews paper
 \end{align}
 The Keplerian orbital frequency is
 \begin{equation}
-\omega_1^2 = \frac{G(M_\bullet + \mu)(1 - e)^3}{r\sub{p}^3} = (1 - e)^3\omega\sub{c}^2,
+\omega_1^2 = \dfrac{G(M_\bullet + \mu)(1 - e)^3}{r\sub{p}^3} = (1 - e)^3\omega\sub{c}^2,
 \label{eq:Kepler_freq}
 \end{equation}
 where $\omega\sub{c}$ is defined as the angular frequency of a circular orbit of radius $r\sub{p}$. The energy radiated per orbit into the $n$-th harmonic, that is at frequency $\omega_n = n\omega_1$, is
 \begin{equation}
-E(n) = \frac{2\pi}{\omega_1}P(n);
+E(n) = \dfrac{2\pi}{\omega_1}P(n);
 \label{eq:E(n)}
 \end{equation}
 as $e \rightarrow 1$ for a parabolic orbit, $\omega_1 \rightarrow 0$ as the orbital period becomes infinite. The energy radiated per orbit is then the total energy radiated. The spacing of harmonics is $\Delta\omega = \omega_1$, giving energy spectrum
@@ -297,24 +297,24 @@ as $e \rightarrow 1$ for a parabolic orbit, $\omega_1 \rightarrow 0$ as the orbi
 \end{equation}
 Changing to linear frequency $2\pi f = \omega$,
 \begin{align}
-\left.\diff{E}{f}\right|_{f_n}  = {} & \frac{128\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}(1-e)^2g(n,e) \\*
-  = {} & \frac{4\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\ell(n,e),
+\left.\diff{E}{f}\right|_{f_n}  = {} & \dfrac{128\pi^2}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}(1-e)^2g(n,e) \\*
+  = {} & \dfrac{4\pi^2}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\ell(n,e),
 \label{eq:PM_spectrum}
 \end{align}
 where the function $\ell(n,e)$ is defined in the last line. For a parabolic orbit, we must take the limit of $\ell(n,e)$ as $e \rightarrow 1$.
 
 We simplify $\ell(n,e)$ using the recurrence formulae \citep[section 2.12]{Watson1995}
 \begin{align}
-J_{\nu-1}(z) + J_{\nu+1}(z)  = {} & \frac{2\nu}{z}J_\nu(z)\\*
+J_{\nu-1}(z) + J_{\nu+1}(z)  = {} & \dfrac{2\nu}{z}J_\nu(z)\\*
 J_{\nu-1}(z) - J_{\nu+1}(z)  = {} & 2J'_\nu(z),\label{eq:J_derivative}
 \end{align}
 and eliminate $n$ using
 \begin{equation}
-n = \frac{\omega_n}{\omega_1} = (1-e)^{-3/2}\tilde{f},
+n = \dfrac{\omega_n}{\omega_1} = (1-e)^{-3/2}\tilde{f},
 \end{equation}
 where $\tilde{f} = \omega_n/\omega\sub{c} = f_n/f\sub{c}$ is a dimensionless frequency. To find the limit we define two new functions \citep{Berry2010}
 \begin{equation}
-A(\tilde{f}) = \lim_{e\rightarrow 1}\left\{\frac{J_n(ne)}{(1-e)^{1/2}}\right\}; \quad B(\tilde{f}) = \lim_{e\rightarrow 1}\left\{\frac{J'_n(ne)}{1-e}\right\}.
+A(\tilde{f}) = \lim_{e\rightarrow 1}\left\{\dfrac{J_n(ne)}{(1-e)^{1/2}}\right\}; \quad B(\tilde{f}) = \lim_{e\rightarrow 1}\left\{\dfrac{J'_n(ne)}{1-e}\right\}.
 \end{equation}
 To give a well-defined energy spectrum, both of these must be finite.
 
@@ -324,30 +324,30 @@ J_\nu(z) = \recip{\pi}\intd{0}{\pi}{\cos(\nu\vartheta - z\sin\vartheta)}{\varthe
 \end{equation}
 we want the limit of this for $\nu \rightarrow \infty$, $z \rightarrow \infty$, with $z \leq \nu$. Using the stationary phase approximation, the dominant contribution to the integral comes from the regime in which the argument of the cosine is approximately zero \citep[sections 8.2, 8.43]{Watson1995}:
 \begin{align}
-J_\nu(z)  \sim {} & \recip{\pi}\intd{0}{\pi}{\cos\left(\nu\vartheta - z\vartheta + \frac{z}{6}\vartheta^3\right)}{\vartheta}\\*
-  \sim {} & \recip{\pi}\intd{0}{\infty}{\cos\left(\nu\vartheta - z\vartheta + \frac{z}{6}\vartheta^3\right)}{\vartheta};
+J_\nu(z)  \sim {} & \recip{\pi}\intd{0}{\pi}{\cos\left(\nu\vartheta - z\vartheta + \dfrac{z}{6}\vartheta^3\right)}{\vartheta}\\*
+  \sim {} & \recip{\pi}\intd{0}{\infty}{\cos\left(\nu\vartheta - z\vartheta + \dfrac{z}{6}\vartheta^3\right)}{\vartheta};
 \end{align}
 this last expression is an Airy integral and has a standard form \citep[section 6.4]{Watson1995}
 \begin{equation}
-\intd{0}{\infty}{\cos(t^3 + xt)}{t} = \frac{\sqrt{x}}{3}K_{1/3}\left(\frac{2x^{3/2}}{3^{3/2}}\right),
+\intd{0}{\infty}{\cos(t^3 + xt)}{t} = \dfrac{\sqrt{x}}{3}K_{1/3}\left(\dfrac{2x^{3/2}}{3^{3/2}}\right),
 \end{equation}
 where $K_\nu(z)$ is a modified Bessel function of the second kind. Using this to evaluate the limit gives
 \begin{equation}
-J_\nu(z) \sim \recip{\pi}\sqrt{\frac{2(\nu - z)}{3z}}K_{1/3}\left(\frac{2^{3/2}}{3}\sqrt{\frac{(\nu -z)^3}{z}}\right).
+J_\nu(z) \sim \recip{\pi}\sqrt{\dfrac{2(\nu - z)}{3z}}K_{1/3}\left(\dfrac{2^{3/2}}{3}\sqrt{\dfrac{(\nu -z)^3}{z}}\right).
 \label{eq:J_nu}
 \end{equation}
 For our case,
 \begin{equation}
-J_n(ne) \sim \recip{\pi}\sqrt{\frac{2}{3}}(1-e)^{1/2}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right),
+J_n(ne) \sim \recip{\pi}\sqrt{\dfrac{2}{3}}(1-e)^{1/2}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right),
 \end{equation}
 and the first limiting function is well defined,
 \begin{equation}
-A(\tilde{f}) = \recip{\pi}\sqrt{\frac{2}{3}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right).
+A(\tilde{f}) = \recip{\pi}\sqrt{\dfrac{2}{3}}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right).
 \end{equation}
 
 To find the derivative we combine equations \eqref{eq:J_derivative} and \eqref{eq:J_nu}, and expand to lowest order yielding
 \begin{align}
-J'_n(ne) \sim {} & -\frac{1}{2\pi}\sqrt{\frac{2}{3}}(1-e)\left[2^{3/2}K'_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + \recip{\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
+J'_n(ne) \sim {} & -\dfrac{1}{2\pi}\sqrt{\dfrac{2}{3}}(1-e)\left[2^{3/2}K'_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) + \recip{\tilde{f}}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right)\right].
 \end{align}
 We may re-express the derivative using the recurrence formula \citep[section 3.71]{Watson1995}
 \begin{equation}
@@ -355,21 +355,21 @@ K_{\nu-1}(z) + K_{\nu+1}(z) = -2K'_\nu(z)
 \end{equation}
 to give
 \begin{align}
-J'_n(ne)  \sim {} & \frac{1-e}{\sqrt{3}\pi}\left[K_{-2/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
+J'_n(ne)  \sim {} & \dfrac{1-e}{\sqrt{3}\pi}\left[K_{-2/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right)\right].
 \end{align}
 And so finally we obtain the well-defined
 \begin{align}
-B(\tilde{f})  = {} & \recip{\sqrt{3}\pi}\left[K_{-2/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\frac{2^{3/2}\tilde{f}}{3}\right)\right].
+B(\tilde{f})  = {} & \recip{\sqrt{3}\pi}\left[K_{-2/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right)\right].
 \end{align}
 
 Having obtained expressions for $A(\tilde{f})$ and $B(\tilde{f})$ in terms of standard functions, we can calculate the energy spectrum for a parabolic orbit. From \eqnref{PM_spectrum}
 \begin{equation}
-\diff{E}{f} = \frac{4\pi^2}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\ell\left(\frac{f}{f\sub{c}}\right),
+\diff{E}{f} = \dfrac{4\pi^2}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\ell\left(\dfrac{f}{f\sub{c}}\right),
 \label{eq:PM_dEdf}
 \end{equation}
 where we have used the limit
 \begin{align}
-\ell(\tilde{f})  = {} & \left[8\tilde{f}^2B(\tilde{f}) - 2\tilde{f}A(\tilde{f})\right]^2 + \left(128\tilde{f}^4 + \frac{4\tilde{f}^2}{3}\right)\left[A(\tilde{f})\right]^2.
+\ell(\tilde{f})  = {} & \left[8\tilde{f}^2B(\tilde{f}) - 2\tilde{f}A(\tilde{f})\right]^2 + \left(128\tilde{f}^4 + \dfrac{4\tilde{f}^2}{3}\right)\left[A(\tilde{f})\right]^2.
 \label{eq:ell}
 \end{align}
 This agrees with the $e = 1$ result of \citet{Turner1977}, which was computed by direct integration along unbound orbits. \Figref{ell} shows how $\ell(n,e)$ changes with eccentricity including our result for a parabolic encounter. Although more power is radiated into higher harmonics, the peak of the spectrum does not move much: it is always between $f = f\sub{c}$ and $f = 2 f\sub{c}$, with $f = 2 f\sub{c}$ for $e = 0$ and $f \simeq 1.637 f\sub{c}$ for $e = 1$.
@@ -384,28 +384,28 @@ This agrees with the $e = 1$ result of \citet{Turner1977}, which was computed by
 
 To check the validity of this limit we can calculate the total energy radiated by integrating \eqnref{PM_dEdf} over all frequencies, or by summing the energy radiated into each harmonic. These must yield the same result. Summing:
 \begin{equation}
-E\sub{sum} = \frac{64\pi}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}(1-e)^{7/2}\sum_n g(n,e),
+E\sub{sum} = \dfrac{64\pi}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}(1-e)^{7/2}\sum_n g(n,e),
 \end{equation}
 where we have used equations \eqref{eq:PM_P}, \eqref{eq:Kepler_freq} and \eqref{eq:E(n)}. \citet{Peters1963} provide the result
 \begin{equation}
-\sum_n g(n,e) = \frac{1 + (73/24)e^2 + (37/96)e^4}{(1-e^2)^{7/2}}.
+\sum_n g(n,e) = \dfrac{1 + (73/24)e^2 + (37/96)e^4}{(1-e^2)^{7/2}}.
 \end{equation}
 Using this,
 \begin{equation}
-E\sub{sum} = \frac{64\pi}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}\frac{1 + (73/24)e^2 + (37/96)e^4}{(1+e)^{7/2}},
+E\sub{sum} = \dfrac{64\pi}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}\dfrac{1 + (73/24)e^2 + (37/96)e^4}{(1+e)^{7/2}},
 \end{equation}
 which is perfectly well behaved as $e \rightarrow 1$,
 \begin{equation}
-E\sub{sum} = \frac{85\pi}{2^{5/2}3}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}.
+E\sub{sum} = \dfrac{85\pi}{2^{5/2}3}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}.
 \label{eq:PM_total}
 \end{equation}
 Integrating the energy spectrum \eqnref{PM_dEdf} gives
 \begin{equation}
-E\sub{int} = \frac{2\pi}{5}\frac{G^3}{c^5}\frac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}\intd{0}{\infty}{\ell(\tilde{f})}{\tilde{f}}.
+E\sub{int} = \dfrac{2\pi}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}\intd{0}{\infty}{\ell(\tilde{f})}{\tilde{f}}.
 \end{equation}
 The integral can be evaluated numerically as
 \begin{equation}
-\intd{0}{\infty}{\ell(\tilde{f})}{\tilde{f}} = 12.5216858\ldots = \frac{425}{2^{7/2}3}.
+\intd{0}{\infty}{\ell(\tilde{f})}{\tilde{f}} = 12.5216858\ldots = \dfrac{425}{2^{7/2}3}.
 \end{equation}
 The two total energies are consistent, $E\sub{int} = E\sub{sum}$.
 
@@ -438,7 +438,7 @@ We introduce an additional energy here, the quadrupole NK energy $E\sub{NK(Q)}$.
 \item Inserting the waveform $\widetilde{h}(f)$ generated including only the mass quadrupole term in \eqnref{octupole} into \eqnref{total_E} and integrating. This is equivalent to the method used to calculate $E\sub{NK}$.
 \item Numerically integrating the quadrupole GW luminosity (\citealt{Misner1973}, section 36.7; \citealt{Hobson2006}, section 18.7)
 \begin{equation}
-E = \frac{G}{5c^9}\intd{}{}{\dddot{\Ibar}_{ij}\dddot{\Ibar}^{ij}}{t},
+E = \dfrac{G}{5c^9}\intd{}{}{\dddot{\Ibar}_{ij}\dddot{\Ibar}^{ij}}{t},
 \label{eq:E_quad}
 \end{equation}
 where $\Ibar_{ij} = I_{ij} - (1/3)I\delta_{ij}$ is the reduced mass quadrupole tensor. We can obtain this from \eqnref{integrate_E}, by integrating over all angles when the waveform only contains the mass quadrupole component. This has the advantage of avoiding the effects of spectral leakage or the influence of window functions.
@@ -448,11 +448,11 @@ All three agree to within computational error. No difference is visible on the s
 
 We have used the amount of rotation $\Delta\phi$ as a convenient measure for the abscissa. For an equatorial orbit in Kerr spacetime,
 \begin{align}
-\Delta\phi  = {} & 2\intd{r\sub{p}}{\infty}{\diff{\phi}{r}}{r} = \sqrt{\frac{2}{M_\bullet}}L_z\intd{r\sub{p}}{\infty}{\frac{r^2 - 2M_\bullet(1 - a/L_z)r}{(r^2 - 2M_\bullet r + a^2)w}}{r},
+\Delta\phi  = {} & 2\intd{r\sub{p}}{\infty}{\diff{\phi}{r}}{r} = \sqrt{\dfrac{2}{M_\bullet}}L_z\intd{r\sub{p}}{\infty}{\dfrac{r^2 - 2M_\bullet(1 - a/L_z)r}{(r^2 - 2M_\bullet r + a^2)w}}{r},
 \end{align}
 where
 \begin{equation}
-w^2 = r^3 - \frac{L_z^2}{2M_\bullet}r^2 + (L_z - a)^2r;
+w^2 = r^3 - \dfrac{L_z^2}{2M_\bullet}r^2 + (L_z - a)^2r;
 \end{equation}
 $L_z$ is the specific angular momentum about the $z$-axis; $a$ is the spin parameter, and we have adopted units with $G = c = 1$. We shall find it useful to define
 \begin{equation}
@@ -460,23 +460,23 @@ r_\pm = M_\bullet \pm \sqrt{M_\bullet^2 - a^2},
 \end{equation}
 and the two nonzero roots of the cubic $w^2$
 \begin{equation}
-r_{\mathrm{p},\,1} = \frac{L_z^2}{4M_\bullet} \pm \sqrt{\frac{L_z^4}{16M_\bullet^2} - (L_z -a)^2};
+r_{\mathrm{p},\,1} = \dfrac{L_z^2}{4M_\bullet} \pm \sqrt{\dfrac{L_z^4}{16M_\bullet^2} - (L_z -a)^2};
 \end{equation}
 the periapsis is the larger root $r\sub{p} > r_1$. This equation implicitly gives $L_z$ as a function of $r\sub{p}$. The integral may be rewritten as
 \begin{equation}
-\Delta\phi = \sqrt{\frac{2}{M}}L_z\intd{r\sub{p}}{\infty}{\recip{w}\left(1 + \frac{\alpha_+}{r-r_+} + \frac{\alpha_-}{r-r_-}\right)}{r},
+\Delta\phi = \sqrt{\dfrac{2}{M}}L_z\intd{r\sub{p}}{\infty}{\recip{w}\left(1 + \dfrac{\alpha_+}{r-r_+} + \dfrac{\alpha_-}{r-r_-}\right)}{r},
 \end{equation}
 where
 \begin{equation}
-\alpha_\pm = \pm\frac{2Mar_\pm - a^2L_z}{2L_z\sqrt{M^2-a^2}}.
+\alpha_\pm = \pm\dfrac{2Mar_\pm - a^2L_z}{2L_z\sqrt{M^2-a^2}}.
 \end{equation}
 This may be evaluated using elliptic integrals \citep[3.131.8, 3.137.8]{Gradshteyn2000}
 \begin{equation}
-\Delta\phi = 2 L_z \sqrt{\frac{2}{r\sub{p}M}}\left[\frac{\alpha_+}{r_+}\Pi\left(\frac{r_+}{r\sub{p}}\middle|\frac{r_1}{r\sub{p}}\right) + \frac{\alpha_-}{r_-}\Pi\left(\frac{r_-}{r\sub{p}}\middle|\frac{r_1}{r\sub{p}}\right)\right],
+\Delta\phi = 2 L_z \sqrt{\dfrac{2}{r\sub{p}M}}\left[\dfrac{\alpha_+}{r_+}\Pi\left(\dfrac{r_+}{r\sub{p}}\middle|\dfrac{r_1}{r\sub{p}}\right) + \dfrac{\alpha_-}{r_-}\Pi\left(\dfrac{r_-}{r\sub{p}}\middle|\dfrac{r_1}{r\sub{p}}\right)\right],
 \end{equation}
 where $\Pi(n|m) = \int_{0}^{\pi/2}{\dd\vartheta/(1-n\sin^2\vartheta)\sqrt{1-m\sin^2\vartheta}}$ is the complete elliptic integral of the third kind. In the limit of $a \rightarrow 0$ we recover the Schwarzschild result \citep{Cutler1994}
 \begin{equation}
-\Delta\phi =  2 L_z\sqrt{\frac{2}{r\sub{p}M}}K\left(\frac{r_1}{r\sub{p}}\right),
+\Delta\phi =  2 L_z\sqrt{\dfrac{2}{r\sub{p}M}}K\left(\dfrac{r_1}{r\sub{p}}\right),
 \end{equation}
 where $K(m) = \int_{0}^{\pi/2}{\dd\vartheta/\sqrt{1-m\sin^2\vartheta}}$ is the complete elliptic integral of the first kind.
 
