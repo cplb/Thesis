@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0 EPSF-1.2
 %%Title: TeXconvert.dvi
 %%Creator: dvips(k) 5.95a Copyright 2005 Radical Eye Software
-%%CreationDate: Jun 17 14:52
+%%CreationDate: Jul 31 17:04
 %%For:cplb2cplb2 cplb2
 %%Pages: 1
 %%DocumentFonts:
@@ -2384,7 +2384,7 @@ save countdictstack mark newpath /showpage {} def /setpagedevice /pop load def
 %DVIPSWebPage: (www.radicaleye.com)
 %DVIPSCommandLine: dvips -o TeXconvert.ps TeXconvert.dvi
 %DVIPSParameters: dpi=600
-%DVIPSSource:  TeX output 2013.06.17:1452
+%DVIPSSource:  TeX output 2013.07.31:1704
 %!
 /TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
 N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
@@ -3999,11 +3999,13 @@ neg exch translate
  dup landscapeMode eq {pop -90 rotate}
   {rotateMode eq {90 rotate} if} ifelse} bdef
 % line types: solid, dotted, dashed, dotdash
-/SO { [] 0 setdash } bdef
-/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
-/DA { [6 dpi2point mul] 0 setdash } bdef
-/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
-  dpi2point mul] 0 setdash } bdef
+/dom { dpi2point 1 currentlinewidth 0.08 mul add mul mul } bdef
+/dam { dpi2point 2 currentlinewidth 0.04 mul add mul mul } bdef
+/SO { [] 0 setdash 0 setlinecap } bdef
+/DO { [1 dom 1.2 dom] 0 setdash 0 setlinecap } bdef
+/DA { [4 dam 1.5 dam] 0 setdash 0 setlinecap } bdef
+/DD { [1 dom 1.2 dom 4 dam 1.2 dom] 0 setdash 0 setlinecap } bdef
+/GR { [0 dpi2point mul 4 dpi2point mul] 0 setdash 1 setlinecap } bdef
 % macros for lines and objects
 /L {lineto stroke} bdef
 /MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
@@ -4117,8 +4119,8 @@ PP
 -3963 0 0 3128 3963 0 0 -3128 665 3415 5 MP stroke
 4 w
 DO
-SO
 6 w
+SO
 0 sg
  665 3415 mt 4628 3415 L
  665  287 mt 4628  287 L
