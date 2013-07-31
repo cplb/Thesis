@@ -3869,12 +3869,7 @@ neg exch translate
  dup landscapeMode eq {pop -90 rotate}
   {rotateMode eq {90 rotate} if} ifelse} bdef
 % line types: solid, dotted, dashed, dotdash
-/SO { [] 0 setdash } bdef
-/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
-/DA { [6 dpi2point mul] 0 setdash } bdef
-/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
-  dpi2point mul] 0 setdash } bdef
-% macros for lines and objects
+/dom { dpi2point 1 currentlinewidth 0.08 mul add mul mul } bdef/dam { dpi2point 2 currentlinewidth 0.04 mul add mul mul } bdef/SO { [] 0 setdash 0 setlinecap } bdef/DO { [1 dom 1.2 dom] 0 setdash 0 setlinecap } bdef/DA { [4 dam 1.5 dam] 0 setdash 0 setlinecap } bdef/DD { [1 dom 1.2 dom 4 dam 1.2 dom] 0 setdash 0 setlinecap } bdef/GR { [0 dpi2point mul 4 dpi2point mul] 0 setdash 1 setlinecap } bdef% macros for lines and objects
 /L {lineto stroke} bdef
 /MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
 /AP {{rlineto} repeat} bdef
@@ -3987,8 +3982,8 @@ PP
 -3963 0 0 3127 3963 0 0 -3127 665 3414 5 MP stroke
 4 w
 DO
-SO
 6 w
+SO
 0 sg
  665 3414 mt 4628 3414 L
  665  287 mt 4628  287 L
@@ -4438,8 +4433,8 @@ DO
  355 1949 mt  -90 rotate
 (s04) s
 90 rotate
-SO
 6 w
+SO
 
 end %%Color Dict
 
