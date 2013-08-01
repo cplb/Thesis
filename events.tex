@@ -12,7 +12,7 @@ Having determined how to generate a waveform and extract the information from it
 
 Following the work of \citet{Bahcall1976, Bahcall1977}, we assume the DF within the Galactic core is only a function of the orbital energy \citep{Shapiro1978}. The energy per unit mass of the orbit is
 \begin{equation}
-E = \frac{v^2}{2} - \frac{GM_\bullet}{r},
+E = \dfrac{v^2}{2} - \dfrac{GM_\bullet}{r},
 \end{equation}
 where $v$ is orbital velocity. The number of stars is
 \begin{equation}
@@ -20,16 +20,16 @@ N = \int \dd^3r \int \dd^3v f(E).
 \end{equation}
 Close to the centre of the Galactic core, the dynamics are dominated by the influence of the MBH as it is significantly more massive than the surrounding stars. Its radius of influence is
 \begin{equation}
-r\sub{c} = \frac{GM_\bullet}{\sigma^2},
+r\sub{c} = \dfrac{GM_\bullet}{\sigma^2},
 \label{eq:r_c}
 \end{equation}
 where $\sigma^2$ is the line-of-sight velocity dispersion \citep{Frank1976}. We assume that the mass of stars enclosed within $r\sub{c}$ is greater than the $M_\bullet$, which, in turn, is much greater than the mass of a typical star $M_\star$ \citep{Bahcall1976}. We define a reference number density $n_\star$ from the enclosed mass $m_\ast(r)$ such that
 \begin{equation}
-m_\star(r\sub{c}) = \frac{4\pi r\sub{c}^3}{3}n_\star M_\star.
+m_\star(r\sub{c}) = \dfrac{4\pi r\sub{c}^3}{3}n_\star M_\star.
 \end{equation}
 Within the core, the DF can be calculated using the approximation of the Fokker--Planck formalism \citep[section 7.4]{Binney2008}. The population of bound stars is evolved numerically until a steady state is reached, whilst the unbound stars form a reservoir with an assumed Maxwellian distribution. Denoting a species of star by its mass $M$, the unbound DF is
 \begin{equation}
-f_M(E) = \frac{C_M n_\star}{(2\pi\sigma_M^2)^{3/2}} \exp\left(-\frac{E}{\sigma_M^2}\right),\quad E > 0,
+f_M(E) = \dfrac{C_M n_\star}{(2\pi\sigma_M^2)^{3/2}} \exp\left(-\dfrac{E}{\sigma_M^2}\right),\quad E > 0,
 \label{eq:Unbound_DF}
 \end{equation}
 where $C_M$ is a normalisation constant.\footnote{$C_M$ determines the population ratios of species $M$ far from the black hole \citep{Alexander2009}.} If different stellar species are in equipartition, as assumed by \citet{Bahcall1976, Bahcall1977}, we expect
@@ -44,7 +44,7 @@ and we have equipartition of energy per unit mass \citep{Lynden-Bell1967}. This 
 
 For bound orbits, the DF can be approximated as a power law \citep{Peebles1972}
 \begin{equation}
-f_M(E) = \frac{k_M n_\star}{(2\pi\sigma^2)^{3/2}}\left(-\frac{E}{\sigma^2}\right)^{p_M},\quad E < 0.
+f_M(E) = \dfrac{k_M n_\star}{(2\pi\sigma^2)^{3/2}}\left(-\dfrac{E}{\sigma^2}\right)^{p_M},\quad E < 0.
 \label{eq:Bound_DF}
 \end{equation}
 The exponent $p_M$ varies depending upon the mass of the object, determining mass segregation. For a system with a single mass component $p = 1/4$ \citep{Bahcall1976, Young1977}. The normalisation constant $k_M$ reflects the relative abundances of the different species.\footnote{For a single mass population ($p = 1/4$) $k = 2 C$ gives a fit correct to within a factor of two \citep{Bahcall1976,Keshet2009}, we assume this holds for the dominant species of stars as, although it changes slightly with $p$, variation is small compared to errors introduced by fitting a simple power law \citep{Hopman2006, Alexander2009}.}
@@ -80,7 +80,7 @@ The steeper power law for BHs means they segregate about the MBH. Extrapolating,
 
 Binaries may form in the Galactic core, encouraged by its high stellar density \citep{O'Leary2009}. However the binary fraction is still expected to be small \citep{Hopman2009}. Binaries are also disrupted by the MBH for periapses smaller than
 \begin{equation}
-r\sub{B} \simeq \left(\frac{M_\bullet}{M_1 + M_2}\right)^{1/3}a\sub{B},
+r\sub{B} \simeq \left(\dfrac{M_\bullet}{M_1 + M_2}\right)^{1/3}a\sub{B},
 \end{equation}
 where $M_1$ and $M_2$ are the masses of the binary's components, and $a\sub{B}$ is the binary's semi-major axis, cf.\ \eqnref{Tidal} below. Thus, we ignore the possible presence of binaries.
 
@@ -90,7 +90,7 @@ We characterise orbits by their eccentricity $e$ and periapse radius $r\sub{p}$.
 \begin{equation}
 \label{eq:Energy_ecc}
 \begin{split}
-E & = -\frac{GM_\bullet(1 - e)}{2r\sub{p}}; \\
+E & = -\dfrac{GM_\bullet(1 - e)}{2r\sub{p}}; \\
 L^2 & = GM_\bullet(1 + e)r\sub{p}.
 \end{split}
 \end{equation}
@@ -105,28 +105,28 @@ Under this change of variables
 The specific energy and angular momentum are given by
 \begin{equation}
 \begin{split}
-E & = \frac{v_r^2 + v_\perp^2}{2} - \frac{GM_\bullet}{r}; \\
+E & = \dfrac{v_r^2 + v_\perp^2}{2} - \dfrac{GM_\bullet}{r}; \\
 L^2 & = r^2 v_\perp^2.
 \end{split}
 \end{equation}
 Combining these with our earlier expressions in terms of $e$ and $r\sub{p}$,
 \begin{align}
-v_\perp^2 = {} & \frac{GM_\bullet(1 + e)r\sub{p}}{r^2}, \\
-v_r^2 = {} & GM_\bullet\left[\frac{2}{r} - \frac{(1 - e)}{r\sub{p}} - \frac{(1 + e)r\sub{p}}{r^2}\right].
+v_\perp^2 = {} & \dfrac{GM_\bullet(1 + e)r\sub{p}}{r^2}, \\
+v_r^2 = {} & GM_\bullet\left[\dfrac{2}{r} - \dfrac{(1 - e)}{r\sub{p}} - \dfrac{(1 + e)r\sub{p}}{r^2}\right].
 \end{align}
 From the latter we can verify that the turning points of an orbit occur at
 \begin{equation}
-r = r\sub{p}, \: \frac{1+e}{1-e}r\sub{p};
+r = r\sub{p}, \: \dfrac{1+e}{1-e}r\sub{p};
 \end{equation}
 the periapse is the only turning point for orbits with $e > 1$. Since we now have expressions for $\{v_r, v_\perp\}$ in terms of $\{e, r\sub{p}\}$, we can 
 calculate the Jacobian
 \begin{equation}
-\left|\frac{\partial(v_r, v_\perp)}{\partial(e, r\sub{p})}\right| = \recip{2v_rv_\perp}\frac{e}{r\sub{p}}\left(\frac{GM_\bullet}{r}\right)^2.
+\left|\dfrac{\partial(v_r, v_\perp)}{\partial(e, r\sub{p})}\right| = \recip{2v_rv_\perp}\dfrac{e}{r\sub{p}}\left(\dfrac{GM_\bullet}{r}\right)^2.
 \end{equation}
 Using this, we may
 rewrite our velocity element as
 \begin{equation}
-\dd^3v \rightarrow \frac{\pi e}{v_rr\sub{p}}\left(\frac{GM_\bullet}{r}\right)^2\,\dd e \,\dd r\sub{p}.
+\dd^3v \rightarrow \dfrac{\pi e}{v_rr\sub{p}}\left(\dfrac{GM_\bullet}{r}\right)^2\,\dd e \,\dd r\sub{p}.
 \end{equation}
 As a consequence of our assumed spherical symmetry, 
 the volume element is
@@ -136,38 +136,38 @@ the volume element is
 Thus, 
 the phase space volume element can be expressed as
 \begin{equation}
-\dd^3r\dd^3v \rightarrow \frac{4\pi^2(GM_\bullet)^2e}{v_rr\sub{p}}\,\dd r\,\dd e \,\dd r\sub{p}.
+\dd^3r\dd^3v \rightarrow \dfrac{4\pi^2(GM_\bullet)^2e}{v_rr\sub{p}}\,\dd r\,\dd e \,\dd r\sub{p}.
 \end{equation}
 The number of stars in an element $\dd r\,\dd e\,\dd r\sub{p}$ is
 \begin{equation}
-n(r, e, r\sub{p}) = \frac{4\pi^2(GM_\bullet)^2e}{v_rr\sub{p}}f(E).
+n(r, e, r\sub{p}) = \dfrac{4\pi^2(GM_\bullet)^2e}{v_rr\sub{p}}f(E).
 \end{equation}
 
 From this, we can construct the expected number of stars on orbits defined by $\{e, r\sub{p}\}$. The number of stars found in a small radius range $\delta r$ with given orbital properties is
 \begin{equation}
-n(r, e, r\sub{p})\delta r = N(e, r\sub{p}; r)\frac{\delta t}{P(e, r\sub{p})},
+n(r, e, r\sub{p})\delta r = N(e, r\sub{p}; r)\dfrac{\delta t}{P(e, r\sub{p})},
 \end{equation}
 where $N(e, r\sub{p}; r)$ is the total number of stars with orbits given by $\{e, r\sub{p}\}$ defined at $r$, $\delta t$ is the time spent in $\delta r$ and $P(e, r\sub{p})$ is the period of the orbit. We defer the definition of this time for unbound orbits for now. The time spent in the radius range is
 \begin{equation}
-\delta t = 2\frac{\delta r}{v_r},
+\delta t = 2\dfrac{\delta r}{v_r},
 \end{equation}
 where the factor of $2$ accounts for inwards and outwards motion. Hence
 \begin{align}
 N(e, r\sub{p}; r) = {} & \recip{2} v_r P(e, r\sub{p}) n(r, e, r\sub{p}) \nonumber \\*
- = {} & \frac{2\pi^2(GM_\bullet)^2 e P(e, r\sub{p})}{r\sub{p}}f(E).
+ = {} & \dfrac{2\pi^2(GM_\bullet)^2 e P(e, r\sub{p})}{r\sub{p}}f(E).
 \end{align}
 The right hand side is independent of position, subject to the constraint that the radius is in the allowed range for the orbit $r\sub{p} \leq r \leq (1+e)r\sub{p}/(1-e)$, and so $N(e, r\sub{p}) \equiv N(e, r\sub{p}; r)$. This is a consequence of the DF being dependent only upon a constant of the motion.\footnote{See \citet{Bahcall1976} equation (9) for a similar result.}
 
 If a burst of radiation is emitted each time a star passes through periapse, the event rate for burst emission from orbits with parameters $\{e, r\sub{p}\}$ is given by
 \begin{align}
-\Gamma(e, r\sub{p}) = {} & \frac{N(e, r\sub{p})}{P(e, r\sub{p})} = \frac{2\pi^2(GM_\bullet)^2 e}{r\sub{p}}f(E).
+\Gamma(e, r\sub{p}) = {} & \dfrac{N(e, r\sub{p})}{P(e, r\sub{p})} = \dfrac{2\pi^2(GM_\bullet)^2 e}{r\sub{p}}f(E).
 \label{eq:Gamma}
 \end{align}
 The orbital period drops out from the calculation, so we do not have to worry about an appropriate definition for unbound orbits.
 
 %From the event rate we may define a probability of seeing a given number of events subject to the assumption they are uncorrelated: it is given by the Poisson distribution. The probability of there being $r$ events is
 %\begin{equation}
-%\Pr(r|\Gamma(e, r\sub{p})) = \frac{\Gamma^r\exp(-\Gamma)}{r!}.
+%\Pr(r|\Gamma(e, r\sub{p})) = \dfrac{\Gamma^r\exp(-\Gamma)}{r!}.
 %\end{equation}
 %The probability of there being a burst from an orbit with periapse $r\sub{p}$ and eccentricity $e$ is hence
 %\begin{equation}
@@ -186,15 +186,15 @@ The total event rate can be found by integrating $\Gamma(e,\,r\sub{p})$, but bef
 
 \subsection{The inner cut-off}\label{sec:inner-cut}
 
-From \eqnref{Gamma} we see the event rate is highly sensitive to the smallest value of the periapsis. Ultimately the orbits cannot encroach closer to the MBH than its last stable orbit. This depends upon the spin of the MBH, but is of the order of its Schwarzschild radius. Before we reach this point, there are other processes that may intervene to deplete the orbiting stars. Our treatment of these is approximate, but should produce reasonable estimates. We consider three processes: tidal disruption by the MBH (\secref{Tidal}); GW inspiral (\secref{GW-in}), and collisional disruption (\secref{Collision}). Tidal disruption imposes a definite (albeit approximate) cut-off, while the others use statistical arguments. For these methods, we will need to define a reference time-scale for relaxation. This is done in \secref{Relax}, with further details found in \apref{time-scale}.
+From \eqnref{Gamma} we see the event rate is highly sensitive to the smallest value of the periapsis. Ultimately the orbits cannot encroach closer to the MBH than its last stable orbit. This depends upon the spin of the MBH, but is of the order of its Schwarzschild radius. Before we reach this point, there are other processes that may intervene to deplete the orbiting stars. Our treatment of these is approximate, but should produce reasonable estimates. We consider three processes: tidal disruption by the MBH (\secref{Tidal}); GW inspiral (\secref{GW-in}), and collisional disruption (\secref{Collision}). Tidal disruption imposes a definite (albeit approximate) cut-off, while the others use statistical arguments. For these methods, we will need to define a reference time-scale for relaxation. This is done in \secref{Relax}, with further details found in \chapref{relax}.
 
 The calculated inner cut-offs for the four stellar species across the range of bound orbits are shown in \figref{Cuts}.
 \begin{figure}
 \centering
-   \subfigure[{Main sequence stars}]{\includegraphics[width=0.4\textwidth]{Fig_Inner_cut_1.eps}} \quad 
-   \subfigure[{White dwarfs}]{\includegraphics[width=0.4\textwidth]{Fig_Inner_cut_2.eps}} \\
-   \subfigure[{Neutron stars}]{\includegraphics[width=0.4\textwidth]{Fig_Inner_cut_3.eps}} \quad
-   \subfigure[{Black holes}]{\includegraphics[width=0.4\textwidth]{Fig_Inner_cut_4.eps}}
+   \subfigure[{MS stars}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_1.eps}} \quad 
+   \subfigure[{WDs}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_2.eps}} \\
+   \subfigure[{NSs}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_3.eps}} \quad
+   \subfigure[{BHs}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_4.eps}}
 \caption{Inner cut-off radii for the Galactic Centre as a function of eccentricity. The solid line is the Schwarzschild radius of the MBH; this gives an indication of the innermost possible orbit which actually varies with MBH spin as well as orbital eccentricity and inclination. The dashed line is the tidal radius which is a hard cut-off inside of which there should be no undisrupted stars. The dot--dashed line is the collisional cut-off which is a statistical cut-off inside of which we do not expect any stars. The dotted line is the transition to the GW-dominated inspiral regime, inside of this we expect inspiralling stars in place of the relaxed distribution.}\label{fig:Cuts}
 \end{figure}
 The tidal and collisional disruption cut-offs are hard boundaries, inside of which we assume there are no bursting sources. The transition to the GW inspiral dominated regime marks the end of the relaxed distribution of stars, inside of this there are only inspiralling stars.
@@ -203,12 +203,12 @@ The tidal and collisional disruption cut-offs are hard boundaries, inside of whi
 
 Tidal forces from the MBH can disrupt stars. This occurs at the tidal radius
 \begin{equation}
-r\sub{T} \simeq \left(\frac{M_\bullet}{M}\right)^{1/3}R_M
+r\sub{T} \simeq \left(\dfrac{M_\bullet}{M}\right)^{1/3}R_M
 \label{eq:Tidal}
 \end{equation}
 where $R_M$ is the radius of the star \citep{Hills1975, Rees1988, Kobayashi2004}.\footnote{See \citet{Kesden2012} for a general relativistic treatment.} Any star on an orbit with $r\sub{p} < r\sub{T}$ is disrupted in the course of its orbit. Parametrizing orbits by their periapsis allows us to easily determine which stars should be disrupted. We do not include the full effects of the loss cone \citep{Frank1976, Lightman1977, Cohn1978} as these were not incorporated into the Fokker--Planck calculations \citep{Hopman2009}.\footnote{The loss cone is a region in velocity space where orbits are depleted because stars are disrupted more rapidly than they can be replenished by two-body scattering and is discussed in \apref{loss-cone}.} The effect of the loss cone should be small, only modifying the DF by a logarithmic term \citep{Lightman1977, Bahcall1977, Cohn1978}. Its effects are diluted by resonant relaxation \citep{Hopman2007,Toonen2009,Merritt2011}. Furthermore, the loss cone could be refilled by the wandering within the core of the MBH because of perturbations from the inhomogeneities in the stellar potential \citep{Sigurdsson1997,Chatterjee2002,Merritt2007}.
 
-Tidal disruption is significant for MS stars since they are least dense: calculated in this way, only MS stars are tidally disrupted outside of the MBH's event horizon \citep{Sigurdsson1997}. The tidal radius defines the cut-off for periapsis of high eccentricity ($e \ga 1$) orbits \citep{Lightman1977}.
+Tidal disruption is significant for MS stars since they are least dense: calculated in this way, only MS stars are tidally disrupted outside of the MBH's event horizon \citep{Sigurdsson1997}. The tidal radius defines the cut-off for periapsis of high eccentricity ($e \gtrsim 1$) orbits \citep{Lightman1977}.
 
 \subsubsection{Relaxation time-scale}\label{sec:Relax}
 
@@ -220,7 +220,7 @@ There are a variety of different methods used to define a relaxation time-scale.
 
 Two-body interactions lead to diffusion in both energy and angular momentum. When considering a single (bound) orbit, over a relaxation time-scale the energy changes by order of itself while the angular momentum changes by the angular momentum of a circular orbit with that energy $L\sub{circ}(E)$ \citep{Lightman1977, Rauch1996, Hopman2005, Madigan2011}:\footnote{$L\sub{circ}(E)$ is the maximum value for orbits of that energy.}
 \begin{equation}
-\left(\dfrac{\DeltaE}{E}\right)^{2} \approx \left[\dfrac{\Delta L}{L\sub{circ}(E)}\right]^{2} \approx \dfrac{t}{\tau\sub{R}}.
+\left(\dfrac{\Delta E}{E}\right)^{2} \approx \left[\dfrac{\Delta L}{L\sub{circ}(E)}\right]^{2} \approx \dfrac{t}{\tau\sub{R}}.
 \label{eq:diffuse-relax}
 \end{equation}
 We may define another angular momentum relaxation time-scale as the time taken for the angular momentum to change by order of itself \citep{Merritt2011}
@@ -239,17 +239,17 @@ Stars orbiting the MBH continually emit gravitational radiation; this carries aw
 \end{equation}
 where the term in angular brackets is the orbit-averaged rate of energy radiation. Using \eqnref{Energy_ecc} and equation (16) of \citet{Peters1963},
 \begin{align}
-\tau\sub{GW} \simeq {} & \frac{5}{64}\frac{c^5r\sub{p}^4}{G^3MM_\bullet\left(M + M_\bullet\right)}\frac{(1+e)^{7/2}}{(1-e)^{1/2}} \nonumber \\*
- {} & \times {} \left(1+\frac{73}{24}e^2 + \frac{37}{96}e^4\right)^{-1} \\
- \approx {} & \frac{5}{64}\frac{c^5r\sub{p}^4}{G^3MM_\bullet^2}\frac{(1+e)^{7/2}}{(1-e)^{1/2}}\left(1+\frac{73}{24}e^2 + \frac{37}{96}e^4\right)^{-1}.
+\tau\sub{GW} \simeq {} & \dfrac{5}{64}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet\left(M + M_\bullet\right)}\dfrac{(1+e)^{7/2}}{(1-e)^{1/2}} \nonumber \\*
+ {} & \times {} \left(1+\dfrac{73}{24}e^2 + \dfrac{37}{96}e^4\right)^{-1} \\
+ \approx {} & \dfrac{5}{64}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet^2}\dfrac{(1+e)^{7/2}}{(1-e)^{1/2}}\left(1+\dfrac{73}{24}e^2 + \dfrac{37}{96}e^4\right)^{-1}.
 \end{align}
 For comparison, the total time taken for the inspiral, if undisturbed, is given in \apref{Bound}.
 
 The time-scale associated with changes in angular momentum is \citep{Peters1964}
 \begin{align}
 \tau_{\mathrm{GW},\, L} \simeq {} & L\left\langle\diff{L}{t}\right\rangle^{-1} \\
- \simeq {} & \frac{5}{32}\frac{c^5r\sub{p}^4}{G^3MM_\bullet\left(M + M_\bullet\right)}\frac{(1+e)^{5/2}}{(1-e)^{3/2}}\left(1+\frac{7}{8}e^2\right)^{-1} \\
- \approx {} & \frac{5}{32}\frac{c^5r\sub{p}^4}{G^3MM_\bullet^2}\frac{(1+e)^{5/2}}{(1-e)^{3/2}}\left(1+\frac{7}{8}e^2\right)^{-1}.
+ \simeq {} & \dfrac{5}{32}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet\left(M + M_\bullet\right)}\dfrac{(1+e)^{5/2}}{(1-e)^{3/2}}\left(1+\dfrac{7}{8}e^2\right)^{-1} \\
+ \approx {} & \dfrac{5}{32}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet^2}\dfrac{(1+e)^{5/2}}{(1-e)^{3/2}}\left(1+\dfrac{7}{8}e^2\right)^{-1}.
 \end{align}
 This is always greater than the energy time-scale; hence, we only consider changes in energy from GW emission as important for evolution of the system \citep{Hopman2005}.
 
@@ -265,21 +265,20 @@ As a consequence of the high densities in the Galactic core, stars may undergo a
 \begin{equation}
 \delta K = n(r) A v(r,e,r\sub{p})\delta t,
 \end{equation}
-where $A$ is the collisional cross-sectional area. For tidal disruption, where the encounter is with a collapsed object (WD, NS or BH), we set $A = \pi r_{\mathrm{T},\,{M'}}^2$, where $r_{\mathrm{T},\,{M'}}$ is the appropriate tidal radius
+where $A$ is the collisional cross-sectional area. For tidal disruption, where the encounter is with a collapsed object (WD, NS or BH), we set $A = \pi r_{\mathrm{T},\,{M'}}^2$, where $r_{\mathrm{T},\,{M'}}$ is the appropriate tidal radius,
 \begin{equation}
-r\sub{T,\,{M'}} \simeq \left(\frac{M'}{M}\right)^{1/3}R_M.
-\label{eq:Tidal}
+r\sub{T,\,{M'}} \simeq \left(\dfrac{M'}{M}\right)^{1/3}R_M.
 \end{equation}
-For collisions between MS stars, the cross-sectional area is simply the geometric $A = \pi R_\star^2$.\footnote{Here we assume the relative velocity of the colliding stars is much greater than the escape velocity of the star so we may neglect the effects of gravitational focusing.}
+for CO of mass $M'$. For collisions between MS stars, the cross-sectional area is simply the geometric $A = \pi R_\star^2$.\footnote{Here we assume the relative velocity of the colliding stars is much greater than the escape velocity of the star so we may neglect the effects of gravitational focusing.}
 
 For circular orbits we can find the radius at which collisions lead to disruptions by setting $\delta K = 1$ for tidal disruption or $\delta K = 20$ for grazing collisions, and $\delta t = \overline{\tau_{\mathrm{R},\,M}}$. We use the system average relaxation time-scale for the species of mass $M$ as this is the time over which stars are replenished from the reservoir. For non-circular orbits we must consider variation with position. Using $\delta r = v_r \delta t$, and then converting to an integral, for bound orbits
 \begin{equation}
-K = 2 A \frac{\overline{\tau_{\mathrm{R},\,M}}}{P(r\sub{p},e)}\intd{r\sub{p}}{(1+e)r\sub{p}/(1-e)}{n(r)\frac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
+K = 2 A \dfrac{\overline{\tau_{\mathrm{R},\,M}}}{P(r\sub{p},e)}\intd{r\sub{p}}{(1+e)r\sub{p}/(1-e)}{n(r)\dfrac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
 \label{eq:collision-K}
 \end{equation}
 where $P$ is the period of the orbit. Again we set $K = 1$ or $K = 20$, and then numerically solve \eqnref{collision-K} to find the orbits for which stars will be disrupted within $\overline{\tau_{\mathrm{R},\,M}}$. For unbound orbits we are only interested in stars that would become disrupted before their periapse passage, so
 \begin{equation}
-K = A \intd{r\sub{p}}{r\sub{c}}{n(r)\frac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
+K = A \intd{r\sub{p}}{r\sub{c}}{n(r)\dfrac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
 \end{equation}
 assuming the stars in the reservoir external to the core are unlikely to undergo close collisions.
 
@@ -312,7 +311,7 @@ The calculated numbers of events are shown in \tabref{Rates}.
 The two approaches are in good agreement indicating that the average relation \eqnref{SNR-power-law} is sufficiently accurate for these type of calculations, and that the Schwarzschild radius is a reasonable absolute inner cut-off averaged over all MBH spins. The total number of events per mission is plotted in \figref{Event-no}.
 \begin{figure}
 \centering
-   \includegraphics[width=0.6\textwidth]{Fig_Total_event_hist}
+   \includegraphics[width=0.6\textwidth]{./images/Fig_Total_event_hist}
 \caption{Calculated number of detectable EMRBs over a $2\units{yr}$ LISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_2\super{int}$.}
 \label{fig:Event-no}
 \end{figure}
@@ -336,12 +335,12 @@ This analysis can be repeated for eLISA. We switch the detector noise curves and
   Total & 9.8,10^{-1} & 9.7,10^{-1} \\
   \bottomrule
 \end{tabular}
-  \caption{Expected number of events per $2\units{yr}$ eLISA mission. $\mathcal{N}_2\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law-eLISA}, and $\mathcal{N}_2\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:Rates}
+  \caption{Expected number of events per $2\units{yr}$ eLISA mission. $\mathcal{N}_2\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law-eLISA}, and $\mathcal{N}_2\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:eLISA-Rates}
 \end{table}
 Again, the two approaches are in good agreement. The total number of events per mission is plotted in \figref{eLISA-Event-no}.
 \begin{figure}
 \centering
-   \includegraphics[width=0.6\textwidth]{Fig_Total_event_hist_eLISA}
+   \includegraphics[width=0.6\textwidth]{./images/Fig_Total_event_hist_eLISA}
 \caption{Calculated number of detectable EMRBs over a $2\units{yr}$ eLISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_2\super{int}$.}
 \label{fig:eLISA-Event-no}
 \end{figure}
@@ -382,10 +381,10 @@ In many cases the variation is comparable to the intrinsic scatter from random s
 Combining the results from the set of realisations, \figref{Widths} shows the fraction of missions $\mathcal{F}(\sigma > \varsigma)$ that have posterior widths larger than $\varsigma$.
 \begin{figure}
 \centering
-   \subfigure[{Logarithm of mass}]{\includegraphics[width=0.4\textwidth]{Fig_mission_sigma_1}} \quad 
-   \subfigure[{Spin magnitude}]{\includegraphics[width=0.4\textwidth]{Fig_mission_sigma_2}} \\
-   \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.4\textwidth]{Fig_mission_sigma_3}} \quad
-   \subfigure[{Azimuthal angle}]{\includegraphics[width=0.4\textwidth]{Fig_mission_sigma_4}}
+   \subfigure[{Logarithm of mass}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_1}} \quad 
+   \subfigure[{Spin magnitude}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_2}} \\
+   \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_3}} \quad
+   \subfigure[{Azimuthal angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_4}}
 \caption{Cumulative proportion of mission realisations that produced posteriors with standard deviation (solid line) or $68$-percentile half-width (dashed line) larger than the ordinate value.}\label{fig:Widths}
 \end{figure}
 It appears there is a $33\%$ chance of determining $\ln (M_\bullet/M_\odot)$ to a precision of $10^{-2}$ or a $10\%$ chance of determining it to $10^{-4}$. The current uncertainty of $\sim 0.08$ is bettered in over half ($52\%$) of the missions. The spin $a_\ast$ could be determined to a precision of $10^{-2}$ in $30\%$ of missions and there is a $10\%$ chance of determining it to better than $3\times 10^{-4}$.
@@ -400,7 +399,7 @@ H(\{p_i\}) = -\sum_i p_i \ln p_i
 \end{equation}
 is the entropy measured in nats.\footnote{The unit is set by the base of the logarithm; the more familiar bit is calculated using base $2$, $1\units{bit} \equiv \ln(2)\units{nats}$.} This is identical to its counterpart in statistical physics up to a factor of the Boltzmann constant. Generalising from discrete to continuous probabilities is not quite as simple as exchanging the sum for an integral; it is also necessary to introduce a measure function in the logarithm, otherwise the entropy would not be invariant under a simple parameter rescaling. For a continuous probability distribution $p(\lambda)$, we work in terms of the relative entropy \citep[section 1.4]{Ihara1993}
 \begin{equation}
-H(p|q) = \intd{}{}{p(\lambda)\ln\left(\frac{p(\lambda)}{q(\lambda)}\right)}{\lambda},
+H(p|q) = \intd{}{}{p(\lambda)\ln\left(\dfrac{p(\lambda)}{q(\lambda)}\right)}{\lambda},
 \end{equation}
 where $q(\lambda)$ is another probability distribution, and we have changed the sign compared to the discrete case so that the entropy is non-negative. The relative entropy, or Kullback-Leiber divergence, measures the difference between distributions and is zero only if $p(\lambda) = q(\lambda)$ everywhere; with $p(\lambda)$ as the posterior and $q(\lambda)$ as the prior, it quantifies the information gained \citep{Kullback1951}.
 
@@ -415,20 +414,20 @@ The entropies calculated from multiple burst posteriors may show a similar bias 
 The entropies are well correlated with the logarithm of the distribution widths as expected. The distributions of the fraction of missions with entropies smaller than a given value are shown in \figref{H-ent}.
 \begin{figure}
 \centering
-   \subfigure[{Logarithm of mass}]{\includegraphics[width=0.4\textwidth]{Fig_mission_entropy_1}} \quad 
-   \subfigure[{Spin magnitude}]{\includegraphics[width=0.4\textwidth]{Fig_mission_entropy_2}} \\
-   \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.4\textwidth]{Fig_mission_entropy_3}} \quad
-   \subfigure[{Azimuthal angle}]{\includegraphics[width=0.4\textwidth]{Fig_mission_entropy_4}}
-\caption{Cumulative proportion of mission realisations that produced posteriors with relative entropies larger than the ordinate value.}\label{fig:H-ent}
+   \subfigure[{Logarithm of mass}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_1}} \quad 
+   \subfigure[{Spin magnitude}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_2}} \\
+   \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_3}} \quad
+   \subfigure[{Azimuthal angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_4}}
+\caption{Cumulative proportion of mission realisations that produced posteriors with relative entropies larger than the ordinate value. Here, $H_{\lambda_\bullet^a} \equiv H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))$}\label{fig:H-ent}
 \end{figure}
 They closely mirror those in \figref{Widths} (but the scale on the ordinate axis is now linear). There is a clustering at small entropies; the largest entropies are $\sim 13\units{nats}$ for $\ln(M_\bullet/M_\odot)$ and $\sim 15\units{nats}$ for the other parameters.
 
 Taking the average across all $100$ mission realisations, we can calculate the expected information gain for each parameter. The results are shown in \tabref{entropies}
 \begin{table}\footnotesize
 \centering
-  \begin{tabular}{l D{,}{\pm}{3.3}}
+  \begin{tabular}{l D{,}{\,\pm\,}{3.3}}
   \toprule
-  $\lambda_\bullet^a$ & \multicolumn{1}{c}{$\left\langle H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))\right\rangle\sub{mission}/\mathrm{nats}$}} \\ \midrule
+  $\lambda_\bullet^a$ & \multicolumn{1}{c}{$\left\langle H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))\right\rangle\sub{mission}/\mathrm{nats}$} \\ \midrule
   $\ln(M_\bullet/M_\odot)$ & 2.2 , 0.3 \\
   $a_\ast$ & 3.0 , 0.4 \\
   $\cos\Theta\sub{K}$ & 2.8 , 0.4  \\
