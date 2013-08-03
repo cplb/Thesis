@@ -1,4 +1,4 @@
-\begin{thebibliography}{535}
+\begin{thebibliography}{542}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -83,6 +83,13 @@ Adelberger, E., Heckel, B. \& Nelson, A.;
   Review of Nuclear and Particle Science}}; \textbf{53}(1):77--121; 2003;
   \href{http://arxiv.org/abs/hep-ph/0307284}{\tt arXiv:hep-ph/0307284}.
 
+\bibitem[{Aguirre \textit{et al\textup{.}}(2001)Aguirre, Schaye \&
+  Quataert}]{Aguirre2001}
+Aguirre, A., Schaye, J. \& Quataert, E.;
+  \textit{\href{http://dx.doi.org/10.1086/323376}{The Astrophysical Journal}};
+  \textbf{561}(2):550--558; 2001;
+  \href{http://arxiv.org/abs/astro-ph/0105184}{\tt arXiv:astro-ph/0105184}.
+
 \bibitem[{Alexander \& Yunes(2009)}]{Alexander2009a}
 Alexander, S. \& Yunes, N.;
   \textit{\href{http://dx.doi.org/10.1016/j.physrep.2009.07.002}{Physics
@@ -140,6 +147,19 @@ Ando, M. \textit{et al\textup{.}};
 Andrieu, C. \& Thoms, J.;
   \textit{\href{http://dx.doi.org/10.1007/s11222-008-9110-y}{Statistics and
   Computing}}; \textbf{18}(4):343--373; 2008.
+
+\bibitem[{Angus \textit{et al\textup{.}}(2007)Angus, Shan, Zhao \&
+  Famaey}]{Angus2007}
+Angus, G.W., Shan, H.Y., Zhao, H.S. \& Famaey, B.;
+  \textit{\href{http://dx.doi.org/10.1086/510738}{The Astrophysical Journal}};
+  \textbf{654}(1):L13--L16; 2007;
+  \href{http://arxiv.org/abs/astro-ph/0609125}{\tt arXiv:astro-ph/0609125}.
+
+\bibitem[{Antoniadis \textit{et al\textup{.}}(2012)}]{Antoniadis2012}
+Antoniadis, J. \textit{et al\textup{.}};
+  \textit{\href{http://dx.doi.org/10.1111/j.1365-2966.2012.21124.x}{Monthly
+  Notices of the Royal Astronomical Society}}; \textbf{423}(4):3316--3327;
+  2012; \href{http://arxiv.org/abs/1204.3948}{\tt arXiv:1204.3948}.
 
 \bibitem[{Antoniadis \textit{et al\textup{.}}(2013)}]{Antoniadis2013}
 Antoniadis, J. \textit{et al\textup{.}};
@@ -325,6 +345,12 @@ Bender, P.L. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1126/science.182.4109.229}{Science}};
   \textbf{182}(4109):229--38; 1973.
 
+\bibitem[{Bender \textit{et al\textup{.}}(2013)Bender, Begelman \&
+  Gair}]{Bender2013}
+Bender, P.L., Begelman, M.C. \& Gair, J.R.;
+  \textit{\href{http://dx.doi.org/10.1088/0264-9381/30/16/165017}{Classical and
+  Quantum Gravity}}; \textbf{30}(16):165017(8); 2013.
+
 \bibitem[{Bender \textit{et al\textup{.}}(2005)}]{Bender2005}
 Bender, R. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1086/432434}{The Astrophysical Journal}};
@@ -454,19 +480,12 @@ Breton, R.P. \textit{et al\textup{.}};
   \textbf{321}(5885):104--107; 2008; \href{http://arxiv.org/abs/0807.2644}{\tt
   arXiv:0807.2644}.
 
-\bibitem[{Broderick \textit{et al\textup{.}}(2009{\natexlab{a}})Broderick,
-  Fish, Doeleman \& Loeb}]{Broderick2009a}
+\bibitem[{Broderick \textit{et al\textup{.}}(2009)Broderick, Fish, Doeleman \&
+  Loeb}]{Broderick2009a}
 Broderick, A.E., Fish, V.L., Doeleman, S.S. \& Loeb, A.;
   \textit{\href{http://dx.doi.org/10.1088/0004-637X/697/1/45}{The Astrophysical
-  Journal}}; \textbf{697}(1):45--54; 2009{\natexlab{a}};
+  Journal}}; \textbf{697}(1):45--54; 2009;
   \href{http://arxiv.org/abs/0809.4490}{\tt arXiv:0809.4490}.
-
-\bibitem[{Broderick \textit{et al\textup{.}}(2009{\natexlab{b}})Broderick, Loeb
-  \& Narayan}]{Broderick2009}
-Broderick, A.E., Loeb, A. \& Narayan, R.;
-  \textit{\href{http://dx.doi.org/10.1088/0004-637X/701/2/1357}{The
-  Astrophysical Journal}}; \textbf{701}(2):1357--1366; 2009{\natexlab{b}};
-  \href{http://arxiv.org/abs/0903.1105}{\tt arXiv:0903.1105}.
 
 \bibitem[{Broderick \textit{et al\textup{.}}(2011)Broderick, Loeb \&
   Reid}]{Broderick2011}
@@ -635,6 +654,13 @@ Cooray, A. \& Seto, N.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.69.103502}{Physical Review
   D}}; \textbf{69}(10):103502(7); 2004;
   \href{http://arxiv.org/abs/astro-ph/0311054}{\tt arXiv:astro-ph/0311054}.
+
+\bibitem[{Copeland \textit{et al\textup{.}}(2006)Copeland, Sami \&
+  Tsujikawa}]{Copeland2006}
+Copeland, E.J., Sami, M. \& Tsujikawa, S.;
+  \textit{\href{http://dx.doi.org/10.1142/S021827180600942X}{International
+  Journal of Modern Physics D}}; \textbf{15}(11):1753--1935; 2006;
+  \href{http://arxiv.org/abs/hep-th/0603057}{\tt arXiv:hep-th/0603057}.
 
 \bibitem[{Corda(2008)}]{Corda2008}
 Corda, C.;
@@ -814,6 +840,12 @@ Exirifard, Q. \& Sheik-Jabbari, M.;
   Letters B}}; \textbf{661}(2-3):158--161; 2008;
   \href{http://arxiv.org/abs/0705.1879}{\tt arXiv:0705.1879}.
 
+\bibitem[{Faber \& Rasio(2012)}]{Faber2012}
+Faber, J.A. \& Rasio, F.A.;
+  \textit{\href{http://dx.doi.org/10.12942/lrr-2012-8}{Living Reviews in
+  Relativity}}; \textbf{15}(8); 2012; \href{http://arxiv.org/abs/1204.3858}{\tt
+  arXiv:1204.3858}.
+
 \bibitem[{Fabian \textit{et al\textup{.}}(2013)}]{Fabian2013}
 Fabian, A.C. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1093/mnras/sts504}{Monthly Notices of the
@@ -889,6 +921,12 @@ Freire, P.C.C. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1086/526338}{The Astrophysical Journal}};
   \textbf{675}(1):670--682; 2008; \href{http://arxiv.org/abs/0711.0925}{\tt
   arXiv:0711.0925}.
+
+\bibitem[{Freire \textit{et al\textup{.}}(2012)}]{Freire2012}
+Freire, P.C.C. \textit{et al\textup{.}};
+  \textit{\href{http://dx.doi.org/10.1111/j.1365-2966.2012.21253.x}{Monthly
+  Notices of the Royal Astronomical Society}}; \textbf{423}(4):3328--3343;
+  2012; \href{http://arxiv.org/abs/1205.1450}{\tt arXiv:1205.1450}.
 
 \bibitem[{Freitag \textit{et al\textup{.}}(2006)Freitag, Amaro-Seoane \&
   Kalogera}]{Freitag2006}
@@ -2597,6 +2635,13 @@ Stabile, A.;
 Stairs, I.H.; \textit{\href{http://dx.doi.org/10.12942/lrr-2003-5}{Living
   Reviews in Relativity}}; \textbf{6}(5); 2003;
   \href{http://arxiv.org/abs/astro-ph/0307536}{\tt arXiv:astro-ph/0307536}.
+
+\bibitem[{Stairs \textit{et al\textup{.}}(2002)Stairs, Thorsett, Taylor \&
+  Wolszczan}]{Stairs2002}
+Stairs, I.H., Thorsett, S.E., Taylor, J.H. \& Wolszczan, A.;
+  \textit{\href{http://dx.doi.org/10.1086/344157}{The Astrophysical Journal}};
+  \textbf{581}(1):501--508; 2002;
+  \href{http://arxiv.org/abs/astro-ph/0208357}{\tt arXiv:astro-ph/0208357}.
 
 \bibitem[{Starobinskii(1983)}]{Starobinskii1983}
 Starobinskii, A.A.; \textit{Soviet Astronomy Letters}; \textbf{9}(5):302--304;
