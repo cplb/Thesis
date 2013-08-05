@@ -60,7 +60,7 @@ Adams, D.; \textit{{The Hitchikers' Guide to the Galaxy}}; London: Pan Books;
 
 \bibitem[{Adams(1896)}]{Adams1896}
 Adams, J.C.; \textit{{The Scientific Papers of John Couch Adams}}; volume~I;
-  Cambridge: Cambridge University Press; 1896.
+  Cambridge: Cambridge University Press; edited by Adams, W.G.; 1896.
 
 \bibitem[{Ade \textit{et al\textup{.}}(2013{\natexlab{a}})}]{Ade2013a}
 Ade, P.A.R. \textit{et al\textup{.}}; 2013{\natexlab{a}};
@@ -179,7 +179,7 @@ Anza, S. \textit{et al\textup{.}};
 
 \bibitem[{Arnowitt \textit{et al\textup{.}}(1962)Arnowitt, Deser \&
   Misner}]{Arnowitt1962a}
-Arnowitt, R., Deser, S. \& Misner, C.W.; in L.~Witten (ed.),
+Arnowitt, R., Deser, S. \& Misner, C.W.; in L.~Witten (editor),
   \textit{Gravitation: an introduction to current research}; chapter~7,
   227--264; New York: Wiley; 1962.
 
@@ -337,7 +337,7 @@ B{\'e}langer, G., Terrier, R., {{de Jager}}, O.C., Goldwurm, A. \& Melia, F.;
   \href{http://arxiv.org/abs/astro-ph/0604337}{\tt arXiv:astro-ph/0604337}.
 
 \bibitem[{Bender \textit{et al\textup{.}}(1998)}]{Bender1998}
-Bender, P. \textit{et al\textup{.}}; \enquote{{LISA Pre-Phase A Report}};
+Bender, P. \textit{et al\textup{.}}; \textit{{LISA Pre-Phase A Report}};
   Technical report; Max-Planck-Institut f\"{u}r Quantenoptik; Garching; 1998.
 
 \bibitem[{Bender \textit{et al\textup{.}}(1973)}]{Bender1973}
@@ -815,7 +815,8 @@ Eilon, E., Kupi, G. \& Alexander, T.;
 
 \bibitem[{Einstein(1997)}]{Einstein1997}
 Einstein, A.; \textit{{The Collected Papers of Albert Einstein}}; volume~6;
-  Princeton, New Jersey: Princeton University Press; 1997.
+  Princeton, New Jersey: Princeton University Press; translated by Engel, A. \&
+  Schuking, E.; 1997.
 
 \bibitem[{Emmanoulopoulos \textit{et al\textup{.}}(2011)}]{Emmanoulopoulos2011}
 Emmanoulopoulos, D. \textit{et al\textup{.}};
@@ -1013,7 +1014,7 @@ Gebhardt, K. \textit{et al\textup{.}};
 \bibitem[{Gelman \textit{et al\textup{.}}(1996)Gelman, Roberts \&
   Gilks}]{Gelman1996}
 Gelman, A., Roberts, G.O. \& Gilks, W.R.; in J.M. Bernardo, J.O. Berger, A.P.
-  Dawid \& A.F.M. Smith (eds.), \textit{Bayesian Statistics}; Oxford Science
+  Dawid \& A.F.M. Smith (editors), \textit{Bayesian Statistics}; Oxford Science
   Publications; 599--607; Oxford: Clarendon Press; 1996.
 
 \bibitem[{Genzel \textit{et al\textup{.}}(2003{\natexlab{a}})}]{Genzel2003a}
@@ -1090,7 +1091,8 @@ Gonz{\'a}lez, J.A., Sperhake, U., Br{\"u}gmann, B., Hannam, M. \& Husa, S.;
 
 \bibitem[{Gradshteyn \& Ryzhik(2000)}]{Gradshteyn2000}
 Gradshteyn, I.S. \& Ryzhik, I.M.; \textit{{Table of Integrals, Series, and
-  Products}}; London: Academic Press; sixth edition; 2000.
+  Products}}; London: Academic Press; sixth edition; edited by Jeffrey, A.;
+  2000.
 
 \bibitem[{Graham(2008)}]{Graham2008}
 Graham, A.W.; \textit{\href{http://dx.doi.org/10.1071/AS08013}{Publications of
@@ -1182,7 +1184,7 @@ Haario, H., Saksman, E. \& Tamminen, J.; \textit{Bernoulli};
   \textbf{7}(2):223--242; 2001.
 
 \bibitem[{Haiman \& Quataert(2004)}]{Haiman2004}
-Haiman, Z. \& Quataert, E.; in A.J. Barger (ed.), \textit{Supermassive Black
+Haiman, Z. \& Quataert, E.; in A.J. Barger (editor), \textit{Supermassive Black
   Holes in the Distant universe}; Astrophysics and Space Science Library;
   chapter~5, 147--186; Dordrecht: Kluwer Academic Publishers; 2004.
 
@@ -1390,8 +1392,8 @@ Israel, W.; \textit{\href{http://dx.doi.org/10.1007/BF01645859}{Communications
   in Mathematical Physics}}; \textbf{8}(3):245--260; 1968.
 
 \bibitem[{Israel(1987)}]{Israel1987}
-Israel, W.; in S.W. Hawking \& W.~Israel (eds.), \textit{Three Hundred Years of
-  Gravitation}; chapter~7, 199--276; Cambridge: Cambridge University Press;
+Israel, W.; in S.W. Hawking \& W.~Israel (editors), \textit{Three Hundred Years
+  of Gravitation}; chapter~7, 199--276; Cambridge: Cambridge University Press;
   1987.
 
 \bibitem[{Ivanova \textit{et al\textup{.}}(2013)}]{Ivanova2013}
@@ -1450,10 +1452,10 @@ Jarosik, N. \textit{et al\textup{.}};
 
 \bibitem[{Jaynes(2003)}]{Jaynes2003}
 Jaynes, E.T.; \textit{{Probability Theory: The Logic of Science}}; Cambridge:
-  Cambridge University Press; 2003.
+  Cambridge University Press; edited by Bretthorst, G.L.; 2003.
 
 \bibitem[{Jennrich \textit{et al\textup{.}}(2011)}]{Jennrich2011}
-Jennrich, O. \textit{et al\textup{.}}; \enquote{{NGO Revealing a hidden
+Jennrich, O. \textit{et al\textup{.}}; \textit{{NGO Revealing a hidden
   Universe: opening a new chapter of discovery}}; Technical report; European
   Space Agency; Noordwijk; 2011.
 
@@ -1667,12 +1669,13 @@ Lackey, B.D., Kyutoku, K., Shibata, M., Brady, P.R. \& Friedman, J.L.;
 
 \bibitem[{Landau \& Lifshitz(1958)}]{Landau1958}
 Landau, L.D. \& Lifshitz, E.M.; \textit{{Statistical Physics}}; Course of
-  Theoretical Physics; London: Pergamon Press; 1958.
+  Theoretical Physics; London: Pergamon Press; translated by Peierls, E. \&
+  Peierls, R.F.; 1958.
 
 \bibitem[{Landau \& Lifshitz(1975)}]{Landau1975}
 Landau, L.D. \& Lifshitz, E.M.; \textit{{The Classical Theory of Fields}};
   Course of Theoretical Physics; Oxford: Butterworth-Heinemann; fourth edition;
-  1975.
+  translated by Hamermesh, M.; 1975.
 
 \bibitem[{Langer(2012)}]{Langer2012}
 Langer, N.;
@@ -2026,8 +2029,8 @@ Newman, E.T. \textit{et al\textup{.}};
   Physics}}; \textbf{6}(6):918--919; 1965.
 
 \bibitem[{Newton(1999)}]{Newton1999}
-Newton, I.; \textit{{The Principia}}; London: University of California Press;
-  1999.
+Newton, I.; \textit{{The Principia}}; Berkley, California: University of
+  California Press; translated by Cohen, I.B. \& Whitman, A.; 1999.
 
 \bibitem[{Nojiri \& Odintsov(2007)}]{Nojiri2007}
 Nojiri, S. \& Odintsov, S.D.;
@@ -2094,7 +2097,7 @@ Olmo, G.J.;
 
 \bibitem[{Olver \textit{et al\textup{.}}(2010)Olver, Lozier, Boisvert \&
   Clark}]{Olver2010}
-Olver, F.W.J., Lozier, Daniel, W., Boisvert, R.F. \& Clark, C.W. (eds.);
+Olver, F.W.J., Lozier, Daniel, W., Boisvert, R.F. \& Clark, C.W. (editors);
   \textit{{NIST Handbook of Mathematical Functions}}; Cambridge: Cambridge
   University Press; 2010.
 
@@ -2235,8 +2238,9 @@ Preto, M. \& Amaro-Seoane, P.;
   \href{http://arxiv.org/abs/0910.3206}{\tt arXiv:0910.3206}.
 
 \bibitem[{Prix(2009)}]{Prix2009}
-Prix, R.; in W.~Becker (ed.), \textit{Neutron Stars and Pulsars}; Astrophysics
-  and Space Science Library; chapter~24, 651--685; Berlin: Springer; 2009.
+Prix, R.; in W.~Becker (editor), \textit{Neutron Stars and Pulsars};
+  Astrophysics and Space Science Library; chapter~24, 651--685; Berlin:
+  Springer; 2009.
 
 \bibitem[{Psaltis(2008)}]{Psaltis2008a}
 Psaltis, D.; \textit{\href{http://dx.doi.org/10.12942/lrr-2008-9}{Living
@@ -2515,7 +2519,7 @@ Shapiro, S.L. \& Teukolsky, S.A.; \textit{{Black holes, white dwarfs and
 
 \bibitem[{Sidery \textit{et al\textup{.}}(2013)Sidery, Gair \&
   Mandel}]{Sidery2013}
-Sidery, T., Gair, J.R. \& Mandel, I.; \enquote{in preparation}; 2013.
+Sidery, T., Gair, J.R. \& Mandel, I.; in preparation; 2013.
 
 \bibitem[{Sigurdsson \& Rees(1997)}]{Sigurdsson1997}
 Sigurdsson, S. \& Rees, M.J.; \textit{Monthly Notices of the Royal Astronomical
@@ -2595,6 +2599,11 @@ Sotiriou, T.P., Visser, M. \& Weinfurtner, S.;
   High Energy Physics}}; \textbf{2009}(10):033(32); 2009;
   \href{http://arxiv.org/abs/0905.2798}{\tt arXiv:0905.2798}.
 
+\bibitem[{Spitzer(1987)}]{Spitzer1987}
+Spitzer, L.; \textit{{Dynamical Evolution of Globular Clusters}}; Princeton
+  Series in Astrophysics; Princeton, New Jersey: Princeton University Press;
+  1987.
+
 \bibitem[{Spitzer \& Harm(1958)}]{Spitzer1958}
 Spitzer, L. \& Harm, R.; \textit{\href{http://dx.doi.org/10.1086/146486}{The
   Astrophysical Journal}}; \textbf{127}(3):544--550; 1958.
@@ -2612,11 +2621,6 @@ Spitzer, L. \& Schwarzschild, M.;
 Spitzer, L. \& Shapiro, S.L.;
   \textit{\href{http://dx.doi.org/10.1086/151442}{The Astrophysical Journal}};
   \textbf{173}(3):529; 1972.
-
-\bibitem[{Spitzer(1987)}]{Spitzer1987}
-Spitzer, Jr., L.; \textit{{Dynamical Evolution of Globular Clusters}};
-  Princeton Series in Astrophysics; Princeton, New Jersey: Princeton University
-  Press; 1987.
 
 \bibitem[{Springel \textit{et al\textup{.}}(2006)Springel, Frenk \&
   White}]{Springel2006a}
@@ -2723,9 +2727,9 @@ Thorne, K.S.; \textit{\href{http://dx.doi.org/10.1086/152991}{The Astrophysical
   Journal}}; \textbf{191}(2):507--519; 1974.
 
 \bibitem[{Thorne(1987)}]{Thorne1987}
-Thorne, K.S.; in S.W. Hawking \& W.~Israel (eds.), \textit{Three Hundred Years
-  of Gravitation}; chapter~9, 330--458; Cambridge: Cambridge University Press;
-  1987.
+Thorne, K.S.; in S.W. Hawking \& W.~Israel (editors), \textit{Three Hundred
+  Years of Gravitation}; chapter~9, 330--458; Cambridge: Cambridge University
+  Press; 1987.
 
 \bibitem[{Thorne \& Dykla(1971)}]{Thorne1971}
 Thorne, K.S. \& Dykla, J.J.;
@@ -2974,7 +2978,7 @@ Woosley, S.E., Heger, A. \& Weaver, T.A.;
   Physics}}; \textbf{74}(4):1015--1071; 2002.
 
 \bibitem[{Wyse(2008)}]{Wyse2008}
-Wyse, R.F.G.; in T.~Kodama, T.~Yamada \& K.~Aoki (eds.), \textit{Panoramic
+Wyse, R.F.G.; in T.~Kodama, T.~Yamada \& K.~Aoki (editors), \textit{Panoramic
   Views of Galaxy Formation and Evolution}; \textit{ASP Conference Series},
   volume 399; 445--448; San Francisco, California: Astronomical Society of the
   Pacific; 2008.
@@ -2991,8 +2995,8 @@ Yang, L., Lee, C.C. \& Geng, C.Q.;
   Cosmology and Astroparticle Physics}}; \textbf{2011}(08):029(15); 2011;
   \href{http://arxiv.org/abs/1106.5582}{\tt arXiv:1106.5582}.
 
-\bibitem[{York(1972)}]{York1972}
-York, J.W.;
+\bibitem[{{York J.}(1972)}]{York1972}
+{York J.}, J.W.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.28.1082}{Physical Review
   Letters}}; \textbf{28}(16):1082--1085; 1972.
 

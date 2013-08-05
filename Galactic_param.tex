@@ -55,7 +55,7 @@ Since the deviation in the two waveforms is only apparent for small periapses, w
 
 \subsection{Signal-to-noise ratios}\label{sec:Gal-SNR}
 
-The detectability of a burst depends upon its SNR. To characterise the variation of $\rho$ we calculated SNRs for a range of orbits. These were generated as in \secref{wave-ex}, we used $\sim 10^4$ different periapse distances.
+The detectability of a burst depends upon its SNR. To characterise the variation of $\rho$ we calculated SNRs for a range of orbits. These were generated as in \secref{wave-ex}; we used $\sim 10^4$ different periapse distances.
 
 The bursts were calculated for a $1 M_\odot$ CO. From \eqnref{octupole}, the amplitude of the waveform is proportional to the CO mass $\mu$, and so $\rho$ is also proportional to $\mu$; a $10 M_\odot$ object would be ten times louder on the same orbit. To make results mass independent, we work in terms of a mass-normalised SNR
 \begin{equation}
@@ -92,7 +92,7 @@ There is again a strong correlation that may be approximated as a power law. The
 \log\rho \simeq -2.9\log\left(\dfrac{r\sub{p}}{r\sub{g}}\right) + \log\left(\dfrac{\mu}{M_\odot}\right) + 3.9,
 \label{eq:SNR-power-law-eLISA}
 \end{equation}
-which is indicated by the straight line. This was done in exactly the same as for LISA. Again, there is no clear correlation with any other orbital parameters.
+which is indicated by the straight line. This was done in exactly the same way as for LISA. Again, there is no clear correlation with any other orbital parameters.
 
 The SNR is lower for eLISA. As a consequence, bursts are detectable across a smaller range of periapses. Using the threshold $\rho = 10$, a $1 M_\odot$ ($10 M_\odot$) object would be expected to be detectable if the periapse distance is less than $10 r\sub{g}$ ($21 r\sub{g}$). This is a reduction of about a factor of three compared to LISA.
 
@@ -102,7 +102,7 @@ Having detected a signal, we are interested in what we can learn about the sourc
 \begin{equation}
 p(\boldsymbol{\lambda}|\boldsymbol{s}(t)) = \dfrac{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})p(\boldsymbol{\lambda})}{p(\boldsymbol{s}(t))}.
 \end{equation}
-Here $p(\boldsymbol{s}(t)|\boldsymbol{\lambda})$ is the likelihood of the parameters, $p(\boldsymbol{\lambda})$ is the prior probability distribution for the parameters, and the evidence $p(\boldsymbol{s}(t)) = \intd{}{}{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}$ is, for our purposes, a normalising constant. The likelihood depends upon the realization of noise. If parameters $\boldsymbol{\lambda}_0$ define a waveform $\boldsymbol{h}_0(t) = \boldsymbol{h}(t; \boldsymbol{\lambda}_0)$, the probability that we observe signal $\boldsymbol{s}(t)$ GW is given by \eqnref{sig_prob}, so the likelihood is
+Here $p(\boldsymbol{s}(t)|\boldsymbol{\lambda})$ is the likelihood of the parameters, $p(\boldsymbol{\lambda})$ is the prior probability distribution for the parameters, and the evidence $p(\boldsymbol{s}(t)) = \intd{}{}{p(\boldsymbol{s}(t)|\boldsymbol{\lambda})}{^d \lambda}$ is, for our purposes, a normalising constant. The likelihood depends upon the realisation of noise. If parameters $\boldsymbol{\lambda}_0$ define a waveform $\boldsymbol{h}_0(t) = \boldsymbol{h}(t; \boldsymbol{\lambda}_0)$, the probability that we observe signal $\boldsymbol{s}(t)$ GW is given by \eqnref{sig_prob}, so the likelihood is
 \begin{equation}
 p(\boldsymbol{s}(t)|\boldsymbol{\lambda}_0) \propto \exp\left[-\recip{2}\innerprod{\boldsymbol{s}-\boldsymbol{h}_0}{\boldsymbol{s}-\boldsymbol{h}_0}\right].
 \label{eq:likelihood}
@@ -337,4 +337,4 @@ We used MCMC results as a more robust measure of parameter estimation accuracy. 
 
 Before we can quote results for how accurately we can determine the various parameters, we must consider the probability of each orbit. This shall be done in \chapref{events}.
 
-We have so far only considered EMRBS from our Galaxy; a natural extension is to consider bursts from extragalactic sources, which we do in the next chapter. Extragalactic bursts are not as promising as those from the GC, but could still make a significant contribute to the total burst event rate. 
+We have so far only considered EMRBS from our Galaxy; a natural extension is to consider bursts from extragalactic sources, which we do in the next chapter. Extragalactic bursts are not as promising as those from the GC, but could still make a significant contribution to the total burst event rate. 
