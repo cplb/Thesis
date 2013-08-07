@@ -4,7 +4,7 @@
 
 An exciting means of inferring information about MBHs is through GWs emitted when COs, such as stellar-mass BHs, NSs, WDs or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as LISA, is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion objects inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the object plunges into the MBH. These systems are typically formed following two-body encounters so that the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are extreme mass-ratio bursts (EMRBs; \citealt{Rubbo2006}). Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the frequency range of a LISA-like space-borne detector. The resulting signals are extreme mass-ratio inspirals (EMRIs; \citealt{Amaro-Seoane2007}).
 
-Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high signal-to-noise ratio (SNR) to be accumulated. Here, we investigate high eccentricity orbits. These are the initial bursting orbits from which an EMRI may evolve, and are the consequence of scattering from two-body encounters. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. The event rate is dominated by bursts from the Galactic Centre (GC). Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC.
+Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high signal-to-noise ratio (SNR) to be accumulated. Here, we investigate high eccentricity orbits. EMRBs are much shorter in duration than EMRIs; this means they do not accumulate as high SNRs, or produce as detailed maps of the spacetime. They are therefore less valued prizes. However, they may still be an interesting signal. As an object inspirals it emits many bursts before eventually settling into a low eccentricity EMRI. Some objects shall be scattered by two-body encounters and never reach the EMRI phase \citep{Alexander2003}. Thus, there are many potential EMRBs per EMRI, although this does not necessarily translate to there being more detectable EMRBs than EMRIs. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. The event rate is dominated by bursts from the Galactic Centre (GC). Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC.
 
 To model bursts we make the simplifying assumption that all these orbits are marginally bound, or parabolic, since highly eccentric orbits appear almost indistinguishable from an appropriate parabolic orbit. Here ``parabolic'' and ``eccentricity'' refer to the energy of the geodesic and not to the geometric shape of the orbit.\footnote{Marginally bound Keplerian orbits (in flat spacetime) are parabolic in both senses.} Following such a trajectory an object may make just one pass of the MBH or, if the periapsis distance is small enough, it may complete a number of rotations. Such an orbit is referred to as zoom--whirl \citep{Glampedakis2002a}.
 
@@ -34,21 +34,21 @@ For the remainder of this section we use natural units with $G = c = 1$.
 Geodesics are parameterized by three conserved quantities (aside from the particle's mass $\mu$): energy (per unit mass) $E$, specific angular momentum about the symmetry axis (the $z$-axis) $L_z$, and Carter constant $Q$ (\citealt{Carter1968}; \citealt[section 62]{Chandrasekhar1992}). The geodesic equations are
 \begin{subequations}
 \begin{align}
-\varrho^2 \diff{t}{\tau} = {} & a\left(L_z - aE\sin^2 \theta\right) + \dfrac{r^2 + a^2}{\Delta}T,\\
+\varrho^2 \diff{t}{\tau} = {} & a\left(L_z - aE\sin^2 \theta\right) + \dfrac{r^2 + a^2}{\Delta}\mathcal{T},\\
 \varrho^2 \diff{r}{\tau} = {} & \pm \sqrt{V_r},\\
 \varrho^2 \diff{\theta}{\tau} = {} & \pm \sqrt{V_\theta},\\
-\varrho^2 \diff{\phi}{\tau} = {} & \dfrac{L_z}{\sin^2 \theta} - aE + \dfrac{a}{\Delta}T,
+\varrho^2 \diff{\phi}{\tau} = {} & \dfrac{L_z}{\sin^2 \theta} - aE + \dfrac{a}{\Delta}\mathcal{T},
 \end{align}
 \end{subequations}
 where we have introduced potentials
 \begin{subequations}
 \begin{align}
-T = {} & E\left(r^2 +a^2\right) - aL_z,\\
-V_r = {} & T^2 - \Delta\left[r^2 + \left(L_z - aE\right)^2 + Q\right],\\
+\mathcal{T} = {} & E\left(r^2 +a^2\right) - aL_z,\\
+V_r = {} & \mathcal{T}^2 - \Delta\left[r^2 + \left(L_z - aE\right)^2 + Q\right],\\
 V_\theta = {} & Q - \cos^2 \theta\left[a^2\left(1 - E^2\right) + \dfrac{L_z^2}{\sin^2\theta}\right],
 \end{align}
 \end{subequations}
-and $\tau$ is proper time. The signs of the $r$ and $\theta$ equations may be chosen independently.
+and $\tau$ is proper time. The signs of the $r$ and $\theta$ equations can be chosen independently.
 
 For a parabolic orbit $E = 1$; the particle is at rest at infinity. This simplifies the geodesic equations. It also allows us to give a simple interpretation for the Carter constant: this is defined as
 \begin{equation}
@@ -78,25 +78,25 @@ where $e = 1$ is the eccentricity $p = 2r\sub{p}$ is the semilatus rectum and $\
 \end{align}
 Parameterizing an orbit by its periapsis and eccentricity has the additional benefit of allowing easier comparison with its flat-space equivalent \citep{Gair2005}.
 
-The $\theta$ motion is usually bounded, with $\theta_0 \leq \theta \leq \pi - \theta_0$; in the event that $L_z = 0$ the particle follows a polar orbit and $\theta$ covers its full range \citep{Wilkins1972}. The turning points are given by
+The $\theta$ motion is usually bounded, with $\theta_- \leq \theta \leq \pi - \theta_-$; in the event that $L_z = 0$ the particle follows a polar orbit and $\theta$ covers its full range \citep{Wilkins1972}. The turning points are given by
 \begin{equation}
 V_\theta = Q - \cot^2\theta\, L_z^2 = 0.
 \end{equation}
-Changing variable to $\xi = \cos^2\theta$, we have a maximum value $\xi_0 = \cos^2\theta_0$ given by
+Changing variable to $\xi = \cos^2\theta$, we have a maximum value $\xi_- = \cos^2\theta_-$ given by
 \begin{equation}
-\xi_0 = \dfrac{Q}{Q+L_z^2} = \dfrac{Q}{L_\infty^2}.
+\xi_- = \dfrac{Q}{Q+L_z^2} = \dfrac{Q}{L_\infty^2}.
 \label{eq:theta_0}
 \end{equation}
 See \figref{L_triangle} for a geometrical visualization.
 \begin{figure}
 \centering
 \includegraphics[width=0.25\textwidth]{./images/Triangle}
-    \caption{The angular momenta $L_\infty$, $L_z$ and $\sqrt{Q}$ define a right-angled triangle. The acute angles are $\theta_0$, the extremal value of the polar angle, and $\iota$, the orbital inclination \citep{Ryan1996,Glampedakis2002}.}
+    \caption{The angular momenta $L_\infty$, $L_z$ and $\sqrt{Q}$ define a right-angled triangle. The acute angles are $\theta_-$, the extremal value of the polar angle, and $\iota$, the orbital inclination \citep{Ryan1996,Glampedakis2002}.}
     \label{fig:L_triangle}
 \end{figure}
 Introducing a second angular variable \citep{Hughes2000,Drasco2004}
 \begin{equation}
-\xi = \xi_0\cos^2\chi.
+\xi = \xi_-\cos^2\chi.
 \end{equation}
 Over one $2\pi$ period of $\chi$, $\theta$ oscillates from its minimum value to its maximum and back. The geodesic equation for $\chi$ is
 \begin{equation}

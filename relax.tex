@@ -7,7 +7,7 @@ There are a variety of definitions for the relaxation time-scale. For a system w
 \tau\sub{R}\super{Max} \simeq \kappa\dfrac{\sigma^3}{G^2M_\star^2 n_\star\ln\Lambda},
 \label{eq:tauMaxwell}
 \end{equation}
-where the Coulomb logarithm is $\ln\Lambda = \ln(M_\bullet/M_\star)$ \citep{Bahcall1976}, and $\kappa$ is a dimensionless number. In his pioneering work, \citet{Chandrasekhar1941, Chandrasekhar1960} defined the time-scale as the period over which the squared change in energy was equal to the kinetic energy squared; this gives $\kappa = 9/16\sqrt{\pi} \simeq 0.32$. Subsequently, \citet{Chandrasekhar1941a} described relaxation statistically, treating fluctuations in the gravitational field probabilistically; this gives $\kappa = 9/2(2\pi)^{3/2} \simeq 0.29$. \citet{Bahcall1977} define a reference time-scale from their Boltzmann equation with $\kappa = 3/4\sqrt{8\pi} \simeq 0.15$; this is equal to the reference time-scale defined as the reciprocal of the coefficient of dynamical friction by \citet{Chandrasekhar1943a, Chandrasekhar1943}. \citet{Spitzer1958} define a reference time-scale from the gravitational Boltzmann equation of \citet{Spitzer1951} where $\kappa = \sqrt{2}/\pi \simeq 0.45$. Following \citet{Spitzer1971}, \citet[section 7.4.5]{Binney2008} estimate the time-scale from the velocity diffusion coefficient of the Fokker--Planck equation yielding $\kappa \simeq 0.34$.
+where the Coulomb logarithm is $\ln\Lambda = \ln(M_\bullet/M_\star)$ \citep{Bahcall1976}, and $\kappa$ is a dimensionless number. In his pioneering work, \citet{Chandrasekhar1941, Chandrasekhar1960} defined the time-scale as the period over which the squared change in energy was equal to the kinetic energy squared; this gives $\kappa = 9/16\sqrt{\pi} \simeq 0.32$. Subsequently, \citet{Chandrasekhar1941a} described relaxation statistically, treating fluctuations in the gravitational field probabilistically; this gives $\kappa = 9/2(2\pi)^{3/2} \simeq 0.29$. \citet{Bahcall1977} define a reference time-scale from their Boltzmann equation with $\kappa = 3/4\sqrt{8\pi} \simeq 0.15$; this is equal to the reference time-scale defined as the reciprocal of the coefficient of dynamical friction by \citet{Chandrasekhar1943a, Chandrasekhar1943}. \citet{Spitzer1958Jr} define a reference time-scale from the gravitational Boltzmann equation of \citet{Spitzer1951Jr} where $\kappa = \sqrt{2}/\pi \simeq 0.45$. Following \citet{Spitzer1971Jr}, \citet[section 7.4.5]{Binney2008} estimate the time-scale from the velocity diffusion coefficient of the Fokker--Planck equation yielding $\kappa \simeq 0.34$.
 
 All these approaches yield consistent values, suggesting, as a first approximation, any is valid. We follow \citet[chapter 2]{Chandrasekhar1960}, which is transparent in its assumptions, but change from a Maxwellian distribution of velocities to one derived from the DFs \eqnref{Unbound_DF} and \eqnref{Bound_DF}. Since there is uncertainty in the astrophysical parameters, we will not be concerned by small discrepancies in the numerical prefactor that result from the simplifying approximations of this approach. The results of our calculations are \eqnref{system-relax}, an average time-scale for the entire system $\overline{\tau\sub{R}}$, and \eqnref{orbital-relax}, an average for an orbit $\left\langle\tau\sub{R}\right\rangle$.
 
@@ -17,7 +17,7 @@ The relaxation time-scale is set by purely gravitational interactions. In calcul
 
 \citet[chapter 2]{Chandrasekhar1960} defined a relaxation time-scale for a stellar system by approximating the fluctuations in the stellar gravitational potential as a series of two-body encounters. The time over which the squared change in energy is equal to the squared (initial) kinetic energy of the star is the time taken for relaxation. Relaxation is mediated by dynamical friction (\citealt{Chandrasekhar1943a}; \citealt[section 1.2]{Binney2008}). This can be understood as the drag induced on a star by the over-density of field stars deflected by its passage \citep{Mulder1983}. In the interaction between the star and its gravitational wake, energy and momentum are exchanged, accelerating some stars, decelerating others.
 
-Chandrasekhar's approach has proved exceedingly successful despite the number of simplifying assumptions inherent in the model which are not strictly applicable to systems such as the Galactic core. We will not attempt to fix these deficiencies; the only modification is to substitute the velocity distribution.
+Chandrasekhar's approach has proved exceedingly successful despite the number of simplifying assumptions inherent in the model which are not strictly applicable to systems such as the Galactic NSC. We will not attempt to fix these deficiencies; the only modification is to substitute the velocity distribution.
 
 Others have built upon the work of Chandrasekhar by considering inhomogeneous stellar distributions, via perturbation theory \citep{Lynden-Bell1972,Tremaine1984,Weinberg1986}; modelling energy transfer as anomalous dispersion, which adds higher order moments to the transfer probability \citep{Bar-Or2012}, or using the tools of linear response theory and the fluctuation-dissipation theory \citep[chapter 7]{Landau1958}, which allows relaxation of certain assumptions, such as homogeneity \citep{Bekenstein1992,Maoz1993,Nelson1999}. We will not attempt to employ such sophisticated techniques.
 
@@ -35,7 +35,7 @@ where $D_0$ is the maximum impact parameter \citep{Weinberg1986}. To eliminate t
 
 \subsection{Velocity distributions}
 
-The velocity space DF can be obtained by integrating out the spatial dependence in the full DF. As we are restricting our attention to the core and assuming spherical symmetry
+The velocity space DF can be obtained by integrating out the spatial dependence in the full DF. As we are restricting our attention to the NSC and assuming spherical symmetry
 \begin{equation}
 f(v) = 4\pi\intd{0}{r\sub{c}}{r^2f(\mathcal{E})}{r},
 \end{equation}
@@ -125,11 +125,11 @@ The relaxation time-scale is the time interval $\delta t$ over which the squared
 
 \section{Averaged time-scale}
 
-The relaxation time-scale \eqnref{tau_R1} is for a particular velocity $v_2$. This is not of much use to describe the core or even a (non-circular) orbit where there is a velocity range. It is necessary to calculate an average. Both the change in energy squared and the kinetic energy are averaged. We use two averages: over the distribution of bound velocities to give the relaxation time-scale for the system, and over a single orbit. The former is of use when considering the inner cut-off of stars due to collisions, the latter when considering the transition to GW inspiral.
+The relaxation time-scale \eqnref{tau_R1} is for a particular velocity $v_2$. This is not of much use to describe the NSC or even a (non-circular) orbit where there is a velocity range. It is necessary to calculate an average. Both the change in energy squared and the kinetic energy are averaged. We use two averages: over the distribution of bound velocities to give the relaxation time-scale for the system, and over a single orbit. The former is of use when considering the inner cut-off of stars due to collisions, the latter when considering the transition to GW inspiral.
 
 \subsection{System relaxation time-scale}\label{sec:system-ave}
 
-The total number of bound stars in the core is
+The total number of bound stars in the NSC is
 \begin{equation}
 N_{\mathrm{b},\,M} = \dfrac{3}{3/2 - p_M}\dfrac{\Gamma(p_M + 1)}{\Gamma(p_M + 7/2)}N_\ast k_M,
 \end{equation}
@@ -140,7 +140,7 @@ where $\Gamma(x)$ is the gamma function. Using this as a normalisation constant,
 \Beta\left(\dfrac{v^2}{2\sigma^2}; 3 - p_M, 1 + p_M\right) \vspace{1mm} & \dfrac{v^2}{2\sigma^2} \leq 1 \\
 \Beta\left(3 - p_M, 1 + p_M\right) & \dfrac{v^2}{2\sigma^2} \geq 1\end{array}\right\}\,\dd v. \right.
 \end{align}
-The mean squared velocity for bound stars in the core is then
+The mean squared velocity for bound stars in the NSC is then
 \begin{align}
 \overline{v^2_{M}} = {} & 3\sigma^2\dfrac{3/2 - p_M}{1/2 - p_M},
 \end{align}
@@ -223,7 +223,7 @@ We calculate the time-scale for an orbit, parameterized by $e$ and $r\sub{p}$, b
 \begin{equation}
 \left\langle v^2\left(e,r\sub{p}\right)\right\rangle = \dfrac{GM_\bullet(1 - e)}{r\sub{p}}.
 \end{equation}
-The orbital average is calculated according to \citep[section 2.2b]{Spitzer1987}
+The orbital average is calculated according to \citep[section 2.2b]{Spitzer1987Jr}
 \begin{equation}
 \left\langle X\right\rangle = \recip{T}\intd{0}{T}{X(t)}{t},
 \end{equation}
@@ -270,15 +270,15 @@ Second, we have only considered transfer of angular momentum based upon the diff
 
 Resonant relaxation is important in systems with (nearly) Keplerian potentials, but is quenched when relativistic precession becomes significant: inside the Schwarzschild barrier \citep{Merritt2011}. It is less likely to be of concern for the orbits influenced by GW emission \citep{Sigurdsson1997}, and should not be significant for our purposes.
 
-The optimal approach would be to perform a full $N$-body simulation of the Galactic core. This would dispense with all the complications of considering relaxation time-scales and estimates for cut-off radii. Unfortunately such a task still remains computationally challenging at the present time \citep[e.g.,][]{Li2012}.
+The optimal approach would be to perform a full $N$-body simulation of the Galactic NSC. This would dispense with all the complications of considering relaxation time-scales and estimates for cut-off radii. Unfortunately such a task still remains computationally challenging at the present time \citep[e.g.,][]{Li2012}.
 
-\section{Time-scales for the Galactic core}\label{sec:tauGC}
+\section{Time-scales for the Galactic nucleus}\label{sec:tauGC}
 
-Evaluating $\overline{\tau\sub{R}}$ for the Galactic core (using parameters from \secref{GC-Param}) and comparing with $\tau\sub{R}\super{Max}$, \eqnref{tauMaxwell} using $\kappa = 0.34$, shows a broad consistency:
+Evaluating $\overline{\tau\sub{R}}$ for the Galactic NSC (using parameters from \secref{GC-Param}) and comparing with $\tau\sub{R}\super{Max}$, \eqnref{tauMaxwell} using $\kappa = 0.34$, shows a broad consistency:
 \begin{equation}
 \overline{\tau\sub{R}} \simeq 2.0 \tau\sub{R}\super{Max}.
 \end{equation}
-This is reassuring since the standard Maxwellian approximation has been successful in characterising the properties of the Galactic core. We calculated $\tau\sub{R}\super{Max}$ for the dominant stellar component alone, which gives $\tau\sub{R}\super{Max}\simeq 4.5 \times 10^9\units{yr}$.
+This is reassuring since the standard Maxwellian approximation has been successful in characterising the properties of the Galactic NSC. We calculated $\tau\sub{R}\super{Max}$ for the dominant stellar component alone, which gives $\tau\sub{R}\super{Max}\simeq 4.5 \times 10^9\units{yr}$.
 
 Looking at the time-scales for each species in turn:
 \begin{equation}
@@ -289,22 +289,22 @@ Again there is good agreement.\footnote{\citet*{Freitag2006} found that using a 
 \overline{\tau\sub{R,\,BH}} \simeq 48 \tau\sub{R}\super{Max}.
 \end{equation}
 
-The time-scales for the lighter components are of the order of the Hubble time; the BH time-scale is much longer on account of the higher mean square velocity. This may indicate that the BH population is not fully relaxed: there has not been sufficient time for objects to diffuse onto the most tightly bound orbits (in which case the mean square velocity would be lower). We expect many of the most tightly bound BHs are not in a relaxed state, since GW inspiral is the dominant effect in determining the profile. This would deplete some of the innermost orbits, and lower the mean square velocity for the population. Since we do not consider the collisional disruption of BHs, we do not use $\overline{\tau\sub{R,\,BH}}$ in our model; it therefore has no influence on our results.
+The time-scales for the lighter components are of the order of the Hubble time; the BH time-scale is much longer on account of the higher mean square velocity. This may indicate that the BH population is not fully relaxed \citep[cf.][]{Antonini2011}: there has not been sufficient time for objects to diffuse onto the most tightly bound orbits (in which case the mean square velocity would be lower). We expect many of the most tightly bound BHs are not in a relaxed state, since GW inspiral is the dominant effect in determining the profile. This would deplete some of the innermost orbits, and lower the mean square velocity for the population. Since we do not consider the collisional disruption of BHs, we do not use $\overline{\tau\sub{R,\,BH}}$ in our model; it therefore has no influence on our results.
 
 The long BH time-scale also inevitably includes an artifact of our approximation that the system is homogeneous: in reality the BHs, being more tightly clustered towards the centre, pass through regions with greater density (both because of higher number density and a greater average object mass). Therefore, we expect the true relaxation time-scale to be reduced. 
 
-Formation of the cusp can occur over shorter time than the relaxation time-scale \citep{Bar-Or2012}. It should proceed on a dynamical friction time-scale $\tau\sub{DF} \approx (M_\star/M')\overline{\tau_{\mathrm{R},\,M'}}$ \citep[section 3.4]{Spitzer1987}. This reduces the difference between the different species, but does not make it obvious that the cusp has had sufficient time to form, especially if there has been a merger in the Galaxy's history which disrupted the central distribution of stars \citep{Gualandris2012}. Fortunately, observations of the thick disc indicate that there has not been a major merger in the last $10^{10}\units{yr}$ \citep{Wyse2008}.
+Formation of the cusp can occur over shorter time than the relaxation time-scale \citep{Bar-Or2012}. It should proceed on a dynamical friction time-scale $\tau\sub{DF} \approx (M_\star/M')\overline{\tau_{\mathrm{R},\,M'}}$ \citep[section 3.4]{Spitzer1987Jr}. This reduces the difference between the different species, but does not make it obvious that the cusp has had sufficient time to form, especially if there has been a merger in the Galaxy's history which disrupted the central distribution of stars \citep{Gualandris2012}. Fortunately, observations of the thick disc indicate that there has not been a major merger in the last $10^{10}\units{yr}$ \citep{Wyse2008}. Minor mergers, where (globular) clusters spiral in towards the MBH, have been suggested as a means of building the stellar population that is consistent with current observations \citep{Antonini2011a,Antonini2013}. These could prevent the cusp from forming if there has not been sufficient time for the stars to relax post-merger. In any case, the time taken to form a cusp depends upon the initial configuration of stars, and so depends upon the Galaxy's history.
 
-The existence of a cusp is a subject of debate. \citet{Preto2010} conducted $N$-body simulations to investigate the effects of strong mass segregation \citep{Alexander2009, Keshet2009} and found that cusps formed in a fraction of a (Maxwellian) relaxation time \citep{Amaro-Seoane2011}. \citet{Gualandris2012} conducted similar computations and found that cores are likely to persist for the dominant stellar popular; intriguingly, cusp formation amongst BHs is quicker, but still takes at least a (Maxwellian) relaxation time. In any case, the time taken to form a cusp depends upon the initial configuration of stars, and so depends upon the Galaxy's history. We cannot add further evidence to settle the matter. Our state of understanding may be improved following the passage through periapse of the gas cloud G2 this year \citep{Bartos2013}. For definiteness, we have assumed that a cusp has formed in our calculations.
+The existence of a cusp is a subject of debate. \citet{Preto2010} conducted $N$-body simulations to investigate the effects of strong mass segregation \citep{Alexander2009, Keshet2009} and found that cusps formed in a fraction of a (Maxwellian) relaxation time \citep{Amaro-Seoane2011d}. \citet{Gualandris2012} conducted similar computations and found that cores are likely to persist for the dominant stellar popular; intriguingly, cusp formation amongst BHs is quicker, but still takes at least a (Maxwellian) relaxation time. We cannot add further evidence to settle the matter. Our state of understanding may be improved following the passage through periapse of the gas cloud G2 this year \citep{Bartos2013}. For definiteness, we have assumed that a cusp has formed in our calculations.
 
-Time-scales for individual orbits range over many orders of magnitude. The longest are for the most tightly bound: the cusp forms from the outside-in, and these orbits may not yet be populated. The shortest time-scales are for the most weakly bound orbits, those with large periapses and eccentricities. The orbital period can be much shorter than these time-scales, highlighting the fringe where the Fokker--Planck approximation is not appropriate \citep{Spitzer1972}. The variation in the time-scale is exaggerated by neglecting the spatial variation in the stellar population.
+Time-scales for individual orbits range over many orders of magnitude. The longest are for the most tightly bound: the cusp forms from the outside-in, and these orbits may not yet be populated. The shortest time-scales are for the most weakly bound orbits, those with large periapses and eccentricities. The orbital period can be much shorter than these time-scales, highlighting the fringe where the Fokker--Planck approximation is not appropriate \citep{Spitzer1972Jr}. The variation in the time-scale is exaggerated by neglecting the spatial variation in the stellar population.
 
 When comparing GW inspiral time-scales and orbital angular momentum time-scales, equality can occur for times far exceeding the Hubble time. This only occurs for lower eccentricities, which are not of interest for bursts. However, it may be interesting to consider the stellar distribution in this region, which is not relaxed but dominated by GW inspiral. Since inspiral takes such a huge time to complete, it is possible there is a pocket of objects currently mid-inspiral that reflect the unrelaxed distribution.
 
 \section{Summary}
 
-We have formulated the relaxation time-scale following \citet{Chandrasekhar1960}, using the DFs of stars in the Galactic core. We have calculated both a system average, appropriate for estimating the time for stars to be replenished should they be lost, for example through collisions, and an orbital average, appropriate for estimating how quickly a star on a given orbit may be expected to be scattered due to two-body encounters. These are useful for understanding the properties of the distribution of stars in the Galactic core, giving insight into how such a system may have formed and also for estimating the likelihood of events such as EMRBs.
+We have formulated the relaxation time-scale following \citet{Chandrasekhar1960}, using the DFs of stars in the NSC. We have calculated both a system average, appropriate for estimating the time for stars to be replenished should they be lost, for example through collisions, and an orbital average, appropriate for estimating how quickly a star on a given orbit may be expected to be scattered due to two-body encounters. These are useful for understanding the properties of the distribution of stars in the NSC, giving insight into how such a system may have formed and also for estimating the likelihood of events such as EMRBs.
 
-In this chapter we have considered a different aspect of gravitational interactions. We have studied dynamical friction and the effects of two-body encounters. This was done using Newtonian gravity. Our study of EMRBS has thus spanned the full gamut of gravitational effects from classical Keplerian orbits in Newtonian fields to GW emission from highly relativistic COs skimming the event horizon of an MBH. This demonstrates how gravity permeates all astrophysical phenomena and why it is important to understand its behaviour in all regimes.
+In this chapter we have considered a different aspect of gravitational interactions. We have studied dynamical friction and the effects of two-body encounters. This was done using Newtonian gravity. Our study of EMRBs has thus spanned the full gamut of gravitational effects from classical Keplerian orbits in Newtonian fields to GW emission from highly relativistic COs skimming the event horizon of an MBH. This demonstrates how gravity permeates all astrophysical phenomena and why it is important to understand its behaviour in all regimes.
 
 In the next part we move on from using gravity to understand astrophysical systems, to studying the nature of gravity itself. If we do not have an accurate picture for the behaviour of gravity, we cannot hope to describe the complex astrophysical systems where it plays such a significant role.
