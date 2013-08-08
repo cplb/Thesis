@@ -31,7 +31,7 @@ The leading order dissipative correction to geodesic motion is calculated follow
 
 In this chapter, we begin to characterise the importance of these resonances for the purposes of modelling EMRIs. We find the orbital parameters for which the orbital frequencies are commensurate and construct a formula to calculate the difference in the orbital parameters when comparing an adiabatic evolution with one that incorporates the instantaneous effects of the self-force.
 
-We use geometric units with $G = c = 1$ throughout. Hence the gravitational radius and its associate time-scale become $M_\bullet$.
+We use geometric units with $G = c = 1$ throughout. Hence the gravitational radius and its associate time-scale become $r\sub{g} = t\sub{g} = M_\bullet$.
 
 \section{The theoretical framework of analysing resonances}
 
@@ -42,10 +42,10 @@ The evolution of an extreme-mass-ratio ($\eta \ll 1$) system is slow. Instantane
 The geodesic equations are (\citealt{Carter1968}; \citealt[section 62]{Chandrasekhar1992})
 \begin{subequations}
 \begin{align}
-\varrho^2 \diff{t}{\lambda} = {} & a\left(L_z - aE\sin^2 \theta\right) + \dfrac{r^2 + a^2}{\Delta}\mathcal{T},\\
-\varrho^2 \diff{r}{\lambda} = {} & \pm \sqrt{V_r},\\
-\varrho^2 \diff{\theta}{\lambda} = {} & \pm \sqrt{V_\theta},\\
-\varrho^2 \diff{\phi}{\lambda}  = & \dfrac{L_z}{\sin^2 \theta} - aE + \dfrac{a}{\Delta}\mathcal{T},
+\diff{t}{\lambda} = {} & a\left(L_z - aE\sin^2 \theta\right) + \dfrac{r^2 + a^2}{\Delta}\mathcal{T},\\
+\diff{r}{\lambda} = {} & \pm \sqrt{V_r},\\
+\diff{\theta}{\lambda} = {} & \pm \sqrt{V_\theta},\\
+\diff{\phi}{\lambda}  = & \dfrac{L_z}{\sin^2 \theta} - aE + \dfrac{a}{\Delta}\mathcal{T},
 \end{align}
 \end{subequations}
 where $\Delta = r^2 - 2M r + a^2$; the signs of the $r$ and $\theta$ equations may be chosen independently, and we have used
@@ -64,15 +64,15 @@ Using Mino time allows us to decouple the $r$ and $\theta$ motions.
 
 We only consider bound motion \citep{Wilkins1972}. The radial motion covers a range $r\sub{p} \leq r \leq r\sub{a}$ where the turning points are the periapsis $r\sub{p}$ and apoapsis $r\sub{a}$. Drawing upon Keplerian orbits we parameterize the motion using
 \begin{equation}
-r = \dfrac{p_\ast M_\bullet}{1+e\cos\psi},
+r = \dfrac{p}{1+e\cos\psi},
 \end{equation}
-with eccentricity $e$, (dimensionless) semilatus rectum $p_\ast$ and relativistic anomaly $\psi$, which increases secularly by $2\pi$ over an orbit  \citep{Darwin1961,Drasco2004}. The polar motion covers a range $\theta_- \leq \theta \leq \pi - \theta_-$. We parameterize this motion in terms $\chi$ according to \citep{Hughes2000}
+with eccentricity $e$, (dimensionless) semilatus rectum $p$ and relativistic anomaly $\psi$, which increases secularly by $2\pi$ over an orbit  \citep{Darwin1961,Drasco2004}. The polar motion covers a range $\theta_- \leq \theta \leq \pi - \theta_-$. We parameterize this motion in terms $\chi$ according to \citep{Hughes2000}
 \begin{equation}
 \cos\theta = \cos\theta_-\cos\chi.
 \end{equation}
 Whilst $\psi$ and $\chi$ are $2\pi$ periodic they are not the canonical action-angle variables \citep{Schmidt2002}; they are, however, easy to work with.
 
-The geodesic motion can equally be described by $\{E,L_z,Q\}$ or $\{p_\ast,e,\theta_-\}$ \citep{Schmidt2002}. Converting between them requires finding the solutions of $V_r = 0$ and $V_\theta = 0$. We employ a slightly different parameter set of $\{p_\ast,e,\iota\}$ with inclination \citep{Ryan1996,Glampedakis2002}
+The geodesic motion can equally be described by $\{E,L_z,Q\}$ or $\{p,e,\theta_-\}$ \citep{Schmidt2002}. Converting between them requires finding the solutions of $V_r = 0$ and $V_\theta = 0$. We employ a slightly different parameter set of $\{p,e,\iota\}$ with inclination \citep{Ryan1996,Glampedakis2002}
 \begin{equation}
 \tan \iota = \dfrac{\sqrt{Q}}{L_z}.
 \end{equation}
@@ -108,19 +108,19 @@ to act as Mino time frequencies. We can now convert to coordinate time frequenci
 \Omega_r = \dfrac{\Upsilon_r}{\Gamma}, \quad \Omega_\theta = \dfrac{\Upsilon_\theta}{\Gamma}, \quad \Omega_\phi = \dfrac{\Upsilon_\phi}{\Gamma}.
 \end{equation}
 
-Transient resonances occur when the radial and poloidal motions are commensurate, when
+Transient resonances occur when the radial and polar motions are commensurate, when
 \begin{equation}
 \nu = \dfrac{\Upsilon_r}{\Upsilon_\theta} = \dfrac{\Omega_r}{\Omega_\theta} = \dfrac{n_\theta}{n_r}
 \end{equation}
 is the ratio of small integers. At this point any Fourier series like those in \eqnref{Mino-Fourier} goes from being an expansion in two frequencies to being an expansion in a single frequency \citep{Bosley1992}.
 
-On resonance, the radial and poloidal motions are locked together such that we could express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To represent this, we use the $r$ phase at the $\theta$ turning point $\psi_{\theta_-} = \psi(\chi = 0)$. Varying $\psi_{\theta_-}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\psi_{\theta_-}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
+On resonance, the radial and polar motions are locked together such that we could express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To represent this, we use the $r$ phase at the $\theta$ turning point $\psi_{\theta_-} = \psi(\chi = 0)$. Varying $\psi_{\theta_-}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\psi_{\theta_-}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
 
 One might be concerned about the nature of resonances following the inclusion of the self-force: true geodesic motion only exists at zeroth order in $\eta$ and, whilst it is a good approximation over short time-scales, for small $\eta$ there is a small disparity. The conservative piece of the self-force induces extra precession which leads to a slight shift in the orbital frequencies \citep{Warburton2012}.\footnote{The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits is preserved albeit slightly deformed (\citealt{Arnold1963}; \citealt[chapter II, section 3.3 d]{Moser1973}). This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply \citep[chapter V, section 1 c]{Moser1973}. This is a further reason why resonances merit in-depth investigation.} The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
 \begin{figure}%[tbhp]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_ad_vs_inst_wibble}
-\caption{Evolution of the frequency ratio $\nu$ under both adiabatic (solid line) and instantaneous evolutions. The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of Arnold \citep{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$, $\eta = 10^{-6}$ and $a_\ast = 0.9$, the initial orbital parameters are $p_\ast = 10$, $e = 0.7$ and $\cos \iota = 0.2$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M_\bullet$.}\label{fig:wibbles}
+\caption{Evolution of the frequency ratio $\nu$ under both adiabatic (solid line) and instantaneous evolutions. The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of Arnold \citep{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$, $\eta = 10^{-6}$ and $a_\ast = 0.9$, the initial orbital parameters are $p = 10 M_\bullet$, $e = 0.7$ and $\cos \iota = 0.2$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M_\bullet$.}\label{fig:wibbles}
 \end{figure}
 However, there shall be a time span when the frequencies are consistently close to being commensurate. During this time the trajectory appears similar to a resonant trajectory, filling only a smaller region of the parameter space. It is this time period that is of interest for transient resonances \citep{Bosley1992}.
 
@@ -136,17 +136,17 @@ The first step in studying the effect of transient resonance is to locate orbita
 \begin{figure}%[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_res-2-5-95}
-\caption{Location of the $2/5$ resonance surface for an $a_\ast = 0.95$ MBH in terms of orbital semilatus rectum $p_\ast$, eccentricity $e$ and inclination $\iota$.}\label{fig:res-plane-2-5-95}
+\caption{Location of the $2/5$ resonance surface for an $a_\ast = 0.95$ MBH in terms of orbital semilatus rectum $p$, eccentricity $e$ and inclination $\iota$.}\label{fig:res-plane-2-5-95}
 \end{figure}
 The resonances occur at relatively small periapses, corresponding to regions of strong-field gravity.
-Similar resonance surfaces can be found for other spin values and for other resonances. When considering the full parameter set of $\{p_\ast,e,\iota,a_\ast,\nu\}$ it is apparent that the search for resonances becomes expensive as a consequence of the dimensionality. It is therefore useful to have a guide of where to look. We shall attempt to build a model for the resonance plane.
+Similar resonance surfaces can be found for other spin values and for other resonances. When considering the full parameter set of $\{p,e,\iota,a_\ast,\nu\}$ it is apparent that the search for resonances becomes expensive as a consequence of the dimensionality. It is therefore useful to have a guide of where to look. We shall attempt to build a model for the resonance plane.
 
 \citet{Brink2013} provide series expansions for the location of resonances in the limit of equatorial orbits for small spin and eccentricity. We do not follow this approach of trying to find analytic expressions for the resonance surface. The expressions become complicated when venturing away from limiting cases. Instead, we build an approximate phenomenological model and fit this to the resonance plane.%\footnote{A stopped clock is precisely correct twice a day, while a clock that is five minutes slow is never right but will often be close enough. Within this metaphor, our approximation would be a clock that varies between telling the correct time and being fifteen minutes off throughout the day: it is generally going to be good enough to give you a sense of the time but if you have an important event you should check with something better.}
 This should be useful for designating the region in which resonance could be expected. To locate them precisely it is necessary to solve $\Omega = 0$ numerically; the approximate model should give a suitable starting point.
 
 The resonant semilatus rectum for any particular spin and resonance ratio can be well approximated as
 \begin{equation}
-p_\ast(e,\iota;a_\ast,\nu) \simeq A\dfrac{1 + B e + D \cos\iota}{1 + C\exp(e)}.
+p(e,\iota;a_\ast,\nu) \simeq A\dfrac{1 + B e + D \cos\iota}{1 + C\exp(e)} M_\bullet.
 \end{equation}
 The coefficients $\{A,B,C,D\}$ depend upon the spin and the particular resonance; they can be approximated as
 \begin{align} 
@@ -163,17 +163,17 @@ a_4 = 4.8846; \quad b_0 = 0.7692; \quad b_1 = 1.4752; \quad b_2 = 1.4861; \\
 b_3 = -0.5974; \quad c_0 = -0.02332; \quad d_0 = 0.7968; \quad d_1 = 0.3115.\end{array}
 \end{equation} 
 %These were fitted for resonances with $\nu = 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 2/5, 3/7, 1/2, 4/7, 3/5, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 9/10, 19/20, 49/50, 99/100$, with BH spins of $a_\ast = 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.93, 0.95, 0.97, 0.99, 0.999$. 
-Using this approximation, the maximum error in $p_\ast$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}. 
+Using this approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}. 
 \begin{figure}%[htp]
 \centering
  \subfigure[{Maximum error}]{\includegraphics[width=0.475\textwidth]{./images/Fig_fit-error-max}} \quad \subfigure[{Root-mean-square error}]{\includegraphics[width=0.475\textwidth]{./images/Fig_fit-error-RMS}}
 \caption{Relative error in the approximate semilatus rectum compared to the accurate numerical result as a function of MBH spin $a_\ast$ and resonance ratio $\nu$. In both figures we are marginalising over eccentricity and inclination.}\label{fig:p-error}
 \end{figure}
-The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p_\ast$, such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
+The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p/M_\bullet$, such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
 
 \section{Importance of resonances}
 
-Having determined the location of resonances we may now address their importance. We study the enhancement of the flux of $E$, $L_z$ and $Q$ during resonance and, equivalently, the change in the $p_\ast$, $e$ and $\iota$. We also investigate the dephasing in the waveform compared to a purely adiabatic evolution. This is of interest for matched filtering analysis of inspirals.
+Having determined the location of resonances we may now address their importance. We study the enhancement of the flux of $E$, $L_z$ and $Q$ during resonance and, equivalently, the change in the $p$, $e$ and $\iota$. We also investigate the dephasing in the waveform compared to a purely adiabatic evolution. This is of interest for matched filtering analysis of inspirals.
 
 \subsection{Time-scales}
 
