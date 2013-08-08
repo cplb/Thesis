@@ -18,8 +18,8 @@ Being able to accurately model the influence of the self-force shall allow us to
 \end{equation}
 where $n_r$ and $n_\theta$ are integers (with no common factors). The azimuthal motion is not important because of the axisymmetry of the background spacetime. During resonance, terms in the self-force that usually average to zero can combine coherently, significantly impacting the motion \citep{Flanagan2012a}.
 
-Geodesic motion in Kerr spacetime can be described by use of the action--angle formalism \citep[chapter 10]{Goldstein2002}. We shall consider a body of mass $\mu$ orbiting an MBH of mass $M_\bullet$, where $\eta = \mu/M \ll 1$ is used as a perturbative parameter, and describe the motion in the directions of the standard Boyer--Lindquist coordinates using generalised angle variables $q_\alpha = \{q_t,q_r,q_\theta,q_\phi\}$ \citep{Hinderer2008}. We denote the integrals of the geodesic motion, the generalised action variables, by $J_A$. These are the energy per unit mass $E$, the axial angular momentum per unit mass $L_z$ and the Carter constant per unit mass squared $Q$ \citep{Carter1968}. The system evolves following \citep{Flanagan2012}
-\begin{subequations}
+Geodesic motion in Kerr spacetime can be described by use of the action--angle formalism \citep[chapter 10]{Goldstein2002}. We shall consider a body of mass $\mu$ orbiting an MBH of mass $M_\bullet$, where $\eta = \mu/M_\bullet \ll 1$ is used as a perturbative parameter, and describe the motion in the directions of the standard Boyer--Lindquist coordinates using generalised angle variables $q_\alpha = \{q_t,q_r,q_\theta,q_\phi\}$ \citep{Hinderer2008}. We denote the integrals of the geodesic motion, the generalised action variables, by $J_A$. These are (some combination of) the energy per unit mass $E$, the axial angular momentum per unit mass $L_z$ and the Carter constant per unit mass squared $Q$ \citep{Carter1968}. The system evolves following \citep{Flanagan2012}
+\begin{subequations}\label{eq:Mino-E-o-M}
 \begin{align}
 \diff{q_\alpha}{\lambda} = {} & \omega_\alpha(\boldsymbol{J}) + \eta g_\alpha^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2}; \\
 \diff{J_A}{\lambda} = {} & \eta G_A^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2},
@@ -29,7 +29,7 @@ where $\lambda$ is Mino time \citep{Mino2003}, and the forcing functions $g_\alp
 
 The leading order dissipative correction to geodesic motion is calculated following the adiabatic prescription \citep{Hinderer2008}: by dropping the forcing term $g_\alpha^{(1)}$ (and all higher order terms) and replacing the the forcing term $G_A^{(1)}$ with its average over the $2$-torus parameterized by $q_r$ and $q_\theta$ $\langle G_A^{(1)}\rangle_{q_r,\,q_\theta}$ \citep{Drasco2005}. For most orbits this is sufficient, $G_A^{(1)}$ is given by its average value plus a rapidly oscillating component \citep[chapter 5, section 1]{Arnold1988}. However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the $2$-torus but instead traces out a $1$-dimensional subspace.\footnote{For illustrations, see \citet{Grossman2012}.} There are then contributions to the self-force that no longer average out beyond $\langle G_A^{(1)}\rangle_{q_r,\,q_\theta}$. Intuitively, we expect that this effect is more important for ratios of small integers as when the integers are large, the orbit comes close to all points on the $2$-torus.
 
-In this chapter, we begin to characterise the importance of these resonances for the purposes of modelling EMRIs. We find the orbital parameters for which the orbital frequencies are commensurate and construct a formula to calculate the difference in the orbital parameters when comparing an adiabatic evolution with one that incorporates the instantaneous effects of the self-force.
+In this chapter, we begin to characterise the importance of these resonances for the purposes of modelling EMRIs. We find the orbital parameters for which the orbital frequencies are commensurate (\secref{location}) and construct a formula to calculate the difference in the orbital parameters when comparing an adiabatic evolution with one that incorporates the instantaneous effects of the self-force.
 
 We use geometric units with $G = c = 1$ throughout. Hence the gravitational radius and its associate time-scale become $r\sub{g} = t\sub{g} = M_\bullet$.
 
@@ -91,11 +91,11 @@ The orbital frequencies are thus
 \begin{equation}
 \Upsilon_r = \dfrac{2\pi}{\Lambda_r}, \quad \Upsilon_\theta = \dfrac{2\pi}{\Lambda_\theta}.
 \end{equation}
-The geodesic equations for coordinate time $t$ and azimuthal angle $\phi$ are just functions of $r$ and $\theta$, hence their evolutions can be expressed as Fourier series \citep{Drasco2005}
+The geodesic equations for coordinate time $t$ and azimuthal angle $\phi$ are just functions of $r$ and $\theta$, hence their evolutions can be expressed as Fourier series \citep{Drasco2004}
 \begin{subequations}
 \begin{align}
-\diff{t}{\lambda} = {} & \sum_{k_r,\,k_\theta}T_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right], \\
-\diff{\phi}{\lambda} = {} & \sum_{k_r,\,k_\theta}\Phi_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right].
+\diff{t}{\lambda} = {} & \sum_{k_r,\,k_\theta}T_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\lambda\right], \\
+\diff{\phi}{\lambda} = {} & \sum_{k_r,\,k_\theta}\Phi_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\lambda\right].
 \label{eq:Mino-Fourier}
 \end{align}
 \end{subequations}
@@ -114,7 +114,7 @@ Transient resonances occur when the radial and polar motions are commensurate, w
 \end{equation}
 is the ratio of small integers. At this point any Fourier series like those in \eqnref{Mino-Fourier} goes from being an expansion in two frequencies to being an expansion in a single frequency \citep{Bosley1992}.
 
-On resonance, the radial and polar motions are locked together such that we could express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To represent this, we use the $r$ phase at the $\theta$ turning point $\psi_{\theta_-} = \psi(\chi = 0)$. Varying $\psi_{\theta_-}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\psi_{\theta_-}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
+On resonance, the radial and polar motions are locked together such that we could express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To represent this, we use the $\theta$ phase at periapsis $\chi\mathrm{p}$; Varying $\chi\sub{p}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\chi\sub{p}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
 
 One might be concerned about the nature of resonances following the inclusion of the self-force: true geodesic motion only exists at zeroth order in $\eta$ and, whilst it is a good approximation over short time-scales, for small $\eta$ there is a small disparity. The conservative piece of the self-force induces extra precession which leads to a slight shift in the orbital frequencies \citep{Warburton2012}.\footnote{The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits is preserved albeit slightly deformed (\citealt{Arnold1963}; \citealt[chapter II, section 3.3 d]{Moser1973}). This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply \citep[chapter V, section 1 c]{Moser1973}. This is a further reason why resonances merit in-depth investigation.} The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
 \begin{figure}%[tbhp]
@@ -130,7 +130,7 @@ To follow the evolution of the inspiral we must have a means of modelling the se
 
 %For comparison, Flanagan, Hughes and Ruangeri \citep{Flanagan2012a} use a Teukolsky equation calculation of GW fluxes to account for radiation reaction.
 
-\section{Location of resonances}
+\section{Location of resonances}\label{sec:location}
 
 The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for an <BH of spin $a_\ast = 0.95$. 
 \begin{figure}%[htbp]
@@ -173,11 +173,11 @@ The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\n
 
 \section{Importance of resonances}
 
-Having determined the location of resonances we may now address their importance. We study the enhancement of the flux of $E$, $L_z$ and $Q$ during resonance and, equivalently, the change in the $p$, $e$ and $\iota$. We also investigate the dephasing in the waveform compared to a purely adiabatic evolution. This is of interest for matched filtering analysis of inspirals.
+Having determined the location of resonances we may now address their importance. We wish to quantify the enhancement (or decrement) of the flux of $E$, $L_z$ and $Q$ during resonance and, equivalently, the change in the $p$, $e$ and $\iota$. A change in the orbital parameters relative to the adiabatic prescription would lead to a dephasing of waveforms. This is of interest for matched filtering analysis of inspirals.
 
-\subsection{Time-scales}
+\subsection{Time-scales}\label{sec:res-time}
 
-When analysing resonances it is useful to refer to a number of reference time-scales. We  always use coordinate time $t$, corresponding to what is measured by an observer at infinity, for these. We use the orbital period $T$, the evolution time-scale $\tau\sub{ev}$, the precession time-scale $\tau\sub{pres}$ and the resonance time-scale $\tau\sub{res}$.
+When analysing resonances it is useful to refer to a number of reference time-scales. We always use coordinate time $t$, corresponding to what is measured by an observer at infinity, for these. Translation to Mino time can be done with an appropriate factor of $\Gamma$. We use the orbital period $T$, the evolution time-scale $\tau\sub{ev}$, the precession time-scale $\tau\sub{pres}$ and the resonance time-scale $\tau\sub{res}$.
 
 The simplest time-scales are the orbital periods $T_r = 2\pi/\Omega_r$, $T_\theta = 2\pi/\Omega_\theta$ and $T_\phi = 2\pi/\Omega_\phi$. These shall be the shortest in our set. We shall use $T$ to denote a time-scale of the same order as the orbital periods.
 
@@ -185,7 +185,7 @@ We define the evolution time-scale as
 \begin{equation}
 \tau\sub{ev} = \dfrac{\nu}{\dot{\nu}},
 \end{equation}
-where an overdot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It acts as an inspiral time-scale. It is long in all cases we study, $\tau\sub{ev} \sim \order{T/\eta}$. It is this property which makes extreme-mass-ratio inspirals interesting, as we can follow the waveform for many cycles, accruing high signal-to-noise ratios. This is also what allows us to use the adiabatic prescription, as it means the trajectory moves slowly through different orbital parameters.
+where an overdot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It acts as an inspiral time-scale. It is long in all cases we study, $\tau\sub{ev} \sim \order{\eta^{-1}T}$. It is this property which makes extreme-mass-ratio inspirals interesting, as we can follow the waveform for many cycles, accruing high signal-to-noise ratios. This is also what allows us to use the adiabatic prescription, as it means the trajectory moves slowly through different orbital parameters.
 
 We use the precession time-scale
 \begin{equation}
@@ -205,7 +205,7 @@ Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we 
 \end{equation}
 The resonant time-scale should give an indication of the time over which we expect the effects of the resonance to be felt \citep{Bosley1992}. Consider the phase of the Mino time Fourier expansion on resonance; neglecting the constant, the resonant Fourier component has form
 \begin{equation}
-\varphi_{n_r,\,-n_\theta} \simeq \left(n_r\Upsilon_r - n_\theta\Upsilon_\theta\right)\lambda + \left(n_r\dot{\Upsilon_r} - n_\theta\dot{\Upsilon}_\theta\right)\lambda^2 + \ldots
+\varphi_{n_r,\,-n_\theta} \simeq \left(n_r\Upsilon_r - n_\theta\Upsilon_\theta\right)\lambda + \left(n_r\dot{\Upsilon}_r - n_\theta\dot{\Upsilon}_\theta\right)\lambda^2 + \ldots
 \end{equation}
 Typically, the first term is non-zero and this gives the familiar oscillation. On resonance it is zero, leaving the next order term to govern the behaviour \citep{Flanagan2012}. Only once we have moved far enough away from resonance for the first term to dominate the second do we recapture the non-resonant behaviour. The first term (translating from Mino time to coordinate time) sets $T$, the second sets $\tau\sub{res}$.
 
@@ -218,7 +218,7 @@ using \eqnref{t-pres} and substituting $\Omega(t\sub{pres}) \simeq \dot{\Omega}t
 \begin{equation}
 t\sub{pres} \simeq \tau\sub{res}.
 \end{equation}
-The two time-scales are equivalent. We shall preferentially use $\tau\sub{res}$ to denote the resonance width. It is shorter than the inspiral time-scale, but longer than an orbital period, $\tau\sub{res} \sim \order{\sqrt{\eta}\tau\sub{ev}} \sim \order{T/\sqrt{\eta}}$ \citep{Flanagan2012,Gair2011a}; it therefore acts as a bridge between the two time-scales \citep{Hinderer2008}.
+The two time-scales are equivalent. We shall preferentially use $\tau\sub{res}$ to denote the resonance width. It is shorter than the inspiral time-scale, but longer than an orbital period, $\tau\sub{res} \sim \order{\eta^{1/2}\tau\sub{ev}} \sim \order{\eta^{-1/2}T}$ \citep{Flanagan2012,Gair2011a}; it therefore acts as a bridge between the two time-scales \citep{Hinderer2008}.
 
 Since we shall be considering Fourier decompositions, in anticipation of future results, we shall also define time-scales for the $s$-th resonant frequency harmonic
 \begin{align}
@@ -226,3 +226,190 @@ Since we shall be considering Fourier decompositions, in anticipation of future 
 \tau_{\mathrm{res},\,s} = {} & \left[\dfrac{2\pi}{\left|\langle s\dot{\Omega}(0)\rangle_t\right|}\right]^{1/2}.
 \end{align}
 These assume that $s$ is a non-zero integer.
+
+\subsection{Perturbative solution for passage through resonance}
+
+The impact of passing through resonance on the evolution can be modelled analytically using asymptotic expansions \citep{Gair2012}. Solutions for the motion are constructed far away from resonance and these are matched to a transition region in the vicinity of resonance \citep{Kevorkian1971,Bosley1992}. By comparing the matched solution which incorporates the effects of resonance with the results of an adiabatic evolution, it is possible to estimate the discrepancy in the orbital parameters. If this error is sufficiently small, then it is safe to ignore the effects of the resonance; however, only a small difference is needed to impact the subsequent waveform, since the orbit will be evolved for $\sim \order{\eta^{-1}}$ cycles \citep{Flanagan2012}. We derive formulae which can be used to calculate the discrepancy in the orbital parameters.
+
+The following derivation is based upon the analysis of \citet{Kevorkian1987}.\footnote{The same theory underpins the analysis of \citet{Hinderer2008}, but this explicitly ignores resonances.} Small adjustments have been made to specialise to the problem of a GW inspiral, but the general argument is unchanged.
+
+We model the system using action--angle variables. We are only concerned with the $r$ and $\theta$ motions, so we have a two-dimensional system. We perform a canonical transformation  to isolate the resonant combination $q = n_r q_r - n_\theta q_\theta$ \citep{Bosley1992}. This becomes one of the new angle variables, the other variable $q'$ can be either $q_r$ or $q_\theta$ (as on resonance, varying one necessarily changes the other). We use $J$ as the conjugate action variable to $q$ and $\omega = n_r \omega_r - n_\theta \omega_\theta$ as its frequency, and similarly $J'$ as the momentum conjugate to $q'$. The system evolves through resonance slowly, on an evolution time-scale, so we parameterize it in terms of a slow time parameter
+\begin{equation}
+\tilde{\lambda} = \frac{\lambda}{\eta}.
+\end{equation}
+The orbits of $q'$ proceed with the fast time $\lambda$, since this is much more rapid than the evolution we are interested in, it is safe to average over it. For this analysis we consider the reduced problem of evolving $q$ and $J$.
+
+At resonance $\tilde{\lambda} = \tilde{\lambda}_\star$ and $\omega(\tilde{\lambda}_\star) = 0$. We assume that the frequency has a simple zero and can be expanded as
+\begin{equation}
+\omega(\tilde{\lambda}) = \varpi_1(\tilde{\lambda} - \tilde{\lambda}_\star) + \varpi_2(\tilde{\lambda} - \tilde{\lambda}_\star)^2 + \ldots
+\label{eq:omega-series}
+\end{equation}
+The frequency is actually a function of the angle variables, but since these evolve with $\tilde{\lambda}$ it is safe to write it as a function of the slow time.\footnote{In effect we are defining $\omega(\tilde{\lambda}) \equiv \omega[J(\tilde{\lambda})]$.}
+
+Using the slow time, the equations of motion (\ref{eq:Mino-E-o-M}) become
+\begin{subequations}
+\begin{align}
+\diff{q}{\tilde{\lambda}} = {} & \frac{\omega(J)}{\eta} + \sum_s g_s^{(1)}(J)\exp(is q)  + \order{\eta}; \\
+\diff{J}{\tilde{\lambda}} = {} & \sum_s G_s^{(1)}(J)\exp(is q) + \order{\eta^2},
+\end{align}
+\end{subequations}
+where we have rewritten the forcing terms as Fourier series. We shall solve these before resonance and then match these to a solution in the transition regime about resonance.
+
+\subsubsection{Solution before resonance}\label{sec:before-res}
+
+To find a solution away from the resonance, we shall decompose the problem to be a function of two time-scales \citep{Kevorkian1971}. We use the slow time $\tilde{\lambda}$ and, as a proxy for the fast time,
+\begin{equation}
+\Psi = \intd{0}{\lambda}{\omega(\eta\tau)}{\tau} = \recip{\eta}\intd{0}{\tilde{\lambda}}{\omega(\tau)}{\tau}.
+\end{equation}
+From this
+\begin{equation}
+\omega = \diff{\Psi}{\lambda}.
+\end{equation}
+In terms of these two variables, we can build ansatz solutions
+\begin{subequations}
+\begin{align}
+q(\lambda;\,\eta) = {} & \Psi + q_0(\tilde{\lambda}) + \eta q_1(\Psi,\tilde{\lambda}) + \order{\eta^2}; \\
+J(\lambda;\,\eta) = {} & J_0(\tilde{\lambda}) + \eta J_1(\Psi,\tilde{\lambda}) + \order{\eta^2}.
+\end{align}
+\end{subequations}
+We can also write a series expansion for the frequency
+\begin{equation}
+\omega(\lambda;\,\eta) = \omega_0((\tilde{\lambda}) + \eta \omega_1(\tilde{\lambda}) + \order{\eta^2}.
+\end{equation}
+Taking the two time-scales as independent, we may write the time derivative to $\order{\eta}$ as
+\begin{equation}
+\diffop{\lambda} = \omega_0\partialdiffop{\Psi} + \eta\omega_1\partialdiffop{\Psi} + \eta\partialdiffop{\tilde{\lambda}}.
+\end{equation}
+
+Using the two time-scale decomposition to replace the time derivatives in the equations of motion, and substituting in the ansatz expansions gives, to first order,
+\begin{subequations}
+\begin{align}
+\label{eq:q-1}
+\omega_0 + \eta\omega_1 + \eta\partialdiff{q_0}{\tilde{\lambda}} + \eta\omega_0\partialdiff{q_1}{\Psi} = {} & \omega(J_0) + \eta\diff{\omega}{J}J_1 + \eta \sum_s g_s^{(1)}(J_0)\exp(is \Psi + Q_0); \\
+\eta\partialdiff{J_0}{\tilde{\lambda}} + \eta\omega_0\partialdiff{J_1}{\Psi} = {} & \eta \sum_s G_s^{(1)}(J_0)\exp(is \Psi + Q_0).
+\label{eq:J-1}
+\end{align}
+\end{subequations}
+Averaging \eqnref{J-1} over $\Psi$ gives\footnote{The ansatz is constructed such that $J_0 \equive \langle J_0\rangle_\Psi$ and $q_0 \equive \langle q_0\rangle_\Psi$.}
+\begin{equation}
+\partialdiff{J_0}{\tilde{\lambda} = G_0^{(1)}(J_0).
+\end{equation}
+This is describes the adiabatic evolution, hence we can identify $J_0(\tilde{\lambda})$ with (the lowest order piece of) the adiabatic solution \citep{Hinderer2008}. If we similarly average \eqnref{q-1} we find
+\begin{equation}
+\omega_0 + \eta\omega_1 +\eta\partialdiff{q_0}{\tilde{\lambda}} = \omega(J_0) + \eta\partialdiff{\omega}{J}\langle J_1\rangle_\Psi + g_0^{(1)}(J_0).
+\end{equation}
+From this we can identify
+\begin{subequations}
+\begin{align}
+\omega_0 = {} & \omega(J_0); \\
+\omega_1 = {} & \partialdiff{\omega}{J}\langle J_1\rangle_\Psi,
+\end{align}
+\end{subequations}
+and hence
+\begin{align}
+\partialdiff{q_0}{\tilde{\lambda}} = {} & g_0^{(1)}(J_0); \\
+q_0 = {} & \kappa_0 + \intd{0}{\tilde{\lambda}}{g_0^{(1)}[J_0(\tau)]}{\tau}.
+\end{align}
+We now have expressions for the lowest order terms in the expansions.
+
+Subtracting the $s = 0$ components from \eqnref{J-1} leaves
+\begin{equation}
+\omega_0\partialdiff{J_1}{\Psi} = \sum_{s\,\neq\,0} G_s^{(1)}(J_0)\exp(is \Psi + Q_0).
+\end{equation}
+This can be solved to give
+\begin{equation}
+J_1 = \langle J_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \frac{G_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+\end{equation}
+We can do the same for \eqnref{q-1} to obtain
+\begin{equation}
+q_1 = \langle q_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \frac{g_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+\end{equation}
+To find the constants of integration, $\langle q_1\rangle_\Psi$ and $\langle J_1\rangle_\Psi$, it is necessary to extend the analysis to second order. This shows that $\langle J_1\rangle_\Psi$ is the first order component of the adiabatic solution. We do not need explicit forms for later calculations, so we will not proceed further. We have successfully constructed the pre-resonance solution.
+
+\subsubsection{Solution near resonance}\label{sec:interior-res}
+
+Near to resonance, we consider an interior layer expansion \citep{Kevorkian1971}. As explaining in \secref{res-time}, evolution near resonance proceeds on a time-scale intermediate between the slow and fast times. We therefore introduce a rescaled time
+\begin{equation}
+\hat{\lambda} = \frac{\tilde{\lambda} - \tilde{\lambda}_\star}{\eta^{1/2}} = \eta^{1/2}(\lambda - \lambda_\star).
+\end{equation}
+As for the before resonance solution, we can create series expansion; however, now we expand in terms of $\eta^{1/2}$ \citep{Flanagan2012}
+\begin{subequations}
+\begin{align}
+q(\hat{\lambda};\,\eta) = {} & \hat{q}_0(\hat{\lambda}) + \eta^{1/2} \hat{q}_{1/2}(\hat{\lambda}) + \order{\eta}; \\
+J(\hat{\lambda};\,\eta) = {} & \hat{J}_0 + \eta^{1/2} \hat{J}_1(\hat{\lambda}) + \order{\eta}.
+\end{align}
+\end{subequations}
+The series expansion for the frequency, \eqnref{omega-series}, can be rewritten as
+\begin{equation}
+\omega(\hat{\lambda}) = \eta^{1/2}\varpi_1\hat{\lambda} + \eta\varpi_2\hat{\lambda}^2 + \order{\eta^{3/2}}.
+\end{equation}
+Proceeding to write the equations of motion in terms of the rescaled time gives
+\begin{subequations}
+\begin{align}
+\diff{q}{\hat{\lambda}} = {} & \varpi_1\hat{\lambda} + \eta^{1/2}\varpi_2\hat{\lambda}^2 + \eta^{1/2}\sum_s g_s^{(1)}(\hat{J}_0,\tilde{\lambda}_\star)\exp(is \hat{q}_0)  + \order{\eta}; \\
+\diff{J}{\hat{\lambda}} = {} & \eta^{1/2}\sum_s G_s^{(1)}(\hat{J}_0,\tilde{\lambda}_\star)\exp(is \hat{q}_0) + \order{\eta}.
+\end{align}
+\end{subequations}
+
+From the equations of motion we can match terms by their order in $\eta^{1/2}$. At zeroth order we find
+\begin{equation}
+\hat{J}_0 = \hat{\varrho}_0
+\end{equation}
+is constant, and
+\begin{equation}
+\hat{q}_0 = \hat{\kappa}_0 + \frac{\varpi_1\hat{\lambda}^2}{2}.
+\end{equation}
+Using these, we can build the next order terms
+\begin{align}
+\hat{q}_{1/2} = {} & \hat{\kappa}_{1/2} + \frac{\varpi_2\hat{\lambda}^3}{3} + g_0^{(1)}(\hat{\varrho}_0)\hat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\hat{\varrho}_0)\exp(is \hat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau}; \\
+\hat{J}_{1/2} = {} & \hat{\varrho}_{1/2} + G_0^{(1)}(\hat{\varrho}_0)\hat{\lambda} + \sum_{s\,\neq\,0}G_s^{(1)}(\hat{\varrho}_0)\exp(is \hat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau};
+\end{align}
+Both of these involve the complex Fresnel integral, the details of which are given in the following section. We have now constructed the interior solution.
+
+\subsubsection{The complex Fresnel integral}
+
+\begin{equation}
+\lim_{\hat{\lambda} \rightarrow -\inft}\intd{0}{\hat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau} \sim \frac{\sgn \hat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1}}}\exp\left[\sgn(s\varpi_1)\frac{\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\frac{is \varpi_1 \hat{\lambda}^2}{2}\right).
+\label{eq:Fres-limit}
+\end{equation}
+
+\subsubsection{Matching solutions}
+
+To complete our solution we must match the pre-resonance solution of \secref{before-res} with the near resonance solution of \secref{interior-res}. This is achieved by rewriting the before resonance solution in terms of the rescaled time $\hat{\lambda}$ and comparing this with the near resonance solution expanded in the limit of $\hat{\lambda} \rightarrow -\infty$.
+
+To rewrite the pre-resonance solution, we begin with the fast phase parameter
+\begin{equation}
+\Psi(\hat{\lambda}) = \frac{\Psi_\star}{\eta} + \frac{\varpi_1\hat{\lambda}^2}{2} + \eta^{1/2}\frac{\varpi_2\hat{\lambda}^3}{3} + \order{\eta}.
+\end{equation}
+Using this, the angle variable is
+\begin{equation}
+q(\hat{\lambda};\,\eta) = \frac{\Psi_\star}{\eta} + \frac{\varpi_1\hat{\lambda}^2}{2} + \kappa_\star + \eta^{1/2}{\varpi_2\hat{\lambda}^3}{3} + \eta^{1/2}g_0^{(1)}(J_\star)\hat{\lambda} + \frac{\eta^{1/2}}{\varpi_1\hat{\lambda}}\sum_{s\,\neq\,0}\recip{is}g_s^{(1)}(J_\star)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\hat{\lambda}^2}{2}\right)\right] + \order{\eta},
+\end{equation}
+where we have defined $J_\star \equiv J_0(\tilde{\lambda}_\star)$ and $\kappa_\star = \kappa_0 + \intd{0}{\tilde{\lambda}_\star}{g_0^{(1)}[J_0(\tau)]}{\tau}$. The action variable is
+\begin{equation}
+J(\hat{\lambda};\,\eta) = J_\star + \eta^{1/2}G_0^{(1)}(J_\star)\hat{\lambda} + \frac{\eta^{1/2}}{\varpi_1\hat{\lambda}}\sum_{s\,\neq\,0}\recip{is}]G_s^{(1)}(J_\star)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\hat{\lambda}^2}{2}\right)\right] + \order{\eta}.
+\end{equation}
+We can now compare this with the near resonance expansion with the Fresnel integral replaced with the limiting form \eqnref{Fres-limit}.
+
+At zeroth order, we immediately obtain
+\begin{align}
+\hat{\kappa}_0 = {} & \frac{\Psi_\star}{\eta} + \kappa_\star; \\
+\hat{\varrho}_0 = {} & J_\star.
+\end{align}
+These fix the integration constants. The more interest result is now found by comparing the $\order{\eta^{1/2}}$ terms. Equating the angle variable expressions igves
+\begin{align}
+\hat{\kappa}_{1/2} + \sum_{s\,\neq\,0}g_s^{(1)}(\hat{\varrho}_0)\exp(is \hat{\kappa}_0)\left\{\frac{\sgn \hat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1}}}\exp\left[\sgn(s\varpi_1)\frac{\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\frac{is \varpi_1 \hat{\lambda}^2}{2}\right)\right\} = {} \recip{is\varpi_1\hat{\lambda}}g_s^{(1)}(\hat{\varrho}_0)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\hat{\lambda}^2}{2}\right)\right] \nonumber \\
+\hat{\kappa}_{1/2} = {} & -\sum_{s\,\neq\,0}g_s^{(1)}(\hat{\varrho}_0)\exp(is \hat{\kappa}_0)\frac{\sgn \hat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1}}}\exp\left[\sgn(s\varpi_1)\frac{\pi}{4}\right].
+\end{align}
+Similarly, for the action variables
+\begin{equation}
+\hat{\varrho}_{1/2} = {} & -\sum_{s\,\neq\,0}G_s^{(1)}(\hat{\varrho}_0)\exp(is \hat{\kappa}_0)\frac{\sgn \hat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1}}}\exp\left[\sgn(s\varpi_1)\frac{\pi}{4}\right].
+\end{equation}
+We now have a matched solution through resonance.
+
+Having constructed the solution, we see that the lowest order evolution corresponds to the adiabatic solution. The deviations come in at the following order. When we switch from the pre-resonance solution to the post-resonance solution, there is a change in the sign of $\hat{\lambda}$. Therefore, when matching the post-resonance solution $\hat{\varrho}_{1/2}$ and $\hat{\kappa}_{1/2}$ will have also changed sign: there is a change of
+\begin{align}
+\Delta q = {} & 2 \hat{\kappa}_{1/2}; \\
+\Delta J = {} & 2 \hat{\kappa}_{1/2}
+\end{align}
+across the resonance \citep{Kevorkian1987}. We are not particularly interested in the change in $J$
