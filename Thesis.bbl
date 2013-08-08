@@ -1,4 +1,4 @@
-\begin{thebibliography}{569}
+\begin{thebibliography}{570}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -974,12 +974,6 @@ Fish, V.L. \textit{et al\textup{.}};
   Astrophysical Journal}}; \textbf{727}(2):L36(6); 2011;
   \href{http://arxiv.org/abs/1011.2472}{\tt arXiv:1011.2472}.
 
-\bibitem[{Flanagan \& Hinderer(2007)}]{Flanagan2007}
-Flanagan, {\'E}.{\'E}. \& Hinderer, T.;
-  \textit{\href{http://dx.doi.org/10.1103/PhysRevD.75.124007}{Physical Review
-  D}}; \textbf{75}(12):124007(20); 2007;
-  \href{http://arxiv.org/abs/0704.0389}{\tt arXiv:0704.0389}.
-
 \bibitem[{Flanagan \& Hinderer(2012)}]{Flanagan2012}
 Flanagan, {\'E}.{\'E}. \& Hinderer, T.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.109.071102}{Physical
@@ -1512,11 +1506,6 @@ Ivanova, N. \textit{et al\textup{.}};
   Astrophysics Review}}; \textbf{21}(1):59(73); 2013;
   \href{http://arxiv.org/abs/1209.4302}{\tt arXiv:1209.4302}.
 
-\bibitem[{Iyer \& Will(1993)}]{Iyer1993}
-Iyer, B.R. \& Will, C.M.;
-  \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.70.113}{Physical Review
-  Letters}}; \textbf{70}(2):113--116; 1993.
-
 \bibitem[{Jackiw \& Pi(2003)}]{Jackiw2003}
 Jackiw, R. \& Pi, S.Y.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.68.104012}{Physical Review
@@ -1573,6 +1562,11 @@ Jaynes, E.T.; \textit{{Probability Theory: The Logic of Science}}; Cambridge:
 Jennrich, O. \textit{et al\textup{.}}; \textit{{NGO Revealing a hidden
   Universe: opening a new chapter of discovery}}; Technical report; European
   Space Agency; Noordwijk; 2011.
+
+\bibitem[{Johannsen(2013)}]{Johannsen2013b}
+Johannsen, T.;
+  \textit{\href{http://dx.doi.org/10.1103/PhysRevD.88.044002}{Physical Review
+  D}}; \textbf{88}(4):044002(22); 2013.
 
 \bibitem[{Johannsen \& Psaltis(2010{\natexlab{a}})}]{Johannsen2010a}
 Johannsen, T. \& Psaltis, D.;
@@ -1675,6 +1669,14 @@ Keshet, U., Hopman, C. \& Alexander, T.;
   Astrophysical Journal}}; \textbf{698}(1):L64--L67; 2009;
   \href{http://arxiv.org/abs/0901.4343}{\tt arXiv:0901.4343}.
 
+\bibitem[{Kevorkian(1971)}]{Kevorkian1971}
+Kevorkian, J.; \textit{\href{http://dx.doi.org/10.1137/0120039}{SIAM Journal on
+  Applied Mathematics}}; \textbf{20}(3):364--373; 1971.
+
+\bibitem[{Kevorkian(1987)}]{Kevorkian1987}
+Kevorkian, J.; \textit{\href{http://dx.doi.org/10.1137/1029076}{SIAM Review}};
+  \textbf{29}(3):391--461; 1987.
+
 \bibitem[{Khoury(2013)}]{Khoury2013}
 Khoury, J.; 2013; \href{http://arxiv.org/abs/1306.4326}{\tt arXiv:1306.4326}.
 
@@ -1689,11 +1691,6 @@ Khoury, J. \& Weltman, A.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.93.171104}{Physical
   Review Letters}}; \textbf{93}(17):171104(4); 2004{\natexlab{b}};
   \href{http://arxiv.org/abs/astro-ph/0309300}{\tt arXiv:astro-ph/0309300}.
-
-\bibitem[{Kidder(1995)}]{Kidder1995}
-Kidder, L.E.; \textit{\href{http://dx.doi.org/10.1103/PhysRevD.52.821}{Physical
-  Review D}}; \textbf{52}(2):821--847; 1995;
-  \href{http://arxiv.org/abs/gr-qc/9506022}{\tt arXiv:gr-qc/9506022}.
 
 \bibitem[{King \& Pringle(2006)}]{King2006}
 King, A.R. \& Pringle, J.E.;
@@ -2527,6 +2524,10 @@ Rosquist, K., Bylund, T. \& Samuelsson, L.;
   \textit{\href{http://dx.doi.org/10.1142/S0218271809014546}{International
   Journal of Modern Physics D}}; \textbf{18}(03):429--434; 2009;
   \href{http://arxiv.org/abs/0710.4260}{\tt arXiv:0710.4260}.
+
+\bibitem[{Ruangsri \& Hughes(2013)}]{Ruangsri2013}
+Ruangsri, U. \& Hughes, S.A.; 2013; \href{http://arxiv.org/abs/1307.6483}{\tt
+  arXiv:1307.6483}.
 
 \bibitem[{Rubbo \textit{et al\textup{.}}(2006)Rubbo, Holley-Bockelmann \&
   Finn}]{Rubbo2006}
