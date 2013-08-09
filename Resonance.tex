@@ -357,7 +357,7 @@ Using these, we can build the next order terms
 \widehat{q}_{1/2} = {} & \widehat{\kappa}_{1/2} + \frac{\varpi_2\widehat{\lambda}^3}{3} + g_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\widehat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau}; \\
 \widehat{J}_{1/2} = {} & \widehat{\varrho}_{1/2} + G_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\widehat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau}.
 \end{align}
-Both of these involve the complex Fresnel integral, the details of which are given in the following section. We have now constructed the interior solution.
+Both of these involve the complex Fresnel integral \citep[chapter 7]{Olver2010}, the details of which are given in the following section. We have now constructed the interior solution.
 
 \subsubsection{The complex Fresnel integral}
 
@@ -374,9 +374,9 @@ hence
 W(\widehat{\lambda}) = \sqrt{\frac{\pi}{s\varpi_1}}\mathcal{Y}\left(\frac{s\varpi_1}{\pi}\widehat{\lambda}\right).
 \end{equation}
 
-We shall be interested in the asymptotic behaviour for $|\widehat{\lambda}| \rightarrow \infty$. The complex Fresnel integral has the limit
+We shall be interested in the asymptotic behaviour for $|\widehat{\lambda}| \rightarrow \infty$. The complex Fresnel integral has the limit \citep[7.5.3, 7.5.4, 7.12.2, 7.12.3]{Olver2010}
 \begin{equation}
-\lim_{|z|\,\rightarrow\,\infty} \mathcal{Y}(z) \sim \sgn z \exp\left(\frac{i\pi}{4}\right) + \frac{z}{\pi}\exp\left(-\frac{i\pi}{2z^2}\right).
+\lim_{|z|\,\rightarrow\,\infty} \mathcal{Y}(z) \sim \sgn z \exp\left(\frac{i\pi}{4}\right) - \frac{i}{\pi z}\exp\left(-\frac{i\pi z^2}{2}\right).
 \end{equation}
 Hence,
 \begin{equation}
