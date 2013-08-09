@@ -230,7 +230,7 @@ We model the system using action--angle variables. We are only concerned with th
 \begin{equation}
 \widetilde{\lambda} = \frac{\lambda}{\eta}.
 \end{equation}
-The orbits of $q'$ proceed with the fast time $\lambda$, since this is much more rapid than the evolution we are interested in, it is safe to average over it. For this analysis we consider the reduced problem of evolving $q$ and $J$.
+The orbits of $q'$ proceed with the fast time $\lambda$, since this is much more rapid than the evolution we are interested in, it is safe to average over it. We are not interested in the fine-grained fast oscillations caused by changes in $q'$. For this analysis we consider the reduced problem of evolving $q$ and $J$.
 
 At resonance $\widetilde{\lambda} = \widetilde{\lambda}_\star$ and $\omega(\widetilde{\lambda}_\star) = 0$. We assume that the frequency has a simple zero and can be expanded as
 \begin{equation}
@@ -434,15 +434,16 @@ F_a^{(1)} = \frac{G_a^{(1)}}{\Gamma},
 \end{equation}
 such that the equation of motion becomes
 \begin{equation}
-\diff{\mathcal{I}_a}{t} =  \eta\sum_s F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}})\exp(is q) + \order{\eta^2}.
+\left\langle \diff{\mathcal{I}_a}{t}\right\rangle_{q'} =  \eta\sum_s F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}})\exp(is q) + \order{\eta^2}.
 \end{equation}
+Here we have made the averaging over $q'$ explicit to show that the equation is only defined as an orbital average: note only does our asymptotic expansion average out oscillations over an orbit in $q'$, but in converting from $\lambda$ to $t$ we have used $\Gamma$ which is an orbital average.
 From \eqnref{omega-series}, we recognise that
 \begin{equation}
-\varpi_1 = \partialdiff{\omega}{\widetilde{\lambda}} = \frac{\Gamma^2}{\eta}\partialdiff{\Omega}{t}.
+\varpi_1 = \partialdiff{\omega}{\widetilde{\lambda}} = \frac{\Gamma^2}{\eta}\left\langle\dot{\Omega}\right\rangle_t.
 \end{equation}
-Using these to adapt equations \ref{eq:J-1/2} and \ref{eq:jumps}, we obtain
+We have used the averaged form of $\Omega(t)$ as this is appropriate for the orbital averaging. Using these to adapt equations \ref{eq:J-1/2} and \ref{eq:jumps}, we obtain
 \begin{align}
-\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\frac{2\pi}{|s \dot{\Omega}|}}\exp\left[\sgn(s\dot{\Omega})\frac{i\pi}{4}\right] \\
+\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\frac{2\pi}{|s \langle\dot{\Omega}\rangle_t|}}\exp\left[\sgn(s\dot{\Omega})\frac{i\pi}{4}\right] \\
  = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn(s\dot{\Omega})\frac{i\pi}{4}\right],
 \end{align}
 using $\boldsymbol{\mathcal{I}}_\star$ for the values on resonance of $E$, $L_z$ and $Q$. Schematically, this can be understood as the the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$, is identical to averaging over the $\psi$--$\chi$ $2$-torus and gives an average discrepancy relative to the adiabatic evolution of
