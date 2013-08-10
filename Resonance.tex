@@ -125,7 +125,7 @@ However, there shall be a time span when the frequencies are consistently close 
 
 \section{Location of resonances}\label{sec:location}
 
-The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for an <BH of spin $a_\ast = 0.95$. 
+The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for an MBH of spin $a_\ast = 0.95$. 
 \begin{figure}%[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_res-2-5-95}
@@ -367,9 +367,9 @@ W(\widehat{\lambda}) = \intd{0}{\widehat{\lambda}}{\exp\left(\frac{is \varpi_1\t
 \end{equation}
 The complex Fresnel integral is
 \begin{equation}
-\mathcal{Y}(z) = \intd{0}{z}{\exp\left(\frac{i\pi x^2}{2}\right)}{x},
+\mathcal{Y}(z) = \intd{0}{z}{\exp\left(\frac{i\pi x^2}{2}\right)}{x} = \mathcal{C}(z) + i\mathcal{S}(z),
 \end{equation}
-hence
+where $\mathcal{C}(z)$ and $\mathcal{S}(z)$ are the cosine and sine Fresnel integrals \citep[7.2.7, 7.2.8]{Olver2010}, and hence
 \begin{equation}
 W(\widehat{\lambda}) = \sqrt{\frac{\pi}{s\varpi_1}}\mathcal{Y}\left(\frac{s\varpi_1}{\pi}\widehat{\lambda}\right).
 \end{equation}
