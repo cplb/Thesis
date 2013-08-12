@@ -380,7 +380,7 @@ We shall be interested in the asymptotic behaviour for $|\widehat{\lambda}| \rig
 \end{equation}
 Hence,
 \begin{equation}
-\lim_{|\widehat{\lambda}|\,\rightarrow\,\infty}W(\widehat{\lambda}) \sim \frac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\frac{i\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\frac{is \varpi_1 \widehat{\lambda}^2}{2}\right).
+\lim_{|\widehat{\lambda}|\,\rightarrow\,\infty}W\left(\widehat{\lambda}\right) \sim \frac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\frac{i\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\frac{is \varpi_1 \widehat{\lambda}^2}{2}\right).
 \label{eq:Fres-limit}
 \end{equation}
 
@@ -390,11 +390,11 @@ To complete our solution we must match the pre-resonance solution of \secref{bef
 
 To rewrite the pre-resonance solution, we begin with the fast phase parameter
 \begin{equation}
-\Psi(\widehat{\lambda}) = \frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2} + \eta^{1/2}\frac{\varpi_2\widehat{\lambda}^3}{3} + \order{\eta}.
+\Psi\left(\widehat{\lambda}\right) = \frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2} + \eta^{1/2}\frac{\varpi_2\widehat{\lambda}^3}{3} + \order{\eta}.
 \end{equation}
 Using this, the angle variable is
 \begin{align}
-q(\widehat{\lambda};\,\eta) = {} & \frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2} + \kappa_\star + \eta^{1/2}{\varpi_2\widehat{\lambda}^3}{3} + \eta^{1/2}g_0^{(1)}(J_\star)\widehat{\lambda} \nonumber \\* 
+q\left(\widehat{\lambda};\,\eta\right) = {} & \frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2} + \kappa_\star + \eta^{1/2}{\varpi_2\widehat{\lambda}^3}{3} + \eta^{1/2}g_0^{(1)}(J_\star)\widehat{\lambda} \nonumber \\* 
  {} & + \frac{\eta^{1/2}}{\varpi_1\widehat{\lambda}}\sum_{s\,\neq\,0}\recip{is}g_s^{(1)}(J_\star)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] + \order{\eta},
 \end{align}
 where we have defined $J_\star \equiv J_0\left(\widetilde{\lambda}_\star\right)$ and $\kappa_\star = \kappa_0 + \intd{0}{\widetilde{\lambda}_\star}{g_0^{(1)}[J_0(\tau)]}{\tau}$. The action variable is
@@ -443,7 +443,7 @@ From \eqnref{omega-series}, we recognise that
 \end{equation}
 We have used the averaged form of $\Omega(t)$ as this is appropriate for the orbital averaging. Using these to adapt equations \ref{eq:J-1/2} and \ref{eq:jumps}, we obtain
 \begin{align}
-\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\frac{2\pi}{|s \langle\dot{\Omega}\rangle_t|}}\exp\left[\sgn\left(s\dot{\Omega}\right)\frac{i\pi}{4}\right] \\
+\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\frac{2\pi}{\left|s \langle\dot{\Omega}\rangle_t\right|}}\exp\left[\sgn\left(s\dot{\Omega}\right)\frac{i\pi}{4}\right] \\
  = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn\left(s\dot{\Omega}\right)\frac{i\pi}{4}\right],
 \end{align}
 using $\boldsymbol{\mathcal{I}}_\star$ for the values on resonance of $E$, $L_z$ and $Q$. Schematically, this can be understood as the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$, is identical to averaging over the $\psi$--$\chi$ $2$-torus and gives an average discrepancy relative to the adiabatic evolution of
