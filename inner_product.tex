@@ -6,7 +6,7 @@ We wish to derive an inner product over the space of signals; we shall denote th
 
 \subsection{The Fourier transform}
 
-We begin with some basic properties of Fourier transform \citep[section 13.1]{Riley2002}. We define transformations
+We begin with some basic properties of the Fourier transform \citep[section 13.1]{Riley2002}. We define transformations
 \begin{subequations}
 \begin{align}
 x(t) = {} & \intd{-\infty}{\infty}{\widetilde{x}(f)\exp(2\pi ift)}{f} \\
@@ -18,7 +18,7 @@ The Dirac delta-function arises as
 \delta(f) = \intd{-\infty}{\infty}{\exp(-2\pi ift)}{t}.
 \end{equation}
 
-We shall use Plancherel's theorem which proves the unitarity of the Fourier transformation
+We shall use Plancherel's theorem, a generalisation of Parseval's theorem, which proves the unitarity of the Fourier transformation
 \begin{align}
 \intd{-\infty}{\infty}{\left|x(t)\right|^2}{t} = {} & \int_{-\infty}^\infty\,\dd t \intd{-\infty}{\infty}{\widetilde{x}(f)\exp(2\pi ift)}{f} \intd{-\infty}{\infty}{\widetilde{x}^\ast(f')\exp(-2\pi if't)}{f'} \nonumber \\
 % = {} & \int_{-\infty}^\infty\,\dd f \int_{-\infty}^\infty\,\dd f' \widetilde{x}(f) \widetilde{x}^\ast(f') \delta(f' - f) \nonumber \\
@@ -76,7 +76,7 @@ We consider a normally distributed noise signal $n(t)$ with zero mean and standa
 \begin{equation}
 \left\langle n^2 \right\rangle = C_n(0) = \sigma_n^2,
 \end{equation}
-introducing correlation function $C_n(\tau)$. If we have a measured signal $s(t)$ and a true signal $h(t)$, the probability $p(s|h)$ is that of the realisation of noise such
+introducing the correlation function $C_n(\tau)$. If we have a measured signal $s(t)$ and a true signal $h(t)$, the probability $p(s|h)$ is that of the realisation of noise such
 \begin{equation}
 s = h + n.
 \end{equation}
@@ -90,7 +90,7 @@ Expanding this to the entire signal
 p(s|h) = \recip{\sqrt{(2\pi)^{2N+1} \det C_{n,\,ij}}} \exp\left[-\recip{2} \sum_{k,l}C^{-1}_{kl}n_k n_l\right],
 \label{eq:prod_prob}
 \end{equation}
-introducing short-hand $C_{n,\,ij} \equiv C_n(t_i - t_j)$ and defining the inverse matrix $C^{-1}_{kl}$ such that
+introducing the short-hand $C_{n,\,ij} \equiv C_n(t_i - t_j)$ and defining the inverse matrix $C^{-1}_{kl}$ such that
 \begin{equation}
 \delta_{jl} = \sum_l C_{n,\,jk}C^{-1}_{kl}.
 \end{equation}
@@ -158,7 +158,7 @@ p(s|h) \propto \exp\left[-\recip{2}\innerprod{n}{n}\right].
 
 \subsection{Noise power spectral density}
 
-We have defined the power spectral density $S_n(f)$ using the Wiener--Khinchin theorem. It is more usual to define it in terms of the average of the noise spectrum. We shall again appeal to the ergodic principle to equate noise time and ensemble averages. Averaging two frequency components
+We have defined the power spectral density $S_n(f)$ using the Wiener--Khinchin theorem. It is more usual to define it in terms of the average of the noise spectrum. We shall again appeal to the ergodic principle to equate time and ensemble averages of the noise. Averaging two frequency components
 \begin{align}
 \left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = {} & \lim_{T \rightarrow \infty} \recip{2T} \intd{-T}{T}{\widetilde{n}(f)\exp(2\pi i f \tau)\widetilde{n}^\ast(f')\exp(2\pi i f' \tau)}{\tau} \nonumber \\
  = {} & \lim_{T \rightarrow \infty} \recip{2T} \widetilde{n}(f)\widetilde{n}^\ast(f')\delta(f-f').
@@ -167,7 +167,7 @@ Taking the ensemble average of both sides, and exploiting the properties of the 
 \begin{equation}
 \left\langle\widetilde{n}(f)\widetilde{n}^\ast(f')\right\rangle = \recip{2} S_n(f)\delta(f-f').
 \end{equation}
-This can serve as a definition for the noise power spectral density.
+This can serve as an alternative definition for the noise power spectral density.
 
 %\subsection{Properties of the inner product}
 

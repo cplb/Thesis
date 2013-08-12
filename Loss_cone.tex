@@ -32,7 +32,7 @@ where $M_\bullet$ is the MBH's mass. The angular momentum can also be defined as
 \end{align}
 using the small angle approximation. \citet{Frank1976} took the limit $e \rightarrow 1$ and then set $r\sub{p} = r\sub{T}$ to demarcate the limit of the loss cone; we rearrange to find
 \begin{equation}
-\theta\sub{LC} \simeq \dfrac{2GM_\bullet r\sub{T}}{v^2r^2}.
+\theta\sub{LC}^2 \simeq \dfrac{2GM_\bullet r\sub{T}}{v^2r^2}.
 \label{eq:LC-FR}
 \end{equation}
 We need to find the speed at $r$. \citet{Frank1976} used a typical value
@@ -72,6 +72,7 @@ It is unappealing to include an arbitrary, albeit order unitary, factor. Additio
 %\dfrac{3\sigma^2}{2} - \dfrac{GM_\bullet}{r} = {} & -\dfrac{GM_\bullet(1-e)}{2r\sub{T}} \\
 \dfrac{3GM_\bullet}{2r} - \dfrac{GM_\bullet}{r} = {} & -\dfrac{GM_\bullet(1-e)}{2r\sub{T}} \\
 \implies \dfrac{r\sub{T}}{r} = {} & e - 1.
+\label{eq:consistency}
 \end{align}
 Since the radii must be positive, this enforces that $e \geq 1$: the orbits could be marginally bound at best. As we have taken the limit $e \rightarrow 1$, assuming that $r \gg r\sub{T}$ this is still self-consistent. However, it is desirable to relax these conditions.
 
@@ -89,13 +90,13 @@ Combining these to eliminate the velocity gives
 \end{equation}
 This has been obtained without making any assumptions about the velocity dispersion or the position of the star. Since we have considered the Keplerian orbit, there should be no need to introduce a focusing factor.
 
-This is similar in form to the classic result. Consider an orbit with eccentricity $e = 1 - \epsilon$, where $\epsilon$ is small. Let us choose the star to be at a characteristic distance set by its semimajor axis $a = r\sub{p}/(1 - e)$, such that
+This is similar in form to the classic result. Consider an orbit with eccentricity $e = 1 + \epsilon$, where $\epsilon$ is small. Let us choose the star to be at a characteristic distance set by the consistency requirement \eqnref{consistency}, such that
 \begin{equation}
 r = \dfrac{r\sub{T}}{\epsilon}.
 \end{equation}
-This ensures that $r \gg r\sub{T}$. Therefore, we have matched the assumptions of \citet{Frank1976}. Substituting into our loss cone formula
+This ensures that $r \gg r\sub{T}$. Substituting into our loss cone formula,
 \begin{align}
 \sin^2\theta\sub{LC} = {} & \dfrac{(2 - \epsilon)r\sub{T}^2}{2rr\sub{T} + \epsilon r^2} \nonumber \\
  \simeq {} & \dfrac{2r\sub{T}}{3r},
 \end{align}
-retaining terms to first order in $\epsilon$. Since this is small, we can use the small angle approximation to recover the result of \eqnref{FR-LC}.
+retaining terms to first order in $\epsilon$. Since this is small, we can use the small angle approximation to recover the result of \eqnref{FR-LC} and demonstrate the consistency of the analysis of \citet{Frank1976}.
