@@ -1,4 +1,4 @@
-\begin{thebibliography}{570}
+\begin{thebibliography}{577}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -258,6 +258,13 @@ Bahcall, J.N. \& Wolf, R.A.;
   \textit{\href{http://dx.doi.org/10.1086/155534}{The Astrophysical Journal}};
   \textbf{216}(3):883--907; 1977.
 
+\bibitem[{Baker \textit{et al\textup{.}}(2007)Baker, van Meter, McWilliams,
+  Centrella \& Kelly}]{Baker2007}
+Baker, J., van Meter, J., McWilliams, S., Centrella, J. \& Kelly, B.;
+  \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.99.181101}{Physical
+  Review Letters}}; \textbf{99}(18):181101(4); 2007;
+  \href{http://arxiv.org/abs/gr-qc/0612024}{\tt arXiv:gr-qc/0612024}.
+
 \bibitem[{Baker \textit{et al\textup{.}}(2006)Baker, Centrella, Choi, Koppitz
   \& van Meter}]{Baker2006}
 Baker, J.G., Centrella, J., Choi, D.I., Koppitz, M. \& van Meter, J.;
@@ -476,6 +483,11 @@ Bisabr, Y.;
   Cosmology}}; \textbf{16}(3):239--244; 2010;
   \href{http://arxiv.org/abs/1005.5670}{\tt arXiv:1005.5670}.
 
+\bibitem[{Blanchet(2006)}]{Blanchet2006}
+Blanchet, L.; \textit{\href{http://dx.doi.org/10.12942/lrr-2006-4}{Living
+  Reviews in Relativity}}; \textbf{9}(4); 2006;
+  \href{http://arxiv.org/abs/gr-qc/0202016}{\tt arXiv:gr-qc/0202016}.
+
 \bibitem[{Blas \textit{et al\textup{.}}(2010)Blas, Pujol\`{a}s \&
   Sibiryakov}]{Blas2010a}
 Blas, D., Pujol\`{a}s, O. \& Sibiryakov, S.;
@@ -550,6 +562,13 @@ Broderick, A.E., Loeb, A. \& Reid, M.J.;
 \bibitem[{Buchdahl(1970)}]{Buchdahl1970}
 Buchdahl, H.A.; \textit{Monthly Notices of the Royal Astronomical Society};
   \textbf{150}(1):1--8; 1970.
+
+\bibitem[{Buonanno \textit{et al\textup{.}}(2007)Buonanno, Cook \&
+  Pretorius}]{Buonanno2007}
+Buonanno, A., Cook, G. \& Pretorius, F.;
+  \textit{\href{http://dx.doi.org/10.1103/PhysRevD.75.124018}{Physical Review
+  D}}; \textbf{75}(12):124018(42); 2007;
+  \href{http://arxiv.org/abs/gr-qc/0610122}{\tt arXiv:gr-qc/0610122}.
 
 \bibitem[{Burko \& Khanna(2007)}]{Burko2007}
 Burko, L.M. \& Khanna, G.;
@@ -630,6 +649,13 @@ Cembranos, J.A.R.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevLett.102.141301}{Physical
   Review Letters}}; \textbf{102}(14):141301(4); 2009;
   \href{http://arxiv.org/abs/0809.1653}{\tt arXiv:0809.1653}.
+
+\bibitem[{Centrella \textit{et al\textup{.}}(2010)Centrella, Baker, Kelly \&
+  van Meter}]{Centrella2010}
+Centrella, J., Baker, J.G., Kelly, B.J. \& van Meter, J.R.;
+  \textit{\href{http://dx.doi.org/10.1103/RevModPhys.82.3069}{Reviews of Modern
+  Physics}}; \textbf{82}(4):3069--3119; 2010;
+  \href{http://arxiv.org/abs/1010.5260}{\tt arXiv:1010.5260}.
 
 \bibitem[{Chandrasekhar(1941{\natexlab{a}})}]{Chandrasekhar1941a}
 Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144357}{The
@@ -872,6 +898,11 @@ Dyer, E. \& Hinterbichler, K.;
 Eardley, D.M., Lee, D.L. \& Lightman, A.P.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.8.3308}{Physical Review D}};
   \textbf{8}(10):3308--3321; 1973.
+
+\bibitem[{East \textit{et al\textup{.}}(2012)East, McWilliams, Levin \&
+  Pretorius}]{East2012}
+East, W.E., McWilliams, S.T., Levin, J. \& Pretorius, F.; 18; 2012;
+  \href{http://arxiv.org/abs/1212.0837}{\tt arXiv:1212.0837}.
 
 \bibitem[{Eilon \textit{et al\textup{.}}(2009)Eilon, Kupi \&
   Alexander}]{Eilon2009}
@@ -2327,6 +2358,12 @@ Peterson, B.M. \textit{et al\textup{.}};
   \textbf{632}(2):799--808; 2005;
   \href{http://arxiv.org/abs/astro-ph/0506665}{\tt arXiv:astro-ph/0506665}.
 
+\bibitem[{Pfeiffer(2012)}]{Pfeiffer2012}
+Pfeiffer, H.P.;
+  \textit{\href{http://dx.doi.org/10.1088/0264-9381/29/12/124004}{Classical and
+  Quantum Gravity}}; \textbf{29}(12):124004(17); 2012;
+  \href{http://arxiv.org/abs/1203.5166}{\tt arXiv:1203.5166}.
+
 \bibitem[{Pitjeva \& Pitjev(2013)}]{Pitjeva2013}
 Pitjeva, E.V. \& Pitjev, N.P.;
   \textit{\href{http://dx.doi.org/10.1093/mnras/stt695}{Monthly Notices of the
@@ -2723,7 +2760,7 @@ Sotiriou, T.P. \& Liberati, S.;
   Physics}}; \textbf{322}(4):935--966; 2007{\natexlab{a}};
   \href{http://arxiv.org/abs/gr-qc/0604006}{\tt arXiv:gr-qc/0604006}.
 
-\bibitem[{Sotiriou(2011)}]{Sotiriou2011a}
+\bibitem[{Sotiriou(2011)}]{Sotiriou2010a}
 Sotiriou, T.P.;
   \textit{\href{http://dx.doi.org/10.1088/1742-6596/283/1/012034}{Journal of
   Physics: Conference Series}}; \textbf{283}(1):012034(17); 2011;
@@ -2753,6 +2790,13 @@ Sotiriou, T.P., Visser, M. \& Weinfurtner, S.;
   \textit{\href{http://dx.doi.org/10.1088/1126-6708/2009/10/033}{Journal of
   High Energy Physics}}; \textbf{2009}(10):033(32); 2009;
   \href{http://arxiv.org/abs/0905.2798}{\tt arXiv:0905.2798}.
+
+\bibitem[{Sperhake \textit{et al\textup{.}}(2013)Sperhake, Berti \&
+  Cardoso}]{Sperhake2013}
+Sperhake, U., Berti, E. \& Cardoso, V.;
+  \textit{\href{http://dx.doi.org/10.1016/j.crhy.2013.01.004}{Comptes Rendus
+  Physique}}; \textbf{14}(4):306--317; 2013;
+  \href{http://arxiv.org/abs/1107.2819}{\tt arXiv:1107.2819}.
 
 \bibitem[{Spitzer(1987)}]{Spitzer1987Jr}
 Spitzer, Jr., L.; \textit{{Dynamical Evolution of Globular Clusters}};

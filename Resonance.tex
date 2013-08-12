@@ -188,10 +188,10 @@ with $\Omega(t) = n_r \Omega_r(t) - n_\theta \Omega_\theta(t)$, where the freque
 
 We also use the resonance time-scale
 \begin{equation}
-\tau\sub{res} = \left[\dfrac{2\pi}{\left|\langle\dot{\Omega}(0)\rangle_\Psi\right|}\right]^{1/2}.
+\tau\sub{res} = \left[\dfrac{2\pi}{\left|\langle\dot{\Omega}(0)\rangle_{q'}\right|}\right]^{1/2}.
 \label{eq:t-res}
 \end{equation}
-Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we take to be at $t = 0$. The instantaneous $\dot{\Omega}$ depends upon the orbital phase and oscillates about its mean trend over an orbit (see \figref{wibbles}). We are interested in the averaged behaviour, not the periodic modulations about this, which is why we use the phase-averaged trend $\langle\dot{\Omega}\rangle_\Psi$. Close to resonance, $\Omega$ is well approximated by a first-order Taylor expansion, decreasing linearly with time; hence we make the approximation
+Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we take to be at $t = 0$. The instantaneous $\dot{\Omega}$ depends upon the orbital phase and oscillates about its mean trend over an orbit (see \figref{wibbles}). We are interested in the averaged behaviour, not the periodic modulations about this, which is why we use the phase-averaged trend $\langle\dot{\Omega}\rangle_{q'}$.\footnote{Here we use $q'$ to represent a phase that varies over an orbit with period $T$, it shall be introduced again in \secref{res-asymptotic}.} Close to resonance, $\Omega$ is well approximated by a first-order Taylor expansion, decreasing linearly with time; hence we make the approximation
 \begin{equation}
 \left|\langle\dot{\Omega}\rangle_\Psi\right| \simeq \left|\dfrac{\Omega(t)}{t}\right|.
 \end{equation}
@@ -215,7 +215,8 @@ The two time-scales are equivalent. We shall preferentially use $\tau\sub{res}$ 
 Since we shall be considering Fourier decompositions, in anticipation of future results, we also define time-scales for the $s$-th resonant frequency harmonic
 \begin{align}
 \tau_{\mathrm{pres},\,s} = {} & \dfrac{2\pi}{|s\Omega(t)|};\\
-\tau_{\mathrm{res},\,s} = {} & \left[\dfrac{2\pi}{\left|\langle s\dot{\Omega}(0)\rangle_\Psi\right|}\right]^{1/2}.
+\tau_{\mathrm{res},\,s} = {} & \left[\dfrac{2\pi}{\left|\langle s\dot{\Omega}(0)\rangle_{q'}\right|}\right]^{1/2}.
+\label{eq:T-res-s}
 \end{align}
 These assume that $s$ is a non-zero integer.
 
@@ -241,7 +242,7 @@ The frequency is actually a function of the angle variables, but since these evo
 Using the slow time, the equations of motion (\ref{eq:Mino-E-o-M}) become
 \begin{subequations}
 \begin{align}
-\diff{q}{\widetilde{\lambda}} = {} & \frac{\omega(J)}{\eta} + \sum_s g_s^{(1)}(J)\exp(is q)  + \order{\eta}; \\
+\diff{q}{\widetilde{\lambda}} = {} & \dfrac{\omega(J)}{\eta} + \sum_s g_s^{(1)}(J)\exp(is q)  + \order{\eta}; \\
 \diff{J}{\widetilde{\lambda}} = {} & \sum_s G_s^{(1)}(J)\exp(is q) + \order{\eta},
 \end{align}
 \end{subequations}
@@ -251,7 +252,7 @@ where we have rewritten the forcing terms as Fourier series and adapted the forc
 
 To find a solution away from the resonance, we shall decompose the problem to be a function of two time-scales \citep{Kevorkian1971}. We use the slow time $\widetilde{\lambda}$ and, as a proxy for the fast time,
 \begin{equation}
-\Psi = \intd{0}{\lambda}{\omega(\eta\tau)}{\tau} = \recip{\eta}\intd{0}{\tilde{\lambda}}{\omega(\tau)}{\tau}.
+\Psi = \intd{0}{\lambda}{\omega(\eta\tau)}{\tau} = \recip{\eta}\intd{0}{\tilde{\lambda}}{\omega(\widetilde{\tau})}{\widetilde{\tau}}.
 \end{equation}
 From this
 \begin{equation}
@@ -260,15 +261,17 @@ From this
 In terms of these two variables, we can build ansatz solutions
 \begin{subequations}
 \begin{align}
+\label{eq:q-series}
 q(\lambda;\,\eta) = {} & \Psi + q_0\left(\widetilde{\lambda}\right) + \eta q_1\left(\Psi,\widetilde{\lambda}\right) + \order{\eta^2}; \\
 J(\lambda;\,\eta) = {} & J_0\left(\widetilde{\lambda}\right) + \eta J_1\left(\Psi,\widetilde{\lambda}\right) + \order{\eta^2}.
+\label{eq:J-series}
 \end{align}
 \end{subequations}
-We can also write a series expansion for the frequency
+We can also write a series expansion for the frequency since it is affected by the self-force too,
 \begin{equation}
 \omega(\lambda;\,\eta) = \omega_0\left(\widetilde{\lambda}\right) + \eta \omega_1\left(\widetilde{\lambda}\right) + \order{\eta^2}.
 \end{equation}
-Taking the two time-scales as independent, we may write the time derivative to $\order{\eta}$ as
+In the limit of $\eta \rightarrow 0$ we are left with a constant frequency $\omega_0(0)$. Taking the two time-scales as independent, we may write the time derivative to $\order{\eta}$ as
 \begin{equation}
 \diffop{\lambda} = \omega_0\partialdiffop{\Psi} + \eta\omega_1\partialdiffop{\Psi} + \eta\partialdiffop{\widetilde{\lambda}}.
 \end{equation}
@@ -285,22 +288,24 @@ Using the two time-scale decomposition to replace the time derivatives in the eq
 Averaging \eqnref{J-1} over $\Psi$ gives\footnote{The ansatz is constructed such that $J_0 \equiv \langle J_0\rangle_\Psi$ and $q_0 \equiv \langle q_0\rangle_\Psi$.}
 \begin{equation}
 \partialdiff{J_0}{\widetilde{\lambda}} = G_0^{(1)}(J_0).
+\label{eq:J-ad}
 \end{equation}
 This describes the adiabatic evolution, hence we can identify $J_0\left(\widetilde{\lambda}\right)$ with (the lowest order piece of) the adiabatic solution \citep{Hinderer2008}. If we similarly average \eqnref{q-1} we find
 \begin{equation}
-\omega_0 + \eta\omega_1 +\eta\partialdiff{q_0}{\widetilde{\lambda}} = \omega(J_0) + \eta\partialdiff{\omega}{J}\langle J_1\rangle_\Psi + g_0^{(1)}(J_0).
+\omega_0 + \eta\omega_1 +\eta\partialdiff{q_0}{\widetilde{\lambda}} = \omega(J_0) + \eta\partialdiff{\omega}{J}\langle J_1\rangle_\Psi + \eta g_0^{(1)}(J_0).
 \end{equation}
-From this we can identify
+From this we can identify the terms that originate from the frequency and, matching by order in $\eta$, obtain
 \begin{subequations}
 \begin{align}
 \omega_0 = {} & \omega(J_0); \\
-\omega_1 = {} & \partialdiff{\omega}{J}\langle J_1\rangle_\Psi,
+\omega_1 = {} & \partialdiff{\omega}{J}\langle J_1\rangle_\Psi.
 \end{align}
 \end{subequations}
-and hence
+This leaves
 \begin{align}
 \partialdiff{q_0}{\widetilde{\lambda}} = {} & g_0^{(1)}(J_0); \\
 q_0 = {} & \kappa_0 + \intd{0}{\tilde{\lambda}}{g_0^{(1)}[J_0(\tau)]}{\tau}.
+\label{eq:q-0-sol}
 \end{align}
 We now have expressions for the lowest order terms in the expansions.
 
@@ -310,21 +315,23 @@ Subtracting the $s = 0$ components from \eqnref{J-1} leaves
 \end{equation}
 This can be solved to give
 \begin{equation}
-J_1 = \langle J_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \frac{G_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+J_1 = \langle J_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \dfrac{G_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+\label{eq:J-1-sol}
 \end{equation}
 We can do the same for \eqnref{q-1} to obtain
 \begin{equation}
-q_1 = \langle q_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \frac{g_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+q_1 = \langle q_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \dfrac{g_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+\label{eq:q-1-sol}
 \end{equation}
-To find the constants of integration, $\langle q_1\rangle_\Psi$ and $\langle J_1\rangle_\Psi$, it is necessary to extend the analysis to second order. This shows that $\langle J_1\rangle_\Psi$ is the first order component of the adiabatic solution. We do not need explicit forms for later calculations, so we will not proceed further. We have successfully constructed the pre-resonance solution.
+To find the constants of integration for the $\order{\eta}$ quantities, $\langle q_1\rangle_\Psi$ and $\langle J_1\rangle_\Psi$, it is necessary to extend the analysis to second order. This shows that $\langle J_1\rangle_\Psi$ is the first order component of the adiabatic solution. We do not need explicit forms for later calculations, so we will not proceed further. We have successfully constructed the pre-resonance solution.
 
 \subsubsection{Solution near resonance}\label{sec:interior-res}
 
 Near to resonance, we consider an interior layer expansion \citep{Kevorkian1971}. As explained in \secref{res-time}, evolution near resonance proceeds on a time-scale intermediate between the slow and fast times. We therefore introduce a rescaled time
 \begin{equation}
-\widehat{\lambda} = \frac{\widetilde{\lambda} - \widetilde{\lambda}_\star}{\eta^{1/2}} = \eta^{1/2}(\lambda - \lambda_\star).
+\widehat{\lambda} = \dfrac{\widetilde{\lambda} - \widetilde{\lambda}_\star}{\eta^{1/2}} = \eta^{1/2}(\lambda - \lambda_\star).
 \end{equation}
-As for the before resonance solution, we can create series expansion; however, now we expand in terms of $\eta^{1/2}$ \citep{Flanagan2012}
+As for the before resonance solution, we can create a series expansion; however, now we expand in terms of $\eta^{1/2}$ \citep{Flanagan2012}
 \begin{subequations}
 \begin{align}
 q\left(\widehat{\lambda};\,\eta\right) = {} & \widehat{q}_0\left(\widehat{\lambda}\right) + \eta^{1/2} \widehat{q}_{1/2}\left(\widehat{\lambda}\right) + \order{\eta}; \\
@@ -334,6 +341,7 @@ J\left(\widehat{\lambda};\,\eta\right) = {} & \widehat{J}_0 + \eta^{1/2} \wideha
 The series expansion for the frequency, \eqnref{omega-series}, can be rewritten as
 \begin{equation}
 \omega\left(\widehat{\lambda}\right) = \eta^{1/2}\varpi_1\widehat{\lambda} + \eta\varpi_2\widehat{\lambda}^2 + \order{\eta^{3/2}}.
+\label{eq:omega-hat}
 \end{equation}
 Proceeding to write the equations of motion in terms of the rescaled time gives
 \begin{subequations}
@@ -349,12 +357,12 @@ From the equations of motion we can match terms by their order in $\eta^{1/2}$. 
 \end{equation}
 is constant, and
 \begin{equation}
-\widehat{q}_0 = \widehat{\kappa}_0 + \frac{\varpi_1\widehat{\lambda}^2}{2}.
+\widehat{q}_0 = \widehat{\kappa}_0 + \dfrac{\varpi_1\widehat{\lambda}^2}{2}.
 \end{equation}
 Using these, we can build the next order terms
 \begin{align}
-\widehat{q}_{1/2} = {} & \widehat{\kappa}_{1/2} + \frac{\varpi_2\widehat{\lambda}^3}{3} + g_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau}; \\
-\widehat{J}_{1/2} = {} & \widehat{\varrho}_{1/2} + G_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau}.
+\widehat{q}_{1/2} = {} & \widehat{\kappa}_{1/2} + \dfrac{\varpi_2\widehat{\lambda}^3}{3} + g_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}; \\
+\widehat{J}_{1/2} = {} & \widehat{\varrho}_{1/2} + G_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}.
 \end{align}
 Both of these involve the complex Fresnel integral \citep[chapter 7]{Olver2010}, the details of which are given in the following section. We have now constructed the interior solution.
 
@@ -362,24 +370,31 @@ Both of these involve the complex Fresnel integral \citep[chapter 7]{Olver2010},
 
 The solution for the motion in the interior region near to resonance involves the integral
 \begin{equation}
-W\left(\widehat{\lambda}\right) = \intd{0}{\hat{\lambda}}{\exp\left(\frac{is \varpi_1\tau^2}{2}\right)}{\tau}.
+W\left(\widehat{\lambda}\right) = \intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}.
 \end{equation}
 The complex Fresnel integral is
 \begin{equation}
-\mathcal{Y}(z) = \intd{0}{z}{\exp\left(\frac{i\pi x^2}{2}\right)}{x} = \mathcal{C}(z) + i\mathcal{S}(z),
+\mathcal{Y}(z) = \intd{0}{z}{\exp\left(\dfrac{i\pi x^2}{2}\right)}{x} = \mathcal{C}(z) + i\mathcal{S}(z),
 \end{equation}
 where $\mathcal{C}(z)$ and $\mathcal{S}(z)$ are the cosine and sine Fresnel integrals \citep[7.2.7, 7.2.8]{Olver2010}, and hence
 \begin{equation}
-W\left(\widehat{\lambda}\right) = \sqrt{\frac{\pi}{s\varpi_1}}\mathcal{Y}\left(\frac{s\varpi_1}{\pi}\widehat{\lambda}\right).
+W\left(\widehat{\lambda}\right) = \sqrt{\dfrac{\pi}{s\varpi_1}}\mathcal{Y}\left(\dfrac{s\varpi_1}{\pi}\widehat{\lambda}\right).
 \end{equation}
 
 We shall be interested in the asymptotic behaviour for $|\widehat{\lambda}| \rightarrow \infty$. The complex Fresnel integral has the limit \citep[7.5.3, 7.5.4, 7.12.2, 7.12.3]{Olver2010}
 \begin{equation}
-\lim_{|z|\,\rightarrow\,\infty} \mathcal{Y}(z) \sim \sgn z \exp\left(\frac{i\pi}{4}\right) - \frac{i}{\pi z}\exp\left(-\frac{i\pi z^2}{2}\right).
+\lim_{|z|\,\rightarrow\,\infty} \mathcal{Y}(z) \sim \sgn z \exp\left(\dfrac{i\pi}{4}\right) - \dfrac{i}{\pi z}\exp\left(-\dfrac{i\pi z^2}{2}\right),
+\end{equation}
+where 
+\begin{equation}
+\sgn z = \begin{cases}
+1 & z > 0 \\
+-1 & z < 0
+\end{cases}\,.
 \end{equation}
 Hence,
 \begin{equation}
-\lim_{|\widehat{\lambda}|\,\rightarrow\,\infty}W\left(\widehat{\lambda}\right) \sim \frac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\frac{i\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\frac{is \varpi_1 \widehat{\lambda}^2}{2}\right).
+\lim_{|\widehat{\lambda}|\,\rightarrow\,\infty}W\left(\widehat{\lambda}\right) \sim \dfrac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\dfrac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\dfrac{i\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\dfrac{is \varpi_1 \widehat{\lambda}^2}{2}\right).
 \label{eq:Fres-limit}
 \end{equation}
 
@@ -389,32 +404,32 @@ To complete our solution we must match the pre-resonance solution of \secref{bef
 
 To rewrite the pre-resonance solution, we begin with the fast phase parameter
 \begin{equation}
-\Psi\left(\widehat{\lambda}\right) = \frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2} + \eta^{1/2}\frac{\varpi_2\widehat{\lambda}^3}{3} + \order{\eta}.
+\Psi\left(\widehat{\lambda}\right) = \dfrac{\Psi_\star}{\eta} + \dfrac{\varpi_1\widehat{\lambda}^2}{2} + \eta^{1/2}\dfrac{\varpi_2\widehat{\lambda}^3}{3} + \order{\eta}.
 \end{equation}
-Using this, the angle variable is
+Using this together with equations (\ref{eq:q-0-sol}) and (\ref{eq:q-1-sol}) in \eqnref{q-series}, the angle variable is
 \begin{align}
-q\left(\widehat{\lambda};\,\eta\right) = {} & \frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2} + \kappa_\star + \eta^{1/2}{\varpi_2\widehat{\lambda}^3}{3} + \eta^{1/2}g_0^{(1)}(J_\star)\widehat{\lambda} \nonumber \\* 
- {} & + \frac{\eta^{1/2}}{\varpi_1\widehat{\lambda}}\sum_{s\,\neq\,0}\recip{is}g_s^{(1)}(J_\star)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] + \order{\eta},
+q\left(\widehat{\lambda};\,\eta\right) = {} & \dfrac{\Psi_\star}{\eta} + \dfrac{\varpi_1\widehat{\lambda}^2}{2} + \kappa_\star + \eta^{1/2}\dfrac{\varpi_2\widehat{\lambda}^3}{3} + \eta^{1/2}g_0^{(1)}(J_\star)\widehat{\lambda} \nonumber \\* 
+ {} & + \dfrac{\eta^{1/2}}{\varpi_1\widehat{\lambda}}\sum_{s\,\neq\,0}\recip{is}g_s^{(1)}(J_\star)\exp\left[is\left(\dfrac{\Psi_\star}{\eta} + \dfrac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] + \order{\eta},
 \end{align}
-where we have defined $J_\star \equiv J_0\left(\widetilde{\lambda}_\star\right)$ and $\kappa_\star = \kappa_0 + \intd{0}{\widetilde{\lambda}_\star}{g_0^{(1)}[J_0(\tau)]}{\tau}$. The action variable is
+where we have defined $J_\star \equiv J_0\left(\widetilde{\lambda}_\star\right)$ and $\kappa_\star = \kappa_0 + \intd{0}{\widetilde{\lambda}_\star}{g_0^{(1)}[J_0(\tau)]}{\tau}$, and used \eqnref{omega-hat} to substitue for $\omega$. The action variable is similarly determined by using equations (\ref{eq:J-ad}) and (\ref{eq:J-1-sol}) with \eqnref{J-series} to give
 \begin{equation}
-J\left(\widehat{\lambda};\,\eta\right) = J_\star + \eta^{1/2}G_0^{(1)}(J_\star)\widehat{\lambda} + \frac{\eta^{1/2}}{\varpi_1\widehat{\lambda}}\sum_{s\,\neq\,0}\recip{is}G_s^{(1)}(J_\star)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] + \order{\eta}.
+J\left(\widehat{\lambda};\,\eta\right) = J_\star + \eta^{1/2}G_0^{(1)}(J_\star)\widehat{\lambda} + \dfrac{\eta^{1/2}}{\varpi_1\widehat{\lambda}}\sum_{s\,\neq\,0}\recip{is}G_s^{(1)}(J_\star)\exp\left[is\left(\dfrac{\Psi_\star}{\eta} + \dfrac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] + \order{\eta}.
 \end{equation}
-We can now compare this with the near resonance expansion with the Fresnel integral replaced with the limiting form \eqnref{Fres-limit}.
+We can now compare this with the near resonance expansion with the Fresnel integral replaced with the limiting form given in \eqnref{Fres-limit}.
 
 At zeroth order, we immediately obtain
 \begin{align}
-\widehat{\kappa}_0 = {} & \frac{\Psi_\star}{\eta} + \kappa_\star; \\
+\widehat{\kappa}_0 = {} & \dfrac{\Psi_\star}{\eta} + \kappa_\star; \\
 \widehat{\varrho}_0 = {} & J_\star.
 \end{align}
 These fix the integration constants. The more interesting result is now found by comparing the $\order{\eta^{1/2}}$ terms. Equating the angle variable expressions and cancelling terms gives
 \begin{align}
-%\widehat{\kappa}_{1/2} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\left\{\frac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1}}\exp\left[\sgn(s\varpi_1)\frac{\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\frac{is \varpi_1 \widehat{\lambda}^2}{2}\right)\right\} = {} & \recip{is\varpi_1\widehat{\lambda}}g_s^{(1)}(\widehat{\varrho}_0)\exp\left[is\left(\frac{\Psi_\star}{\eta} + \frac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] \nonumber \\
-\widehat{\kappa}_{1/2} = {} & -\sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\frac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\frac{i\pi}{4}\right].
+%\widehat{\kappa}_{1/2} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\left\{\dfrac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\dfrac{\pi}{|s\varpi_1}}\exp\left[\sgn(s\varpi_1)\dfrac{\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\dfrac{is \varpi_1 \widehat{\lambda}^2}{2}\right)\right\} = {} & \recip{is\varpi_1\widehat{\lambda}}g_s^{(1)}(\widehat{\varrho}_0)\exp\left[is\left(\dfrac{\Psi_\star}{\eta} + \dfrac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] \nonumber \\
+\widehat{\kappa}_{1/2} = {} & -\sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\dfrac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\dfrac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\dfrac{i\pi}{4}\right].
 \end{align}
 Similarly, for the action variables
 \begin{equation}
-\widehat{\varrho}_{1/2} = -\sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\frac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\frac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\frac{i\pi}{4}\right].
+\widehat{\varrho}_{1/2} = -\sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\dfrac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\dfrac{\pi}{|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\dfrac{i\pi}{4}\right].
 \label{eq:J-1/2}
 \end{equation}
 We now have a matched solution through resonance.
@@ -429,23 +444,23 @@ across the resonance \citep{Kevorkian1987}. We are not particularly interested i
 
 As a final step in understanding our result, we switch from Mino time to coordinate time. An appropriate redefinition of the forcing functions can be done by scaling by $\Gamma$, we define
 \begin{equation}
-F_a^{(1)} = \frac{G_a^{(1)}}{\Gamma},
+F_a^{(1)} = \dfrac{G_a^{(1)}}{\Gamma},
 \end{equation}
 such that the equation of motion becomes
 \begin{equation}
 \left\langle \diff{\mathcal{I}_a}{t}\right\rangle_{q'} =  \eta\sum_s F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}})\exp(is q) + \order{\eta^2}.
 \end{equation}
-Here we have made the averaging over $q'$ explicit to show that the equation is only defined as an orbital average: note only does our asymptotic expansion average out oscillations over an orbit in $q'$, but in converting from $\lambda$ to $t$ we have used $\Gamma$ which is an orbital average.
+Here we have made the averaging over $q'$ explicit to show that the equation is only defined as an orbital average: not only does our asymptotic expansion average out oscillations over an orbit in $q'$, but in converting from $\lambda$ to $t$ we have used $\Gamma$ which is an orbital average.
 From \eqnref{omega-series}, we recognise that
 \begin{equation}
-\varpi_1 = \partialdiff{\omega}{\widetilde{\lambda}} = \frac{\Gamma^2}{\eta}\left\langle\dot{\Omega}\right\rangle_t.
+\varpi_1 = \partialdiff{\omega}{\widetilde{\lambda}} = \dfrac{\Gamma^2}{\eta}\left\langle\dot{\Omega}\right\rangle_t.
 \end{equation}
-We have used the averaged form of $\Omega(t)$ as this is appropriate for the orbital averaging. Using these to adapt equations \ref{eq:J-1/2} and \ref{eq:jumps}, we obtain
+We have used the averaged form of $\Omega(t)$ as this is appropriate for the orbital averaging. Using these to adapt equations (\ref{eq:J-1/2}) and (\ref{eq:jumps}), we obtain
 \begin{align}
-\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\frac{2\pi}{\left|s \langle\dot{\Omega}\rangle_t\right|}}\exp\left[\sgn\left(s\dot{\Omega}\right)\frac{i\pi}{4}\right] \\
- = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn\left(s\dot{\Omega}\right)\frac{i\pi}{4}\right],
+\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{2\pi}{\left|s \langle\dot{\Omega}\rangle_{q'}\right|}}\exp\left[\sgn\left(s\dot{\Omega}\right)\dfrac{i\pi}{4}\right] \\
+ = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn\left(s\dot{\Omega}\right)\dfrac{i\pi}{4}\right],
 \end{align}
-using $\boldsymbol{\mathcal{I}}_\star$ for the values on resonance of $E$, $L_z$ and $Q$. Schematically, this can be understood as the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$, is identical to averaging over the $\psi$--$\chi$ $2$-torus and gives an average discrepancy relative to the adiabatic evolution of
+using \eqnref{T-res-s} and representing the values on resonance of $E$, $L_z$ and $Q$ with $\boldsymbol{\mathcal{I}}_\star$. Schematically, this can be understood as the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$, has the same effect as averaging over the $\psi$--$\chi$ $2$-torus and gives an average discrepancy relative to the adiabatic evolution of
 \begin{equation}
 \left\langle \Delta \mathcal{I}_a \right\rangle_{\hat{\kappa}_0} = 0,
 \end{equation}
@@ -453,14 +468,14 @@ exactly as expected. The effect of resonance on the orbital parameters is intuit
 
 \section{Summary and outlook}
 
-In this chapter we introduced the problem of transient resonances in systems. Passing through a resonance can produce an enhancement or decrement in the evolution of the orbital parameters relative to the adiabatic evolution. Although this change is small, it could leave a measurable imprint on an EMRI waveform, as this lasts for many orbits. In order for EMRIs to be used for precision measurements, either to determine the properties of MBHs or to test GR, we must have accurate waveforms. It is therefore essential to account for effects such as resonances which influence the waveform.
+In this chapter we introduced the problem of transient resonances in systems. Passing through a resonance can produce an enhancement or decrement in the evolution of the orbital parameters relative to the adiabatic evolution. Although this change is small, it could leave a measurable imprint on an EMRI waveform, as this is observed over many orbits. In order for EMRIs to be used for precision measurements, either to determine the properties of MBHs or to test GR, we must have accurate waveforms. It is therefore essential to account for effects such as resonances which influence the waveforms.
 
-We have constructed an approximate means of identifying the location of resonances. The semilatus rectum at which a resonance can be found depends upon the MBH spin, orbital eccentricity and inclination; it is therefore a complicated function. The approximation allows EMRIs to be quickly checked to see if they come close to resonance: if they do, it is necessary to model them more accurately. It may be that the majority of astrophysically interesting EMRIs pass through an important resonance \citep{Ruangsri2013}.
+We have constructed an approximate means of identifying the location of resonances. The semilatus rectum at which a resonance can be found depends upon the MBH spin, orbital eccentricity and inclination; it is therefore a complicated function. The approximation allows evolving EMRIs to be quickly checked to see if they come close to a resonance: if they do, it is necessary to model them more accurately. It is likely that the majority of astrophysically interesting EMRIs pass through an important resonance \citep{Ruangsri2013}.
 
-In order to estimate the effect of passing through resonance, we have built up a theoretical model for their behaviour. Using an asymptotic expansion, we have produced an expression for the lowest order difference in the orbital parameters relative to those calculated from an adiabatic evolution. The structure of this expression matches what is expected from our theoretical arguments.
+In order to estimate the effect of passing through a resonance, we have built up a theoretical model for their behaviour. Using an asymptotic expansion, we have produced an expression for the lowest order difference in the orbital parameters relative to those calculated from an adiabatic evolution. The structure of this expression matches what is expected from our theoretical arguments.
 
 What remains to be done is to verify that the estimate from the asymptotic expansion matches what is observed in numerical calculations. Assuming this is the case, we can be confident in our understanding of the problem. We may then proceed to investigate the impact of the change in the orbital parameters on the waveform. We expect that the changes are only significant for a few low order resonances. If this set of important resonances is small, then the problem of producing accurate waveforms is much simpler.
 
-The impact of resonances on waveforms can first be estimated by calculating either the dephasing or reduction in overlap when compared with an adiabatic evolution. Even if the presence of a resonance causes a deviation from the initial adiabatic trajectory, there could still be another adiabatic trajectory that well matches the proper waveform. A more sophisticated analysis of the impact of resonances would investigate the effect on parameter estimation. Neglecting resonances could bias estimates for the EMRI parameters.
+The impact of resonances on waveforms can first be estimated by calculating either the dephasing or reduction in overlap when compared with an adiabatic evolution. Even if the presence of a resonance causes a deviation from the initial adiabatic trajectory, there could still be another adiabatic trajectory that well matches the proper waveform. This would be good for purposes of detection, but would introduce systematic errors into parameter estimation. A more sophisticated analysis of the impact of resonances would investigate their influence on parameter estimation. Neglecting resonances could bias estimates for the EMRI parameters.
 
 Although BH solutions have been extensively studied over the past hundred years, there still remain unsolved problems with regards to the evolution of a binary system. The non-linearities of GR make the two-body problem difficult. To use EMRIs as a means of probing strong-field gravity, either to learn about MBHs or to look for modifications to gravity, we must understand the evolution of the system. This requires an accurate description of the self-force and the role of transient resonances. Work in this area continues.
