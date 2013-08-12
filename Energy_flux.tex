@@ -1,8 +1,8 @@
 \chapter{Semirelativistic fluxes}\label{ap:energy}
 
-The semirelativistic approximation for extreme-mass-ratio waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula \citep{Ruffini1981}. This is at the heart of the numerical kludge approximation. \citet*{Gair2005} derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the numerical kludge waveforms.
+The semirelativistic approximation for extreme-mass-ratio waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula \citep{Ruffini1981}. This is at the heart of the numerical kludge approximation. \citet{Gair2005} derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the numerical kludge waveforms.
 
-The published expressions contain a number of (minor) errors; we rederive the correct forms. We consider an object of mass $m$ orbiting about another of mass $M$, with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For this section we use geometric units with $G = c = 1$.
+The published expressions contain a number of (minor) typographical errors; we rederive the correct forms.\footnote{All the results of \citet{Gair2005} were calculated using the correct expressions.} We consider an object of mass $m$ orbiting about another of mass $M$, with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For this section we use geometric units with $G = c = 1$.
 
 The geodesic equations in Schwarzschild are
 \begin{subequations}
@@ -16,7 +16,7 @@ where $t$, $r$ and $\phi$ are the usual Schwarzschild coordinates, $\tau$ is the
 \begin{equation}
 \left(\diff{r}{\tau}\right)^2 = -\left(E^2 - 1\right)\dfrac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
 \end{equation}
-The turning points are the apoapsis, the periapsis and a third root; the orbit becomes unstable when $r\sub{p} = r_3$. An eccentricity can be defined, in analogy to Keplerian orbits, such that
+The turning points are the apoapsis $r\sub{a}$, the periapsis $r\sub{p}$ and a third root $r_3$; the orbit becomes unstable when $r\sub{p} = r_3$. An eccentricity can be defined, in analogy to Keplerian orbits, such that
 \begin{equation}
 r\sub{a} = \dfrac{1 + e}{1 - e}r\sub{p}.
 \end{equation}
@@ -55,20 +55,32 @@ By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r
 \begin{equation}
 \mathscr{I}_n = \dfrac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \dfrac{2n - 3}{2n - 1} \dfrac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \dfrac{2(n - 2)}{2n-1}\dfrac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
 \end{equation}
-Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series.\footnote{The integral $\mathscr{I}_{-1}$ could be calculated using \citet[3.148.6]{Gradshteyn2000}.} The zeroth integral can be evaluated using \citet[3.147.6]{Gradshteyn2000} as
+Setting $n = 2$, the third term vanishes, hence the integrals $\mathscr{I}_0$ and $\mathscr{I}_1$ are sufficient to specify the series.\footnote{The integral $\mathscr{I}_{-1}$ could also be evaluated using elliptic integrals \citep[3.148.6]{Gradshteyn2000}.} The zeroth integral can be evaluated using \citet[3.147.6]{Gradshteyn2000} as
 \begin{equation}
 \mathscr{I}_0 = \dfrac{2M}{\sqrt{r\sub{p}(r\sub{a} - r_3)}}K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right],
 \end{equation}
-where $K(k)$ is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
+where
+\begin{equation}
+K(k) = \intd{0}{\pi/2}{\frac{1}{\sqrt{1 - k^2 \sin^2\varphi}}}{\varphi}
+\end{equation}
+is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
 \begin{align}
 \mathscr{I}_1 = {} & \dfrac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right. \nonumber \\*
  {} & - \left.(r\sub{p} - r_3)\Pi\left[\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
 \end{align}
-where $\Pi(n,k)$ is the complete elliptic integral of the third kind. In this instance we may simplify using \citet[19.6.2]{Olver2010}
+where
+\begin{equation}
+\Pi(n,k) = \intd{0}{\pi/2}{\frac{1}{\left(1 - n \sin^2\varphi\right)\sqrt{1 - k^2 \sin^2\varphi}}}{\varphi}
+\end{equation}
+is the complete elliptic integral of the third kind. In this instance we may simplify using \citet[19.6.2]{Olver2010}
 \begin{equation}
 \Pi(k^2,k) = \dfrac{E(k)}{1 - k^2}
 \end{equation}
-to rewrite in terms of the complete elliptic integral of the second kind. Hence
+to rewrite in terms of the complete elliptic integral of the second kind
+\begin{equation}
+E(k) = \intd{0}{\pi/2}{{\sqrt{1 - k^2 \sin^2\varphi}}{\varphi}.
+\end{equation}
+Hence
 \begin{equation}
 \mathscr{I}_1 = \dfrac{2M^2}{r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right] - \dfrac{r\sub{a} - r_3}{r\sub{a}}E\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\}.
 \end{equation}
@@ -208,7 +220,7 @@ g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10
  {} & + \left. 47072 (1 + e)^9 y^9 + 4120 (1 + e)^{10} y^{10}. \right.
 \end{align}
 
-Taking limit $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
+Taking limit the $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
 \begin{align}
 \dfrac{M}{m} \upDelta E \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \dfrac{73}{24} e^2 + \dfrac{37}{96} e^{4}\right) \left(\dfrac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
  {} & - \left. \dfrac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \dfrac{31}{8} e^2 + \dfrac{65}{32} e^4 + \dfrac{1}{6}e^6\right) \left(\dfrac{M}{r\sub{p}}\right)^{9/2} \right. \nonumber \\*

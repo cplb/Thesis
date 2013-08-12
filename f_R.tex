@@ -720,11 +720,11 @@ The metric must be in isotropic coordinates~(\citealt[section 40.1]{Misner1973};
 \begin{equation}
 \gamma = \dfrac{3 - \exp(-\Upsilon r)}{3 + \exp(-\Upsilon r)}.
 \end{equation}
-As $\Upsilon \rightarrow \infty$, the GR value of $\gamma = 1$ is recovered. However, the experimental bounds for $\gamma$ are derived assuming that it is a constant \citep[section 6.1]{Will1993}. Since this is not the case, we shall rederive the post-Newtonian, or $\order{\varepsilon}$, corrections to photon trajectories for a more general metric. We define
+As $\Upsilon \rightarrow \infty$, the GR value of $\gamma = 1$ is recovered. However, the experimental bounds for $\gamma$ are derived assuming that it is a constant \citep[section 6.1]{Will1993}. Since this is not the case, we shall rederive the PN, or $\order{\varepsilon}$, corrections to photon trajectories for a more general metric. We define
 \begin{equation}
 \dd s^2 = \left[1+2\Psi(r)\right]\dd t^2 - \left[1 - 2\Phi(r)\right]\left(\dd x^2 + \dd y^2 + \dd z^2\right).
 \end{equation}
-To post-Newtonian order, this has non-zero connection coefficients
+To PN order, this has non-zero connection coefficients
 \begin{equation}
 {\Gamma^0}_{0i} = \dfrac{\Psi'(r) x^i}{r}; \quad {\Gamma^i}_{00} = \dfrac{\Psi'(r) x^i}{r}; \quad
 {\Gamma^i}_{jk} = \dfrac{\Phi'(r)\left(\delta_{jk}x^i - \delta_{ij}x^k - \delta_{ik}x^j\right)}{r}.
@@ -746,7 +746,7 @@ Since the geodesic is null we also have
 \begin{equation}
 g_{\mu\nu}\diff{x^\mu}{t}\diff{x^\nu}{t} = 0.
 \end{equation}
-To post-Newtonian accuracy these become
+To PN accuracy these become
 \begin{align}
 \label{eq:Trajectory_1}
 \difftwo{x^i}{t} = {} & -\left(\dfrac{\Psi'}{r} + \dfrac{\Phi'}{r}\left|\diff{\boldsymbol{x}}{t}\right|^2\right)x^i + 2\dfrac{\Psi' + \Phi'}{r}\boldsymbol{x}\cdot\diff{\boldsymbol{x}}{t}\diff{x^i}{t}, \\
@@ -757,7 +757,7 @@ The Newtonian, or zeroth-order, solution of these is propagation in a straight l
 \begin{equation}
 x^i\sub{N} = n^it; \qquad |\boldsymbol{n}| = 1.
 \end{equation}
-The post-Newtonian trajectory can be written as
+The PN trajectory can be written as
 \begin{equation}
 x^i = n^it + x^i\sub{PN}
 \end{equation}
@@ -766,7 +766,7 @@ where $x^i\sub{PN}$ is the deviation from the straight line. Substituting this i
 \difftwo{\boldsymbol{x}\sub{PN}}{t} = {} & -\grad(\Psi + \Phi) + 2\boldsymbol{n}\cdot\grad(\Psi + \Phi)\boldsymbol{n}, \\
 \boldsymbol{n}\cdot\diff{\boldsymbol{x}\sub{PN}}{t} = {} & \Psi + \Phi.
 \end{align}
-The post-Newtonian deviation only depends upon the combination $\Psi + \Phi$. From \eqnref{f(R)_Schw}
+The PN deviation only depends upon the combination $\Psi + \Phi$. From \eqnref{f(R)_Schw}
 \begin{align}
 \Psi(r) + \Phi(r) = {} & -\dfrac{2GM}{r} \nonumber \\*
  = {} & -2U(r).
@@ -776,7 +776,7 @@ This is identical to the form in GR. The result holds not just for a point mass,
 2\left(\Psi + \Phi\right) = {} & h_{00} + h_{ii} \qquad \text{(no summation)}\nonumber \\*
  = {} & \overline{h}_{00} + \overline{h}_{ii},
 \end{align}
-and since $\overline{h}_{\mu\nu}$ obeys \eqnref{Box_hmunu} exactly as in GR, there is no difference \citep{Zhao2011}. We conclude that an appropriate definition for the post-Newtonian parameter for light-bending is
+and since $\overline{h}_{\mu\nu}$ obeys \eqnref{Box_hmunu} exactly as in GR, there is no difference \citep{Zhao2011}. We conclude that an appropriate definition for the PN parameter for light-bending is
 \begin{equation}
 \gamma = -\dfrac{g_{00} + g_{ii}}{2U} - 1 \qquad \text{(no summation)}.
 \end{equation}

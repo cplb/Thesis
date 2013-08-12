@@ -1,6 +1,6 @@
 \chapter{Energy change in two-body encounters}\label{ap:Chandra}
 
-Two-body encounters are common in dense stellar systems, such as a NSC. During these encounters, energy and angular momentum can be exchanged. It is this that leads to the relaxation of a stellar system. \citet[chapter 2]{Chandrasekhar1960} derived the squared change in energy expected in a two-body encounter. We reproduce this here for use in \chapref{relax}, where we discuss the relaxation time-scale for the Galactic NSC.
+Two-body encounters are common in dense stellar systems, such as a nuclear star cluster. During these encounters, energy and angular momentum can be exchanged. It is this that leads to the relaxation of a stellar system. \citet[chapter 2]{Chandrasekhar1960} derived the squared change in energy expected in a two-body encounter. We reproduce this here for use in \chapref{relax}, where we discuss the relaxation time-scale for the Galactic NSC.
 
 We consider the interaction of a field star, denoted by 1, with a test star, 2; the centre-of-gravity and relative velocities are
 \begin{subequations}
@@ -30,7 +30,7 @@ where $\theta$ is the angle between $\boldsymbol{v}_1$ and $\boldsymbol{v}_2$. T
 \Delta E = {} & \recip{2} m_2 \left({v'_2}^2 - v_2^2\right)\\
  = {} & \dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\Phi' - \cos\Phi\right),
 \end{align}
-using primed variables for values after the interaction, and unprimed ones for before. If we project the angle out onto the orbital plane
+using primed variables for values after the interaction, and unprimed ones for values before. If we project the angle onto the orbital plane
 \begin{equation}
 \Delta E = \dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\phi' - \cos\phi\right)\cos i,
 \end{equation}
@@ -61,7 +61,7 @@ We must integrate out all these dependencies.
 
 Since we have assumed the stellar density does not depend upon position, we can simply integrate over the impact parameter; this is related to the deflection angle by
 \begin{equation}
-\recip{\cos^2\psi} = 1 + \dfrac{D^2V^4}{G(m_1 + m_2)}.
+\recip{\cos^2\psi} = 1 + \dfrac{D^2V^4}{G^2(m_1 + m_2)^2}.
 \end{equation}
 Thus
 \begin{align}
@@ -125,7 +125,7 @@ the former piece still contains the logarithmic term which we know must be large
 \begin{equation}
 J \simeq \recip{6 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(1 + q^2V_+^4\right) - \left(3V_+^2 + V_-^2\right)V_-\ln\left(1 + q^2V_-^4\right)\right].
 \end{equation}
-This may be further simplified, reusing the limit of large $q$ \citep{Chandrasekhar1941,Chandrasekhar1941b},
+This may be further simplified, reusing the limit of large $q$ previously employed to neglect terms which do not contain its logarithm \citep{Chandrasekhar1941,Chandrasekhar1941b},
 \begin{align}
 J \simeq {} & \recip{3 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(qV_+^2\right) - \left(3V_+^2 + V_-^2\right)V_-\ln\left(qV_-^2\right)\right] \\
  \simeq {} & \dfrac{4}{3v_1v_2}\begin{cases}
