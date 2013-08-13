@@ -2,21 +2,42 @@
 
 \section{Astrophysics and gravitation}
 
-\subsection{Extreme-mass-ratio bursts and massive black holes}
+In \chapref{Let-there-be-gravity} we explained the central role of gravity in astrophysics, how advancements in our understanding of gravity are driven by astronomical measurements and how gravitational interactions can give insight into astrophysical systems. We argued that the currently unexplored strong-field regime may be a source of interesting discoveries.
 
-\subsetion{Metric $f(R)$-gravity and gravitational radiation}
+Over the course of this thesis we have studied what could be learnt about both astrophysical systems and gravity. We have concentrated on using GWs as a tool, specifically from EMR systems. We have investigated using EMRBs to discover the properties of MBHs (\secref{Review-EMRBs}), calculated the observable differences between GR and metric $f(R)$-gravity (\secref{Review-f-R}) and looked at the effect of transient resonances on the evolution of EMRIs (\secref{Review-resonances}). We have seen that strong-field tests can be informative, but that there are still things to be learnt from weak fields too.
 
-\subsection{Extreme-mass-ratio inspirals and transient resonances}
+\subsection{Extreme-mass-ratio bursts and massive black holes}\label{sec:Review-EMRBs}
+
+In \partref{astro} we studied EMRBs and how they can be used to learn about MBHs, as well as investigating the properties of the NSC that surrounds an MBH. There are still many uncertainties about Galactic NSCs, their stellar distributions, MBHs and the processes that couple them. If could provide insightful constraints on the MBHs' parameters, principally mass and spin, they could elucidate the formation history of the MBHs and, by association, their host galaxies.
+
+We begin in \chapref{waveforms} by constructing EMRB waveforms. This was done using the semirelativistic NK approximation. To verify the accuracy of the waveforms, we derived the GW energy spectrum for a Keplerian parabolic orbit and confirmed that this matched the NK spectra for orbits with a large periapsis. We also compared the total energy flux with that derived from BH perturbation theory. From these comparisons, we estimated that the typical error in the NK waveforms was the order of a few percent.
+
+In \chapref{param} we investigated the potential for EMRBs to be used for inferring the properties of the Galactic MBH. We first determined that Galactic bursts are loud enough to be a credible source. The SNR, assuming the LISA noise curve, can be well approximated by a simple power law
+\begin{equation}
+\log\rho \simeq -2.7\log\left(\dfrac{r\sub{p}}{r\sub{g}}\right) + \log\left(\dfrac{\mu}{M_\odot}\right) + 4.9;
+\end{equation}
+assuming a $\mu = 10 M_\odot$ CO, bursts would be detectable for periapse distances $r\sub{p} \lesssim 65 r\sub{g}$. Using eLISA the SNR is reduced, it can be approximated by 
+\begin{equation}
+\log\rho \simeq -2.9\log\left(\dfrac{r\sub{p}}{r\sub{g}}\right) + \log\left(\dfrac{\mu}{M_\odot}\right) + 3.9,
+\end{equation}
+and bursts, assuming $\mu = 10 M_\odot$, are detectable for $r\sub{p} \lesssim 21 r\sub{g}$.
+
+Having determined that bursts could be detected, we investigated their information content. MCMC simulations were used to map out the posterior distributions calculated for a selection of bursts assuming detection with LISA. Characterising the distributions by their widths, we found that bursts can be informative if $r\sub{p} \lesssim 16 r\sub{g}$; to yield results better than currently available, the orbits need to have $r\sub{p} \lesssim 10 r\sub{g}$.
+
+Encouraged by results for Galactic bursts, in \chapref{extragal} we considered the possibility of detected bursts from extragalactic bursts. Using LISA, bursts are detectable from systems containing MBHs of masses $M_\bullet \sim 10^6$--$10^7 M_\odot$ out to distances of $R \sim 100\units{Mpc}$. This range encompasses a number of potential sources. For eLISA the range is reduced by approximately an order of magnitude, but this still leaves several candidate systems. M32 is the most promising extragalactic source.
+
+We also considered the information content of extragalactic bursts, using M32, NGC 4395 and NGC 4945 as example systems. Whilst extragalactic bursts are not as informative as their Galactic counterparts, we found that if $r\sub{p} \lesssim 8 r\sub{g}$ the burst provide useful measurements.
+
+To conclude our analysis of EMRBs, we calculated the event rate for Galactic bursts, the most likely source. Building a model for the Galactic centre, we estimated that there could be $\Gamma \approx 0.8\units{yr^{-1}}$ detectable bursts with LISA. As a consequence of mass segregation, stellar-mass BHs provide the majority of events, giving a rate of $\Gamma\sub{BH} \approx 0.6\units{yr^{-1}}$. For eLISA the rates are reduced to $\Gamma \approx 0.5\units{yr^{-1}}$ total and $\Gamma\sub{BH} \approx 0.3\units{yr^{-1}}$ for stellar-mass BHs. The event rate is not high, but still enough to make EMRBs a credible source over a mission lifetime.
+
+Using the event rate model, we constructed expectations for the amount of information that could be gained about the Galactic MBH from bursts. The information entropy of the burst posterior distributions relative to the priors was used to quantify this. We found that with a spaced-based mission comparable to LISA, we could expect to gain $2.2\units{nats}$ of information about the logarithm of the MBH mass, $3.0\units{nats}$ about the spin magnitude, $2.8\units{nats}$ about the cosine of the polar angle for the spin axis and $4.2\units{nats}$ for the azimuthal angle. EMRBs could be a useful medium for learning about MBHs; they are of greatest utility for investigating the Galactic MBH.
+
+In build the event rate model, it was necessary to understand the physics of the NSC surrounding the MBH. The distribution of COs relaxes through two-body encounters. We calculated an appropriate relaxation time in \chapref{relax}. This gives some insight into the population of COs close to the MBH.
+
+\subsection{Metric $f(R)$-gravity and gravitational radiation}\label{sec:Review-f-R}
+
+\subsection{Extreme-mass-ratio inspirals and transient resonances}\label{sec:Review-resonances}
 
 \section{The horizon}
 
 \section{\ldots must come down}
-
-We begin by studying how extreme-mass-ratio bursts (EMRBs), a particular class of gravitational wave signals, could be used to determine the properties of the massive black holes found in the centres of galaxies. EMRBs could be detectable with a space-borne detector from systems containing a $M_\bullet \sim 10^6$--$10^7 M_\odot$ black hole out to a distance of $\sim 100\units{Mpc}$. They could provide insightful constraints on the black holes' parameters, principally mass and spin, which could elucidate the formation history of the black holes and, by association, their host galaxies. In the case of our Galaxy, EMRBs need to originate from orbits with periapse radii of $r\sub{p} \lesssim 16 r\sub{g}$, where $r\sub{g} = GM_\bullet/c^2$ is a gravitational radius, to be informative; to yield results better than currently available, the orbits need to have $r\sub{p} \lesssim 10 r\sub{g}$. For the most promising extragalactic candidates, such as M32, the periapsis must be $r\sub{p} \lesssim 8 r\sub{g}$ for EMRBs to provide useful measurements.
-
-
-
-
-In \partref{astro} we studied EMRBs and how they can be used to learn about MBHs, as well as investigating the properties of the stellar core that surrounds an MBH. There are still many uncertainties about Galactic cores, their stellar distributions, MBHs and the processes that couple them.
-
-EMRBs could be a useful medium for learning about MBHs. Bursts are detectable from systems containing MBHs of masses $\sim 10^6$--$10^7 M_\odot$. They are of greatest utility for investigating the Galactic MBH. We have found that with a spaced-based mission comparable to LISA, we could expect to gain $2.2\units{nats}$ of information about the logarithm of the mass, $3.0\units{nats}$ about the spin magnitude, $2.8\units{nats}$ about the cosine of the polar angle for the spin axis and $4.2\units{nats}$ for the azimuthal angle.
