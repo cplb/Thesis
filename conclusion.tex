@@ -32,12 +32,62 @@ To conclude our analysis of EMRBs, we calculated the event rate for Galactic bur
 
 Using the event rate model, we constructed expectations for the amount of information that could be gained about the Galactic MBH from bursts. The information entropy of the burst posterior distributions relative to the priors was used to quantify this. We found that with a spaced-based mission comparable to LISA, we could expect to gain $2.2\units{nats}$ of information about the logarithm of the MBH mass, $3.0\units{nats}$ about the spin magnitude, $2.8\units{nats}$ about the cosine of the polar angle for the spin axis and $4.2\units{nats}$ for the azimuthal angle. EMRBs could be a useful medium for learning about MBHs; they are of greatest utility for investigating the Galactic MBH.
 
-In build the event rate model, it was necessary to understand the physics of the NSC surrounding the MBH. The distribution of COs relaxes through two-body encounters. We calculated an appropriate relaxation time in \chapref{relax}. This gives some insight into the population of COs close to the MBH.
+In building the event rate model it was necessary to incorporate the physics of the NSC that surrounds the MBH. The distribution of COs relaxes through two-body encounters. We calculated an appropriate relaxation time for the NSC in \chapref{relax}. This gives some insight into the population of COs close to the MBH, highlighting that the assumed formation of a cusp is not certain. The calculated values are comparable to those from the canonical values calculated using Maxwellian velocity distributions. This analysis emphasises how understanding Newtonian interactions is still an important problem in astrophysics.
 
 \subsection{Metric $f(R)$-gravity and gravitational radiation}\label{sec:Review-f-R}
 
+In \partref{grav} we moved on to considering our current understanding of gravity: only if we have an accurate comprehension of gravitational interactions can we use them to make inferences about astrophysical systems.
+
+We began by considering the effects of metric $f(R)$-gravity being the correct description of gravity. This alternative theory was introduced in \chapref{f-R1}. It shares many of the desirable properties of GR, but includes extra freedom through the arbitrary choice of the function $f(R)$. This gives $f(R)$-gravity the potential to match a range of phenomena. We adopted a functional form
+\begin{equation}
+f(R) = a_0 + R + \frac{a_2}{2}R^2 + \frac{a_3}{6}R^3 + \ldots
+\end{equation}
+with $a_0 = 0$ to permit Minkowski spacetime as a vacuum solution.
+
+Gravitational radiation is modified in $f(R)$-gravity. As in GR, there are two transverse GW polarizations which satisfy the vacuum wave equation
+\begin{equation}
+\Box \overline{h}_{\mu\nu} = 0,
+\end{equation}
+but instead of being the trace-reversed metric perturbation, the quantity $\overline{h}_{\mu\nu}$ also depends upon the (first-order) Ricci scalar according to
+\begin{equation}
+\overline{h}_{\mu\nu} = h_{\mu\nu} - \left(a_2 R^{(1)} + \dfrac{h}{2}\right)\eta_{\mu\nu}.
+\end{equation}
+In addition to the transverse modes, there is an addition scalar mode governed by vacuum wave equation
+\begin{equation}
+\Box R^{(1)} - \recip{3 a_2} R^{(1)} = 0.
+\end{equation}
+This is qualitatively different to in GR; detection of the scalar mode would be decisive evidence against GR.
+
+The form of the effective energy-momentum tensor is also modified. Using the short-wavelength approximate, we derived that the effective tensor is
+\begin{equation}
+t_{\mu\nu} = \recip{32\pi G}\left\langle \partial_\mu\overline{h}_{\sigma\rho}\partial_\nu\overline{h}^{\rho\sigma} + 6a_2^2\partial_\mu R^{(1)}\partial_\nu R^{(1)} \right\rangle.
+\end{equation}
+Additional energy-momentum is carried by the scalar mode (if it is propagating). This correctly reduces to the GR form in the limit of $a_2 \rightarrow 0$.
+
+In \chapref{f-R2} we considered the observational constraints that could be used to determine the form of $f(R)$. We derived the weak-field metric for a point mass. Since the BH solutions are the same as in GR, we must use measurements of extended bodies. Consequently EMR measurements of the structure of the spacetime of MBHs are not of use here, although the form of the radiation could be informative. We considered the classic tests of light-deflection and planetary precession. The former is identical to in GR to PN order, hence it is fully consistent with current observations. The perihelion precession of Mercury imposes the bound $|a_2| \lesssim 1.2 \times 10^{18}\units{m^2}$. A tighter bound can be achieved using laboratory fifth-force tests, $|a_2| \lesssim 2 \times 10^{-9}\units{m^2}$.
+
+These weak-field tests make it unlikely that we could hope to see deviations in the strong field, assuming that $f(R)$-gravity is a universally applicable theory. This need not be the case if it serves only as an effective theory. Additionally, there could be a screening effect, such as the chameleon mechanism, that suppresses the deviations from GR in the vicinity of matter. Therefore, strong-field tests are needed to decisively prove that GR is the correct theory of gravity.
+
 \subsection{Extreme-mass-ratio inspirals and transient resonances}\label{sec:Review-resonances}
+
+To conclude our study of gravitation, in \chapref{resonances} we investigated the effect of passing through a transient resonance on an EMRI evolution. Accurate waveforms are needed for either astronomical measurements of searching for deviations from GR, hence it is important to understand the impact of resonances. The behaviour of resonances is governed by the gravitational self-force; calculation of the self-force is an active area of research.
+
+We mapped out the location of resonances, providing an approximate fit for the semilatus rectum for a particular resonance as a function of MBH spin, orbital inclination and eccentricity. We then used matched asymptotic expansions to estimate the change in the orbital parameters across a resonance. The change for $\mathcal{I}_a = \{E,L_z,Q\}$ is given by
+\begin{equation}
+\Delta \mathcal{I}_a = \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp\left\{i\left[s \widehat{\kappa}_0 +\sgn\left(s\dot{\Omega}\right)\dfrac{\pi}{4}\right]\right\};
+\end{equation}
+as expected, this scales with the mass ratio $\eta$ and depends upon the magnitude of the self-force on resonance $F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)$, the resonance time-scale $\tau_{\mathrm{res},\,s}$, and a term that oscillates with the orbital phase on resonance $\widehat{\kappa}_0$ such that the average is zero.
 
 \section{The horizon}
 
+There remain open questions surrounding the topics covered in this work. Many of these should be answered as as we begin to amass observational data from strong-field tests, although we expect new questions to arise too. There is a multitude of problems that must be addressed before GW astronomy can become a mature science. Within the confines of the work considered here, there are some (smaller) problems that remain to be addressed; these could be fruitful subjects for further study.
+
+With regards to EMRBS, no work has yet be done on formulating a detection algorithm. While we have demonstrated that bursts can have high SNRs, we have not shown how they can be identified from a data stream. Since they have a well defined frequency spectrum, it should be possible to use matched filtering \citep[cf.][]{Feroz2010}; however, a pracitcal implementation of this has yet to be attempted.
+
+An interesting extension to the work on $f(R)$-gravity is to consider the case when the constant term in the function $f(R)$, $a_0$, is non-zero. In this case we study perturbations with respect to (anti-)de Sitter space. This is relevant because the current $\Lambda$CDM paradigm indicates that we live in a universe with a positive cosmological constant \citep{Komatsu2011,Hinshaw2012,Ade2013b}. Such a study naturally complements an investigation into the effects of background curvature on propagation \citep{Yang2011}. Furthermore, \citet{Sotiriou2011} assumed asymptotic flatness when proving that the BHs of $f(R)$-gravity must be the Kerr solutions; relaxing this assumption has yet to be conclusively investigated.
+
+Only preliminary work has been done into the influence of transient resonances on EMRI waveform analysis. The next step is to consider the waveform dephasing relative to an adiabatic evolution. A more sophisticated analysis of the impact of resonances should investigate their influence on parameter estimation. If the effect of passing through a resonance is small, they could be neglected for the purposes of detection. However, there is the possibility of doing so inferring parameters leads to a systematic error. If the effect of a resonance is large, then there could significant differences between parameters calculated assuming an adiabatic evolution and the true parameters. Any calculations require a self-force model, hence it is necessary to build an adequate description for this purposes.
+
 \section{\ldots must come down}
+
+Strong-field tests can provide new information regarding astrophysical objects and the nature of gravitation. Following the first direct detection of GWs, GW astronomy shall give us a new tool for examining the Universe and a novel means of measuring the properties of COs. This should result in many exciting discoveries. However, weak-field tests are still of great use, and there are aspects of systems whose properties are described by Newtonian dynamics which asre still to be fully understood. Both the gravity of Newton and the gravity of Einstein are of central importance to astrophysics, whether a further theory is needed remains to be discovered.

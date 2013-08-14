@@ -1,4 +1,4 @@
-\begin{thebibliography}{585}
+\begin{thebibliography}{586}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -996,6 +996,13 @@ Feng, H. \& Soria, R.;
   Reviews}}; \textbf{55}(5-6):166--183; 2011;
   \href{http://arxiv.org/abs/1109.1610}{\tt arXiv:1109.1610}.
 
+\bibitem[{Feroz \textit{et al\textup{.}}(2010)Feroz, Gair, Graff, Hobson \&
+  Lasenby}]{Feroz2010}
+Feroz, F., Gair, J.R., Graff, P., Hobson, M.P. \& Lasenby, A.;
+  \textit{\href{http://dx.doi.org/10.1088/0264-9381/27/7/075010}{Classical and
+  Quantum Gravity}}; \textbf{27}(7):075010(22); 2010;
+  \href{http://arxiv.org/abs/0911.0288}{\tt arXiv:0911.0288}.
+
 \bibitem[{Ferrarese \& Ford(2005)}]{Ferrarese2005}
 Ferrarese, L. \& Ford, H.;
   \textit{\href{http://dx.doi.org/10.1007/s11214-005-3947-6}{Space Science
@@ -1264,6 +1271,12 @@ Graham, A.W. \& Scott, N.;
   \textit{\href{http://dx.doi.org/10.1088/0004-637X/764/2/151}{The
   Astrophysical Journal}}; \textbf{764}(2):151(19); 2013;
   \href{http://arxiv.org/abs/1211.3199}{\tt arXiv:1211.3199}.
+
+\bibitem[{Gralla \& Wald(2008)}]{Gralla2008}
+Gralla, S.E. \& Wald, R.M.;
+  \textit{\href{http://dx.doi.org/10.1088/0264-9381/25/20/205009}{Classical and
+  Quantum Gravity}}; \textbf{25}(20):205009(33); 2008;
+  \href{http://arxiv.org/abs/0806.3293}{\tt arXiv:0806.3293}.
 
 \bibitem[{Greenhill \textit{et al\textup{.}}(2003)}]{Greenhill2003}
 Greenhill, L.J. \textit{et al\textup{.}};
@@ -1592,12 +1605,6 @@ Jani, K.P., Finn, L.S. \& Benacquista, M.J.; 2013;
 Jaranowski, P. \& Kr{\'o}lak, A.;
   \textit{\href{http://dx.doi.org/10.12942/lrr-2012-4}{Living Reviews in
   Relativity}}; \textbf{15}(4); 2012.
-
-\bibitem[{Jarosik \textit{et al\textup{.}}(2011)}]{Jarosik2011}
-Jarosik, N. \textit{et al\textup{.}};
-  \textit{\href{http://dx.doi.org/10.1088/0067-0049/192/2/14}{The Astrophysical
-  Journal Supplement Series}}; \textbf{192}(2):14(15); 2011;
-  \href{http://arxiv.org/abs/1001.4744}{\tt arXiv:1001.4744}.
 
 \bibitem[{Jaynes(2003)}]{Jaynes2003}
 Jaynes, E.T.; \textit{{Probability Theory: The Logic of Science}}; Cambridge:
