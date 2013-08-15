@@ -19,7 +19,7 @@
 \bibitem[{Abadie \textit{et al\textup{.}}(2010)}]{Abadie2010a}
 Abadie, J. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/27/17/173001}{Classical and
-  Quantum Gravity}}; \textbf{27}(17):173001; 2010;
+  Quantum Gravity}}; \textbf{27}(17):173001(25); 2010;
   \href{http://arxiv.org/abs/1003.2480}{\tt arXiv:1003.2480}.
 
 \bibitem[{Abbott \textit{et al\textup{.}}(2007)}]{Abbott2007}
@@ -72,13 +72,13 @@ Ade, P.A.R. \textit{et al\textup{.}}; 2013{\natexlab{b}};
 
 \bibitem[{Adelberger \textit{et al\textup{.}}(2009)Adelberger, Gundlach,
   Heckel, Hoedl \& Schlamminger}]{Adelberger2009}
-Adelberger, E., Gundlach, J., Heckel, B., Hoedl, S. \& Schlamminger, S.;
+Adelberger, E.G., Gundlach, J.H., Heckel, B.R., Hoedl, S. \& Schlamminger, S.;
   \textit{\href{http://dx.doi.org/10.1016/j.ppnp.2008.08.002}{Progress in
   Particle and Nuclear Physics}}; \textbf{62}(1):102--134; 2009.
 
 \bibitem[{Adelberger \textit{et al\textup{.}}(2003)Adelberger, Heckel \&
   Nelson}]{Adelberger2003}
-Adelberger, E., Heckel, B. \& Nelson, A.;
+Adelberger, E.G., Heckel, B.R. \& Nelson, A.E.;
   \textit{\href{http://dx.doi.org/10.1146/annurev.nucl.53.041002.110503}{Annual
   Review of Nuclear and Particle Science}}; \textbf{53}(1):77--121; 2003;
   \href{http://arxiv.org/abs/hep-ph/0307284}{\tt arXiv:hep-ph/0307284}.
@@ -93,13 +93,13 @@ Aguirre, A., Schaye, J. \& Quataert, E.;
 \bibitem[{Alexander \& Yunes(2009)}]{Alexander2009a}
 Alexander, S. \& Yunes, N.;
   \textit{\href{http://dx.doi.org/10.1016/j.physrep.2009.07.002}{Physics
-  Reports}}; \textbf{480}(1-2):1--55; 2009;
+  Reports}}; \textbf{480}(1--2):1--55; 2009;
   \href{http://arxiv.org/abs/0907.2562}{\tt arXiv:0907.2562}.
 
 \bibitem[{Alexander(2005)}]{Alexander2005}
 Alexander, T.;
   \textit{\href{http://dx.doi.org/10.1016/j.physrep.2005.08.002}{Physics
-  Reports}}; \textbf{419}(2-3):65--142; 2005;
+  Reports}}; \textbf{419}(2--3):65--142; 2005;
   \href{http://arxiv.org/abs/astro-ph/0508106}{\tt arXiv:astro-ph/0508106}.
 
 \bibitem[{Alexander \& Hopman(2003)}]{Alexander2003}
@@ -200,7 +200,8 @@ Antonucci, F. \textit{et al\textup{.}};
 \bibitem[{Anza \textit{et al\textup{.}}(2005)}]{Anza2005}
 Anza, S. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/22/10/001}{Classical and
-  Quantum Gravity}}; \textbf{22}(10):S125--S138; 2005.
+  Quantum Gravity}}; \textbf{22}(10):S125--S138; 2005;
+  \href{http://arxiv.org/abs/gr-qc/0504062}{\tt arXiv:gr-qc/0504062}.
 
 \bibitem[{Arnol'd(1963)}]{Arnold1963}
 Arnol'd, V.I.;
