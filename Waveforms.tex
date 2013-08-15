@@ -87,7 +87,7 @@ Changing variable to $\xi = \cos^2\theta$, we have a maximum value $\xi_- = \cos
 \xi_- = \dfrac{Q}{Q+L_z^2} = \dfrac{Q}{L_\infty^2}.
 \label{eq:theta_0}
 \end{equation}
-See \figref{L_triangle} for a geometrical visualization.
+See \figref{L_triangle} for a geometrical visualization. 
 \begin{figure}
 \centering
 \includegraphics[width=0.25\textwidth]{./images/Triangle}
@@ -160,14 +160,14 @@ Since we are only interested in GWs, we use the transverse-traceless (TT) gauge 
 
 The classic LISA design is a three arm, space-borne laser interferometer \citep{Bender1998, Danzmann2003}. The arms form an equilateral triangle that rotates as the system's centre of mass follows a circular, heliocentric orbit, trailing $20^{\circ}$ behind the Earth. eLISA has a similar design, but  has only two arms, which are shorter in length, and trails $9^{\circ}$ behind the Earth \citep{Jennrich2011}.
 
-To describe the detector configuration, and to transform from the MBH coordinate system to those of the detector, we use three coordinate systems: those of the BH at the GC $x_\bullet^i$; ecliptic coordinates centred at the solar system (SS) barycentre $x_\odot^i$, and coordinates that co-rotate with the detector $x\sub{d}^i$. The MBH's coordinate system and the SS coordinate system are depicted in \figref{BH_SS}.
+To describe the detector configuration, and to transform from the MBH coordinate system to those of the detector, we use three coordinate systems: those of the BH at the GC $x_\bullet^i$; ecliptic coordinates centred at the solar system (SS) barycentre $x_\odot^i$, and coordinates that co-rotate with the detector $x\sub{d}^i$. The MBH's coordinate system and the SS coordinate system are depicted in \figref{BH_SS}. 
 \begin{figure}
 \centering
  \includegraphics[width=0.42\textwidth]{./images/BH_SS_angles}
     \caption{The relationship between the MBH's coordinate system $x_\bullet^i$ and the SS coordinate system $x_\odot^i$. The MBH's spin axis is aligned with the $z_\bullet$-axis. The orientation of the MBH's $x$- and $y$-axes is arbitrary. We choose $x_\bullet$ to be orthogonal to the direction to the SS.}
    \label{fig:BH_SS}
 \end{figure}
-The mission geometry for LISA and eLISA is shown in \figref{SS_LISA}.
+The mission geometry for LISA and eLISA is shown in \figref{SS_LISA}. 
 \begin{figure}
 \centering
  \includegraphics[width=0.32\textwidth]{./images/SS_LISA}
@@ -215,7 +215,7 @@ p(\boldsymbol{s}(t)|\boldsymbol{h}(t)) \propto \exp\left[-\recip{2}\innerprod{\b
 \subsection{The noise curve}\label{sec:Noise}
 
 LISA's noise has two sources: instrumental noise and confusion noise, primarily from WD binaries. The latter may be divided into contributions from galactic and extragalactic binaries. In this work we use the noise model of \citet{Barack2004}. The shape of the noise curve can be seen in \figref{Noise}. The instrumental noise dominates at both high and low frequencies. The confusion noise is important at intermediate frequencies, and is responsible for the cusp around $10^{-3}\units{Hz}$. eLISA shares the same sources of noise, but is less affected by confusion \citep{Jennrich2011}. Its sensitivity regime is shifted to higher frequencies because of the shorter arm length.
-\begin{figure}[!htp]
+\begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_Noise}
 \caption{The detector noise curves. The solid line indicates the analytic approximation of \citet{Barack2004} used in this work. For comparison, the dashed line is from the online LISA sensitivity curve generator (\url{http://www.srl.caltech.edu/~shane/sensitivity/}; \citealt*{Larson2000, Larson2002}). For bursts from the Galactic Centre we are most interested in the low-frequency region where the two curves are the same. The dot--dashed line shows the eLISA noise curve.}
@@ -412,7 +412,7 @@ The two total energies are consistent, $E\sub{int} = E\sub{sum}$.
 \subsection{Comparison}
 
 Two energy spectra are plotted in \figref{Energy} for orbits with periapses of $r\sub{p} = 15.0 r\sub{g}$, $30.0 r\sub{g}$ and $60.0 r\sub{g}$.
-\begin{figure}%[!htp]
+\begin{figure}
   \centering
    \subfigure[$r\sub{p} = 15.0 r\sub{g}$, log-log plot.]{\includegraphics[width=0.48\textwidth]{./images/Fig_Loglog_E_15}} \quad
    \subfigure[$r\sub{p} = 15.0 r\sub{g}$, log-linear plot.]{\includegraphics[width=0.48\textwidth]{./images/Fig_Loglin_E_15}} \\
@@ -426,7 +426,7 @@ Two energy spectra are plotted in \figref{Energy} for orbits with periapses of $
 The two spectra appear to be in good agreement, showing the same general shape in the weak-field limit. The NK spectrum is more tightly peaked, but is always within a factor of $2$ at the apex. The peak of the spectrum is shifted to a marginally higher frequency in the NK spectrum primarily because of the addition of the current quadrupole and mass octupole terms.
 
 Comparing the total energy fluxes, ratios of the various energies are plotted in \figref{Energy_ratio}.
-\begin{figure}%[!htp]
+\begin{figure}
   \centering
    \subfigure[Versus periapsis]{\includegraphics[width=0.475\textwidth]{./images/Fig_Energy_ratio_peri}} \quad
    \subfigure[Versus amount of rotation]{\includegraphics[width=0.475\textwidth]{./images/Fig_Energy_ratio_orbit}}
