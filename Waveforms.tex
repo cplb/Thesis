@@ -2,15 +2,15 @@
 
 \section{Massive black holes and extreme-mass-ratio events}
 
-An exciting means of inferring information about MBHs is through GWs emitted when COs, such as stellar-mass BHs, NSs, WDs or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as LISA, is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion objects inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the object plunges into the MBH. These systems are typically formed following two-body encounters so that the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are extreme mass-ratio bursts (EMRBs; \citealt{Rubbo2006}). Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the frequency range of a LISA-like space-borne detector. The resulting signals are extreme mass-ratio inspirals (EMRIs; \citealt{Amaro-Seoane2007}).
+An exciting means of inferring information about MBHs is through GWs emitted when COs, such as stellar-mass BHs, NSs, WDs or low mass main sequence (MS) stars, pass close by \citep{Sathyaprakash2009}. A space-borne detector, such as LISA, is designed to be able to detect GWs in the frequency range of interest for these encounters \citep{Danzmann2003, Jennrich2011, Amaro-Seoane2012a}. The identification of waves requires a set of accurate waveform templates covering parameter space. Much work has already been done on the waveforms generated when companion COs inspiral towards an MBH \citep{Glampedakis2005, Barack2009}; as they orbit, the GWs carry away energy and angular momentum, causing the orbit to shrink until eventually the CO plunges into the MBH. These systems are typically formed following two-body encounters so that the initial orbits are highly eccentric; a burst of radiation is emitted during each periapse passage. These are EMRBs \citep{Rubbo2006}. Assuming that the companion is not scattered from its orbit, and does not plunge straight into the MBH, its orbit evolves, becoming more circular, and it shall begin to continuously emit significant gravitational radiation in the frequency range of a LISA-like space-borne detector. The resulting signals are EMRIs \citep{Amaro-Seoane2007}.
 
-Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high signal-to-noise ratio (SNR) to be accumulated. Here, we investigate high eccentricity orbits. EMRBs are much shorter in duration than EMRIs; this means they do not accumulate as high SNRs, or produce as detailed maps of the spacetime. They are therefore less valued prizes. However, they may still be an interesting signal. As an object inspirals it emits many bursts before eventually settling into a low eccentricity EMRI. Some objects shall be scattered by two-body encounters and never reach the EMRI phase \citep{Alexander2003}. Thus, there are many potential EMRBs per EMRI, although this does not necessarily translate to there being more detectable EMRBs than EMRIs. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. The event rate is dominated by bursts from the Galactic Centre (GC). Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC.
+Studies of these systems have usually focused upon the phase when the orbit is close to plunge and completes a large number of cycles in the detector's frequency band, allowing a high SNR to be accumulated. Here, we investigate high eccentricity orbits. EMRBs are much shorter in duration than EMRIs; this means they do not accumulate as high SNRs, or produce as detailed maps of the spacetime. They are therefore less valued prizes. However, they may still be an interesting signal. As an object inspirals it emits many bursts before eventually settling into a low eccentricity EMRI. Some objects shall be scattered by two-body encounters and never reach the EMRI phase \citep{Alexander2003}. Thus, there are many potential EMRBs per EMRI, although this does not necessarily translate to there being more detectable EMRBs than EMRIs. The event rate for the detection of such EMRBs with LISA has been estimated to be as high as $15\units{yr^{-1}}$ \citep{Rubbo2006}, although this has been subsequently revised downwards to the order of $1\units{yr^{-1}}$ \citep{Hopman2007}. The event rate is dominated by bursts from the GC. Even if only a single burst is detected during a mission, this is still an exciting possibility since the information carried by the GW should give an unparalleled probe of the structure of spacetime of the GC.
 
 To model bursts we make the simplifying assumption that all these orbits are marginally bound, or parabolic, since highly eccentric orbits appear almost indistinguishable from an appropriate parabolic orbit. Here ``parabolic'' and ``eccentricity'' refer to the energy of the geodesic and not to the geometric shape of the orbit.\footnote{Marginally bound Keplerian orbits (in flat spacetime) are parabolic in both senses.} Following such a trajectory an object may make just one pass of the MBH or, if the periapsis distance is small enough, it may complete a number of rotations. Such an orbit is referred to as zoom--whirl \citep{Glampedakis2002a}.
 
-We begin our investigation of the properties of EMRBs as a means of studying MBHs by constructing approximate waveforms. To do so we integrate the geodesic equations for a parabolic orbit in Kerr spacetime (\secref{Geodesic}); we assume that the orbiting body is a test particle, such that it does not influence the underlying spacetime, and that the orbital parameters evolve negligibly during the orbit such that they may be held constant.\footnote{In \apref{evolve} it is shown that orbital evolution is typically negligible for EMR systems.} We use this trajectory to construct an approximate numerical kludge (NK) waveform \citep{Babak2007} as explained in \secref{Kludge}. In \secref{Signal} we establish what the LISA detectors would measure and how the signal would be analysed. Since there does not exist a definite mission design, we use the classic LISA design for the majority of this work. It is hoped that any future missions shall have comparable sensitivity, and studies using the LISA design are sensible benchmarks for comparison. In a few places we look at the detectability of bursts using eLISA, since this the currently most likely design for the first space-based detector. We confirm the accuracy of the kludge waveforms in \secref{Energy} by comparing the energy flux to fluxes calculated using other approaches. The typical error introduced by the NK approximation may be a few percent, but this worsens as the periapsis approaches the last non-plunging orbit.
+We begin our investigation of the properties of EMRBs as a means of studying MBHs by constructing approximate waveforms. To do so we integrate the geodesic equations for a parabolic orbit in Kerr spacetime (\secref{Geodesic}); we assume that the orbiting body is a test particle, such that it does not influence the underlying spacetime, and that the orbital parameters evolve negligibly during the orbit such that they may be held constant.\footnote{In \apref{evolve} we show that orbital evolution is typically negligible for EMR systems.} We use this trajectory to construct an approximate numerical kludge (NK) waveform \citep{Babak2007} as explained in \secref{Kludge}. In \secref{Signal} we establish what the LISA detectors would measure and how the signal would be analysed. Since there does not exist a definite mission design, we use the classic LISA design for the majority of this work. It is hoped that any future missions shall have comparable sensitivity, and studies using the LISA design are sensible benchmarks for comparison. In a few places we look at the detectability of bursts using eLISA, since this the currently most likely design for the first space-based detector. We confirm the accuracy of the kludge waveforms in \secref{Energy} by comparing the energy flux to fluxes calculated using other approaches. The typical error introduced by the NK approximation may be a few percent, but this worsens as the periapsis approaches the last non-plunging orbit.
 
-Having established the accuracy of our NK waveforms, we study what information can be extracted from them. Exactly what can be inferred depends upon the orbit. We begin in \chapref{param} by looking at EMRBs from the GC as the Galaxy's MBH is the most promising to study. Finding promising results, we extend our study to extragalactic sources in \chapref{extragal}. We complete our analysis of EMRBs in \chapref{events}, where we build a simple model for burst event rates and use this to estimate what we could expect to learn from them.
+Having established the accuracy of our NK waveforms, we study what information can be extracted from them. Exactly what can be inferred depends upon the orbit. We begin in \chapref{param} by looking at EMRBs from the GC as the Galaxy's MBH is the most promising to study. Finding promising results, we extend our study to extragalactic sources in \chapref{extragal}. We complete our analysis of EMRBs in \chapref{events}, where we build a simple model for burst event rates and use this to estimate what we could expect to learn from them. This model is supplemented by calculations of the relaxation time-scale for the CO populations in the GC contained in \chapref{relax}.
 
 \section{Parabolic orbits in Kerr spacetime}\label{sec:Geodesic}
 
@@ -66,13 +66,13 @@ In integrating the geodesic equations, difficulties can arise because of the pre
 \begin{align}
 V_r = {} & 2M_\bullet r^3 - \left(L_z^2+Q\right)r^2 + 2M_\bullet\left[\left(L_z - a\right)^2 + Q\right]r - a^2 Q = {} 0.
 \end{align}
-This has three roots, which we shall denote $\{r_1, r_2, r\sub{p}\}$; the periapsis $r\sub{p}$ is the largest real root.\footnote{The apoapsis is not a (fourth) root to this equation as we have removed it by taking $E = 1$ before solving. This turning point can be found by setting the unconstrained expression for $V_r$ equal to zero, and then solving for $E(r)$; taking the limit $r \rightarrow \infty$ gives $E \rightarrow 1$ \citep{Wilkins1972}.}
+This has three roots, which we shall denote $\{r_1, r_2, r\sub{p}\}$; the periapsis $r\sub{p}$ is the largest real root.\footnote{The apoapsis is not a (fourth) root of this equation as we have removed it by taking $E = 1$ before solving. This turning point can be found by setting the unconstrained expression for $V_r$ equal to zero, and then solving for $E(r)$; taking the limit $r \rightarrow \infty$ gives $E \rightarrow 1$ \citep{Wilkins1972}.}
 
 We avoid the difficulties associated with the turning point by introducing angular variables that always increase with proper time \citep{Drasco2004}: inspired by Keplerian orbits, we parameterize our trajectory by
 \begin{equation}
 r = \dfrac{p}{1+e\cos\psi},
 \end{equation}
-where $e = 1$ is the eccentricity $p = 2r\sub{p}$ is the semilatus rectum and $\psi$ is the relativistic anomaly \citep{Darwin1961}. As $\psi$ covers its range from $-\pi$ to $\pi$, $r$ traces out a complete orbit. The geodesic equation for $\psi$ is
+where $e = 1$ is the eccentricity, $p = 2r\sub{p}$ is the semilatus rectum and $\psi$ is the relativistic anomaly \citep{Darwin1961}. As $\psi$ covers its range from $-\pi$ to $\pi$, $r$ traces out a complete orbit. The geodesic equation for $\psi$ is
 \begin{align}
 \varrho^2 \diff{\psi}{\tau} = {} & \left\{M_\bullet\left[2r\sub{p} - \left(r_1 + r_2\right)\left(1 + \cos\psi\right) \vphantom{\dfrac{r_1 r_2}{2r\sub{p}}} +  \dfrac{r_1 r_2}{2r\sub{p}}\left(1 + \cos\psi\right)^2\right]\right\}^{1/2}.
 \end{align}
@@ -105,11 +105,11 @@ Over one $2\pi$ period of $\chi$, $\theta$ oscillates from its minimum value to 
 
 \section{Waveform construction}\label{sec:Kludge}
 
-We can now calculate the geodesic trajectory. The orbiting body is assumed to follow this track exactly; we ignore evolution due to the radiation of energy and angular momentum, which should be negligible for EMRBs as calculated in \apref{evolve}. From this trajectory we calculate the waveform using a semirelativistic approximation \citep{Ruffini1981}: we assume the particle moves along the Kerr geodesic, but radiates as if it were in flat spacetime. This quick-and-dirty technique is known as a numerical kludge (NK), and has been shown to approximate well results computed by more accurate methods \citep{Babak2007}. It is often compared to a bead travelling along a wire. The shape of the wire is set by the Kerr geodesic, but the bead moves along in flat space.
+We can now calculate the geodesic trajectory. The orbiting body is assumed to follow this track exactly; we ignore evolution due to the radiation of energy and angular momentum, which should be negligible for EMRBs, as calculated in \apref{evolve}. From this trajectory we calculate the waveform using a semirelativistic approximation \citep{Ruffini1981}: we assume the particle moves along the Kerr geodesic, but radiates as if it were in flat spacetime. This quick-and-dirty technique is known as an NK, and has been shown to approximate well results computed by more accurate methods \citep{Babak2007}. It is often compared to a bead travelling along a wire. The shape of the wire is set by the Kerr geodesic, but the bead moves along in flat space.
 
-\subsection{The kludge approximation}
+\subsection{The numerical kludge approximation}
 
-Numerical kludge approximations aim to encapsulate the main characteristics of a waveform by using the exact particle trajectory (ignoring inaccuracies from radiative effects and from the particle's self-force), whilst saving on computational time by using approximate waveform generation techniques.
+NK approximations aim to encapsulate the main characteristics of a waveform by using the exact particle trajectory (ignoring inaccuracies from radiative effects and from the particle's self-force), whilst saving on computational time by using approximate waveform generation techniques.
 
 We build an equivalent flat-space trajectory by identifying the Boyer--Lindquist coordinates with a set of flat-space coordinates. We consider two choices:
 \begin{enumerate}
@@ -121,7 +121,7 @@ r\sub{sph} \sin\theta\sub{sph}\sin\phi\sub{sph} \\
 r\sub{sph} \cos\theta\sub{sph}
 \end{pmatrix}.
 \end{equation}
-\item Identify the Boyer--Lindquist coordinates with flat-space oblate-spheroidal coordinates \linebreak $\{r\sub{BL}, \theta\sub{BL}, \phi\sub{BL}\} \rightarrow \{r\sub{ob}, \theta\sub{ob}, \phi\sub{ob}\}$ so that the flat-space Cartesian coordinates are
+\item Identify the Boyer--Lindquist coordinates with flat-space oblate-spheroidal coordinates $\{r\sub{BL}, \theta\sub{BL}, \phi\sub{BL}\} \rightarrow \{r\sub{ob}, \theta\sub{ob}, \phi\sub{ob}\}$ so that the flat-space Cartesian coordinates are
 \begin{equation}
 \boldsymbol{x} = \begin{pmatrix}
 \sqrt{{r\sub{ob}}^2 + a^2} \sin\theta\sub{ob}\cos\phi\sub{ob} \\
@@ -145,12 +145,12 @@ h^{jk}(t, \boldsymbol{x}) = -\dfrac{2G}{c^6r}\left(\ddot{I}^{jk} - 2n_i\ddot{S}^
 where an over-dot represents differentiation with respect to time $t$, $t'$ is the retarded time, $r = \left|\boldsymbol{x} - \boldsymbol{x}\sub{P}\right|$ is the radial distance, $\boldsymbol{n}$ is the radial unit vector, and the mass quadrupole ${I}^{jk}$, current quadrupole ${S}^{ijk}$ and mass octupole ${M}^{ijk}$ are defined by
 \begin{subequations}
 \begin{align}
-{I}^{jk}\left(t'\right) = {} & \intd{}{}{{x'}^j{x'}^kT^{00}\left(t', \boldsymbol{x'}\right) }{^3x'};\\
-{S}^{ijk}\left(t'\right) = {} & \intd{}{}{{x'}^j{x'}^kT^{0i}\left(t', \boldsymbol{x'}\right)}{^3x'};\\
+{I}^{jk}\left(t'\right) = {} & \intd{}{}{{x'}^j{x'}^kT^{00}\left(t', \boldsymbol{x'}\right) }{^3x'}, \\
+{S}^{ijk}\left(t'\right) = {} & \intd{}{}{{x'}^j{x'}^kT^{0i}\left(t', \boldsymbol{x'}\right)}{^3x'}, \\
 {M}^{ijk}\left(t'\right)  = {} & \recip{c}\intd{}{}{{x'}^i{x'}^j{x'}^kT^{00}\left(t', \boldsymbol{x'}\right)}{^3x'},
 \end{align}
 \end{subequations}
-for energy--momentum tensor $T^{\mu\nu}$. This is correct for a slowly moving source. It is the familiar quadrupole formula \linebreak[0] (\citealt[section 36.10]{Misner1973}; \citealt[section 17.9]{Hobson2006}), derived from linearized theory, plus the next order terms. For a point mass, $T^{\mu\nu}$ contains a $\delta$-function which allows easy evaluation of the integrals.
+for energy--momentum tensor $T^{\mu\nu}$. This is correct for a slowly moving source. It is the familiar quadrupole formula \linebreak[0] (\citealt[section 36.10]{Misner1973}; \citealt[section 17.9]{Hobson2006}), derived from linearised theory, plus the next order terms. For a point mass, $T^{\mu\nu}$ contains a $\delta$-function which allows easy evaluation of the integrals.
 
 Since we are only interested in GWs, we use the transverse-traceless (TT) gauge \citep[box 35.1]{Misner1973}.
 
@@ -197,7 +197,7 @@ introducing Fourier transforms
 \begin{equation}
 \tilde{g}(f) = \mathscr{F}\{g(t)\} = \intd{-\infty}{\infty}{g(t)\exp(2\pi i ft)}{t},
 \end{equation}
-and $S_{n}(f)$ is the noise spectral density. The inner product is derived in \apref{inner-prod}. The signal-to-noise ratio is approximately
+and $S_{n}(f)$ is the noise spectral density. The inner product is derived in \apref{inner-prod}. The SNR is approximately
 \begin{equation}
 \rho[\boldsymbol{h}] = \innerprod{\boldsymbol{h}}{\boldsymbol{h}}^{1/2}.
 \label{eq:SNR}
@@ -218,7 +218,7 @@ LISA's noise has two sources: instrumental noise and confusion noise, primarily 
 \begin{figure}
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_Noise}
-\caption{The detector noise curves. The solid line indicates the analytic approximation of \citet{Barack2004} used in this work. For comparison, the dashed line is from the online LISA sensitivity curve generator (\url{http://www.srl.caltech.edu/~shane/sensitivity/}; \citealt*{Larson2000, Larson2002}). For bursts from the Galactic Centre we are most interested in the low-frequency region where the two curves are the same. The dot--dashed line shows the eLISA noise curve.}
+\caption{The detector noise curves. The solid line indicates the analytic approximation of \citet{Barack2004} used in this work. For comparison, the dashed line is from the online LISA sensitivity curve generator (\url{http://www.srl.caltech.edu/~shane/sensitivity/}; \citealt{Larson2000, Larson2002}). For bursts from the Galactic Centre we are most interested in the low-frequency region where the two curves are the same. The dot--dashed line shows the eLISA noise curve.}
 \label{fig:Noise}
 \end{figure}
 
@@ -324,8 +324,7 @@ J_\nu(z) = \recip{\pi}\intd{0}{\pi}{\cos(\nu\vartheta - z\sin\vartheta)}{\varthe
 \end{equation}
 we want the limit of this for $\nu \rightarrow \infty$, $z \rightarrow \infty$, with $z \leq \nu$. Using the stationary phase approximation, the dominant contribution to the integral comes from the regime in which the argument of the cosine is approximately zero \citep[sections 8.2, 8.43]{Watson1995}:
 \begin{align}
-J_\nu(z)  \sim {} & \recip{\pi}\intd{0}{\pi}{\cos\left(\nu\vartheta - z\vartheta + \dfrac{z}{6}\vartheta^3\right)}{\vartheta}\\*
-  \sim {} & \recip{\pi}\intd{0}{\infty}{\cos\left(\nu\vartheta - z\vartheta + \dfrac{z}{6}\vartheta^3\right)}{\vartheta};
+J_\nu(z) \sim {} & \recip{\pi}\intd{0}{\pi}{\cos\left(\nu\vartheta - z\vartheta + \dfrac{z}{6}\vartheta^3\right)}{\vartheta} \sim \recip{\pi}\intd{0}{\infty}{\cos\left(\nu\vartheta - z\vartheta + \dfrac{z}{6}\vartheta^3\right)}{\vartheta};
 \end{align}
 this last expression is an Airy integral and has a standard form \citep[section 6.4]{Watson1995}
 \begin{equation}
@@ -357,7 +356,7 @@ to give
 \begin{align}
 J'_n(ne)  \sim {} & \dfrac{1-e}{\sqrt{3}\pi}\left[K_{-2/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right)\right].
 \end{align}
-And so finally we obtain the well-defined
+Thus, we obtain the well-defined
 \begin{align}
 B(\tilde{f})  = {} & \recip{\sqrt{3}\pi}\left[K_{-2/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) + K_{4/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right) - \recip{\sqrt{2}\tilde{f}}K_{1/3}\left(\dfrac{2^{3/2}\tilde{f}}{3}\right)\right].
 \end{align}
@@ -369,10 +368,10 @@ Having obtained expressions for $A(\tilde{f})$ and $B(\tilde{f})$ in terms of st
 \end{equation}
 where we have used the limit
 \begin{align}
-\ell(\tilde{f})  = {} & \left[8\tilde{f}^2B(\tilde{f}) - 2\tilde{f}A(\tilde{f})\right]^2 + \left(128\tilde{f}^4 + \dfrac{4\tilde{f}^2}{3}\right)\left[A(\tilde{f})\right]^2.
+\ell\left(\tilde{f}\right)  = {} & \left[8\tilde{f}^2B\left(\tilde{f}\right) - 2\tilde{f}A\left(\tilde{f}\right)\right]^2 + \left(128\tilde{f}^4 + \dfrac{4\tilde{f}^2}{3}\right)\left[A\left(\tilde{f}\right)\right]^2.
 \label{eq:ell}
 \end{align}
-This agrees with the $e = 1$ result of \citet{Turner1977}, which was computed by direct integration along unbound orbits. \Figref{ell} shows how $\ell(n,e)$ changes with eccentricity including our result for a parabolic encounter. Although more power is radiated into higher harmonics, the peak of the spectrum does not move much: it is always between $f = f\sub{c}$ and $f = 2 f\sub{c}$, with $f = 2 f\sub{c}$ for $e = 0$ and $f \simeq 1.637 f\sub{c}$ for $e = 1$.
+This agrees with the $e = 1$ result of \citet{Turner1977}, which was computed by direct integration along unbound orbits. \Figref{ell} shows how $\ell(n,e)$ changes with eccentricity, including our result for a parabolic encounter. Although more power is radiated into higher harmonics, the peak of the spectrum does not move much: it is always between $f = f\sub{c}$ and $f = 2 f\sub{c}$, with $f = 2 f\sub{c}$ for $e = 0$ and $f \simeq 1.637 f\sub{c}$ for $e = 1$.
 \begin{figure}%[!htp]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_ell}
@@ -401,11 +400,11 @@ E\sub{sum} = \dfrac{85\pi}{2^{5/2}3}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\s
 \end{equation}
 Integrating the energy spectrum \eqnref{PM_dEdf} gives
 \begin{equation}
-E\sub{int} = \dfrac{2\pi}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}\intd{0}{\infty}{\ell(\tilde{f})}{\tilde{f}}.
+E\sub{int} = \dfrac{2\pi}{5}\dfrac{G^3}{c^5}\dfrac{M_\bullet^2\mu^2}{r\sub{p}^2}\omega\sub{c}\intd{0}{\infty}{\ell\left(\tilde{f}\right)}{\tilde{f}}.
 \end{equation}
 The integral can be evaluated numerically as
 \begin{equation}
-\intd{0}{\infty}{\ell(\tilde{f})}{\tilde{f}} = 12.5216858\ldots = \dfrac{425}{2^{7/2}3}.
+\intd{0}{\infty}{\ell\left(\tilde{f}\right)}{\tilde{f}} = 12.5216858\ldots = \dfrac{425}{2^{7/2}3}.
 \end{equation}
 The two total energies are consistent, $E\sub{int} = E\sub{sum}$.
 
@@ -423,7 +422,7 @@ Two energy spectra are plotted in \figref{Energy} for orbits with periapses of $
     \caption{Energy spectra for a parabolic orbit of a $\mu = 10 M_\odot$ object about a Schwarzschild BH with $M_\bullet = 4.31 \times 10^6 M_\odot$. The spectra calculated from the NK waveform is shown by the solid line and the Peters and Mathews flux is indicated by the dashed line. The NK waveform includes octupole contributions. The high frequency tail is the result of spectral leakage.}
     \label{fig:Energy}
 \end{figure}
-The two spectra appear to be in good agreement, showing the same general shape in the weak-field limit. The NK spectrum is more tightly peaked, but is always within a factor of $2$ at the apex. The peak of the spectrum is shifted to a marginally higher frequency in the NK spectrum primarily because of the addition of the current quadrupole and mass octupole terms.
+The two spectra appear to be in good agreement, showing the same general shape in the weak-field limit. The NK spectrum is more tightly peaked, but is always within a factor of $2$ at the apex. The peak of the spectrum is shifted to a marginally higher frequency in the NK spectrum, primarily because of the addition of the current quadrupole and mass octupole terms.
 
 Comparing the total energy fluxes, ratios of the various energies are plotted in \figref{Energy_ratio}.
 \begin{figure}
@@ -435,14 +434,14 @@ Comparing the total energy fluxes, ratios of the various energies are plotted in
 \end{figure}
 We introduce an additional energy here, the quadrupole NK energy $E\sub{NK(Q)}$. This allows easier comparison with the Peters and Mathews energy which includes only quadrupole radiation. It can be calculated in three ways:
 \begin{enumerate}
-\item Inserting the waveform $\widetilde{h}(f)$ generated including only the mass quadrupole term in \eqnref{octupole} into \eqnref{total_E} and integrating. This is equivalent to the method used to calculate $E\sub{NK}$.
+\item Inserting the waveform $\widetilde{h}(f)$, generated including only the mass quadrupole term, in \eqnref{octupole} into \eqnref{total_E} and integrating. This is equivalent to the method used to calculate $E\sub{NK}$.
 \item Numerically integrating the quadrupole GW luminosity (\citealt{Misner1973}, section 36.7; \citealt{Hobson2006}, section 18.7)
 \begin{equation}
 E = \dfrac{G}{5c^9}\intd{}{}{\dddot{\Ibar}_{ij}\dddot{\Ibar}^{ij}}{t},
 \label{eq:E_quad}
 \end{equation}
 where $\Ibar_{ij} = I_{ij} - (1/3)I\delta_{ij}$ is the reduced mass quadrupole tensor. We can obtain this from \eqnref{integrate_E}, by integrating over all angles when the waveform only contains the mass quadrupole component. This has the advantage of avoiding the effects of spectral leakage or the influence of window functions.
-\item Using the analytic expressions for the integral \eqnref{E_quad} from appendix A of \citet{Gair2005}. The expressions are included in \apref{energy}.
+\item Using the analytic expressions for the integral \eqnref{E_quad} from appendix A of \citet{Gair2005}. These are included in \apref{energy}.
 \end{enumerate}
 All three agree to within computational error. No difference is visible on the scale plotted in \figref{Energy_ratio}. This demonstrates the validity of the code.
 
@@ -488,7 +487,7 @@ From the level of agreement we may be confident that the NK waveforms are a reas
 
 \section{Summary}
 
-We have outlined an approximate method of generating gravitational waveforms for EMRBs. This assumes that the orbits are parabolic and employs a numerical kludge approximation. The waveforms created appear to be consistent with results obtained using Peters and Mathews waveforms for large periapses, indicating that they have the correct weak-field form. The NK approach should be superior to that of Peters and Mathews in the strong-field regime as it uses the exact geodesics of the Kerr spacetime. Comparisons with energy fluxes from BH perturbation theory indicate that typical waveform accuracy may be of order $5\%$, but this is worse for orbits with small periapses and may be $\sim 20\%$.
+We have outlined an approximate method of generating gravitational waveforms for EMRBs. This assumes that the orbits are parabolic and employs an NK approximation. The waveforms created appear to be consistent with results obtained using Peters and Mathews waveforms for large periapses, indicating that they have the correct weak-field form. The NK approach should be superior to that of Peters and Mathews in the strong-field regime as it uses the exact geodesics of the Kerr spacetime. Comparisons with energy fluxes from BH perturbation theory indicate that typical waveform accuracy may be of order $5\%$, but this is worse for orbits with small periapses and may be $\sim 20\%$.
 
 In the following chapters we use these waveforms to access what information can be extracted from EMRBs about their source systems, in particular the mass and spin of the MBH. We shall focus on the Galaxy's MBH as this is the most promising candidate for sourcing EMRBs.
 
