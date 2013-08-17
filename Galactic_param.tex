@@ -34,7 +34,7 @@ Of paramount importance are the mass and spin. Together, these fully describe th
   \centering
    \subfigure[{Waveform for $a_\ast \simeq 0.12$, $r\sub{p} \simeq 15.6 r\sub{g}$ and $\iota \simeq 2.1$. The SNR for the spherical polar kludge waveform (plotted) is $\rho[\boldsymbol{h}\sub{sph}] \simeq 451$, for the oblate-spheroidal kludge it is $\rho[\boldsymbol{h}\sub{ob}] \simeq 451$ (agreement to $0.01\%$).}]{\label{fig:Orbit_233} \includegraphics[width=0.47\textwidth]{./images/Fig_new_sph_h_233}} \quad
    \subfigure[{Waveform for $a_\ast \simeq 0.74$, $r\sub{p} \simeq 3.2 r\sub{g}$ and $\iota \simeq 1.2$. The SNR for the spherical polar kludge waveform (plotted) is $\rho[\boldsymbol{h}\sub{sph}] \simeq 70600$, for the oblate-spheroidal kludge it is $\rho[\boldsymbol{h}\sub{ob}] \simeq 74900$.}]{\label{fig:Orbit_135} \includegraphics[width=0.47\textwidth]{./images/Fig_new_sph_h_135}}  
-\caption{Example burst waveforms from the galactic centre. The strain $\widetilde{h}\sub{I}(f)$ is indicated by the solid line, $\widetilde{h}\sub{II}(f)$ by the dot--dashed line, and the noise curve by the dashed line. The kludge has been formulated using spherical polar coordinates.}
+\caption{Example burst waveforms from the GC. The strain $\widetilde{h}\sub{I}(f)$ is indicated by the solid line, $\widetilde{h}\sub{II}(f)$ by the dot--dashed line, and the noise curve by the dashed line. The kludge has been formulated using spherical polar coordinates.}
   \label{fig:Examples}
 \end{figure}
 
@@ -113,7 +113,7 @@ If we were to define this as a probability distribution for the parameters $\bol
 
 To discover if any parameters can be accurately inferred, we must characterise the form of the posterior. We discuss two approaches for mapping the shape of the posterior: Fisher matrices and Markov chain Monte Carlo (MCMC) sampling.
 
-\subsection{Fisher matrices}\label{sec:Fisher}
+\subsection{Fisher information matrices}\label{sec:Fisher}
 
 In the limit of a high SNR, we may approximate \citep{Vallisneri2008}
 \begin{equation}
@@ -181,7 +181,7 @@ Waiting long enough yields an exact posterior, but it is desirable for the MCMC 
 
 One method to define the proposal is to use the previous results in the chain and refine $\mathcal{Q}$ by learning from these. Such approaches are known as adaptive methods. Updating using previous points means that the chain is no longer Markovian. Care must be taken to ensure that ergodicity is preserved and convergence obtained \citep{Roberts2007,Andrieu2008}. To avoid this complication, we follow \citet{Haario1999}, and use the adapting method as a burn in phase. We have an initial phase where the proposal is updated based upon accepted points. After this we fix the proposal and proceed as for a standard MCMC. By only using samples from the second part, we guarantee that the chain is Markovian and ergodic, whilst still enjoying the benefits of a tailor-made proposal. After only a finite number of samples we cannot assess the optimality of this \citep{Andrieu2008}, but the method is still effective.
 
-To tune $\mathcal{Q}$, we use an approach based upon the adaptive Metropolis algorithm \citep{Haario2001}. The proposal is taken to be a multivariate normal distribution centred upon the current point, the covariance of which is
+To tune $\mathcal{Q}$, we use an approach based upon the adaptive Metropolis algorithm \citep{Haario2001}. The proposal is taken to be a multivariate Gaussian distribution centred upon the current point, the covariance of which is
 \begin{equation}
 \boldsymbol{C} = s \left(\boldsymbol{V}_n + \varepsilon\boldsymbol{C}_0\right),
 \end{equation}
@@ -208,7 +208,7 @@ The results of the MCMC runs show strong and complex parameter dependencies. Som
 \centering
 \vspace{0.5\baselineskip}
    \includegraphics[width=0.8\textwidth]{./images/Fig_MCMC_327_triangle_40}
-\caption{Marginalised one- and two-dimensional posteriors. The scales are identical in both sets of plots. The dotted line indicates the true value. These distributions are fairly cromulent and well converged. Angular momentum is in units of $L_\bullet = GM_\bullet c^{-1}$  and the scaled distance is in units of $\zeta_0 = 1 M_\odot^{-1}\units{kpc}$. The input orbit has $r\sub{p} \simeq 8.54 r\sub{g}$ and $\rho \simeq 916$.}
+\caption{Marginalised one- and two-dimensional posteriors (on the diagonal and above, respectively). The scales are identical in both sets of plots. The dotted line indicates the true value. These distributions are fairly cromulent and well converged. Angular momentum is in units of $L_\bullet = GM_\bullet c^{-1}$  and the scaled distance is in units of $\zeta_0 = 1 M_\odot^{-1}\units{kpc}$. The input orbit has $r\sub{p} \simeq 8.54 r\sub{g}$ and $\rho \simeq 916$.}
 \label{fig:MCMC-1}
 \end{figure}
 The first is well-behaved. It is almost Gaussian, but we see some asymmetries and imperfections. There are also strong degeneracies, indicated by needle-like distributions. This is a fairly standard example: there are runs which are closer to being Gaussian (especially at higher SNR), and equally there are tighter correlations. The lenticular $M_\bullet$--$L_\infty$ degeneracy is common.
@@ -329,7 +329,7 @@ We have no {\it a priori} knowledge about the CO or its orbit, so anything we le
 
 \section{Summary and conclusions}
 
-We have analysed the properties of EMRBs from the Galactic Centre. We used NK waveforms built using spherical polar and oblate-spheroidal coordinates. The two coordinate schemes yield almost indistinguishable results. There may be differences when the spin is large and the periapse is small: $\sim 10\%$ for $r\sub{p} \simeq 4 r\sub{g}$, $\sim 20\%$ for $r\sub{p} \simeq 2 r\sub{g}$. This is less than the error inherent in the semirelativistic approximation as inferred from the difference in NK and BH perturbation theory energy fluxes in \secref{Energy}. We conclude that either coordinate choice is valid for this purpose, and have adopted spherical polar coordinates.
+We have analysed the properties of EMRBs from the GC. We used NK waveforms built using spherical polar and oblate-spheroidal coordinates. The two coordinate schemes yield almost indistinguishable results. There may be differences when the spin is large and the periapse is small: $\sim 10\%$ for $r\sub{p} \simeq 4 r\sub{g}$, $\sim 20\%$ for $r\sub{p} \simeq 2 r\sub{g}$. This is less than the error inherent in the semirelativistic approximation as inferred from the difference in NK and BH perturbation theory energy fluxes in \secref{Energy}. We conclude that either coordinate choice is valid for this purpose, and have adopted spherical polar coordinates.
 
 The SNR of bursts is well correlated with the periapsis, it can be reasonably described as having a power law dependence. Using LISA, signals should be detectable for a $1 M_\odot$ ($10 M_\odot$) object if the periapse is $r\sub{p} < 27 r\sub{g}$ ($r\sub{p} < 65 r\sub{g}$), corresponding to a physical scale of $1.7 \times 10^{11}\units{m}$ ($4.1 \times 10^{11}\units{m}$) or $5.6 \times 10^{-6}\units{pc}$ ($1.3 \times 10^{-5}\units{pc}$). Using eLISA, these distances are approximately three times smaller.
 

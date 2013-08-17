@@ -19,7 +19,7 @@ Geodesic motion in Kerr spacetime can be described by use of the action--angle f
 \end{subequations}
 where $\lambda$ is Mino time \citep{Mino2003}, and the forcing functions $g_\alpha^{(1)}$ and $G_\alpha^{(1)}$ originate from the first-order self-force. At zeroth order in the mass ratio we recover the limit of purely geodesic motion: the integrals of the motion are actually constants, and the angle variables evolve according to their associated frequencies $\omega_\alpha$.
 
-The leading order dissipative correction to geodesic motion is calculated following the adiabatic prescription \citep{Hinderer2008}: by dropping the forcing term $g_\alpha^{(1)}$ (and all higher order terms) and replacing the forcing term $G_\alpha^{(1)}$ with its average over the $2$-torus parameterized by $q_r$ and $q_\theta$ $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ \citep{Drasco2005}. For most orbits this is sufficient; $G_\alpha^{(1)}$ is given by its average value plus a rapidly oscillating component \citep[chapter 5, section 1]{Arnold1988}. However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the $2$-torus but instead traces out a one-dimensional subspace.\footnote{For illustrations, see \citet{Grossman2012}.} There are then contributions to the self-force beyond $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ that no longer average out over an orbit. Intuitively, we expect that this effect is more important for ratios of small integers, as when the integers are large the orbit comes close to all points on the $2$-torus.
+The leading order dissipative correction to geodesic motion is calculated following the adiabatic prescription \citep{Hinderer2008}: by dropping the forcing term $g_\alpha^{(1)}$ (and all higher-order terms) and replacing the forcing term $G_\alpha^{(1)}$ with its average over the $2$-torus parameterized by $q_r$ and $q_\theta$ $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ \citep{Drasco2005}. For most orbits this is sufficient; $G_\alpha^{(1)}$ is given by its average value plus a rapidly oscillating component \citep[chapter 5, section 1]{Arnold1988}. However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the $2$-torus but instead traces out a one-dimensional subspace.\footnote{For illustrations, see \citet{Grossman2012}.} There are then contributions to the self-force beyond $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ that no longer average out over an orbit. Intuitively, we expect that this effect is more important for ratios of small integers, as when the integers are large the orbit comes close to all points on the $2$-torus.
 
 In this chapter, we begin to characterise the importance of these resonances for the purposes of modelling EMRIs. We find the orbital parameters for which the orbital frequencies are commensurate (\secref{location}) and construct a formula to calculate the difference in the orbital parameters when comparing an adiabatic evolution with one that incorporates the instantaneous effects of the self-force (\secref{res-asymptotic}).
 
@@ -29,7 +29,7 @@ We use geometric units with $G = c = 1$ throughout. Hence the gravitational radi
 
 \subsection{Kerr geodesics}
 
-The evolution of an extreme-mass-ratio ($\eta \ll 1$) system is slow. Instantaneously, the motion of the orbiting mass can be described as geodesic, with the integrals of the motion changing on time-scales of many orbital periods. We analyse the behaviour of resonances with the osculating element framework, where the trajectory is described by a sequence of geodesics which each match the position and velocity at a particular instance. It is therefore necessary to develop an understanding of the Kerr geodesics.\footnote{We have previously discussed motion in Kerr in \secref{Geodesic}.}
+The evolution of an extreme-mass-ratio ($\eta \ll 1$) system is slow. Instantaneously, the motion of the orbiting mass can be described as geodesic, with the integrals of the motion changing on time-scales of many orbital periods. We analyse the behaviour of resonances within the osculating element framework, where the trajectory is described by a sequence of geodesics which each match the position and velocity at a particular instance. It is therefore necessary to develop an understanding of the Kerr geodesics.\footnote{We have previously discussed motion in Kerr in \secref{Geodesic}.}
 
 The geodesic equations are (\citealt{Carter1968}; \citealt[section 62]{Chandrasekhar1992})
 \begin{subequations}
@@ -68,7 +68,7 @@ The geodesic motion can equally be described by $\{E,L_z,Q\}$ or $\{p,e,\theta_-
 \begin{equation}
 \tan \iota = \dfrac{\sqrt{Q}}{L_z}.
 \end{equation}
-With this definition, $0 \leq \iota < \pi/2$ for pro grade orbits and $\pi/2 < \iota \leq \pi$ for retrograde orbits. Equatorial orbits ($\theta_- = \pi/2$) have $\iota = 0$ or $\pi$ and polar orbits ($\theta_- = 0$) have $\iota = \pi/2$. Whilst formulae exist for conversion between the different parameters, they are complicated and uninsightful, so we do not reproduce them here.\footnote{In practice we find turning points numerically.}
+With this definition, $0 \leq \iota < \pi/2$ for prograde orbits and $\pi/2 < \iota \leq \pi$ for retrograde orbits. Equatorial orbits ($\theta_- = \pi/2$) have $\iota = 0$ or $\pi$ and polar orbits ($\theta_- = 0$) have $\iota = \pi/2$. Whilst formulae exist for conversion between the different parameters, they are complicated and uninsightful, so we do not reproduce them here.\footnote{In practice we find turning points numerically.}
 
 \subsection{Orbital resonances}
 
@@ -113,7 +113,7 @@ One might be concerned about the nature of resonances following the inclusion of
 \centering
 \vspace{0.25\baselineskip}
 \includegraphics[width=0.6\textwidth]{./images/Fig_ad_vs_inst_wibble}
-\caption{Evolution of the frequency ratio $\nu$ under both adiabatic (dashed line) and instantaneous evolutions (solid line). The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of \citet{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$, $\eta = 10^{-6}$ and $a_\ast = 0.9$, the initial orbital parameters are $p = 10 M_\bullet$, $e = 0.7$ and $\cos \iota = 0.2$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M_\bullet$. Data courtesy of Robert Cole.}\label{fig:wibbles}
+\caption{Evolution of the frequency ratio $\nu = \Omega_r/\Omega_\theta$ under both adiabatic (dashed line) and instantaneous evolutions (solid line). The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of \citet{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$, $\eta = 10^{-6}$ and $a_\ast = 0.9$, the initial orbital parameters are $p = 10 M_\bullet$, $e = 0.7$ and $\cos \iota = 0.2$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M_\bullet$. Data courtesy of Robert Cole.}\label{fig:wibbles}
 \end{figure}
 However, there shall be a time span when the frequencies are consistently close to being commensurate. During this time the trajectory appears similar to a resonant trajectory, filling only a smaller region of the parameter space. It is this time period that is of interest for transient resonances \citep{Bosley1992}.
 
@@ -151,9 +151,9 @@ D(a_\ast,\nu) \simeq {} & d_0\left[1 - \exp(a_\ast)\right]\left[1 - d_1\exp(\nu)
 This gives us a total of $12$ parameters for our fit. While this may sound large, if we were fitting an expansion to quadratic order in any combination of $\{e,\iota,a_\ast,\nu\}$ we would have $15$ parameters.\footnote{This does not give as good a fit as our function.} Our best fit parameters are
 \begin{equation}
 \begin{array}{c}
-a_0 = 5.9854; \quad a_1 = 3.4116; \quad a_2 = 0.9253; \quad a_3 = 0.1959; \\
-a_4 = 4.8846; \quad b_0 = 0.7692; \quad b_1 = 1.4752; \quad b_2 = 1.4861; \\
-b_3 = 0.5974; \quad c_0 = 0.02332; \quad d_0 = 0.7968; \quad d_1 = 0.3115.\end{array}
+a_0 = 5.9854, \quad a_1 = 3.4116, \quad a_2 = 0.9253, \quad a_3 = 0.1959, \\
+a_4 = 4.8846, \quad b_0 = 0.7692, \quad b_1 = 1.4752, \quad b_2 = 1.4861, \\
+b_3 = 0.5974, \quad c_0 = 0.02332, \quad d_0 = 0.7968, \quad d_1 = 0.3115.\end{array}
 \end{equation} 
 These were fitted for resonances with $\nu = 1/7$, $1/6$, $1/5$, $1/4$, $2/7$, $1/3$, $2/5$, $3/7$, $1/2$, $4/7$, $3/5$, $2/3$, $5/7$, $3/4$, $4/5$, $5/6$, $6/7$, $9/10$, $19/20$, $49/50$ and $99/100$; with MBH spins of $a_\ast = 0.01$, $0.05$, $0.1$, $0.2$, $0.3$, $0.4$, $0.5$, $0.6$, $0.7$, $0.8$, $0.9$, $0.93$, $0.95$, $0.97$, $0.99$ and $0.999$; for orbits with eccentricities $0.01 \leq e \leq 0.99$, and inclinations $-0.999999 \leq \cos\iota \leq 0.999999$. Using our approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1 M_\bullet$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}. 
 \begin{figure}%[htp]
@@ -177,7 +177,7 @@ We define the evolution time-scale as
 \begin{equation}
 \tau\sub{ev} = \dfrac{\nu}{\dot{\nu}},
 \end{equation}
-where an overdot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It represents the inspiral time-scale. It is long in all cases we study, $\tau\sub{ev} \sim \order{\eta^{-1}T}$. It is this property which makes EMRIs interesting, as we can follow the waveform for many cycles, accruing high SNRs. This is also what allows us to use the adiabatic prescription, as it means that the trajectory moves slowly through different orbital parameters.
+where an over-dot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It represents the inspiral time-scale. It is long in all cases we study, $\tau\sub{ev} \sim \order{\eta^{-1}T}$. It is this property which makes EMRIs interesting, as we can follow the waveform for many cycles, accruing high SNRs. This is also what allows us to use the adiabatic prescription, as it means that the trajectory moves slowly through different orbital parameters.
 
 We use the precession time-scale
 \begin{equation}
@@ -191,7 +191,7 @@ We also use the resonance time-scale
 \tau\sub{res} = \left[\dfrac{2\pi}{\left|\langle\dot{\Omega}(0)\rangle_{q'}\right|}\right]^{1/2}.
 \label{eq:t-res}
 \end{equation}
-Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we take to be at $t = 0$. The instantaneous $\dot{\Omega}$ depends upon the orbital phase and oscillates about its mean trend over an orbit (see \figref{wibbles}). We are interested in the averaged behaviour, not the periodic modulations about this, which is why we use the phase-averaged trend $\langle\dot{\Omega}\rangle_{q'}$.\footnote{Here we use $q'$ to represent a phase that varies over an orbit with period $T$; it is introduced again in \secref{res-asymptotic}.} Close to resonance, $\Omega$ is well approximated by a first-order Taylor expansion, decreasing linearly with time; hence we make the approximation
+Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we take to be at $t = 0$. The instantaneous $\dot{\Omega}$ depends upon the orbital phase and oscillates about its mean trend over an orbit (see \figref{wibbles}). We are interested in the averaged behaviour, not the periodic modulations about this, which is why we use the phase-averaged trend $\langle\dot{\Omega}\rangle_{q'}$.\footnote{Here we use $q'$ to represent a phase that varies over an orbit with period of order $T$; it is introduced again in \secref{res-asymptotic}.} Close to resonance, $\Omega(t)$ is well approximated by a first-order Taylor expansion, decreasing linearly with time; hence we make the approximation
 \begin{equation}
 \left|\langle\dot{\Omega}\rangle_{q'}\right| \simeq \left|\dfrac{\Omega(t)}{t}\right|.
 \end{equation}
@@ -199,18 +199,18 @@ The resonant time-scale should give an indication of the time over which we expe
 \begin{equation}
 \varphi_{n_r,\,-n_\theta} \simeq \left(n_r\Upsilon_r - n_\theta\Upsilon_\theta\right)\lambda + \left(n_r\dot{\Upsilon}_r - n_\theta\dot{\Upsilon}_\theta\right)\lambda^2 + \ldots
 \end{equation}
-Typically, the first term is non-zero and this gives the familiar oscillation. On resonance it is zero, leaving the next order term to govern the behaviour \citep{Flanagan2012}. Only once we have moved far enough away from resonance for the first term to dominate the second do we recapture the non-resonant behaviour. The first term (translating from Mino time to coordinate time) sets $T$, the second sets $\tau\sub{res}$.
+Typically, the first term is non-zero and this gives the familiar oscillation. On resonance it is zero, leaving the next order term to govern the behaviour \citep{Flanagan2012}. Only once we have moved far enough away from resonance for the first term to dominate the second do we recapture the non-resonant behaviour. The first term (translating from Mino time to coordinate time) sets $\tau\sub{pres}$, the second sets $\tau\sub{res}$.
 
 Since we have argued that the effect of resonance can be thought of as a consequence of not densely covering the $\psi$--$\chi$ $2$-torus, we might expect that $\tau\sub{pres}$, as well as $\tau\sub{res}$, could be used for setting the resonance duration: the resonance ends once sufficient time has elapsed that the $2$-torus could be filled. This is indeed the case. Let $t\sub{pres}$ be the time taken to fill the torus, then
 \begin{align}
 t\sub{pres} = {} & \tau\sub{pres}(t\sub{pres}) \\
  \simeq {} & \dfrac{2\pi}{\left|\langle\dot{\Omega}(0)\rangle_{q'} t\sub{pres}\right|}, \nonumber 
 \end{align}
-using \eqnref{t-pres} and substituting $\Omega(t\sub{pres}) \simeq \langle\dot{\Omega}(0)\rangle_{q'} t\sub{pres}$. Rearranging and using \eqnref{t-res} gives
+using \eqnref{t-pres} and substituting $\Omega(t\sub{pres}) \simeq \langle\dot{\Omega}\rangle_{q'} t\sub{pres}$. Rearranging and using \eqnref{t-res} gives
 \begin{equation}
 t\sub{pres} \simeq \tau\sub{res}.
 \end{equation}
-The two time-scales are equivalent. We shall preferentially use $\tau\sub{res}$ to denote the resonance width. It is shorter than the inspiral time-scale, but longer than an orbital period, $\tau\sub{res} \sim \order{\eta^{1/2}\tau\sub{ev}} \sim \order{\eta^{-1/2}T}$ \citep{Flanagan2012,Gair2011a}; it therefore acts as a bridge between the two time-scales \citep{Hinderer2008}.
+The two time-scales are equivalent. We preferentially use $\tau\sub{res}$ to denote the resonance width. It is shorter than the inspiral time-scale, but longer than an orbital period, $\tau\sub{res} \sim \order{\eta^{1/2}\tau\sub{ev}} \sim \order{\eta^{-1/2}T}$ \citep{Flanagan2012,Gair2011a}; it therefore acts as a bridge between the two time-scales \citep{Hinderer2008}.
 
 Since we shall be considering Fourier decompositions, in anticipation of future results, we also define a time-scale for the $s$-th resonant frequency harmonic
 \begin{align}
@@ -237,12 +237,12 @@ At resonance $\widetilde{\lambda} = \widetilde{\lambda}_\star$ and $\omega\left(
 \omega\left(\widetilde{\lambda}\right) = \varpi_1\left(\widetilde{\lambda} - \widetilde{\lambda}_\star\right) + \varpi_2\left(\widetilde{\lambda} - \widetilde{\lambda}_\star\right)^2 + \ldots
 \label{eq:omega-series}
 \end{equation}
-The frequency is actually a function of the angle variables, but since these evolve with $\widetilde{\lambda}$ it is safe to write it as a function of the slow time.\footnote{In effect we are defining $\omega\left(\widetilde{\lambda}\right) \equiv \omega\left[J\left(\widetilde{\lambda}\right)\right]$.}
+The frequency is actually a function of the angle variables, but since these evolve with $\widetilde{\lambda}$ it is safe to write it as a function of the slow time.\footnote{In effect we are defining $\omega\left(\tilde{\lambda}\right) \equiv \omega\left[J\left(\tilde{\lambda}\right)\right]$.}
 
 Using the slow time, the equations of motion (\ref{eq:Mino-E-o-M}) become
 \begin{subequations}
 \begin{align}
-\diff{q}{\widetilde{\lambda}} = {} & \dfrac{\omega(J)}{\eta} + \sum_s g_s^{(1)}(J)\exp(is q)  + \order{\eta}; \\
+\diff{q}{\widetilde{\lambda}} = {} & \dfrac{\omega(J)}{\eta} + \sum_s g_s^{(1)}(J)\exp(is q)  + \order{\eta}, \\
 \diff{J}{\widetilde{\lambda}} = {} & \sum_s G_s^{(1)}(J)\exp(is q) + \order{\eta},
 \end{align}
 \end{subequations}
@@ -262,7 +262,7 @@ In terms of these two variables, we can build ansatz solutions
 \begin{subequations}
 \begin{align}
 \label{eq:q-series}
-q(\lambda;\,\eta) = {} & \Psi + q_0\left(\widetilde{\lambda}\right) + \eta q_1\left(\Psi,\widetilde{\lambda}\right) + \order{\eta^2}; \\
+q(\lambda;\,\eta) = {} & \Psi + q_0\left(\widetilde{\lambda}\right) + \eta q_1\left(\Psi,\widetilde{\lambda}\right) + \order{\eta^2}, \\
 J(\lambda;\,\eta) = {} & J_0\left(\widetilde{\lambda}\right) + \eta J_1\left(\Psi,\widetilde{\lambda}\right) + \order{\eta^2}.
 \label{eq:J-series}
 \end{align}
@@ -280,7 +280,7 @@ Using the two time-scale decomposition to replace the time derivatives in the eq
 \begin{subequations}
 \begin{align}
 \label{eq:q-1}
-\omega_0 + \eta\omega_1 + \eta\partialdiff{q_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{q_1}{\Psi} = {} & \omega(J_0) + \eta\diff{\omega}{J}J_1 + \eta \sum_s g_s^{(1)}(J_0)\exp(is \Psi + Q_0); \\
+\omega_0 + \eta\omega_1 + \eta\partialdiff{q_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{q_1}{\Psi} = {} & \omega(J_0) + \eta\diff{\omega}{J}J_1 + \eta \sum_s g_s^{(1)}(J_0)\exp(is \Psi + Q_0), \\
 \eta\partialdiff{J_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{J_1}{\Psi} = {} & \eta \sum_s G_s^{(1)}(J_0)\exp(is \Psi + Q_0).
 \label{eq:J-1}
 \end{align}
@@ -297,13 +297,13 @@ This describes the adiabatic evolution, hence we can identify $J_0\left(\widetil
 From this we can identify the terms that originate from the frequency and, matching by order in $\eta$, obtain
 \begin{subequations}
 \begin{align}
-\omega_0 = {} & \omega(J_0); \\
+\omega_0 = {} & \omega(J_0), \\
 \omega_1 = {} & \partialdiff{\omega}{J}\langle J_1\rangle_\Psi.
 \end{align}
 \end{subequations}
 This leaves
 \begin{align}
-\partialdiff{q_0}{\widetilde{\lambda}} = {} & g_0^{(1)}(J_0); \\
+\partialdiff{q_0}{\widetilde{\lambda}} = {} & g_0^{(1)}(J_0), \\
 q_0 = {} & \kappa_0 + \intd{0}{\tilde{\lambda}}{g_0^{(1)}[J_0(\tau)]}{\tau}.
 \label{eq:q-0-sol}
 \end{align}
@@ -334,7 +334,7 @@ Near to resonance, we consider an interior layer expansion \citep{Kevorkian1971}
 As for the before resonance solution, we can create a series expansion; however, now we expand in terms of $\eta^{1/2}$ \citep{Flanagan2012}
 \begin{subequations}
 \begin{align}
-q\left(\widehat{\lambda};\,\eta\right) = {} & \widehat{q}_0\left(\widehat{\lambda}\right) + \eta^{1/2} \widehat{q}_{1/2}\left(\widehat{\lambda}\right) + \order{\eta}; \\
+q\left(\widehat{\lambda};\,\eta\right) = {} & \widehat{q}_0\left(\widehat{\lambda}\right) + \eta^{1/2} \widehat{q}_{1/2}\left(\widehat{\lambda}\right) + \order{\eta}, \\
 J\left(\widehat{\lambda};\,\eta\right) = {} & \widehat{J}_0 + \eta^{1/2} \widehat{J}_1\left(\widehat{\lambda}\right) + \order{\eta}.
 \end{align}
 \end{subequations}
@@ -346,7 +346,7 @@ The series expansion for the frequency, \eqnref{omega-series}, can be rewritten 
 Proceeding to write the equations of motion in terms of the rescaled time gives
 \begin{subequations}
 \begin{align}
-\diff{q}{\widehat{\lambda}} = {} & \varpi_1\widehat{\lambda} + \eta^{1/2}\varpi_2\widehat{\lambda}^2 + \eta^{1/2}\sum_s g_s^{(1)}\left(\widehat{J}_0,\widetilde{\lambda}_\star\right)\exp(is \widehat{q}_0)  + \order{\eta}; \\
+\diff{q}{\widehat{\lambda}} = {} & \varpi_1\widehat{\lambda} + \eta^{1/2}\varpi_2\widehat{\lambda}^2 + \eta^{1/2}\sum_s g_s^{(1)}\left(\widehat{J}_0,\widetilde{\lambda}_\star\right)\exp(is \widehat{q}_0)  + \order{\eta}, \\
 \diff{J}{\widehat{\lambda}} = {} & \eta^{1/2}\sum_s G_s^{(1)}\left(\widehat{J}_0,\widetilde{\lambda}_\star\right)\exp(is \widehat{q}_0) + \order{\eta}.
 \end{align}
 \end{subequations}
@@ -361,7 +361,7 @@ is constant, and
 \end{equation}
 Using these, we can build the next order terms
 \begin{align}
-\widehat{q}_{1/2} = {} & \widehat{\kappa}_{1/2} + \dfrac{\varpi_2\widehat{\lambda}^3}{3} + g_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}; \\
+\widehat{q}_{1/2} = {} & \widehat{\kappa}_{1/2} + \dfrac{\varpi_2\widehat{\lambda}^3}{3} + g_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}, \\
 \widehat{J}_{1/2} = {} & \widehat{\varrho}_{1/2} + G_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}.
 \end{align}
 Both of these involve the complex Fresnel integral \citep[chapter 7]{Olver2010}, the details of which are given in the following section. We have now constructed the interior solution.
@@ -419,7 +419,7 @@ We can now compare this to the near resonance expansion with the integral replac
 
 At zeroth order, we immediately obtain
 \begin{align}
-\widehat{\kappa}_0 = {} & \dfrac{\Psi_\star}{\eta} + \kappa_\star; \\
+\widehat{\kappa}_0 = {} & \dfrac{\Psi_\star}{\eta} + \kappa_\star, \\
 \widehat{\varrho}_0 = {} & J_\star.
 \end{align}
 These fix the integration constants. The more interesting result is now found by comparing the $\order{\eta^{1/2}}$ terms. Equating the angle variable expressions and cancelling terms gives
@@ -440,7 +440,7 @@ Having constructed the solution, we see that the lowest order evolution correspo
 \Delta J = {} & 2 \eta^{1/2}\left|\widehat{\varrho}_{1/2}\right|
 \label{eq:jumps}
 \end{align}
-across the resonance \citep{Kevorkian1987}. We are not particularly interested in the deviation in $J$, of greater concern is the change in the orbital parameters $\{E,L_z,Q\}$. Assuming that there is a smooth transformation that maps between $J$ and these, then, to lowest order, we can calculate the deviation relative to the adiabatic prescription by substituting the forcing functions $G^{(1)} \rightarrow G_a^{(1)}$, where $G_a^{(1)}$ describes the evolution of $\mathcal{I}_a$ through the effects of the self-force. This result was quoted by \citet{Flanagan2012}. The change in the orbital parameters is determined by the forcing functions, hence it is essential to have an accurate self-force model.
+across the resonance \citep{Kevorkian1987}. We are not particularly interested in the deviation in $J$, of greater concern is the change in the orbital parameters $\{E,L_z,Q\}$. Assuming that there is a smooth transformation that maps between $J$ and these, then, to lowest order, we can calculate the deviation relative to the adiabatic prescription by substituting the forcing functions $G^{(1)} \rightarrow G_a^{(1)}$, where $G_a^{(1)}$ describes the evolution of $\mathcal{I}_a$ through the effects of the self-force. This result is quoted without proof by \citet{Flanagan2012}. The change in the orbital parameters is determined by the forcing functions, hence it is essential to have an accurate self-force model.
 
 As a final step in understanding our result, we switch from Mino time to coordinate time. An appropriate redefinition of the forcing functions can be done by scaling by $\Gamma$, we define
 \begin{equation}
@@ -470,11 +470,11 @@ exactly as expected.
 
 In this chapter we introduced the problem of transient resonances in EMRI systems. Passing through a resonance can produce an enhancement or decrement in the evolution of the orbital parameters relative to the adiabatic evolution. Although this change is small, it could leave a measurable imprint on an EMRI waveform, as this is observed over many orbits. In order for inspirals to be used for precision measurements, either to determine the properties of MBHs or to test GR, we must have accurate waveforms. It is therefore essential to account for effects such as resonances which influence the waveforms.
 
-We have constructed an approximate means of identifying the location of resonances. The semilatus rectum at which a resonance can be found depends upon the MBH spin, orbital eccentricity and inclination; it is therefore a complicated function. The approximation allows evolving EMRIs to be quickly checked to see if they come close to a resonance: if they do, it is necessary to model them more accurately. It is likely that the majority of astrophysically interesting EMRIs pass through an important resonance \citep{Ruangsri2013}.
+We have constructed an approximate means of identifying the location of resonances. The semilatus rectum at which a resonance occurs depends upon the MBH spin, orbital eccentricity and inclination; it is, therefore, a complicated function. The approximation allows evolving EMRIs to be quickly checked to see if they come close to a resonance: if they do, it is necessary to model them more accurately. It is likely that the majority of astrophysically interesting EMRIs pass through an important resonance \citep{Ruangsri2013}.
 
 In order to estimate the effect of passing through a resonance, we have built up a theoretical model for their behaviour. Using an asymptotic expansion, we have produced an expression for the lowest order difference in the orbital parameters relative to those calculated from an adiabatic evolution. The structure of this expression matches what is expected from our theoretical arguments.
 
-What remains to be done is to verify that the estimate from the asymptotic expansion matches what is observed in numerical calculations. Assuming this is the case, we can be confident in our understanding of the problem. We may then proceed to investigate the impact of the change in the orbital parameters on the waveform. We expect that the changes are only significant for a few low order resonances. If this set of important resonances is small, then the problem of producing accurate waveforms is much simpler.
+What remains to be done is to verify that the estimate from the asymptotic expansion matches what is observed in numerical calculations. Assuming this is the case, we can be confident in our understanding of the problem. We may then proceed to investigate the impact of the change in the orbital parameters on the waveform. We expect that the changes are only significant for a few low-order resonances. If this set of important resonances is small, then the problem of producing accurate waveforms is much simpler.
 
 The impact of resonances on waveforms can first be estimated by calculating either the dephasing or reduction in overlap when compared with an adiabatic evolution. Even if the presence of a resonance causes a deviation from the initial adiabatic trajectory, there could still be another adiabatic trajectory that well matches the proper waveform. This would be good for purposes of detection, but would introduce systematic errors into parameter estimation. Neglecting resonances could bias estimates for the EMRI parameters.
 

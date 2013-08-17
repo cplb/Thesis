@@ -1,14 +1,14 @@
 \chapter{Event rates and expectations for Galactic bursts}\label{ch:events}
 
-For EMRBs to be a valuable astronomical tool we require the bursts to be loud enough to be detected, to contain sufficient information to improve our knowledge of their source systems and to have a sufficiently high event rate that we expect to observe them over a mission lifetime. We have previously found that bursts can satisfy the first two requirements: in \chapref{param} we found Galactic bursts can be informative if the periapse distance is $r\sub{p} \lesssim 16 r\sub{g}$ and in \chapref{extragal} we found that the most promising extragalactic bursts could be informative if $r\sub{p} \lesssim 8 r\sub{g}$. We address the final requirement in this chapter.
+For EMRBs to be a valuable astronomical tool we require the bursts to be loud enough to be detected; to contain sufficient information to improve our knowledge of their source systems, and to have a sufficiently high event rate that we expect to observe them over a mission lifetime. We have previously found that bursts can satisfy the first two requirements: in \chapref{param} we found Galactic bursts can be informative if the periapse distance is $r\sub{p} \lesssim 16 r\sub{g}$ and in \chapref{extragal} we found that the most promising extragalactic bursts could be informative if $r\sub{p} \lesssim 8 r\sub{g}$. We address the final requirement in this chapter.
 
-We calculate the event rate for Galactic bursts. We only model our own Galaxy as it is the only galaxy for which we have reliable astronomical measurements of the parameters which determine the event rate. Previously, the best estimate for the event rate was given by \citet{Hopman2007}; they predicted the event rate for LISA is $\sim 1\units{yr^{-1}}$. We follow a similar approach, but make a number of improvements, using NK waveforms to calculate the SNR and building a more detailed model for the GC's nuclear star cluster (NSC). We go on to use our event rate to define an expectation for the amount of information we could learn about the Galaxy's MBH using EMRBs.
+We calculate the event rate for Galactic bursts. We only model our own Galaxy as it is the only galaxy for which we have reliable astronomical measurements of the parameters which determine the event rate. Previously, the best estimate for the event rate was given by \citet{Hopman2007}; they predicted an event rate for LISA of $\Gamma \sim 1\units{yr^{-1}}$. We follow a similar approach, but make a number of improvements, using NK waveforms to calculate the SNR and building a more detailed model for the GC's nuclear star cluster (NSC). We go on to use our event rate to define an expectation for the amount of information we could learn about the Galaxy's MBH using EMRBs.
 
 \section{Calculating event rates}\label{sec:Rates}
 
-Having determined how to generate a waveform and extract the information from it, we must now consider how likely it is that such a waveform would be observed. We wish to calculate the event rate for EMRBs, the probability that there is an encounter between a CO, on an orbit described by eccentricity $e$ and periapse radius $r\sub{p}$, and the MBH. To do so we must build a model to describe the distribution of COs about the MBH. The number density of stars in the six-dimensional phase space of position and velocity is described by the distribution function (DF) $f$ \citep[section 4.1]{Binney2008}. We introduce approximate forms for the DF appropriate for describing the NSC in \secref{DF}. These are calibrated using the simulations of \citet{Alexander2009}, the parameters of which, together with the others used to describe the Galactic NCS, are given in \secref{GC-Param}. Having set the distribution of COs, we explain how to convert this to an event rate in \secref{e-rp}. In \eqnref{Gamma} we give an expression that relates the event rate for an orbit $\Gamma(e,\,r\sub{p})$ and the DF. There is one final consideration before we can calculate the total event rate: that there is an inner periapsis below which orbits become depopulated. This is carefully explained in \secref{inner-cut}. We consider tidal disruption and collisions, which we assume truncate the DF at a finite periapsis so that the event rate inside these cut-offs is zero. We also consider GW inspiral, which we assume alters the event rate by modifying the distribution of COs away from its relaxed state. With these inner cut-offs established, we have completely defined the event rate distribution. This can then give the probability of an EMRB and the total event rates, which are presented in \secref{no-events}.
+Having determined how to generate a waveform and extract the information from it, we must now consider how likely it is that such a waveform would be observed. We wish to calculate the event rate for EMRBs, the probability that there is an encounter between a CO, on an orbit described by eccentricity $e$ and periapse radius $r\sub{p}$, and the MBH. To do so we must build a model to describe the distribution of COs about the MBH. The number density of stars in the six-dimensional phase space of position and velocity is described by the distribution function (DF) $f$ \citep[section 4.1]{Binney2008}. We introduce approximate forms for the DF appropriate for describing the NSC in \secref{DF}. These are calibrated using the simulations of \citet{Alexander2009}, the parameters of which, together with the others used to describe the Galactic NSC, are given in \secref{GC-Param}. Having set the distribution of COs, we explain how to convert this to an event rate in \secref{e-rp}. In \eqnref{Gamma} we give an expression that relates the event rate for an orbit $\Gamma(e,\,r\sub{p})$ and the DF. There is one final consideration before we can calculate the total event rate: that there is an inner periapsis inside of which orbits become depopulated. This is carefully explained in \secref{inner-cut}. We consider tidal disruption and collisions, which we assume truncate the DF at a finite periapsis so that the event rate inside these cut-offs is zero. We also consider GW inspiral, which we assume alters the event rate by modifying the distribution of COs away from its relaxed state. With these inner cut-offs established, we have completely defined the event rate distribution. This can then give the probability of an EMRB and the total event rates, which are presented in \secref{no-events}.
 
-\subsection{The distribution function}\label{sec:DF}
+\subsection{The distribution function for the nuclear star cluster}\label{sec:DF}
 
 Following the work of \citet{Bahcall1976, Bahcall1977}, we assume the DF within the NSC is only a function of the orbital energy \citep{Shapiro1978}. The energy per unit mass of the orbit is
 \begin{equation}
@@ -32,7 +32,7 @@ Within the NSC, the DF can be calculated using the approximation of the Fokker--
 f_M(E) = \dfrac{C_M n_\star}{(2\pi\sigma_M^2)^{3/2}} \exp\left(-\dfrac{E}{\sigma_M^2}\right),\quad E > 0,
 \label{eq:Unbound_DF}
 \end{equation}
-where $C_M$ is a normalisation constant.\footnote{$C_M$ determines the population ratios of species $M$ far from the black hole \citep{Alexander2009}.} If different stellar species are in equipartition, as assumed by \citet{Bahcall1976, Bahcall1977}, we expect
+where $C_M$ is a normalisation constant.\footnote{$C_M$ determines the population ratios of species $M$ far from the MBH \citep{Alexander2009}.} If different stellar species are in equipartition, as assumed by \citet{Bahcall1976, Bahcall1977}, we expect
 \begin{equation}
 M \sigma_M^2 = M_\star \sigma_\star^2.
 \end{equation}
@@ -55,8 +55,8 @@ These cusp profiles should exist if the system has had sufficient time to become
 
 To describe the GC, we assume $M_\bullet = (4.31 \pm 0.36) \times 10^6 M_\odot$ \citep{Gillessen2009} and $\sigma = (103 \pm 20)\units{km\,s^{-1}}$ \citep{Tremaine2002}. This gives an NSC radius of $r\sub{c} = (1.7 \pm 0.7)\units{pc}$. Using the results of \citet{Ghez2008} we would expect the total mass of stars in the NSC to be $m_\star(r\sub{c}) = 6.4 \times 10^6 M_\odot$, which is within $5\%$ of the value obtained similarly from \citet{Genzel2003}. This gives a reference stellar density of $n_\star = 2.8 \times 10^5\units{pc^{-3}}$.
 
-For the distribution of COs, we use the Fokker--Planck model of \citet{Hopman2006, Hopman2006a} and \citet{Alexander2009}. This includes four species: MS stars, WDs, NSs and stellar mass BHs. Their properties are summarised in \tabref{HA}. 
-\begin{table}[htb]\footnotesize
+For the distribution of COs, we use the Fokker--Planck model of \citet{Hopman2006, Hopman2006a} and \citet{Alexander2009}. This includes four species: MS stars, WDs, NSs and stellar-mass BHs. Their properties are summarised in \tabref{HA}. 
+\begin{table}\footnotesize
 \centering
 \begin{tabular}{l D{.}{.}{2.1} D{.}{.}{1.3} D{.}{.}{1.1} D{.}{.}{1.3}} 
 \toprule
@@ -83,7 +83,7 @@ Binaries may form in the NSC, encouraged by its high stellar density \citep{O'Le
 \begin{equation}
 r\sub{B} \simeq \left(\dfrac{M_\bullet}{M_1 + M_2}\right)^{1/3}a\sub{B},
 \end{equation}
-where $M_1$ and $M_2$ are the masses of the binary's components, and $a\sub{B}$ is the binary's semi-major axis, cf.\ \eqnref{Tidal} below. Thus, we ignore the possible presence of binaries.
+where $M_1$ and $M_2$ are the masses of the binary's components, and $a\sub{B}$ is the binary's semimajor axis, cf.\ \eqnref{Tidal} below. Thus, we ignore the possible presence of binaries.
 
 \subsection{The event rate in terms of eccentricity and periapsis}\label{sec:e-rp}
 
@@ -117,7 +117,7 @@ v_r^2 = {} & GM_\bullet\left[\dfrac{2}{r} - \dfrac{(1 - e)}{r\sub{p}} - \dfrac{(
 \end{align}
 From the latter we can verify that the turning points of an orbit occur at
 \begin{equation}
-r = r\sub{p}, \: \dfrac{1+e}{1-e}r\sub{p};
+r = r\sub{p}, \quad \dfrac{1+e}{1-e}r\sub{p};
 \end{equation}
 the periapse is the only turning point for orbits with $e > 1$. Since we now have expressions for $\{v_r, v_\perp\}$ in terms of $\{e, r\sub{p}\}$, we can 
 calculate the Jacobian
@@ -152,10 +152,9 @@ where $N(e, r\sub{p}; r)$ is the total number of stars with orbits given by $\{e
 \begin{equation}
 \delta t = 2\dfrac{\delta r}{v_r},
 \end{equation}
-where the factor of $2$ accounts for inwards and outwards motion. Hence
+where the factor of two accounts for inwards and outwards motion. Hence
 \begin{align}
-N(e, r\sub{p}; r) = {} & \recip{2} v_r P(e, r\sub{p}) n(r, e, r\sub{p}) \nonumber \\*
- = {} & \dfrac{2\pi^2(GM_\bullet)^2 e P(e, r\sub{p})}{r\sub{p}}f(E).
+N(e, r\sub{p}; r) = {} & \recip{2} v_r P(e, r\sub{p}) n(r, e, r\sub{p}) = \dfrac{2\pi^2(GM_\bullet)^2 e P(e, r\sub{p})}{r\sub{p}}f(E).
 \end{align}
 The right hand side is independent of position, subject to the constraint that the radius is in the allowed range for the orbit $r\sub{p} \leq r \leq (1+e)r\sub{p}/(1-e)$, and so $N(e, r\sub{p}) \equiv N(e, r\sub{p}; r)$. This is a consequence of the DF being dependent only upon a constant of the motion.\footnote{See \citet{Bahcall1976} equation (9) for a similar result.}
 
@@ -196,7 +195,7 @@ The calculated inner cut-offs for the four stellar species across the range of b
    \subfigure[{WDs}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_2.eps}} \\
    \subfigure[{NSs}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_3.eps}} \quad
    \subfigure[{BHs}]{\includegraphics[width=0.475\textwidth]{./images/Fig_Inner_cut_4.eps}}
-\caption{Inner cut-off radii for the Galactic Centre as a function of eccentricity. The solid line is the Schwarzschild radius of the MBH; this gives an indication of the innermost possible orbit which actually varies with MBH spin as well as orbital eccentricity and inclination. The dashed line is the tidal radius which is a hard cut-off inside of which there should be no undisrupted stars. The dot--dashed line is the collisional cut-off which is a statistical cut-off inside of which we do not expect any stars. The dotted line is the transition to the GW-dominated inspiral regime; inside of this we expect inspiralling stars in place of the relaxed distribution.}\label{fig:Cuts}
+\caption{Inner cut-off radii for the GC as a function of eccentricity. The solid line is the Schwarzschild radius of the MBH; this gives an indication of the innermost possible orbit, which actually varies with MBH spin as well as orbital eccentricity and inclination. The dashed line is the tidal radius, which is a hard cut-off inside of which there should be no undisrupted stars. The dot--dashed line is the collisional cut-off, which is a statistical cut-off inside of which we do not expect any stars. The dotted line is the transition to the GW-dominated inspiral regime; inside of this we expect inspiralling stars in place of the relaxed distribution.}\label{fig:Cuts}
 \end{figure}
 The tidal and collisional disruption cut-offs are hard boundaries, inside of which we assume there are no bursting sources. The transition to the GW inspiral dominated regime marks the end of the relaxed distribution of stars; inside of this there are only inspiralling stars.
 
@@ -204,7 +203,7 @@ The tidal and collisional disruption cut-offs are hard boundaries, inside of whi
 
 Tidal forces from the MBH can disrupt stars. This occurs at the tidal radius
 \begin{equation}
-r\sub{T} \simeq \left(\dfrac{M_\bullet}{M}\right)^{1/3}R_M
+r\sub{T} \simeq \left(\dfrac{M_\bullet}{M}\right)^{1/3}R_M,
 \label{eq:Tidal}
 \end{equation}
 where $R_M$ is the radius of the star \citep{Hills1975, Rees1988, Kobayashi2004}.\footnote{See \citet{Kesden2012} for a general relativistic treatment.} Any star on an orbit with $r\sub{p} < r\sub{T}$ is disrupted in the course of its orbit. Parameterizing orbits by their periapsis allows us to easily determine which stars should be disrupted. We do not include the full effects of the loss cone \citep{Frank1976, Lightman1977, Cohn1978} as these were not incorporated into the Fokker--Planck calculations \citep{Hopman2009}.\footnote{The loss cone is a region in velocity space where orbits are depleted because stars are disrupted more rapidly than they can be replenished by two-body scattering and is discussed in \apref{loss-cone}.} The effect of the loss cone should be small, only modifying the DF by a logarithmic term \citep{Lightman1977, Bahcall1977, Cohn1978}. Its effects are diluted by resonant relaxation \citep{Hopman2007,Toonen2009,Merritt2011}. Furthermore, the loss cone could be refilled by the wandering within the NSC of the MBH because of perturbations from the inhomogeneities in the stellar potential \citep{Sigurdsson1997,Chatterjee2002,Merritt2007}.
@@ -217,7 +216,7 @@ The motion of a star is determined not only by the dominant influence of the cen
 
 The two-body interactions mostly lead to small deflections. Over time, these may accumulate into a significant change in the dynamics. The relaxation time-scale characterises the time taken for this to happen \citep[section 1.2.1]{Binney2008}. It therefore quantifies the time over which an orbit may be repopulated by scattering.
 
-There are a variety of different methods used to define a relaxation time-scale. We follow the classic treatment of \citet[chapter 2]{Chandrasekhar1960}, adapting from a Maxwellian distribution of velocities to one derived from the DFs \eqnref{Unbound_DF} and \eqnref{Bound_DF}; this makes the model self-consistent. The derivation of the relaxation time-scale is found in \chapref{relax}, since it is too involved to include here. An average time-scale for the entire system $\overline{\tau\sub{R}}$ is defined in \eqnref{system-relax}, and an average for an orbit $\left\langle\tau\sub{R}\right\rangle$ is defined in \eqnref{orbital-relax}. 
+There are a variety of different methods used to define a relaxation time-scale. We follow the classic treatment of \citet[chapter 2]{Chandrasekhar1960}, adapting from a Maxwellian distribution of velocities to one derived from the DFs, equations (\ref{eq:Unbound_DF}) and (\ref{eq:Bound_DF}); this makes the model self-consistent. The derivation of the relaxation time-scale is found in \chapref{relax}, since it is too involved to include here. An average time-scale for the entire system $\overline{\tau\sub{R}}$ is defined in \eqnref{system-relax}, and an average for an orbit $\left\langle\tau\sub{R}\right\rangle$ is defined in \eqnref{orbital-relax}. 
 
 Two-body interactions lead to diffusion in both energy and angular momentum. When considering a single (bound) orbit, over a relaxation time-scale the energy changes by order of itself while the angular momentum changes by the angular momentum of a circular orbit with that energy $L\sub{circ}(E)$ \citep{Lightman1977, Rauch1996, Hopman2005, Madigan2011}:\footnote{$L\sub{circ}(E)$ is the maximum value for orbits of that energy.}
 \begin{equation}
@@ -240,8 +239,7 @@ Stars orbiting the MBH continually emit gravitational radiation; this carries aw
 \end{equation}
 where the term in angular brackets is the orbit-averaged rate of energy radiation. Using \eqnref{Energy_ecc} and equation (16) of \citet{Peters1963},
 \begin{align}
-\tau\sub{GW} \simeq {} & \dfrac{5}{64}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet\left(M + M_\bullet\right)}\dfrac{(1+e)^{7/2}}{(1-e)^{1/2}} \nonumber \\*
- {} & \times {} \left(1+\dfrac{73}{24}e^2 + \dfrac{37}{96}e^4\right)^{-1} \\
+\tau\sub{GW} \simeq {} & \dfrac{5}{64}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet\left(M + M_\bullet\right)}\dfrac{(1+e)^{7/2}}{(1-e)^{1/2}}\left(1+\dfrac{73}{24}e^2 + \dfrac{37}{96}e^4\right)^{-1} \\
  \approx {} & \dfrac{5}{64}\dfrac{c^5r\sub{p}^4}{G^3MM_\bullet^2}\dfrac{(1+e)^{7/2}}{(1-e)^{1/2}}\left(1+\dfrac{73}{24}e^2 + \dfrac{37}{96}e^4\right)^{-1}.
 \end{align}
 For comparison, the total time taken for the inspiral, if undisturbed, is given in \apref{Bound}.
@@ -258,7 +256,7 @@ Unbound stars only undergo a single periapse passage and only radiate one burst 
 
 The $(1-e)^{-1/2}$ dependence of $\tau\sub{GW}$ for bound orbits connects the two regimes. The rate of change of energy goes to zero as a consequence of assuming the orbital parameters do not change over the course of an orbit. It is a valid approximation since the large mass-ratio ensures a slow evolution of the system (\apref{Unbound}).
 
-When comparing with the relaxation time-scale we are comparing rates of change, with the shorter time-scale highlighting the more rapid process that dominates the evolution \citep{Amaro-Seoane2007}. We therefore compare $\tau\sub{GW}$ with the orbital relaxation time-scale $\tau_L$ \citep{Merritt2011}. Orbits with $\tau\sub{GW} < \tau_L$ become depleted by GW emission faster than they are replenished by scattering. The cusp does not extend to these orbits. Yet, these orbits are not totally depopulated as an object may pass through during its inspiral from greater periapse and eccentricity. In their calculations, \citet{Hopman2007} did not include these inspiralling stars as potential burst sources. We calculate the density of stars in this region by following the evolution of inspirals beginning at the inner edge of the cusp (where the two time-scales are equal), weighting by the rate of change of the periapse and eccentricity in each element of $e$--$r\sub{p}$ space \citep{Peters1964}. The net effects are that the high-eccentricity distributions of MS stars, WDs and NSs are relatively unchanged from their cusp states, but the BH distribution is significantly depleted.
+When comparing with the relaxation time-scale we are comparing rates of change, with the shorter time-scale highlighting the more rapid process that dominates the evolution \citep{Amaro-Seoane2007}. We therefore compare $\tau\sub{GW}$ with the orbital relaxation time-scale $\tau_L$ \citep{Merritt2011}. Orbits with $\tau\sub{GW} < \tau_L$ become depleted by GW emission faster than they are replenished by scattering. The cusp does not extend to these orbits. Yet, these orbits are not totally depopulated as an object may pass through during its inspiral from greater periapse and eccentricity. In their calculations, \citet{Hopman2007} did not include these inspiralling COs as potential burst sources. We calculate the density of COs in this region by following the evolution of inspirals beginning at the inner edge of the cusp (where the two time-scales are equal), weighting by the rate of change of the periapse and eccentricity in each element of $e$--$r\sub{p}$ space \citep{Peters1964}. The net effects are that the high-eccentricity distributions of MS stars, WDs and NSs are relatively unchanged from their cusp states, but the BH distribution is significantly depleted.
 
 \subsubsection{Collisions}\label{sec:Collision}
 
@@ -289,16 +287,16 @@ Orbits within the collisional cut-off are assumed to be depopulated and do not c
 
 \subsection{Galactic event rate}
 
-As a first approximation for the number of events expected in a $2\units{yr}$ mission lifetime, we numerically integrated the event rate. This estimate is denoted as $\mathcal{N}_2\super{int}$. The lower limit on $r\sub{p}$ was set to be the largest of the tidal cut-off, the collisional cut-off or the MBH's Schwarzschild radius.\footnote{The transition to the GW inspiral regime is not a cut-off, but reflects a change in the form of the stellar distribution, hence it is not included amongst the other inner periapses as a lower limit.} The Schwarzschild radius $r\sub{S} = 2 r\sub{g}$ is used as a proxy for an averaged innermost orbit's periapse; the innermost parabolic orbit for non-spinning MBHs has $r\sub{p} = 4r\sub{g}$ and the innermost parabolic orbit for a maximally spinning MBH has $r\sub{p} = r\sub{g}$ for a prograde equatorial orbit and $r\sub{p} = (3 + 2\sqrt{2})r\sub{g}$ for a retrograde equatorial orbit. The upper limit was the detection threshold as determined from \eqnref{SNR-power-law}. The lower bound on eccentricity was set to $0.9$, below which we do not trust the parabolic approximation for burst waveforms; since the DF decays exponentially with eccentricity for unbound orbits, the upper limit does not influence our results.
+As a first approximation for the number of events expected in a $2\units{yr}$ mission lifetime, we numerically integrated the event rate. This estimate is denoted as $\mathcal{N}_{2\units{yr}}\super{int}$. The lower limit on $r\sub{p}$ was set to be the largest of the tidal cut-off, the collisional cut-off or the MBH's Schwarzschild radius.\footnote{The transition to the GW inspiral regime is not a cut-off, but reflects a change in the form of the stellar distribution, hence it is not included amongst the other inner periapses as a lower limit.} The Schwarzschild radius $r\sub{S} = 2 r\sub{g}$ is used as a proxy for an averaged innermost orbit's periapse; the innermost parabolic orbit for non-spinning MBHs has $r\sub{p} = 4r\sub{g}$, and the innermost parabolic orbit for a maximally spinning MBH has $r\sub{p} = r\sub{g}$ for a prograde equatorial orbit and $r\sub{p} = (3 + 2\sqrt{2})r\sub{g}$ for a retrograde equatorial orbit. The upper limit was the detection threshold as determined from \eqnref{SNR-power-law}. The lower bound on eccentricity was set to $0.9$, below which we do not trust the parabolic approximation for burst waveforms; since the DF decays exponentially with eccentricity for unbound orbits, the upper limit does not influence our results.
 
-To obtain a more accurate estimate, we performed $2 \times 10^4$ mission realisations. For each mission, we randomly selected a set of parameters to describe the MBH, and then picked orbits with probabilities defined by their event rates. The orbital position of the LISA detector was also chosen randomly. The SNR of the resulting bursts were calculated and a detection was recorded if $\rho > 10$. By averaging the number of events per mission, we can estimate the expected number of bursts we would detect. This is denoted $\mathcal{N}_2\super{run}$.
+To obtain a more accurate estimate, we performed $2 \times 10^4$ mission realisations. For each mission, we randomly selected a set of parameters to describe the MBH, and then picked orbits with probabilities defined by their event rates. The orbital position of the LISA detector was also chosen randomly. The SNR of the resulting bursts were calculated and a detection was recorded if $\rho > 10$. By averaging the number of events per mission, we can estimate the expected number of bursts we could detect. This is denoted $\mathcal{N}_{2\units{yr}}\super{run}$.
 
 The calculated numbers of events are shown in \tabref{Rates}. 
 \begin{table}\footnotesize
 \centering
   \begin{tabular}{l D{,}{\,\times\,}{3.4} D{,}{\,\times\,}{3.4}}
   \toprule
-  Star & \multicolumn{1}{c}{$\mathcal{N}_2\super{int}$} & \multicolumn{1}{c}{$\mathcal{N}_2\super{run}$} \\ \midrule
+  Star & \multicolumn{1}{c}{$\mathcal{N}_{2\units{yr}}\super{int}$} & \multicolumn{1}{c}{$\mathcal{N}_{2\units{yr}}\super{run}$} \\ \midrule
   MS & 9.5,10^{-4} & 1.3,10^{-3} \\
   WD & 1.0,10^{-2} & 1.0,10^{-2} \\
   NS & 5.0,10^{-1} & 5.0,10^{-1}  \\
@@ -307,26 +305,26 @@ The calculated numbers of events are shown in \tabref{Rates}.
   Total & 1.7,10^{0} & 1.7,10^{0} \\
   \bottomrule
 \end{tabular}
-  \caption{Expected number of events per $2\units{yr}$ LISA mission. $\mathcal{N}_2\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law}, and $\mathcal{N}_2\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:Rates}
+  \caption{Expected number of events per $2\units{yr}$ LISA mission. $\mathcal{N}_{2\units{yr}}\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law}, and $\mathcal{N}_{2\units{yr}}\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:Rates}
 \end{table}
 The two approaches are in good agreement indicating that the average relation \eqnref{SNR-power-law} is sufficiently accurate for these type of calculations, and that the Schwarzschild radius is a reasonable absolute inner cut-off averaged over all MBH spins. The total number of events per mission is plotted in \figref{Event-no}. 
 This is consistent with being Poisson distributed as expected.
 \begin{figure}%[ht]
 \centering
    \includegraphics[width=0.6\textwidth]{./images/Fig_Total_event_hist}
-\caption{Calculated number of detectable EMRBs over a $2\units{yr}$ LISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_2\super{int}$.}
+\caption{Calculated number of detectable EMRBs over a $2\units{yr}$ LISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_{2\units{yr}}\super{int}$.}
 \label{fig:Event-no}
 \end{figure}
 Only BHs and NSs contribute to the event rate significantly. Only MS stars have a non-negligible (relative) contribution from unbound orbits. The event rates are not high, but there is a $\sim 4/5$ ($81\%$) chance of observing at least one burst in a mission.
 
 The overall rates are similar to those presented in \citet{Hopman2007}. The MS rate is lower because of a larger collisional cut-off. This also influences the WD rate, but the overall rate is little changed. The NS rate is enhanced because of the inclusion of bursts from inspiralling objects. The physics for BHs is least changed, the (small) difference in event rate is partly a consequence of our more realistic SNRs.
 
-This analysis can be repeated for eLISA. We switch the detector noise curves and change from using \eqnref{SNR-power-law} to \eqnref{SNR-power-law-eLISA} to determine the upper cut-off for $\mathcal{N}_2\super{int}$. The results are shown in \tabref{eLISA-Rates}.
+This analysis can be repeated for eLISA. We switch the detector noise curves and change from using \eqnref{SNR-power-law} to \eqnref{SNR-power-law-eLISA} to determine the upper cut-off for $\mathcal{N}_{2\units{yr}}\super{int}$. The results are shown in \tabref{eLISA-Rates}.
 \begin{table}\footnotesize
 \centering
   \begin{tabular}{l D{,}{\,\times\,}{3.4} D{,}{\,\times\,}{3.4}}
   \toprule
-  Star & \multicolumn{1}{c}{$\mathcal{N}_2\super{int}$} & \multicolumn{1}{c}{$\mathcal{N}_2\super{run}$} \\ \midrule
+  Star & \multicolumn{1}{c}{$\mathcal{N}_{2\units{yr}}\super{int}$} & \multicolumn{1}{c}{$\mathcal{N}_{2\units{yr}}\super{run}$} \\ \midrule
   MS & \multicolumn{1}{c}{$0$} & \multicolumn{1}{c}{$0$} \\
   WD & 1.7,10^{-3} & 1.9,10^{-3} \\
   NS & 3.0,10^{-1} & 3.0,10^{-1}  \\
@@ -335,22 +333,22 @@ This analysis can be repeated for eLISA. We switch the detector noise curves and
   Total & 9.8,10^{-1} & 9.7,10^{-1} \\
   \bottomrule
 \end{tabular}
-  \caption{Expected number of events per $2\units{yr}$ eLISA mission. $\mathcal{N}_2\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law-eLISA}, and $\mathcal{N}_2\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:eLISA-Rates}
+  \caption{Expected number of events per $2\units{yr}$ eLISA mission. $\mathcal{N}_{2\units{yr}}\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law-eLISA}, and $\mathcal{N}_{2\units{yr}}\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:eLISA-Rates}
 \end{table}
 Again, the two approaches are in good agreement. The total number of events per mission is plotted in \figref{eLISA-Event-no}.
 \begin{figure}%[ht]
 \centering
    \includegraphics[width=0.6\textwidth]{./images/Fig_Total_event_hist_eLISA}
-\caption{Calculated number of detectable EMRBs over a $2\units{yr}$ eLISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_2\super{int}$.}
+\caption{Calculated number of detectable EMRBs over a $2\units{yr}$ eLISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_{2\units{yr}}\super{int}$.}
 \label{fig:eLISA-Event-no}
 \end{figure}
 The event rate is lower than for LISA. The MS and WD rates are much reduced. This is because the inner cut-off extends to the limit of detectability. NSs and BHs are less affected by the inner cut-offs, hence their reduction only reflects the loss in sensitivity when switching from LISA to eLISA. The total event rate, being dominated by BHs and NSs, shares a comparable reduction, being around $60\%$ of the LISA rate.
 
 \subsection{Extragalactic event rate}\label{sec:extragal-events}
 
-As a final event rate calculation, we may consider the question of extragalactic bursts. If we had detailed measurements of the centres of other galaxies, we could adapt our model and generate appropriate rates. However, this would be expensive to do for all galaxies. Instead we reuse our Galactic model, calculating the event rate per Milky way equivalent galaxy (MWEG), which gives a rough guide for the scaling with the number of galaxies. The event rates estimated are crude, but give a sketch of what we could expect.
+As a final event rate calculation, we may consider the question of extragalactic bursts. If we had detailed measurements of the centres of other galaxies, we could adapt our model and generate appropriate rates. However, this would be expensive to do for all galaxies. Instead we reuse our Galactic model, calculating the event rate per Milky Way equivalent galaxy (MWEG), which gives a rough guide for the scaling with the number of galaxies. The event rates estimated are crude, but give a sketch of what we could expect.
 
-In \chapref{extragal}, we found that for the most promising extragalactic sources, EMRBs become informative for $r\sub{p} \lesssim 8 r\sub{g}$. We may use this as an outer cut-off. We shall only consider bursts from BHs as less massive COs have lower SNRs and so are less informative. The calculated event rate for a $2\units{yr}$ mission is $\mathcal{N}_2\super{int} \simeq 0.19$ per MWEG. Therefore, we require the equivalent of approximately five Milky Ways to expect to see one extragalactic burst in a LISA mission lifetime.
+In \chapref{extragal}, we found that for the most promising extragalactic sources, EMRBs become informative for $r\sub{p} \lesssim 8 r\sub{g}$. We may use this as an outer cut-off. We only consider bursts from BHs as less massive COs have lower SNRs and so are less informative. The calculated event rate for a $2\units{yr}$ mission is $\mathcal{N}_{2\units{yr}}\super{int} \simeq 0.19$ per MWEG. Therefore, we require the equivalent of approximately five Milky Ways to expect to see one extragalactic burst in a LISA mission lifetime.
 
 \section{Information content}
 
@@ -385,7 +383,7 @@ Combining the results from the set of realisations, \figref{Widths} shows the fr
    \subfigure[{Spin magnitude}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_2}} \\
    \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_3}} \quad
    \subfigure[{Azimuthal angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_sigma_4}}
-\caption{Cumulative proportion of mission realisations that produced posteriors with standard deviation (solid line) or $68$-percentile half-width (dashed line) larger than the ordinate value.}\label{fig:Widths}
+\caption{Cumulative proportion of mission realisations that produced posteriors with standard deviation (solid line) or $68$-percentile half-width (dashed line) larger than the abscissa value.}\label{fig:Widths}
 \end{figure}
 It appears there is a $33\%$ chance of determining $\ln (M_\bullet/M_\odot)$ to a precision of $10^{-2}$ or a $10\%$ chance of determining it to $10^{-4}$. The current uncertainty of $\sim 0.08$ is bettered in over half ($52\%$) of the missions. The spin $a_\ast$ could be determined to a precision of $10^{-2}$ in $30\%$ of missions and there is a $10\%$ chance of determining it to better than $3\times 10^{-4}$.
 
@@ -397,17 +395,17 @@ The distribution widths work for describing parameter estimation accuracies of a
 \begin{equation}
 H(\{p_i\}) = -\sum_i p_i \ln p_i
 \end{equation}
-is the entropy measured in nats.\footnote{The unit is set by the base of the logarithm; the more familiar bit is calculated using base $2$, $1\units{bit} \equiv \ln(2)\units{nats}$.} This is identical to its counterpart in statistical physics up to a factor of the Boltzmann constant. Generalising from discrete to continuous probabilities is not quite as simple as exchanging the sum for an integral; it is also necessary to introduce a measure function in the logarithm, otherwise the entropy would not be invariant under a simple parameter rescaling. For a continuous probability distribution $p(\lambda)$, we work in terms of the relative entropy \citep[section 1.4]{Ihara1993}
+is the entropy measured in nats.\footnote{The unit is set by the base of the logarithm; the more familiar bit is calculated using base two, $1\units{bit} \equiv \ln(2)\units{nats}$.} This is identical to its counterpart in statistical physics up to a factor of the Boltzmann constant. Generalising from discrete to continuous probabilities is not quite as simple as exchanging the sum for an integral; it is also necessary to introduce a measure function in the logarithm, otherwise the entropy would not be invariant under a simple parameter rescaling. For a continuous probability distribution $p(\lambda)$, we work in terms of the relative entropy \citep[section 1.4]{Ihara1993}
 \begin{equation}
 H(p|q) = \intd{}{}{p(\lambda)\ln\left(\dfrac{p(\lambda)}{q(\lambda)}\right)}{\lambda},
 \end{equation}
-where $q(\lambda)$ is another probability distribution, and we have changed the sign compared to the discrete case so that the entropy is non-negative. The relative entropy, or Kullback-Leiber divergence, measures the difference between distributions and is zero only if $p(\lambda) = q(\lambda)$ everywhere; with $p(\lambda)$ as the posterior and $q(\lambda)$ as the prior, it quantifies the information gained \citep{Kullback1951}.
+where $q(\lambda)$ is another probability distribution, and we have changed the sign compared to the discrete case so that the entropy is non-negative. The relative entropy, or Kullback--Leiber divergence, measures the difference between distributions and is zero only if $p(\lambda) = q(\lambda)$ everywhere; with $p(\lambda)$ as the posterior and $q(\lambda)$ as the prior, it quantifies the information gained \citep{Kullback1951}.
 
 The relative entropy is perfect for our purpose. It is zero when we do not observe a burst or the burst is uninformative such that we do not learn anything. Otherwise it scales approximately with the (logarithm of the) posterior width, giving an indication of how much could be learnt. For example, if $p(\lambda)$ and $q(\lambda)$ were both uniform distributions, with $p(\lambda)$ having $1/z$ the width of $q(\lambda)$, $H(p|q) = \ln z$; if they were both Gaussian with equal means, and $p(\lambda)$ had $1/z$ the width of $q(\lambda)$, $H(p|q) = \ln z - (1/2)(1 - z^{-2})$.
 
-There is one complication in using the relative entropy. We have used an improper prior for $\ln (M_\bullet/M_\odot)$; it is uniform over the entire real line and so cannot be normalised. As an alternative, we can use a Gaussian with parameters set by the current observations \citep{Gillessen2009}. The relative entropy then compares constraints from bursts with those from observing stellar motions.\footnote{Whilst this is a useful comparison, this does mean that the results are specific to the current state of knowledge and cannot be simply translated should we obtain updated measurements.}
+There is one complication in using the relative entropy. We have used an improper prior for $\ln (M_\bullet/M_\odot)$; it is uniform over the entire real line and so cannot be normalised. As an alternative, we can use a Gaussian with parameters set by the current observations \citep{Gillessen2009}. The relative entropy then compares constraints from bursts with those from observing stellar motions.\footnote{Whilst this is a useful comparison, it does mean that the results are specific to the current state of knowledge and cannot be simply translated should we obtain updated measurements.}
 
-In practice, if we were trying to infer the mass of the MBH we would combine all our data together to form a best estimate. Then a positive entropy would indicate that the final posterior is narrower than the current observational distribution. We do not incorporate our current knowledge of the MBH mass into our prior here because we are interested in what information is contained in EMRBs alone. Therefore our posterior from EMRBs can be broader than this observational prior. In this case the relative entropy can still be positive (since the distributions are different) even though we are not gaining information. In these cases we set the entropy to zero by hand as we have not improved our relative state of knowledge.
+In practice, if we were trying to infer the mass of the MBH we would combine all our data together to form a best estimate. Then a positive entropy would indicate that the final posterior is narrower than the current observational distribution. We do not incorporate our current knowledge of the MBH mass into our prior here because we are interested in what information is contained in EMRBs alone. Therefore our posterior from EMRBs can be broader than this observational prior. In this case the relative entropy can still be positive (since the distributions are different) even though we are not gaining information. In these cases we set the entropy to zero by hand, as we have not improved our relative state of knowledge.
 
 The entropies calculated from multiple burst posteriors may show a similar bias to the distribution widths. This would reduce the value, hence we use the largest calculated entropy. However, the entropy appears much less sensitive to the choice of the $k$-d tree used for the multiplication than the distribution widths. %The entropies corresponding to the distributions in \figref{bias} differ only by $0.04\units{nats}$, less than $1\%$ of the value.
 
@@ -418,9 +416,9 @@ The entropies are well correlated with the logarithm of the distribution widths 
    \subfigure[{Spin magnitude}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_2}} \\
    \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_3}} \quad
    \subfigure[{Azimuthal angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_4}}
-\caption{Cumulative proportion of mission realisations that produced posteriors with relative entropies larger than the ordinate value. Here, $H_{\lambda_\bullet^a} \equiv H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))$}\label{fig:H-ent}
+\caption{Cumulative proportion of mission realisations that produced posteriors with relative entropies larger than the abscissa value. Here, $H_{\lambda_\bullet^a} \equiv H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))$}\label{fig:H-ent}
 \end{figure}
-They closely mirror those in \figref{Widths} (but the scale on the ordinate axis is now linear). There is a clustering at small entropies; the largest entropies are $\sim 13\units{nats}$ for $\ln(M_\bullet/M_\odot)$ and $\sim 15\units{nats}$ for the other parameters.
+They closely mirror those in \figref{Widths} (but the scale on the abscissa axis is now linear). There is a clustering at small entropies; the largest entropies are $\sim 13\units{nats}$ for $\ln(M_\bullet/M_\odot)$ and $\sim 15\units{nats}$ for the other parameters.
 
 Taking the average across all $100$ mission realisations, we can calculate the expected information gain for each parameter. The results are shown in \tabref{entropies}
 \begin{table}\footnotesize
@@ -440,7 +438,7 @@ The typical entropy is about $3 \units{nats}$; this corresponds to an improvemen
 
 \section{Discussion of extreme-mass-ratio bursts}\label{sec:EMRB-end}
 
-EMRBs are a potentially interesting signal for a future space-based gravitational wave detector. They could give us insight into the properties of MBHs as well as the distribution of COs that surround them in galactic centres.
+EMRBs are a potentially interesting signal for a future space-borne gravitational wave detector. They could give us insight into the properties of MBHs as well as the distribution of COs that surround them in galactic centres.
 
 We have studied bursts across four chapters. We began in \chapref{waveforms} by constructing NK waveforms for parabolic orbits. These are approximate, but comparison with calculations from BH perturbation theory show that the typical accuracy may be of order $5\%$. The waveforms are the foundation of our subsequent analysis.
 
@@ -448,7 +446,7 @@ In \chapref{param} we used the NK waveforms to characterise the SNR of bursts an
 
 Following on from this, in \chapref{extragal} we investigated extragalactic bursts. A number of galaxies could produce detectable bursts, most notably M32. From amongst the most promising candidates, we studied M32, NGC 4945 and NGC 4395 in detail. Bursts from these galaxies can be informative if $r\sub{p} \lesssim 8 r\sub{g}$, again assuming a $10 M_\odot$ CO. Therefore, extragalactic EMRBs could also be useful, although not to the same level as Galactic bursts.
 
-For both Galactic and extragalactic bursts, the limiting factor is the event rate. In this chapter we built a simple theoretical model to predict the Galactic EMRB event rate. This is built upon the Fokker--Planck simulations of \citet{Alexander2009} and incorporates approximate treatments of GW inspiral, tidal disruption and collisions. As part of this, it is necessary to calculate the relaxation time-scale. This is done in the following chapter, where we explore the effects of gravitational two-body interactions. The burst event rate is dominated by stellar mass BHs which form a cusp about the central MBH as a consequence of mass segregation.
+For both Galactic and extragalactic bursts, the limiting factor is the event rate. In this chapter we built a simple theoretical model to predict the Galactic EMRB event rate. This is built upon the Fokker--Planck simulations of \citet{Alexander2009} and incorporates approximate treatments of GW inspiral, tidal disruption and collisions. As part of this, it is necessary to calculate the relaxation time-scale. This is done in the following chapter, where we explore the effects of gravitational two-body interactions. The burst event rate is dominated by stellar-mass BHs which form a cusp about the central MBH as a consequence of mass segregation.
 
 For Galactic bursts, we calculate that there could be on average $\sim1.7$ detectable bursts over a $2\units{yr}$ LISA mission lifetime, of which $\sim1.2$ are from BHs. For eLISA, the number of detectable bursts is reduced by $60\%$ giving a total of $\sim1$ events per $2\units{yr}$ mission, of which $0.7$ are from BHs. The number of events scales linearly with the mission lifetime. The event rate is not high: EMRBs shall not be a prolific GW source; however, the rate is not negligible. We are not guaranteed to have a burst in a mission lifetime, but it seems more likely than not that we shall have at least one.
 
@@ -458,6 +456,8 @@ The detectability of EMRBs is of little interest astrophysically unless we can e
 
 To quantify the information gained during a mission, we used the relative entropy with respect to our current knowledge. Averaging across all the missions, we found that we can expect to gain $2.2\units{nats}$ of information about the logarithm of the mass, $3.0\units{nats}$ about the spin magnitude, $2.8\units{nats}$ about the cosine of the polar angle for the spin axis and $4.2\units{nats}$ for the azimuthal angle. The entropy scales with the logarithm of the width of the posterior distribution, hence these entropies represent improvements in the precision of our knowledge of the parameters by factors between $\sim9$ and $\sim40$. For the mass, this would mean the uncertainty would become $\sim1\%$; we could expect to know the spin to a precision of order $\sim0.1$.
 
-It must be stressed that, whilst these results are computed accurately based on the assumptions of the model, they are only to be trusted to an order of magnitude because of the significant uncertainties in the underlying assumptions. There are a number of sources of uncertainty found throughout our analysis. First, we employed the NK approximation, assuming parabolic trajectories. The waveforms are easy to compute, but do contain inaccuracies in their amplitude profiles. This should not significantly influence detectability, but may lead to differences in the shape of the posterior distributions. Since the errors in the waveforms are small this should not qualitatively affect our results. Second, in calculating the event rate we made both mathematical and physical approximations. The former are correct to a few percent and so are negligible compared to the latter. Our model, however, does include all the relevant physical processes, and further advances the previous work of \citet{Rubbo2006} and \citet{Hopman2007}. Third, the astrophysical parameters used as inputs for our event rate calculation are themselves uncertain. Fourth, when calculating the constraints for our mission realisations, we only considered EMRBs from orbits with periapses smaller than $16 r\sub{g}$, yet whilst little information is expected from other bursts, the amount is not zero. This may lead to us slightly underestimating the total information that could be extracted from EMRBs. Finally, when combining posteriors from multiple EMRBs from the same mission, we binned our posterior distributions. This could lead to a small bias, making us underestimate the usefulness of bursts. Overall, the uncertainty in astrophysical parameters is likely to be the greatest source of error. As there are many unknowns regarding the physical assumptions it is difficult to quantify the uncertainty in our results. As we learn more about the GC, we shall become more confident in our predictions.
+These results have been obtained assuming the classic LISA design. The first millihertz space-borne interferometer is likely to have a descoped design such as the proposed eLISA. This concept could be revised in the near future and so we have not used it to produce results. The effect of the reduced sensitivity would be to reduce the SNR and increase the widths of the posterior distributions. The information gained about the MBH would decrease; since the event rate for the most informative bursts in largely unaffected, we could still expect to learn something using eLISA.
+
+It must be stressed that, while these results are computed accurately based on the assumptions of the model, they are only to be trusted to an order of magnitude because of the significant uncertainties in the underlying assumptions. There are a number of sources of uncertainty found throughout our analysis. First, we employed the NK approximation, assuming parabolic trajectories. The waveforms are easy to compute, but do contain inaccuracies in their amplitude profiles. This should not significantly influence detectability, but may lead to differences in the shape of the posterior distributions. Since the errors in the waveforms are small, this should not qualitatively affect our results. Second, in calculating the event rate we made both mathematical and physical approximations. The former are correct to a few percent and so are negligible compared to the latter. Our model, however, does include all the relevant physical processes, and further advances the previous work of \citet{Rubbo2006} and \citet{Hopman2007}. Third, the astrophysical parameters used as inputs for our event rate calculation are themselves uncertain. Fourth, when calculating the constraints for our mission realisations, we only considered EMRBs from orbits with periapses smaller than $16 r\sub{g}$, yet whilst little information is expected from other bursts, the amount is not zero. This may lead to us slightly underestimating the total information that could be extracted from EMRBs. Finally, when combining posteriors from multiple EMRBs from the same mission, we binned our posterior distributions. This could lead to a small bias, making us underestimate the usefulness of bursts. Overall, the uncertainty in astrophysical parameters is likely to be the greatest source of error. As there are many unknowns regarding the physical assumptions it is difficult to quantify the uncertainty in our results. As we learn more about the GC, we shall become more confident in our predictions.
 
 The centre of the Galaxy is a wonderful laboratory for testing our understanding of astrophysics, in particular for learning about MBHs and their influence on their environments. EMRBs could be a new means of probing this system.

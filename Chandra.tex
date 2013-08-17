@@ -1,19 +1,19 @@
 \chapter{Energy change in two-body encounters}\label{ap:Chandra}
 
-Two-body encounters are common in dense stellar systems, such as a nuclear star cluster. During these encounters, energy and angular momentum can be exchanged. It is this that leads to the relaxation of a stellar system. \citet[chapter 2]{Chandrasekhar1960} derived the squared change in energy expected in a two-body encounter. We reproduce this here for use in \chapref{relax}, where we discuss the relaxation time-scale for the Galactic NSC.
+Two-body encounters are common in dense stellar systems, such as those found in galactic centres. During these encounters, energy and angular momentum can be exchanged. It is this that leads to the relaxation of a stellar system. \citet[chapter 2]{Chandrasekhar1960} derived the squared change in energy expected in a two-body encounter. We reproduce this here for use in \chapref{relax}, where we discuss the relaxation time-scale for the Galactic NSC.
 
 We consider the interaction of a field star, denoted by 1, with a test star, 2; the centre-of-gravity and relative velocities are
 \begin{subequations}
 \label{eq:Vs}
 \begin{align}
-\boldsymbol{V}\sub{g} = {} & \recip{m_1 + m_2}\left(m_1 \boldsymbol{v}_1 + m_2 \boldsymbol{v}_2\right);\\
+\boldsymbol{V}\sub{g} = {} & \recip{m_1 + m_2}\left(m_1 \boldsymbol{v}_1 + m_2 \boldsymbol{v}_2\right),\\
 \boldsymbol{V} = {} & \boldsymbol{v}_1 - \boldsymbol{v}_2.
 \end{align}
 \end{subequations}
 Hence
 \begin{subequations}
 \begin{align}
-v_1^2 = {} & V\sub{g}^2 - 2\dfrac{m_2}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\dfrac{m_2}{m_1 + m_2}\right)^2V^2;\\
+v_1^2 = {} & V\sub{g}^2 - 2\dfrac{m_2}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\dfrac{m_2}{m_1 + m_2}\right)^2V^2,\\
 v_2^2 = {} & V\sub{g}^2 + 2\dfrac{m_1}{m_1 + m_2}V\sub{g}V \cos\Phi + \left(\dfrac{m_1}{m_1 + m_2}\right)^2V^2,
 \end{align}
 \end{subequations}
@@ -21,7 +21,7 @@ where $\Phi$ is the angle between $\boldsymbol{V}\sub{g}$ and $\boldsymbol{V}$, 
 \begin{subequations}
 \label{eq:V2s}
 \begin{align}
-V\sub{g}^2 = {} & \recip{(m_1 + m_2)^2}\left(m_1v_1^2 + m_2v_2^2 + 2 m_1 m_2 v_1 v_2 \cos\theta\right);\\
+V\sub{g}^2 = {} & \recip{(m_1 + m_2)^2}\left(m_1v_1^2 + m_2v_2^2 + 2 m_1 m_2 v_1 v_2 \cos\theta\right),\\
 V^2 = {} & v_1^2 + v_2 - 2 v_1 v_2 \cos\theta,
 \end{align}
 \end{subequations}
@@ -43,11 +43,11 @@ hence
 \Delta E = -2\dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\cos(\phi - \psi)\cos\psi\cos i.
 \end{equation}
 
-We now need to calculate the encounter rate. This requires us to know the number of field stars per unit volume and per volume space element. We make the simplifying assumption that the density of stars is uniform. This is not the case for the Galactic centre; however, we approximate it as so in order to make the problem tractable. Using an averaged value, the number of stars is
+We now need to calculate the encounter rate. This requires us to know the number of field stars per unit volume and per velocity space element. We make the simplifying assumption that the density of stars is uniform. This is not the case for the NSC; however, we approximate it as so in order to make the problem tractable. Using an averaged value, the number of stars is
 \begin{equation}
 \dd N = n(v_1, \theta, \varphi)\,\dd v_1 \,\dd \theta \,\dd \varphi \,\dd^3r,
 \end{equation}
-using spherical polar coordinates for velocity space. Using $D$ as the impact parameter for the encounter and $\Theta$ for the angle between the fundamental plane (containing $\boldsymbol{v}_1$ and $\boldsymbol{v}_2$) and the orbital plane, the number of events in time interval $\delta t$ is
+using spherical polar coordinates for velocity space. Introducing $D$ as the impact parameter for the encounter and $\Theta$ for the angle between the fundamental plane (containing $\boldsymbol{v}_1$ and $\boldsymbol{v}_2$) and the orbital plane, the number of events in time interval $\delta t$ is
 \begin{equation}
 \dd \Gamma =  n(v_1, \theta, \varphi)\,\dd v_1 \,\dd \theta \,\dd \varphi \dfrac{\dd \Theta}{2\pi} 2\pi D \,\dd D \,V \delta t.
 \end{equation}
@@ -73,7 +73,7 @@ The integral over $\psi$ is
 I(\psi_0) = {} & \intd{0}{\psi_0}{\dfrac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi}}{\psi}\\
  = {} & \dfrac{\sin 2\phi}{2}\left(\psi_0 - \dfrac{\sin 2\psi_0}{2}\right) - \dfrac{\cos 2\phi}{2}\left(\dfrac{\cos 2\psi_0}{2}\right) - \sin^2\phi\ln(\cos\psi_0).
 \end{align}
-Naively we might think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms
+Naively we might think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms,
 \begin{equation}
 \Delta E^2(v_1,\theta,\varphi,\Theta) \simeq  4 n(v_1,\theta,\varphi)\dfrac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\sin^2\phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\delta t.
 \end{equation}
@@ -109,7 +109,7 @@ J = {} & v_1^2 v_2^2 \intd{0}{\pi}{\dfrac{\sin^3\theta}{\left(v_1^2 + v_2^2 - 2v
 \end{align}
 where the limits are
 \begin{equation}
-V_+ = v_1 + v_2; \quad V_- = |v_1 - v_2|,
+V_+ = v_1 + v_2, \quad V_- = |v_1 - v_2|,
 \end{equation}
 and we have introduced
 \begin{equation}
@@ -138,7 +138,7 @@ v_2\left[\ln\left(qv_2^2\right) + \ln 4\right] & v_1 = v_2\\
 \dfrac{v_1^2}{v_2}\ln\left(\dfrac{v_1 + v_2}{v_1 - v_2}\right) + \dfrac{v_2^2}{v_1}\left[\ln\left(qv_2^2\right) + \ln\left(\dfrac{v_1^2}{v_2^2} - 1\right)\right] & v_1 > v_2
 \end{cases} \\
 \approx {} & \dfrac{8}{3}\begin{cases}
-\dfrac{v_1^2}{v_2}\ln\left(qv_2^2\right) & v_1 \leq v_2 \\
+\dfrac{v_1^2}{v_2}\ln\left(qv_2^2\right)\vspace{1.0mm} & v_1 \leq v_2 \\
 \dfrac{v_2^2}{v_1}\ln\left(qv_2^2\right) & v_1 \geq v_2
 \end{cases}.
 \end{align}

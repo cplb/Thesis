@@ -1,5 +1,7 @@
 \chapter{The relaxation time-scale}\label{ch:relax}
 
+\section{Relaxation in the Galactic centre}
+
 In the previous chapter we calculated the event rate for EMRBs; a key component in the analysis was the relaxation time-scale (\secref{Relax}). Fluctuations in the gravitational potential caused by inhomogeneities in the stellar distribution perturb the orbital motion of a test star.\footnote{We shall use ``star'' to denote any orbiting body. In our model, this could be a WD, NS or BH as well as an MS star.} The star can be considered as undergoing a series of small deflections. The relaxation time-scale characterises the time taken for these to accumulate to become a significant deviation from the initial trajectory \citep[section 1.2.1]{Binney2008}. 
 
 There are a variety of definitions for the relaxation time-scale. For a system with a purely Maxwellian distribution, the time-scale has the form
@@ -49,7 +51,7 @@ introducing
 \begin{equation}
 \epsilon(w) = \recip{2}\left\{\exp(-w)\left[4\exp(1) + \Ei(w) - \Ei(1)\right] - \dfrac{2 + w + w^2}{w^3}\right\},
 \end{equation}
-where $\Ei(x)$ is the exponential integral.
+where $\Ei(x)$ is the exponential integral \citep[6.2.4]{Olver2010}.
 
 The DF for bound stars is approximated as a simple power law as in \eqnref{Bound_DF}. The integral gives
 \begin{equation}
@@ -235,7 +237,7 @@ The average can be rewritten as in terms of the orbital phase angle $\vartheta$ 
 \begin{equation}
 \left\langle X\right\rangle = \dfrac{2}{T}\intd{0}{\pi}{\dfrac{X(\vartheta)}{\dot{\vartheta}}}{\vartheta};
 \end{equation}
-here
+here an over-dot represent the time derivative and
 \begin{equation}
 \dot{\vartheta} = \sqrt{\dfrac{GM_\bullet}{r\sub{p}^3(1+e)^3}}(1 + e \cos\vartheta)^2.
 \end{equation}

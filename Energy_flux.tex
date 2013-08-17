@@ -1,6 +1,6 @@
 \chapter{Semirelativistic fluxes}\label{ap:energy}
 
-The semirelativistic approximation for extreme-mass-ratio waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula \citep{Ruffini1981}. This is at the heart of the numerical kludge approximation. \citet{Gair2005} derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the numerical kludge waveforms.
+The semirelativistic approximation for EMR waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula \citep{Ruffini1981}. This is at the heart of the kludge approximation. \citet{Gair2005} derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the kludge waveforms in \secref{Energy}.
 
 The published expressions contain a number of (minor) typographical errors; we rederive the correct forms.\footnote{All the results of \citet{Gair2005} were calculated using the correct expressions.} We consider an object of mass $m$ orbiting about another of mass $M$, with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For this section we use geometric units with $G = c = 1$.
 
@@ -63,7 +63,7 @@ where
 \begin{equation}
 K(k) = \intd{0}{\pi/2}{\frac{1}{\sqrt{1 - k^2 \sin^2\varphi}}}{\varphi}
 \end{equation}
-is the complete elliptic integral of the first kind. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
+is the complete elliptic integral of the first kind \citep[19.2.4, 19.2.8]{Olver2010}. The next integral can be evaluated using \citet[3.149.6]{Gradshteyn2000} as
 \begin{align}
 \mathscr{I}_1 = {} & \dfrac{2M^2}{r\sub{p}r_3\sqrt{r\sub{p}(r\sub{a} - r_3)}}\left\{r\sub{p}K\left[\sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right. \nonumber \\*
  {} & - \left.(r\sub{p} - r_3)\Pi\left[\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}, \sqrt{\dfrac{(r\sub{a} - r\sub{p})r_3}{(r\sub{a} - r_3)r\sub{p}}}\right]\right\},
@@ -72,11 +72,11 @@ where
 \begin{equation}
 \Pi(n,k) = \intd{0}{\pi/2}{\frac{1}{\left(1 - n \sin^2\varphi\right)\sqrt{1 - k^2 \sin^2\varphi}}}{\varphi}
 \end{equation}
-is the complete elliptic integral of the third kind. In this instance we may simplify using \citet[19.6.2]{Olver2010}
+is the complete elliptic integral of the third kind \citep[19.2.7, 19.2.8]{Olver2010}. In this instance we may simplify using \citet[19.6.2]{Olver2010}
 \begin{equation}
 \Pi(k^2,k) = \dfrac{E(k)}{1 - k^2}
 \end{equation}
-to rewrite in terms of the complete elliptic integral of the second kind
+to rewrite in terms of the complete elliptic integral of the second kind \citep[19.2.5, 19.2.8]{Olver2010}
 \begin{equation}
 E(k) = \intd{0}{\pi/2}{\sqrt{1 - k^2 \sin^2\varphi}}{\varphi}.
 \end{equation}
@@ -91,8 +91,8 @@ The elliptic integrals in both $\mathscr{I}_0$ and $\mathscr{I}_1$ share the sam
 
 Substituting in for the integrals, we find that the energy lost in one orbit is
 \begin{align}
-\dfrac{M}{m} \upDelta E = {} & -\dfrac{16 M^{11}}{1673196525 r\sub{p}^{6} (1 + e)^{{19}/{2}} \left\{\left(r\sub{p} - 2 M\right)\left[(1 + e)r\sub{p} - 2(1 - e)M\right]\right\}^{{5}/{2}}} \nonumber \\
- {} & \times {} \left\{\sqrt{( 1+ e)\dfrac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\dfrac{r\sub{p}}{M}, e\right) \right. \nonumber \\
+\dfrac{M}{m} \upDelta E = {} & -\dfrac{16 M^{11}}{1673196525 r\sub{p}^{6} (1 + e)^{{19}/{2}} \left\{\left(r\sub{p} - 2 M\right)\left[(1 + e)r\sub{p} - 2(1 - e)M\right]\right\}^{{5}/{2}}} \nonumber \\*
+ {} & \times {} \left\{\sqrt{( 1+ e)\dfrac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{1}\left(\dfrac{r\sub{p}}{M}, e\right) \right. \nonumber \\*
    {} & + \left. \dfrac{1 + e}{\sqrt{(1 + e)\left(r\sub{p}/M\right)- 2 (3 - e)}} K\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] f_{2} \left(\dfrac{r\sub{p}}{M}, e\right)\right\},
 \end{align}
 where we have introduced functions\footnote{The following functional forms are long and so are split over multiple pages.}
@@ -189,7 +189,7 @@ The angular momentum lost is
 \begin{align}
 \dfrac{\upDelta L_z}{m} = {} & - \dfrac{16 M^{{15}/{2}}}{24249225 (1 + e)^{{13}/{2}} r\sub{p}^{{7}/{2}} (r\sub{p} - 2 M)^2 \left[(1 + e) r\sub{p} - 2 (1 - e) M\right]^{2}} \nonumber \\
  {} & \times {} \left\{\sqrt{(1 + e) \dfrac{r\sub{p}}{M} - 2(3 - e)} E\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_1\left(\dfrac{r\sub{p}}{M}, e\right) \right. \nonumber \\
- {} & + \left. \dfrac{(1 + e)}{\sqrt{(1 + e)\left(r\sub{p}/M\right) - 2(3 - e)}} K\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_2\left(\dfrac{r_{p}}{M}, e\right)\right\}
+ {} & + \left. \dfrac{(1 + e)}{\sqrt{(1 + e)\left(r\sub{p}/M\right) - 2(3 - e)}} K\left[\sqrt{\dfrac{4 e M}{(1+e) r\sub{p} - 2(3 - e)M}}\right] g_2\left(\dfrac{r_{p}}{M}, e\right)\right\},
 \end{align}
 where
 \begin{align}
@@ -220,10 +220,10 @@ g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10
  {} & + \left. 47072 (1 + e)^9 y^9 + 4120 (1 + e)^{10} y^{10}. \right.
 \end{align}
 
-Taking limit the $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
+Taking the limit $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
 \begin{align}
 \dfrac{M}{m} \upDelta E \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \dfrac{73}{24} e^2 + \dfrac{37}{96} e^{4}\right) \left(\dfrac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
- {} & - \left. \dfrac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \dfrac{31}{8} e^2 + \dfrac{65}{32} e^4 + \dfrac{1}{6}e^6\right) \left(\dfrac{M}{r\sub{p}}\right)^{9/2} \right. \nonumber \\*
+ {} & - \left. \dfrac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \dfrac{31}{8} e^2 + \dfrac{65}{32} e^4 + \dfrac{1}{6}e^6\right) \left(\dfrac{M}{r\sub{p}}\right)^{9/2}, \right. \nonumber \\*
  {} & + \left. \order{\dfrac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
 \dfrac{\upDelta L_{z}}{m} \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{2}} \left(1 + \dfrac{7}{8} e^{2}\right) \left(\dfrac{M}{r\sub{p}}\right)^{2} \nonumber \\
  {} & - \left. \dfrac{192 \pi}{5} \recip{(1 + e)^3} \left(1 + \dfrac{35}{24} e^2 + \dfrac{1}{4} e^4\right) \left(\dfrac{M}{r\sub{p}}\right)^{3}  + \order{\dfrac{M^{4}}{r\sub{p}^{4}}}. \right.
@@ -233,7 +233,7 @@ The leading order terms correspond to the Keplerian results of \cite{Peters1964}
 For a parabolic orbit with $e = 1$, the energy loss reduces to
 \begin{align}
 \dfrac{M}{m} \upDelta E = {} & -\dfrac{2^{7/2}M^{{21}/{2}}}{{1673196525 \left(r\sub{p} - 2 M\right)^2 r\sub{p}^{{17}/{2}}}} \left[E\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) f_1\left(\dfrac{r\sub{p}}{M}\right) \right. \nonumber \\*
- {} & + \left. K\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\dfrac{r\sub{p}}{M}\right)\right]
+ {} & + \left. K\left(\sqrt{\dfrac{2 M}{r\sub{p} - 2 M}}\right) f_2\left(\dfrac{r\sub{p}}{M}\right)\right],
 \end{align}
 where
 \begin{align}
