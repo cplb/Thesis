@@ -365,7 +365,7 @@ p(\boldsymbol{\lambda}_\bullet|\{\boldsymbol{s}_i(t)\}\sub{mission}) = \prod_i p
 \end{equation}
 where $\{\boldsymbol{s}_i(t)\}\sub{mission}$ is the set of bursts for the mission. However, since we have a sampled posterior rather than an analytic function, this is difficult in practice.
 
-The simplest thing to do is bin the points and then multiply the numbers in each bin together (dividing by the area of the bin to convert back to a probability density). The question is then what is an appropriate bin size? Bins that are too big give insufficient resolution, whilst those that are too small may not encompass any sampled points.
+The simplest thing to do is bin the points and then multiply the numbers in each bin together (dividing by the area of the bin to convert back to a probability density). The question is then, what is an appropriate bin size? Bins that are too large give insufficient resolution, whilst those that are too small may not encompass any sampled points.
 
 One means of creating bins with sizes that reflect the structure of the distribution is using a $k$-d tree as described in \secref{k-d}. Taking each burst posterior in turn, we construct a $k$-d tree using the two-step method. We use this tree to bin the other posteriors and multiply the totals together. This gives us one estimate for the combined posterior for each of the input bursts. We resample the final distributions (sampling each leaf uniformly) to create sets of points that can be treated the same as the output from an MCMC.
 
@@ -432,7 +432,7 @@ Taking the average across all $100$ mission realisations, we can calculate the e
   $\Phi\sub{K}$ & 3.7 , 0.4 \\
   \bottomrule
 \end{tabular}
-  \caption{Relative entropies for the four MBH parameters averaged over $100$ mission realizations. The quoted uncertainties are just the standard errors calculated from the scatter of entropies and do not include any of the other uncertainties.}\label{tab:entropies}
+  \caption{Relative entropies for the four MBH parameters averaged over $100$ mission realisations. The quoted uncertainties are just the standard errors calculated from the scatter of entropies and do not include any of the other uncertainties.}\label{tab:entropies}
 \end{table}
 The typical entropy is about $3 \units{nats}$; this corresponds to an improvement in the precision to which we know parameters by a factor of approximately $20$.
 
