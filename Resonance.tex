@@ -10,7 +10,7 @@ In the prologue to his classic monograph, \citet{Chandrasekhar1992} celebrates t
 \end{equation}
 where $n_r$ and $n_\theta$ are integers (which we take to have no common factors). The azimuthal motion is not important because of the axisymmetry of the background spacetime. During resonance, terms in the self-force that usually average to zero can combine coherently, significantly impacting the motion \citep{Flanagan2012a}.
 
-Geodesic motion in Kerr spacetime can be described by use of the action--angle formalism \citep[chapter 10]{Goldstein2002}. We consider a body of mass $\mu$ orbiting an MBH of mass $M_\bullet$, where $\eta = \mu/M_\bullet \ll 1$ and is used as a perturbative parameter, and describe the motion in the directions of the standard Boyer--Lindquist coordinates using generalised angle variables $q_\alpha = \{q_t,q_r,q_\theta,q_\phi\}$ \citep{Hinderer2008}. We denote the integrals of the geodesic motion, the generalised action variables, by $J_\alpha$. These are some combination of the energy per unit mass $E$, the axial angular momentum per unit mass $L_z$ and the Carter constant per unit mass squared $Q$ \citep{Carter1968}; we use $\mathcal{I}_a = \{E,L_z,Q\}$ for this set of three parameters. The system evolves following \citep{Flanagan2012}
+Geodesic motion in Kerr spacetime can be described by use of the action--angle formalism \citep[chapter 10]{Goldstein2002}. We consider a body of mass $\mu$ orbiting an MBH of mass $M_\bullet$, with $\eta = \mu/M_\bullet \ll 1$ and is used as a perturbative parameter, and describe the motion in the directions of the standard Boyer--Lindquist coordinates using generalised angle variables $q_\alpha = \{q_t,q_r,q_\theta,q_\phi\}$ \citep{Hinderer2008}. We denote the integrals of the geodesic motion, the generalised action variables, by $J_\alpha$. These are some combination of the energy per unit mass $E$, the axial angular momentum per unit mass $L_z$ and the Carter constant per unit mass squared $Q$ \citep{Carter1968}; we use $\mathcal{I}_a = \{E,L_z,Q\}$ for this set of three parameters. The system evolves following \citep{Flanagan2012}
 \begin{subequations}\label{eq:Mino-E-o-M}
 \begin{align}
 \diff{q_\alpha}{\lambda} = {} & \omega_\alpha(\boldsymbol{J}) + \eta g_\alpha^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2}; \\
@@ -23,13 +23,13 @@ The leading order dissipative correction to geodesic motion is calculated follow
 
 In this chapter, we begin to characterise the importance of these resonances for the purposes of modelling EMRIs. We find the orbital parameters for which the orbital frequencies are commensurate (\secref{location}) and construct a formula to calculate the difference in the orbital parameters when comparing an adiabatic evolution with one that incorporates the instantaneous effects of the self-force (\secref{res-asymptotic}).
 
-We use geometric units with $G = c = 1$ throughout. Hence the gravitational radius and its associate time-scale become $r\sub{g} = t\sub{g} = M_\bullet$.
+We use geometric units with $G = c = 1$ throughout. Hence the gravitational radius and its associated time-scale become $r\sub{g} = t\sub{g} = M_\bullet$.
 
-\section{The theoretical framework of analysing resonances}
+\section{The theoretical framework for analysing resonances}
 
 \subsection{Kerr geodesics}
 
-The evolution of an extreme-mass-ratio ($\eta \ll 1$) system is slow. Instantaneously, the motion of the orbiting mass can be described as geodesic, with the integrals of the motion changing on time-scales of many orbital periods. We analyse the behaviour of resonances within the osculating element framework, where the trajectory is described by a sequence of geodesics which each match the position and velocity at a particular instance. It is therefore necessary to develop an understanding of the Kerr geodesics.\footnote{We have previously discussed motion in Kerr in \secref{Geodesic}.}
+The evolution of an EMR($\eta \ll 1$) system is slow. Instantaneously, the motion of the orbiting mass can be described as geodesic, with the integrals of the motion changing on time-scales of many orbital periods. We analyse the behaviour of resonances within the osculating element framework, where the trajectory is described by a sequence of geodesics which each match the position and velocity at a particular instance. It is therefore necessary to develop an understanding of the Kerr geodesics.\footnote{We have previously discussed motion in Kerr in \secref{Geodesic}.}
 
 The geodesic equations are (\citealt{Carter1968}; \citealt[section 62]{Chandrasekhar1992})
 \begin{subequations}
@@ -125,7 +125,7 @@ However, there shall be a time span when the frequencies are consistently close 
 
 \section{Location of resonances}\label{sec:location}
 
-The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies, and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for an MBH of spin $a_\ast = 0.95$. 
+The first step in studying the effect of transient resonances is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies, and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for an MBH of spin $a_\ast = 0.95$. 
 \begin{figure}%[htbp]
 \centering
 \includegraphics[width=0.6\textwidth]{./images/Fig_res-2-5-95-plane}
@@ -155,7 +155,10 @@ a_0 = 5.9854, \quad a_1 = 3.4116, \quad a_2 = 0.9253, \quad a_3 = 0.1959, \\
 a_4 = 4.8846, \quad b_0 = 0.7692, \quad b_1 = 1.4752, \quad b_2 = 1.4861, \\
 b_3 = 0.5974, \quad c_0 = 0.02332, \quad d_0 = 0.7968, \quad d_1 = 0.3115.\end{array}
 \end{equation} 
-These were fitted for resonances with $\nu = 1/7$, $1/6$, $1/5$, $1/4$, $2/7$, $1/3$, $2/5$, $3/7$, $1/2$, $4/7$, $3/5$, $2/3$, $5/7$, $3/4$, $4/5$, $5/6$, $6/7$, $9/10$, $19/20$, $49/50$ and $99/100$; with MBH spins of $a_\ast = 0.01$, $0.05$, $0.1$, $0.2$, $0.3$, $0.4$, $0.5$, $0.6$, $0.7$, $0.8$, $0.9$, $0.93$, $0.95$, $0.97$, $0.99$ and $0.999$; for orbits with eccentricities $0.01 \leq e \leq 0.99$, and inclinations $-0.999999 \leq \cos\iota \leq 0.999999$. Using our approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1 M_\bullet$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}. 
+These were fitted for all possible resonances with $n_r = 2$--$7$ as well as $\nu = 9/10$, $19/20$, $49/50$ and $99/100$; with MBH spins of $a_\ast = 0.01$--$0.999$; for orbits with eccentricities $e = 0.01$--$0.99$, and inclinations $\cos\iota = -0.999999$--$0.999999$.
+%These were fitted for resonances with $\nu = 1/7$, $1/6$, $1/5$, $1/4$, $2/7$, $1/3$, $2/5$, $3/7$, $1/2$, $4/7$, $3/5$, $2/3$, $5/7$, $3/4$, $4/5$, $5/6$, $6/7$, $9/10$, $19/20$, $49/50$ and $99/100$; with MBH spins of $a_\ast = 0.01$, $0.05$, $0.1$, $0.2$, $0.3$, $0.4$, $0.5$, $0.6$, $0.7$, $0.8$, $0.9$, $0.93$, $0.95$, $0.97$, $0.99$ and $0.999$; for orbits with eccentricities $0.01 \leq e \leq 0.99$, and inclinations $-0.999999 \leq \cos\iota \leq 0.999999$.
+
+Using our approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1 M_\bullet$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}. 
 \begin{figure}%[htp]
 \centering
  \subfigure[{Maximum error}]{\includegraphics[width=0.475\textwidth]{./images/Fig_fit-error-max-plane}} \quad \subfigure[{Root-mean-square error}]{\includegraphics[width=0.475\textwidth]{./images/Fig_fit-error-RMS-plane}}
@@ -177,7 +180,7 @@ We define the evolution time-scale as
 \begin{equation}
 \tau\sub{ev} = \dfrac{\nu}{\dot{\nu}},
 \end{equation}
-where an over-dot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It represents the inspiral time-scale. It is long in all cases we study, $\tau\sub{ev} \sim \order{\eta^{-1}T}$. It is this property which makes EMRIs interesting, as we can follow the waveform for many cycles, accruing high SNRs. This is also what allows us to use the adiabatic prescription, as it means that the trajectory moves slowly through different orbital parameters.
+where an over-dot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It represents the inspiral time-scale and is long in all cases we study, $\tau\sub{ev} \sim \order{\eta^{-1}T}$. It is this property which makes EMRIs interesting, as we can follow the waveform for many cycles, accruing high SNRs. This is also what allows us to use the adiabatic prescription, as it means that the trajectory moves slowly through different orbital parameters.
 
 We use the precession time-scale
 \begin{equation}
