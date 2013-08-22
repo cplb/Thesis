@@ -283,8 +283,8 @@ Using the two time-scale decomposition to replace the time derivatives in the eq
 \begin{subequations}
 \begin{align}
 \label{eq:q-1}
-\omega_0 + \eta\omega_1 + \eta\partialdiff{q_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{q_1}{\Psi} = {} & \omega(J_0) + \eta\diff{\omega}{J}J_1 + \eta \sum_s g_s^{(1)}(J_0)\exp(is \Psi + Q_0), \\
-\eta\partialdiff{J_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{J_1}{\Psi} = {} & \eta \sum_s G_s^{(1)}(J_0)\exp(is \Psi + Q_0).
+\omega_0 + \eta\omega_1 + \eta\partialdiff{q_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{q_1}{\Psi} = {} & \omega(J_0) + \eta\diff{\omega}{J}J_1 + \eta \sum_s g_s^{(1)}(J_0)\exp\left[is(\Psi + Q_0)\right], \\
+\eta\partialdiff{J_0}{\widetilde{\lambda}} + \eta\omega_0\partialdiff{J_1}{\Psi} = {} & \eta \sum_s G_s^{(1)}(J_0)\exp\left[is(\Psi + Q_0)\right].
 \label{eq:J-1}
 \end{align}
 \end{subequations}
@@ -314,16 +314,16 @@ We now have expressions for the lowest order terms in the expansions.
 
 Subtracting the $s = 0$ components from \eqnref{J-1} leaves
 \begin{equation}
-\omega_0\partialdiff{J_1}{\Psi} = \sum_{s\,\neq\,0} G_s^{(1)}(J_0)\exp(is \Psi + Q_0).
+\omega_0\partialdiff{J_1}{\Psi} = \sum_{s\,\neq\,0} G_s^{(1)}(J_0)\exp\left[is(\Psi + Q_0)\right].
 \end{equation}
 This can be solved to give
 \begin{equation}
-J_1 = \langle J_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \dfrac{G_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+J_1 = \langle J_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \dfrac{G_s^{(1)}(J_0)\exp\left[is(\Psi + Q_0)\right]}{is}.
 \label{eq:J-1-sol}
 \end{equation}
 We can do the same for \eqnref{q-1} to obtain
 \begin{equation}
-q_1 = \langle q_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \dfrac{g_s^{(1)}(J_0)\exp(is \Psi + Q_0)}{is}.
+q_1 = \langle q_1\rangle_\Psi + \recip{\omega_0}\sum_{s\,\neq\,0} \dfrac{g_s^{(1)}(J_0)\exp\left[is(\Psi + Q_0)\right]}{is}.
 \label{eq:q-1-sol}
 \end{equation}
 To find the constants of integration, $\langle q_1\rangle_\Psi$ and $\langle J_1\rangle_\Psi$, it is necessary to extend the analysis to second order in $\eta$. This shows that $\langle J_1\rangle_\Psi$ is the first-order component of the adiabatic solution. We do not need explicit forms for later calculations, so we will not proceed further. We have successfully constructed the pre-resonance solution.
