@@ -127,7 +127,7 @@ calculate the Jacobian
 Using this, we may
 rewrite our velocity element as
 \begin{equation}
-\dd^3v \rightarrow \dfrac{\pi e}{v_rr\sub{p}}\left(\dfrac{GM_\bullet}{r}\right)^2\,\dd e \,\dd r\sub{p}.
+\dd^3v \rightarrow \dfrac{\pi e}{v_r r\sub{p}}\left(\dfrac{GM_\bullet}{r}\right)^2\,\dd e \,\dd r\sub{p}.
 \end{equation}
 As a consequence of our assumed spherical symmetry, 
 the volume element is
@@ -137,11 +137,11 @@ the volume element is
 Thus, 
 the phase space volume element can be expressed as
 \begin{equation}
-\dd^3r\dd^3v \rightarrow \dfrac{4\pi^2(GM_\bullet)^2e}{v_rr\sub{p}}\,\dd r\,\dd e \,\dd r\sub{p}.
+\dd^3r\dd^3v \rightarrow \dfrac{4\pi^2(GM_\bullet)^2e}{v_r r\sub{p}}\,\dd r\,\dd e \,\dd r\sub{p}.
 \end{equation}
 The number of stars in an element $\dd r\,\dd e\,\dd r\sub{p}$ is
 \begin{equation}
-n(r, e, r\sub{p}) = \dfrac{4\pi^2(GM_\bullet)^2e}{v_rr\sub{p}}f(E).
+n(r, e, r\sub{p}) = \dfrac{4\pi^2(GM_\bullet)^2e}{v_r r\sub{p}}f(E).
 \end{equation}
 
 From this, we can construct the expected number of stars on orbits defined by $\{e, r\sub{p}\}$. The number of stars found in a small radius range $\delta r$ with given orbital properties is
@@ -454,7 +454,7 @@ Adapting the model for the GC, we calculated an estimate for the extragalactic r
 
 The detectability of EMRBs is of little interest astrophysically unless we can extract information about their source systems. We investigated what we could expect to learn about the Galaxy's MBH. We created bursts for $100$ mission realisations, and characterised the posterior probability distributions for the MBH's parameters using MCMC sampling. In a large minority ($\sim40\%$) of realisations we cannot improve upon our existing knowledge. However, in most cases we can, and it may be possible to gain a highly precise measurement of the MBH's mass and spin.
 
-To quantify the information gained during a mission, we used the relative entropy with respect to our current knowledge. Averaging across all the missions, we found that we can expect to gain $2.2\units{nats}$ of information about the logarithm of the mass, $3.0\units{nats}$ about the spin magnitude, $2.8\units{nats}$ about the cosine of the polar angle for the spin axis and $4.2\units{nats}$ for the azimuthal angle. The entropy scales with the logarithm of the width of the posterior distribution, hence these entropies represent improvements in the precision of our knowledge of the parameters by factors between $\sim9$ and $\sim40$. For the mass, this would mean the uncertainty would become $\sim1\%$; we could expect to know the spin to a precision of order $\sim0.1$.
+To quantify the information gained during a mission, we used the relative entropy with respect to our current knowledge. Averaging across all the missions, we found that we can expect to gain $2.2\units{nats}$ of information about the logarithm of the mass, $3.0\units{nats}$ about the spin magnitude, $2.8\units{nats}$ about the cosine of the polar angle for the spin axis and $4.2\units{nats}$ about the azimuthal angle. The entropy scales with the logarithm of the width of the posterior distribution, hence these entropies represent improvements in the precision of our knowledge of the parameters by factors between $\sim9$ and $\sim40$. For the mass, this would mean the uncertainty would become $\sim1\%$; we could expect to know the spin to a precision of order $\sim0.1$.
 
 These results have been obtained assuming the classic LISA design. The first millihertz space-borne interferometer is likely to have a descoped design such as the proposed eLISA. This concept could be revised in the near future and so we have not used it to produce results. The effect of the reduced sensitivity would be to reduce the SNR and increase the widths of the posterior distributions. The information gained about the MBH would decrease; since the event rate for the most informative bursts in largely unaffected, we could still expect to learn something using eLISA.
 
