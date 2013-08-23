@@ -1,0 +1,344 @@
+\documentclass[a4paper, 11pt, titlepage, twoside]{book}
+% Set up page layout
+\usepackage[a4paper]{geometry}
+\usepackage{fancyhdr}
+% Set up hyphenation, etc.
+\usepackage[british]{babel}
+% Set up images
+\usepackage{pstricks,pst-node,pst-text,pst-3d,pst-eucl}
+\usepackage{psfrag}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[figuresright]{rotating}
+% Set up fonts
+\usepackage{charter}
+\usepackage{amssymb,amstext,amsfonts} %% ... with default font
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+%\usepackage{txfonts}
+% Colouring
+\usepackage{xcolor}
+\definecolor{vermilion}{rgb}{0.80,0.40,}
+\definecolor{blueishgreen}{rgb}{0,0.60,0.50}
+\definecolor{skyblue}{rgb}{0.35,0.70,0.90}
+
+% Set up lists and tables
+\usepackage{listings}
+\usepackage{enumitem}
+\setlist{itemsep=0pt}
+\usepackage{booktabs, longtable, dcolumn}
+\usepackage{array}
+\usepackage{ragged2e}
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+\usepackage[labelfont=bf,labelsep=space,hypcap]{caption}
+\renewcommand{\captionfont}{\small}
+\usepackage[caption2]{ccaption}
+%\usepackage{tikz}
+%\usetikzlibrary{shapes,arrows}
+% More fonts
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\renewcommand{\sfdefault}{lmss}
+\renewcommand{\ttdefault}{lmtt}
+\usepackage{microtype}
+\usepackage[latin9]{inputenc}
+\usepackage[11pt]{moresize}
+%\usepackage{fixmath}
+\usepackage{ upgreek }
+% Special symbols
+\usepackage{braket}
+\usepackage{slashed}
+% Set up page indexing, bib fomatting, etc.
+\usepackage{afterpage}
+\usepackage{appendix}
+%\usepackage{paralist}
+%\usepackage[linktocpage,bookmarksnumbered,breaklinks,pdfhighlight=/P,citebordercolor=blueishgreen,urlbordercolor=skyblue,linkbordercolor=vermilion]{hyperref}
+\usepackage[authoryear]{natbib}
+\usepackage[linktocpage,bookmarksnumbered]{hyperref}
+\usepackage{bookmark}
+\usepackage{etoolbox}
+% Only link on year
+\makeatletter
+
+% Patch case where name and year are separated by aysep
+\patchcmd{\NAT@citex}
+  {\@citea\NAT@hyper@{%
+     \NAT@nmfmt{\NAT@nm}%
+     \hyper@natlinkbreak{\NAT@aysep\NAT@spacechar}{\@citeb\@extra@b@citeb}%
+     \NAT@date}}
+  {\@citea\NAT@nmfmt{\NAT@nm}%
+   \NAT@aysep\NAT@spacechar\NAT@hyper@{\NAT@date}}{}{}
+
+% Patch case where name and year are separated by opening bracket
+\patchcmd{\NAT@citex}
+  {\@citea\NAT@hyper@{%
+     \NAT@nmfmt{\NAT@nm}%
+     \hyper@natlinkbreak{\NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi}%
+       {\@citeb\@extra@b@citeb}%
+     \NAT@date}}
+  {\@citea\NAT@nmfmt{\NAT@nm}%
+   \NAT@spacechar\NAT@@open\if*#1*\else#1\NAT@spacechar\fi\NAT@hyper@{\NAT@date}}
+  {}{}
+
+\makeatother
+
+\renewcommand{\bibfont}{\footnotesize}
+\addto{\captionsbritish}{\renewcommand{\bibname}{{R\lowercase{eferences}}}}
+%\renewcommand{\refname}{{R\lowercase{eferences}}}
+\setlength{\bibhang}{0pt} 
+%\setlength{\bibsep}{0.5pt} % 1 linestretch
+\setlength{\bibsep}{0pt} % 1.3 linestretch
+\addto{\captionsbritish}{\renewcommand{\contentsname}{{C\lowercase{ontents}}}}
+
+% Chapter style
+%\usepackage[Lenny]{fncychap}
+%\ChRuleWidth{0.1ex}
+%\ChNameVar{\fontsize{14}{16}\usefont{OT1}{lmr}{b}{n}\selectfont}
+%\ChNumVar{\fontsize{60}{62}\usefont{OT1}{lmr}{bc}{n}\selectfont}
+%\ChTitleVar{\LARGE\usefont{OT1}{lmr}{b}{n}\selectfont}
+
+  %\hyphenpenalty=2000
+  %\tolerance=1000
+  
+% Fix part blank pages  
+\makeatletter
+\renewcommand\@endpart{\vfil
+              \if@twoside
+                \null
+                \newpage
+              \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+\makeatother 
+\makeatletter
+\let\old@part\@part
+\def\@part[#1]#2{\old@part[#1]{#2\markboth{\partname\ \thepart.\ #1}{}}}
+\makeatother
+
+% Part style
+%\usepackage{secsty}
+%\partnumberfont{\Huge} 
+
+\usepackage{fourier-orns}
+
+% Set page layout  
+\headheight 13.6pt
+% For 10pt text
+%\headsep 0.6\baselineskip
+%\footskip 2\baselineskip
+%\textheight = 55\baselineskip
+% For 11pt text
+\topmargin -0.4cm
+\headsep 0.6\baselineskip
+\footskip 2\baselineskip
+\textheight = 50.1\baselineskip
+
+\renewcommand\baselinestretch{1.3}  % For thesis spec
+
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.92}
+\renewcommand\bottomfraction{.92}
+\renewcommand\textfraction{.08}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4} 
+\setlength{\textfloatsep}{12pt plus 2.0pt minus 2.0pt}
+\setlength{\floatsep}{12pt plus 2.0pt minus 2.0pt}
+\setlength{\intextsep}{12pt plus 2.0pt minus 2.0pt}
+
+\allowdisplaybreaks
+
+% Set numbering depth
+\setcounter{secnumdepth}{5}
+
+\def\today{\number\day\space\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year}
+
+% Custom commands
+\newcommand{\eqnref}[1]{equation (\ref{eq:#1})}
+\newcommand{\Eqnref}[1]{Equation (\ref{eq:#1})}
+\newcommand{\secref}[1]{section \ref{sec:#1}}
+\newcommand{\Secref}[1]{Section \ref{sec:#1}}
+\newcommand{\chapref}[1]{chapter \ref{ch:#1}}
+\newcommand{\Chapref}[1]{Chapter \ref{ch:#1}}
+\newcommand{\partref}[1]{part \ref{pt:#1}}
+\newcommand{\Partref}[1]{Part \ref{pt:#1}}
+\newcommand{\apref}[1]{appendix \ref{ap:#1}}
+\newcommand{\Apref}[1]{Appendix \ref{ap:#1}}
+\newcommand{\tabref}[1]{table \ref{tab:#1}}
+\newcommand{\Tabref}[1]{Table \ref{tab:#1}}
+\newcommand{\figref}[1]{figure \ref{fig:#1}}
+\newcommand{\Figref}[1]{Figure \ref{fig:#1}}
+
+\DeclareMathOperator{\sinc}{sinc}
+\DeclareMathOperator{\Ei}{Ei}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\Beta}{B}
+\DeclareMathOperator{\sgn}{sgn}
+
+\newcommand{\units}[1]{\ensuremath{~\mathrm{#1}}}
+
+\newcommand{\sub}[1]{\ensuremath{_\mathrm{#1}}}
+\newcommand{\super}[1]{\ensuremath{^\mathrm{#1}}}
+
+\newcommand{\recip}[1]{\ensuremath{\dfrac{1}{#1}}}
+
+\newcommand{\order}[1]{\ensuremath{\mathcal{O}\left({#1}\right)}}
+
+\newcommand{\innerprod}[2]{\ensuremath{\left({#1}\middle|{#2}\right)}}
+
+\newcommand{\Ibar}{{\declareslashed{}{\text{-}}{0.04}{-0.2}{I}\slashed{I}}}
+\newcommand{\lambdabar}{{\declareslashed{}{\text{--}}{0.04}{-0.02}{\lambda}\slashed{\lambda}}}
+
+\newcommand{\upDelta}{\Delta}
+
+% Define differential operators
+\newcommand{\dd}{\ensuremath{\mathrm{d}}}
+\newcommand{\diff}[2]{\ensuremath{\dfrac{\dd {#1}}{\dd {#2}}}}
+\newcommand{\linediff}[2]{\ensuremath{\dd {#1}/\dd {#2}}}
+\newcommand{\diffop}[1]{\ensuremath{\dfrac{\dd}{\dd {#1}}}}
+\newcommand{\difftwo}[2]{\ensuremath{\dfrac{\dd^2 {#1}}{\dd {#2}^2}}}
+\newcommand{\linedifftwo}[2]{\ensuremath{\dd^2 {#1}/\dd {#2}^2}}
+\newcommand{\difftwoop}[1]{\ensuremath{\dfrac{\dd^2}{\dd {#1}^2}}}
+\newcommand{\diffn}[3]{\ensuremath{\dfrac{\dd^{#3} {#1}}{\dd {#2}^{#3}}}}
+\newcommand{\linediffn}[3]{\ensuremath{\dd^{#3} {#1}/\dd {#2}^{#3}}}
+\newcommand{\diffnop}[2]{\ensuremath{\dfrac{\dd^{#2}}{\dd {#1}^{#2}}}}
+\newcommand{\partialdiff}[2]{\ensuremath{\dfrac{\partial {#1}}{\partial {#2}}}}
+\newcommand{\linepartialdiff}[2]{\ensuremath{\partial {#1}/\partial {#2}}}
+\newcommand{\partialdiffop}[1]{\ensuremath{\dfrac{\partial}{\partial {#1}}}}
+\newcommand{\grad}{\ensuremath{\boldsymbol{\nabla}}}
+\newcommand{\intd}[4]{\ensuremath{\int_{#1}^{#2}{#3}\,\dd{#4}}}
+
+\begin{document}
+
+%\bibpunct{[}{]}{,\,}{s}{}{}
+\bibpunct{(}{)}{;}{a}{}{,\,}
+
+\makeatletter
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{
+\markboth{\@chapapp
+\ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RE]{Christopher Berry}
+\fancyhead[LO]{Exploring Gravity}
+\fancyhead[RO]{\rightmark}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.1ex}
+%\fancyfoot[LO]{\today}
+\fancyfoot[LO]{Christopher Berry}
+\fancyfoot[RE]{Institute of Astronomy}
+%\fancyfoot[RO, LE]{\thepage}
+\fancyfoot[RO, LE]{Exploring Gravity}
+\fancypagestyle{plain}{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.1ex}
+%\fancyfoot[LO]{\today}
+\fancyfoot[LO]{Christopher Berry}
+\fancyfoot[RE]{Institute of Astronomy}
+%\fancyfoot[RO, LE]{\thepage}
+\fancyfoot[RO, LE]{Exploring Gravity}}
+\makeatother
+
+\frontmatter
+
+% linespace = 1
+%\title{\hrulefill\hspace{0.2cm}\aldineright \aldineleft\hspace{0.2cm}\hrulefill \\\vspace{5mm}{\sc{}{\HUGE{}Exploring Gravity}\\\vspace{1mm}{\LARGE{}with Gravitational Waves\\\& Strong-Field Tests}}\\\vspace{4mm}\hrulefill\hspace{0.2cm}\aldineright \aldineleft\hspace{0.2cm}\hrulefill}
+%\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College\vspace{0.5mm}\\and\vspace{0.5mm}\\Institute of Astronomy,\vspace{0.5mm}\\University of Cambridge\vspace{5mm}}
+%\author{{\Large{}Christopher P.\ L.\ Berry}\vspace{3mm}\\Churchill College and Institute of Astronomy\vspace{3mm}\\{\Large\sc{}University of Cambridge}\vspace{5mm}}
+%\date{\includegraphics[width=0.27\textwidth]{../UC-shield/uc-shield.eps}\vspace{11mm}\\{This dissertation is submitted for the degree of}\vspace{2mm}\\{\sc\LARGE{}Doctor of Philosophy}\vspace{3mm}\\{\large{}Supervisor: Jonathan R.\ Gair}\vspace{7mm}\\{\Large\today}}
+% linespace = 1.3
+\title{\vspace{0.7cm}
+\hrulefill\hspace{0.2cm}\raisebox{-4pt}{\aldineright \aldineleft}\hspace{0.2cm}\hrulefill\\
+\vspace{5mm}{\sc{}{\HUGE{}Exploring Gravity}\\\vspace{-2mm}{\LARGE{}with Gravitational Waves\\
+\vspace{-3mm}\& Strong-Field Tests}}\\
+\vspace{1mm}\hrulefill\hspace{0.2cm}\raisebox{-4pt}{\aldineright \aldineleft}\hspace{0.2cm}\hrulefill}
+
+\author{{\LARGE{}Christopher P.\ L.\ Berry}\vspace{2mm}\\
+Churchill College and Institute of Astronomy\\
+\vspace{1mm}{\Large\sc{}University of Cambridge}\vspace{1mm}}
+
+\date{\includegraphics[width=0.26\textwidth]{../UC-shield/uc-shield-black.eps}\vspace{14mm}
+\\{This dissertation is submitted for the degree of}\vspace{1mm}\\{\sc\LARGE{}Doctor of Philosophy}\vspace{3mm}
+\\{\Large{}Supervisor: Jonathan R.\ Gair}\vspace{11mm}
+\\{\Large\today}}
+
+%\maketitle
+\markboth{Exploring Gravity}{}
+
+%\input{./Declaration.tex}
+
+%\input{./Acknowledgements.tex}
+
+%\input{./Declaration.tex}
+
+\chapter*{Declaration of length}
+
+The dissertation contains less than $6 \times 10^4$ words; evaluated using \texttt{TeXcount}, it contains $\sim 5.03 \times 10^4$ words.
+
+%\input{./Conventions.tex}
+
+%\tableofcontents
+
+%\mainmatter
+
+%\part{Introduction}
+
+%\input{./Intro.tex}
+
+%\part{Astronomical systems}\label{pt:astro}
+
+%\input{./Waveforms.tex}
+
+%\input{./Galactic_param.tex}
+
+%\input{./Extragalactic_param.tex}
+
+%\input{./events.tex}
+
+%\input{./relax.tex}
+
+%\part{Understanding gravitation}\label{pt:grav}
+
+%\input{./f_R.tex}
+
+%\input{./Resonance.tex}
+
+%\part{Conclusion}
+
+%\input{./conclusion.tex}
+
+%\phantomsection
+%\bookmarksetup{startatroot}
+%\appendix
+%\part{Appendices}
+
+%\input{./evolution.tex}
+
+%\input{./inner_product.tex}
+
+%\input{./windows.tex}
+
+%\input{./Energy_flux.tex}
+
+%\input{./Loss_cone.tex}
+
+%\input{./Chandra.tex}
+
+%\backmatter
+
+%\phantomsection
+%\bookmarksetup{startatroot}
+%\bibliographystyle{../physicsAuthorYearURL2}
+%\addcontentsline{toc}{chapter}{References}
+%\bibliography{../library,../jr}
+
+%\clearpage
+%\mbox{}
+
+\end{document}
