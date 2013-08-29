@@ -29,7 +29,7 @@ We consider the interaction of a field star, denoted by 1, with a test star, 2. 
 \begin{equation}
 \Delta E^2(v_1) \simeq \dfrac{8\pi}{3} n(v_1)G^2m_1^2 m_2^2\ln\left(qv_2^2\right)\left\{\begin{array}{lr}\dfrac{v_1^2}{v_2}\vspace{2mm} & v_1 \leq v_2\\ \dfrac{v_2^2}{v_1} & v_1 \geq v_2 \end{array}\right\}\,\dd v_1\delta t.
 \end{equation}
-Here $v_1$ and $v_2$ are the initial velocities, and $m_1$ and $m_2$ are the masses; $n(v_1)$ is the number of stars per velocity element $\dd v_1$ which is calculated assuming the density of stars is uniform.\footnote{The error introduced by this assumption can be partially absorbed by the appropriate choice of the Coloumb logarithm, which is introduced in \secref{system-ave} \citep{Just2011}.} The logarithmic term includes
+Here $v_1$ and $v_2$ are the initial velocities, and $m_1$ and $m_2$ are the masses; $n(v_1)$ is the number of stars per velocity element $\dd v_1$ which is calculated assuming that the density of stars is uniform.\footnote{The error introduced by this assumption can be partially absorbed by the appropriate choice of the Coulomb logarithm, which is introduced in \secref{system-ave} \citep{Just2011}.} The logarithmic term includes
 \begin{equation}
 q = \dfrac{D_0}{G\left(m_1+m_2\right)},
 \end{equation}
@@ -45,7 +45,7 @@ where $r\sub{c}$ is defined by \eqnref{r_c}.
 
 The DF for unbound stars is assumed to be Maxwellian as in \eqnref{Unbound_DF}. We assume violent relaxation such that $\sigma_M = \sigma$. Performing the integral
 \begin{align}
-f_{\mathrm{u},\,M}(v) = {} & \dfrac{n_\ast}{\left(2\pi\sigma^2\right)^{3/2}}C_M\epsilon\left(\dfrac{v^2}{2\sigma^2}\right),
+f_{\mathrm{u},\,M}(v) = {} & \dfrac{n_\star}{\left(2\pi\sigma^2\right)^{3/2}}C_M\epsilon\left(\dfrac{v^2}{2\sigma^2}\right),
 \end{align}
 introducing
 \begin{equation}
@@ -55,12 +55,12 @@ where $\Ei(x)$ is the exponential integral \citep[6.2.4]{Olver2010}.
 
 The DF for bound stars is approximated as a simple power law as in \eqnref{Bound_DF}. The integral gives
 \begin{equation}
-f_{\mathrm{b},\,M}(v) = \dfrac{n_\ast}{\left(2\pi\sigma^2\right)^{3/2}}k_M \left(\dfrac{v^2}{2\sigma^2}\right)^{p_M - 3}\begin{cases}
+f_{\mathrm{b},\,M}(v) = \dfrac{n_\star}{\left(2\pi\sigma^2\right)^{3/2}}k_M \left(\dfrac{v^2}{2\sigma^2}\right)^{p_M - 3}\begin{cases}
 3 \Beta\left(\dfrac{v^2}{2\sigma^2}; 3 - p_M, 1 + p_M\right) \vspace{1mm} & \dfrac{v^2}{2\sigma^2} \leq 1 \\
 3 \Beta\left(3 - p_M, 1 + p_M\right) & \dfrac{v^2}{2\sigma^2} \geq 1
 \end{cases},
 \end{equation}
-where $\Beta(x;a,b)$ is the incomplete beta function \citep[8.17]{Olver2010}, $\Beta(a,b) \equiv \Beta(1,a,b)$ is the complete beta function.
+where $\Beta(x;a,b)$ is the incomplete beta function \citep[section 8.17]{Olver2010} and $\Beta(a,b) \equiv \Beta(1,a,b)$ is the complete beta function.
 
 The velocity space density is related to the DF by
 \begin{equation}
@@ -71,7 +71,7 @@ The velocity space density is related to the DF by
 
 Using the specific forms for the velocity space density, we can calculate $\Delta E^2$. The functional form depends upon the velocity of the test star. If $v_2^2/2\sigma^2 < 1$, then
 \begin{align}
-\Delta E^2 \simeq {} & \dfrac{16}{3}\sqrt{2\pi}\dfrac{G^2m_1^2 m_2^2n_\ast}{\sigma^3}\ln\left(qv_2^2\right) \left(\dfrac{v_2^2}{2\sigma^2}\right) \nonumber \\*
+\Delta E^2 \simeq {} & \dfrac{16}{3}\sqrt{2\pi}\dfrac{G^2m_1^2 m_2^2n_\star}{\sigma^3}\ln\left(qv_2^2\right) \left(\dfrac{v_2^2}{2\sigma^2}\right) \nonumber \\*
 {} & \times \left. \left[k \dfrac{3}{(2 - p)(1 + p)}{_3F_2}\left(-1-p,2-p,\dfrac{3}{2};3-p,\dfrac{5}{2};\dfrac{v_2^2}{2\sigma^2}\right) + C\right]\,\delta t, \right.
 \label{eq:w-less-1}
 \end{align}
@@ -79,7 +79,7 @@ where ${_3F_2}(a_1,a_2,a_3;b_1,b_2;x)$ is a generalised hypergeometric function 
 
 If $v_2^2/2\sigma^2 > 1$,
 \begin{equation}
-\Delta E^2 \simeq \dfrac{16}{3}\sqrt{2\pi}G^2m_1^2 m_2^2n_\ast\sigma\ln\left(qv_2^2\right) \left(\dfrac{v_2^2}{2\sigma^2}\right)^{-1/2} \left[k\beta\left(\dfrac{v_2^2}{2\sigma^2};p\right) + C\alpha\left(\dfrac{v_2^2}{2\sigma^2}\right)\right]\,\delta t,
+\Delta E^2 \simeq \dfrac{16}{3}\sqrt{2\pi}G^2m_1^2 m_2^2n_\star\sigma\ln\left(qv_2^2\right) \left(\dfrac{v_2^2}{2\sigma^2}\right)^{-1/2} \left[k\beta\left(\dfrac{v_2^2}{2\sigma^2};p\right) + C\alpha\left(\dfrac{v_2^2}{2\sigma^2}\right)\right]\,\delta t,
 \end{equation}
 where
 \begin{align}
@@ -96,7 +96,7 @@ Here ${_2F_2}(a_1,a_2;b_1,b_2;x)$ is another generalised hypergeometric function
 
 Combining the two regimes for $v^2/2\sigma^2$, we can simplify using approximate forms. For the bound contribution 
 \begin{align}
-\Delta E\sub{b}^2 \approx {} & 16\sqrt{2\pi}G^2m_1^2m_2^2n_\ast\sigma\ln\left(qv_2^2\right) k \gamma\left(\dfrac{v_2^2}{2\sigma^2};p\right)\,\delta t,
+\Delta E\sub{b}^2 \approx {} & 16\sqrt{2\pi}G^2m_1^2m_2^2n_\star\sigma\ln\left(qv_2^2\right) k \gamma\left(\dfrac{v_2^2}{2\sigma^2};p\right)\,\delta t,
 \label{eq:Bound-approx}
 \end{align}
 where
@@ -108,7 +108,7 @@ The resulting error, ignoring variation from $\ln\left(qv_2^2\right)$, is less t
 
 The unbound contribution is
 \begin{equation}
-\Delta E\sub{u}^2 \approx \dfrac{16}{3}\sqrt{2\pi}G^2m_1^2m_2^2n_\ast\sigma\ln\left(qv_2^2\right) C \Xi \dfrac{v_2^2}{2\sigma^2} \left[\Xi^2 + \left(\dfrac{v_2^2}{2\sigma^2}\right)^3\right]^{-1/2}\,\delta t,
+\Delta E\sub{u}^2 \approx \dfrac{16}{3}\sqrt{2\pi}G^2m_1^2m_2^2n_\star\sigma\ln\left(qv_2^2\right) C \Xi \dfrac{v_2^2}{2\sigma^2} \left[\Xi^2 + \left(\dfrac{v_2^2}{2\sigma^2}\right)^3\right]^{-1/2}\,\delta t,
 \label{eq:Unbound-approx}
 \end{equation}
 where
@@ -120,20 +120,20 @@ This reproduces the full function to better than $5\%$, ignoring variation from 
 The relaxation time-scale is the time interval $\delta t$ over which the squared change in energy becomes equal to the kinetic energy of the test star squared \citep{Bar-Or2012}
 \begin{align}
 \tau\sub{R} = {} & \left(\dfrac{m_2v_2^2}{2}\right)^2\dfrac{\delta t}{\Delta E^2} \\
- \approx {} & \dfrac{3v_2^4}{16\sqrt{2\pi}G^2n_\ast\sigma\ln\left(qv_2^2\right)} \nonumber \\*
+ \approx {} & \dfrac{3v_2^4}{16\sqrt{2\pi}G^2n_\star\sigma\ln\left(qv_2^2\right)} \nonumber \\*
  {} & \times \left. \left(\sum_M M^2 \left\{k_M \gamma\left(\dfrac{v_2^2}{2\sigma^2};p_M\right) + C_M\Xi\left(\dfrac{v_2^2}{2\sigma^2}\right)\left[\Xi^2 + \left(\dfrac{v_2^2}{2\sigma^2}\right)^3\right]^{-1/2}\right\}\right)^{-1}. \right.
 \label{eq:tau_R1}
 \end{align}
 
 \section{Averaged time-scale}
 
-The relaxation time-scale \eqnref{tau_R1} is for a particular velocity $v_2$. This is not of much use to describe the NSC or even a (non-circular) orbit where there is a velocity range. It is necessary to calculate an average. Both the change in energy squared and the kinetic energy are averaged. We use two averages: over the distribution of bound velocities to give the relaxation time-scale for the system, and over a single orbit. The former is of use when considering the inner cut-off of stars due to collisions, the latter when considering the transition to GW inspiral.
+The relaxation time-scale \eqnref{tau_R1} is for a particular velocity $v_2$. This is not of much use to describe the NSC or even a (non-circular) orbit where there is a velocity range. It is necessary to calculate an average. Both the change in energy squared and the kinetic energy are averaged. We use two averages: over the distribution of bound velocities to give the relaxation time-scale for the system and over a single orbit. The former is of use when considering the inner cut-off of stars due to collisions, and the latter when considering the transition to GW inspiral.
 
 \subsection{System relaxation time-scale}\label{sec:system-ave}
 
 The total number of bound stars in the NSC is
 \begin{equation}
-N_{\mathrm{b},\,M} = \dfrac{3}{3/2 - p_M}\dfrac{\Gamma(p_M + 1)}{\Gamma(p_M + 7/2)}N_\ast k_M,
+N_{\mathrm{b},\,M} = \dfrac{3}{3/2 - p_M}\dfrac{\Gamma(p_M + 1)}{\Gamma(p_M + 7/2)}N_\star k_M,
 \end{equation}
 where $\Gamma(x)$ is the gamma function. Using this as a normalisation constant, the probability of a bound star having a velocity in the range $v \rightarrow v + \dd v$ is
 \begin{align}
@@ -142,13 +142,13 @@ where $\Gamma(x)$ is the gamma function. Using this as a normalisation constant,
 \Beta\left(\dfrac{v^2}{2\sigma^2}; 3 - p_M, 1 + p_M\right) \vspace{1mm} & \dfrac{v^2}{2\sigma^2} \leq 1 \\
 \Beta\left(3 - p_M, 1 + p_M\right) & \dfrac{v^2}{2\sigma^2} \geq 1\end{array}\right\}\,\dd v. \right.
 \end{align}
-The mean squared velocity for bound stars in the NSC is then
+The mean square velocity for bound stars in the NSC is then
 \begin{align}
 \overline{v^2_{M}} = {} & 3\sigma^2\dfrac{3/2 - p_M}{1/2 - p_M},
 \end{align}
 assuming $p_M < 1/2$.
 
-In the case $p_M = 1/2$ we encounter a logarithmic divergence. This reflects there being a physical cut-off.\footnote{A similar diverge necessitates the introduction of $D_0$ in \apref{Chandra}.} We use $v\sub{max} = c/2$, which is the maximum speed reached on a bound orbit about a Schwarzschild BH. Marginally higher speeds can be reached for prograde orbits about a Kerr BH, but the maximal velocity for retrograde orbits is marginally lower. In reality, we expect the maximum velocity to be lower due to a depletion of orbits. We also suspect a simple Newtonian description of these orbits is imprecise, but a full relativistic description is beyond the scope of this analysis. For $p_M = 1/2$,
+In the case $p_M = 1/2$ we encounter a logarithmic divergence. This reflects there being a physical cut-off.\footnote{A similar diverge necessitates the introduction of $D_0$ in \apref{Chandra}.} We use $v\sub{max} = c/2$, which is the maximum speed reached on a bound orbit about a Schwarzschild BH. Marginally higher speeds can be reached for prograde orbits about a Kerr BH, but the maximal velocity for retrograde orbits is marginally lower. In reality, we expect the maximum velocity to be lower due to a depletion of orbits. We also suspect that a simple Newtonian description of these orbits is imprecise, but a full relativistic description is beyond the scope of this analysis. For $p_M = 1/2$,
 \begin{align}
 \overline{v^2_{M}} = {} & \dfrac{\sigma^2}{2}\left[12\ln(2) - 5 + 6 \ln\left(\dfrac{v\sub{max}^2}{2\sigma^2}\right)\right].
 \end{align}
@@ -156,23 +156,23 @@ Using a typical value of $\sigma = 10^5\units{m\,s^{-1}}$,
 \begin{equation}
 \overline{v^2_{M}} \simeq 43\sigma^2.
 \end{equation}
-The mean squared velocity is an order of magnitude greater than for a Maxwellian distribution.
+The mean square velocity is an order of magnitude greater than that for a Maxwellian distribution.
 
-For the average of $\Delta E^2$, we replace $\ln\left(qv_2^2\right)$ by a suitable average so it may be moved outside the integral \citep[chapter 2]{Chandrasekhar1960}. We replace it by the Coulomb logarithm \citep{Bahcall1976}
+For the average of $\Delta E^2$, we replace $\ln\left(qv_2^2\right)$ by a suitable average, so it may be moved outside the integral \citep[chapter 2]{Chandrasekhar1960}. We replace it by the Coulomb logarithm \citep{Bahcall1976}
 \begin{equation}
 \ln\left(q\overline{v_2^2}\right) = \ln \Lambda_M \simeq \ln\left(\dfrac{M_\bullet}{M}\right).
 \end{equation}
 \citet{Just2011} find an extremely similar result fitting a Bahcall--Wolf cusp self-consistently. We calculate the averages for the bound and unbound populations individually and then combine these to obtain the total change for each species. We must distinguish between the bound population of field stars and the distribution of test stars over which we are averaging. We use subscripts $M$ and $M'$ respectively.\footnote{In a slight abuse of notation, we use $m_M \equiv M$ and $m_{M'} \equiv M'$, and hope that it is clear that the summation is over the species and not masses.} The bound average is
 \begin{align}
 \overline{\Delta E^2_{\mathrm{b},\,M'}} = {} & 4\pi\intd{0}{\infty}{\Delta E^2\sub{b} v^2 p_{\mathrm{b},\,M'}(v)}{v} \\
- \simeq {} & \sum_M\dfrac{32}{3}\dfrac{G^2M^2{M'}^2n_\ast}{\sigma^2}\ln\left(\Lambda_{M'}\right) k_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\* 
+ \simeq {} & \sum_M\dfrac{32}{3}\dfrac{G^2M^2{M'}^2n_\star}{\sigma^2}\ln\left(\Lambda_{M'}\right) k_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\* 
  {} & \times \left[ \intd{0}{\sqrt{2}\sigma}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-2} \dfrac{3}{2 + p_M - p_M^2)} {_3F_2}%\left(-1-p_M,2-p_M,\dfrac{3}{2};3-p_M,\dfrac{5}{2};\dfrac{v^2}{2\sigma^2}\right)
  \Beta\left(\dfrac{v^2}{2\sigma^2};3-p_{M'},1+p_{M'}\right)}{v} \right. \nonumber \\* 
  {} & + \left. \intd{\sqrt{2}\sigma}{\infty}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-7/2} \beta\left(\dfrac{v^2}{2\sigma^2};p_M\right) \Beta\left(3-p_M,1+p_M\right)}{v} \right] \delta t,
 \end{align}
 where we have omitted the arguments of the hypergeometric function for brevity.\footnote{The arguments are given in \eqnref{w-less-1}.} The high velocity integral can be performed without difficulty, but the low velocity piece is more formidable. Progress can be made by making a series expansion in $v^2/2\sigma^2$. Retaining terms to third order approximates the integrand to no worse than $10\%$, with good agreement across most of the integration range. The result may be condensed into a simpler form by approximating it as a quadratic in $p_M$ and $p_{M'}$, which introduces less than $2\%$ further error. After this manipulation
 \begin{align}
-\overline{\Delta E^2_{\mathrm{b},\,M'}} \approx {} & \sum_M\dfrac{2^{11/2}}{3}G^2M^2{M'}^2n_\ast\sigma\ln\left(\Lambda_{M'}\right) k_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\*
+\overline{\Delta E^2_{\mathrm{b},\,M'}} \approx {} & \sum_M\dfrac{2^{11/2}}{3}G^2M^2{M'}^2n_\star\sigma\ln\left(\Lambda_{M'}\right) k_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\*
  {} & \times \left[ \varpi\left(p_M,p_{M'}\right) + \iota \left(p_M,p_{M'}\right) \right] \delta t,
 \end{align}
 introducing
@@ -187,13 +187,13 @@ introducing
 To calculate the unbound component we use the exact form for the low velocity component and the approximate form of \eqnref{Unbound-approx}: 
 \begin{align}
 \overline{\Delta E^2_{\mathrm{u},\,M'}} = {} & 4\pi\intd{0}{\infty}{\Delta E^2\sub{u} v^2 p_{\mathrm{b},\,M'}(v)}{v} \\
- \approx {} & \sum_M\dfrac{32}{3}\dfrac{G^2M^2{M'}^2n_\ast}{\sigma^2}\ln\left(\Lambda_{M'}\right) C_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\*
+ \approx {} & \sum_M\dfrac{32}{3}\dfrac{G^2M^2{M'}^2n_\star}{\sigma^2}\ln\left(\Lambda_{M'}\right) C_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\*
  {} & \times \left\{ \intd{0}{\sqrt{2}\sigma}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-2}\Beta\left(\dfrac{v^2}{2\sigma^2};3-p_{M'},1+p_{M'}\right)}{v} \right. \nonumber \\* 
  {} & + \left. \intd{\sqrt{2}\sigma}{\infty}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-2} \Xi\left[\Xi^2 + \left(\dfrac{v^2}{2\sigma^2}\right)^3\right]^{-1/2} \Beta\left(3-p_M,1+p_M\right)}{v} \right\} \delta t;
 \end{align}
-for consistency with the bound case we have continued to use subscript $M'$. The low velocity integral is of the same form as for calculating $\overline{v^2_M}$ and can be evaluated in terms of beta functions, the high velocity integral can be evaluated in terms of the hypergeometric function \citep[15.6.1]{Olver2010}
+for consistency with the bound case, we have continued to use subscript $M'$. The low velocity integral is of the same form as for calculating $\overline{v^2_M}$ and can be evaluated in terms of beta functions, the high velocity integral can be evaluated in terms of the hypergeometric function \citep[15.6.1]{Olver2010}
 \begin{align}
-\overline{\Delta E^2_{\mathrm{u},\,M'}} \approx {} & \sum_M\dfrac{2^{11/2}}{3}G^2M^2{M'}^2n_\ast\sigma\ln\left(\Lambda_{M'}\right) C_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\
+\overline{\Delta E^2_{\mathrm{u},\,M'}} \approx {} & \sum_M\dfrac{2^{11/2}}{3}G^2M^2{M'}^2n_\star\sigma\ln\left(\Lambda_{M'}\right) C_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\
  & \times \left[\nu\left(p_{M'}\right) + \Xi\dfrac{\Beta\left(3-p_{M'},1+p_{M'}\right)}{2-p_{M'}}{_2F_1}\left(\recip{2},\dfrac{2-p_{M'}}{3};\dfrac{5-p_{M'}}{3};-\Xi^2\right) \right] \delta t,
  \label{eq:E2-u}
 \end{align}
@@ -207,7 +207,7 @@ where
 The total relaxation time for a species is
 \begin{align}
 \overline{\tau_{\mathrm{R,}\,M'}} = {} & \left(\dfrac{{M'}\overline{v_{M'}^2}}{2}\right)^2\dfrac{\delta t}{\overline{\Delta E^2_{\mathrm{b},\,M'}} + \overline{\Delta E^2_{\mathrm{u},\,M'}}} \\
- \approx {} & \dfrac{3}{2^{15/2}}\dfrac{\Gamma(p_{M'} + 1)}{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}\dfrac{\overline{v_{M'}^2}^2}{G^2n_\ast\sigma\ln\left(\Lambda_{M'}\right)} \nonumber \\* 
+ \approx {} & \dfrac{3}{2^{15/2}}\dfrac{\Gamma(p_{M'} + 1)}{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}\dfrac{\overline{v_{M'}^2}^2}{G^2n_\star\sigma\ln\left(\Lambda_{M'}\right)} \nonumber \\* 
  {} & \times \left\{\sum_M k_M M^2 \left[ \varpi\left(p_M,p_{M'}\right) + \iota \left(p_M,p_{M'}\right)\right] \right. \nonumber \\*
  {} & + \left. \vphantom{ \left[ \dfrac{p_{M'}^2\left(6 + 9p_M + 8p_M^2\right)}{210}\right]} C_M M^2 \left[\nu\left(p_{M'}\right) + \Xi\dfrac{\Beta\left(3-p_{M'},1+p_{M'}\right)}{2-p_{M'}}{_2F_1}%\left(\recip{2},\dfrac{2-p_{M'}}{3};\dfrac{5-p_{M'}}{3};-\Xi^2\right)
  \right]\right\}^{-1},
@@ -221,7 +221,7 @@ The relaxation time-scale for individual components is used in determining the c
 
 \subsection{Orbital average}\label{sec:orbital-ave}
 
-We calculate the time-scale for an orbit, parameterized by $e$ and $r\sub{p}$, by averaging over one period.\footnote{We only consider bound orbits. The orbital relaxation time-scale is compared against the GW time-scale; the evolution of unbound orbits due to GW emission is negligible as shown in \apref{Unbound}.} The mean squared velocity is
+We calculate the time-scale for an orbit, parameterized by $e$ and $r\sub{p}$, by averaging over one period.\footnote{We only consider bound orbits. The orbital relaxation time-scale is compared against the GW time-scale; the evolution of unbound orbits due to GW emission is negligible as shown in \apref{Unbound}.} The mean square velocity is
 \begin{equation}
 \left\langle v^2\left(e,r\sub{p}\right)\right\rangle = \dfrac{GM_\bullet(1 - e)}{r\sub{p}}.
 \end{equation}
@@ -245,7 +245,7 @@ In terms of the orbital phase, the velocity is
 \begin{equation}
 v(\vartheta) = \sqrt{\dfrac{GM_\bullet}{r\sub{p}(1+e)}\left(1 + e^2 + 2e\cos\vartheta\right)}.
 \end{equation}
-Despite our best efforts, we have been unsuccessful in obtaining analytic forms for the averaged changes in energy squared. Therefore we compute them numerically. We define
+Despite our best efforts, we have been unsuccessful in obtaining analytic forms for the averaged changes in energy squared. Therefore, we compute them numerically. We define
 \begin{align}
 I\sub{b}(e,\varrho,p) = {} & \intd{0}{\pi}{\recip{(1 + e \cos\vartheta)^2}\gamma\left(\dfrac{1}{2(1+e)\varrho}\left(1+e^2+2e\cos\vartheta\right);p\right)}{\vartheta} \\
 I\sub{u}(e,\varrho,\Xi) = {} & \int_{0}^{\pi} \dfrac{\Xi}{(1 + e \cos\vartheta)^2}\left[\dfrac{1}{2(1+e)\varrho}\left(1+e^2+2e\cos\vartheta\right)\right] \nonumber \\*
@@ -254,7 +254,7 @@ I\sub{u}(e,\varrho,\Xi) = {} & \int_{0}^{\pi} \dfrac{\Xi}{(1 + e \cos\vartheta)^
 the orbital relaxation time-scale is then
 \begin{align}
 \left\langle\tau_{\mathrm{R},\,M'}\left(e,r\sub{p}\right)\right\rangle = {} & \left(\dfrac{GM_\bullet(1 - e)M'}{2r\sub{p}}\right)^2\dfrac{\delta t}{\left\langle\Delta E^2_{\mathrm{b},\,M'}\right\rangle + \left\langle\Delta E^2_{\mathrm{u},\,M'}\right\rangle} \\
- \approx {} & \dfrac{3}{64}\sqrt{\dfrac{\pi}{2}} \dfrac{M_\bullet^2(1 - e)^{1/2}}{n_\ast \sigma r\sub{p}^2(1 + e)^{3/2}\ln\left(\Lambda_{M'}\right)} \nonumber \\*
+ \approx {} & \dfrac{3}{64}\sqrt{\dfrac{\pi}{2}} \dfrac{M_\bullet^2(1 - e)^{1/2}}{n_\star \sigma r\sub{p}^2(1 + e)^{3/2}\ln\left(\Lambda_{M'}\right)} \nonumber \\*
  {} & \times \left\{\sum_M \left[ k_M M^2 I\sub{b}\left(e,\dfrac{r\sub{p}}{r\sub{c}},p_M\right) + C_M M^2 I\sub{u}\left(e,\dfrac{r\sub{p}}{r\sub{c}},\Xi\right)\right]\right\}^{-1}.
 \label{eq:orbital-relax}
 \end{align}
@@ -266,13 +266,13 @@ Diffusion in angular momentum proceeds over a shorter time, as defined by \eqnre
 
 In deriving the relaxation time-scales it has been necessary to make a number of approximations, both mathematical and physical. We have been careful to ensure that the mathematical inaccuracies introduced are of the order of a few percent, and subdominant to the errors inherent from the physical assumptions and uncertainties in astronomical quantities. There are two key physical approximations that may limit the validity of the results.
 
-First, it was assumed that the density of stars is uniform. This is a pragmatic assumption necessary to perform integrals over impact parameter and angular orientation. This is not the case; however, as a star travels on its orbit it moves through regions of different densities, sampling a range of different density--impact parameter distributions. Since we are only concerned with averaged time-scales, this partially smears out changes in density \citep[cf.][]{Just2011}. To incorporate the complexity of the proper density distribution would greatly obfuscate the analysis.
+First, it was assumed that the density of stars is uniform. This is a pragmatic assumption necessary to perform integrals the over the impact parameter and angular orientation. This is not the case; however, as a star travels on its orbit, it moves through regions of different densities, sampling a range of different density--impact parameter distributions. Since we are only concerned with averaged time-scales, this partially smears out changes in density \citep[cf.][]{Just2011}. To incorporate the complexity of the proper density distribution would greatly obfuscate the analysis.
 
-Second, we have only considered transfer of angular momentum based upon the diffusion of energy, and not through resonant relaxation which enhances (both scalar and vector) angular momentum diffusion \citep{Rauch1996,Rauch1998,Gurkan2007,Eilon2009,Madigan2011}. This occurs in systems where the radial and azimuthal frequencies are commensurate. Orbits precess slowly leading to large torques between the orbits. These torques cause the angular momentum to change linearly with time over a coherence time-scale set by the drift in orbits. Over longer time periods, the change in angular momentum again proceeds as a random walk, increasing with the square-root of time, as for non-resonant relaxation; but is still enhanced because of the change in the basic step size. Diffusion of energy remains unchanged; there could be several orders of magnitude difference in the two relaxation time-scales.
+Second, we have only considered transfer of angular momentum based upon the diffusion of energy, and not through resonant relaxation which enhances (both scalar and vector) angular momentum diffusion \citep{Rauch1996,Rauch1998,Gurkan2007,Eilon2009,Madigan2011}. This occurs in systems where the radial and azimuthal frequencies are commensurate. Orbits precess slowly leading to large torques between the orbits. These torques cause the angular momentum to change linearly with time over a coherence time-scale set by the drift in orbits. Over longer time periods, the change in angular momentum again proceeds as a random walk, increasing with the square-root of time, as for non-resonant relaxation, but is still enhanced because of the change in the basic step size. Diffusion of energy remains unchanged; there could be several orders of magnitude difference in the two relaxation time-scales.
 
-Resonant relaxation is important in systems with (nearly) Keplerian potentials, but is quenched when relativistic precession becomes significant: inside the Schwarzschild barrier \citep{Merritt2011}. It is less likely to be of concern for the orbits influenced by GW emission \citep{Sigurdsson1997}, and should not be significant for our purposes.
+Resonant relaxation is important in systems with (nearly) Keplerian potentials, but is quenched when relativistic precession becomes significant: inside the Schwarzschild barrier \citep{Merritt2011}. It is less likely to be of concern for the orbits influenced by GW emission \citep{Sigurdsson1997} and should not be significant for our purposes.
 
-The optimal approach would be to perform a full $N$-body simulation of the Galactic NSC. This would dispense with all the complications of considering relaxation time-scales and estimates for cut-off radii. Unfortunately such a task still remains computationally challenging at the present time \citep[e.g.,][]{Li2012}.
+The optimal approach would be to perform a full $N$-body simulation of the Galactic NSC. This would dispense with all the complications of considering relaxation time-scales and estimates for cut-off radii. Unfortunately, such a task still remains computationally challenging at the present time \citep[e.g.,][]{Li2012}.
 
 \section{Time-scales for the Galactic nucleus}\label{sec:tauGC}
 
@@ -291,9 +291,9 @@ Again there is good agreement.\footnote{\citet*{Freitag2006} found that using a 
 \overline{\tau\sub{R,\,BH}} \simeq 48 \tau\sub{R}\super{Max}.
 \end{equation}
 
-The time-scales for the lighter components are of the order of the Hubble time; the BH time-scale is much longer on account of the higher mean square velocity. This may indicate that the BH population is not fully relaxed \citep[cf.][]{Antonini2011}: there has not been sufficient time for objects to diffuse onto the most tightly bound orbits (in which case the mean square velocity would be lower). We expect many of the most tightly bound BHs are not in a relaxed state, since GW inspiral is the dominant effect in determining the profile. This would deplete some of the innermost orbits, and lower the mean square velocity for the population. Since we do not consider the collisional disruption of BHs, we do not use $\overline{\tau\sub{R,\,BH}}$ in our model; it therefore has no influence on our results.
+The time-scales for the lighter components are of the order of the Hubble time; the BH time-scale is much longer on account of the higher mean square velocity. This may indicate that the BH population is not fully relaxed \citep[cf.][]{Antonini2011}: there has not been sufficient time for objects to diffuse on to the most tightly bound orbits (in which case, the mean square velocity would be lower). We expect that many of the most tightly bound BHs are not in a relaxed state, since GW inspiral is the dominant effect in determining the profile. This would deplete some of the innermost orbits and lower the mean square velocity for the population. Since we do not consider the collisional disruption of BHs, we do not use $\overline{\tau\sub{R,\,BH}}$ in our model; it therefore has no influence on our results.
 
-The long BH time-scale also inevitably includes an artifact of our approximation that the system is homogeneous: in reality the BHs, being more tightly clustered towards the centre, pass through regions with greater density (both because of higher number density and a greater average object mass). Therefore, we expect the true relaxation time-scale to be reduced. 
+The long BH time-scale also inevitably includes an artifact of our approximation that the system is homogeneous: in reality the BHs, being more tightly clustered towards the centre, pass through regions with greater density (both because of a higher number density and a greater average object mass). Therefore, we expect the true relaxation time-scale to be reduced. 
 
 Formation of the cusp can occur over shorter time than the relaxation time-scale \citep{Bar-Or2012}. It should proceed on a dynamical friction time-scale $\tau\sub{DF} \approx (M_\star/M')\overline{\tau_{\mathrm{R},\,M'}}$ \citep[section 3.4]{Spitzer1987Jr}. This reduces the difference between the different species, but does not make it obvious that the cusp has had sufficient time to form, especially if there has been a merger in the Galaxy's history which disrupted the central distribution of stars \citep{Gualandris2012}. Fortunately, observations of the thick disc indicate that there has not been a major merger in the last $10^{10}\units{yr}$ \citep{Wyse2008}. Minor mergers, where (globular) clusters spiral in towards the MBH, have been suggested as a means of building the stellar population that is consistent with current observations \citep{Antonini2011a,Antonini2013}. These could prevent the cusp from forming if there has not been sufficient time for the stars to relax post-merger. In any case, the time taken to form a cusp depends upon the initial configuration of stars, and so depends upon the Galaxy's history.
 
@@ -301,7 +301,7 @@ The existence of a cusp is a subject of debate. \citet{Preto2010} conducted $N$-
 
 Time-scales for individual orbits range over many orders of magnitude. The longest are for the most tightly bound: the cusp forms from the outside-in, and these orbits may not yet be populated. The shortest time-scales are for the most weakly bound orbits, those with large periapses and eccentricities. The orbital period can be much shorter than these time-scales, highlighting the fringe where the Fokker--Planck approximation is not appropriate \citep{Spitzer1972Jr}. The variation in the time-scale is exaggerated by neglecting the spatial variation in the stellar population.
 
-When comparing GW inspiral time-scales and orbital angular momentum time-scales, equality can occur for times far exceeding the Hubble time. This only occurs for lower eccentricities, which are not of interest for bursts. However, it may be interesting to consider the stellar distribution in this region, which is not relaxed but dominated by GW inspiral. Since inspiral takes such a huge time to complete, it is possible there is a pocket of objects currently mid-inspiral that reflect the unrelaxed distribution.
+When comparing GW inspiral time-scales and orbital angular momentum time-scales, equality can occur for times far exceeding the Hubble time. This only occurs for lower eccentricities, which are not of interest for bursts. However, it may be interesting to consider the stellar distribution in this region, which is not relaxed but dominated by GW inspiral. Since inspiral takes such a huge time to complete, it is possible that there is a pocket of objects currently mid-inspiral that reflect the unrelaxed distribution.
 
 \section{Summary}
 
