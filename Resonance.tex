@@ -4,7 +4,7 @@
 
 In the prologue to his classic monograph, \citet{Chandrasekhar1992} celebrates the simplicity of BHs. The Kerr solution is defined by just two parameters: mass and spin. Despite the baldness of the BH metrics, great intricacies manifest in their properties. This is made evident when a second body is introduced. The two-body problem in GR is well studied. It is of paramount importance for GW astronomy, where binary systems are the dominant source of radiation. Correctly modelling the dynamics of these systems is necessary to interpret and extract information from gravitational waveforms.
 
-\citet{Flanagan2012} highlighted a previously overlooked phenomenon that occurs in the general relativistic two-body problem, that of transient resonances. Geodesic orbits in GR have three associated frequencies: the radial frequency $\Omega_r$, the polar frequency $\Omega_\theta$ and the azimuthal frequency $\Omega_\phi$. The first two describe libration and the third rotation \citep[section 10.6]{Goldstein2002}.\footnote{There is an exception in the case of polar orbits, when $\Omega_\theta$ also describes rotation.} In the weak-field limit these all tend towards the Keplerian frequency and there is no orbital precession; in the strong-field $\Omega_r < \Omega_\theta < \Omega_\phi$, and they may differ significantly. For EMR systems, the evolution time-scale is much longer than the orbital period, such that the motion of the smaller body is approximately geodesic over orbital time-scales. The evolution of the orbit can be approximated as a series of geodesics using the osculating element formalism \citep{Pound2008,Gair2011a}. During the evolution the frequencies may become commensurate. Resonances occur when the radial and polar frequencies are rational multiples of each other:
+\citet{Flanagan2012} highlighted a previously overlooked phenomenon that occurs in the general relativistic two-body problem, that of transient resonances. Geodesic orbits in GR have three associated frequencies: the radial frequency $\Omega_r$, the polar frequency $\Omega_\theta$ and the azimuthal frequency $\Omega_\phi$. The first two describe libration and the third rotation \citep[section 10.6]{Goldstein2002}.\footnote{There is an exception in the case of polar orbits, when $\Omega_\theta$ also describes rotation.} In the weak-field limit these all tend towards the Keplerian frequency and there is no orbital precession; in the strong-field $\Omega_r < \Omega_\theta < \Omega_\phi$, and they may differ significantly. For EMR systems, the evolution time-scale is much longer than the orbital period, such that the motion of the smaller body is approximately geodesic over orbital time-scales. The evolution of the orbit can be approximated as a series of geodesics using the osculating element formalism \citep{Pound2008,Gair2011a}. During the evolution, the frequencies may become commensurate. Resonances occur when the radial and polar frequencies are rational multiples of each other:
 \begin{equation}
 \nu = \dfrac{\Omega_r}{\Omega_\theta} = \dfrac{n_\theta}{n_r},
 \end{equation}
@@ -13,7 +13,7 @@ where $n_r$ and $n_\theta$ are integers (which we take to have no common factors
 Geodesic motion in Kerr spacetime can be described by use of the action--angle formalism \citep[chapter 10]{Goldstein2002}. We consider a body of mass $\mu$ orbiting an MBH of mass $M_\bullet$, with $\eta = \mu/M_\bullet \ll 1$ which is used as a perturbative parameter, and describe the motion in the directions of the standard Boyer--Lindquist coordinates using generalised angle variables $q_\alpha = \{q_t,q_r,q_\theta,q_\phi\}$ \citep{Hinderer2008}. We denote the integrals of the geodesic motion, the generalised action variables, by $J_\alpha$. These are some combination of the energy per unit mass $E$, the axial angular momentum per unit mass $L_z$ and the Carter constant per unit mass squared $Q$ \citep{Carter1968}; we use $\mathcal{I}_a = \{E,L_z,Q\}$ for this set of three parameters. The system evolves following \citep{Flanagan2012}
 \begin{subequations}\label{eq:Mino-E-o-M}
 \begin{align}
-\diff{q_\alpha}{\lambda} = {} & \omega_\alpha(\boldsymbol{J}) + \eta g_\alpha^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2}; \\
+\diff{q_\alpha}{\lambda} = {} & \omega_\alpha(\boldsymbol{J}) + \eta g_\alpha^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2}, \\
 \diff{J_\alpha}{\lambda} = {} & \eta G_\alpha^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2},
 \end{align}
 \end{subequations}
@@ -106,7 +106,7 @@ Transient resonances occur when the radial and polar motions are commensurate, w
 \end{equation}
 is the ratio of (small) integers. At this point any Fourier series, like those in \eqnref{Mino-Fourier}, goes from being an expansion in two frequencies to being an expansion in a single frequency \citep{Bosley1992}.
 
-On resonance, the radial and polar motions are locked together such that we can express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To characterise this, we use the $\theta$ phase at periapsis $\chi\sub{p}$; varying $\chi\sub{p}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\chi\sub{p}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
+On resonance, the radial and polar motions are locked together such that we can express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance, as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To characterise this, we use the $\theta$ phase at periapsis $\chi\sub{p}$; varying $\chi\sub{p}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\chi\sub{p}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
 
 One might be concerned about the nature of resonances following the inclusion of the self-force: true geodesic motion only exists at zeroth order in $\eta$ and, whilst it is a good approximation over short time-scales, for small $\eta$ there is a small disparity. The conservative piece of the self-force induces extra precession which leads to a slight shift in the orbital frequencies \citep{Warburton2012}.\footnote{The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits is preserved albeit slightly deformed (\citealt{Arnold1963}; \citealt[chapter II, section 3.3 d]{Moser1973}). This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply \citep[chapter V, section 1 c]{Moser1973}. This is a further reason why resonances merit an in-depth investigation.} The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
 \begin{figure}%[tbhp]
@@ -115,7 +115,7 @@ One might be concerned about the nature of resonances following the inclusion of
 \includegraphics[width=0.6\textwidth]{./images/Fig_ad_vs_inst_wibble}
 \caption{Evolution of the frequency ratio $\nu = \Omega_r/\Omega_\theta$ under both adiabatic (dashed line) and instantaneous evolutions (solid line). The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of \citet{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$, $\eta = 10^{-6}$ and $a_\ast = 0.9$, the initial orbital parameters are $p = 10 M_\bullet$, $e = 0.7$ and $\cos \iota = 0.2$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M_\bullet$. Data courtesy of Robert Cole.}\label{fig:wibbles}
 \end{figure}
-However, there shall be a time span when the frequencies are consistently close to being commensurate. During this time the trajectory appears similar to a resonant trajectory, filling only a small region of the parameter space. It is this time period that is of interest for transient resonances \citep{Bosley1992}.
+However, there shall be a time span when the frequencies are consistently close to being commensurate. During this time, the trajectory appears similar to a resonant trajectory, filling only a small region of the parameter space. It is this time period that is of interest for transient resonances \citep{Bosley1992}.
 
 %\subsection{Self-force model}
 
@@ -218,7 +218,7 @@ The two time-scales are equivalent. We preferentially use $\tau\sub{res}$ to den
 Since we shall be considering Fourier decompositions, in anticipation of future results, we also define a time-scale for the $s$-th resonant frequency harmonic
 \begin{align}
 %\tau_{\mathrm{pres},\,s} = {} & \dfrac{2\pi}{|s\Omega(t)|};\\
-\tau_{\mathrm{res},\,s} = {} & \left[\dfrac{2\pi}{\left|\langle s\dot{\Omega}(0)\rangle_{q'}\right|}\right]^{1/2}.
+\tau_{\mathrm{res},\,s} = {} & \left[\dfrac{2\pi}{\left|s\langle \dot{\Omega}(0)\rangle_{q'}\right|}\right]^{1/2}.
 \label{eq:T-res-s}
 \end{align}
 This assumes that $s$ is a non-zero integer.
@@ -227,7 +227,7 @@ This assumes that $s$ is a non-zero integer.
 
 The impact of passing through resonance on the evolution can be modelled analytically using asymptotic expansions \citep{Gair2012}. Solutions for the motion are constructed far away from resonance and these are matched to a transition region in the vicinity of resonance \citep{Kevorkian1971,Bosley1992}. By comparing the matched solution, which incorporates the effects of resonance, with the results of an adiabatic evolution, it is possible to estimate the discrepancy in the orbital parameters. This determines the difference in the orbital phase between the two approaches. If this error is sufficiently small, then it is safe to ignore the effects of the resonance; however, only a small difference is needed to impact the subsequent waveform, since the error accumulates over the subsequent observation of $\sim \order{\eta^{-1}}$ cycles \citep{Flanagan2012}. We derive formulae which can be used to calculate the discrepancy in the orbital parameters.
 
-The following derivation is based upon the analysis of \citet{Kevorkian1987}.\footnote{The same theory underpins the analysis of \citet{Hinderer2008}, but this explicitly ignores resonances.} Small adjustments have been made to adapt to the specific problem of GW inspiral, but the general argument is unchanged.
+The following derivation is based upon the analysis of \citet{Kevorkian1987}.\footnote{The same two time-scale theory underpins the analysis of \citet{Hinderer2008}, but this explicitly ignores resonances.} Small adjustments have been made to adapt to the specific problem of GW inspiral, but the general argument is unchanged.
 
 We model the system using action--angle variables. We are only concerned with the $r$ and $\theta$ motions, so we have a two-dimensional system. We perform a canonical transformation  to isolate the resonant combination $q = n_r q_r - n_\theta q_\theta$ \citep{Bosley1992}. This becomes one of the new angle variables, the other variable $q'$ can be either $q_r$ or $q_\theta$ (as, on resonance, varying one necessarily changes the other). We use $J$ as the conjugate action variable to $q$ and $\omega = n_r \omega_r - n_\theta \omega_\theta$ as its frequency. Similarly, we use $J'$ as the action variable conjugate to $q'$. The system evolves through resonance slowly, on an evolution time-scale, so we parameterize it in terms of a slow time parameter
 \begin{equation}
@@ -249,7 +249,7 @@ Using the slow time, the equations of motion (\ref{eq:Mino-E-o-M}) become
 \diff{J}{\widetilde{\lambda}} = {} & \sum_s G_s^{(1)}(J)\exp(is q) + \order{\eta},
 \end{align}
 \end{subequations}
-where we have rewritten the forcing terms as Fourier series and adapted the forcing functions to those appropriate for $q$ and $J$. We shall solve these before resonance and then match these to a solution in the transition regime about resonance.
+where we have rewritten the forcing terms as Fourier series and adapted the forcing functions to those appropriate for $q$ and $J$. We shall solve these before resonance and then match to solutions in the transition regime about resonance.
 
 \subsubsection{Solution before resonance}\label{sec:before-res}
 
@@ -274,7 +274,7 @@ We can also write a series expansion for the frequency, since it is affected by 
 \begin{equation}
 \omega(\lambda;\,\eta) = \omega_0\left(\widetilde{\lambda}\right) + \eta \omega_1\left(\widetilde{\lambda}\right) + \order{\eta^2}.
 \end{equation}
-In the limit of $\eta \rightarrow 0$ we are left with a constant frequency $\omega_0(0)$. The higher order terms are identified below by matching terms in the series expansion of the equations of motion. Taking the two time-scales as independent, we may write the time derivative to $\order{\eta}$ as
+In the limit of $\eta \rightarrow 0$ we are left with a constant frequency $\omega_0(0)$. The higher order terms are identified below by matching terms in the series expansions of the equations of motion. Taking the two time-scales as independent, we may write the time derivative to $\order{\eta}$ as
 \begin{equation}
 \diffop{\lambda} = \omega_0\partialdiffop{\Psi} + \eta\omega_1\partialdiffop{\Psi} + \eta\partialdiffop{\widetilde{\lambda}}.
 \end{equation}
@@ -459,10 +459,10 @@ From \eqnref{omega-series}, we recognise that
 \begin{equation}
 \varpi_1 = \partialdiff{\omega}{\widetilde{\lambda}} = \dfrac{\Gamma^2}{\eta}\left\langle\dot{\Omega}\right\rangle_{q'}.
 \end{equation}
-We have used the averaged form of $\Omega(t)$ as this is appropriate. Using these to adapt equations (\ref{eq:J-1/2}) and (\ref{eq:jumps}), we obtain
+We have used the averaged form of $\dot{\Omega}(t)$ as this is appropriate. Using these to adapt equations (\ref{eq:J-1/2}) and (\ref{eq:jumps}), we obtain
 \begin{align}
-\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{2\pi}{\left|s \langle\dot{\Omega}\rangle_{q'}\right|}}\exp\left[\sgn\left(s\dot{\Omega}\right)\dfrac{i\pi}{4}\right] \\
- = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn\left(s\dot{\Omega}\right)\dfrac{i\pi}{4}\right],
+\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{2\pi}{\left|s \langle\dot{\Omega}\rangle_{q'}\right|}}\exp\left[\sgn\left(s\langle\dot{\Omega}\rangle_{q'}\right)\dfrac{i\pi}{4}\right] \\
+ = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn\left(s\langle\dot{\Omega}\rangle_{q'}\right)\dfrac{i\pi}{4}\right],
 \end{align}
 using \eqnref{T-res-s} and representing the values on resonance of $E$, $L_z$ and $Q$ with $\boldsymbol{\mathcal{I}}_\star$. Schematically, this can be understood as the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$ is equivalent to averaging over all values of $\chi\sub{p}$, and has the same effect as averaging over the $\psi$--$\chi$ $2$-torus; this gives an average discrepancy relative to the adiabatic evolution of
 \begin{equation}
