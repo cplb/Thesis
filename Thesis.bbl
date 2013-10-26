@@ -409,8 +409,10 @@ Bender, R. \textit{et al\textup{.}};
   \textbf{631}(1):280--300; 2005;
   \href{http://arxiv.org/abs/astro-ph/0509839}{\tt arXiv:astro-ph/0509839}.
 
-\bibitem[{Bennett \textit{et al\textup{.}}(2012)}]{Bennett2012}
-Bennett, C.L. \textit{et al\textup{.}}; 2012;
+\bibitem[{Bennett \textit{et al\textup{.}}(2013)}]{Bennett2012}
+Bennett, C.L. \textit{et al\textup{.}};
+  \textit{\href{http://dx.doi.org/10.1088/0067-0049/208/2/20}{The Astrophysical
+  Journal Supplement Series}}; \textbf{208}(2):20(54); 2013;
   \href{http://arxiv.org/abs/1212.5225}{\tt arXiv:1212.5225}.
 
 \bibitem[{Bergmann \textit{et al\textup{.}}(1990)Bergmann, Petrosian \&
@@ -1416,8 +1418,10 @@ Hinderer, T. \& Flanagan, {\'E}.{\'E}.;
   D}}; \textbf{78}(6):064028(39); 2008;
   \href{http://arxiv.org/abs/0805.3337}{\tt arXiv:0805.3337}.
 
-\bibitem[{Hinshaw \textit{et al\textup{.}}(2012)}]{Hinshaw2012}
-Hinshaw, G. \textit{et al\textup{.}}; 2012;
+\bibitem[{Hinshaw \textit{et al\textup{.}}(2013)}]{Hinshaw2012}
+Hinshaw, G. \textit{et al\textup{.}};
+  \textit{\href{http://dx.doi.org/10.1088/0067-0049/208/2/19}{The Astrophysical
+  Journal Supplement Series}}; \textbf{208}(2):19(25); 2013;
   \href{http://arxiv.org/abs/1212.5226}{\tt arXiv:1212.5226}.
 
 \bibitem[{Hioki \& Maeda(2009)}]{Hioki2009a}
@@ -1734,7 +1738,10 @@ Kevorkian, J.; \textit{\href{http://dx.doi.org/10.1137/1029076}{SIAM Review}};
   \textbf{29}(3):391--461; 1987.
 
 \bibitem[{Khoury(2013)}]{Khoury2013}
-Khoury, J.; 2013; \href{http://arxiv.org/abs/1306.4326}{\tt arXiv:1306.4326}.
+Khoury, J.;
+  \textit{\href{http://dx.doi.org/10.1088/0264-9381/30/21/214004}{Classical and
+  Quantum Gravity}}; \textbf{30}(21):214004(16); 2013;
+  \href{http://arxiv.org/abs/1306.4326}{\tt arXiv:1306.4326}.
 
 \bibitem[{Khoury \& Weltman(2004{\natexlab{a}})}]{Khoury2004a}
 Khoury, J. \& Weltman, A.;
