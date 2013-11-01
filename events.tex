@@ -2,7 +2,7 @@
 
 For EMRBs to be a valuable astronomical tool we require the bursts to be loud enough to be detected; to contain sufficient information to improve our knowledge of their source systems, and to have a sufficiently high event rate that we expect to observe them over a mission lifetime. We have previously found that bursts can satisfy the first two requirements: in \chapref{param} we found Galactic bursts can be informative if the periapse distance is $r\sub{p} \lesssim 16 r\sub{g}$ and in \chapref{extragal} we found that the most promising extragalactic bursts could be informative if $r\sub{p} \lesssim 8 r\sub{g}$. We address the final requirement in this chapter.
 
-We calculate the event rate for Galactic bursts. We only model our own Galaxy as it is the only galaxy for which we have reliable astronomical measurements of the parameters which determine the event rate. Previously, the best estimate for the event rate was given by \citet{Hopman2007}; they predicted an event rate for LISA of $\Gamma \sim 1\units{yr^{-1}}$. We follow a similar approach, but make a number of improvements, using NK waveforms to calculate the SNR and building a more detailed model for the GC's nuclear star cluster (NSC). We go on to use our event rate to define an expectation for the amount of information we could learn about the Galaxy's MBH using EMRBs.
+We calculate the event rate for Galactic bursts. We only model our own Galaxy as it is the only galaxy for which we have reliable astronomical measurements of the parameters which determine the event rate. Previously, the best estimate for the event rate was given by \citet{Hopman2007}; they predicted an event rate for LISA of $\Gamma \sim 1\units{yr^{-1}}$. We follow a similar approach, but make a number of improvements: using NK waveforms to calculate the SNR and building a more detailed model for the GC's nuclear star cluster (NSC). We go on to use our event rate to define an expectation for the amount of information we could learn about the Galaxy's MBH using EMRBs.
 
 \section{Calculating event rates}\label{sec:Rates}
 
@@ -141,7 +141,7 @@ the phase space volume element can be expressed as
 \end{equation}
 The number of stars in an element $\dd r\,\dd e\,\dd r\sub{p}$ is
 \begin{equation}
-n(r, e, r\sub{p}) = \dfrac{4\pi^2(GM_\bullet)^2e}{v_r r\sub{p}}f(E).
+n(r, e, r\sub{p})\,\dd r\,\dd e\,\dd r\sub{p} = \dfrac{4\pi^2(GM_\bullet)^2e}{v_r r\sub{p}}f(E)\,\dd r\,\dd e\,\dd r\sub{p}.
 \end{equation}
 
 From this, we can construct the expected number of stars on orbits defined by $\{e, r\sub{p}\}$. The number of stars found in a small radius range $\delta r$ with given orbital properties is
@@ -354,7 +354,7 @@ In \chapref{extragal}, we found that for the most promising extragalactic source
 
 \subsection{Analysing mission posteriors}
 
-We wish to quantify what we could learn over a mission about the MBH's mass and spin. We use the parameter set $\boldsymbol{\lambda}_\bullet = \{\ln (M_\bullet/M_\odot), a_\ast, \cos \Theta\sub{K}, \Phi\sub{K}\}$ as each of these has a uniform prior.\footnote{See \secref{Mod-param} for a discussion of these parameters.}
+We wish to quantify what we could learn over a mission about the Galactic MBH's mass and spin. We use the parameter set $\boldsymbol{\lambda}_\bullet = \{\ln (M_\bullet/M_\odot), a_\ast, \cos \Theta\sub{K}, \Phi\sub{K}\}$ as each of these has a uniform prior.\footnote{See \secref{Mod-param} for a discussion of these parameters.}
 
 The information carried by a burst is encoded in its posterior probability distribution. This can be recovered using an MCMC as explained in \secref{Estimation}. We ran MCMCs for bursts from the first $100$ of our mission realisations that had periapses $r\sub{p} < 16 r\sub{g}$. There were a total of $96$ interesting bursts ($57$ from BHs and $39$ from NSs) across $63$ missions. %\footnote{NSs are less informative than BHs. The CO mass is degenerate with the distance to the source, hence the extragalactic bursts give an indication of what happens when the CO mass is reduced (although changing from a $10 M_\odot$ BH to a $1.4 M_\odot$ NS is not as extreme as moving to another galaxy).}
 Ideally, we would use information from all detectable bursts, but this would be computationally expensive and we do not expect to glean much useful information from orbits with larger periapses.
