@@ -111,7 +111,7 @@ We can now calculate the geodesic trajectory. The orbiting body is assumed to fo
 
 \subsection{The numerical kludge approximation}
 
-NK approximations aim to encapsulate the main characteristics of a waveform by using the exact particle trajectory (ignoring inaccuracies from radiative effects and from the particle's self-force), whilst saving on computational time by using approximate waveform generation techniques.
+NK approximations aim to encapsulate the main characteristics of a waveform by using the exact particle trajectory (in this case, ignoring inaccuracies from radiative effects and from the particle's self-force, although these could be incorporated into a more accurate NK), whilst saving on computational time by using approximate waveform generation techniques.
 
 We build an equivalent flat-space trajectory by identifying the Boyer--Lindquist coordinates with a set of flat-space coordinates. We consider two choices:
 \begin{enumerate}
@@ -160,7 +160,7 @@ Since we are only interested in GWs, we use the transverse-traceless (TT) gauge 
 
 \subsection{The LISA detector}\label{sec:Detector}
 
-The classic LISA design is a three arm, space-borne laser interferometer \citep{Bender1998, Danzmann2003}. The arms form an equilateral triangle that rotates as the system's centre of mass follows a circular, heliocentric orbit, trailing $20^{\circ}$ behind the Earth. eLISA has a similar design, but  has only two arms, which are shorter in length, and trails $9^{\circ}$ behind the Earth \citep{Jennrich2011}.
+The classic LISA design is a three arm, space-borne laser interferometer \citep{Bender1998, Danzmann2003}. The arms form an equilateral triangle that rotates as the system's centre of mass follows a circular, heliocentric orbit, trailing $20^{\circ}$ behind the Earth. eLISA has a similar design, but  has only two arms, which are shorter in length, and initial trails $9^{\circ}$ behind the Earth, drifting further away with time \citep{Jennrich2011}.
 
 To describe the detector configuration, and to transform from the MBH coordinate system to those of the detector, we use three coordinate systems: those of the BH at the GC $x_\bullet^i$; ecliptic coordinates centred at the solar system (SS) barycentre $x_\odot^i$, and coordinates that co-rotate with the detector $x\sub{d}^i$. The MBH's coordinate system and the SS coordinate system are depicted in \figref{BH_SS}. 
 \begin{figure}
@@ -199,7 +199,7 @@ introducing Fourier transforms
 \begin{equation}
 \tilde{g}(f) = \mathscr{F}\{g(t)\} = \intd{-\infty}{\infty}{g(t)\exp(2\pi i ft)}{t},
 \end{equation}
-and $S_{n}(f)$ is the noise spectral density. The inner product is derived in \apref{inner-prod}. The SNR is
+and $S_{n}(f)$ is the one-sided noise spectral density. The inner product is derived in \apref{inner-prod}. The SNR is
 \begin{equation}
 \rho[\boldsymbol{h}] = \innerprod{\boldsymbol{h}}{\boldsymbol{h}}^{1/2}.
 \label{eq:SNR}
@@ -431,7 +431,7 @@ Comparing the total energy fluxes, ratios of the various energies are plotted in
   \centering
    \subfigure[Versus periapsis]{\includegraphics[width=0.475\textwidth]{./images/Fig_Energy_ratio_peri}} \quad
    \subfigure[Versus amount of rotation]{\includegraphics[width=0.475\textwidth]{./images/Fig_Energy_ratio_orbit}}
-    \caption{Ratios of energies as a function of periapsis $r\sub{p}$ and $2\pi$ divided by the total angle of rotation in one orbit $\Delta\phi$ ($2\pi/\Delta\phi = 1$ for a Keplerian orbit). The solid line shows the ratio of the numerical kludge and Martel energies $E\sub{NK}/E\sub{M}$; the dashed line shows the ratio of the NK energy calculated using only the mass quadrupole term and the Martel energy $E\sub{NK(Q)}/E\sub{M}$; the dot--dashed line shows the ratio of the quadrupole and quadrupole--octupole NK energies $E\sub{NK(Q)}/E\sub{NK}$, and the dotted line shows the ratio of the Peters and Mathews and quadrupole NK energies $E\sub{PM}/E\sub{NK(Q)}$. The spots show the mapping between the two abscissa scales. Compare with figure 4 of \citet{Gair2005}.}
+    \caption{Ratios of energies as a function of periapsis $r\sub{p}$ and $2\pi$ divided by the total angle of rotation in one orbit $\Delta\phi$ ($2\pi/\Delta\phi = 1$ for a Keplerian orbit). The solid line shows the ratio of the numerical kludge and Martel energies $E\sub{NK}/E\sub{M}$; the dashed line shows the ratio of the NK energy calculated using only the mass quadrupole term and the Martel energy $E\sub{NK(Q)}/E\sub{M}$; the dot--dashed line shows the ratio of the quadrupole and quadrupole--octupole NK energies $E\sub{NK(Q)}/E\sub{NK}$, and the dotted line shows the ratio of the Peters and Mathews and quadrupole NK energies $E\sub{PM}/E\sub{NK(Q)}$. The spots show the mapping between the two abscissa scales. The horizontal dotted line marks a ratio of unity. Compare with figure 4 of \citet{Gair2005}.}
   \label{fig:Energy_ratio}
 \end{figure}
 We introduce an additional energy here, the quadrupole NK energy $E\sub{NK(Q)}$. This allows easier comparison with the Peters and Mathews energy which includes only quadrupole radiation. It can be calculated in three ways:
@@ -455,7 +455,7 @@ where
 \begin{equation}
 w^2 = r^3 - \dfrac{L_z^2}{2M_\bullet}r^2 + (L_z - a)^2r;
 \end{equation}
-$L_z$ is the specific angular momentum about the $z$-axis; $a$ is the spin parameter, and we have adopted units with $G = c = 1$. We shall find it useful to define
+$L_z$ is the specific angular momentum about the $z$-axis; $a$ is the spin parameter ($a = 0$ for \figref{Energy_ratio}, where we are considering Schwarzschild spacetime), and we have adopted units with $G = c = 1$. We shall find it useful to define
 \begin{equation}
 r_\pm = M_\bullet \pm \sqrt{M_\bullet^2 - a^2},
 \end{equation}
@@ -481,7 +481,7 @@ where $\Pi(n|m) = \int_{0}^{\pi/2}{\dd\vartheta/(1-n\sin^2\vartheta)\sqrt{1-m\si
 \end{equation}
 where $K(m) = \int_{0}^{\pi/2}{\dd\vartheta/\sqrt{1-m\sin^2\vartheta}}$ is the complete elliptic integral of the first kind.
 
-The ratios all tend towards one in the weak field, as required, but differences become more pronounced in the strong field. The NK energy is larger than the Peters and Mathews result $E\sub{PM}$. This behaviour has been seen before for high eccentricity orbits about a non-spinning BH \citep{Gair2005}. It may be explained by considering the total path length for the different orbits: the Peters and Mathews spectrum assumes a Keplerian orbit, the orbit in Kerr geometry rotates more than this. The greater path length leads to increased emission of GWs and a larger energy flux. Our bead must travel further along its wire. A good proxy for the path length is the angle of rotation $\Delta\phi$; this is $2\pi$ for a Keplerian orbit, in Kerr the angle should be $2\pi$ in the limit of an infinite periapsis, whereas for a periapsis small enough that the orbit shows zoom--whirl behaviour, the total angle may be many times $2\pi$. There is a reasonable correlation between the amount of rotation $2\pi/\Delta\phi$ and the ratio of energies.
+The ratios all tend towards one in the weak field, as required, but differences become more pronounced in the strong field. The NK energy is larger than the Peters and Mathews result $E\sub{PM}$. This behaviour has been seen before for high eccentricity orbits about a non-spinning BH \citep{Gair2005}. It may be explained by considering the total path length for the different orbits: the Peters and Mathews spectrum assumes a Keplerian orbit, the orbit in Kerr geometry rotates more than this. The greater path length leads to increased emission of GWs and a larger energy flux. Our bead must travel further along its wire. A good proxy for the path length is the angle of rotation $\Delta\phi$; this is $2\pi$ for a Keplerian orbit, in Kerr (and Schwarzschild) the angle should be $2\pi$ in the limit of an infinite periapsis, whereas for a periapsis small enough that the orbit shows zoom--whirl behaviour, the total angle may be many times $2\pi$. There is a reasonable correlation between the amount of rotation $2\pi/\Delta\phi$ and the ratio of energies.
 
 Error in the NK energy compared with the time-domain BH perturbation theory results of Martel comes from two sources: the neglecting of higher order multipole contributions and the ignoring of background curvature. The contribution of the former can be estimated by looking at the difference in the NK energy by including the current quadrupole and mass octupole terms. From \figref{Energy_ratio} we see that these terms give a negligible contribution in the weak field, but the difference is $\sim20\%$ in the strong field. This explains why the Martel energy $E\sub{M}$ is greater in the strong field, as it includes contributions from all multipoles. Neglecting the background curvature increases the NK energy relative to $E\sub{M}$. This partially cancels out the error introduced by not including higher order terms: this accidentally leads to $E\sub{NK(Q)}$ being more accurate than $E\sub{NK}$ for $r\sub{p} \gtrsim 10 r\sub{g}$ \citep{Tanaka1993}.
 

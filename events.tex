@@ -319,6 +319,16 @@ Only BHs and NSs contribute to the event rate significantly. Only MS stars have 
 
 The overall rates are similar to those presented in \citet{Hopman2007}. The MS rate is lower because of a larger collisional cut-off. This also influences the WD rate, but the overall rate is little changed. The NS rate is enhanced because of the inclusion of bursts from inspiralling objects. The physics for BHs is least changed; the (small) difference in the event rate is partly a consequence of our more realistic SNRs.
 
+The distribution of SNRs for the set of detectable ($\rho > 10$) bursts is shown in \figref{SNR-hist}.
+\begin{figure}%[ht]
+\centering
+   \includegraphics[width=0.6\textwidth]{./images/Fig_Detect_SNR_hist}
+\caption{Histogram showing the SNR distribution of the detectable bursts from the $2 \times 10^4$ LISA realisations. The bins are uniformly spaced in $\log\rho$ with width $0.25\units{dex}$.}
+\label{fig:SNR-hist-eLISA}
+\end{figure}
+The median SNR across all the detectable bursts is $\rho \simeq 279$ ($\log\rho \simeq 2.44$). The distribution extends to extremely loud events, although these are rare. The largest SNR from the set was $\rho \simeq 4.48 \times 10^5$ ($\log\rho \simeq 5.65$).
+
+
 This analysis can be repeated for eLISA. We switch the detector noise curves and change from using \eqnref{SNR-power-law} to \eqnref{SNR-power-law-eLISA} to determine the upper cut-off for $\mathcal{N}_{2\units{yr}}\super{int}$. The results are shown in \tabref{eLISA-Rates}.
 \begin{table}\footnotesize
 \centering
@@ -339,10 +349,19 @@ Again, the two approaches are in good agreement. The total number of events per 
 \begin{figure}%[ht]
 \centering
    \includegraphics[width=0.6\textwidth]{./images/Fig_Total_event_hist_eLISA}
-\caption{Calculated number of detectable EMRBs over a $2\units{yr}$ eLISA mission. The histogram shows the number of events for $2 \times 10^4$ realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_{2\units{yr}}\super{int}$.}
+\caption{Calculated number of detectable EMRBs over a $2\units{yr}$ eLISA mission. The histogram shows the number of events for $2 \times 10^4$ mission realisations. The points show a Poisson distribution with a mean set by $\mathcal{N}_{2\units{yr}}\super{int}$.}
 \label{fig:eLISA-Event-no}
 \end{figure}
 The event rate is lower than for LISA. The MS and WD rates are much reduced. This is because the inner cut-off extends to the limit of detectability. NSs and BHs are less affected by the inner cut-offs, hence their reduction only reflects the loss in sensitivity when switching from LISA to eLISA. The total event rate, being dominated by BHs and NSs, shares a comparable reduction, being around $60\%$ of the LISA rate.
+
+The distribution of SNRs for bursts detectable with eLISA is shown in \figref{SNR-hist-eLISA}.
+\begin{figure}%[ht]
+\centering
+   \includegraphics[width=0.6\textwidth]{./images/Fig_Detect_SNR_hist_eLISA}
+\caption{Histogram showing the SNR distribution of the detectable bursts from the $2 \times 10^4$ eLISA mission realisations. The bins are uniformly spaced in $\log\rho$ with width $0.25\units{dex}$.}
+\label{fig:SNR-hist}
+\end{figure}
+The median SNR across all the detectable bursts is $\rho \simeq 140$ ($\log\rho \simeq 2.15$). The distribution does not incorporate as many loud events as with LISA and there is a more pronounced decline with increasing SNR. The largest SNR was $\rho \simeq 4.61 \times 10^4$ ($\log\rho \simeq 4.66$).
 
 \subsection{Extragalactic event rate}\label{sec:extragal-events}
 
@@ -359,7 +378,7 @@ We wish to quantify what we could learn over a mission about the Galactic MBH's 
 The information carried by a burst is encoded in its posterior probability distribution. This can be recovered using an MCMC as explained in \secref{Estimation}. We ran MCMCs for bursts from the first $100$ of our mission realisations that had periapses $r\sub{p} < 16 r\sub{g}$. There were a total of $96$ interesting bursts ($57$ from BHs and $39$ from NSs) across $63$ missions. %\footnote{NSs are less informative than BHs. The CO mass is degenerate with the distance to the source, hence the extragalactic bursts give an indication of what happens when the CO mass is reduced (although changing from a $10 M_\odot$ BH to a $1.4 M_\odot$ NS is not as extreme as moving to another galaxy).}
 Ideally, we would use information from all detectable bursts, but this would be computationally expensive and we do not expect to glean much useful information from orbits with larger periapses.
 
-During an individual mission there may be either zero, one or multiple bursts of interest. In the first case, we learn nothing. In the second, we have only to consider the posterior from our MCMC. In the third, we must combine the posteriors of all the bursts. This is easy in theory: as the priors are uniform we have only to multiply the individual posteriors,
+During an individual mission there may be either zero, one or multiple bursts of interest. In the first case, we learn nothing.\footnote{An absence of bursts does tell us something about the distribution of COs in the NSC; however, with our current state of knowledge, detecting no bursts is not surprising, therefore we have no need to update this.} In the second, we have only to consider the posterior from our MCMC. In the third, we must combine the posteriors of all the bursts. This is easy in theory: as the priors are uniform we have only to multiply the individual posteriors,
 \begin{equation}
 p(\boldsymbol{\lambda}_\bullet|\{\boldsymbol{s}_i(t)\}\sub{mission}) = \prod_i p(\boldsymbol{\lambda}_\bullet|\boldsymbol{s}_i(t)),
 \end{equation}
@@ -405,7 +424,7 @@ The relative entropy is perfect for our purpose. It is zero when we do not obser
 
 There is one complication in using the relative entropy. We have used an improper prior for $\ln (M_\bullet/M_\odot)$; it is uniform over the entire real line and so cannot be normalised. As an alternative, we can use a Gaussian with parameters set by the current observations \citep{Gillessen2009}. The relative entropy then compares constraints from bursts with those from observing stellar motions.\footnote{Whilst this is a useful comparison, it does mean that the results are specific to the current state of knowledge and cannot be simply translated should we obtain updated measurements.}
 
-In practice, if we were trying to infer the mass of the MBH, we would combine all our data together to form a best estimate. Then a positive entropy would indicate that the final posterior is narrower than the current observational distribution. We do not incorporate our current knowledge of the MBH mass into our prior here because we are interested in what information is contained in EMRBs alone. Therefore, our posterior from EMRBs can be broader than this observational prior. In this case the relative entropy can still be positive (since the distributions are different) even though we are not gaining information. In these cases we set the entropy to zero by hand, as we have not improved our relative state of knowledge.
+In practice, if we were trying to infer the mass of the MBH, we would combine all our data together to form a best estimate. Then a positive entropy would indicate that the final posterior is narrower than the current observational distribution. We do not incorporate our current knowledge of the MBH mass into our prior here because we are interested in what information is contained in EMRBs alone. Therefore, our posterior from EMRBs can be broader than this observational prior. In this event, the relative entropy can still be positive (since the distributions are different) even though we are not gaining information. In these cases we set the entropy to zero by hand, as we have not improved our relative state of knowledge.\footnote{Bursts that are not informative with regards to the MBH mass are primarily from orbits with $r\sub{p} \gtrsim 8 r\sub{g}$ and have $\rho \lesssim 300$.}
 
 The entropies calculated from multiple burst posteriors may show a similar bias to the distribution widths. This would reduce the value; hence, we use the largest calculated entropy. However, the entropy appears much less sensitive to the choice of the $k$-d tree used for the multiplication than the distribution widths. %The entropies corresponding to the distributions in \figref{bias} differ only by $0.04\units{nats}$, less than $1\%$ of the value.
 
@@ -416,7 +435,7 @@ The entropies are well correlated with the logarithm of the distribution widths 
    \subfigure[{Spin magnitude}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_2}} \\
    \subfigure[{Cosine of polar angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_3}} \quad
    \subfigure[{Azimuthal angle}]{\includegraphics[width=0.475\textwidth]{./images/Fig_mission_entropy_4}}
-\caption{Cumulative proportion of mission realisations that produced posteriors with relative entropies larger than the abscissa value. Here, $H_{\lambda_\bullet^a} \equiv H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))$}\label{fig:H-ent}
+\caption{Cumulative proportion of mission realisations that produced posteriors with relative entropies larger than the abscissa value. Here, $H_{\lambda_\bullet^a} \equiv H(p(\lambda_\bullet^a)|q(\lambda_\bullet^a))$.}\label{fig:H-ent}
 \end{figure}
 They closely mirror those in \figref{Widths} (but the scale on the abscissa axis is now linear). There is a clustering at small entropies; the largest entropies are $\sim 13\units{nats}$ for $\ln(M_\bullet/M_\odot)$ and $\sim 15\units{nats}$ for the other parameters.
 
@@ -432,7 +451,7 @@ Taking the average across all $100$ mission realisations, we can calculate the e
   $\Phi\sub{K}$ & 3.7 , 0.4 \\
   \bottomrule
 \end{tabular}
-  \caption{Relative entropies for the four MBH parameters averaged over $100$ mission realisations. The quoted uncertainties are just the standard errors calculated from the scatter of entropies and do not include any of the other uncertainties.}\label{tab:entropies}
+  \caption{Relative entropies for each of the four MBH parameters averaged over $100$ mission realisations. The quoted uncertainties are just the standard errors calculated from the scatter of entropies and do not include any of the other uncertainties.}\label{tab:entropies}
 \end{table}
 The typical entropy is about $3 \units{nats}$; this corresponds to an improvement in the precision to which we know parameters by a factor of approximately $20$.
 

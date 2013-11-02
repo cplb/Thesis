@@ -58,7 +58,7 @@ Finally, there is a third version of $f(R)$-gravity: metric-affine $f(R)$-gravit
 
 We restrict our attention to metric $f(R)$-gravity. This is preferred as the Palatini formalism has undesirable properties: static spherically symmetric objects described by a polytropic equation of state are subject to a curvature singularity \citep{Barausse2008b, Barausse2008a, DeFelice2010}. Varying the action with respect to the metric $g^{\mu\nu}$ produces
 \begin{align}
-\delta S_{f(R)} = {} & \recip{16\pi G}\int\left\{f'(R)\sqrt{-g}\left[R_{\mu\nu} - \nabla_\mu\nabla_\nu\ + g_{\mu\nu}\Box\right] \hphantom{\dfrac{0}{0}} \vphantom{\dfrac{0}{0}} - f(R)\recip{2}\sqrt{-g}g_{\mu\nu}\right\}\delta g^{\mu\nu}\,\dd^4x,
+\delta S_{f(R)} = {} & \recip{16\pi G}\int\left\{f'(R)\sqrt{-g}\left[R_{\mu\nu} - \nabla_\mu\nabla_\nu\ + g_{\mu\nu}\Box\right] - f(R)\recip{2}\sqrt{-g}g_{\mu\nu}\right\}\delta g^{\mu\nu}\,\dd^4x,
 \end{align}
 where $\Box = g^{\mu\nu}\nabla_\mu\nabla_\nu$ is the d'Alembertian and a prime denotes differentiation with respect to $R$.
 
@@ -561,7 +561,7 @@ as in GR, and for the point mass, but
 R^{(1)} = {} & -6 G M \dfrac{\exp(- \Upsilon r)}{r}\left[\dfrac{\Upsilon L\cosh(\Upsilon L) - \sinh(\Upsilon L)}{\Upsilon L^3}\right] \nonumber \\*
  = {} &  -6 G M \dfrac{\exp(- \Upsilon r)}{r}\Upsilon^2\Xi(\Upsilon L),
 \end{align}
-defining $\Xi(\Upsilon L)$ in the last line.\footnote{$\Xi(0) = 1/3$ is the minimum of $\Xi(\Upsilon L)$.} The metric perturbation thus has non-zero first-order elements \citep{Stelle1978, Capozziello2009b, Stabile2010}
+defining $\Xi(\Upsilon L)$ in the last line.\footnote{$\Xi(0) = 1/3$ is the minimum of $\Xi(\Upsilon L)$ and recovers the result for a point mass.} The metric perturbation thus has non-zero first-order elements \citep{Stelle1978, Capozziello2009b, Stabile2010}
 \begin{equation}
 h_{00} = {} -\dfrac{2 G M}{r} \left[1 + \exp(- \Upsilon r)\Xi(\Upsilon L)\right], \quad
 h_{ij} = {} -\dfrac{2 G M}{r} \left[1 - \exp(- \Upsilon r)\Xi(\Upsilon L)\right]\delta_{ij},
@@ -657,11 +657,11 @@ where we have linearised in $J$, as appropriate for the slow-rotation limit. Wit
  = {} & V(\widetilde{r},\theta,E,L_z).
 \label{eq:rdot}
 \end{align}
-To compute the epicyclic frequency we imagine the orbit is perturbed by a small amount, while $E$ and $L_z$ are unchanged.\footnote{It is not possible for the orbit to be perturbed without changing the energy or angular momentum. However, these corrections are quadratic in the amplitude of the perturbation, and so can be ignored at linear order.} For radial perturbations $\widetilde{r} = \overline{r}(1 + \delta)$, where $\overline{r}$ is the radius of the unperturbed orbit, the orbit undergoes small oscillations with frequency
+To compute the epicyclic frequency we imagine the orbit is perturbed by a small amount, while $E$ and $L_z$ are unchanged.\footnote{It is not possible for the orbit to be perturbed without changing the energy or angular momentum. However, these corrections are quadratic in the amplitude of the perturbation, and so can be ignored at linear order.} For radial perturbations $\widetilde{r} = \overline{r}(1 + \epsilon)$, where $\overline{r}$ is the radius of the unperturbed orbit, the orbit undergoes small oscillations with frequency
 \begin{equation}
 \dot{t}^2\Omega\sub{rad}^2 = -\recip{2} \left. \partialdiff{^2 V}{\widetilde{r}^{\,2}}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
 \end{equation}
-Small vertical perturbations $\theta = \pi/2 + \delta$ oscillate with frequency
+Small vertical perturbations $\theta = \pi/2 + \epsilon$ oscillate with frequency
 \begin{equation}
 \dot{t}^2\Omega\sub{vert}^2 = -\recip{2} \dfrac{B(\overline{r})}{\overline{r}^2} \left. \partialdiff{^2 V}{\theta^2}\right|_{\overline{r},\,\theta\,=\,\pi/2\,}.
 \end{equation}
@@ -787,7 +787,7 @@ There are non-linear signatures of $f(R)$-gravity that may be observable with le
 
 \subsection{Planetary precession}
 
-The epicyclic frequencies derived in \secref{Epicycle} can be used for the classic test of planetary precession in the Solar System.\footnote{Since the Sun is an extended body, we do not have to worry about BH solutions being identical in GR and $f(R)$-gravity here.} Radial motion perturbs the orbit into an ellipse. The amplitude of our perturbation $\delta$ gives the eccentricity $e$ of the ellipse \citep{Kerner2001aJr}. Unless $\omega_0 = \Omega\sub{rad}$ the epicyclic motion is asynchronous with the orbital motion: there is periapse precession. In one revolution the ellipse precesses about the focus by
+The epicyclic frequencies derived in \secref{Epicycle} can be used for the classic test of planetary precession in the Solar System.\footnote{Since the Sun is an extended body, we do not have to worry about BH solutions being identical in GR and $f(R)$-gravity here.} Radial motion perturbs the orbit into an ellipse. The amplitude of our perturbation $\epsilon$ gives the eccentricity $e$ of the ellipse \citep{Kerner2001aJr}. Unless $\omega_0 = \Omega\sub{rad}$ the epicyclic motion is asynchronous with the orbital motion: there is periapse precession. In one revolution the ellipse precesses about the focus by
 \begin{equation}
 \varpi = 2\pi\left(\dfrac{\omega_0}{\Omega\sub{rad}} - 1\right)
 \end{equation}

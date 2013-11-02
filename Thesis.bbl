@@ -1,4 +1,4 @@
-\begin{thebibliography}{586}
+\begin{thebibliography}{590}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -662,6 +662,13 @@ Centrella, J., Baker, J.G., Kelly, B.J. \& van Meter, J.R.;
   Physics}}; \textbf{82}(4):3069--3119; 2010;
   \href{http://arxiv.org/abs/1010.5260}{\tt arXiv:1010.5260}.
 
+\bibitem[{Chan \textit{et al\textup{.}}(2013)Chan, Psaltis \&
+  {\"O}zel}]{Chan2013}
+Chan, C.k., Psaltis, D. \& {\"O}zel, F.;
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/777/1/13}{The Astrophysical
+  Journal}}; \textbf{777}(1):13(9); 2013;
+  \href{http://arxiv.org/abs/1303.5057}{\tt arXiv:1303.5057}.
+
 \bibitem[{Chandrasekhar(1941{\natexlab{a}})}]{Chandrasekhar1941a}
 Chandrasekhar, S.; \textit{\href{http://dx.doi.org/10.1086/144265}{The
   Astrophysical Journal}}; \textbf{93}(2):285--304; 1941{\natexlab{a}}.
@@ -1189,6 +1196,12 @@ Gillessen, S. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1088/0004-637X/692/2/1075}{The
   Astrophysical Journal}}; \textbf{692}(2):1075--1109; 2009;
   \href{http://arxiv.org/abs/0810.4674}{\tt arXiv:0810.4674}.
+
+\bibitem[{Gillessen \textit{et al\textup{.}}(2013)}]{Gillessen2013}
+Gillessen, S. \textit{et al\textup{.}};
+  \textit{\href{http://dx.doi.org/10.1088/0004-637X/774/1/44}{The Astrophysical
+  Journal}}; \textbf{774}(1):44(7); 2013;
+  \href{http://arxiv.org/abs/1306.1374}{\tt arXiv:1306.1374}.
 
 \bibitem[{Glampedakis(2005)}]{Glampedakis2005}
 Glampedakis, K.;
@@ -2496,6 +2509,12 @@ Psaltis, D., Perrodin, D., Dienes, K.R. \& Mocioiu, I.;
   Review Letters}}; \textbf{100}(9):091101(4); 2008;
   \href{http://arxiv.org/abs/0710.4564}{\tt arXiv:0710.4564}.
 
+\bibitem[{Puls \textit{et al\textup{.}}(2008)Puls, Vink \& Najarro}]{Puls2008}
+Puls, J., Vink, J.S. \& Najarro, F.;
+  \textit{\href{http://dx.doi.org/10.1007/s00159-008-0015-8}{The Astronomy and
+  Astrophysics Review}}; \textbf{16}(3--4):209--325; 2008;
+  \href{http://arxiv.org/abs/0811.0487}{\tt arXiv:0811.0487}.
+
 \bibitem[{Punturo \textit{et al\textup{.}}(2010)}]{Punturo2010}
 Punturo, M. \textit{et al\textup{.}};
   \textit{\href{http://dx.doi.org/10.1088/0264-9381/27/8/084007}{Classical and
@@ -3207,6 +3226,12 @@ Weisberg, J.M., Nice, D.J. \& Taylor, J.H.;
   \textit{\href{http://dx.doi.org/10.1088/0004-637X/722/2/1030}{The
   Astrophysical Journal}}; \textbf{722}(2):1030--1034; 2010;
   \href{http://arxiv.org/abs/1011.0718}{\tt arXiv:1011.0718}.
+
+\bibitem[{Weiss \textit{et al\textup{.}}(2004)Weiss, Hillebrandt, Thomas \&
+  Ritter}]{Weiss2004}
+Weiss, A., Hillebrandt, W., Thomas, H.C. \& Ritter, H.; \textit{{Cox \& Giuli's
+  Principles of Stellar Structure}}; Advances in Astronomy and Astrophysics;
+  Cambridge: Cambridge Scientific Publishers; second edition; 2004.
 
 \bibitem[{White \& Rees(1978)}]{White1978}
 White, S.D.M. \& Rees, M.J.; \textit{Monthly Notices of the Royal Astronomical
