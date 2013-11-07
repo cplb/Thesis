@@ -21,7 +21,7 @@ The relaxation time-scale is set by purely gravitational interactions. In calcul
 
 Chandrasekhar's approach has proved exceedingly successful despite the number of simplifying assumptions inherent in the model which are not strictly applicable to systems such as the Galactic NSC. We will not attempt to fix these deficiencies; the only modification is to substitute the velocity distribution.
 
-Others have built upon the work of Chandrasekhar by considering inhomogeneous stellar distributions, via perturbation theory \citep{Lynden-Bell1972,Tremaine1984,Weinberg1986}; modelling energy transfer as anomalous dispersion, which adds higher order moments to the transfer probability \citep{Bar-Or2012}, or using the tools of linear response theory and the fluctuation-dissipation theory \citep[chapter 7]{Landau1958}, which allows relaxation of certain assumptions, such as homogeneity \citep{Bekenstein1992,Maoz1993,Nelson1999}. We will not attempt to employ such sophisticated techniques.
+Others have built upon the work of Chandrasekhar by considering inhomogeneous stellar distributions, via perturbation theory \citep{Lynden-Bell1972,Tremaine1984,Weinberg1986}; modelling energy transfer as anomalous dispersion, which adds higher-order moments to the transfer probability \citep{Bar-Or2012}, or using the tools of linear response theory and the fluctuation-dissipation theory \citep[chapter 7]{Landau1958}, which allows relaxation of certain assumptions, such as homogeneity \citep{Bekenstein1992,Maoz1993,Nelson1999}. We will not attempt to employ such sophisticated techniques.
 
 \subsection{Chandrasekhar's change in energy}
 
@@ -170,7 +170,7 @@ For the average of $\Delta E^2$, we replace $\ln\left(qv_2^2\right)$ by a suitab
  \Beta\left(\dfrac{v^2}{2\sigma^2};3-p_{M'},1+p_{M'}\right)}{v} \right. \nonumber \\* 
  {} & + \left. \intd{\sqrt{2}\sigma}{\infty}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-7/2} \beta\left(\dfrac{v^2}{2\sigma^2};p_M\right) \Beta\left(3-p_M,1+p_M\right)}{v} \right] \delta t,
 \end{align}
-where we have omitted the arguments of the hypergeometric function for brevity.\footnote{The arguments are given in \eqnref{w-less-1}.} The high velocity integral can be performed without difficulty, but the low velocity piece is more formidable. Progress can be made by making a series expansion in $v^2/2\sigma^2$. Retaining terms to third order approximates the integrand to no worse than $10\%$, with good agreement across most of the integration range. The result may be condensed into a simpler form by approximating it as a quadratic in $p_M$ and $p_{M'}$, which introduces less than $2\%$ further error. After this manipulation
+where we have omitted the arguments of the hypergeometric function for brevity.\footnote{The arguments are given in \eqnref{w-less-1}.} The high-velocity integral can be performed without difficulty, but the low-velocity piece is more formidable. Progress can be made by making a series expansion in $v^2/2\sigma^2$. Retaining terms to third order approximates the integrand to no worse than $10\%$, with good agreement across most of the integration range. The result may be condensed into a simpler form by approximating it as a quadratic in $p_M$ and $p_{M'}$, which introduces less than $2\%$ further error. After this manipulation
 \begin{align}
 \overline{\Delta E^2_{\mathrm{b},\,M'}} \approx {} & \sum_M\dfrac{2^{11/2}}{3}G^2M^2{M'}^2n_\star\sigma\ln\left(\Lambda_{M'}\right) k_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\*
  {} & \times \left[ \varpi\left(p_M,p_{M'}\right) + \iota \left(p_M,p_{M'}\right) \right] \delta t,
@@ -184,14 +184,14 @@ introducing
 \dfrac{\pi}{32}\dfrac{4 + p_{M'} + 12 \left(2 - p_{M'}\right) \ln(2)}{\left(2-p_{M'}\right)^2} & p_M = \recip{2} \end{cases}.
 \end{align}
 
-To calculate the unbound component we use the exact form for the low velocity component and the approximate form of \eqnref{Unbound-approx}: 
+To calculate the unbound component we use the exact form for the low-velocity component and the approximate form of \eqnref{Unbound-approx}: 
 \begin{align}
 \overline{\Delta E^2_{\mathrm{u},\,M'}} = {} & 4\pi\intd{0}{\infty}{\Delta E^2\sub{u} v^2 p_{\mathrm{b},\,M'}(v)}{v} \\
  \approx {} & \sum_M\dfrac{32}{3}\dfrac{G^2M^2{M'}^2n_\star}{\sigma^2}\ln\left(\Lambda_{M'}\right) C_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\*
  {} & \times \left\{ \intd{0}{\sqrt{2}\sigma}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-2}\Beta\left(\dfrac{v^2}{2\sigma^2};3-p_{M'},1+p_{M'}\right)}{v} \right. \nonumber \\* 
  {} & + \left. \intd{\sqrt{2}\sigma}{\infty}{v^2\left(\dfrac{v^2}{2\sigma^2}\right)^{p_{M'}-2} \Xi\left[\Xi^2 + \left(\dfrac{v^2}{2\sigma^2}\right)^3\right]^{-1/2} \Beta\left(3-p_M,1+p_M\right)}{v} \right\} \delta t;
 \end{align}
-for consistency with the bound case, we have continued to use subscript $M'$. The low velocity integral is of the same form as for calculating $\overline{v^2_M}$ and can be evaluated in terms of beta functions, the high velocity integral can be evaluated in terms of the hypergeometric function \citep[15.6.1]{Olver2010}
+for consistency with the bound case, we have continued to use subscript $M'$. The low-velocity integral is of the same form as for calculating $\overline{v^2_M}$ and can be evaluated in terms of beta functions, the high-velocity integral can be evaluated in terms of the hypergeometric function \citep[15.6.1]{Olver2010}
 \begin{align}
 \overline{\Delta E^2_{\mathrm{u},\,M'}} \approx {} & \sum_M\dfrac{2^{11/2}}{3}G^2M^2{M'}^2n_\star\sigma\ln\left(\Lambda_{M'}\right) C_M \dfrac{(3/2 - p_{M'})\Gamma(p_{M'} + 7/2)}{\Gamma(p_{M'} + 1)} \nonumber \\
  & \times \left[\nu\left(p_{M'}\right) + \Xi\dfrac{\Beta\left(3-p_{M'},1+p_{M'}\right)}{2-p_{M'}}{_2F_1}\left(\recip{2},\dfrac{2-p_{M'}}{3};\dfrac{5-p_{M'}}{3};-\Xi^2\right) \right] \delta t,
@@ -291,7 +291,7 @@ Again there is good agreement.\footnote{\citet*{Freitag2006} found that using a 
 \overline{\tau\sub{R,\,BH}} \simeq 48 \tau\sub{R}\super{Max}.
 \end{equation}
 
-The time-scales for the lighter components are of the order of the Hubble time; the BH time-scale is much longer on account of the higher mean square velocity. This may indicate that the BH population is not fully relaxed \citep[cf.][]{Antonini2011}: there has not been sufficient time for objects to diffuse on to the most tightly bound orbits (in which case, the mean square velocity would be lower). We expect that many of the most tightly bound BHs are not in a relaxed state, since GW inspiral is the dominant effect in determining the profile. This would deplete some of the innermost orbits and lower the mean square velocity for the population. Since we do not consider the collisional disruption of BHs, we do not use $\overline{\tau\sub{R,\,BH}}$ in our model; it therefore has no influence on our results.
+The time-scales for the lighter components are of the order of the Hubble time; the BH time-scale is much longer on account of the higher mean square velocity. This may indicate that the BH population is not fully relaxed \citep[cf.][]{Antonini2011}: there has not been sufficient time for objects to diffuse on to the most tightly bound orbits (in which case, the mean square velocity would be lower). We expect that many of the most tightly bound BHs are not in a relaxed state, since GW inspiral is the dominant effect in determining the profile. This would deplete some of the innermost orbits and lower the mean square velocity for the population. Since we do not consider the collisional disruption of BHs, we do not use $\overline{\tau\sub{R,\,BH}}$ in our model; it, therefore, has no influence on our results.
 
 The long BH time-scale also inevitably includes an artifact of our approximation that the system is homogeneous: in reality the BHs, being more tightly clustered towards the centre, pass through regions with greater density (both because of a higher number density and a greater average object mass). Therefore, we expect the true relaxation time-scale to be reduced. 
 

@@ -106,7 +106,7 @@ Under this change of variables
 The specific energy and angular momentum are given by
 \begin{equation}
 \begin{split}
-E & = \dfrac{v_r^2 + v_\perp^2}{2} - \dfrac{GM_\bullet}{r}; \\
+E & = \dfrac{v_r^2 + v_\perp^2}{2} - \dfrac{GM_\bullet}{r}, \\
 L^2 & = r^2 v_\perp^2.
 \end{split}
 \end{equation}
@@ -130,7 +130,7 @@ rewrite our velocity element as
 \dd^3v \rightarrow \dfrac{\pi e}{v_r r\sub{p}}\left(\dfrac{GM_\bullet}{r}\right)^2\,\dd e \,\dd r\sub{p}.
 \end{equation}
 As a consequence of our assumed spherical symmetry, 
-the volume element is
+the volume element can be written as
 \begin{equation}
 \dd^3r \rightarrow 4\pi r^2 \,\dd r.
 \end{equation}
@@ -206,7 +206,7 @@ Tidal forces from the MBH can disrupt stars. This occurs at the tidal radius
 r\sub{T} \simeq \left(\dfrac{M_\bullet}{M}\right)^{1/3}R_M,
 \label{eq:Tidal}
 \end{equation}
-where $R_M$ is the radius of the star \citep{Hills1975, Rees1988, Kobayashi2004}.\footnote{See \citet{Kesden2012} for a general relativistic treatment.} Any star on an orbit with $r\sub{p} < r\sub{T}$ is disrupted in the course of its orbit. Parameterizing orbits by their periapsis allows us to easily determine which stars should be disrupted. We do not include the full effects of the loss cone \citep{Frank1976, Lightman1977, Cohn1978} as these were not incorporated into the Fokker--Planck calculations \citep{Hopman2009}.\footnote{The loss cone is a region in velocity space where orbits are depleted because stars are disrupted more rapidly than they can be replenished by two-body scattering and is discussed in \apref{loss-cone}.} The effect of the loss cone should be small, only modifying the DF by a logarithmic term \citep{Lightman1977, Bahcall1977, Cohn1978}. Its effects are diluted by resonant relaxation \citep{Hopman2007,Toonen2009,Merritt2011}. Furthermore, the loss cone could be refilled by the wandering within the NSC of the MBH because of perturbations from the inhomogeneities in the stellar potential \citep{Sigurdsson1997,Chatterjee2002,Merritt2007}.
+where $R_M$ is the radius of the star \citep{Hills1975, Rees1988, Kobayashi2004}.\footnote{See \citet{Kesden2012} for a general-relativistic treatment.} Any star on an orbit with $r\sub{p} < r\sub{T}$ is disrupted in the course of its orbit. Parameterizing orbits by their periapsis allows us to easily determine which stars should be disrupted. We do not include the full effects of the loss cone \citep{Frank1976, Lightman1977, Cohn1978} as these were not incorporated into the Fokker--Planck calculations \citep{Hopman2009}.\footnote{The loss cone is a region in velocity space where orbits are depleted because stars are disrupted more rapidly than they can be replenished by two-body scattering and is discussed in \apref{loss-cone}.} The effect of the loss cone should be small, only modifying the DF by a logarithmic term \citep{Lightman1977, Bahcall1977, Cohn1978}. Its effects are diluted by resonant relaxation \citep{Hopman2007,Toonen2009,Merritt2011}. Furthermore, the loss cone could be refilled by the wandering within the NSC of the MBH because of perturbations from the inhomogeneities in the stellar potential \citep{Sigurdsson1997,Chatterjee2002,Merritt2007}.
 
 Tidal disruption is significant for MS stars since they are least dense: calculated in this way, only MS stars are tidally disrupted outside of the MBH's event horizon \citep{Sigurdsson1997}. The tidal radius defines the cut-off for periapsis of high eccentricity ($e \gtrsim 1$) orbits \citep{Lightman1977}.
 
@@ -260,13 +260,13 @@ When comparing with the relaxation time-scale we are comparing rates of change, 
 
 \subsubsection{Collisions}\label{sec:Collision}
 
-As a consequence of the high densities in the NSC, stars may undergo a large number of close encounters with other stars \citep{Cohn1978}. These may lead to their destruction. MS stars, WDs and NSs may be pulled apart by tidal forces if they stray too close to a more massive object. As MS stars are diffuse, they would not tidally disrupt another star \citep{Murphy1991,Freitag2005}. Close encounters would result in some mass transfer; the cumulative effect of $20$--$30$ grazing collisions could destroy an MS star \citep{Freitag2006}. The number of collisions a star undergoes in a time interval $\delta t$ is
+As a consequence of the high densities in the NSC, stars may undergo a large number of close encounters with other stars \citep{Cohn1978}. These may lead to their destruction. MS stars, WDs and NSs may be pulled apart by tidal forces if they stray too close to a more massive object. As MS stars are diffuse, they should not tidally disrupt another star \citep{Murphy1991,Freitag2005}. Close encounters would result in some mass transfer; the cumulative effect of $20$--$30$ grazing collisions could destroy an MS star \citep{Freitag2006}. The number of collisions a star undergoes in a time interval $\delta t$ is
 \begin{equation}
 \delta K = n(r) A v(r,e,r\sub{p})\delta t,
 \end{equation}
 where $A$ is the collisional cross-sectional area. For tidal disruption, where the encounter is with a collapsed object (WD, NS or BH), we set $A = \pi r_{\mathrm{T},\,{M'}}^2$, where $r_{\mathrm{T},\,{M'}}$ is the appropriate tidal radius,
 \begin{equation}
-r\sub{T,\,{M'}} \simeq \left(\dfrac{M'}{M}\right)^{1/3}R_M
+r\sub{T,\,{M'}} \simeq \left(\dfrac{M'}{M}\right)^{1/3}R_M,
 \end{equation}
 for a CO of mass $M'$. For collisions between MS stars, the cross-sectional area is simply the geometric $A = \pi R_\star^2$.\footnote{Here we assume that the relative velocity of the colliding stars is much greater than the escape velocity of the star so we may neglect the effects of gravitational focusing.}
 
@@ -275,7 +275,7 @@ For circular orbits, we can find the radius at which collisions lead to disrupti
 K = 2 A \dfrac{\overline{\tau_{\mathrm{R},\,M}}}{P(r\sub{p},e)}\intd{r\sub{p}}{(1+e)r\sub{p}/(1-e)}{n(r)\dfrac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
 \label{eq:collision-K}
 \end{equation}
-where $P$ is the period of the orbit. Again we set $K = 1$ or $K = 20$, and then numerically solve \eqnref{collision-K} to find the orbits for which stars will be disrupted within $\overline{\tau_{\mathrm{R},\,M}}$. For unbound orbits we are only interested in stars that would become disrupted before their periapse passage, so
+where $P$ is the period of the orbit. Again, we set $K = 1$ or $K = 20$, and then numerically solve \eqnref{collision-K} to find the orbits for which stars will be disrupted within $\overline{\tau_{\mathrm{R},\,M}}$. For unbound orbits we are only interested in stars that would become disrupted before their periapse passage, so
 \begin{equation}
 K = A \intd{r\sub{p}}{r\sub{c}}{n(r)\dfrac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
 \end{equation}
@@ -308,7 +308,7 @@ The calculated numbers of events are shown in \tabref{Rates}.
   \caption{Expected number of events per $2\units{yr}$ LISA mission. $\mathcal{N}_{2\units{yr}}\super{int}$ is an estimate using the average SNR--periapsis scaling, \eqnref{SNR-power-law}, and $\mathcal{N}_{2\units{yr}}\super{run}$ is calculated by averaging results from $2 \times 10^4$ mission realisations.}\label{tab:Rates}
 \end{table}
 The two approaches are in good agreement indicating that the average relation \eqnref{SNR-power-law} is sufficiently accurate for this type of calculation, and that the Schwarzschild radius is a reasonable absolute inner cut-off averaged over all MBH spins. The total number of events per mission is plotted in \figref{Event-no}. 
-This is consistent with being Poisson distributed as expected.
+This is consistent with being Poisson distributed, as expected.
 \begin{figure}%[ht]
 \centering
    \includegraphics[width=0.6\textwidth]{./images/Fig_Total_event_hist}
@@ -326,7 +326,7 @@ The distribution of SNRs for the set of detectable ($\rho > 10$) bursts is shown
 \caption{Histogram showing the SNR distribution of the detectable bursts from the $2 \times 10^4$ LISA realisations. The bins are uniformly spaced in $\log\rho$ with width $0.25\units{dex}$.}
 \label{fig:SNR-hist-eLISA}
 \end{figure}
-The median SNR across all the detectable bursts is $\rho \simeq 279$ ($\log\rho \simeq 2.44$). The distribution extends to extremely loud events, although these are rare. The largest SNR from the set was $\rho \simeq 4.48 \times 10^5$ ($\log\rho \simeq 5.65$).
+The median SNR across all the detectable bursts is $\rho \simeq 279$. The distribution extends to extremely loud events, although these are rare. The largest SNR from the set was $\rho \simeq 4.48 \times 10^5$. % ($\log\rho \simeq 2.44$) ($\log\rho \simeq 5.65$)
 
 
 This analysis can be repeated for eLISA. We switch the detector noise curves and change from using \eqnref{SNR-power-law} to \eqnref{SNR-power-law-eLISA} to determine the upper cut-off for $\mathcal{N}_{2\units{yr}}\super{int}$. The results are shown in \tabref{eLISA-Rates}.
@@ -361,7 +361,7 @@ The distribution of SNRs for bursts detectable with eLISA is shown in \figref{SN
 \caption{Histogram showing the SNR distribution of the detectable bursts from the $2 \times 10^4$ eLISA mission realisations. The bins are uniformly spaced in $\log\rho$ with width $0.25\units{dex}$.}
 \label{fig:SNR-hist}
 \end{figure}
-The median SNR across all the detectable bursts is $\rho \simeq 140$ ($\log\rho \simeq 2.15$). The distribution does not incorporate as many loud events as with LISA and there is a more pronounced decline with increasing SNR. The largest SNR was $\rho \simeq 4.61 \times 10^4$ ($\log\rho \simeq 4.66$).
+The median SNR across all the detectable bursts is $\rho \simeq 140$. The distribution does not incorporate as many loud events as with LISA and there is a more pronounced decline with increasing SNR. The largest SNR was $\rho \simeq 4.61 \times 10^4$. % ($\log\rho \simeq 2.15$) ($\log\rho \simeq 4.66$)
 
 \subsection{Extragalactic event rate}\label{sec:extragal-events}
 
@@ -378,7 +378,7 @@ We wish to quantify what we could learn over a mission about the Galactic MBH's 
 The information carried by a burst is encoded in its posterior probability distribution. This can be recovered using an MCMC as explained in \secref{Estimation}. We ran MCMCs for bursts from the first $100$ of our mission realisations that had periapses $r\sub{p} < 16 r\sub{g}$. There were a total of $96$ interesting bursts ($57$ from BHs and $39$ from NSs) across $63$ missions. %\footnote{NSs are less informative than BHs. The CO mass is degenerate with the distance to the source, hence the extragalactic bursts give an indication of what happens when the CO mass is reduced (although changing from a $10 M_\odot$ BH to a $1.4 M_\odot$ NS is not as extreme as moving to another galaxy).}
 Ideally, we would use information from all detectable bursts, but this would be computationally expensive and we do not expect to glean much useful information from orbits with larger periapses.
 
-During an individual mission there may be either zero, one or multiple bursts of interest. In the first case, we learn nothing.\footnote{An absence of bursts does tell us something about the distribution of COs in the NSC; however, with our current state of knowledge, detecting no bursts is not surprising, therefore we have no need to update this.} In the second, we have only to consider the posterior from our MCMC. In the third, we must combine the posteriors of all the bursts. This is easy in theory: as the priors are uniform we have only to multiply the individual posteriors,
+During an individual mission there may be either zero, one or multiple bursts of interest. In the first case, we learn nothing.\footnote{An absence of bursts does tell us something about the distribution of COs in the NSC; however, with our current state of knowledge, detecting no bursts is not surprising, therefore, we have no need to update this.} In the second, we have only to consider the posterior from our MCMC. In the third, we must combine the posteriors of all the bursts. This is easy in theory: as the priors are uniform we have only to multiply the individual posteriors,
 \begin{equation}
 p(\boldsymbol{\lambda}_\bullet|\{\boldsymbol{s}_i(t)\}\sub{mission}) = \prod_i p(\boldsymbol{\lambda}_\bullet|\boldsymbol{s}_i(t)),
 \end{equation}
