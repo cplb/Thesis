@@ -48,7 +48,7 @@ where an overline represents an ensemble average. Therefore
 \begin{equation}
 \overline{\left\langle x^2\right\rangle} = \intd{0}{\infty}{G(f)}{f}.
 \end{equation}
-If $x(t)$ is a randomly varying signal we can use the ergodic principle to equate a time average with an ensemble average over multiple realisations. Hence $\overline{\left\langle x^2\right\rangle} = \left\langle x^2\right\rangle$ and we can drop the overline.
+If $x(t)$ is a randomly varying signal, we can use the ergodic principle to equate a time average with an ensemble average over multiple realisations. Hence $\overline{\left\langle x^2\right\rangle} = \left\langle x^2\right\rangle$ and we can drop the overline.
 
 The correlation function for a random process is
 \begin{align}
@@ -95,9 +95,9 @@ introducing the short-hand $C_{n,\,ij} \equiv C_n(t_i - t_j)$ and defining the i
 \delta_{jl} = \sum_l C_{n,\,jk}C^{-1}_{kl}.
 \end{equation}
 
-To transform to the continuum (and infinite duration) limit we identify
+To transform to the continuum (and infinite duration) limit, we identify
 \begin{equation}
-\lim_{T \rightarrow \infty; \quad \upDelta t \rightarrow 0} \sum_j \upDelta t \rightarrow \lim_{T \rightarrow \infty} \int_{-T}^{T}\,\dd t_j.
+\lim_{T \rightarrow \infty; \: \upDelta t \rightarrow 0} \sum_j \upDelta t \rightarrow \lim_{T \rightarrow \infty} \int_{-T}^{T}\,\dd t_j.
 \end{equation}
 To change between Kronecker and Dirac deltas
 \begin{equation}
@@ -116,7 +116,7 @@ Using the inverse matrix definition
 \end{align}
 Taking the limit
 \begin{align}
-\exp(-2\pi i f t_k) = {} & \lim_{T \rightarrow \infty; \quad \upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \intd{-T}{T}{\exp(-2\pi ift_j)}{t_j} \intd{-T}{T}{C_n(t_j-t_l)C^{-1}(t_l,t_k)}{t_l} \nonumber \\
+\exp(-2\pi i f t_k) = {} & \lim_{T \rightarrow \infty; \: \upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \intd{-T}{T}{\exp(-2\pi ift_j)}{t_j} \intd{-T}{T}{C_n(t_j-t_l)C^{-1}(t_l,t_k)}{t_l} \nonumber \\
  = {} & \lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \intd{-\infty}{\infty}{C_n(\tau)\exp(-2\pi if\tau)}{\tau} \nonumber\\* % 11pt
  {} & \times \left. \intd{-\infty}{\infty}{C^{-1}(t_l,t_k)\exp(-2\pi if t_l)}{t_l},\right.
 \end{align}
@@ -137,9 +137,9 @@ we have
 This can be rearranged to define $\widetilde{C^{-1}}(f,t_k)$ \citep{Finn1992}.
 
 The term in the exponential in \eqnref{prod_prob} has the limit
-\begin{align}
-\mathcal{H} = {} & \recip{2}\lim_{T \rightarrow \infty; \quad \upDelta t \rightarrow 0} \sum_{j,\,k}C^{-1}_{jk}n_j n_k \nonumber \\
- = {} & \recip{2}\lim_{T \rightarrow \infty; \quad \upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-T}^{T}\,\dd t_j \int_{-T}^{T}\,\dd t_k \, C^{-1}(t_j,t_k) n(t_j)n(t_k) \nonumber \\
+\begin{align};
+\mathcal{H} = {} & \recip{2}\lim_{T \rightarrow \infty; \: \upDelta t \rightarrow 0} \sum_{j,\,k}C^{-1}_{jk}n_j n_k \nonumber \\
+ = {} & \recip{2}\lim_{T \rightarrow \infty; \: \upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-T}^{T}\,\dd t_j \int_{-T}^{T}\,\dd t_k \, C^{-1}(t_j,t_k) n(t_j)n(t_k) \nonumber \\
 % = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2}\int_{-\infty}^{\infty}\,\dd t_j \int_{-\infty}^{\infty}\,\dd t_k \left\{ \intd{-\infty}{\infty}{\widetilde{C^{-1}}(f,t_k)\exp(2\pi if t_j)}{f} \right. \nonumber \\*
 % {} & \times \left. \intd{-\infty}{\infty}{\widetilde{n}(f')\exp(2\pi i f't_j)}{f'}n(t_k)\right\} \nonumber \\
  = {} & \recip{2}\lim_{\upDelta t \rightarrow 0} \recip{(\upDelta t)^2} \int_{-\infty}^{\infty}\,\dd t_k \int_{-\infty}^{\infty}\,\dd f \, \widetilde{C^{-1}}(f,t_k)\widetilde{n}(-f)n(t_k) \nonumber \\

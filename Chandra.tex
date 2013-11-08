@@ -27,8 +27,7 @@ V^2 = {} & v_1^2 + v_2 - 2 v_1 v_2 \cos\theta,
 \end{subequations}
 where $\theta$ is the angle between $\boldsymbol{v}_1$ and $\boldsymbol{v}_2$. The change in energy of the test star during the interaction is
 \begin{align}
-\Delta E = {} & \recip{2} m_2 \left({v'_2}^2 - v_2^2\right)\\
- = {} & \dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\Phi' - \cos\Phi\right),
+\Delta E = {} & \recip{2} m_2 \left({v'_2}^2 - v_2^2\right) = \dfrac{m_1 m_2}{m_1 + m_2}V\sub{g}V\left(\cos\Phi' - \cos\Phi\right),
 \end{align}
 using primed variables for values after the interaction, and unprimed ones for values before. If we project the angle onto the orbital plane
 \begin{equation}
@@ -70,10 +69,10 @@ Thus
 \end{align}
 The integral over $\psi$ is
 \begin{align}
-I(\psi_0) = {} & \intd{0}{\psi_0}{\dfrac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi}}{\psi}\\
+I(\psi_0) = {} & \intd{0}{\psi_0}{\dfrac{\cos^2(\phi-\psi)\sin\psi}{\cos\psi}}{\psi} \nonumber \\
  = {} & \dfrac{\sin 2\phi}{2}\left(\psi_0 - \dfrac{\sin 2\psi_0}{2}\right) - \dfrac{\cos 2\phi}{2}\left(\dfrac{\cos 2\psi_0}{2}\right) - \sin^2\phi\ln(\cos\psi_0).
 \end{align}
-Naively we might think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms,
+Naively, we might think the upper limit for the deflection limit should be $\psi_0 = \pi/2$; however, this would introduce a logarithmic divergence. In actuality there is a physical cut-off, reflecting a finite bound for the maximum impact parameter $D_0$ \citep{Weinberg1986}. This is set by the scale of the system, beyond which scattering is negligible. While the logarithmic term is finite, it is still large, dominating the other terms which are $\order{1}$; we therefore neglect the subdominant terms,
 \begin{equation}
 \Delta E^2(v_1,\theta,\varphi,\Theta) \simeq  4 n(v_1,\theta,\varphi)\dfrac{V\sub{g}^2}{V}G^2m_1^2 m_2^2\cos^2i\sin^2\phi\ln\left(\recip{\cos\psi_0}\right)\,\dd v_1\,\dd\theta\,\dd\varphi\,\dd\Theta\,\delta t.
 \end{equation}
@@ -88,7 +87,7 @@ so that
 \end{equation}
 We are now left with just the velocity variables.
 
-An expression for $\sin^2\Phi$ can be obtained from \eqnref{Vs} and \eqnref{V2s}, after some rearrangement
+An expression for $\sin^2\Phi$ can be obtained from equations \eqref{eq:Vs} and \eqref{eq:V2s}, after some rearrangement
 \begin{equation}
 \dfrac{V_g^2}{V}\sin^2\Phi = \dfrac{v_1^2v_2^2\sin^2\theta}{\left(v_1^2 + v_2^2 - 2v_1 v_2 \cos\theta\right)^{3/2}}.
 \end{equation}
@@ -117,7 +116,7 @@ q = \dfrac{D_0}{G\left(m_1+m_2\right)}.
 \end{equation}
 Using \eqnref{V2s} to rearrange, and then integrating by parts gives
 \begin{align}
-J = {} & \recip{4 v_1 v_2} \intd{V_-}{V_+}{\dfrac{\left(V_+^2 - V^2\right)\left(V^2 - V_-^2\right)}{V^2}\ln\left(1 + q^2V^4\right)}{V} \\
+J = {} & \recip{4 v_1 v_2} \intd{V_-}{V_+}{\dfrac{\left(V_+^2 - V^2\right)\left(V^2 - V_-^2\right)}{V^2}\ln\left(1 + q^2V^4\right)}{V} \nonumber \\
  = {} & \recip{4 v_1 v_2} \left\{\left[\dfrac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V} \ln\left(1 + q^2V^4\right)\right]^{V_+}_{V_-} \right. \nonumber \\* 
  {} & - \left. \vphantom{\left[\dfrac{\left(V_+^2\right)V^2}{3V}\right]^{V_+}_{V_-}} \intd{V_-}{V_+}{\dfrac{3V_+^2V_-^2 + 3\left(V_+^2 + V_-^2\right)V^2 - V^4}{3V}\dfrac{4q^2V^3}{1+ q^2V^4}}{V}\right\};
 \end{align}
@@ -127,16 +126,16 @@ J \simeq \recip{6 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(1 + q^2V
 \end{equation}
 This may be further simplified, reusing the limit of large $q$ previously employed to neglect terms which do not contain its logarithm \citep{Chandrasekhar1941a,Chandrasekhar1941b},
 \begin{align}
-J \simeq {} & \recip{3 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(qV_+^2\right) - \left(3V_+^2 + V_-^2\right)V_-\ln\left(qV_-^2\right)\right] \\
+J \simeq {} & \recip{3 v_1 v_2} \left[\left(3V_-^2 + V_+^2\right)V_+\ln\left(qV_+^2\right) - \left(3V_+^2 + V_-^2\right)V_-\ln\left(qV_-^2\right)\right] \nonumber \\
  \simeq {} & \dfrac{4}{3v_1v_2}\begin{cases}
 \left(v_1^3 + v_2^3\right)\ln\left[q\left(v_1 + v_2\right)^2\right] - \left(v_2^3 - v_1^3\right)\ln\left[q\left(v_1 - v_2\right)^2\right] & v_1 \leq v_2 \\
 \left(v_1^3 + v_2^3\right)\ln\left[q\left(v_1 + v_2\right)^2\right] - \left(v_1^3 - v_2^3\right)\ln\left[q\left(v_1 - v_2\right)^2\right] & v_1 \geq v_2
-\end{cases} \\
+\end{cases} \nonumber \\
  \simeq {} & \dfrac{8}{3}\begin{cases}
 \dfrac{v_2^2}{v_1}\ln\left(\dfrac{v_1 + v_2}{v_2 - v_1}\right) + \dfrac{v_1^2}{v_2}\left[\ln\left(qv_2^2\right) + \ln\left(1 - \dfrac{v_1^2}{v_2^2}\right)\right] & v_1 < v_2 \\
 v_2\left[\ln\left(qv_2^2\right) + \ln 4\right] & v_1 = v_2\\
 \dfrac{v_1^2}{v_2}\ln\left(\dfrac{v_1 + v_2}{v_1 - v_2}\right) + \dfrac{v_2^2}{v_1}\left[\ln\left(qv_2^2\right) + \ln\left(\dfrac{v_1^2}{v_2^2} - 1\right)\right] & v_1 > v_2
-\end{cases} \\
+\end{cases} \nonumber \\
 \approx {} & \dfrac{8}{3}\begin{cases}
 \dfrac{v_1^2}{v_2}\ln\left(qv_2^2\right)\vspace{1.0mm} & v_1 \leq v_2 \\
 \dfrac{v_2^2}{v_1}\ln\left(qv_2^2\right) & v_1 \geq v_2
