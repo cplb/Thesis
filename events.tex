@@ -90,10 +90,11 @@ where $M_1$ and $M_2$ are the masses of the binary's components, and $a\sub{B}$ 
 We characterise orbits by their eccentricity $e$ and periapse radius $r\sub{p}$. The latter, unlike the semimajor axis, is always well defined regardless of eccentricity. For Keplerian orbits, the energy $E$ and angular momentum $L$ per unit mass are entirely characterised by these parameters
 \begin{equation}
 \label{eq:Energy_ecc}
-\begin{split}
-E & = -\dfrac{GM_\bullet(1 - e)}{2r\sub{p}}; \\
-L^2 & = GM_\bullet(1 + e)r\sub{p}.
-\end{split}
+%\begin{split}
+%E & = -\dfrac{GM_\bullet(1 - e)}{2r\sub{p}}, \\
+%L^2 & = GM_\bullet(1 + e)r\sub{p}.
+%\end{split}
+E = -\dfrac{GM_\bullet(1 - e)}{2r\sub{p}}, \quad L^2 = GM_\bullet(1 + e)r\sub{p}.
 \end{equation}
 The DF is defined per element of phase space: it is necessary to change variables from position and velocity to eccentricity and periapsis. We decompose the velocity into three orthogonal components: radial $v_r$, azimuthal $v_\phi$ and polar $v_\theta$. We assume that the NSC is spherically symmetric \citep{Genzel2003, Schodel2007}, therefore we are interested in the combination
 \begin{equation}
@@ -105,10 +106,11 @@ Under this change of variables
 \end{equation}
 The specific energy and angular momentum are given by
 \begin{equation}
-\begin{split}
-E & = \dfrac{v_r^2 + v_\perp^2}{2} - \dfrac{GM_\bullet}{r}, \\
-L^2 & = r^2 v_\perp^2.
-\end{split}
+%\begin{split}
+%E & = \dfrac{v_r^2 + v_\perp^2}{2} - \dfrac{GM_\bullet}{r}, \\
+%L^2 & = r^2 v_\perp^2.
+%\end{split}
+E = \dfrac{v_r^2 + v_\perp^2}{2} - \dfrac{GM_\bullet}{r}, \quad L^2 = r^2 v_\perp^2.
 \end{equation}
 Combining these with our earlier expressions in terms of $e$ and $r\sub{p}$,
 \begin{align}
@@ -117,9 +119,9 @@ v_r^2 = {} & GM_\bullet\left[\dfrac{2}{r} - \dfrac{(1 - e)}{r\sub{p}} - \dfrac{(
 \end{align}
 From the latter we can verify that the turning points of an orbit occur at
 \begin{equation}
-r = r\sub{p}, \quad \dfrac{1+e}{1-e}r\sub{p};
+r = r\sub{p}, \quad \dfrac{1+e}{1-e}r\sub{p},
 \end{equation}
-the periapse is the only turning point for orbits with $e > 1$. Since we now have expressions for $\{v_r, v_\perp\}$ in terms of $\{e, r\sub{p}\}$, we can 
+the second is the aposapsis $r\sub{a}$; the periapse is the only turning point for orbits with $e > 1$. Since we now have expressions for $\{v_r, v_\perp\}$ in terms of $\{e, r\sub{p}\}$, we can 
 calculate the Jacobian
 \begin{equation}
 \left|\dfrac{\partial(v_r, v_\perp)}{\partial(e, r\sub{p})}\right| = \recip{2v_rv_\perp}\dfrac{e}{r\sub{p}}\left(\dfrac{GM_\bullet}{r}\right)^2.
@@ -156,7 +158,7 @@ where the factor of two accounts for inward and outward motion. Hence,
 \begin{align}
 N(e, r\sub{p}; r) = {} & \recip{2} v_r P(e, r\sub{p}) n(r, e, r\sub{p}) = \dfrac{2\pi^2(GM_\bullet)^2 e P(e, r\sub{p})}{r\sub{p}}f(E).
 \end{align}
-The right hand side is independent of position, subject to the constraint that the radius is in the allowed range for the orbit $r\sub{p} \leq r \leq (1+e)r\sub{p}/(1-e)$, and so $N(e, r\sub{p}) \equiv N(e, r\sub{p}; r)$. This is a consequence of the DF being dependent only upon a constant of the motion.\footnote{See \citet{Bahcall1976} equation 9 for a similar result.}
+The right hand side is independent of position, subject to the constraint that the radius is in the allowed range for the orbit $r\sub{p} \leq r \leq r\sub{a}$, and so $N(e, r\sub{p}) \equiv N(e, r\sub{p}; r)$. This is a consequence of the DF being dependent only upon a constant of the motion.\footnote{See \citet{Bahcall1976} equation 9 for a similar result.}
 
 If a burst of radiation is emitted each time a star passes through periapse, the event rate for burst emission from orbits with parameters $\{e, r\sub{p}\}$ is given by
 \begin{align}
@@ -272,7 +274,7 @@ for a CO of mass $M'$. For collisions between MS stars, the cross-sectional area
 
 For circular orbits, we can find the radius at which collisions lead to disruptions by setting $\delta K = 1$ for tidal disruption or $\delta K = 20$ for grazing collisions, and $\delta t = \overline{\tau_{\mathrm{R},\,M}}$. We use the system average relaxation time-scale for the species of mass $M$ as this is the time over which stars are replenished from the reservoir. For non-circular orbits, we must consider variation with position. Using $\delta r = v_r \delta t$, and then converting to an integral, for bound orbits
 \begin{equation}
-K = 2 A \dfrac{\overline{\tau_{\mathrm{R},\,M}}}{P(r\sub{p},e)}\intd{r\sub{p}}{(1+e)r\sub{p}/(1-e)}{n(r)\dfrac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
+K = 2 A \dfrac{\overline{\tau_{\mathrm{R},\,M}}}{P(r\sub{p},e)}\intd{r\sub{p}}{r\sub{a}}{n(r)\dfrac{v(r,e,r\sub{p})}{v_r(r,e,r\sub{p})}}{r},
 \label{eq:collision-K}
 \end{equation}
 where $P$ is the period of the orbit. Again, we set $K = 1$ or $K = 20$, and then numerically solve \eqnref{collision-K} to find the orbits for which stars will be disrupted within $\overline{\tau_{\mathrm{R},\,M}}$. For unbound orbits we are only interested in stars that would become disrupted before their periapse passage, so

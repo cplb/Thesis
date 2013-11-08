@@ -2,7 +2,7 @@
 
 The semirelativistic approximation for EMR waveforms uses an exact geodesic of the background for the trajectory of the orbiting body, but only uses the flat-space radiation generation formula \citep{Ruffini1981}. This is at the heart of the kludge approximation. \citet{Gair2005} derived analytic formulae for the fluxes of energy and angular momentum using the semirelativistic approximation for Schwarzschild geometry. These are useful for checking the accuracy of the kludge waveforms in \secref{Energy-comp}.
 
-The published expressions contain a number of (minor) typographical errors; we rederive the correct forms.\footnote{All the results of \citet{Gair2005} were calculated using the correct expressions.} We consider an object of mass $m$ orbiting about another of mass $M$, with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For this section we use geometric units with $G = c = 1$.
+The published expressions contain a number of (minor) typographical errors; we rederive the correct forms.\footnote{All the results of \citet{Gair2005} were calculated using the correct expressions.} We consider an object of mass $m$ orbiting about another of mass $M$, with a trajectory specified by eccentricity $e$ and periapsis $r\sub{p}$. For this appendix we use geometric units with $G = c = 1$.
 
 The geodesic equations in Schwarzschild are
 \begin{subequations}
@@ -12,7 +12,7 @@ The geodesic equations in Schwarzschild are
 \diff{\phi}{\tau} = {} & \dfrac{L_z}{r^2},
 \end{align}
 \end{subequations}
-where $t$, $r$ and $\phi$ are the usual Schwarzschild coordinates, $\tau$ is the proper time, and we have introduced specific energy $E$ and azimuthal angular momentum $L_z$. Spherical symmetry has been exploited to set $\theta = \pi/2$ without loss of generality. For bound orbits, the radial equation has three roots, and can be written as
+where $t$, $r$ and $\phi$ are the usual Schwarzschild coordinates, $\tau$ is the proper time, and we have introduced specific energy $E$ and azimuthal angular momentum $L_z$. Spherical symmetry has been exploited to set $\theta = \pi/2$ without loss of generality. For bound orbits, the radial equation has three roots and can be written as
 \begin{equation}
 \left(\diff{r}{\tau}\right)^2 = -\left(E^2 - 1\right)\dfrac{(r\sub{a} - r)(r - r\sub{p})(r - r_3)}{r^3}.
 \end{equation}
@@ -24,7 +24,7 @@ The third root is then
 \begin{equation}
 r_3 = \dfrac{2(1 + e)M}{(1+e)r\sub{p} - 4M}r\sub{p}.
 \end{equation}
-The last stable orbit with a given eccentricity, has periapse radius
+The last stable orbit with a given eccentricity has periapse radius
 \begin{equation}
 r\sub{p,\,LSO} = \dfrac{2(3 + e)M}{1+e}.
 \end{equation}
@@ -51,7 +51,7 @@ The integrals are of a general form
 \begin{equation}
 \mathscr{I}_n = \intd{r\sub{p}}{r\sub{a}}{\dfrac{M^{n+1}}{r^n\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}}}{r}.
 \end{equation}
-By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}$ we may derive a recurrence relationship using integration by parts. After some rearrangement
+By considering the derivative of $r^{-n}\sqrt{(r\sub{a} - r)(r - r\sub{p})(r - r_3)r}$, we may derive a recurrence relationship using integration by parts. After some rearrangement
 \begin{equation}
 \mathscr{I}_n = \dfrac{n - 1}{2n - 1}\mathscr{I}_{n-1} - \dfrac{2n - 3}{2n - 1} \dfrac{(r\sub{a} + r\sub{p} + r_3)M^2}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-2} + \dfrac{2(n - 2)}{2n-1}\dfrac{M^3}{r\sub{a}r\sub{p}r_3}\mathscr{I}_{n-3}.
 \end{equation}
@@ -72,9 +72,9 @@ where
 \begin{equation}
 \Pi(n,k) = \intd{0}{\pi/2}{\frac{1}{\left(1 - n \sin^2\varphi\right)\sqrt{1 - k^2 \sin^2\varphi}}}{\varphi}
 \end{equation}
-is the complete elliptic integral of the third kind \citep[19.2.7, 19.2.8]{Olver2010}. In this instance we may simplify using \citet[19.6.2]{Olver2010}
+is the complete elliptic integral of the third kind \citep[19.2.7, 19.2.8]{Olver2010}. In this instance we may simplify using \citet[19.6.2]{Olver2010},
 \begin{equation}
-\Pi(k^2,k) = \dfrac{E(k)}{1 - k^2}
+\Pi(k^2,k) = \dfrac{E(k)}{1 - k^2},
 \end{equation}
 to rewrite in terms of the complete elliptic integral of the second kind \citep[19.2.5, 19.2.8]{Olver2010}
 \begin{equation}
@@ -220,11 +220,11 @@ g_2(y, e) = {} & 339456 (3 - e) (3 + e) \left(93099 - 10213 e^2 - 18155 e^4 - 10
  {} & + \left. 47072 (1 + e)^9 y^9 + 4120 (1 + e)^{10} y^{10}. \right.
 \end{align}
 
-Taking the limit $r\sub{p} \rightarrow \infty$ should recover weak field results. Using series expansions of the elliptic integrals for small arguments
+Taking the limit $r\sub{p} \rightarrow \infty$ should recover weak-field results. Using series expansions of the elliptic integrals for small arguments
 \begin{align}
 \dfrac{M}{m} \upDelta E \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{{7}/{2}}} \left(1 + \dfrac{73}{24} e^2 + \dfrac{37}{96} e^{4}\right) \left(\dfrac{M}{r\sub{p}}\right)^{7/2} \nonumber \\
- {} & - \left. \dfrac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \dfrac{31}{8} e^2 + \dfrac{65}{32} e^4 + \dfrac{1}{6}e^6\right) \left(\dfrac{M}{r\sub{p}}\right)^{9/2}, \right. \nonumber \\*
- {} & + \left. \order{\dfrac{M^{11/2}}{r\sub{p}^{11/2}}} \right. \\
+ {} & - \left. \dfrac{192\pi}{5} \recip{(1 + e)^{{9}/{2}}} \left(1 + \dfrac{31}{8} e^2 + \dfrac{65}{32} e^4 + \dfrac{1}{6}e^6\right) \left(\dfrac{M}{r\sub{p}}\right)^{9/2} \right. \nonumber \\*
+ {} & + \left. \order{\dfrac{M^{11/2}}{r\sub{p}^{11/2}}}, \right. \\
 \dfrac{\upDelta L_{z}}{m} \simeq {} & -\dfrac{64\pi}{5} \recip{(1 + e)^{2}} \left(1 + \dfrac{7}{8} e^{2}\right) \left(\dfrac{M}{r\sub{p}}\right)^{2} \nonumber \\
  {} & - \left. \dfrac{192 \pi}{5} \recip{(1 + e)^3} \left(1 + \dfrac{35}{24} e^2 + \dfrac{1}{4} e^4\right) \left(\dfrac{M}{r\sub{p}}\right)^{3}  + \order{\dfrac{M^{4}}{r\sub{p}^{4}}}. \right.
 \end{align}

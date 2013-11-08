@@ -19,7 +19,7 @@ Geodesic motion in Kerr spacetime can be described by use of the action--angle f
 \end{subequations}
 where $\lambda$ is Mino time \citep{Mino2003}, and the forcing functions $g_\alpha^{(1)}$ and $G_\alpha^{(1)}$ originate from the first-order self-force. At zeroth order in the mass ratio we recover the limit of purely geodesic motion: the integrals of the motion are actually constants, and the angle variables evolve according to their associated frequencies $\omega_\alpha$.
 
-The leading order dissipative correction to geodesic motion is calculated following the adiabatic prescription \citep{Hinderer2008}: by dropping the forcing term $g_\alpha^{(1)}$ (and all higher-order terms) and replacing the forcing term $G_\alpha^{(1)}$ with its average over the $2$-torus parameterized by $q_r$ and $q_\theta$ $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ \citep{Drasco2005}. For most orbits this is sufficient; $G_\alpha^{(1)}$ is given by its average value plus a rapidly oscillating component \citep[chapter 5, section 1]{Arnold1988}. However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the $2$-torus but instead traces out a one-dimensional subspace.\footnote{For illustrations, see \citet{Grossman2012}.} There are then contributions to the self-force beyond $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ that no longer average out over an orbit. Intuitively, we expect that this effect is more important for ratios of small integers, as when the integers are large the orbit comes close to all points on the $2$-torus.
+The leading-order dissipative correction to geodesic motion is calculated following the adiabatic prescription \citep{Hinderer2008}: by dropping the forcing term $g_\alpha^{(1)}$ (and all higher-order terms) and replacing the forcing term $G_\alpha^{(1)}$ with its average over the two-torus parameterized by $q_r$ and $q_\theta$, $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ \citep{Drasco2005}. For most orbits this is sufficient; $G_\alpha^{(1)}$ is given by its average value plus a rapidly oscillating component \citep[chapter 5, section 1]{Arnold1988}. However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the two-torus but instead traces out a one-dimensional subspace.\footnote{For illustrations, see \citet{Grossman2012}.} There are then contributions to the self-force beyond $\langle G_\alpha^{(1)}\rangle_{q_r,\,q_\theta}$ that no longer average out over an orbit. Intuitively, we expect that this effect is more important for ratios of small integers, as when the integers are large the orbit comes close to all points on the two-torus.
 
 In this chapter, we begin to characterise the importance of these resonances for the purposes of modelling EMRIs. We find the orbital parameters for which the orbital frequencies are commensurate (\secref{location}) and construct a formula to calculate the difference in the orbital parameters when comparing an adiabatic evolution with one that incorporates the instantaneous effects of the self-force (\secref{res-asymptotic}).
 
@@ -106,9 +106,9 @@ Transient resonances occur when the radial and polar motions are commensurate, w
 \end{equation}
 is the ratio of (small) integers. At this point any Fourier series, like those in \eqnref{Mino-Fourier}, goes from being an expansion in two frequencies to being an expansion in a single frequency \citep{Bosley1992}.
 
-On resonance, the radial and polar motions are locked together such that we can express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance, as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To characterise this, we use the $\theta$ phase at periapsis $\chi\sub{p}$; varying $\chi\sub{p}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\chi\sub{p}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ $2$-torus for non-resonant orbits.
+On resonance, the radial and polar motions are locked together such that we can express one as a function of the other. For a general non-resonant orbit there is no fixed correlation between two coordinates. After a sufficiently long time, the trajectory comes arbitrarily close to every point in the range of motion (with $r\sub{p} \leq r \leq r\sub{a}$ and $\theta_- \leq \theta \leq \pi - \theta_-$); on account of the orbital precession, the whole space is densely covered. This does not happen on resonance, as the trajectory keeps cycling over the same path. The points visited are controlled by the relative phases of the $r$ and $\theta$ motions. To characterise this, we use the $\theta$ phase at periapsis $\chi\sub{p}$; varying $\chi\sub{p}$ across its full range allows every point in the range of motion to be reached. Hence averaging over all values of $\chi\sub{p}$ for a resonant orbit is equivalent to averaging over the $\psi$--$\chi$ two-torus for non-resonant orbits.
 
-One might be concerned about the nature of resonances following the inclusion of the self-force: true geodesic motion only exists at zeroth order in $\eta$ and, whilst it is a good approximation over short time-scales, for small $\eta$ there is a small disparity. The conservative piece of the self-force induces extra precession which leads to a slight shift in the orbital frequencies \citep{Warburton2012}.\footnote{The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits is preserved albeit slightly deformed (\citealt{Arnold1963}; \citealt[chapter II, section 3.3 d]{Moser1973}). This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply \citep[chapter V, section 1 c]{Moser1973}. This is a further reason why resonances merit an in-depth investigation.} The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
+One might be concerned about the nature of resonances following the inclusion of the self-force: true geodesic motion only exists at zeroth order in $\eta$ and, whilst it is a good approximation over short time-scales, for small $\eta$ there is a small disparity. The conservative piece of the self-force induces extra precession which leads to a slight shift in the orbital frequencies \citep{Warburton2012}.\footnote{The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits is preserved, albeit slightly deformed (\citealt{Arnold1963}; \citealt[chapter II, section 3.3 d]{Moser1973}). This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply \citep[chapter V, section 1 c]{Moser1973}. This is a further reason why resonances merit an in-depth investigation.} The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
 \begin{figure}%[tbhp]
 \centering
 \vspace{0.25\baselineskip}
@@ -137,18 +137,20 @@ Similar resonance surfaces can be found for other spin values and for other reso
 \citet{Brink2013} provide series expansions for the location of resonances in the limit of equatorial orbits for small spin and eccentricity. We do not follow this approach of trying to find analytic expressions for the resonance surface. The expressions become complicated when venturing away from limiting cases. Instead, we build an approximate phenomenological model and fit this to the resonance plane. %\footnote{A stopped clock is precisely correct twice a day, while a clock that is five minutes slow is never right but will often be close enough. Within this metaphor, our approximation would be a clock that varies between telling the correct time and being fifteen minutes off throughout the day: it is generally going to be good enough to give you a sense of the time but if you have an important event you should check with something better.}
 This should be useful for designating the region in which resonance could be expected. To locate resonances precisely it is necessary to solve $\Omega = 0$ numerically; the approximate model should give a suitable starting point.
 
-The resonant semilatus rectum for any particular spin and resonance ratio can be well approximated as
+The resonant semilatus rectum for any particular spin and resonant frequency ratio can be well approximated as
 \begin{equation}
 p(e,\iota;a_\ast,\nu) \simeq A\dfrac{1 + B e + D \cos\iota}{1 - C\exp(e)} M_\bullet.
 \end{equation}
 The coefficients $\{A,B,C,D\}$ depend upon the spin and the particular resonance; they can be approximated as
+\begin{subequations}
 \begin{align} 
 A(a_\ast,\nu) \simeq {} & a_0\dfrac{1 + a_1\nu - a_2 \nu^2 - a_3 \nu a_\ast^2}{1 + a_4\nu - (1 + a_4)\nu^2}, \\
 B(a_\ast,\nu) \simeq {} & b_0(1 - b_1\nu)\exp(-b_2\nu)(1 - b_3 a_\ast), \\
 C(a_\ast,\nu) \simeq {} & c_0, \\
 D(a_\ast,\nu) \simeq {} & d_0\left[1 - \exp(a_\ast)\right]\left[1 - d_1\exp(\nu)\right].
 \end{align}
-This gives us a total of $12$ parameters for our fit. While this may sound large, if we were fitting an expansion to quadratic order in any combination of $\{e,\iota,a_\ast,\nu\}$ we would have $15$ parameters.\footnote{This does not give as good a fit as our function.} Our best fit parameters are
+\end{subequations}
+This gives us a total of $12$ parameters for our fit. While this may sound large, if we were fitting an expansion to quadratic order in any combination of $\{e,\iota,a_\ast,\nu\}$ we would have $15$ parameters.\footnote{This does not give as good a fit as our function.} Our best-fit parameters are
 \begin{equation}
 \begin{array}{c}
 a_0 = 5.9854, \quad a_1 = 3.4116, \quad a_2 = 0.9253, \quad a_3 = 0.1959, \\
@@ -162,13 +164,13 @@ Using our approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$
 \begin{figure}%[htp]
 \centering
  \subfigure[{Maximum error}]{\includegraphics[width=0.475\textwidth]{./images/Fig_fit-error-max-plane}} \quad \subfigure[{Root-mean-square error}]{\includegraphics[width=0.475\textwidth]{./images/Fig_fit-error-RMS-plane}}
-\caption{Relative error in the approximate semilatus rectum compared to the accurate numerical result as a function of MBH spin $a_\ast$ and resonance ratio $\nu$. In both figures we are marginalising over eccentricity and inclination.}\label{fig:p-error}
+\caption{Relative error in the approximate semilatus rectum compared to the accurate numerical result as a function of MBH spin $a_\ast$ and resonant frequency ratio $\nu$. In both figures we are marginalising over eccentricity and inclination.}\label{fig:p-error}
 \end{figure}
 The largest fractional error is $\sim50\%$, this is for $a_\ast \rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p/M_\bullet$, such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
 
 \section{Importance of resonances}\label{sec:importance}
 
-Having determined the location of resonances, we may now address their importance. We wish to quantify the enhancement (or decrement) of the flux of $E$, $L_z$ and $Q$ during resonance and, equivalently, the change in $p$, $e$ and $\iota$. A change in the orbital parameters relative to the adiabatic prescription leads to a dephasing of waveforms. This is of interest for a matched filtering analysis of inspirals.
+Having determined the location of resonances, we may now address their importance. We wish to quantify the enhancement (or decrement) of the flux of $E$, $L_z$ and $Q$ during resonance and, equivalently, the change in $p$, $e$ and $\iota$. A change in the orbital parameters relative to the adiabatic prescription leads to a dephasing of waveforms. This is of interest for a matched-filtering analysis of inspirals.
 
 \subsection{Time-scales}\label{sec:res-time}
 
@@ -187,7 +189,7 @@ We use the precession time-scale
 \tau\sub{pres}(t) = \dfrac{2\pi}{|\Omega(t)|},
 \label{eq:t-pres}
 \end{equation}
-with $\Omega(t) = n_r \Omega_r(t) - n_\theta \Omega_\theta(t)$, where the frequencies are calculated instantaneously, and the integers are for the resonance of interest. This time-scale becomes infinite exactly on resonance, but decreases as we get further from resonance, eventually becoming $\order{T}$. It measures the relative precession rate of the radial and polar motions, and hence gives an indication of how long it takes to fill the entire $\psi$--$\chi$ $2$-torus.
+with $\Omega(t) = n_r \Omega_r(t) - n_\theta \Omega_\theta(t)$, where the frequencies are calculated instantaneously, and the integers are for the resonance of interest. This time-scale becomes infinite exactly on resonance, but decreases as we get further from resonance, eventually becoming $\order{T}$. It measures the relative precession rate of the radial and polar motions, and hence gives an indication of how long it takes to fill the entire $\psi$--$\chi$ two-torus.
 
 We also use the resonance time-scale
 \begin{equation}
@@ -202,9 +204,9 @@ The resonant time-scale should give an indication of the time over which we expe
 \begin{equation}
 \varphi_{n_r,\,-n_\theta} \simeq \left(n_r\Upsilon_r - n_\theta\Upsilon_\theta\right)\lambda + \left(n_r\dot{\Upsilon}_r - n_\theta\dot{\Upsilon}_\theta\right)\lambda^2 + \ldots
 \end{equation}
-Typically, the first term is non-zero and this gives the familiar oscillation. On resonance it is zero, leaving the next order term to govern the behaviour \citep{Flanagan2012}. Only once we have moved far enough away from resonance for the first term to dominate the second do we recapture the non-resonant behaviour. The first term (translating from Mino time to coordinate time) sets $\tau\sub{pres}$, the second sets $\tau\sub{res}$.
+Typically, the first term is non-zero and this gives the familiar oscillation. On resonance it is zero, leaving the next-order term to govern the behaviour \citep{Flanagan2012}. Only once we have moved far enough away from resonance for the first term to dominate the second do we recapture the non-resonant behaviour. The first term (translating from Mino time to coordinate time) sets $\tau\sub{pres}$, the second sets $\tau\sub{res}$.
 
-Since we have argued that the effect of resonance can be thought of as a consequence of not densely covering the $\psi$--$\chi$ $2$-torus, we might expect that $\tau\sub{pres}$, as well as $\tau\sub{res}$, could be used for setting the resonance duration: the resonance ends once sufficient time has elapsed that the $2$-torus could be filled. This is indeed the case. Let $t\sub{pres}$ be the time taken to fill the torus, then
+Since we have argued that the effect of resonance can be thought of as a consequence of not densely covering the $\psi$--$\chi$ two-torus, we might expect that $\tau\sub{pres}$, as well as $\tau\sub{res}$, could be used for setting the resonance duration: the resonance ends once sufficient time has elapsed that the two-torus could be filled. This is indeed the case. Let $t\sub{pres}$ be the time taken to fill the torus, then
 \begin{align}
 t\sub{pres} = {} & \tau\sub{pres}(t\sub{pres}) \\
  \simeq {} & \dfrac{2\pi}{\left|\langle\dot{\Omega}(0)\rangle_{q'} t\sub{pres}\right|}, \nonumber 
@@ -362,7 +364,7 @@ is constant, and
 \begin{equation}
 \widehat{q}_0 = \widehat{\kappa}_0 + \dfrac{\varpi_1\widehat{\lambda}^2}{2}.
 \end{equation}
-Using these, we can build the next order terms
+Using these, we can build the next-order terms
 \begin{align}
 \widehat{q}_{1/2} = {} & \widehat{\kappa}_{1/2} + \dfrac{\varpi_2\widehat{\lambda}^3}{3} + g_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}, \\
 \widehat{J}_{1/2} = {} & \widehat{\varrho}_{1/2} + G_0^{(1)}(\widehat{\varrho}_0)\widehat{\lambda} + \sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\intd{0}{\hat{\lambda}}{\exp\left(\dfrac{is \varpi_1\tau^2}{2}\right)}{\tau}.
@@ -431,7 +433,7 @@ These fix the integration constants. The more interesting result is now found by
 %\widehat{\kappa}_{1/2} + \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\left\{\dfrac{\sgn \widehat{\lambda}}{\sqrt{2}}\sqrt{\dfrac{\pi}{|s\varpi_1}}\exp\left[\sgn(s\varpi_1)\dfrac{\pi}{4}\right] + \recip{is\varpi_1}\exp\left(\dfrac{is \varpi_1 \widehat{\lambda}^2}{2}\right)\right\} = {} & \recip{is\varpi_1\widehat{\lambda}}g_s^{(1)}(\widehat{\varrho}_0)\exp\left[is\left(\dfrac{\Psi_\star}{\eta} + \dfrac{\varpi_1\widehat{\lambda}^2}{2}\right)\right] \nonumber \\
 \widehat{\kappa}_{1/2} = {} & \sum_{s\,\neq\,0}g_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{\pi}{2|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\dfrac{i\pi}{4}\right].
 \end{align}
-Similarly, for the action variables
+Similarly, for the action variables,
 \begin{equation}
 \widehat{\varrho}_{1/2} = \sum_{s\,\neq\,0}G_s^{(1)}(\widehat{\varrho}_0)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{\pi}{2|s\varpi_1|}}\exp\left[\sgn(s\varpi_1)\dfrac{i\pi}{4}\right].
 \label{eq:J-1/2}
@@ -454,17 +456,17 @@ such that the equation of motion becomes
 \begin{equation}
 \left\langle \diff{\mathcal{I}_a}{t}\right\rangle_{q'} =  \eta\sum_s F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}})\exp(is q) + \order{\eta^2}.
 \end{equation}
-Here we have made the averaging over $q'$ explicit to show that the equation is only defined as an orbital average: not only does our asymptotic expansion average out oscillations over an orbit in $q'$, but in converting from $\lambda$ to $t$ we have used $\Gamma$ which is an orbital average.
+Here we have made the averaging over $q'$ explicit to show that the equation is only defined as an orbital average: not only does our asymptotic expansion average out oscillations over an orbit in $q'$, but in converting from $\lambda$ to $t$ we have used $\Gamma$, which is an orbital average.
 From \eqnref{omega-series}, we recognise that
 \begin{equation}
 \varpi_1 = \partialdiff{\omega}{\widetilde{\lambda}} = \dfrac{\Gamma^2}{\eta}\left\langle\dot{\Omega}\right\rangle_{q'}.
 \end{equation}
 We have used the averaged form of $\dot{\Omega}(t)$ as this is appropriate. Using these to adapt equations (\ref{eq:J-1/2}) and (\ref{eq:jumps}), we obtain
 \begin{align}
-\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{2\pi}{\left|s \langle\dot{\Omega}\rangle_{q'}\right|}}\exp\left[\sgn\left(s\langle\dot{\Omega}\rangle_{q'}\right)\dfrac{i\pi}{4}\right] \\
+\Delta \mathcal{I}_a = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\exp(is \widehat{\kappa}_0)\sqrt{\dfrac{2\pi}{\left|s \langle\dot{\Omega}\rangle_{q'}\right|}}\exp\left[\sgn\left(s\langle\dot{\Omega}\rangle_{q'}\right)\dfrac{i\pi}{4}\right] \nonumber \\
  = {} & \eta\sum_{s\,\neq\,0}F_{a,\,s}^{(1)}(\boldsymbol{\mathcal{I}}_\star)\tau_{\mathrm{res},\,s}\exp(is \widehat{\kappa}_0)\exp\left[\sgn\left(s\langle\dot{\Omega}\rangle_{q'}\right)\dfrac{i\pi}{4}\right],
 \end{align}
-using \eqnref{T-res-s} and representing the values on resonance of $E$, $L_z$ and $Q$ with $\boldsymbol{\mathcal{I}}_\star$. Schematically, this can be understood as the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$ is equivalent to averaging over all values of $\chi\sub{p}$, and has the same effect as averaging over the $\psi$--$\chi$ $2$-torus; this gives an average discrepancy relative to the adiabatic evolution of
+using \eqnref{T-res-s} and representing the values on resonance of $E$, $L_z$ and $Q$ with $\boldsymbol{\mathcal{I}}_\star$. Schematically, this can be understood as the magnitude of the forcing function $\sim \eta F_a$ multiplied by the time on resonance $\sim \tau\sub{res}$ and a function that varies with the phase $\widehat{\kappa}_0$. Averaging over all values of $\widehat{\kappa}_0$ is equivalent to averaging over all values of $\chi\sub{p}$, and has the same effect as averaging over the $\psi$--$\chi$ two-torus; this gives an average discrepancy relative to the adiabatic evolution of
 \begin{equation}
 \left\langle \Delta \mathcal{I}_a \right\rangle_{\hat{\kappa}_0} = 0,
 \end{equation}
