@@ -1072,8 +1072,7 @@ Freire, P.C.C. \textit{et al\textup{.}};
   Kalogera}]{Freitag2006}
 Freitag, M., Amaro-Seoane, P. \& Kalogera, V.;
   \textit{\href{http://dx.doi.org/10.1086/506193}{The Astrophysical Journal}};
-  \textbf{649}(1):91--117; 2006;
-  \href{http://arxiv.org/abs/astro-ph/0603280}{\tt arXiv:astro-ph/0603280}.
+  \textbf{649}(1):91--117; 2006.
 
 \bibitem[{Freitag \& Benz(2005)}]{Freitag2005}
 Freitag, M. \& Benz, W.;
@@ -1280,7 +1279,7 @@ Graham, A.W., Erwin, P., Caon, N. \& Trujillo, I.;
 Graham, A.W., Onken, C.A., Athanassoula, E. \& Combes, F.;
   \textit{\href{http://dx.doi.org/10.1111/j.1365-2966.2010.18045.x}{Monthly
   Notices of the Royal Astronomical Society}}; \textbf{412}(4):2211--2228;
-  2011; \href{http://arxiv.org/abs/1007.3834}{\tt arXiv:1007.3834}.
+  2011.
 
 \bibitem[{Graham \& Scott(2013)}]{Graham2013}
 Graham, A.W. \& Scott, N.;
@@ -2078,20 +2077,21 @@ McKechan, D.J.A., Robinson, C. \& Sathyaprakash, B.S.;
 McWilliams, S.T., Ostriker, J.P. \& Pretorius, F.; 2012;
   \href{http://arxiv.org/abs/1211.5377}{\tt arXiv:1211.5377}.
 
-\bibitem[{Merritt(2010)}]{Merritt2010a}
-Merritt, D.; \textit{\href{http://dx.doi.org/10.1088/0004-637X/718/2/739}{The
-  Astrophysical Journal}}; \textbf{718}(2):739--761; 2010;
-  \href{http://arxiv.org/abs/0909.1318}{\tt arXiv:0909.1318}.
-
 \bibitem[{Merritt(2013)}]{Merritt2013}
 Merritt, D.; 2013; \href{http://arxiv.org/abs/1307.3268}{\tt arXiv:1307.3268}.
 
-\bibitem[{Merritt \textit{et al\textup{.}}(2010)Merritt, Alexander, Mikkola \&
-  Will}]{Merritt2010}
+\bibitem[{Merritt \textit{et al\textup{.}}(2010{\natexlab{a}})Merritt,
+  Alexander, Mikkola \& Will}]{Merritt2010}
 Merritt, D., Alexander, T., Mikkola, S. \& Will, C.M.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.81.062002}{Physical Review
-  D}}; \textbf{81}(6):062002(17); 2010;
+  D}}; \textbf{81}(6):062002(17); 2010{\natexlab{a}};
   \href{http://arxiv.org/abs/0911.4718}{\tt arXiv:0911.4718}.
+
+\bibitem[{Merritt \textit{et al\textup{.}}(2010{\natexlab{b}})Merritt,
+  Alexander, Mikkola \& Will}]{Merritt2010a}
+Merritt, D., Alexander, T., Mikkola, S. \& Will, C.M.;
+  \textit{\href{http://dx.doi.org/10.1103/PhysRevD.81.062002}{Physical Review
+  D}}; \textbf{81}(6):062002(17); 2010{\natexlab{b}}.
 
 \bibitem[{Merritt \textit{et al\textup{.}}(2011)Merritt, Alexander, Mikkola \&
   Will}]{Merritt2011}
@@ -2267,7 +2267,7 @@ Nojiri, S. \& Odintsov, S.D.;
 \bibitem[{Nojiri \& Odintsov(2011)}]{Nojiri2011}
 Nojiri, S. \& Odintsov, S.D.;
   \textit{\href{http://dx.doi.org/10.1016/j.physrep.2011.04.001}{Physics
-  Reports}}; \textbf{505}(2--4):59--144; 2011;
+  Reports}}; \textbf{505}(2-4):59--144; 2011;
   \href{http://arxiv.org/abs/1011.0544}{\tt arXiv:1011.0544}.
 
 \bibitem[{Nomoto(1987)}]{Nomoto1987}
