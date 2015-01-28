@@ -241,7 +241,8 @@ Babak, S., Gair, J.R., Petiteau, A. \& Sesana, A.;
   \href{http://arxiv.org/abs/1011.2062}{\tt arXiv:1011.2062}.
 
 \bibitem[{Babcock(1939)}]{Babcock1939}
-Babcock, H.; \textit{Lick Observatory bulletin}; \textbf{19}(498):41--51; 1939.
+Babcock, H.W.; \textit{Lick Observatory Bulletin}; \textbf{19}(498):41--51;
+  1939.
 
 \bibitem[{Backer \& Sramek(1999)}]{Backer1999}
 Backer, D.C. \& Sramek, R.A.;
@@ -1041,8 +1042,8 @@ Flanagan, {\'E}.{\'E}. \& Hinderer, T.;
   Review Letters}}; \textbf{109}(7):071102(5); 2012;
   \href{http://arxiv.org/abs/1009.4923}{\tt arXiv:1009.4923}.
 
-\bibitem[{Flanagan \& Hudhes(1998)}]{Flanagan1998}
-Flanagan, {\'E}.{\'E}. \& Hudhes, S.A.;
+\bibitem[{Flanagan \& Hughes(1998)}]{Flanagan1998}
+Flanagan, {\'E}.{\'E}. \& Hughes, S.A.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.57.4535}{Physical Review
   D}}; \textbf{57}(8):4535--4565; 1998;
   \href{http://arxiv.org/abs/gr-qc/9701039}{\tt arXiv:gr-qc/9701039}.
@@ -1072,7 +1073,8 @@ Freire, P.C.C. \textit{et al\textup{.}};
   Kalogera}]{Freitag2006}
 Freitag, M., Amaro-Seoane, P. \& Kalogera, V.;
   \textit{\href{http://dx.doi.org/10.1086/506193}{The Astrophysical Journal}};
-  \textbf{649}(1):91--117; 2006.
+  \textbf{649}(1):91--117; 2006;
+  \href{http://arxiv.org/abs/astro-ph/0603280}{\tt arXiv:astro-ph/0603280}.
 
 \bibitem[{Freitag \& Benz(2005)}]{Freitag2005}
 Freitag, M. \& Benz, W.;
@@ -2077,21 +2079,20 @@ McKechan, D.J.A., Robinson, C. \& Sathyaprakash, B.S.;
 McWilliams, S.T., Ostriker, J.P. \& Pretorius, F.; 2012;
   \href{http://arxiv.org/abs/1211.5377}{\tt arXiv:1211.5377}.
 
+\bibitem[{Merritt(2010)}]{Merritt2010a}
+Merritt, D.; \textit{\href{http://dx.doi.org/10.1088/0004-637X/718/2/739}{The
+  Astrophysical Journal}}; \textbf{718}(2):739--761; 2010;
+  \href{http://arxiv.org/abs/0909.1318}{\tt arXiv:0909.1318}.
+
 \bibitem[{Merritt(2013)}]{Merritt2013}
 Merritt, D.; 2013; \href{http://arxiv.org/abs/1307.3268}{\tt arXiv:1307.3268}.
 
-\bibitem[{Merritt \textit{et al\textup{.}}(2010{\natexlab{a}})Merritt,
-  Alexander, Mikkola \& Will}]{Merritt2010}
+\bibitem[{Merritt \textit{et al\textup{.}}(2010)Merritt, Alexander, Mikkola \&
+  Will}]{Merritt2010}
 Merritt, D., Alexander, T., Mikkola, S. \& Will, C.M.;
   \textit{\href{http://dx.doi.org/10.1103/PhysRevD.81.062002}{Physical Review
-  D}}; \textbf{81}(6):062002(17); 2010{\natexlab{a}};
+  D}}; \textbf{81}(6):062002(17); 2010;
   \href{http://arxiv.org/abs/0911.4718}{\tt arXiv:0911.4718}.
-
-\bibitem[{Merritt \textit{et al\textup{.}}(2010{\natexlab{b}})Merritt,
-  Alexander, Mikkola \& Will}]{Merritt2010a}
-Merritt, D., Alexander, T., Mikkola, S. \& Will, C.M.;
-  \textit{\href{http://dx.doi.org/10.1103/PhysRevD.81.062002}{Physical Review
-  D}}; \textbf{81}(6):062002(17); 2010{\natexlab{b}}.
 
 \bibitem[{Merritt \textit{et al\textup{.}}(2011)Merritt, Alexander, Mikkola \&
   Will}]{Merritt2011}
@@ -2267,7 +2268,7 @@ Nojiri, S. \& Odintsov, S.D.;
 \bibitem[{Nojiri \& Odintsov(2011)}]{Nojiri2011}
 Nojiri, S. \& Odintsov, S.D.;
   \textit{\href{http://dx.doi.org/10.1016/j.physrep.2011.04.001}{Physics
-  Reports}}; \textbf{505}(2-4):59--144; 2011;
+  Reports}}; \textbf{505}(2--4):59--144; 2011;
   \href{http://arxiv.org/abs/1011.0544}{\tt arXiv:1011.0544}.
 
 \bibitem[{Nomoto(1987)}]{Nomoto1987}
@@ -2713,8 +2714,8 @@ Scheel, M.A., Shapiro, S.L. \& Teukolsky, S.A.;
 \bibitem[{Schmidt(1986)}]{Schmidt1986}
 Schmidt, H.J.;
   \textit{\href{http://dx.doi.org/10.1002/asna.2113070526}{Astronomische
-  Nachrichten}}; \textbf{307}(5):339--340; 1986;
-  \href{http://arxiv.org/abs/gr-qc/0106037}{\tt arXiv:gr-qc/0106037}.
+  Nachrichten: A Journal on all Fields of Astronomy}};
+  \textbf{307}(5):339--340; 1986.
 
 \bibitem[{Schmidt(2002)}]{Schmidt2002}
 Schmidt, W.;
@@ -2759,15 +2760,13 @@ Seigar, M.S., Kennefick, D., Kennefick, J. \& Lacy, C.H.S.;
   \textbf{678}(2):L93--L96; 2008; \href{http://arxiv.org/abs/0804.0773}{\tt
   arXiv:0804.0773}.
 
-\bibitem[{Sesana(2013{\natexlab{a}})}]{Sesana2012a}
+\bibitem[{Sesana(2013a)}]{Sesana2012a}
 Sesana, A.; \textit{\href{http://dx.doi.org/10.1093/mnrasl/slt034}{Monthly
-  Notices of the Royal Astronomical Society}}; \textbf{433}(1):L1--L5;
-  2013{\natexlab{a}}; \href{http://arxiv.org/abs/1211.5375}{\tt
-  arXiv:1211.5375}.
+  Notices of the Royal Astronomical Society}}; \textbf{433}(1):L1--L5; 2013a;
+  \href{http://arxiv.org/abs/1211.5375}{\tt arXiv:1211.5375}.
 
-\bibitem[{Sesana(2013{\natexlab{b}})}]{Sesana2013b}
-Sesana, A.; 2013{\natexlab{b}}; \href{http://arxiv.org/abs/1307.4086}{\tt
-  arXiv:1307.4086}.
+\bibitem[{Sesana(2013b)}]{Sesana2013b}
+Sesana, A.; 2013b; \href{http://arxiv.org/abs/1307.4086}{\tt arXiv:1307.4086}.
 
 \bibitem[{Sesana \textit{et al\textup{.}}(2008)Sesana, Vecchio \&
   Colacino}]{Sesana2008}
